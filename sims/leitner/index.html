@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>The Leitner Box</title>
+	<link rel="stylesheet" type="text/css" href="leitner.css"/>
+</head>
+
+<body>
+<div id="content">
+	<div id="container">
+		<canvas id="sim" width="1000" height="800" style="width:500px; height:400px;"></canvas>
+		<button id="next_step">next STEP</button>
+		<button id="next_day">next DAY</button>
+		<button id="next_week">next WEEK</button>
+		<button id="next_month">next MONTH</button>
+		<hr>
+		<span id="label_day"></span>
+		<br>
+		<span id="label_step"></span>
+		<br>
+		<span id="label_stats"></span>
+	</div>
+</div>
+
+<div id="default_labels">
+	<span id="leitner_day">
+		Day [N]
+	</span>
+	<span id="leitner_step_to_review">
+		to review: Level
+	</span>
+	<span id="leitner_step_reviewing">
+		review Level [N]
+	</span>
+	<span id="leitner_step_new">
+		add [N] new cards
+	</span>
+	<span id="leitner_step_stats">
+		total: [N] cards!
+	</span>
+	<span id="leitner_step_stats_2">
+		([N] in very-long-term memory)
+	</span>
+</div>
+
+</body>
+
+</html>
+
+<script src="../helpers.js"></script>
+<script src="leitner.js"></script>

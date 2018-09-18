@@ -1,0 +1,95 @@
+/* FONT FACE */
+@font-face {
+	font-family: "PatrickHand";
+	font-style: normal;
+	font-weight: 400;
+	src: url(PatrickHand-Regular.ttf) format('truetype');
+}
+
+/* HTML & BODY */
+html, body{
+	width:100%;
+	height:100%;
+}
+body{
+	background: #eeeeee;
+	margin:0;
+	font-family: "PatrickHand", Helvetica, Arial;
+	font-size: 25px;
+	line-height: 1.2em;
+}
+/* fake bold */
+b, strong{
+	font-weight: normal;
+	text-shadow:1px 0 0 currentColor;
+	letter-spacing: 1px;
+}
+
+/*********/
+/* COMIC */
+/*********/
+
+#comic{
+	overflow:hidden;
+	width:610px;
+	margin: 50px auto;
+	text-align: center;
+}
+#comic panel{
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	/*border: 2px solid #ccc;*/
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	transition: opacity 0.5s ease-in-out;
+}
+#comic panel[fadeInOn]{
+	opacity: 0;
+}
+#comic panel pic{
+	display: block;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	/*background: #bada55;*/
+	background: #ccc;
+}
+#comic panel words{
+	display: block;
+	position: absolute;
+	top:0;
+	left:0;
+	background: #fff;
+	/*text-align: left;*/
+	padding: 15px;
+}
+#comic panel words[no-bg]{
+	background: none;
+}
+#comic panel sim{
+	display: block;
+	position: absolute;
+}
+#comic panel sim > iframe{
+	border: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0; left:0;
+}
+#comic panel sim > label{
+	display:none;
+}
+
+/**********/
+/* LABELS */
+/**********/
+
+#labels{
+	display: none;
+}
+

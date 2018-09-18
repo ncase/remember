@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>The Flashcard</title>
+	<link rel="stylesheet" type="text/css" href="../fcard.css"/>
+	<link rel="stylesheet" type="text/css" href="multicard.css"/>
+</head>
+
+<body>
+
+<div id="container">
+
+	<!-- Cards! -->
+	<div id="cards">
+
+		<!-- BG -->
+		<div id="card_bg" class="card">
+			<div id="card_bg_smiley">☻</div>
+		</div>
+
+		<!-- Next card is behind -->
+		<div id="next_card" class="card"></div>
+
+		<!-- Current card is on top -->
+		<div id="current_card">
+			<div class="scale_on_hover">
+				<div id="flip-container">
+					<div class="flipper">
+						<div id="ccard_front" class="card"></div>
+						<div id="ccard_back" class="card"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Did you get it right? -->
+	<div id="info">
+		<div id="question"></div>
+		<div id="answer" style="display:none">
+			<div id="a_label"></div>
+			<div id="a_no"></div>
+			<div id="a_yes"></div>
+		</div>
+		<div id="done" style="display:none"></div>
+	</div>
+
+</div>
+
+<!-- Default Labels -->
+<div id="default_labels">
+
+	<span id="multicard_q">
+		try to recall &uarr;
+		then flip ↻ 
+	</span>
+	<span id="multicard_cards_left">
+		(cards left: [N])
+	</span>
+	<span id="multicard_a">
+		did you remember this?
+	</span>
+	<span id="multicard_no">
+		nah, try again
+	</span>
+	<span id="multicard_yes">
+		yup, onwards!
+	</span>
+	<span id="multicard_done">
+		done for now! keep scrolling
+		<br>
+		&darr;
+	</span>
+
+	<!-- Flashcards -->
+	<span id="flashcard_test_a_front">
+		A?
+	</span>
+	<span id="flashcard_test_a_back">
+		Apple
+	</span>
+	<span id="flashcard_test_b_front">
+		B?
+	</span>
+	<span id="flashcard_test_b_back">
+		Banana
+	</span>
+	<span id="flashcard_test_c_front">
+		C?
+	</span>
+	<span id="flashcard_test_c_back">
+		COOL BEANS
+	</span>
+
+</div>
+
+</body>
+
+</html>
+
+<script src="../helpers.js"></script>
+<script src="multicard.js"></script>

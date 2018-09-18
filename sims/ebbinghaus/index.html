@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>The Forgetting Curve</title>
+	<link rel="stylesheet" type="text/css" href="ebbinghaus.css"/>
+</head>
+
+<body>
+<div id="content">
+	<div id="container">
+		<canvas id="graph" width="1000" height="500" style="width:500px; height:250px;"></canvas>
+		<div id="y_axis"></div>
+		<div id="x_axis"></div>
+		<div id="ui"></div>
+	</div>
+</div>
+
+<div id="default_labels">
+	<span id="ebbinghaus_y_axis">
+		*memory &rarr;
+	</span>
+	<span id="ebbinghaus_x_axis">
+		*time &rarr;
+	</span>
+	<span id="ebbinghaus_decay">
+		*decay:
+	</span>
+	<span id="ebbinghaus_forgetting">
+		*optimal:
+	</span>
+	<span id="ebbinghaus_recalls">
+		*recalls:
+	</span>
+	<span id="ebbinghaus_auto">
+		*auto
+	</span>
+</div>
+
+</body>
+
+</html>
+
+<script src="../helpers.js"></script>
+<script src="ebbinghaus.js"></script>

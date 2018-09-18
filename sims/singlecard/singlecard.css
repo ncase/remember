@@ -1,0 +1,70 @@
+/* FONT FACE */
+@font-face {
+	font-family: "PatrickHand";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../../css/PatrickHand-Regular.ttf) format('truetype');
+}
+
+body{
+	margin: 0;
+	font-family: "PatrickHand", Helvetica, Arial;
+	color: #000;
+	letter-spacing: 1px;
+	font-size: 40px;
+}
+
+/* entire container, keeps perspective */
+#container{
+	width: 440px;
+	height: 300px;
+	overflow: hidden;
+}
+.flip-container {
+	transition: 0.15s;
+	transform-origin: 200px 120px;
+	perspective: 1200px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.flip-container:hover {
+	transform: scale(1.03);
+}
+
+/* Flip it! */
+.flip-container[flip=yes] .flipper{
+	transform: rotateY(180deg);
+}
+.front, .back {
+	width: 400px; /* 5 x 3 */
+	height: 240px;
+	border-radius: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+.flipper {
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	transform-origin: 200px 120px;
+	position: absolute;
+	left: 20px;
+    top: 30px;
+}
+
+/* Front & Back */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background: #fff;
+}
+.back {
+	transform: rotateY(180deg);
+	background: #fff;
+}

@@ -1,0 +1,67 @@
+/* FONT FACE */
+@font-face {
+	font-family: "PatrickHand";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../../css/PatrickHand-Regular.ttf) format('truetype');
+}
+
+body{
+	margin: 0;
+	font-family: "PatrickHand", Helvetica, Arial;
+	color: #000;
+	padding: 0 10px;
+	background: #fff;
+	letter-spacing: 1px;
+}
+
+#content{
+	background: #fff;
+	width: 600px;
+	overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#container{
+	width: 500px;
+    margin: 30px auto;
+}
+
+
+#graph{
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+}
+#y_axis, #x_axis{
+	font-size: 18px;
+	position: absolute;
+	color: #000;
+}
+#y_axis{
+	position: absolute;
+	transform: rotate(-90deg);
+	left: -67px;
+    top: 114px;
+    text-align: right;
+    width: 200px;
+}
+#x_axis{
+	width: 200px;
+    left: 358px;
+    top: 282px;
+    text-align: right;
+}
+
+#ui{
+    margin-top: 25px;
+    font-size: 25px;
+    line-height: 1em;
+}
+input[fullw]{
+	width:100%;
+}
+
+#default_labels{
+	display:none;
+}
