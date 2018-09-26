@@ -8,6 +8,18 @@ flashcard.onclick = function(){
 		flashcard.setAttribute("flip","no");
 	}else{
 		flashcard.setAttribute("flip","yes");
+
+		// HACK: PLAY AUDIO
+		var a = $("#HACK_audio");
+		if(a){
+			a.play();
+			if(!a.onclick){
+				a.onclick = function(e){
+					e.stopPropagation();
+				};
+			}
+		}
+
 	}
 
 	// Also, send message (when flipped for first time)

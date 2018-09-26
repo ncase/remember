@@ -12,6 +12,27 @@
 	
 <div id="comic">
 
+
+<panel w=600 h=180>
+<words w=600 x=-15 no-bg>
+
+(<b>This is a work-in-progress!</b>
+Please don't share yet.
+<br>
+Let me know your honest feedback, thanks!)
+
+<br><br>
+
+(Also, this is <b>CHAPTER 2</b> of my prototype.
+You might wanna play <a href="http://ncase.me/memory-wip/" target="_blank">CHAPTER 1</a> first,
+if you haven't already.)
+
+</words>
+</panel>
+
+
+
+
 <!-- - - - - - - - - - - - -->
 <!-- THE ART of SRS - - - - -->
 <!-- - - - - - - - - - - - -->
@@ -44,7 +65,7 @@
 </panel>
 
 <panel w=500 h=400>
-<!--<pic src="pics/leit0.png" sx=500 sy=0></pic> curve + box -->
+<pic src="pics/leit0.png" sx=0 sy=1300></pic>
 <words x=10 y=10 w=430 h=90>
 	Remember: we need to space out our reviews with <i>increasing gaps of time</i>.
 	In the Leitner Box, we double the gap for each Level!
@@ -62,7 +83,7 @@
 </panel>
 
 <panel w=600 h=400 bg="#fff">
-<sim x=0 y=0 w=600 h=400 src="sims/calendar"></sim>
+<sim x=0 y=0 w=600 h=400 src="sims/calendar/"></sim>
 </panel>
 
 
@@ -93,8 +114,8 @@
 	Every card you get right goes up <i>one</i> Level.
 </words>
 <words x=30 y=330 w=430 h=60>
-	(If you're already at the final Level, congrats!
-	Your card gets to retire in Valhalla)
+	(If you're at the final Level, congrats!
+	Your card gets to retire in your long-term memory)
 </words>
 </panel>
 
@@ -124,14 +145,14 @@
 
 <panel w=600 h=80>
 <words w=600 x=-15 no-bg>
-	And that's all there is to it! 
-	Here's how the game plays out, over several days:
-	(Later, we'll see a sim for several <i>months</i>)
+	And that's all to it! 
+	Here's how the game plays out, over a few days:
+	(<b>There's no end. Once you "get it", just keep scrolling.</b>)
 </words>
 </panel>
 
-<panel w=600 h=520 bg="#fff">
-<sim x=0 y=0 w=600 h=520 src="sims/leitner"></sim>
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=1"></sim>
 </panel>
 
 
@@ -173,24 +194,26 @@
 
 <panel w=600 h=50>
 <words w=600 x=-15 no-bg>
-	Here's how the game plays out, over several months:
+	Here's how the game plays out, in the long, <i>long</i> run:
 </words>
 </panel>
 
-<panel w=600 h=520 bg="#fff">
-<sim x=0 y=0 w=600 h=520 src="sims/leitner"></sim>
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=2"></sim>
 </panel>
 
 
 
 <!-- Part 1.3: Leitner Outro -->
 
-<panel w=600 h=110>
+<panel w=600 h=140>
 <words w=600 x=-15 no-bg>
 	That's it. That's how you can make long-term memory a <i>choice</i>.
 </words>	
 <words w=600 x=-15 y=50 no-bg>
 	Let's let that sink in. Take a break, and recall what we just learnt:
+	<br>
+	<b>(CLICK CARD TO FLIP)</b>
 </words>
 </panel>
 
@@ -202,8 +225,10 @@
 
 <!-- Part 2.1: Pitfalls -->
 
-<panel w=600 h=80>
+<panel w=600 h=140>
 <words w=600 x=-15 no-bg>
+	<b>(TODO: Include practice flashcards from Chapter 1)</b>
+	<br><br>
 	Spaced Repetition almost seems too good to be true.
 	<br>
 	And it is... <i>IF</i> you fall for some very common pitfalls.
@@ -214,7 +239,7 @@
 <pic src="pics/leit1.png" sx=500 sy=0></pic> <!-- Library, humor -->
 <words x=10 y=10 w=420 h=60>
 	Memory isn't a bookshelf
-	where you collect random giant books to impress others.
+	where you collect random giant tomes to impress others.
 </words>
 <words x=10 y=350 w=450 h=60>
 	That's to say: Spaced Repetition will fail if your cards feel
@@ -258,14 +283,16 @@
 </words-->
 </panel>
 
-<panel w=450 h=50>
+<panel w=450 h=80>
 <words w=450 x=-15 no-bg>
 	This card sucks:
+	<br>
+	<b>(CLICK CARD TO FLIP)</b>
 </words>	
 </panel>
 
 <panel w=600 h=300 bg="#e0e0e0">
-<sim x=80 y=0 w=440 h=300 src="sims/singlecard?card=mitochondria_all"></sim>
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=mitochondria_all"></sim>
 </panel>
 
 <panel w=450 h=380>
@@ -275,41 +302,41 @@
 </words>
 <words x=10 y=250 w=400 h=90>
 	Let's cut it up into smaller, connected pieces!
-	As a rule of thumb, each flashcard should contain only <i>one</i> idea.
+	As a rule of thumb, <i>each flashcard should have one &amp; only one idea.</i>
 	Like so:
 </words>
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_1" class="small_card"></sim>
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_1" class="small_card"></sim>
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_2" class="small_card"></sim>
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_2" class="small_card"></sim>
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_3" class="small_card"></sim>
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_3" class="small_card"></sim>
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_4" class="small_card"></sim>
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_4" class="small_card"></sim>
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_5" class="small_card"></sim>
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_5" class="small_card"></sim>
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_6" class="small_card"></sim>
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_6" class="small_card"></sim>
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_7" class="small_card"></sim>
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_7" class="small_card"></sim>
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_8" class="small_card"></sim>
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_8" class="small_card"></sim>
 </panel>
 
 <panel w=450 h=90>
@@ -338,7 +365,7 @@
 </panel>
 
 <panel w=600 h=300 bg="#e0e0e0">
-<sim x=80 y=0 w=440 h=300 src="sims/singlecard?card=cat"></sim>
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat"></sim>
 </panel>
 
 <panel w=450 h=400>
@@ -354,7 +381,7 @@
 </panel>
 
 <panel w=600 h=300 bg="#e0e0e0">
-<sim x=80 y=0 w=440 h=300 src="sims/singlecard?card=cat2"></sim>
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat2"></sim>
 </panel>
 
 <panel w=600 h=300>
@@ -377,6 +404,9 @@
 	* Obviously, paper cards can't play sounds.
 	But apps like Anki/Tinycards can!
 </words>
+<audio controls style="position: absolute; top: 105px; left: 280px; transform: scale(0.4) rotate(4deg);">
+	<source src="audio/chat.mp3" type="audio/mpeg">
+</audio>
 </panel>
 
 <panel w=450 h=90>
@@ -414,7 +444,7 @@
 </panel>
 
 <panel w=600 h=300 bg="#e0e0e0">
-<sim x=80 y=0 w=440 h=300 src="sims/singlecard?card=learndo"></sim>
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=learndo"></sim>
 </panel>
 
 <panel w=450 h=30>
@@ -439,7 +469,7 @@
 	That, I believe, is the best way to keep yourself motivated while learning:
 </words>
 <words x=10 y=300 w=400 h=60>
-	By making sure your learning is in service of <i>something you actually care about.</i>
+	By making sure your learning is in service of <i>doing something you care about.</i>
 </words>
 </panel>
 
@@ -477,7 +507,7 @@
 <words x=10 y=20 w=300 no-bg>
 	This way, you can connect facts to things <i>you</i> know,
 	to pictures and sounds <i>you</i> like,
-	in service of something <i>you</i> love.
+	in service of doing something <i>you</i> love.
 </words>
 </panel>
 
@@ -500,6 +530,66 @@
 </panel>
 
 
+
+<panel w=600 h=930>
+<words w=600 x=-15 no-bg>
+
+<b>[END OF CHAPTER TWO]</b>
+
+<br><br>
+
+Sorry for the cliffhanger, again!
+The 3rd/final short chapter will have you make your <i>own</i> flashcards to these questions:
+
+<ul style="text-align:left">
+
+	<li>
+	WHAT do you want to learn?
+	</li>
+
+	<li>
+	WHY do you want to learn that? (to make your cards meaningful)
+	</li>
+
+	<li>
+	HOW will you learn? (choose: Leitner Box, or digital apps like Anki / TinyCards / etc)
+	</li>
+
+</ul>
+
+If you picked Anki/Tinycards, it'll help you download them and get started.
+If you picked a Leitner Box, it'll give you a 64-day calendar to download &amp; print out.
+
+<br><br>
+
+And finally, to <i>really</i> help you get started and keep going, you'll also get to download a laptop/phone wallpaper
+to remind you to do your Spaced Repetition.
+You'll also get to download <i>all the practice flashcards</i>
+in this interactive comic, including the ones you just made. These can be your first cards!
+
+<br><br>
+
+Hopefully... this all helps you start using Spaced Repetition <i>TODAY</i> – 
+letting you take better control of your learning, and fill the long-term memory library of your mind
+with wonderful things.
+
+<br><br>
+
+Anyway, please let me know your <i>honest</i> feedback so far!
+Early feedback helps me a lot. Many thanks in advance!
+
+<br><br>
+
+&lt;3,
+<br>~ Nicky
+
+</words>
+</panel>
+
+</div>
+
+
+
 </div>
 
 <!-- - - - - - - - - - -->
@@ -508,7 +598,12 @@
 
 <div id="labels">
 
-<!-- Calendar -->
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - THE LEITNER CALENDAR - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
 <span id="calendar_day">
 	On Day [N]...
 </span>
@@ -519,7 +614,13 @@
 	(and then loop back to Day 1!)
 </span>
 
-<!-- Leitner Box -->
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - THE LEITNER BOX - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
 <span id="leitner_day">
 	Day [N]
 </span>
@@ -536,10 +637,43 @@
 	total: [N] cards!
 </span>
 <span id="leitner_step_stats_2">
-	([N] in very-long-term memory)
+	([N] retired)
 </span>
 
-<!-- Multi Card Labels -->
+
+<span id="leitner_button_next_step">
+	next step
+</span>
+<span id="leitner_button_next_day">
+	next day
+</span>
+<span id="leitner_button_next_week">
+	next week
+</span>
+<span id="leitner_button_next_month">
+	next month
+</span>
+
+
+<span id="leitner_slider_new">
+	[N] new cards a day
+</span>
+<span id="leitner_slider_wrong">
+	recall [N]% of cards <i>wrong</i>
+</span>
+
+
+<span id="leitner_reset">
+	RESET
+</span>
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - MULTI-FLASHCARD - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
 <span id="multicard_q">
 	try to recall &uarr;
 	then flip ↻ 
@@ -566,9 +700,10 @@
 
 
 
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - FLASHCARDS FOR CHAPTER 2 - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-
-<!-- Flashcards -->
 <span id="flashcard_cat_front">
 	<div class="fcard_center" style="height:100px">
 		<div style="font-size:120px; height:75px;">
@@ -595,20 +730,24 @@
 </span>
 <span id="flashcard_cat2_back">
 	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=0></div>
-	<div class="fcard_center"></div>
+	<div class="fcard_center">
+		<audio controls id="HACK_audio" style="position: absolute; top: 115px; left: 30px; transform: scale(0.5);">
+			<source src="../../audio/chat.mp3" type="audio/mpeg">
+		</audio>
+	</div>
 </span>
 <!-- TODO: SOUND WHEN FLIP -->
 
 <span id="flashcard_learndo_front">
 	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=240></div>
 	<div class="fcard_center" style="height:195px; font-size:33px;">
-		...then back to doing...
+		...then back to doing... ↻
 	</div>
 </span>
 <span id="flashcard_learndo_back">
 	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=240></div>
 	<div class="fcard_center" style="height:195px; font-size:33px;">
-		...then back to learning...
+		...then back to learning... ↻
 	</div>
 </span>
 

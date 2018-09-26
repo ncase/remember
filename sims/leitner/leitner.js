@@ -25,9 +25,18 @@ CALCULATOR... nah.
 ********************************/
 
 window.onload = function(){
+	
 	BOXES[0] += NEW_CARDS;
 	_newStep();
 	update();
+
+	// Get Mode
+	window.MODE = parseInt( _getQueryVariable("mode") );
+	if(MODE==2){
+		$("#MODE2_time").style.display = "inline-block";
+		//$("#MODE2_sliders").style.display = "block";
+	}
+
 };
 
 //////////////////////////////////////////
@@ -46,10 +55,55 @@ c. Add new cards to Level 1
 ****************/
 
 var NEW_CARDS = 10;
+var CARDS_WRONG = 0.05;
 var _STAGE = 0;
 // 0 - new day
 // 1 - reviewing
 // 2 - adding
+
+// Button Labels
+$("#next_step").innerHTML = _getLabel("leitner_button_next_step");
+$("#next_day").innerHTML = _getLabel("leitner_button_next_day");
+$("#next_week").innerHTML = _getLabel("leitner_button_next_week");
+$("#next_month").innerHTML = _getLabel("leitner_button_next_month");
+$("#reset").innerHTML = _getLabel("leitner_reset");
+
+// RESET ALL
+$("#reset").onclick = function(){
+
+	BOXES = [
+		0,0,0,0,
+		0,0,0,0,
+	];
+	DAY = 0;
+	//ANIM_CARDS = BOXES.concat(); // clone
+	//ANIM_BOXES = BOXES.concat(); // clone
+	CURRENTLY_REVIEWED = -1;
+	QUEUE = [];
+
+	BOXES[0] += NEW_CARDS;
+	_STAGE = 0;
+	_newStep();
+	//update();
+
+};
+
+// UI Sliders
+
+var slider_new = $("#slider_new");
+slider_new.oninput = function(){
+	NEW_CARDS = parseInt(slider_new.value);
+	$("#slider_new_label").innerHTML = _getLabel("leitner_slider_new").replace("[N]",NEW_CARDS);
+};
+slider_new.oninput();
+
+var slider_wrong = $("#slider_wrong");
+slider_wrong.oninput = function(){
+	CARDS_WRONG = parseFloat(slider_wrong.value);
+	$("#slider_wrong_label").innerHTML = _getLabel("leitner_slider_wrong").replace("[N]",Math.round(CARDS_WRONG*100));
+};
+slider_wrong.oninput();
+
 
 function _updateLabels(){
 
@@ -129,7 +183,7 @@ function _newStep(skipLabels){
 		}else{
 			// 95% goes to next level
 			// the rest goes to ONE
-			passed = Math.round(total*0.95);
+			passed = Math.round(total*(1-CARDS_WRONG));
 			failed = total-passed;
 		}
 		BOXES[rIndex+1] += passed;

@@ -13,21 +13,38 @@ body{
 	padding: 0 10px;
 	background: #eee;
 	letter-spacing: 1px;
+	font-size: 25px;
 }
 
 #content{
 	background: #fff;
-	width: 600px;
+	width: 500px;
+	padding: 50px;
+	padding-top: 0px;
 	overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
 }
-#container{
+#ui{
+	position: absolute;
 	width: 500px;
-    margin: 0px auto;
+    top:40px;
+    left:50px;
 }
 
 #default_labels{
+	display:none;
+}
+#label_stats{
+	text-align: center;
+}
+#sliders{
+	font-size: 20px;
+	line-height: 1em;
+	margin-top: 25px;
+}
+
+#MODE2_time, #MODE2_sliders{
 	display:none;
 }

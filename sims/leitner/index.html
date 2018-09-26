@@ -8,22 +8,41 @@
 
 <body>
 <div id="content">
-	<div id="container">
-		<canvas id="sim" width="1000" height="800" style="width:500px; height:400px;"></canvas>
-		<button id="next_step">next STEP</button>
-		<button id="next_day">next DAY</button>
-		<button id="next_week">next WEEK</button>
-		<button id="next_month">next MONTH</button>
-		<hr>
-		<span id="label_day"></span>
-		<br>
+	<canvas id="sim" width="1000" height="800" style="width:500px; height:400px;"></canvas>
+	<div id="ui">
+		
+		<b><span id="label_day"></span></b>
+		–
 		<span id="label_step"></span>
 		<br>
-		<span id="label_stats"></span>
+
+		<button id="next_step"></button>
+		<span id="MODE2_time">
+			<button id="next_day"></button>
+			<button id="next_week"></button>
+			<button id="next_month"></button>
+		</span>
+		<button id="reset"></button>
+
+		<br>
+
+		<div id="sliders">
+			<span id="slider_new_label"></span>
+			<br>
+			<input id="slider_new" type="range" min=0 max=50 step=1 value=10>
+			<br>
+			<span id="slider_wrong_label"></span>
+			<br>
+			<input id="slider_wrong" type="range" min=0 max=0.1 step=0.01 value=0.05>
+		</div>
+
 	</div>
+	<div id="label_stats"></div>
 </div>
 
 <div id="default_labels">
+
+
 	<span id="leitner_day">
 		Day [N]
 	</span>
@@ -40,8 +59,36 @@
 		total: [N] cards!
 	</span>
 	<span id="leitner_step_stats_2">
-		([N] in very-long-term memory)
+		([N] retired)
 	</span>
+
+
+	<span id="leitner_button_next_step">
+		next step
+	</span>
+	<span id="leitner_button_next_day">
+		next day
+	</span>
+	<span id="leitner_button_next_week">
+		next week
+	</span>
+	<span id="leitner_button_next_month">
+		next month
+	</span>
+
+
+	<span id="leitner_slider_new">
+		[N] new cards a day
+	</span>
+	<span id="leitner_slider_wrong">
+		recall [N]% of cards <i>wrong</i>
+	</span>
+
+
+	<span id="leitner_reset">
+		RESET
+	</span>
+
 </div>
 
 </body>
