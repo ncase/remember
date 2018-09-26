@@ -54,12 +54,13 @@ window.onload = function(){
 
 	});
 
-	// Words... no bg? And, fontsize?
+	// Words... no bg? And, fontsize, color?
 	words.forEach(function(word){
 		var s = word.style;
 		var val;
 		if(val = word.getAttribute("bg")) s.background = val;
 		if(val = word.getAttribute("fontsize")) s.fontSize = s.lineHeight = val+"px";
+		if(val = word.getAttribute("color")) s.color = val;
 	});
 
 	// Panels... Any MESSAGES?

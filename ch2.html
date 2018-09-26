@@ -34,7 +34,7 @@
 <panel w=500 h=400>
 <pic src="pics/leit0.png" sx=500 sy=0></pic> <!-- poker: me vs brain -->
 <words x=10 y=10 w=430 h=60>
-	This method is called The Leitner System.
+	This setup is called The Leitner Box.
 	It's like a card game you play against yourself!
 </words>
 <words x=30 y=300 w=430 h=60>
@@ -43,36 +43,34 @@
 </words>
 </panel>
 
-<panel w=400 h=200 bg="#bada55">
-"wait, what's a flashcard?"
-<!-- This is, ya goof -->
-<!--<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,sci_c"></sim>-->
-</panel>
-
-<panel w=400 h=200 bg="#bada55">
-"what kind of stuff can I learn with flashcards?"
-<!-- This is, ya goof -->
-<!--<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,sci_c"></sim>-->
-</panel>
-
-<panel w=600 h=80>
-<words w=600 x=-15 no-bg>
-	We need to space out our recalls with <i>increasing gaps of time</i>.
-	So, here's a calendar of when to review which Level's cards:
+<panel w=500 h=400>
+<!--<pic src="pics/leit0.png" sx=500 sy=0></pic> curve + box -->
+<words x=10 y=10 w=430 h=90>
+	Remember: we need to space out our reviews with <i>increasing gaps of time</i>.
+	In the Leitner Box, we double the gap for each Level!
+</words>
+<words x=30 y=270 w=430 h=90>
+	So we review Level 1 every day, Level 2 every two days, Level 3 every <i>FOUR</i> days,
+	Level 4 every <i>EIGHT</i> days... and so on.
 </words>
 </panel>
 
-<panel w=600 h=300 bg="#bada55">
-<!-- Note: Level 4 THEN 2 THEN 1... -->
+<panel w=600 h=60>
+<words w=600 x=-15 no-bg>
+	Here's what that looks like over a 64-day, looping calendar:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#fff">
+<sim x=0 y=0 w=600 h=400 src="sims/calendar"></sim>
 </panel>
 
 
 <!-- Part 1.2: Leitner Rules -->
 
-<panel w=600 h=80>
+<panel w=600 h=60>
 <words w=600 x=-15 no-bg>
-	But how do cards move <i>between</i> Levels?
-	How do you play this game of Spaced Repetition Solitaire?
+	Now, how <i>do</i> you play this game of Spaced Repetition Solitaire?
 </words>
 </panel>
 
@@ -90,9 +88,9 @@
 <panel w=500 h=430>
 <pic src="pics/leit0.png" sx=500 sy=450></pic> <!-- valhalla -->
 <words x=10 y=10 w=430 h=90>
-	When you review the cards in a Level, first, shuffle them.
-	Then, try to recall them.
-	Each card you get right goes up one Level.
+	Every day, review your Levels from highest to lowest.
+	Shuffle each Level's cards first.
+	Every card you get right goes up <i>one</i> Level.
 </words>
 <words x=30 y=330 w=430 h=60>
 	(If you're already at the final Level, congrats!
@@ -103,12 +101,12 @@
 <panel w=500 h=400>
 <pic src="pics/leit0.png" sx=0 sy=900></pic> <!-- HIGH STAKES -->
 <words x=10 y=10 w=430 h=60>
-	But each card you get wrong... goes
+	However, every card you get wrong... has to go
 	<i>all the way back down to Level 1.</i>
 </words>
 <words x=30 y=300 w=430 h=60>
-	(You can change the rules – it's <i>your</i> shoebox –
-	but I recommend playing it this way)
+	(You can change the rules – I mean, it's <i>your</i> shoebox –
+	but I recommend playing this way)
 </words>
 </panel>
 
@@ -126,13 +124,14 @@
 
 <panel w=600 h=80>
 <words w=600 x=-15 no-bg>
-	And that's it! 
-	Here's how the game plays out over several days:
+	And that's all there is to it! 
+	Here's how the game plays out, over several days:
 	(Later, we'll see a sim for several <i>months</i>)
 </words>
 </panel>
 
-<panel w=600 h=300 bg="#bada55">
+<panel w=600 h=520 bg="#fff">
+<sim x=0 y=0 w=600 h=520 src="sims/leitner"></sim>
 </panel>
 
 
@@ -141,7 +140,7 @@
 
 <panel w=600 h=110>
 <words w=600 x=-15 no-bg>
-	Each daily session takes 20-30 minutes.
+	Each daily review takes 20-30 minutes.
 	Instead of watching a TV episode, you could play a card game –
 	and remember anything you want <i>for life</i>.
 </words>
@@ -174,11 +173,12 @@
 
 <panel w=600 h=50>
 <words w=600 x=-15 no-bg>
-	Here's what that looks like, over several months:
+	Here's how the game plays out, over several months:
 </words>
 </panel>
 
-<panel w=600 h=300 bg="#bada55">
+<panel w=600 h=520 bg="#fff">
+<sim x=0 y=0 w=600 h=520 src="sims/leitner"></sim>
 </panel>
 
 
@@ -194,8 +194,8 @@
 </words>
 </panel>
 
-<panel w=600 h=400 bg="#bada55">
-<!--<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,sci_c"></sim>-->
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_a,leit_b,leit_c"></sim>
 </panel>
 
 
@@ -206,27 +206,27 @@
 <words w=600 x=-15 no-bg>
 	Spaced Repetition almost seems too good to be true.
 	<br>
-	And it is... <i>IF</i> you fall for 3 very common pitfalls.
+	And it is... <i>IF</i> you fall for some very common pitfalls.
 </words>	
 </panel>
 
 <panel w=500 h=450>
 <pic src="pics/leit1.png" sx=500 sy=0></pic> <!-- Library, humor -->
-<words x=10 y=10 w=430 h=60>
-	Spaced Repetition will fail if your cards feel
-	bloated, disconnected, or meaningless.
+<words x=10 y=10 w=420 h=60>
+	Memory isn't a bookshelf
+	where you collect random giant books to impress others.
 </words>
-<words x=30 y=350 w=430 h=60>
-	Memory isn't a private library,
-	where you hoard a bunch of random books to impress others.
+<words x=10 y=350 w=450 h=60>
+	That's to say: Spaced Repetition will fail if your cards feel
+	<i>bloated</i>, <i>disconnected</i> or <i>meaningless</i>.
 </words>
 </panel>
 
 <panel w=500 h=450>
 <pic src="pics/leit1.png" sx=500 sy=450></pic> <!-- Jigsaw ANGRY FACE -->
 <words x=10 y=10 w=430 h=90>
-	Memory is more like a jigsaw puzzle, full of tiny pieces joined together.
-	(This is also how neurons work: lots of tiny, connected things)
+	Instead, memory is like a jigsaw puzzle: full of small, connected pieces.
+	(This is also how neurons work: lots of small, connected things)
 </words>
 <words x=30 y=380 w=430 h=30>
 	It's not about <i>collection</i>, it's about <i>connection</i>.
@@ -236,19 +236,26 @@
 <panel w=500 h=400>
 <pic src="pics/leit1.png" sx=500 sy=900></pic>
 <words x=10 y=10 w=410 h=60>
-	So, to get the most out of Spaced Repetition,
+	Thus, to get the most out of Spaced Repetition,
 	you must make your cards...
 </words>
 <!--SMALL, CONNECTED, and MEANINGFUL.-->
+</panel>
+
+
+<panel w=450 h=60>
+<words w=450 x=-15 no-bg>
+	Let's see how.
+</words>	
 </panel>
 
 <!-- Part 2.2: Small -->
 
 <panel w=600 h=150>
 <pic src="pics/leit2.png" sx=0 sy=0></pic>
-<words x=10 y=10 w=200>
+<!--words x=10 y=10 w=200>
 	<b>SMALL</b>
-</words>
+</words-->
 </panel>
 
 <panel w=450 h=50>
@@ -257,24 +264,52 @@
 </words>	
 </panel>
 
-<panel w=400 h=200 bg="#bada55">
-<!-- Mitochrondria? -->
-<!--<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,sci_c"></sim>-->
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard?card=mitochondria_all"></sim>
 </panel>
 
-<panel w=450 h=350>
+<panel w=450 h=380>
 <pic src="pics/leit2.png" sx=0 sy=450></pic>
 <words x=10 y=10 w=400 h=30>
 	It's too big. Too much information.
 </words>
-<words x=10 y=250 w=400 h=60>
-	Instead, let's cut in up into a bunch of smaller, connected pieces,
-	like so:
+<words x=10 y=250 w=400 h=90>
+	Let's cut it up into smaller, connected pieces!
+	As a rule of thumb, each flashcard should contain only <i>one</i> idea.
+	Like so:
 </words>
 </panel>
 
-<panel w=400 h=600 bg="#bada55">
-<!--<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,sci_c"></sim>-->
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_1" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_2" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_3" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_4" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_5" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_6" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_7" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard?card=mitochondria_8" class="small_card"></sim>
 </panel>
 
 <panel w=450 h=90>
@@ -289,23 +324,22 @@
 
 <panel w=600 h=150>
 <pic src="pics/leit2.png" sx=0 sy=150></pic>
-<words x=10 y=10 w=200>
+<!--words x=10 y=10 w=200>
 	<b>CONNECTED</b>
-</words>
+</words-->
 </panel>
 
 <panel w=450 h=110>
 <words w=450 x=-15 no-bg>
 	This card is... alright.
 	It's an English word on the front, French word on the back.
-	It's the standard for most flashcards:
+	It's the standard for most language-learning flashcards:
 </words>	
 </panel>
 
-<panel w=400 h=200 bg="#bada55">
-<!--<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,sci_c"></sim>-->
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard?card=cat"></sim>
 </panel>
-
 
 <panel w=450 h=400>
 <pic src="pics/leit2.png" sx=0 sy=800></pic>
@@ -314,20 +348,19 @@
 </words>
 <words x=10 y=300 w=400 h=60>
 	If you connected it to
-	<i>images, sounds, context, and/or personal details!</i>
+	<i>pictures, sounds, context, and/or personal details!</i>
 	Like so:
 </words>
 </panel>
 
-<panel w=400 h=200 bg="#bada55">
-<!-- comically FAT cat -->
-<!--<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,sci_c"></sim>-->
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard?card=cat2"></sim>
 </panel>
 
 <panel w=600 h=300>
 <pic src="pics/leit2.png" sx=600 sy=0></pic>
-<words x=10 y=10 w=200>
-	The front now has a drawing of a cat (image)
+<words x=10 y=10 w=210>
+	The front now has a drawing of a cat (picture)
 	with a fill-in-the-blank French sentence (context: grammar)
 	about my childhood cat, Stripes. (personal)
 </words>
@@ -335,12 +368,12 @@
 
 <panel w=600 h=300>
 <pic src="pics/leit2.png" sx=600 sy=300></pic>
-<words x=10 y=10 w=200>
-	The back now has a symbol of the noun's gender (image),
+<words x=10 y=10 w=210>
+	The back now has a symbol of the noun's gender (picture),
 	its pronunciation (sound*),
-	and a warning not to use the female version. (context: slang)
+	and a warning about the female version of the noun. (context: slang)
 </words>
-<words w=330 x=240 y=230 no-bg fontsize=20>
+<words w=330 x=250 y=225 no-bg fontsize=20>
 	* Obviously, paper cards can't play sounds.
 	But apps like Anki/Tinycards can!
 </words>
@@ -358,16 +391,16 @@
 
 <panel w=600 h=150>
 <pic src="pics/leit2.png" sx=0 sy=300></pic>
-<words x=10 y=10 w=200>
+<!--words x=10 y=10 w=200>
 	<b>MEANINGFUL</b>
-</words>
+</words-->
 </panel>
 
 <panel w=500 h=350>
 <pic src="pics/leit2.png" sx=450 sy=600></pic> <!-- examples: programming, ukulele, french -->
 <words x=10 y=10 w=450 h=60>
 	Personally, here's how I've learnt best:
-	First, I try to <b>do</b> something.
+	First, I try (emphasis on <i>try</i>) to <b>do</b> something.
 </words>
 </panel>
 
@@ -380,13 +413,8 @@
 </words>
 </panel>
 
-<panel w=400 h=200 bg="#bada55">
-<!--
-..and then back to doing.
--->
-<!--
-...and then back to learning.
--->
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard?card=learndo"></sim>
 </panel>
 
 <panel w=450 h=30>
@@ -420,14 +448,13 @@
 <panel w=600 h=90>
 <words w=600 x=-15 no-bg>
 	Speaking of learning, let's practice recalling what we've learnt:
-	(this is the second-last time!)
+	(this will be the second-last time!)
 </words>
 </panel>
 
-<panel w=600 h=400 bg="#bada55">
-<!--<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,sci_c"></sim>-->
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_d,leit_b,leit_a,leit_c"></sim>
 </panel>
-
 
 
 <!-- Part 2.5: Outro -->
@@ -440,34 +467,34 @@
 <!-- SMALL, CONNECTED, MEANINGFUL -->
 <words x=30 y=320 w=430 h=90>
 	...are why it's consensus among the Spaced Repetition community that,
-	for the most part,
-	<b>you should make your own cards.</b>
+	after a while,
+	<b>you should start making your own cards.</b>
 </words>
 </panel>
 
 <panel w=400 h=400>
 <pic src="pics/leit3.png" sx=0 sy=450></pic> <!-- me, talking -->
-<words x=10 y=10 w=300 no-bg>
+<words x=10 y=20 w=300 no-bg>
 	This way, you can connect facts to things <i>you</i> know,
-	to images and sounds <i>you</i> like,
+	to pictures and sounds <i>you</i> like,
 	in service of something <i>you</i> love.
 </words>
 </panel>
 
 <panel w=400 h=400>
 <pic src="pics/leit3.png" sx=400 sy=450></pic>
-<words x=10 y=10 w=300 no-bg>
+<words x=10 y=15 w=300 no-bg>
 	That's why, in the <i>final</i> part of this interactive comic,
-	you're going to make your own cards!
+	you're going to make your <i>own</i> cards!
 </words>
-<words x=30 y=160 w=170 no-bg>
-	And these cards will be about...
+<words x=30 y=165 w=170 no-bg>
+	And those cards will be about...
 </words>
 </panel>
 
 <panel w=400 h=400>
 <pic src="pics/leit3.png" sx=800 sy=450></pic> <!-- goofy pic -->
-<words x=130 y=10 w=230 fontsize=150 no-bg>
+<words x=0 y=10 w=230 fontsize=150 no-bg color="#ffffff">
 	YOU
 </words>
 </panel>
@@ -481,25 +508,288 @@
 
 <div id="labels">
 
-<div id="default_labels">
-	<span id="leitner_day">
-		Day [N]
-	</span>
-	<span id="leitner_step_to_review">
-		to review: Level
-	</span>
-	<span id="leitner_step_reviewing">
-		review Level [N]
-	</span>
-	<span id="leitner_step_new">
-		add [N] new cards
-	</span>
-	<span id="leitner_step_stats">
-		total: [N] cards!
-	</span>
-	<span id="leitner_step_stats_2">
-		([N] in very-long-term memory)
-	</span>
+<!-- Calendar -->
+<span id="calendar_day">
+	On Day [N]...
+</span>
+<span id="calendar_review">
+	review Levels [N] (<i>in that order</i>)
+</span>
+<span id="calendar_loop">
+	(and then loop back to Day 1!)
+</span>
+
+<!-- Leitner Box -->
+<span id="leitner_day">
+	Day [N]
+</span>
+<span id="leitner_step_to_review">
+	to review: Level
+</span>
+<span id="leitner_step_reviewing">
+	review Level [N]
+</span>
+<span id="leitner_step_new">
+	add [N] new cards
+</span>
+<span id="leitner_step_stats">
+	total: [N] cards!
+</span>
+<span id="leitner_step_stats_2">
+	([N] in very-long-term memory)
+</span>
+
+<!-- Multi Card Labels -->
+<span id="multicard_q">
+	try to recall &uarr;
+	then flip ↻ 
+</span>
+<span id="multicard_cards_left">
+	(cards left: [N])
+</span>
+<span id="multicard_a">
+	did you remember this?
+</span>
+<span id="multicard_no">
+	nah, try again
+</span>
+<span id="multicard_yes">
+	yup, onwards!
+</span>
+<span id="multicard_done">
+	done for now! keep scrolling
+	<br>
+	&darr;
+</span>
+
+
+
+
+
+
+
+<!-- Flashcards -->
+<span id="flashcard_cat_front">
+	<div class="fcard_center" style="height:100px">
+		<div style="font-size:120px; height:75px;">
+			cat
+		</div>
+		<div>
+			(english)
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat_back">
+	<div class="fcard_center" style="height:100px">
+		<div style="font-size:120px; height:75px;">
+			chat
+		</div>
+		<div>
+			(french)
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=0></div>
+	<div class="fcard_center"></div>
+</span>
+<span id="flashcard_cat2_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=0></div>
+	<div class="fcard_center"></div>
+</span>
+<!-- TODO: SOUND WHEN FLIP -->
+
+<span id="flashcard_learndo_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		...then back to doing...
+	</div>
+</span>
+<span id="flashcard_learndo_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		...then back to learning...
+	</div>
+</span>
+
+<!-- MITOCHONDRIA IS THE POWERHOUSE OF THE CELL -->
+<span id="flashcard_mitochondria_all_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		What's this?
+	</div>
+</span>
+<span id="flashcard_mitochondria_all_back">
+	<div class="fcard_center" style="height:220px; font-size:20px;">
+		This organelle is called "mitochondria".
+		Mitochondria is the powerhouse of the cell.
+		They're found in almost all eukaryotic (nucleus-having) organisms.
+		The most widely-accepted hypothesis for the origin of mitochondria is Endosymbiotic Theory:
+		around ~1.5 billion years ago, a prokaryotic (nucleus-lacking) cell that was "eaten" by another cell,
+		somehow survived, and has continued to live inside them ever since.
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		What's this?
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_back">
+	<div class="fcard_center" style="height:1.5em;">
+		Mitochondria
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960></div>
+	<div class="fcard_center" style="height:180px">
+		Mitochondria is the <span class="underline">_______</span> of the cell
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_back">
+	<div class="fcard_center" style="height:150px">
+		powerhouse
+		<span class="bonus_note">
+		// bonus note: seriously though, we'd all be dead without 'em.
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:45px"></div>
+	<div class="fcard_center" style="height:180px;">
+		Mitochondria is found in almost all <span class="underline">____</span> organisms.
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_back">
+	<div class="fcard_center" style="height:1.5em">
+		eukaryotic
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_front">
+	<div class="fcard_center" style="height:2.5em">
+		Eukaryotes are cells that...
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		have a nucleus
+		<span class="bonus_note">
+		// bonus note: "eu"=good, "karyon"=kernel
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_front">
+	<div class="fcard_center" style="height:2.5em">
+		Prokaryotes are cells that...
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		DON'T have a nucleus
+		<span class="bonus_note">
+		// bonus note: "pro"=before, "karyon"=kernel
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:10px"></div>
+	<div class="fcard_center" style="height:200px; font-size:35px">
+		The most widely-accepted hypothesis for the origin of mitochondria is...
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_back">
+	<div class="fcard_center" style="height:120px">
+		Endosymbiotic Theory
+		<span class="bonus_note">
+		// bonus note: "endo"=inner, "sym"=together, "bio"=living
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 35px; height: 220px;">
+		According to Endosymbiotic Theory, mitochondria arose around
+		<span class="underline">____</span> years ago
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_back">
+	<div class="fcard_center" style="height:1.5em">
+		~1.5 billion years ago
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 37px; height: 220px;">
+		According to Endosymbiotic Theory, mitochondria first arose when...
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_back">
+<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1440></div>
+	<div class="fcard_center" style="height:230px">
+		when a prokaryote was eaten by another cell
+	</div>
+</span>
+
+<!-- Spaced Rep Flashcards -->
+<span id="flashcard_leit_a_front">
+	<div class="fcard_center" style="height:4.5em">
+	In the Leitner Box, we <span class="underline">______</span>
+	the gap (# of days between reviews) for each Level
+	</div>
+</span>
+<span id="flashcard_leit_a_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=720 style="left:-5px"></div>
+	<div class="fcard_center" style="height:110px">
+	double the gap
+	</div>
+</span>
+<span id="flashcard_leit_b_front">
+	<div class="fcard_center" style="height:4.5em">
+	The Leitner Box game:
+	<br>
+	when you get a card <i>right</i>, you move it <span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_b_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=480></div>
+	<div class="fcard_center" style="height:170px">
+	up one Level
+	</div>
+</span>
+<span id="flashcard_leit_c_front">
+	<div class="fcard_center" style="height:4.5em">
+	The Leitner Box game:
+	<br>
+	when you get a card <i>wrong</i>, you move it <span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_c_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=480></div>
+	<div class="fcard_center" style="height:180px">
+	back to Level 1!
+	</div>
+</span>
+<span id="flashcard_leit_d_front">
+	<div class="fcard_center" style="font-size:30px; height:170px;">
+	According to some random comic-game on the internet,
+	my Spaced Repetition flashcards should be
+	<span class="underline">______</span> ,
+	<span class="underline">______</span> , and 
+	<span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_d_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=720></div>
+	<div class="fcard_center" style="color:#fff; height:200px; height: 180px; font-size: 30px;">
+	small, connected &amp; meaningful
+	</div>
+</span>
+
+
+
+
 </div>
 
 </div>

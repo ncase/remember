@@ -1,3 +1,5 @@
+Math.TAU = Math.PI*2; // i'm twice the number you'll ever be
+
 // The poor man's jQuery
 function $(query){
 	return document.querySelector(query);

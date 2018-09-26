@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>The Calendar</title>
+	<link rel="stylesheet" type="text/css" href="calendar.css"/>
+</head>
+
+<body>
+<div id="content">
+	<div id="container">
+		<span id="label_day"></span>
+		<input id="day" type="range" style="width:100%" min=1 max=64 step=1 value=1></input>
+		<span id="label_review"></span>
+		<canvas id="sim" width="1000" height="380" style="width:500px; height:190px;"></canvas>
+	</div>
+</div>
+
+<div id="default_labels">
+	<span id="calendar_day">
+		On Day [N]...
+	</span>
+	<span id="calendar_review">
+		review Levels [N] (<i>in that order</i>)
+	</span>
+	<span id="calendar_loop">
+		(and then loop back to Day 1!)
+	</span>
+</div>
+
+</body>
+
+</html>
+
+<script src="../helpers.js"></script>
+<script src="calendar.js"></script>

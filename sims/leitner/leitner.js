@@ -204,7 +204,7 @@ var COLORS = [
 	"#0392cf", // blue
 	"#673888", // indigo-ish
 	"#ef4f91", // violet-ish
-	"#eeeeee"  // white. VALHALLA.
+	"#e0e0e0"  // white. VALHALLA.
 ];
 var BOXES = [
 	0,0,0,0,
