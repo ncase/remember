@@ -1,0 +1,15 @@
+/* FONT FACE */
+@font-face {
+	font-family: "PatrickHand";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../../css/PatrickHand-Regular.ttf) format('truetype');
+}
+
+body{
+	background:#bada55;
+}
+canvas{
+	width:150px;
+	margin: 5px;
+}
