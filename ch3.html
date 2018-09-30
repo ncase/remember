@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>An Interactive Comic</title>
+
+	<link rel="stylesheet" type="text/css" href="css/comic.css"/>
+
+</head>
+
+<body>
+	
+<div id="comic">
+
+
+<!-- - - - - - - - - - - - -->
+<!-- WHAT, WHY, HOW, WHEN - -->
+<!-- - - - - - - - - - - - -->
+
+
+<!-- Part 1.1: Leitner Calendar -->
+
+<panel w=500 h=450>
+<pic src="pics/leit0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	dasd sad assad ddasdasdasdas asdasdsd asds
+</words>
+<words x=30 y=350 w=430 h=60>
+	asdasdassaasd asdassadas sadasd s asdas as
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#fff">
+<sim x=0 y=0 w=600 h=400 src="sims/type/?card=test"></sim>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	dasd sad assad ddasdasdasdas asdasdsd asds
+</words>
+<words x=30 y=350 w=430 h=60>
+	asdasdassaasd asdassadas sadasd s asdas as
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=test&refresh=yes"></sim>
+</panel>
+
+
+
+<!-- - - - - - - - - - -->
+<!-- SIMULATION LABELS -->
+<!-- - - - - - - - - - -->
+
+<div id="labels">
+
+<!-- MITOCHONDRIA IS THE POWERHOUSE OF THE CELL -->
+<span id="flashcard_test_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		What's this?
+	</div>
+</span>
+<span id="flashcard_test_back">
+	<div class="fcard_center" editable="test">
+		Mitochondria
+	</div>
+</span>
+
+</div>
+
+
+</body>
+
+</html>
+
+<script src="js/minpubsub.src.js"></script>
+<script src="js/comic.js"></script>

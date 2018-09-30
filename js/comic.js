@@ -88,6 +88,16 @@ window.getLabel = function(name){
 	return $("#"+name).innerHTML;
 }
 
-window.broadcastMessage = function(message){
-	publish(message);
+window.broadcastMessage = function(message, args){
+	publish(message, args);
 };
+
+// Editable Flashcard Labels
+$all("div[editable]").forEach(function(dom){
+
+	var cardname = dom.getAttribute("editable");
+	subscribe("answer_edit_"+cardname, function(text){
+		dom.innerText = text;
+	});
+
+});
