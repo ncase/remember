@@ -37,8 +37,8 @@ b, strong{
 }
 #comic panel{
 	display: inline-block;
-	width: 250px;
-	height: 250px;
+	width: 400px;
+	height: 300px;
 	/*border: 2px solid #ccc;*/
 	margin: 5px;
 	position: relative;

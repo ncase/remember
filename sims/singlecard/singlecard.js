@@ -51,7 +51,7 @@ if(_getQueryVariable("refresh")=="yes"){
 
 	var _reAlign = function(){
 		var bounds = dom.getBoundingClientRect();
-		dom.style.top = (((240-bounds.height)/2)-10) +"px";
+		dom.style.top = (((240-bounds.height-10)/2)) +"px";
 	};
 	_reAlign();
 

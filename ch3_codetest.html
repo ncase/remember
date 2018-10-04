@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>An Interactive Comic</title>
+
+	<link rel="stylesheet" type="text/css" href="css/comic.css"/>
+
+</head>
+
+<body>
+	
+<div id="comic">
+
+
+<!-- - - - - - - - - - - - -->
+<!-- WHAT, WHY, HOW, WHEN - -->
+<!-- - - - - - - - - - - - -->
+
+
+<!-- Part 1.1: Leitner Calendar -->
+
+<panel w=500 h=450>
+<pic src="pics/leit0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	dasd sad assad ddasdasdasdas asdasdsd asds
+</words>
+<words x=30 y=350 w=430 h=60>
+	asdasdassaasd asdassadas sadasd s asdas as
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#fff">
+<sim x=0 y=0 w=600 h=400 src="sims/type/?card=test"></sim>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	dasd sad assad ddasdasdasdas asdasdsd asds
+</words>
+<words x=30 y=350 w=430 h=60>
+	asdasdassaasd asdassadas sadasd s asdas as
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=test&refresh=yes"></sim>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=mitochondria_7"></sim>
+</panel>
+
+<panel w=600 h=400 bg="#fff">
+<sim x=0 y=0 w=600 h=400 src="sims/downloads/all.html"></sim>
+</panel>
+
+
+
+<!-- - - - - - - - - - -->
+<!-- SIMULATION LABELS -->
+<!-- - - - - - - - - - -->
+
+<div id="labels">
+
+<!-- MITOCHONDRIA IS THE POWERHOUSE OF THE CELL -->
+<span id="flashcard_test_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div id="fc_words" class="fcard_center" style="height:160px;">
+		What's this?
+	</div>
+</span>
+<span id="flashcard_test_back">
+	<div id="fc_words" class="fcard_center" editable="test">
+		Mitochondria
+	</div>
+</span>
+
+<!-- 
+
+TO TEST DOWNLOADING OF ALL THE CARDS
+
+-->
+
+<span id="flashcard_sci_a_front">
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	여보세요
+	Здравствуйте
+	</div>
+</span>
+<span id="flashcard_sci_a_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width: 250px; top:60px; left:150px; line-height: 1.1em;">
+	你好
+	こんにちは
+	</div>
+</span>
+
+<span id="flashcard_mitochondria_7_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div id="fc_words" class="fcard_center" style="font-size: 35px; height: 220px;">
+		According to Endosymbiotic Theory, mitochondria arose around
+		<span class="underline">____</span> years ago
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_back">
+	<div id="fc_words" class="fcard_center" style="height:1.5em">
+		~1.5 billion years ago
+	</div>
+</span>
+
+<span id="flashcard_mitochondria_8_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div id="fc_words" class="fcard_center" style="font-size:37px; height:220px;">
+		According to Endosymbiotic Theory, mitochondria first arose when...
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1440></div>
+	<div id="fc_words" class="fcard_center" style="height:230px">
+		when a prokaryote was eaten by another cell
+	</div>
+</span>
+<span id="flashcard_sci_c_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	The Forgetting Curve (<i>with</i> optimally-spaced recalls) looks like...
+	</div>
+</span>
+<span id="flashcard_sci_c_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 360px; top: 120px; left: 20px; font-size:20px; line-height: 1.1em;">
+	(note: the gaps between recalls <i>increase</i> in length)
+	</div>
+</span>
+
+</div>
+
+
+</body>
+
+</html>
+
+<script src="js/minpubsub.src.js"></script>
+<script src="js/comic.js"></script>
