@@ -10,11 +10,15 @@
 
 // CARDS TO LOAD
 var CARDNAMES = [
-	"test",
+	/*"test",
 	"sci_a",
 	"mitochondria_7",
 	"mitochondria_8",
-	"sci_c"
+	"sci_c"*/
+	"you_what",
+	"you_why",
+	"you_how",
+	"you_when",
 ];
 
 var download_btn = $("#download");

@@ -16,9 +16,39 @@ The Process:
 	<link rel="stylesheet" type="text/css" href="type.css"/>
 </head>
 <body>
-	<input id="answer" type="text"></input>
+	<div id="card_container">
+		<div id="question">AHH</div>
+		<div id="card">
+			<input id="answer" type="text"></input>
+			<div id="suggestion_header">
+			</div>
+			<div id="suggestions_list">
+			</div>
+		</div>
+	</div>
 </body>
 </html>
+
+<!-- Default Labels -->
+<div id="default_labels">
+
+	<span id="type_question">
+		Q: WHAT do you want to learn?
+	</span>
+	<span id="type_placeholder">
+		(type your answer here)
+	</span>
+	<span id="type_suggestions">
+		suggestions:
+	</span>
+	<span id="type_suggestions_list">
+		<li>The Leitner Box</li>
+		<li>Anki</li>
+		<li>TinyCards</li>
+		<li>(other)</li>
+	</span>
+
+</div>
 
 <script src="../helpers.js"></script>
 <script src="type.js"></script>

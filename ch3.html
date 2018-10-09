@@ -49,14 +49,9 @@ So, here's the <i>front</i> of our first flashcard, our question:
 </words>
 </panel>
 
-<panel w=400 h=240 bg="#ff4040" style="margin-top:20px">
-<!-- Suggestions:
-What do you want to learn?
-EVERYTHING (just curiosity)
-a new language | an instrument | details of friends' lives |
-the history of your country | countries of the world |
-the entire list of pokémon
--->
+<!-- WHAT do you want to learn? -->
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_what"></sim>
 </panel>
 
 <!--
@@ -97,9 +92,9 @@ the entire list of pokémon
 </words>
 </panel>
 
-<panel w=400 h=240 bg="#ff4040" style="margin:20px 0 10px 0">
-<!-- Suggestions:
--->
+<!-- WHY do you want to learn that? -->
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_why"></sim>
 </panel>
 
 
@@ -145,9 +140,9 @@ the entire list of pokémon
 </words>
 </panel>
 
-<panel w=400 h=240 bg="#ff4040" style="margin-bottom:20px">
-<!-- Suggestions:
--->
+<!-- HOW do you want to do Spaced Repetition? -->
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_how"></sim>
 </panel>
 
 
@@ -219,9 +214,9 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 </words>
 </panel>
 
-<panel w=400 h=240 bg="#ff4040" style="margin-bottom:20px">
-<!-- Suggestions:
--->
+<!-- WHEN do you want to do Spaced Repetition? -->
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_when"></sim>
 </panel>
 
 
@@ -238,27 +233,19 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<!--
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_1" class="small_card"></sim>
--->
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_what&refresh=yes" class="small_card"></sim>
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<!--
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_2" class="small_card"></sim>
--->
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_why&refresh=yes" class="small_card"></sim>
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<!--
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_3" class="small_card"></sim>
--->
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_how&refresh=yes" class="small_card"></sim>
 </panel>
 
 <panel w=264 h=180 bg="#e0e0e0">
-<!--
-<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_4" class="small_card"></sim>
--->
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_when&refresh=yes" class="small_card"></sim>
 </panel>
 
 
@@ -295,35 +282,43 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 
 <!-- Reminder Wallpaper --> 
 
-<panel w=600 h=100>
+<panel w=600 h=80>
 <words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
 	<b>FIRST:</b>
-	a wallpaper for your desktop,
-	<!--a lock screen wallpaper for your phone,-->
-	to remind you to play your Spaced Repetition game each day!
+	<span id="gift_wallpaper"></span>
+	to remind you to play the Spaced Repetition game daily!
 </words>
 </panel>
 
+<div>
+<a id="wallpaper_link">
+<img id="wallpaper_image"/><br>
+(click to download &darr;)
+</a>
+</div>
+
 <!-- Leitner Calendar / Anki -->
 
-<panel w=600 h=100>
+<panel w=600 h=80>
 <words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
 	<b>SECOND:</b>
-	<!--a looping 64-day calendar for your Leitner Box!-->
-	a link to the Anki app!
-	(and here's a video tutorial on how to get started)
+	<span id="gift_app"></span>
 </words>
 </panel>
 
 
 <!-- All flashcards -->
 
-<panel w=600 h=100>
+<panel w=600 h=80>
 <words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
 	And finally,
 	<b>THIRD:</b>
 	a .zip of all the flashcards you've been practicing in this interactive comic!
 </words>
+</panel>
+
+<panel w=400 h=200 bg="#fff">
+<sim x=0 y=0 w=600 h=400 src="sims/downloads/all.html"></sim>
 </panel>
 
 <panel w=600 h=120>
@@ -358,10 +353,8 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 </words>
 </panel>
 
-<panel w=600 h=400 bg="#ff4040">
-<!--
-<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_d,leit_b,leit_a,leit_c"></sim>
--->
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,sci_c"></sim>
 </panel>
 
 <panel w=240 h=300>
@@ -446,6 +439,186 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 <!-- - - - - - - - - - -->
 
 <div id="labels">
+
+
+<!-- GIFTS -->
+<span id="gift_wallpaper_what">
+	WHAT:
+</span>
+<span id="gift_wallpaper_why">
+	WHY:
+</span>
+<span id="gift_wallpaper_do">
+	DO YOUR CARDS FOR TODAY!
+</span>
+<span id="gift_wallpaper_filename">
+	wallpaper
+</span>
+<span id="gift_wallpaper_desktop">
+	a wallpaper for your desktop,
+</span>
+<span id="gift_wallpaper_phone">
+	a lock-screen wallpaper for your phone,
+</span>
+<span id="gift_app_leitner">
+	a looping 64-day calendar for your Leitner Box!
+	(pdf, so you can print it out)
+</span>
+<span id="gift_app_anki">
+	a link to download Anki!
+	(and here's a video tutorial on how to get started)
+</span>
+<span id="gift_app_tiny">
+	a link to TinyCards!
+	(you can try cards without download or signup.
+	might i recommend geography or blabla?)
+</span>
+<span id="gift_app_other">
+	links to
+	the Leitner Box 64-day calendar,
+	the Anki app,
+	and TinyCards!
+</span>
+
+
+<!-- QUESTIONS -->
+<span id="flashcard_you_what_front">
+	<div id="fc_words" class="fcard_center" style="height:160px;">
+		WHAT do you want to learn?
+	</div>
+</span>
+<span id="flashcard_you_what_back">
+	<div id="fc_words" class="fcard_center" editable="you_what">
+		Everything
+	</div>
+</span>
+<span id="flashcard_you_why_front">
+	<div id="fc_words" class="fcard_center" style="height:160px;">
+		WHY do you want to learn that?
+	</div>
+</span>
+<span id="flashcard_you_why_back">
+	<div id="fc_words" class="fcard_center" editable="you_why">
+		For curiosity's sake!
+	</div>
+</span>
+<span id="flashcard_you_how_front">
+	<div id="fc_words" class="fcard_center" style="height:160px;">
+		HOW do you want to do Spaced Repetition?
+	</div>
+</span>
+<span id="flashcard_you_how_back">
+	<div id="fc_words" class="fcard_center" editable="you_how">
+		Leitner Box
+	</div>
+</span>
+<span id="flashcard_you_when_front">
+	<div id="fc_words" class="fcard_center" style="height:160px;">
+		WHEN do you want to do Spaced Repetition?
+	</div>
+</span>
+<span id="flashcard_you_when_back">
+	<div id="fc_words" class="fcard_center" editable="you_when">
+		In the evening
+	</div>
+</span>
+
+<!-- SUGGESTIONS -->
+<span id="you_what_suggestions">
+	<li>Everything</li>
+	<li>herp</li>
+	<li>derp</li>
+	<li>(other)</li>
+</span>
+<span id="you_why_suggestions">
+	<li>Curiosity</li>
+	<li>herp</li>
+	<li>derp</li>
+	<li>(other)</li>
+</span>
+<span id="you_how_suggestions">
+	<li>Leitner Box</li>
+	<li>Anki</li>
+	<li>TinyCards</li>
+	<li>(other)</li>
+</span>
+<span id="you_when_suggestions">
+	<li>In the morning</li>
+	<li>On my commute</li>
+	<li>In the evening</li>
+	<li>(other)</li>
+</span>
+
+<!-- TYPING CARDS -->
+<span id="type_question">
+	Q:
+</span>
+<span id="type_placeholder">
+	type your answer here
+</span>
+<span id="type_suggestions">
+	or pick one of these suggestions:
+</span>
+
+<!-- Flashcards -->
+<span id="flashcard_sci_a_front">
+	<div class="fcard_center" style="height:2.5em">
+	The discoverer of the Forgetting Curve was...
+	</div>
+</span>
+<span id="flashcard_sci_a_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=0></div>
+	<div style="position: absolute; width: 250px; top: 60px; right: 0; line-height: 1.1em;">
+	Hermann Ebbinghaus
+	</div>
+</span>
+<span id="flashcard_sci_b_front">
+	<div class="fcard_center" style="height:3.4em">
+	The Forgetting Curve (<i>without</i> any recalls) looks like...
+	</div>
+</span>
+<span id="flashcard_sci_b_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=240></div>
+	<div style="position: absolute; width: 280px; top: 70px; right: 20px; font-size:20px; line-height: 1.1em;">
+	(note: it decays quickly, then slowly – "exponential decay")
+	</div>
+</span>
+<span id="flashcard_sci_c_front">
+	<div class="fcard_center" style="height:3.4em">
+	The Forgetting Curve (<i>with</i> optimally-spaced recalls) looks like...
+	</div>
+</span>
+<span id="flashcard_sci_c_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=240></div>
+	<div style="position: absolute; width: 360px; top: 120px; left: 20px; font-size:20px; line-height: 1.1em;">
+	(note: the gaps between recalls <i>increase</i> in length)
+	</div>
+</span>
+
+<!-- Multi Card Labels -->
+<span id="multicard_q">
+	try to recall &uarr;
+	then flip ↻ 
+</span>
+<span id="multicard_cards_left">
+	(cards left: [N])
+</span>
+<span id="multicard_a">
+	did you remember this?
+</span>
+<span id="multicard_no">
+	nah, try again
+</span>
+<span id="multicard_yes">
+	yup, onwards!
+</span>
+<span id="multicard_done">
+	done for now! keep scrolling
+	<br>
+	&darr;
+</span>
+
+
 </div>
 
 

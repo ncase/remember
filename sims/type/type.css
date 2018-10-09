@@ -1,0 +1,76 @@
+/* FONT FACE */
+@font-face {
+	font-family: "PatrickHand";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../../css/PatrickHand-Regular.ttf) format('truetype');
+}
+
+body{
+	margin: 0;
+	font-family: "PatrickHand", Helvetica, Arial;
+	color: #000;
+	letter-spacing: 1px;
+	font-size: 40px;
+}
+
+#card_container{
+	width:400px;
+	height: 290px;
+	position: absolute;
+	top:0; left:0; right:0; bottom:0;
+	margin:auto;
+}
+#card{
+	width:400px;
+	height:240px;
+	background:#fff;
+	border-radius: 20px;
+	text-align: center;
+}
+#answer{
+	width:360px;
+	height:40px;
+	padding: 10px 0; 
+	font-size:40px;
+	font-family: inherit;
+	text-align: center;
+	margin-top: 0.5em;
+	border: 1px solid #ddd;
+}
+
+#question{
+	height: 35px;
+    font-size: 20px;
+}
+
+#default_labels{
+	display:none;
+}
+
+#suggestion_header, #suggestions_list{
+	width: 360px;
+	margin: 0 auto;
+	font-size: 22px;
+}
+#suggestion_header{
+	/*text-align: left;*/
+	margin-top: 20px;
+}
+#suggestions_list{
+	margin-top: 5px;
+}
+#suggestions_list > div{
+	display: inline-block;
+	background: #bbb;
+    color: #666;
+    cursor: pointer;
+    margin: 3px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+#suggestions_list > div:hover{
+	background: #ddd;
+	color: #888;
+}
+
