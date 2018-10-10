@@ -1,36 +1,45 @@
+window.front_only = _getQueryVariable("front_only");
+window.FRONT_ONLY = (front_only && front_only=="yes");
+
 var flashcard = $("#flashcard");
 var FLIPPED = false;
-flashcard.onclick = function(){
+if(!FRONT_ONLY){
+	flashcard.onclick = function(){
 
-	// Flip!
-	var flip = flashcard.getAttribute("flip");
-	if(flip=="yes"){
-		flashcard.setAttribute("flip","no");
-	}else{
-		flashcard.setAttribute("flip","yes");
+		// Flip!
+		var flip = flashcard.getAttribute("flip");
+		if(flip=="yes"){
+			flashcard.setAttribute("flip","no");
+		}else{
+			flashcard.setAttribute("flip","yes");
 
-		// HACK: PLAY AUDIO
-		var a = $("#HACK_audio");
-		if(a){
-			a.play();
-			if(!a.onclick){
-				a.onclick = function(e){
-					e.stopPropagation();
-				};
+			// HACK: PLAY AUDIO (if any)
+			var a = $("#HACK_audio");
+			if(a){
+				a.play();
+				if(!a.onclick){
+					a.onclick = function(e){
+						e.stopPropagation();
+					};
+				}
 			}
+
 		}
 
-	}
+		// Also, send message (when flipped for first time)
+		if(!FLIPPED && window.top.broadcastMessage){
+			FLIPPED = true;
+			setTimeout(function(){
+				window.top.broadcastMessage("flip_"+cardname);
+			},1000);
+		}
 
-	// Also, send message (when flipped for first time)
-	if(!FLIPPED && window.top.broadcastMessage){
-		FLIPPED = true;
-		setTimeout(function(){
-			window.top.broadcastMessage("flip_"+cardname);
-		},1000);
-	}
+	};
+}else{
 
-};
+	
+
+}
 
 window.cardname = _getQueryVariable("card");
 var frontHTML = _getLabel("flashcard_"+cardname+"_front");

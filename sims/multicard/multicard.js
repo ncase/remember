@@ -6,6 +6,7 @@ window.onload = function(){
 	cardnames = cardnames.split(",");
 	window.CARDS = cardnames.map(function(cardname){
 		return {
+			name: cardname,
 			front: _getLabel("flashcard_"+cardname+"_front"),
 			back: _getLabel("flashcard_"+cardname+"_back")
 		};
@@ -49,6 +50,11 @@ function showCurrentCard(infoTimeout){
 
 		// Card
 		var currentCard = CARDS[0];
+		// HACK. If it's a YOU card, AUTO-REFRESH.
+		if(currentCard.name.search("you_")>=0){
+			currentCard.front = _getLabel("flashcard_"+currentCard.name+"_front");
+			currentCard.back = _getLabel("flashcard_"+currentCard.name+"_back");
+		}
 		$("#ccard_front").innerHTML = currentCard.front;
 		$("#ccard_back").innerHTML = currentCard.back;
 

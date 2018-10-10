@@ -30,13 +30,13 @@ body{
 }
 .card{
 	position: absolute;
-	width: 390px; /* 5 x 3 */
-	height: 230px;
+	width: 396px; /* 5 x 3 */
+	height: 236px;
 	border-radius: 20px;
 	overflow: hidden;
 	font-size: 40px;
 	background: #fff;
-	border: 5px inset rgba(0,0,0,0.15);
+	border: 2px inset rgba(0,0,0,0.15);
 	text-align: center;
 }
 #card_bg{

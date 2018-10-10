@@ -109,43 +109,46 @@ $all("div[editable]").forEach(function(dom){
 //////////////////////////////////////////
 
 // Wallpaper
-var gw_text = detectmob() ? "gift_wallpaper_phone" : "gift_wallpaper_desktop";
-$("#gift_wallpaper").innerHTML = $("#"+gw_text).innerHTML;
+if($("#gift_wallpaper")){
 
-var WALLPAPER_CHANGED = true;
-subscribe("answer_edit_you_what",function(){
-	WALLPAPER_CHANGED = true;
-});
-subscribe("answer_edit_you_why",function(){
-	WALLPAPER_CHANGED = true;
-});
+	var gw_text = detectmob() ? "gift_wallpaper_phone" : "gift_wallpaper_desktop";
+	$("#gift_wallpaper").innerHTML = $("#"+gw_text).innerHTML;
 
-setInterval(function(){
+	var WALLPAPER_CHANGED = true;
+	subscribe("answer_edit_you_what",function(){
+		WALLPAPER_CHANGED = true;
+	});
+	subscribe("answer_edit_you_why",function(){
+		WALLPAPER_CHANGED = true;
+	});
 
-	// Wallpaper, re-make ONLY IF CHANGED
-	if(WALLPAPER_CHANGED){
-		WALLPAPER_CHANGED = false;
-		var canvas = makeWallpaper();
-		var dataURL = canvas.toDataURL();
-		$("#wallpaper_link").href = dataURL;
-		$("#wallpaper_link").download = (getLabel("gift_wallpaper_filename").trim())+".png";
-		$("#wallpaper_image").src = dataURL;
-		console.log("updated!");
-	}
+	setInterval(function(){
 
-	// Box/App
-	var showWhat = "other";
-	var theHow = $("#flashcard_you_how_back").innerText.trim().toLocaleLowerCase();
-	if(theHow.search("leitner") >= 0){
-		showWhat = "leitner";
-	}else if(theHow.search("anki") >= 0){
-		showWhat = "anki";
-	}else if(theHow.search("tiny") >= 0){
-		showWhat = "tiny";
-	}
-	$("#gift_app").innerHTML = $("#gift_app_"+showWhat).innerHTML;
+		// Wallpaper, re-make ONLY IF CHANGED
+		if(WALLPAPER_CHANGED){
+			WALLPAPER_CHANGED = false;
+			var canvas = makeWallpaper();
+			var dataURL = canvas.toDataURL();
+			$("#wallpaper_link").href = dataURL;
+			$("#wallpaper_link").download = (getLabel("gift_wallpaper_filename").trim())+".png";
+			$("#wallpaper_image").src = dataURL;
+		}
 
-},5000);
+		// Box/App
+		var showWhat = "other";
+		var theHow = $("#flashcard_you_how_back").innerText.trim().toLocaleLowerCase();
+		if(theHow.search("leitner") >= 0){
+			showWhat = "leitner";
+		}else if(theHow.search("anki") >= 0){
+			showWhat = "anki";
+		}else if(theHow.search("tiny") >= 0){
+			showWhat = "tiny";
+		}
+		$("#gift_app").innerHTML = $("#gift_app_"+showWhat).innerHTML;
+
+	},5000);
+
+}
 
 // From https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 function detectmob(){ 
@@ -208,3 +211,15 @@ function makeWallpaper(){
 	return canvas;
 
 }
+
+///////////////////
+// Chapter Links //
+///////////////////
+
+var linx = $("#label_chapter_links");
+if(linx){
+	$all(".divider > #chapter_links").forEach(function(linkContainer){
+		linkContainer.innerHTML = linx.innerHTML;
+	});
+}
+

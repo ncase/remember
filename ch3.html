@@ -9,8 +9,58 @@
 </head>
 
 <body>
+
+<a name="0"></a>
+<div class="divider" style="padding: 80px 0">
+	<div id="chapter_name" style="margin-bottom:30px;">
+		[UNTITLED SPACED REPETITION THING]
+	</div>
+	<div id="chapter_subtitle">
+		by nicky case, oct 2018
+	</div>
+</div>
+
+<br><br>
+
+<a name="1"></a>
+<div class="divider">
+	<div id="chapter_name">
+		THE SCIENCE
+		<span class="small_of">
+		of
+		</span>
+		<br>
+		SPACED REPETITION
+	</div>
+	<div id="chapter_links"></div>
+</div>
+
+<br><br>
+
+<a name="2"></a>
+<div class="divider">
+	<div id="chapter_name">
+		THE ART
+		<span class="small_of">
+		of
+		</span>
+		<br>
+		SPACED REPETITION
+	</div>
+	<div id="chapter_links"></div>
+</div>
+
+<br><br>
+
+<a name="3"></a>
+<div class="divider">
+	<div id="chapter_name">
+		GET STARTED TODAY!
+	</div>
+	<div id="chapter_links"></div>
+</div>
 	
-<div id="comic">
+<div class="comic">
 
 <!-- - - - - - - - - - - - -->
 <!-- WHAT, WHY, HOW, WHEN - -->
@@ -35,8 +85,11 @@ So, here's the <i>front</i> of our first flashcard, our question:
 </words>
 </panel>
 
-<panel w=400 h=240 bg="#bada55" style="margin-bottom:20px">
+<panel w=500 h=250 bg="#e0e0e0">
 <!-- WHAT do you want to learn? -->
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_what&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
 </panel>
 
 <panel w=500 h=450>
@@ -77,8 +130,11 @@ So, here's the <i>front</i> of our first flashcard, our question:
 </words>
 </panel>
 
-<panel w=400 h=240 bg="#bada55" style="margin-bottom:20px">
+<panel w=500 h=250 bg="#e0e0e0">
 <!-- WHY do you want to learn X? -->
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_why&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
 </panel>
 
 <panel w=500 h=450>
@@ -112,8 +168,11 @@ So, here's the <i>front</i> of our first flashcard, our question:
 </words>
 </panel>
 
-<panel w=400 h=240 bg="#bada55" style="margin-bottom:20px">
+<panel w=500 h=250 bg="#e0e0e0">
 <!-- HOW do you want to do Spaced Repetition? (with what tool?) -->
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_how&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
 </panel>
 
 <panel w=500 h=700>
@@ -145,8 +204,6 @@ So, here's the <i>front</i> of our first flashcard, our question:
 <sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_how"></sim>
 </panel>
 
-
-
 <!-- - - -->
 <!-- WHEN -->
 <!-- - - -->
@@ -176,8 +233,11 @@ So, here's the <i>front</i> of our first flashcard, our question:
 </words>
 </panel>
 
-<panel w=400 h=240 bg="#bada55" style="margin:20px 0">
+<panel w=500 h=250 bg="#e0e0e0">
 <!-- WHEN do you want to do Spaced Repetition? -->
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_when&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
 </panel>
 
 <panel w=500 h=450>
@@ -354,7 +414,7 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 </panel>
 
 <panel w=600 h=400 bg="#e0e0e0">
-<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,sci_c"></sim>
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=you_why,sci_a,you_when,sci_b,you_how,sci_c"></sim>
 </panel>
 
 <panel w=240 h=300>
@@ -423,10 +483,7 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 <!-- Bow Goodbye -->
 
 <panel w=600 h=300 bg="#e0e0e0">
-<!-- THE END, with full cast of characters -->
-<!--
-<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=mitochondria_all"></sim>
--->
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=the_end"></sim>
 </panel>
 
 <!-- want more? further reading & credits below! -->
@@ -483,7 +540,8 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 
 <!-- QUESTIONS -->
 <span id="flashcard_you_what_front">
-	<div id="fc_words" class="fcard_center" style="height:160px;">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=0></div>
+	<div id="fc_words" class="fcard_center" style="position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
 		WHAT do you want to learn?
 	</div>
 </span>
@@ -493,7 +551,8 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 	</div>
 </span>
 <span id="flashcard_you_why_front">
-	<div id="fc_words" class="fcard_center" style="height:160px;">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=0></div>
+	<div id="fc_words" class="fcard_center" style="position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
 		WHY do you want to learn that?
 	</div>
 </span>
@@ -503,7 +562,8 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 	</div>
 </span>
 <span id="flashcard_you_how_front">
-	<div id="fc_words" class="fcard_center" style="height:160px;">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=240></div>
+	<div id="fc_words" class="fcard_center" style="position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
 		HOW do you want to do Spaced Repetition?
 	</div>
 </span>
@@ -513,13 +573,25 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 	</div>
 </span>
 <span id="flashcard_you_when_front">
-	<div id="fc_words" class="fcard_center" style="height:160px;">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=240></div>
+	<div id="fc_words" class="fcard_center" style="position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
 		WHEN do you want to do Spaced Repetition?
 	</div>
 </span>
 <span id="flashcard_you_when_back">
 	<div id="fc_words" class="fcard_center" editable="you_when">
 		In the evening
+	</div>
+</span>
+
+<!-- THE END -->
+<span id="flashcard_the_end_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=480></div>
+</span>
+<span id="flashcard_the_end_back">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="top:30px; font-size:50px;">
+		THE END
 	</div>
 </span>
 
@@ -616,6 +688,25 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 	done for now! keep scrolling
 	<br>
 	&darr;
+</span>
+
+<!-- Chapter Links -->
+<span id="label_chapter_links">
+<a href="#0">
+	Intro
+</a>
+&middot;
+<a href="#1">
+	The Science
+</a>
+&middot;
+<a href="#2">
+	The Art
+</a>
+&middot;
+<a href="#3">
+	Get Started!
+</a>
 </span>
 
 
