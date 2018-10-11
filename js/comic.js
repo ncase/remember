@@ -38,7 +38,7 @@ window.onload = function(){
 			var y = p.getAttribute("sy") || 0;
 			s.backgroundPosition = (-x)+"px "+(-y)+"px";
 			var w = p.getBoundingClientRect().width;
-			s.backgroundSize = Math.round((3000/w)*50)+"%";
+			s.backgroundSize = ((3000/w)*50).toFixed(2)+"%";
 		}
 
 	});
