@@ -169,7 +169,8 @@ function setUpInfo(){
 	$("#a_label").innerHTML = _getLabel("multicard_a");
 	$("#a_no").innerHTML = _getLabel("multicard_no");
 	$("#a_yes").innerHTML = _getLabel("multicard_yes");
-	$("#done").innerHTML = _getLabel("multicard_done");
+	var isFinalMulticard = (_getQueryVariable("final")=="yes");
+	$("#done").innerHTML = _getLabel( isFinalMulticard ? "multicard_done_2" : "multicard_done");
 
 	// Clicking "yes" or "no"
 	$("#a_yes").onclick = function(){

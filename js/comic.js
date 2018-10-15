@@ -147,6 +147,7 @@ if($("#gift_wallpaper")){
 		$("#gift_app").innerHTML = $("#gift_app_"+showWhat).innerHTML;
 
 	},5000);
+	//},1000);
 
 }
 
@@ -167,6 +168,8 @@ function detectmob(){
   }
 }
 
+var wallpaperBGImage = new Image();
+wallpaperBGImage.src = "pics/wallpaper.png";
 function makeWallpaper(){
 	
 	var canvas = document.createElement("canvas");
@@ -176,7 +179,7 @@ function makeWallpaper(){
 	var ctx = canvas.getContext("2d");
 
 	// bg
-	ctx.fillStyle = "#ff4040";
+	ctx.fillStyle = "#8296BF";
 	ctx.fillRect(0,0,canvas.width,canvas.height);
 
 	// in a square
@@ -189,22 +192,32 @@ function makeWallpaper(){
 	ctx.translate(-SIZE/2, -SIZE/2);
 
 	// Square
-	ctx.fillStyle = "#fff";
-	ctx.fillRect(0, 0, SIZE, SIZE);
+	//ctx.fillStyle = "rgba(255,255,255,0.2)";
+	//ctx.fillRect(0, 0, SIZE, SIZE);
+	ctx.drawImage(wallpaperBGImage, 0, 0, SIZE, SIZE);
 
 	// text
+	var what = getLabel("gift_wallpaper_what").trim();
+	what += " " + $("#flashcard_you_what_back").innerText.trim();
+	
+	var why = getLabel("gift_wallpaper_why").trim();
+	why += " " + $("#flashcard_you_why_back").innerText.trim();
+	
+	var do1 = getLabel("gift_wallpaper_do_1").trim();
+	var do2 = getLabel("gift_wallpaper_do_2").trim();
+	
+	// draw text
+	ctx.textAlign = "center";
 	ctx.fillStyle = "#000";
 	ctx.font = "40px PatrickHand, Helvetica, Arial";
-	var what = getLabel("gift_wallpaper_what").trim();
-	var what2 = $("#flashcard_you_what_back").innerText.trim();
-	var why = getLabel("gift_wallpaper_why").trim();
-	var why2 = $("#flashcard_you_why_back").innerText.trim();
-	var doo = getLabel("gift_wallpaper_do").trim();
-	ctx.fillText(what, 0, 50);
-	ctx.fillText(what2, 0, 100);
-	ctx.fillText(why, 0, 150);
-	ctx.fillText(why2, 0, 200);
-	ctx.fillText(doo, 0, 250);
+	ctx.fillText(what, 250, 400);
+	ctx.fillText(why, 250, 450);
+
+	// draw DO ME
+	ctx.font = "80px PatrickHand, Helvetica, Arial";
+	ctx.fillStyle = "#000";
+	ctx.fillText(do1, 400, 190);
+	ctx.fillText(do2, 400, 270);
 
 	// Return canvas;
 	ctx.restore();

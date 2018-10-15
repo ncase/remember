@@ -105,8 +105,8 @@ So, here's the <i>front</i> of our first flashcard, our question:
 <words x=320 y=107 w=100 style="text-align:left" no-bg class="comic_text">
 	a new instrument
 </words>
-<words x=137 y=180 w=100 style="text-align:left" no-bg class="comic_text">
-	world history &amp; geography
+<words x=115 y=195 w=100 style="text-align:left" no-bg class="comic_text">
+	computer programming
 </words>
 <words x=340 y=195 w=150 style="text-align:left" no-bg class="comic_text">
 	details of friends' lives
@@ -115,7 +115,7 @@ So, here's the <i>front</i> of our first flashcard, our question:
 	anything interesting you find, anywhere!
 </words>
 <words x=389 y=290 w=100 style="text-align:left" no-bg class="comic_text">
-	every pokémon
+	all the pokémon
 </words>
 <words x=80 y=380 w=380 h=30>
 	Now, you write <i>your</i> answer on the back:
@@ -169,9 +169,9 @@ So, here's the <i>front</i> of our first flashcard, our question:
 	WHY: to speak to friends, family, lovers in their native tongue
 </words>
 <words x=130 y=210 w=350 style="text-align:left" no-bg class="comic_text">
-	WHAT: world history &amp; geography
+	WHAT: computer programming
 	<br>
-	WHY: to put the news in perspective
+	WHY: to make money so you can eat
 </words>
 <words x=130 y=290 w=350 style="text-align:left" no-bg class="comic_text">
 	WHAT: anything interesting
@@ -223,23 +223,23 @@ So, here's the <i>front</i> of our first flashcard, our question:
 <words x=160 y=140 w=300 fontsize=21 style="text-align:left" no-bg>
 	<b>Leitner Box</b>
 	<br>
-	Pros: arts-and-craftsy, easy to start
+	Pros: arts-and-craftsy, easy to use
 	<br>
-	Cons: not as portable than an app
+	Cons: not as portable as an app
 </words>
 <words x=160 y=275 w=300 fontsize=21 style="text-align:left" no-bg>
-	<b>Anki</b>
+	<b>Anki (app)</b>
 	<br>
 	Pros: huge community, open-source, lots of powerful features
 	<br>
-	Cons: kinda ugly interface
+	Cons: kinda ugly
 </words>
 <words x=160 y=405 w=300 fontsize=21 style="text-align:left" no-bg>
-	<b>TinyCards</b>
+	<b>TinyCards (app)</b>
 	<br>
-	Pros: beautiful design, easy to start
+	Pros: beautiful design, easy to use
 	<br>
-	Cons: less powerful than Anki
+	Cons: max 150 cards per deck, doesn't let <i>you</i> decide if you got a card right
 </words>
 <words x=10 y=530 w=450 h=60>
 	(Want something else?
@@ -403,8 +403,9 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 
 <!-- Reminder Wallpaper --> 
 
-<panel w=600 h=80>
+<panel w=600 h=90>
 <words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
 	<b>FIRST:</b>
 	<span id="gift_wallpaper"></span>
 	to remind you to play the Spaced Repetition game daily!
@@ -420,8 +421,9 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 
 <!-- Leitner Calendar / Anki -->
 
-<panel w=600 h=80>
+<panel w=600 h=90>
 <words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
 	<b>SECOND:</b>
 	<span id="gift_app"></span>
 </words>
@@ -430,8 +432,9 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 
 <!-- All flashcards -->
 
-<panel w=600 h=80>
+<panel w=600 h=90>
 <words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
 	And finally,
 	<b>THIRD:</b>
 	a .zip of all the flashcards you've been practicing in this interactive comic!
@@ -475,7 +478,7 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 </panel>
 
 <panel w=600 h=400 bg="#e0e0e0">
-<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=you_why,sci_a,you_when,sci_b,you_how,sci_c"></sim>
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=you_why,sci_a,you_when,sci_b,you_how,sci_c"></sim>
 </panel>
 
 <panel w=240 h=300>
@@ -574,8 +577,11 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 <span id="gift_wallpaper_why">
 	WHY:
 </span>
-<span id="gift_wallpaper_do">
-	DO YOUR CARDS FOR TODAY!
+<span id="gift_wallpaper_do_1">
+	DO
+</span>
+<span id="gift_wallpaper_do_2">
+	ME!
 </span>
 <span id="gift_wallpaper_filename">
 	wallpaper
@@ -591,13 +597,17 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 	(pdf, so you can print it out)
 </span>
 <span id="gift_app_anki">
-	a link to download Anki!
-	(and here's a video tutorial on how to get started)
+	a link to 
+	<a target="_blank" href="https://apps.ankiweb.net/">download Anki!</a>
+	(and here's
+	<a target="_blank" href="https://www.youtube.com/watch?v=sQkdB3cJwn0">a video tutorial</a>
+	on how to get started)
 </span>
 <span id="gift_app_tiny">
-	a link to TinyCards!
-	(you can try cards without download or signup.
-	might i recommend geography or blabla?)
+	a link to
+	<a target="_blank" href="https://tinycards.duolingo.com/">TinyCards!</a>
+	(i recommend checking out their
+	<a target="_blank" href="https://tinycards.duolingo.com/users/TinyGeo">geography decks</a>)
 </span>
 <span id="gift_app_other">
 	links to
@@ -615,8 +625,8 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 	</div>
 </span>
 <span id="flashcard_you_what_back">
-	<div id="fc_words" class="fcard_center" editable="you_what">
-		Everything
+	<div id="fc_words" class="fcard_center" editable="you_what" style="height:1.2em">
+		Anything interesting!
 	</div>
 </span>
 <span id="flashcard_you_why_front">
@@ -626,8 +636,8 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 	</div>
 </span>
 <span id="flashcard_you_why_back">
-	<div id="fc_words" class="fcard_center" editable="you_why">
-		For curiosity's sake!
+	<div id="fc_words" class="fcard_center" editable="you_why" style="height:1.2em">
+		For curiosity's sake
 	</div>
 </span>
 <span id="flashcard_you_how_front">
@@ -637,7 +647,7 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 	</div>
 </span>
 <span id="flashcard_you_how_back">
-	<div id="fc_words" class="fcard_center" editable="you_how">
+	<div id="fc_words" class="fcard_center" editable="you_how" style="height:1.2em">
 		Leitner Box
 	</div>
 </span>
@@ -648,7 +658,7 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 	</div>
 </span>
 <span id="flashcard_you_when_back">
-	<div id="fc_words" class="fcard_center" editable="you_when">
+	<div id="fc_words" class="fcard_center" editable="you_when" style="height:1.2em">
 		In the evening
 	</div>
 </span>
@@ -666,17 +676,17 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 
 <!-- SUGGESTIONS -->
 <span id="you_what_suggestions">
-	<li>anything interesting!</li>
-	<li>a language</li>
-	<li>music</li>
-	<li>coding</li>
-	<li>personal</li>
+	<li>Anything interesting!</li>
+	<li>A language</li>
+	<li>Music</li>
+	<li>Coding</li>
+	<li>Personal</li>
 	<li>(other)</li>
 </span>
 <span id="you_why_suggestions">
-	<li>Curiosity</li>
-	<li>herp</li>
-	<li>derp</li>
+	<li>For people I love</li>
+	<li>For my own sake</li>
+	<li>For curiosity's sake</li>
 	<li>(other)</li>
 </span>
 <span id="you_how_suggestions">
@@ -757,6 +767,11 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 </span>
 <span id="multicard_done">
 	done for now! keep scrolling
+	<br>
+	&darr;
+</span>
+<span id="multicard_done_2">
+	that's all, folks! keep scrolling
 	<br>
 	&darr;
 </span>
