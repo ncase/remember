@@ -137,7 +137,7 @@ if($("#gift_wallpaper")){
 		// Box/App
 		var showWhat = "other";
 		var theHow = $("#flashcard_you_how_back").innerText.trim().toLocaleLowerCase();
-		if(theHow.search("leitner") >= 0){
+		if(theHow.search("leit") >= 0 || theHow.search("liet") >= 0){ // for typos
 			showWhat = "leitner";
 		}else if(theHow.search("anki") >= 0){
 			showWhat = "anki";

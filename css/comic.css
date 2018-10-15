@@ -41,15 +41,15 @@ b, strong{
 }
 .divider > div{
 	width: calc(100% - 100px);
-    min-width: 600px;
-    max-width: 960px;
+	min-width: 600px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 .divider > #chapter_name{
 	font-size: 100px;
-    line-height: 0.75em;
-    text-align: left;
-    margin-bottom: 10px;
+	line-height: 0.75em;
+	text-align: left;
+	margin-bottom: 10px;
 }
 .divider > #chapter_links{
 	text-align: right;
@@ -124,6 +124,10 @@ b, strong{
 }
 .small_card{
 	transform: scale(0.6, 0.6);
+}
+.comic_text{
+	color: rgba(0,0,0,0.5);
+	line-height: 1em;
 }
 
 /**********/
