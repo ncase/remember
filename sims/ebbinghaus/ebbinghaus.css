@@ -99,16 +99,16 @@ input[fullw]{
 .decay_slider::-webkit-slider-thumb{
     -webkit-appearance: none;
     appearance: none;
-     width: 25px;
-    height: 25px;
-    border-radius: 50%;
+     width: 15px;
+    height: 35px;
+    border-radius: 8px; 
     background: #333;
     cursor: pointer;
 }
 .decay_slider::-moz-range-thumb{
-	 width: 25px;
-    height: 25px;
-    border-radius: 50%;
+	 width: 15px;
+    height: 35px;
+    border-radius: 8px; 
     background: #333;
     cursor: pointer;
 }
@@ -118,16 +118,16 @@ input[fullw]{
 .sweet_slider::-webkit-slider-thumb{
     -webkit-appearance: none;
     appearance: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 15px;
+    height: 35px;
+    border-radius: 8px; 
     background: #ffDD00;
     cursor: pointer;
 }
 .sweet_slider::-moz-range-thumb{
-	width: 30px;
-    height: 30px;
-    border-radius: 50%;
+	width: 15px;
+    height: 35px;
+    border-radius: 8px; 
     background: #ffDD00;
     cursor: pointer;
 }

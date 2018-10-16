@@ -34,6 +34,7 @@ if(!FRONT_ONLY){
 			},1000);
 
 			// AND REMOVE UI
+			// TODO: unless it's the forever-card
 			clicky.kill();
 
 		}
@@ -78,11 +79,12 @@ if(_getQueryVariable("refresh")=="yes"){
 /////////////////////////////////////////
 /////////////////////////////////////////
 
-var clicky = new createAnimatedUIHelper({
-	x: 355,
-	y: 195,
-	width: 100,
-	height: 100,
-	img: "../../pics/ui_click.png"
-});
-
+if(!FRONT_ONLY){
+	var clicky = new createAnimatedUIHelper({
+		x: 355,
+		y: 195,
+		width: 100,
+		height: 100,
+		img: "../../pics/ui_click.png"
+	});
+}

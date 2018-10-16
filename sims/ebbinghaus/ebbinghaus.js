@@ -439,6 +439,8 @@ function update(){
 		}
 
 		// DRAW THE MAIN THICK CURVES
+		var theLastPoint = null;
+		var theCircles = [];
 		ctx.lineWidth = 5;
 		// For each curve, draw until cut.
 		for(var c=0; c<curves.length; c++){
@@ -462,14 +464,26 @@ function update(){
 					}else{
 						ctx.lineTo(p.x,p.y);
 					}
+					theLastPoint = {x:p.x, y:p.y, distance:Math.abs(point.m-optimal)};
 				}else if(!imCut){
 					p = _project(point.t, 1);
 					ctx.lineTo(p.x,p.y);
 					imCut = true;
+					theCircles.push(theLastPoint);
 				}
 			}
 			ctx.stroke();
 
+		}
+
+		// DRAW THE CIRCLES
+		for(var i=0; i<theCircles.length; i++){
+			var circ = theCircles[i];
+			var d = circ.distance;
+			ctx.fillStyle = (d<OPTIMAL_RANGE/2) ? "#FFDD00" : "#FF4040";
+			ctx.beginPath();
+			ctx.arc(circ.x, circ.y, 8, 0, Math.TAU, false);
+			ctx.fill();
 		}
 
 		// And, again...
