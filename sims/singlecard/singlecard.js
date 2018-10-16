@@ -32,6 +32,10 @@ if(!FRONT_ONLY){
 			setTimeout(function(){
 				window.top.broadcastMessage("flip_"+cardname);
 			},1000);
+
+			// AND REMOVE UI
+			clicky.kill();
+
 		}
 
 	};
@@ -70,3 +74,15 @@ if(_getQueryVariable("refresh")=="yes"){
 	});
 
 }
+
+/////////////////////////////////////////
+/////////////////////////////////////////
+
+var clicky = new createAnimatedUIHelper({
+	x: 355,
+	y: 195,
+	width: 100,
+	height: 100,
+	img: "../../pics/ui_click.png"
+});
+

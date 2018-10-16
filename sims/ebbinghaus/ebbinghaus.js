@@ -52,16 +52,25 @@ window.onload = function(){
 		case 0:
 			_appendSpan("ebbinghaus_decay");
 			_appendSlider("init_decay");
+
+			_addSlideyUI(150,313);
+
 			break;
 		// ONE retrieval
 		case 1:
-			_appendSpan("ebbinghaus_recalls");
+			_appendSpan("ebbinghaus_recall");
 			_appendSlider("recall_1");
+
+			_addSlideyUI(120,340);
+
 			break;
 		// ONE retrieval, with optimal learning
 		case 2:
-			_appendSpan("ebbinghaus_recalls");
+			_appendSpan("ebbinghaus_recall");
 			_appendSlider("recall_1");
+			
+			_addSlideyUI(120,340);
+
 			break;
 		// MULTI retrievals, with optimal learning
 		case 3:
@@ -70,6 +79,9 @@ window.onload = function(){
 			_appendSlider("recall_2");
 			_appendSlider("recall_3");
 			_appendSlider("recall_4");
+			
+			_addSlideyUI(120,340);
+
 			break;
 		// FULL SANDBOX
 		case 4:
@@ -84,11 +96,13 @@ window.onload = function(){
 			_appendBr();
 
 			_appendSpan("ebbinghaus_recalls");
-			_appendButton("ebbinghaus_auto",_AUTO_OPTIMIZE);
+			_appendCheckbox("ebbinghaus_auto",_turnOptimizeOn,_turnOptimizeOff);
 			_appendSlider("recall_1");
 			_appendSlider("recall_2");
 			_appendSlider("recall_3");
 			_appendSlider("recall_4");
+
+			_addPointyUI(410,345);
 
 			break;
 	}
@@ -99,11 +113,38 @@ window.onload = function(){
 
 };
 
+window.slidey = null;
+var _addSlideyUI = function(x,y){
+	
+	window.slidey = new createAnimatedUIHelper({
+		x: x,
+		y: y,
+		width: 70,
+		height: 70,
+		img: "../../pics/ui_slide.png"
+	});
+
+};
+
+window.pointy = null;
+var _addPointyUI = function(x,y){
+	
+	window.slidey = new createAnimatedUIHelper({
+		x: x,
+		y: y,
+		width: 70,
+		height: 70,
+		img: "../../pics/ui_point.png"
+	});
+
+};
+
 ////////////////////////////////////////
 ////////////////////////////////////////
 ////////////////////////////////////////
 
 // The most fudge-y function in existence
+window.AUTO_OPTIMIZE_ON = false;
 var _AUTO_OPTIMIZE = function(){
 
 	// When t hits the sweet spot (k)...
@@ -134,6 +175,30 @@ var _AUTO_OPTIMIZE = function(){
 
 };
 
+// Super hacky, whatever
+setInterval(function(){
+	if(AUTO_OPTIMIZE_ON) _AUTO_OPTIMIZE(); // AUTO OPTIMIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIZE
+},10);
+
+function _turnOptimizeOn(){
+
+	if(window.pointy) window.pointy.kill();
+
+	window.AUTO_OPTIMIZE_ON = true;
+	[_sliderUI.recall_1, _sliderUI.recall_2, _sliderUI.recall_3, _sliderUI.recall_4].forEach(function(s){
+		s.style.opacity = 0.5;
+		s.style.pointerEvents = "none";
+	});
+}
+function _turnOptimizeOff(){
+	window.AUTO_OPTIMIZE_ON = false;
+	[_sliderUI.recall_1, _sliderUI.recall_2, _sliderUI.recall_3, _sliderUI.recall_4].forEach(function(s){
+		s.style.opacity = 1.0;
+		s.style.pointerEvents = "";
+	});
+}
+
+
 ////////////////////////////////////////
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -146,8 +211,8 @@ var PARAMS = {};
 var sim_params = [];
 var recall_params = [];
 var _sliders = {
-	d: {name:"init_decay", min:0, max:1, step:0.01, value:0.5},
-	o: {name:"optimal", min:0, max:1, step:0.01, value:0.75},
+	d: {name:"init_decay", min:0, max:1, step:0.01, value:0.5, className:"decay"},
+	o: {name:"optimal", min:0, max:1, step:0.01, value:0.75, className:"sweet"},
 	r1: {name:"recall_1", min:0, max:10, step:0.01, value:2.0, fullw:true},
 	r2: {name:"recall_2", min:0, max:10, step:0.01, value:4.0, fullw:true},
 	r3: {name:"recall_3", min:0, max:10, step:0.01, value:6.0, fullw:true},
@@ -174,6 +239,29 @@ var _appendButton = function(name, onclick){
 	button.onclick = onclick;
 	$("#ui").appendChild(button);
 };
+var _appendCheckbox = function(name, onActivate, onDeactivate){
+	
+	var label = _getLabel(name);
+	var labelDOM = document.createElement("label");
+	var labelTextNode = document.createTextNode(label);
+
+	var input = document.createElement("input");
+	input.type = "checkbox";
+	input.innerHTML = label;
+	input.onclick = function(){
+		if(input.checked){
+			onActivate();
+		}else{
+			onDeactivate();
+		}
+	}
+
+	labelDOM.appendChild(input);
+	labelDOM.appendChild(labelTextNode);
+
+	$("#ui").appendChild(labelDOM);
+
+}
 
 window.PARAMS_CHANGED = false;
 var _createParamSlider = function(config){
@@ -185,6 +273,7 @@ var _createParamSlider = function(config){
 	slider.max = config.max;
 	slider.step = config.step;
 	slider.value = config.value;
+	slider.className = (config.className || "timing")+"_slider";
 	if(config.fullw) slider.setAttribute("fullw","yes");
 
 	// Gimme DOM
@@ -194,11 +283,13 @@ var _createParamSlider = function(config){
 	var _onSliderUpdate = function(){
 		PARAMS[config.name] = parseFloat(slider.value);
 		PARAMS_CHANGED = true;
+		if(window.slidey) window.slidey.kill();
 	};
 	slider.oninput = _onSliderUpdate;
 	_onSliderUpdate();
 
 };
+
 
 // Update
 var MAGIC_CONSTANT = 0.013815; // Through pure brute force, don't care.

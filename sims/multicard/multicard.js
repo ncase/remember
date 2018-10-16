@@ -29,6 +29,9 @@ window.onload = function(){
 			setTimeout(showInfoAnswer, 700);
 		}
 
+		// KILL UI
+		clicky.kill();
+
 	};
 
 	// Show first card
@@ -205,6 +208,18 @@ function showInfoAnswer(){
 	$("#question").style.display = "none";
 	$("#answer").style.display = "block";
 	INFO_MODE = "answer";
+
+	// SHOW UI
+	if(!window.pointy){
+		window.pointy = new createAnimatedUIHelper({
+			x: 480,
+			y: 295,
+			width: 100,
+			height: 100,
+			img: "../../pics/ui_point.png"
+		});
+	}
+
 }
 function showInfoDone(){
 	$("#info").style.display = "block";
@@ -215,6 +230,9 @@ function showInfoDone(){
 }
 function hideInfo(){
 	$("#info").style.display = "none";
+
+	if(window.pointy) window.pointy.kill();
+
 }
 
 
@@ -227,3 +245,14 @@ if(!FLIPPED && window.top.broadcastMessage){
 	},1000);
 }
 */
+
+/////////////////////////////////////////
+/////////////////////////////////////////
+
+var clicky = new createAnimatedUIHelper({
+	x: 430,
+	y: 225,
+	width: 100,
+	height: 100,
+	img: "../../pics/ui_click.png"
+});

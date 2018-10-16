@@ -65,3 +65,70 @@ input[fullw]{
 #default_labels{
 	display:none;
 }
+
+
+.timing_slider, .decay_slider, .sweet_slider{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	height: 2px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+}
+
+
+.timing_slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 35px;
+    border-radius: 8px; 
+    background: #ff4040;
+    cursor: pointer;
+}
+.timing_slider::-moz-range-thumb{
+	width: 15px;
+    height: 35px;
+    border-radius: 8px; 
+    background: #ff4040;
+    cursor: pointer;
+}
+
+
+.decay_slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+     width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}
+.decay_slider::-moz-range-thumb{
+	 width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}
+
+
+
+.sweet_slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffDD00;
+    cursor: pointer;
+}
+.sweet_slider::-moz-range-thumb{
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffDD00;
+    cursor: pointer;
+}
+

@@ -40,3 +40,59 @@ function _modifyFlashCard(fcard){
 	}
 
 }
+
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+
+function createAnimatedUIHelper(config){
+
+	var self = this;
+	self.dom = document.createElement("div");
+	
+	var dom = self.dom;
+	var s = dom.style;
+
+	var frame = 0;
+
+	// Append to body
+	s.position = "absolute";
+	s.left = config.x+"px";
+	s.top = config.y+"px";
+	s.pointerEvents = "none";
+	document.body.appendChild(dom);
+
+	// Animate
+	s.width = config.width+"px";
+	s.height = config.height+"px";
+	s.backgroundImage = "url("+config.img+")";
+	s.backgroundSize = "auto 100%";
+
+	var delay = config.delay || 500;
+	var nextFrame = function(){
+		if(!DEAD){
+			frame++;
+			s.backgroundPosition = (-1*frame*config.width)+"px 0px";
+			setTimeout(nextFrame,delay);
+		}
+	};
+	setTimeout(nextFrame,delay);
+
+	// DISAPPEAR
+	var DEAD = false;
+	self.kill = function(){
+		if(!DEAD){
+			document.body.removeChild(dom);
+			DEAD = true;
+		}
+	};
+
+}
+
+function createSlider(config){
+
+	var self = this;
+
+}
+
+
