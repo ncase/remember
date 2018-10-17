@@ -45,6 +45,9 @@ daySlider.oninput = function(){
 	var QUEUE = CALENDAR[DAY-1]; // -1 offset
 	$("#label_review").innerHTML = _getLabel("calendar_review").replace("[N]", QUEUE.toString() );
 
+	// KILL SLIDEY
+	if(window.slidey) window.slidey.kill();
+
 }
 
 window.REDRAW = 0;
@@ -143,6 +146,16 @@ function update(){
 }
 
 window.onload = function(){
+
 	daySlider.oninput();
 	update();
+
+	window.slidey = new createAnimatedUIHelper({
+		x: 8,
+		y: 95,
+		width: 100,
+		height: 100,
+		img: "../../pics/ui_slide.png"
+	});
+
 };

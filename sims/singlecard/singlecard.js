@@ -1,4 +1,5 @@
 window.front_only = _getQueryVariable("front_only");
+window.forever_card = (_getQueryVariable("forever_card")=="yes");
 window.FRONT_ONLY = (front_only && front_only=="yes");
 
 var flashcard = $("#flashcard");
@@ -34,8 +35,9 @@ if(!FRONT_ONLY){
 			},1000);
 
 			// AND REMOVE UI
-			// TODO: unless it's the forever-card
-			clicky.kill();
+			if(!window.forever_card){
+				clicky.kill();
+			}
 
 		}
 

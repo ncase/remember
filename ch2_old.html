@@ -63,57 +63,46 @@ if you haven't already.)
 </words>
 </panel>
 
-<panel w=500 h=370>
-<pic src="pics/leit0.png" sx=0 sy=480></pic>
-<words x=10 y=10 w=430 h=30>
-	All new flashcards start at Level 1.
+<panel w=500 h=400>
+<pic></pic>
+<words x=10 y=10 w=430 h=60>
+	All new cards start at Level 1, then get promoted to higher Levels
+	as your memory of them improves. (I'll explain the details later)
 </words>
-<words x=30 y=270 w=430 h=60>
-	(If you're new to Spaced Repetition, I recommend starting with 5 new cards a day.)
+<words x=30 y=300 w=430 h=60>
+	Thus: Level 1 cards have fast memory-decay, Level 2 cards have slower memory-decay, etc.
+</words>
+</panel>
+
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=0 sy=1300></pic>
+<words x=10 y=10 w=430 h=90>
+	But remember, we have to try recalling a card <i>just as we're about to forget it</i>.
+</words>
+<words x=30 y=270 w=430 h=90>
+	And as we saw earlier,
+	you do this by scheduling recalls with <i>increasing gaps of time</i>.
 </words>
 </panel>
 
 <panel w=500 h=400>
-<pic src="pics/leit0.png" sx=500 sy=480></pic> <!-- valhalla -->
-<words x=10 y=10 w=430 h=60>
-	When you review a card, and get it right, it moves up <i>one</i> Level.
+<pic src="pics/leit0.png" sx=0 sy=1300></pic>
+<words x=10 y=10 w=430 h=90>
+	That's why, in the Leitner Box,
+	we review Level 1 cards every day,
+	Level 2 every two days,
+	Level 3 every <i>FOUR</i> days,
+	Level 4 every <i>EIGHT</i> days... and so on.
 </words>
-<words x=30 y=300 w=430 h=60>
-	(If you're at the final Level, congrats!
-	Your card gets to retire in your long-term memory)
-</words>
-</panel>
-
-<panel w=500 h=430>
-<pic src="pics/leit0.png" sx=0 sy=900></pic> <!-- HIGH STAKES -->
-<words x=10 y=10 w=430 h=60>
-	But if you review a card, and get it wrong... it has to go
-	<i>all the way back down to Level 1.</i>
-</words>
-<words x=30 y=300 w=430 h=90>
-	(If it's already at Level 1, good news:
-	you can keep testing yourself on it until you get it right,
-	and move it up to Level 2)
-</words>
-</panel>
-
-<panel w=500 h=400>
-<pic src="pics/leit0.png" sx=0 sy=1370></pic>
-<words x=10 y=10 w=430 h=120>
-	But <i>when</i> do we review cards?
-	That's the trick.
-	In the Leitner Box, we review Level 1 cards every day,
-	Level 2 every two days, Level 3 every <i>FOUR</i> days,
-	Level 4 every <i>EIGHT</i> days, etc...
-</words>
-<words x=30 y=300 w=430 h=60>
-	The pattern is: we <i>double the gap</i> (# of days between reviews) for each Level!
+<words x=30 y=270 w=430 h=90>
+	The pattern is: we <i>double</i> the gap between Levels!
 </words>
 </panel>
 
 <panel w=600 h=60>
 <words w=600 x=-15 no-bg>
-	Here's what the looping 64-day game calendar looks like:
+	Here's what that looks like over a 64-day, looping calendar:
 </words>
 </panel>
 
@@ -121,35 +110,68 @@ if you haven't already.)
 <sim x=0 y=0 w=600 h=400 src="sims/calendar/"></sim>
 </panel>
 
-<panel w=500 h=490>
-<pic src="pics/leit0.png" sx=500 sy=870></pic>
-<words x=10 y=10 w=430 h=90>
-	(Note: the reason we review Level 1 at the end
-	is so you see your new cards <i>and</i> the cards you forgot from higher Levels.)
-</words>
-<words x=30 y=330 w=430 h=120>
-	(At the end of a daily game of Spaced Repetition,
-	leave no cards in Level 1.
-	Test yourself until you can get them all right,
-	and move them up to Level 2!)
+
+<!-- Part 1.2: Leitner Rules -->
+
+<panel w=600 h=60>
+<words w=600 x=-15 no-bg>
+	Now, how <i>do</i> you play this game of Spaced Repetition Solitaire?
 </words>
 </panel>
 
-<panel w=400 h=400>
-<pic src="pics/leit0.png" sx=600 sy=1400></pic>
-<words x=10 y=10 w=350 h=90>
-	(Note #2: Spaced Repetition <i>apps</i> like Anki use a more sophisticated algorithm...)
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=0 sy=450></pic> <!-- joyful baby card... and grisly card -->
+<words x=10 y=10 w=430 h=60>
+	The rules are simple.
+	First, all new cards start at Level 1.
 </words>
-<words x=10 y=300 w=350 h=60>
-	(...but at its core, it works on the same principles as the Leitner Box)
+<words x=30 y=300 w=430 h=60>
+	(If you're new to Spaced Repetition, I recommend starting with 5 new cards a day.)
+</words>
+</panel>
+
+<panel w=500 h=430>
+<pic src="pics/leit0.png" sx=500 sy=450></pic> <!-- valhalla -->
+<words x=10 y=10 w=430 h=90>
+	Every day, review your Levels from highest to lowest.
+	Shuffle each Level's cards first.
+	Every card you get right goes up <i>one</i> Level.
+</words>
+<words x=30 y=330 w=430 h=60>
+	(If you're at the final Level, congrats!
+	Your card gets to retire in your long-term memory)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=0 sy=900></pic> <!-- HIGH STAKES -->
+<words x=10 y=10 w=430 h=60>
+	However, every card you get wrong... has to go
+	<i>all the way back down to Level 1.</i>
+</words>
+<words x=30 y=300 w=430 h=60>
+	(You can change the rules – I mean, it's <i>your</i> shoebox –
+	but I recommend playing this way)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=900></pic> <!-- baby + REMEMBER ME?! -->
+<words x=10 y=10 w=430 h=60>
+	Each day, you review Level 1 at the end.
+	You'll see your new cards + the cards you forgot.
+</words>
+<words x=30 y=300 w=430 h=60>
+	Keep trying to recall them, until you can get <i>every one</i> right!
+	Move them all to Level 2.
 </words>
 </panel>
 
 <panel w=600 h=80>
 <words w=600 x=-15 no-bg>
-	And that's all to it!
-	Here's how the game plays out, step by step:
-	(<b>This sim has no end. Once you "get it", just keep scrolling.</b>)
+	And that's all to it! 
+	Here's how the game plays out, over a few days:
+	(<b>There's no end. Once you "get it", just keep scrolling.</b>)
 </words>
 </panel>
 

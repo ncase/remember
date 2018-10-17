@@ -37,6 +37,9 @@ window.onload = function(){
 		//$("#MODE2_sliders").style.display = "block";
 	}
 
+	// POINTY
+	_addPointy(MODE==2);
+
 };
 
 //////////////////////////////////////////
@@ -85,6 +88,8 @@ $("#reset").onclick = function(){
 	_STAGE = 0;
 	_newStep();
 	//update();
+
+	_killPointy();
 
 };
 
@@ -142,6 +147,7 @@ function _updateLabels(){
 
 $("#next_step").onclick = function(){
 	_newStep();
+	_killPointy();
 };
 function _newStep(skipLabels){
 	
@@ -207,6 +213,7 @@ function _newStep(skipLabels){
 $("#next_day").onclick = function(){
 	_newDay();
 	_updateLabels();
+	_killPointy();
 };
 function _newDay(skipLabels){
 
@@ -239,9 +246,11 @@ function _reviewMultipleDays(days){
 
 $("#next_week").onclick = function(){
 	_reviewMultipleDays(7);
+	_killPointy();
 };
 $("#next_month").onclick = function(){
 	_reviewMultipleDays(30);
+	_killPointy();
 };
 
 //////////////////////////////////////////
@@ -486,4 +495,22 @@ function _drawArrow(fail){
 	var label = (fail ? "-" : "+") + ann.N;
 	ctx.fillText(label, cp.x, cp.y+15);
 
+}
+
+//////////////////////////////////////////
+//////////////////////////////////////////
+
+function _addPointy(mode2){
+
+	window.pointy = new createAnimatedUIHelper({
+		x: mode2 ? 380 : 120,
+		y: 50,
+		width: 100,
+		height: 100,
+		img: "../../pics/ui_point.png"
+	});
+
+}
+function _killPointy(){
+	if(window.pointy) window.pointy.kill();
 }
