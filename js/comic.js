@@ -236,3 +236,41 @@ if(linx){
 	});
 }
 
+
+//////////////////////
+// SOUNDS ////////////
+//////////////////////
+
+var SOUNDS_TO_LOAD = [
+	["applause",1],
+	["ding",1],
+	["button_down",1],
+	["button_up",1],
+	["flip_down",1],
+	["flip_up",1],
+	["reset",1],
+	["slider_down",0.25],
+	["slider_up",0.25],
+	["type1",1],
+	["type2",1],
+	["type3",1],
+	["type4",1],
+	["type5",1],
+	["win",1],
+	["win_final",1],
+];
+var SOUNDS = {};
+SOUNDS_TO_LOAD.forEach(function(config){
+	
+	var name = config[0];
+	var vol = config[1];
+
+	SOUNDS[name] = new Howl({
+		src: ["audio/"+name+".mp3"],
+		volume: vol
+	});
+
+});
+window.playSound = function(name){
+	SOUNDS[name].play();
+};

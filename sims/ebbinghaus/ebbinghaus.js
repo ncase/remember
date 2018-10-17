@@ -129,7 +129,7 @@ var _addSlideyUI = function(x,y){
 window.pointy = null;
 var _addPointyUI = function(x,y){
 	
-	window.slidey = new createAnimatedUIHelper({
+	window.pointy = new createAnimatedUIHelper({
 		x: x,
 		y: y,
 		width: 70,
@@ -243,6 +243,7 @@ var _appendCheckbox = function(name, onActivate, onDeactivate){
 	
 	var label = _getLabel(name);
 	var labelDOM = document.createElement("label");
+	labelDOM.className = "auto_optimize";
 	var labelTextNode = document.createTextNode(label);
 
 	var input = document.createElement("input");
@@ -251,8 +252,10 @@ var _appendCheckbox = function(name, onActivate, onDeactivate){
 	input.onclick = function(){
 		if(input.checked){
 			onActivate();
+			playSound("ding");
 		}else{
 			onDeactivate();
+			playSound("button_up");
 		}
 	}
 
@@ -288,7 +291,18 @@ var _createParamSlider = function(config){
 	slider.oninput = _onSliderUpdate;
 	_onSliderUpdate();
 
+	// Slider has SOUNDS
+	slider.onmousedown = slider.ontouchstart = function(){
+		playSound("slider_down");
+	};
+	slider.onmouseup = slider.ontouchend = function(){
+		playSound("slider_up");
+	};
+
 };
+
+// HACK - for sounds...
+var recallIsOptimal = [false,false,false,false];
 
 
 // Update
@@ -470,6 +484,20 @@ function update(){
 					ctx.lineTo(p.x,p.y);
 					imCut = true;
 					theCircles.push(theLastPoint);
+
+					// HACK: OPTIMAL??
+					var d = theLastPoint.distance;
+					if(d<OPTIMAL_RANGE/3){
+					
+						if(!recallIsOptimal[c]){
+							if(!window.AUTO_OPTIMIZE_ON) playSound("ding");
+						}
+						recallIsOptimal[c] = true;
+
+					}else{
+						recallIsOptimal[c] = false;
+					}
+
 				}
 			}
 			ctx.stroke();
@@ -480,7 +508,7 @@ function update(){
 		for(var i=0; i<theCircles.length; i++){
 			var circ = theCircles[i];
 			var d = circ.distance;
-			ctx.fillStyle = (d<OPTIMAL_RANGE/2) ? "#FFDD00" : "#FF4040";
+			ctx.fillStyle = (d<OPTIMAL_RANGE/3) ? "#FFDD00" : "#FF4040";
 			ctx.beginPath();
 			ctx.arc(circ.x, circ.y, 8, 0, Math.TAU, false);
 			ctx.fill();

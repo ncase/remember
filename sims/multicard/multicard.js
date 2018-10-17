@@ -22,6 +22,7 @@ window.onload = function(){
 		var flipcont = $("#flip-container");
 		var flip = flipcont.getAttribute("flip");
 		flipcont.setAttribute("flip", (flip=="yes") ? "no" : "yes");
+		playSound((flip=="yes") ? "flip_down": "flip_up");
 
 		// Hide Info, then ask "did you get it?"
 		if(INFO_MODE == "question"){
@@ -166,21 +167,23 @@ function nextCard(removeCurrent){
 
 }
 
+var IS_FINAL_MULTICARD = (_getQueryVariable("final")=="yes");
 function setUpInfo(){
 
 	// Labels
 	$("#a_label").innerHTML = _getLabel("multicard_a");
 	$("#a_no").innerHTML = _getLabel("multicard_no");
 	$("#a_yes").innerHTML = _getLabel("multicard_yes");
-	var isFinalMulticard = (_getQueryVariable("final")=="yes");
-	$("#done").innerHTML = _getLabel( isFinalMulticard ? "multicard_done_2" : "multicard_done");
+	$("#done").innerHTML = _getLabel( IS_FINAL_MULTICARD ? "multicard_done_2" : "multicard_done");
 
 	// Clicking "yes" or "no"
 	$("#a_yes").onclick = function(){
 		nextCard(true);
+		playSound("button_down");
 	};
 	$("#a_no").onclick = function(){
 		nextCard(false);
+		playSound("button_up");
 	};
 
 }
@@ -227,6 +230,9 @@ function showInfoDone(){
 	$("#answer").style.display = "none";
 	$("#done").style.display = "block";	
 	INFO_MODE = "done";
+
+	playSound( IS_FINAL_MULTICARD ? "win_final" : "win" );
+
 }
 function hideInfo(){
 	$("#info").style.display = "none";

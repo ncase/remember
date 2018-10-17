@@ -50,6 +50,14 @@ daySlider.oninput = function(){
 
 }
 
+// Slider has SOUNDS
+daySlider.onmousedown = daySlider.ontouchstart = function(){
+	playSound("slider_down");
+};
+daySlider.onmouseup = daySlider.ontouchend = function(){
+	playSound("slider_up");
+};
+
 window.REDRAW = 0;
 function update(){
 

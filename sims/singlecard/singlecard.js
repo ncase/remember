@@ -11,8 +11,10 @@ if(!FRONT_ONLY){
 		var flip = flashcard.getAttribute("flip");
 		if(flip=="yes"){
 			flashcard.setAttribute("flip","no");
+			playSound("flip_down");
 		}else{
 			flashcard.setAttribute("flip","yes");
+			playSound("flip_up");
 
 			// HACK: PLAY AUDIO (if any)
 			var a = $("#HACK_audio");
@@ -33,6 +35,11 @@ if(!FRONT_ONLY){
 			setTimeout(function(){
 				window.top.broadcastMessage("flip_"+cardname);
 			},1000);
+
+			// HACK
+			if(cardname=="the_end"){
+				playSound("applause");
+			}
 
 			// AND REMOVE UI
 			if(!window.forever_card){

@@ -127,12 +127,11 @@ So, here's the <i>front</i> of our first flashcard, our question:
 <sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_what"></sim>
 </panel>
 
-<!--
-<panel w="400" h="70">
-<words w="400" x="-15" y="-20" no-bg="">
-(if you change your mind, you can always scroll back here &amp; edit your answer)
+<panel fadeInOn="answer_edit_you_what" w="600" h="40" style="margin-bottom: -10px;">
+<words w="600" x="-15" y="-10" no-bg="">
+(note: you can scroll back here &amp; change your answer later)
 </words>
-</panel>-->
+</panel>
 
 
 
@@ -164,19 +163,19 @@ So, here's the <i>front</i> of our first flashcard, our question:
 	concrete examples of a <i>why</i> behind a <i>what:</i>
 </words>
 <words x=130 y=105 w=350 style="text-align:left" no-bg class="comic_text">
-	WHAT: a new language
+	<b>WHAT:</b> a new language
 	<br>
-	WHY: to speak to friends, family, lovers in their native tongue
+	<b>WHY:</b> to speak to friends, family, lovers in their native tongue
 </words>
 <words x=130 y=210 w=350 style="text-align:left" no-bg class="comic_text">
-	WHAT: computer programming
+	<b>WHAT:</b> computer programming
 	<br>
-	WHY: to make money so you can eat
+	<b>WHY:</b> to make money so you can eat
 </words>
 <words x=130 y=290 w=350 style="text-align:left" no-bg class="comic_text">
-	WHAT: anything interesting
+	<b>WHAT:</b> anything interesting
 	<br>
-	WHY: curiosity, for its own sake!
+	<b>WHY:</b> curiosity, for its own sake!
 </words>
 <words x=210 y=380 w=250 h=30>
 	So... what's <i>your</i> why?
@@ -804,5 +803,6 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 
 </html>
 
+<script src="js/howler.core.min.js"></script>
 <script src="js/minpubsub.src.js"></script>
 <script src="js/comic.js"></script>

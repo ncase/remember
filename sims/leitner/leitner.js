@@ -89,7 +89,9 @@ $("#reset").onclick = function(){
 	_newStep();
 	//update();
 
-	_killPointy();
+	//_killPointy();
+	if(window.pointy) window.pointy.kill();
+	playSound("reset");
 
 };
 
@@ -108,6 +110,30 @@ slider_wrong.oninput = function(){
 	$("#slider_wrong_label").innerHTML = _getLabel("leitner_slider_wrong").replace("[N]",Math.round(CARDS_WRONG*100));
 };
 slider_wrong.oninput();
+
+// Sliders have SOUNDS
+slider_new.onmousedown = slider_new.ontouchstart = function(){
+	playSound("slider_down");
+};
+slider_new.onmouseup = slider_new.ontouchend = function(){
+	playSound("slider_up");
+};
+slider_wrong.onmousedown = slider_wrong.ontouchstart = function(){
+	playSound("slider_down");
+};
+slider_wrong.onmouseup = slider_wrong.ontouchend = function(){
+	playSound("slider_up");
+};
+
+var boop = -1;
+function alternateBoops(){
+	boop++;
+	if(boop%2==0){
+		playSound("button_down");
+	}else{
+		playSound("button_up");
+	}
+}
 
 
 function _updateLabels(){
@@ -513,4 +539,5 @@ function _addPointy(mode2){
 }
 function _killPointy(){
 	if(window.pointy) window.pointy.kill();
+	alternateBoops();
 }

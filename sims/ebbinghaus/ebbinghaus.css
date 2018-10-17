@@ -76,6 +76,9 @@ input[fullw]{
     background: #d3d3d3;
     outline: none;
 }
+.timing_slider{
+    margin-bottom: 20px;
+}
 
 
 .timing_slider::-webkit-slider-thumb{
@@ -132,3 +135,9 @@ input[fullw]{
     cursor: pointer;
 }
 
+.auto_optimize{
+    background: #e6e6e6;
+    padding: 0 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}

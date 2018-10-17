@@ -95,4 +95,11 @@ function createSlider(config){
 
 }
 
+function playSound(name){
+	if(window!=window.top){
+		if(window.top.playSound){
+			window.top.playSound(name);
+		}
+	}
+}
 
