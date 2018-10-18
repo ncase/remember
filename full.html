@@ -265,11 +265,14 @@ Like so:
 
 <panel w=500 h=450>
 <pic src="pics/sci0.png" sx=900 sy=0></pic>
-<words x=10 y=10 w=400 h=60>
-	Since then, Ebbinghaus’s findings have been replicated again and again–
+<words x=10 y=10 w=440 h=90>
+	Philosophers have debated about memory for millennia,
+	but Ebbinghaus was the first to do actual <i>experiments.</i>
+	(which have been replicated)
 </words>
-<words x=60 y=350 w=400 h=60>
-	–and grew into a whole new scientific field of memory!
+<words x=20 y=350 w=440 h=60>
+	For that reason, Hermann Ebbinghaus is known as
+	the pioneer of the science of memory.
 </words>
 </panel>
 
@@ -302,8 +305,9 @@ How fast a person’s memory decays depends on the person and the memory...
 
 <panel w=400 h=400>
 <pic src="pics/sci0.png" sx=400 sy=500></pic>
-<words x=10 y=10 w=300>
-But, in general, a memory’s “rate of decay” slows down each time you <b>actively recall</b> it.
+<words x=10 y=10 w=330>
+But in general, a memory’s “rate of decay” slows down each time you <b>actively recall</b> it.
+(as opposed to, say, passively re-reading it)
 </words>
 </panel>
 
@@ -508,14 +512,14 @@ let's do some active recall on what we just learnt:
 </panel>
 
 <panel w=600 h=400 bg="#e0e0e0">
-<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,sci_c"></sim>
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,intro_b,sci_c"></sim>
 </panel>
 
 <panel w=400 h=400>
 <pic src="pics/sci2.png" sx=0 sy=950></pic>
 <words x=50 y=20 w=300 bg=none>
-Anyway, this all sounds great,
-but finding the optimal schedule must be impossible, right?
+Well that's nice,
+but actually <i>finding</i> a good Spaced Repetition schedule must be hard, right?
 </words>
 </panel>
 
@@ -523,7 +527,7 @@ but finding the optimal schedule must be impossible, right?
 <pic src="pics/sci2.png" sx=400 sy=950></pic>
 <words x=50 y=30 w=300 bg=none>
 <i>Au contraire!</i>
-It’s so simple, you can even create your own automatic scheduler...
+It’s actually so simple, you can even create your own automatic scheduler...
 </words>
 </panel>
 
@@ -746,7 +750,7 @@ It’s so simple, you can even create your own automatic scheduler...
 </panel>
 
 <panel w=600 h=400 bg="#e0e0e0">
-<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_a,leit_b,leit_c"></sim>
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_a,intro_a,leit_b,intro_c,leit_c"></sim>
 </panel>
 
 
@@ -999,7 +1003,7 @@ It’s so simple, you can even create your own automatic scheduler...
 </panel>
 
 <panel w=600 h=400 bg="#e0e0e0">
-<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_d,leit_b,leit_a,leit_c"></sim>
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_d,sci_c,sci_a,sci_b"></sim>
 </panel>
 
 
@@ -1011,8 +1015,8 @@ It’s so simple, you can even create your own automatic scheduler...
 	The consensus in the Spaced Repetition community is,
 	after a while, <b>you should make your own cards.</b>
 </words>
-<words x=30 y=130 w=230 no-bg>
-	This way, you can connect facts to what <i>you</i> find meaningful.
+<words x=33 y=140 w=230 no-bg>
+	This way, you can connect facts to what <i>you</i> know, what <i>you</i> love.
 </words>
 </panel>
 
@@ -1471,7 +1475,7 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 </panel>
 
 <panel w=600 h=400 bg="#e0e0e0">
-<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=you_why,sci_a,you_when,sci_b,you_how,sci_c"></sim>
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=you_what,sci_a,leit_a,intro_a,you_why,sci_b,leit_b,intro_b,you_how,sci_c,leit_c,you_when,leit_d,intro_c"></sim>
 </panel>
 
 <panel w=240 h=300>
@@ -1665,28 +1669,28 @@ DOWNLOAD ALL CARDS &darr;
 	</div>
 </span>
 <span id="flashcard_intro_a_front">
-	<div class="fcard_center" style="height:2.5em">
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
 	Spaced Repetition = <span class="underline">____</span> + <span class="underline">____</span>
 	</div>
 </span>
 <span id="flashcard_intro_a_back">
 	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=240></div>
-	<div class="fcard_center" style="height:2.5em">
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
 	testing + time
 	</div>
 </span>
 <span id="flashcard_intro_b_front">
-	<div class="fcard_center" style="height:4.5em">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
 	3 common but ineffective learning/teaching practices are...
 	</div>
 </span>
 <span id="flashcard_intro_b_back">
-	<div class="fcard_center" style="height:2.2em">
+	<div id="fc_words" class="fcard_center" style="height:2.2em">
 	...lectures, cramming, and re-reading
 	</div>
 </span>
 <span id="flashcard_intro_c_front">
-	<div class="fcard_center" style="height:4.4em">
+	<div id="fc_words" class="fcard_center" style="height:4.4em">
 	In Greek Mythology,
 	the goddess of <span class="underline">____</span>
 	was the mother of the goddesses of
@@ -1695,7 +1699,7 @@ DOWNLOAD ALL CARDS &darr;
 </span>
 <span id="flashcard_intro_c_back">
 	<div class="fcard_bg" src="pics/fcards_intro.png" sx=400 sy=0></div>
-	<div style="position: absolute; width:250px; top:50px; left:140px; line-height:1.1em;">
+	<div id="fc_words" style="position: absolute; width:250px; top:50px; left:140px; line-height:1.1em;">
 	Memory is the mother of Inspiration
 	</div>
 </span>
@@ -1739,35 +1743,35 @@ DOWNLOAD ALL CARDS &darr;
 
 <!-- Flashcards -->
 <span id="flashcard_sci_a_front">
-	<div class="fcard_center" style="height:2.5em">
-	The discoverer of the Forgetting Curve was...
+	<div id="fc_words" class="fcard_center" style="height:3.5em">
+	The pioneer of the experimental science of memory was...
 	</div>
 </span>
 <span id="flashcard_sci_a_back">
 	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=0></div>
-	<div style="position: absolute; width: 250px; top: 60px; left:150px; line-height: 1.1em;">
+	<div id="fc_words" style="position: absolute; width: 250px; top: 60px; left:150px; line-height: 1.1em;">
 	Hermann Ebbinghaus
 	</div>
 </span>
 <span id="flashcard_sci_b_front">
-	<div class="fcard_center" style="height:3.4em">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
 	The Forgetting Curve (<i>without</i> any recalls) looks like...
 	</div>
 </span>
 <span id="flashcard_sci_b_back">
 	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=240></div>
-	<div style="position: absolute; width: 280px; top: 70px; right: 20px; font-size:20px; line-height: 1.1em;">
+	<div id="fc_words" style="position: absolute; width: 280px; top: 70px; right: 20px; font-size:20px; line-height: 1.1em;">
 	(note: it decays quickly, then slowly – "exponential decay")
 	</div>
 </span>
 <span id="flashcard_sci_c_front">
-	<div class="fcard_center" style="height:3.4em">
-	The Forgetting Curve (<i>with</i> optimally-spaced recalls) looks like...
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	The Forgetting Curve (<i>with</i> well-spaced recalls) looks like...
 	</div>
 </span>
 <span id="flashcard_sci_c_back">
 	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=240></div>
-	<div style="position: absolute; width: 360px; top: 120px; left: 20px; font-size:20px; line-height: 1.1em;">
+	<div id="fc_words" style="position: absolute; width: 360px; top: 120px; left: 20px; font-size:20px; line-height: 1.1em;">
 	(note: the gaps between recalls <i>increase</i> in length)
 	</div>
 </span>
@@ -2006,7 +2010,7 @@ DOWNLOAD ALL CARDS &darr;
 	</div>
 </span>
 <span id="flashcard_mitochondria_8_back">
-<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1440></div>
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1440></div>
 	<div class="fcard_center" style="height:230px">
 		when a prokaryote was eaten by another cell
 	</div>
@@ -2014,19 +2018,19 @@ DOWNLOAD ALL CARDS &darr;
 
 <!-- Spaced Rep Flashcards -->
 <span id="flashcard_leit_a_front">
-	<div class="fcard_center" style="height:4.5em">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
 	In the Leitner Box, we <span class="underline">______</span>
 	the gap (# of days between reviews) for each Level
 	</div>
 </span>
 <span id="flashcard_leit_a_back">
 	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=720 style="left:-5px"></div>
-	<div class="fcard_center" style="height:110px">
+	<div id="fc_words" class="fcard_center" style="height:110px">
 	double the gap
 	</div>
 </span>
 <span id="flashcard_leit_b_front">
-	<div class="fcard_center" style="height:4.5em">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
 	The Leitner Box game:
 	<br>
 	when you get a card <i>right</i>, you move it <span class="underline">______</span> .
@@ -2034,12 +2038,12 @@ DOWNLOAD ALL CARDS &darr;
 </span>
 <span id="flashcard_leit_b_back">
 	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=480></div>
-	<div class="fcard_center" style="height:170px">
+	<div id="fc_words" class="fcard_center" style="height:170px">
 	up one Level
 	</div>
 </span>
 <span id="flashcard_leit_c_front">
-	<div class="fcard_center" style="height:4.5em">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
 	The Leitner Box game:
 	<br>
 	when you get a card <i>wrong</i>, you move it <span class="underline">______</span> .
@@ -2047,12 +2051,12 @@ DOWNLOAD ALL CARDS &darr;
 </span>
 <span id="flashcard_leit_c_back">
 	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=480></div>
-	<div class="fcard_center" style="height:180px">
+	<div id="fc_words" class="fcard_center" style="height:180px">
 	back to Level 1!
 	</div>
 </span>
 <span id="flashcard_leit_d_front">
-	<div class="fcard_center" style="font-size:30px; height:170px;">
+	<div id="fc_words" class="fcard_center" style="font-size:30px; height:170px;">
 	According to some random comic-game on the internet,
 	my Spaced Repetition flashcards should be
 	<span class="underline">______</span> ,
@@ -2062,7 +2066,7 @@ DOWNLOAD ALL CARDS &darr;
 </span>
 <span id="flashcard_leit_d_back">
 	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=720></div>
-	<div class="fcard_center" style="color:#fff; height:200px; height: 180px; font-size: 30px;">
+	<div id="fc_words" class="fcard_center" style="color:#fff; height:200px; height: 180px; font-size: 30px;">
 	small, connected &amp; meaningful
 	</div>
 </span>
@@ -2122,7 +2126,7 @@ DOWNLOAD ALL CARDS &darr;
 <!-- QUESTIONS -->
 <span id="flashcard_you_what_front">
 	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=0></div>
-	<div id="fc_words" class="fcard_center" style="position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
 		WHAT do you want to learn?
 	</div>
 </span>
@@ -2133,8 +2137,8 @@ DOWNLOAD ALL CARDS &darr;
 </span>
 <span id="flashcard_you_why_front">
 	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=0></div>
-	<div id="fc_words" class="fcard_center" style="position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
-		WHY do you want to learn that?
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		WHY do you want to learn?
 	</div>
 </span>
 <span id="flashcard_you_why_back">
@@ -2144,7 +2148,7 @@ DOWNLOAD ALL CARDS &darr;
 </span>
 <span id="flashcard_you_how_front">
 	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=240></div>
-	<div id="fc_words" class="fcard_center" style="position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
 		HOW do you want to do Spaced Repetition?
 	</div>
 </span>
@@ -2155,7 +2159,7 @@ DOWNLOAD ALL CARDS &darr;
 </span>
 <span id="flashcard_you_when_front">
 	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=240></div>
-	<div id="fc_words" class="fcard_center" style="position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
 		WHEN do you want to do Spaced Repetition?
 	</div>
 </span>

@@ -32,14 +32,12 @@ if(!FRONT_ONLY){
 		// Also, send message (when flipped for first time)
 		if(!FLIPPED && window.top.broadcastMessage){
 			FLIPPED = true;
+			
+			window.top.broadcastMessage("PREflip_"+cardname);
+			
 			setTimeout(function(){
 				window.top.broadcastMessage("flip_"+cardname);
 			},1000);
-
-			// HACK
-			if(cardname=="the_end"){
-				playSound("applause");
-			}
 
 			// AND REMOVE UI
 			if(!window.forever_card){

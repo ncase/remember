@@ -251,6 +251,7 @@ var SOUNDS_TO_LOAD = [
 	["reset",1],
 	["slider_down",0.25],
 	["slider_up",0.25],
+	["tada",0.5],
 	["type1",1],
 	["type2",1],
 	["type3",1],
@@ -274,3 +275,12 @@ SOUNDS_TO_LOAD.forEach(function(config){
 window.playSound = function(name){
 	SOUNDS[name].play();
 };
+
+subscribe("PREflip_spaced_rep",function(){
+	setTimeout(function(){
+		SOUNDS.tada.play();
+	},500);
+});
+subscribe("PREflip_the_end",function(){
+	SOUNDS.applause.play();
+});
