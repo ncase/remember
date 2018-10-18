@@ -36,7 +36,7 @@ a{
 .divider{
 	background: #000;
 	background-image: url(../pics/bg.png);
-	background-size: 25%;
+	background-size: 150px;
 
 	width: 100%;
 	/*height: 200px;*/
