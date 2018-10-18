@@ -25,14 +25,19 @@ b, strong{
 	letter-spacing: 1px;
 }
 
+a{
+	color:#5b8df1;
+}
+
 /**********/
 /* SPLASH */
 /**********/
 
 .divider{
-	/*background: #2c313a;
-	background: hsla(36, 100%, 60%, 1);*/
 	background: #000;
+	background-image: url(../pics/bg.png);
+	background-size: 25%;
+
 	width: 100%;
 	/*height: 200px;*/
 	color: #fff;
@@ -146,4 +151,22 @@ b, strong{
 	max-width: 400px;
 	max-height: 250px;
 }
+
+
+/**********/
+/* CREDITS */
+/**********/
+
+#credits{
+	background: #000;
+	overflow: hidden;
+}
+#credits > div{
+	color:white;
+	margin: 50px auto 100px auto;
+    width: 600px;
+}
+
+
+
 

@@ -7,9 +7,16 @@
 }
 
 body{
-	background:#bada55;
+	/*background:#bada55;*/
+	background: none;
+	margin: 0;
 }
 canvas{
 	width:150px;
 	margin: 5px;
+}
+#download{
+	width: 400px;
+    height: 50px;
+    cursor: pointer;
 }
