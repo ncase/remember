@@ -48,8 +48,11 @@ window.onload = function(){
 
 		// Create & append iframe
 		var iframe = document.createElement("iframe");
-		iframe.src = sim.getAttribute("src");
+		//iframe.src = sim.getAttribute("src");
+		var src = sim.getAttribute("src");
+		iframe.setAttribute("will_source", src);
 		iframe.scrolling = "no";
+		iframe.className = "simulation";
 		sim.appendChild(iframe);
 
 	});
@@ -81,6 +84,12 @@ window.onload = function(){
 		if(val = panel.getAttribute("bg")) s.background = val;
 
 	});
+
+	// On scroll
+	window.onscroll();
+
+	// Load sounds
+	loadSounds();
 
 };
 
@@ -231,11 +240,18 @@ function makeWallpaper(){
 
 var linx = $("#label_chapter_links");
 if(linx){
-	$all(".divider > #chapter_links").forEach(function(linkContainer){
+	$all("#chapter_links").forEach(function(linkContainer){
 		linkContainer.innerHTML = linx.innerHTML;
 	});
 }
 
+// HACK: Duplicate header text for absolute positioning coz CSS sucks
+/*$all(".divider").forEach(function(divider){
+
+	var html = divider.querySelector("div").innerHTML;
+	divider.querySelector("#divider_container").innerHTML = html;
+
+});*/
 
 //////////////////////
 // SOUNDS ////////////
@@ -261,17 +277,19 @@ var SOUNDS_TO_LOAD = [
 	["win_final",1],
 ];
 var SOUNDS = {};
-SOUNDS_TO_LOAD.forEach(function(config){
-	
-	var name = config[0];
-	var vol = config[1];
+function loadSounds(){
+	SOUNDS_TO_LOAD.forEach(function(config){
+		
+		var name = config[0];
+		var vol = config[1];
 
-	SOUNDS[name] = new Howl({
-		src: ["audio/"+name+".mp3"],
-		volume: vol
+		SOUNDS[name] = new Howl({
+			src: ["audio/"+name+".mp3"],
+			volume: vol
+		});
+
 	});
-
-});
+}
 window.playSound = function(name){
 	SOUNDS[name].play();
 };
@@ -284,3 +302,35 @@ subscribe("PREflip_spaced_rep",function(){
 subscribe("PREflip_the_end",function(){
 	SOUNDS.applause.play();
 });
+
+/////////////////////////////
+// IFRAME SCROLL ////////////
+/////////////////////////////
+
+var splashes = $all("iframe.splash");
+
+window.onscroll = function(){
+
+	// Playables - PAUSE & UNPAUSE
+	var scrollY = window.pageYOffset;
+	var innerHeight = window.innerHeight;
+	for(var i=0;i<splashes.length;i++){
+		var s = splashes[i];
+		var bounds = s.getBoundingClientRect();
+		s.contentWindow.IS_IN_SIGHT = (bounds.y<innerHeight && bounds.y+bounds.height>0);
+	}
+
+	// Also, iframe scrollables
+	var BUFFER = innerHeight/2;
+	var simulations = $all("iframe.simulation");
+	simulations.forEach(function(sim){
+		if(!sim.src){
+			var bounds = sim.getBoundingClientRect();
+			if(bounds.y<innerHeight+BUFFER && bounds.y+bounds.height>-BUFFER){
+				sim.src = sim.getAttribute("will_source");
+				console.log("Loading "+sim.src+"...");
+			}
+		}
+	});
+
+};

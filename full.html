@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>An Interactive Comic</title>
 	<link rel="stylesheet" type="text/css" href="css/comic.css"/>
+	<meta name="viewport" content="width=600">
 </head>
 
 <body>
@@ -16,12 +17,15 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 	
 <a name="0"></a>
-<div class="divider">
-	<div id="chapter_name">
-		[todo: come up with a title]
-	</div>
-	<div style="text-align: right;">
-		by nicky case &middot; oct 2018
+<div class="divider divider_small_height">
+	<iframe class="splash" src="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			[todo: some friggin' title]
+		</div>
+		<div style="text-align:right;">
+			by nicky case &middot; oct 2018
+		</div>
 	</div>
 </div>
 
@@ -225,16 +229,15 @@ Like so:
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <a name="1"></a>
-<div class="divider">
-	<div id="chapter_name">
-		THE SCIENCE
-		<span class="small_of">
-		of
-		</span>
-		<br>
-		SPACED REPETITION
+<div class="divider divider_big_height">
+	<iframe class="splash" src="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			THE SCIENCE of
+			SPACED REPETITION
+		</div>
+		<div id="chapter_links"></div>
 	</div>
-	<div id="chapter_links"></div>
 </div>
 
 <div class="comic">
@@ -555,16 +558,15 @@ It’s actually so simple, you can even create your own automatic scheduler...
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <a name="2"></a>
-<div class="divider">
-	<div id="chapter_name">
-		THE ART
-		<span class="small_of">
-		of
-		</span>
-		<br>
-		SPACED REPETITION
+<div class="divider divider_big_height">
+	<iframe class="splash" src="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			THE ART of
+			SPACED REPETITION
+		</div>
+		<div id="chapter_links"></div>
 	</div>
-	<div id="chapter_links"></div>
 </div>
 
 <div class="comic">
@@ -1051,11 +1053,14 @@ It’s actually so simple, you can even create your own automatic scheduler...
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <a name="3"></a>
-<div class="divider">
-	<div id="chapter_name">
-		GET STARTED TODAY!
+<div class="divider divider_small_height">
+	<iframe class="splash" src="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			GET STARTED TODAY!
+		</div>
+		<div id="chapter_links"></div>
 	</div>
-	<div id="chapter_links"></div>
 </div>
 
 <div class="comic">
@@ -1475,7 +1480,7 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 </panel>
 
 <panel w=600 h=400 bg="#e0e0e0">
-<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=you_what,sci_a,leit_a,intro_a,you_why,sci_b,leit_b,intro_b,you_how,sci_c,leit_c,you_when,leit_d,intro_c"></sim>
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=intro_a,sci_a,leit_a,you_what,intro_b,sci_b,leit_b,you_why,sci_c,leit_c,you_how,leit_d,you_when,intro_c"></sim>
 </panel>
 
 <panel w=240 h=300>
