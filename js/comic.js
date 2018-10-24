@@ -359,18 +359,24 @@ setInterval(window.onscroll, 1000); // to update late-loaders
 // TRANSLATIONS /////////////
 /////////////////////////////
 
-// todo:
-// - show prompt @done
-// - list of languages @done
-// - translated by and original in @done
-// - remove all text from thing
-// - clean up html, add comments
-// - github instructions
-
 var LANGUAGES = {};
 
 var xhr = new XMLHttpRequest();
 xhr.addEventListener("load", function(event){
+
+	// What's user's language(s)?
+	var userLang = navigator.language || navigator.userLanguage;
+	var userLangs = [userLang];
+	if(userLang.search("-")>=0){
+		userLangs.push( userLang.split("-")[0] ); // e.g. en-US => en
+	}
+
+	// What's this page's language?
+	var pathnameSplit = window.location.pathname.split("/");
+	var pagename = pathnameSplit[pathnameSplit.length-1];
+	var pageLang = (pagename==""||pagename=="index") ? "en" : pagename.split(".")[0];
+
+	////////////////////////////////
 
 	// A database of languages!
 	var langs = xhr.response.split("\n\n");
@@ -378,6 +384,7 @@ xhr.addEventListener("load", function(event){
 		
 		var splitup = lang.split("\n");
 		var code = splitup[0];
+		if(code=="ex") return; // no Example
 
 		LANGUAGES[code] = {
 			name: splitup[1],
@@ -400,21 +407,10 @@ xhr.addEventListener("load", function(event){
 	var html = "";
 	LANGS_SORTED.forEach(function(code){
 		var lang = LANGUAGES[code];
+		if(code==pageLang) return; // no need for this page, obviously
 		html += "<a href='"+lang.link+"'>"+lang.name+"</a><br>";
 	});
 	$("#language_options").innerHTML = html;
-
-	// What's user's language(s)?
-	var userLang = navigator.language || navigator.userLanguage;
-	var userLangs = [userLang];
-	if(userLang.search("-")>=0){
-		userLangs.push( userLang.split("-")[0] ); // e.g. en-US => en
-	}
-
-	// What's this page's language?
-	var pathnameSplit = window.location.pathname.split("/");
-	var pagename = pathnameSplit[pathnameSplit.length-1];
-	var pageLang = (pagename==""||pagename=="index") ? "en" : pagename.split(".")[0];
 
 	// When to show prompt:
 	// If browser language is supported AND it's not this page

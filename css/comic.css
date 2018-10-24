@@ -42,6 +42,7 @@ a:hover{
 	width: 100%;
 	color: #fff;
 	text-align: center;
+	background: #000;
 }
 .divider_small_height{
 	height: 220px;
@@ -100,6 +101,7 @@ a:hover{
 /*********/
 
 .comic{
+	position: relative;
 	overflow:hidden;
 	width:610px;
 	margin: 50px auto;
@@ -160,6 +162,24 @@ a:hover{
 .comic_text{
 	color: rgba(0,0,0,0.5);
 	line-height: 1em;
+}
+.comic_text.smaller{
+	font-size: 20px;
+	line-height: 1em;
+}
+
+/* from https://stackoverflow.com/a/16410273 */
+.strikeout {
+	position: relative;
+}
+.strikeout::after {
+	border-bottom: 0.2em solid #ff4040;
+	content: "";
+	left: 0;
+	margin-top: calc(0.0em / 2 * -1);
+	position: absolute;
+	right: 0;
+	top: 50%;
 }
 
 /**********/
@@ -254,4 +274,22 @@ a:hover{
 }
 #translation_credits{
 	pointer-events: all;
+}
+
+#language_options{
+	
+	position: absolute;
+    width: 80px;
+    text-align: left;
+    top: 0;
+    left: 10px;
+    font-size: 21px;
+    line-height: 1.4em;
+
+}
+#language_options a{
+	color: #a8a8a8;
+}
+#language_options a:hover{
+	color: #ccc;
 }

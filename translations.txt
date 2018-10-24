@@ -15,7 +15,7 @@ translated by Your Name
 original in english
 
 fr
-French
+Français
 ./fr.html
 Voulez-vous switcher en français?
 Oui!

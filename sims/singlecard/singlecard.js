@@ -19,12 +19,22 @@ if(!FRONT_ONLY){
 			// HACK: PLAY AUDIO (if any)
 			var a = $("#HACK_audio");
 			if(a){
-				a.play();
+
+				// NOW load audio and play
+				var source = a.querySelector("source");
+				source.setAttribute("src", source.getAttribute("gotosrc") );
+				a.load();
+				a.addEventListener('canplaythrough', function() { 
+				   a.play();
+				}, false);
+					
+				// So it doesn't flip the card when you click
 				if(!a.onclick){
 					a.onclick = function(e){
 						e.stopPropagation();
 					};
 				}
+
 			}
 
 		}
