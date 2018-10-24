@@ -77,6 +77,7 @@ input[fullw]{
     outline: none;
 }
 .timing_slider{
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -89,6 +90,7 @@ input[fullw]{
     border-radius: 8px; 
     background: #ff4040;
     cursor: pointer;
+    border:none;
 }
 .timing_slider::-moz-range-thumb{
 	width: 15px;
@@ -96,6 +98,7 @@ input[fullw]{
     border-radius: 8px; 
     background: #ff4040;
     cursor: pointer;
+    border:none;
 }
 
 
@@ -107,6 +110,7 @@ input[fullw]{
     border-radius: 8px; 
     background: #333;
     cursor: pointer;
+    border:none;
 }
 .decay_slider::-moz-range-thumb{
 	 width: 15px;
@@ -114,6 +118,7 @@ input[fullw]{
     border-radius: 8px; 
     background: #333;
     cursor: pointer;
+    border:none;
 }
 
 
@@ -126,6 +131,7 @@ input[fullw]{
     border-radius: 8px; 
     background: #ffDD00;
     cursor: pointer;
+    border:none;
 }
 .sweet_slider::-moz-range-thumb{
 	width: 15px;
@@ -133,6 +139,7 @@ input[fullw]{
     border-radius: 8px; 
     background: #ffDD00;
     cursor: pointer;
+    border:none;
 }
 
 .auto_optimize{

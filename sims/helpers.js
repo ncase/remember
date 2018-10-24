@@ -35,7 +35,7 @@ function _modifyFlashCard(fcard){
 		var x = bg.getAttribute("sx") || 0;
 		var y = bg.getAttribute("sy") || 0;
 		bg.style.backgroundPosition = (-x)+"px "+(-y)+"px";
-		var w = 400;//p.getBoundingClientRect().width;
+		var w = 400;
 		bg.style.backgroundSize = Math.round((1600/w)*50)+"%";
 	}
 

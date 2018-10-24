@@ -53,6 +53,7 @@ for(var i=0; i<suggestionsUL.children.length; i++){
 
 			window.NO_TYPE_SOUND = true;
 			answer.oninput();
+			answer.focus();
 			window.NO_TYPE_SOUND = false;
 
 			alternateBoops();

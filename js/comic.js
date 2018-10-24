@@ -317,7 +317,7 @@ window.onscroll = function(){
 	for(var i=0;i<splashes.length;i++){
 		var s = splashes[i];
 		var bounds = s.getBoundingClientRect();
-		s.contentWindow.IS_IN_SIGHT = (bounds.y<innerHeight && bounds.y+bounds.height>0);
+		s.contentWindow.IS_IN_SIGHT = (bounds.top<innerHeight && bounds.top+bounds.height>0);
 	}
 
 	// Also, iframe scrollables
@@ -326,7 +326,7 @@ window.onscroll = function(){
 	simulations.forEach(function(sim){
 		if(!sim.src){
 			var bounds = sim.getBoundingClientRect();
-			if(bounds.y<innerHeight+BUFFER && bounds.y+bounds.height>-BUFFER){
+			if(bounds.top<innerHeight+BUFFER && bounds.top+bounds.height>-BUFFER){
 				sim.src = sim.getAttribute("will_source");
 				//console.log("Loading "+sim.src+"...");
 			}
@@ -341,7 +341,7 @@ window.onscroll = function(){
 			if(gotoSrc){
 
 				var bounds = iframe.getBoundingClientRect();
-				if(bounds.y<innerHeight+BUFFER && bounds.y+bounds.height>-BUFFER){
+				if(bounds.top<innerHeight+BUFFER && bounds.top+bounds.height>-BUFFER){
 					iframe.src = gotoSrc;
 					console.log("Loading "+iframe.src+"...");
 				}

@@ -54,7 +54,13 @@ body{
 
 /* Front & Back */
 .front, .back {
-	backface-visibility: hidden;
+	
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
 	position: absolute;
 	top: 0;
 	left: 0;

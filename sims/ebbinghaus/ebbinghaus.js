@@ -406,28 +406,17 @@ function update(){
 
 		// DRAW.
 
-		// Days
-		/*ctx.strokeStyle = "#ddd";
-		ctx.lineWidth = 1;
-		ctx.beginPath();
-		for(var t=0; t<10; t++){
-			var from = _project(t,0);
-			var to = _project(t,1);
-			ctx.moveTo(from.x,from.y);
-			ctx.lineTo(to.x,to.y);
-		}
-		ctx.stroke();*/
-
 		// Ideal Forgetting
-		//ctx.fillStyle = "#FFD700";
-		var tl = _project(0,optimal+OPTIMAL_RANGE);
-		var br = _project(10,optimal-OPTIMAL_RANGE);
-		var gradient = ctx.createLinearGradient(0, tl.y, 0, br.y);
-		gradient.addColorStop(0.0, "hsl(51, 100%, 50%, 0)");
-		gradient.addColorStop(0.5, "hsl(51, 100%, 50%, 0.5)");
-		gradient.addColorStop(1.0, "hsl(51, 100%, 50%, 0)");
-		ctx.fillStyle = gradient;
-		ctx.fillRect(tl.x, tl.y, br.x-tl.x, br.y-tl.y);
+		if(optimal!=999){
+			var tl = _project(0,optimal+OPTIMAL_RANGE);
+			var br = _project(10,optimal-OPTIMAL_RANGE);
+			var gradient = ctx.createLinearGradient(0, tl.y, 0, br.y);
+			gradient.addColorStop(0.0, "hsla(51, 100%, 50%, 0)");
+			gradient.addColorStop(0.5, "hsla(51, 100%, 50%, 0.5)");
+			gradient.addColorStop(1.0, "hsla(51, 100%, 50%, 0)");
+			ctx.fillStyle = gradient;
+			ctx.fillRect(tl.x, tl.y, br.x-tl.x, br.y-tl.y);
+		}
 
 		// DRAW THE POTENTIAL CURVES
 		ctx.lineJoin = ctx.lineCap = "round";
