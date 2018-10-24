@@ -328,9 +328,148 @@ window.onscroll = function(){
 			var bounds = sim.getBoundingClientRect();
 			if(bounds.y<innerHeight+BUFFER && bounds.y+bounds.height>-BUFFER){
 				sim.src = sim.getAttribute("will_source");
-				console.log("Loading "+sim.src+"...");
+				//console.log("Loading "+sim.src+"...");
+			}
+		}
+	});
+
+	// More iframes
+	var iframes = $all("iframe");
+	iframes.forEach(function(iframe){
+		if(!iframe.src){
+			var gotoSrc = iframe.getAttribute("gotosrc");
+			if(gotoSrc){
+
+				var bounds = iframe.getBoundingClientRect();
+				if(bounds.y<innerHeight+BUFFER && bounds.y+bounds.height>-BUFFER){
+					iframe.src = gotoSrc;
+					console.log("Loading "+iframe.src+"...");
+				}
+
 			}
 		}
 	});
 
 };
+
+setInterval(window.onscroll, 1000); // to update late-loaders
+
+
+/////////////////////////////
+// TRANSLATIONS /////////////
+/////////////////////////////
+
+// todo:
+// - show prompt @done
+// - list of languages @done
+// - translated by and original in @done
+// - remove all text from thing
+// - clean up html, add comments
+// - github instructions
+
+var LANGUAGES = {};
+
+var xhr = new XMLHttpRequest();
+xhr.addEventListener("load", function(event){
+
+	// A database of languages!
+	var langs = xhr.response.split("\n\n");
+	langs.forEach(function(lang){
+		
+		var splitup = lang.split("\n");
+		var code = splitup[0];
+
+		LANGUAGES[code] = {
+			name: splitup[1],
+			link: splitup[2],
+			ask: splitup[3],
+			yes: splitup[4],
+			no: splitup[5],
+			translatedBy: splitup[6],
+			originalIn: splitup[7]
+		};
+
+	});
+
+	// Show languages options in the box
+	var LANGS_SORTED = [];
+	for(var code in LANGUAGES){
+		LANGS_SORTED.push(code);
+	}
+	LANGS_SORTED.sort();
+	var html = "";
+	LANGS_SORTED.forEach(function(code){
+		var lang = LANGUAGES[code];
+		html += "<a href='"+lang.link+"'>"+lang.name+"</a><br>";
+	});
+	$("#language_options").innerHTML = html;
+
+	// What's user's language(s)?
+	var userLang = navigator.language || navigator.userLanguage;
+	var userLangs = [userLang];
+	if(userLang.search("-")>=0){
+		userLangs.push( userLang.split("-")[0] ); // e.g. en-US => en
+	}
+
+	// What's this page's language?
+	var pathnameSplit = window.location.pathname.split("/");
+	var pagename = pathnameSplit[pathnameSplit.length-1];
+	var pageLang = (pagename==""||pagename=="index") ? "en" : pagename.split(".")[0];
+
+	// When to show prompt:
+	// If browser language is supported AND it's not this page
+	var l;
+	l = userLangs[0];
+	if(LANGUAGES[l] && l!=pageLang) _showPrompt(l);
+	l = userLangs[1];
+	if(LANGUAGES[l] && l!=pageLang) _showPrompt(l);
+
+	// Translation credits if NOT english
+	if(pageLang!="en"){
+		var html = "";
+		var lang = LANGUAGES[pageLang];
+		html += lang.translatedBy;
+		html += " &middot; ";
+		html += "<a href='./'>"+lang.originalIn+"</a>";
+		$("#translation_credits").innerHTML = html;
+	}
+
+});
+function _showPrompt(lang){
+
+	lang = LANGUAGES[lang];
+
+	// Add prompt
+	var promptDOM = document.createElement("div");
+	promptDOM.id = "prompt";
+	document.body.appendChild(promptDOM);
+
+	// Fill in prompt
+	var askDOM = document.createElement("div");
+	askDOM.innerHTML = lang.ask;
+	var yesDOM = document.createElement("a");
+	yesDOM.innerHTML = lang.yes;
+	var nbsp = document.createElement("span");
+	nbsp.innerHTML = "&nbsp;";
+	var noDOM = document.createElement("a");
+	noDOM.innerHTML = lang.no;
+	
+	promptDOM.appendChild(askDOM);
+	promptDOM.appendChild(yesDOM);
+	promptDOM.appendChild(nbsp);
+	promptDOM.appendChild(noDOM);
+
+	// Code Logic
+	yesDOM.href = lang.link;
+	noDOM.onclick = function(){
+		promptDOM.setAttribute("hide", "yes");
+		setTimeout(function(){
+			document.body.removeChild(promptDOM);
+		},2000);
+	};
+
+
+}
+xhr.open("GET", "translations.txt");
+xhr.send();
+

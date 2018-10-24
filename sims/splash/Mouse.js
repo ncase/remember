@@ -53,7 +53,7 @@
 	document.body.addEventListener("touchmove",onTouchMove = function(event){
 		Mouse.x = event.changedTouches[0].clientX;
 		Mouse.y = event.changedTouches[0].clientY - window.pageYOffset;
-		event.preventDefault();
+		//event.preventDefault();
 	},false);
 
 

@@ -29,6 +29,9 @@ b, strong{
 a{
 	color:#5b8df1;
 }
+a:hover{
+	color:#8aadf5;
+}
 
 /**********/
 /* SPLASH */
@@ -188,9 +191,67 @@ a{
 #credits > div{
 	color:white;
 	margin: 50px auto 100px auto;
-    width: 600px;
+    width: 550px;
+}
+#credits hr{
+	border: none;
+    border-bottom: 10px dashed rgba(255,255,255,0.25);
+    margin: 1.5em 0;
+}
+#credits li{
+	list-style-type: none;
+    text-indent: -1.25em;
+}
+#credits iframe{
+	display:block;
+	background:#fff;
+	border:none;
+	width:500px;
+	height:350px;
+	margin:0 auto;
+	border-radius: 25px;
 }
 
 
+/*******************/
+/* LANGUAGE PROMPT */
+/*******************/
 
+#prompt{
 
+	width: 100%;
+
+	background:#5b8df1;
+	color:#fff;
+
+	position: fixed;
+	top:0;
+	transition: top 0.5s ease-in-out;
+
+	text-align: center;
+    font-size: 30px;
+    padding: 15px 0 20px 0;
+    line-height: 1.3em;
+
+}
+#prompt[hide=yes]{
+	top:-150px;
+}
+#prompt a{
+
+	color:#5b8df1;
+	background: #fff;
+	display: inline-block;
+	border-radius: 5px;
+
+	padding: 0 8px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+#prompt a:hover{
+	color:#8aadf5;
+}
+#translation_credits{
+	pointer-events: all;
+}

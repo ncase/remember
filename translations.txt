@@ -1,0 +1,33 @@
+en
+English
+./
+Would you like to switch to English?
+Sure!
+Nah
+
+ex
+Example Language
+./ex.html
+Would you like to switch to Example Language?
+Sure!
+Nah
+translated by Your Name
+original in english
+
+fr
+French
+./fr.html
+Voulez-vous switcher en français?
+Oui!
+Non
+tranduire par Nicky Case
+l'original en anglais
+
+de
+Deutsch
+./de.html
+Volkswagon Volkswagon Volkswagon?
+Ja!
+Na
+translated by Hermann Ebbinghaus
+original in anglo
