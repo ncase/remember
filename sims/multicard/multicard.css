@@ -44,12 +44,12 @@ body{
 	border-color: rgba(0,0,0,0);
 }
 #card_bg_smiley{
-	color: rgba(255,255,255,0.5);
-	font-size: 100px;
-	text-align: center;
-    line-height: 230px;
-    font-size: 200px;
-    display: none;
+    width: 150px;
+    height: 150px;
+    margin: 40px auto;
+    background: url(multi_smiley.png);
+    background-size: auto 100%;
+	display: none;
 }
 #next_card{
 	display: none;

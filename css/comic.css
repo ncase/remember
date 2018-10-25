@@ -18,6 +18,7 @@ body{
 	font-family: "PatrickHand", Helvetica, Arial;
 	font-size: 25px;
 	line-height: 1.2em;
+	overflow-x:hidden;
 }
 /* fake bold */
 b, strong{
@@ -44,6 +45,9 @@ a:hover{
 	text-align: center;
 	background: #000;
 }
+.divider_title{
+	height: 280px;
+}
 .divider_small_height{
 	height: 220px;
 }
@@ -51,11 +55,19 @@ a:hover{
 	height: 300px;
 }
 @media (max-width:1000px) {
+	.divider_title{
+		height: 370px;
+	}
 	.divider_small_height{
 		height: 290px;
 	}
 	.divider_big_height{
 		height: 370px;
+	}
+}
+@media (max-width:800px) {
+	.divider_title{
+		height: 450px;
 	}
 }
 .divider > #divider_container{

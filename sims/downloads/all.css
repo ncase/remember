@@ -8,6 +8,7 @@
 
 body{
 	/*background:#bada55;*/
+	font-family: "PatrickHand", Helvetica, Arial;
 	background: none;
 	margin: 0;
 }
@@ -16,7 +17,20 @@ canvas{
 	margin: 5px;
 }
 #download{
+	background: url(download_button.png);
+	background-size: 100% 100%; 
 	width: 400px;
-    height: 50px;
+    height: 100px;
     cursor: pointer;
+
+    text-align: left;
+    font-size: 33px;
+    line-height: 100px;
+
+    transition: top 0.2s ease-in-out;
+    position: relative;
+    top:0;
+}
+#download:hover{
+	top:-5px;
 }

@@ -32,11 +32,12 @@ var CARDNAMES = [
 ];
 
 var download_btn = $("#download");
-download_btn.innerHTML = _getLabel("download_all");
+download_btn.innerHTML = "&nbsp;"+_getLabel("download_all");
 download_btn.onclick = function(){
 
 	// disable while we wait...
-	download_btn.disabled = true;
+	download_btn.innerHTML = "&nbsp;"+_getLabel("download_all_downloading");
+	download_btn.style.opacity = 0.5;
 
 	// Loads
 	var CARD_HTMLS = [];
@@ -81,8 +82,14 @@ download_btn.onclick = function(){
 		// Download...
 		zip.generateAsync({type:"blob"})
 			.then(function(content) {
-			saveAs(content, "flashcards.zip");
-		});
+				saveAs(content, "flashcards.zip");
+
+				// Done!
+				download_btn.innerHTML = "&nbsp;"+_getLabel("download_all_done");
+				download_btn.style.opacity = 1.0;
+				download_btn.style.fontSize = "22px";
+
+			});
 
 	});
 

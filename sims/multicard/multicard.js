@@ -98,6 +98,9 @@ function showNextCard(){
 		$("#next_card").innerHTML = nextCard.front;
 	}else{
 		$("#card_bg_smiley").style.display = "block";
+		if(IS_FINAL_MULTICARD){
+			$("#card_bg_smiley").style.backgroundPosition = "-150px 0px";
+		}
 	}
 }
 
