@@ -393,8 +393,14 @@ xhr.addEventListener("load", function(event){
 	langs.forEach(function(lang){
 		
 		var splitup = lang.split("\n");
+
+		while(splitup.length>0 && splitup[0]=="") splitup.shift(); // in case of extra newlines
+		if(splitup.length==0) return; // no emptiness
+
 		var code = splitup[0];
+
 		if(code=="ex") return; // no Example
+		if(code.substr(0, 2)=="//") return; // no Comments
 
 		LANGUAGES[code] = {
 			name: splitup[1],
@@ -438,6 +444,7 @@ xhr.addEventListener("load", function(event){
 		html += " &middot; ";
 		html += "<a href='./'>"+lang.originalIn+"</a>";
 		$("#translation_credits").innerHTML = html;
+		$("#translation_credits_2").innerHTML = lang.translatedBy;
 	}
 
 });
@@ -468,6 +475,7 @@ function _showPrompt(lang){
 	// Code Logic
 	yesDOM.href = lang.link;
 	noDOM.onclick = function(){
+		noDOM.onclick = null; // ONLY ONCE
 		promptDOM.setAttribute("hide", "yes");
 		setTimeout(function(){
 			document.body.removeChild(promptDOM);

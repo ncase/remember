@@ -1,3 +1,21 @@
+// Finally, add your translation here so the code "knows" your page exists!
+// Copy and paste the "Example Language" paragraph into a new section,
+// (make sure there's two newlines between yours and the other sections)
+// and translate that. Here's what the lines in each section means
+//
+// 1: your language 2-letter code: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+// 2: your language's name, in its native language
+// 3: the URL of your page. in most cases it'll be ./[2-letter code].html,
+//    but if for whatever reason your translation exists on a different domain altogether,
+//    (say, you need to make significant changes to the code for your translation to work)
+//    you can also link to an absolute URL elsewhere
+// 4: the prompt to ask to switch to your language
+//    (shows if the user's browser's language is set to yours and they're not already there)
+// 5: a *casual* yes
+// 6: a *casual* no
+// 7: where you can credit yourself!
+// 8: the link to the original English version
+
 en
 English
 ./
@@ -13,21 +31,3 @@ Sure!
 Nah
 translated by Your Name
 original in english
-
-fr
-Français
-./fr.html
-Voulez-vous switcher en français?
-Oui!
-Non
-tranduire par Nicky Case
-l'original en anglais
-
-de
-Deutsch
-./de.html
-Volkswagon Volkswagon Volkswagon?
-Ja!
-Na
-translated by Hermann Ebbinghaus
-original in anglo
