@@ -23,7 +23,9 @@ window.onload = function(){
 		if(val = b.getAttribute("x")) s.left = val+"px";
 		if(val = b.getAttribute("y")) s.top = val+"px";
 		if(val = b.getAttribute("w")) s.width = val+"px";
-		if(val = b.getAttribute("h")) s.height = val+"px";
+		if(val = b.getAttribute("h")){
+			if(s.height!="auto") s.height = val+"px";
+		}
 
 	});
 
@@ -118,6 +120,7 @@ $all("div[editable]").forEach(function(dom){
 //////////////////////////////////////////
 
 // Wallpaper
+var _lastHow = null;
 if($("#gift_wallpaper")){
 
 	var gw_text = detectmob() ? "gift_wallpaper_phone" : "gift_wallpaper_desktop";
@@ -143,20 +146,27 @@ if($("#gift_wallpaper")){
 			$("#wallpaper_image").src = dataURL;
 		}
 
-		// Box/App
-		var showWhat = "other";
-		var theHow = $("#flashcard_you_how_back").innerText.trim().toLocaleLowerCase();
-		if(theHow.search("leit") >= 0 || theHow.search("liet") >= 0){ // for typos
-			showWhat = "leitner";
-		}else if(theHow.search("anki") >= 0){
-			showWhat = "anki";
-		}else if(theHow.search("tiny") >= 0){
-			showWhat = "tiny";
+		// Box/App, change ONLY IF HOW CHANGED
+		var currHow = $("#flashcard_you_how_back").innerText.trim().toLocaleLowerCase();
+		if(_lastHow != currHow){
+
+			var showWhat = "other";
+			if(currHow.search("leit") >= 0 || currHow.search("liet") >= 0){ // for typos
+				showWhat = "leitner";
+			}else if(currHow.search("anki") >= 0){
+				showWhat = "anki";
+			}else if(currHow.search("tiny") >= 0){
+				showWhat = "tiny";
+			}
+			$("#gift_app").innerHTML = $("#gift_app_"+showWhat).innerHTML;
+
 		}
-		$("#gift_app").innerHTML = $("#gift_app_"+showWhat).innerHTML;
+		_lastHow = currHow;
 
 	},5000);
 	//},1000);
+
+	// Can't download .zip 
 
 }
 

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>An Interactive Comic</title>
+	<title>How To Remember Anything Forever-ish</title>
 	<link rel="stylesheet" type="text/css" href="css/comic.css"/>
 	<meta name="viewport" content="width=600">
 </head>
@@ -102,7 +102,7 @@ So, how's Memory and Inspiration doing in schools?
 </words>
 <words x=164 y=141 w=300 no-bg>
 	What if I said there's a memory card game you can play, for 20 minutes a day,
-	to store <i>anything you choose</i> into long-term memory, <i>forever?</i>
+	to store <i>anything you choose</i> into long-term memory, <i>forever-ish?</i>
 </words>
 </panel>
 
@@ -321,7 +321,7 @@ Like so:
 </words>
 </panel>
 
-<panel w=500 h=50 style="margin-top:-5px">
+<panel w=500 h=53 style="margin-top:-5px">
 <words w=500 x=-15 y=-10 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999; line-height: 1.1em;">
 * technically the curve isn't <i>exactly</i>
 <br>
@@ -1661,16 +1661,16 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 </panel>
 
 <div>
-<a id="wallpaper_link">
+<a target="_blank" id="wallpaper_link">
 <img id="wallpaper_image"/><br>
-(click to download &darr;)
+[click to download &darr;]
 </a>
 </div>
 
 <!-- Leitner Calendar / Anki -->
 
-<panel w=600 h=90>
-<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+<panel w=600 h=90 style="height: auto; position: relative; left: -15px;">
+<words x=-15 y=0 w=570 no-bg style="text-align:left; position:static" fontsize=30>
 	<img src="pics/gift.png" style="height:1em"/>
 	<b>SECOND:</b>
 	<span id="gift_app"></span>
@@ -1680,7 +1680,7 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 
 <!-- All flashcards -->
 
-<panel w=600 h=90>
+<panel class="not_on_mobile" w=600 h=90>
 <words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
 	<img src="pics/gift.png" style="height:1em"/>
 	And finally,
@@ -1689,15 +1689,15 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 </words>
 </panel>
 
-<panel w=400 h=100>
+<panel class="not_on_mobile" w=400 h=100>
 <sim x=0 y=0 w=400 h=100 src="sims/downloads/all.html"></sim>
 </panel>
 
-<panel w=600 h=120>
+<panel class="not_on_mobile" w=600 h=120>
 <words x=-15 y=0 w=600 no-bg style="text-align:left">
 	(These can be your first few days' worth of Spaced Repetition cards,
 	to help you get started! And as a plus, you'll get to remember everything 
-	you learnt here today, forever)
+	you learnt here today, forever...ish.)
 </words>
 </panel>
 
@@ -1802,9 +1802,15 @@ Before sleeping, coz otherwise you'd just stress-binge on twitter
 </panel>
 
 <!-- want more? further reading & credits below! -->
-<panel fadeInOn="flip_the_end" w=600 h=90>
+<panel fadeInOn="flip_the_end" w=600 h=200>
 <words w=600 x=-15 y=0 no-bg>
-	(want more? scroll down for further reading &amp; credits!)
+	(P.S: I genuinely wanna know how <i>you'll</i> use Spaced Repetition!
+	Tweet a photo of your Box/Anki with the tag
+	<a target="_blank" href="https://twitter.com/search?q=%23SpacedRepetition">
+	#SpacedRepetition</a> –
+	I'll collect examples into a page for everyone to see)
+	<br><br>
+	(Want more? Scroll down for further reading &amp; credits!)
 	<br>
 	&darr; &darr; &darr; &darr; &darr;
 	</b>
@@ -1859,8 +1865,7 @@ meaning you can freely use this thing for educational, personal, or even commerc
 You already have my permission!
 <a target="_blank" href="https://github.com/ncase/remember">
 (Download the code)</a>
-&nbsp;
-<a target="_blank" href="TODO ADD LINK">
+<a target="_blank" href="https://github.com/ncase/remember#how-to-translate">
 (Translate this comic)</a>
 </p>
 
@@ -1890,7 +1895,7 @@ Here are the reads that made Spaced Repetition a part of my daily life:
 	Fluent Forever</a>
 	by Gabriel Wyner
 	convinced me to finally (re)start learning French,
-	and adopt a Leitner Box.
+	and create a Leitner Box. (my 64-day calendar was adapted from this book)
 	</li>
 	<li>
 	🤓
@@ -1939,8 +1944,6 @@ And if you want to learn-by-playing more stuff,
 <a target="_blank" href="https://explorabl.es/">
 check out Explorable Explanations!</a> 🕹️
 </p>
-
-<hr>
 
 <hr>
 
@@ -1995,7 +1998,7 @@ Zeno Rogue
 <p>
 🔊 This project was made with Creative Commons assets
 from Wikimedia Commons and FreeSounds.
-<a target="_blank" href="TODO ADD LINK">
+<a target="_blank" href="https://github.com/ncase/remember#full-asset-credits">
 (See full credits)</a>
 </p>
 
@@ -2536,15 +2539,25 @@ DONE! Check your Downloads folder.
 	a lock-screen wallpaper for your phone,
 </span>
 <span id="gift_app_leitner">
-	a looping 64-day calendar for your Leitner Box!
-	(pdf, so you can print it out) [todo]
+	a video (by my dear friend Chris Walker) on how to craft your very own Leitner Box!
+	<br><br>
+	<iframe width="560" height="315" src="TODO&rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+	<br>
+	For those of you who prefer cheesy IKEA parodies, I made this:
+	<br><br>
+	<a target="_blank" href="./pdf/leitner.pdf" style="display: block; text-align: center;">
+	<img src="./pdf/thumbnail.png" width="500"/><br>[click to download PDF]</a>
 </span>
 <span id="gift_app_anki">
 	a link to 
 	<a target="_blank" href="https://apps.ankiweb.net/">download Anki!</a>
-	(and here's
-	<a target="_blank" href="https://www.youtube.com/watch?v=sQkdB3cJwn0">a video tutorial</a>
-	on how to get started)
+	And here's a video tutorial on how to use it:
+	<br><br>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sQkdB3cJwn0?start=180&rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
 </span>
 <span id="gift_app_tiny">
 	a link to
@@ -2553,9 +2566,9 @@ DONE! Check your Downloads folder.
 	<a target="_blank" href="https://tinycards.duolingo.com/users/TinyGeo">geography decks</a>)
 </span>
 <span id="gift_app_other">
-	links to
-	the Leitner Box 64-day calendar [todo],
-	the
+	links to tutorials on crafting a Leitner Box
+	<a target="_blank" href="TODO">[video]</a>
+	<a target="_blank" href="./pdf/leitner.pdf">[pdf]</a>,
 	<a target="_blank" href="https://apps.ankiweb.net/">the Anki app</a>,
 	and
 	<a target="_blank" href="https://tinycards.duolingo.com/">TinyCards</a>!
