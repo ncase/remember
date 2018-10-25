@@ -431,7 +431,8 @@ function update(){
 			ctx.textAlign = "center";
 			ctx.textBaseline = "middle";
 			ctx.fillStyle = activeToday ? "#fff": color;
-			ctx.fillText((i+1), w/2, h/2);
+			var num = i<7 ? (i+1) : "👼"; // 8 = RETIRED.
+			ctx.fillText(num, w/2, h/2);
 
 			ctx.restore();
 
