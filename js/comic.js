@@ -521,7 +521,7 @@ xhr.send();
 
 var share_title = encodeURIComponent( $("#share_title").innerText.trim() );
 var share_desc = encodeURIComponent( $("#share_desc").innerText.trim() );
-var share_url = encodeURIComponent( /*window.location.origin+window.location.pathname*/ "https://ncase.me/remember/" );
+var share_url = encodeURIComponent( window.location.origin+window.location.pathname );
 
 var hrefs = {
 	facebook: "https://www.facebook.com/sharer/sharer.php?u="+share_url,
