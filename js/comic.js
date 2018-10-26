@@ -327,7 +327,7 @@ window.onscroll = function(){
 	for(var i=0;i<splashes.length;i++){
 		var s = splashes[i];
 		var bounds = s.getBoundingClientRect();
-		s.contentWindow.IS_IN_SIGHT = (bounds.top<innerHeight && bounds.top+bounds.height>0);
+		if(s.contentWindow) s.contentWindow.IS_IN_SIGHT = (bounds.top<innerHeight && bounds.top+bounds.height>0);
 	}
 
 	// Also, iframe scrollables
