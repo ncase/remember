@@ -6,7 +6,7 @@ var qDOM = document.createElement("div");
 qDOM.innerHTML = _getLabel("flashcard_"+window.cardname+"_front");
 var questionText = qDOM.innerText.trim();
 questionText = _getLabel("type_question").trim() + " " + questionText;
-$("#question").innerText = questionText;
+$("#question").innerHTML = questionText;
 
 // THE ANSWER
 var answer = $("#answer");

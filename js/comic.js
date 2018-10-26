@@ -94,7 +94,12 @@ window.onload = function(){
 	loadSounds();
 
 	////////////////////////
-	// i hate ios so much //
+	// i hate ios so much
+	// for WHATEVER reason,
+	// I have to DELETE AND RE-ADD THE HTML of the chapter names
+	// to get them to render at the correct size.
+	// I don't know how INTERNET EXPLORER can do this properly
+	// but MOBILE SAFARI can't. Gawd.
 	////////////////////////
 
 	setTimeout(function(){
@@ -182,6 +187,11 @@ if($("#gift_wallpaper")){
 	//},1000);
 
 	// Can't download .zip 
+	if(detectmob()){
+		$all(".not_on_mobile").forEach(function(dom){
+			dom.style.display = "none";
+		});
+	}
 
 }
 
@@ -353,7 +363,7 @@ window.onscroll = function(){
 			var bounds = sim.getBoundingClientRect();
 			if(bounds.top<innerHeight+BUFFER && bounds.top+bounds.height>-BUFFER){
 				sim.src = sim.getAttribute("will_source");
-				//console.log("Loading "+sim.src+"...");
+				console.log("Loading "+sim.src+"...");
 			}
 		}
 	});

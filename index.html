@@ -12,7 +12,7 @@ There's about 3500 words to translate, including the flashcards & further readin
 
 Before doing anything, please read all these steps:
 https://github.com/ncase/remember#how-to-translate
-(emphasis: do NOT edit the original index.html. make a copy!)
+(emphasis: do NOT edit the original index.html. make a copy of this page!)
 
 To make translation less painful, I've added little HTML comments throughout.
 Look for the ones that say "TRANSLATOR NOTE".
@@ -28,12 +28,40 @@ Good luck, and many thanks again!
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en"> <!-- TRANSLATOR NOTE: Remember your 2-letter code? Replace "en" with that! -->
 <head>
-	<meta charset="UTF-8">
+
+	<!-- Meta Stuff -->
 	<title>How To Remember Anything Forever-ish</title>
+	<!-- TRANSLATOR NOTE: Translate the "content" attribute -->
+	<meta name="description" content="an interactive comic on the science of memory"/> 
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="favicon.png">
+	
+	<!-- Sharing Card Stuff -->
+	<meta itemprop="name" content="How To Remember Anything Forever-ish"> <!-- TRANSLATE "content" -->
+	<meta itemprop="description" content="an interactive comic on the science of memory"> <!-- TRANSLATE "content" -->
+	<meta itemprop="image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta name="twitter:title" content="How To Remember Anything Forever-ish"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:description" content="an interactive comic on the science of memory"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta property="og:title" content="How To Remember Anything Forever-ish"> <!-- TRANSLATE "content" -->
+	<meta property="og:description" content="an interactive comic on the science of memory"> <!-- TRANSLATE "content" -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ncase.me/remember/">
+	<meta property="og:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="css/comic.css"/>
 	<meta name="viewport" content="width=600">
+
 </head>
 
 <body>
@@ -155,7 +183,14 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 </words>
 <words x=164 y=141 w=300 no-bg>
 	What if I said there's a memory card game you can play, for 20 minutes a day,
-	to store <i>anything you choose</i> into long-term memory, <i>forever-ish?</i>
+	to store <i>anything you choose</i> into long-term memory, <i>forever?*</i>
+</words>
+</panel>
+
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* until you die
 </words>
 </panel>
 
@@ -375,7 +410,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=500 h=450>
 <pic src="pics/sci0.png" sx=900 sy=0></pic>
-<words x=10 y=10 w=440 h=90>
+<words x=10 y=10 w=450 h=90>
 	Philosophers have debated about memory for millennia,
 	but Ebbinghaus was the first to do actual <i>experiments.</i>
 	(which have been replicated)
@@ -875,8 +910,8 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=400 h=450>
 <pic src="pics/leit0.png" sx=0 sy=1800></pic>
 <words x=10 y=10 w=350 h=90>
-	(Note #3: Oh, and with a few index cards + some tape,
-	you can make your own <i>actual</i> looping calendar!)
+	(Note #3: Oh, and with a few index cards &amp; tape,
+	you can make your own foldable, looping calendar!)
 </words>
 <words x=10 y=350 w=350 h=60>
 	(at the end, I'll link to a video tutorial for crafting a Leitner Box)
@@ -908,7 +943,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <words x=10 y=10 w=430 h=60>
 	However, habits are hard. If you start big, you won't get the ball rolling...
 </words>
-<words x=30 y=300 w=430 h=60>
+<words x=20 y=300 w=450 h=60>
 	But if you start <i>small</i>, you can gain momentum,
 	and roll your snowball bigger and bigger.
 </words>
@@ -1650,7 +1685,7 @@ Remember, if your translated word is too big, you can modify the CSS! (especiall
 </words>
 </panel>
 
-<panel w=600 h=90>
+<panel class="not_on_mobile" w=600 h=90>
 <words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
 	<img src="pics/gift.png" style="height:1em"/>
 	And finally,
@@ -1659,15 +1694,15 @@ Remember, if your translated word is too big, you can modify the CSS! (especiall
 </words>
 </panel>
 
-<panel w=400 h=100>
+<panel class="not_on_mobile" w=400 h=100>
 <sim x=0 y=0 w=400 h=100 src="sims/downloads/all.html"></sim>
 </panel>
 
-<panel w=600 h=120>
+<panel class="not_on_mobile" w=600 h=120>
 <words x=-15 y=0 w=600 no-bg style="text-align:left">
 	(These can be your first few days' worth of Spaced Repetition cards,
 	to help you get started! And as a plus, you'll get to remember everything 
-	you learnt here today, forever...ish.)
+	you learnt here today, forever-ish.)
 </words>
 </panel>
 
@@ -1851,19 +1886,20 @@ Remember, if your translated word is too big, you can modify the CSS! (especiall
 
 <ul>
 	<li>
+		🤓
+		<a target="_blank" href="http://augmentingcognition.com/ltm.html">
+		Augmenting Long-Term Memory</a>
+		by Michael Nielsen
+		showed me that Spaced Repetition wasn't just a tool for memorization,
+		it's a tool to build deep understanding. It could even be a way of <i>life</i>.
+	</li>
+	<li>
 		💬
 		<a target="_blank" href="https://fluent-forever.com/the-book/">
 		Fluent Forever</a>
 		by Gabriel Wyner
 		convinced me to finally (re)start learning French,
 		and create a Leitner Box. (my 64-day calendar was adapted from this book)
-	</li>
-	<li>
-		🤓
-		<a target="_blank" href="http://augmentingcognition.com/ltm.html">
-		Augmenting Long-Term Memory</a>
-		by Michael Nielsen
-		showed me I could use Spaced Repetition to deeply learn almost <i>anything</i>, not just languages.
 	</li>
 	<li>
 		🃏
@@ -1919,6 +1955,20 @@ Remember, if your translated word is too big, you can modify the CSS! (especiall
 	Jez Swanson, Josh Comeau, Kayle Sawyer, Levi Robertson, Marcelo Gallardo, Martyna Wasiluk, Michael Nielsen, Mikayla Hutchinson, Mike Gifford, Monica Srivastava, Owen Landgren,
 	Paul Butler, Paul Simeon, Philipp Wacker, Pontus Granström, Rowan, Sebastian Morr, SpacieCat, Tim &amp; Alexandra Swast, Tom Hermans, Toph Tucker, Will Harris-Braun, Zeno Rogue
 	</span>
+</p>
+
+<p>
+	📹 Thank you Chris Walker for making the
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+	Leitner Box crafting video!</a>
+	(P.S:
+	<a target="_blank" href="http://polytrope.com/">
+	Chris makes interactive stuff</a>,
+	too!)
+</p>
+
+<p>
+	🐞 Thank you Omar Rizwan for helping me figure out Mobile Safari's endless pit of bugs
 </p>
 
 <p>
@@ -2165,16 +2215,16 @@ When you translate, make sure the [N] is there if it was there in the original.
 	a lock-screen wallpaper for your phone,
 </span>
 <span id="gift_app_leitner">
-	a video (by my dear friend Chris Walker) on how to craft your very own Leitner Box!
+	a video, by my dear friend Chris Walker, on how to craft your very own Leitner Box!
 	<br><br>
 	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uvF1XuseZFE?rel=0"
 		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
 		    style="display:block; margin:0 auto"></iframe>
 	<br>
-	For those of you who prefer cheesy IKEA parodies, I made this:
+	(And here's a similar tutorial, in IKEA form:)
 	<br><br>
 	<a target="_blank" href="./pdf/leitner.pdf" style="display: block; text-align: center;">
-	<img src="./pdf/thumbnail.png" width="500"/><br>click to download PDF</a>
+	<img src="./pdf/thumbnail.png" width="450"/><br>click to download PDF</a>
 </span>
 <span id="gift_app_anki">
 	a link to 
@@ -2195,7 +2245,7 @@ When you translate, make sure the [N] is there if it was there in the original.
 </span>
 <span id="gift_app_other">
 	links to tutorials on crafting a Leitner Box
-	<a target="_blank" href="TODO">
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
 	[video]</a>
 	<a target="_blank" href="./pdf/leitner.pdf">
 	[pdf]</a>,
@@ -2569,13 +2619,13 @@ Good luck!
 <span id="flashcard_learndo_front">
 	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=240></div>
 	<div class="fcard_center" style="height:195px; font-size:33px;">
-		...then back to doing... ↻
+		then back to doing... ↻
 	</div>
 </span>
 <span id="flashcard_learndo_back">
 	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=240></div>
 	<div class="fcard_center" style="height:195px; font-size:33px;">
-		...then back to learning... ↻
+		then back to learning... ↻
 	</div>
 </span>
 
