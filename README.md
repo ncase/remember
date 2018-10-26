@@ -1,4 +1,4 @@
-!["thumbnail"]()
+!["Some Thumbnail Image"](https://ncase.me/remember/sharing/thumbnail.png)
 
 **[How To Remember Anything Forever-ish](https://ncase.me/remember/)** is dedicated to the public domain,
 and was made possible thanks to [my Patreon supporters](https://www.patreon.com/ncase)! Love y'all~
