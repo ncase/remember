@@ -93,6 +93,21 @@ window.onload = function(){
 	// Load sounds
 	loadSounds();
 
+	////////////////////////
+	// i hate ios so much //
+	////////////////////////
+
+	setTimeout(function(){
+		$all("#chapter_name").forEach(function(nameDOM){
+			var html = nameDOM.innerHTML;
+			nameDOM.innerHTML = "";
+			nameDOM.style.fontSize = "100px";
+			setTimeout(function(){
+				nameDOM.innerHTML = html;
+			},1);
+		});
+	},1000);
+
 };
 
 window.getLabel = function(name){
@@ -440,11 +455,13 @@ xhr.addEventListener("load", function(event){
 	if(pageLang!="en"){
 		var html = "";
 		var lang = LANGUAGES[pageLang];
-		html += lang.translatedBy;
-		html += " &middot; ";
-		html += "<a href='./'>"+lang.originalIn+"</a>";
-		$("#translation_credits").innerHTML = html;
-		$("#translation_credits_2").innerHTML = lang.translatedBy;
+		if(lang){
+			html += lang.translatedBy;
+			html += " &middot; ";
+			html += "<a href='./'>"+lang.originalIn+"</a>";
+			$("#translation_credits").innerHTML = html;
+			$("#translation_credits_2").innerHTML = lang.translatedBy;
+		}
 	}
 
 });
@@ -486,4 +503,6 @@ function _showPrompt(lang){
 }
 xhr.open("GET", "translations.txt");
 xhr.send();
+
+
 
