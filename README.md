@@ -35,6 +35,8 @@ and was made possible thanks to [my Patreon supporters](https://www.patreon.com/
 
 **Font:** [Patrick Hand](https://fonts.google.com/specimen/Patrick+Hand) by Patrick Wagesreiter
 
+**Share Buttons:** [Social Flat Rounded Rects](http://www.aha-soft.com/free-icons/) by Aha-Soft (CC BY)
+
 ## How To Translate:
 
 **[IMPORTANT:

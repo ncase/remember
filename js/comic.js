@@ -515,4 +515,40 @@ xhr.open("GET", "translations.txt");
 xhr.send();
 
 
+/////////////////////////////
+// SHARE BUTTONS ////////////
+/////////////////////////////
 
+var share_title = encodeURIComponent( $("#share_title").innerText.trim() );
+var share_desc = encodeURIComponent( $("#share_desc").innerText.trim() );
+var share_url = encodeURIComponent( /*window.location.origin+window.location.pathname*/ "https://ncase.me/remember/" );
+
+var hrefs = {
+	facebook: "https://www.facebook.com/sharer/sharer.php?u="+share_url,
+	twitter: "https://twitter.com/intent/tweet?source="+share_url+"&text="+share_title+" – "+share_desc+":%20"+share_url,
+	tumblr: "http://www.tumblr.com/share?v=3&u="+share_url+"&t=+share_title+&s=",
+	reddit: "http://www.reddit.com/submit?url="+share_url+"&title="+share_title,
+	email: "mailto:?subject="+share_title+"&body="+share_desc+":%20"+share_url
+};
+var platforms = [
+	"facebook",
+	"twitter",
+	"tumblr",
+	"reddit",
+	"email"
+];
+
+platforms.forEach(function(platform){
+
+	// Link
+	var link = document.createElement("a");
+	link.href = hrefs[platform];
+	link.target = "_blank";
+	$("#share_buttons").appendChild(link);
+	
+	// Image
+	var img = new Image();
+	img.src = "./sharing/"+platform+".svg";
+	link.appendChild(img);
+
+});

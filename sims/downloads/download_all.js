@@ -76,12 +76,13 @@ download_btn.onclick = function(){
 			var filename = results[0];
 			var canvas = results[1];
 			zip.file(filename+".png", canvas.toDataURL().substr(22), {base64: true});
-			document.body.appendChild(canvas);
+			//document.body.appendChild(canvas);
 		});
 
 		// Download...
 		zip.generateAsync({type:"blob"})
 			.then(function(content) {
+				
 				saveAs(content, "flashcards.zip");
 
 				// Done!

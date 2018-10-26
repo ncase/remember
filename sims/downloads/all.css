@@ -7,13 +7,13 @@
 }
 
 body{
-	/*background:#bada55;*/
+	background:#bada55;
 	font-family: "PatrickHand", Helvetica, Arial;
 	background: none;
 	margin: 0;
 }
 canvas{
-	width:150px;
+	width:50px;
 	margin: 5px;
 }
 #download{

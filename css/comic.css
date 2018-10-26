@@ -244,6 +244,27 @@ a:hover{
 	border-radius: 25px;
 }
 
+#share_buttons{
+	text-align: center;
+	margin-top: 90px;
+    padding-bottom: 50px;
+}
+#share_buttons a{
+	position: relative;
+	transition: top 0.1s ease-in-out;
+	top:0px;
+}
+#share_buttons a:hover{
+	top:-3px;
+}
+#share_buttons img{
+	width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 23px;
+    overflow: hidden;
+}
+
 
 /*******************/
 /* LANGUAGE PROMPT */
