@@ -31,3 +31,12 @@ Sure!
 Nah
 translated by Your Name
 original in english
+
+fr
+Français
+./fr.html
+Voulez-vous voir la version française ?
+Ouais !
+Nope
+traduit par azarz
+original en anglais
