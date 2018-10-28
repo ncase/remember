@@ -31,3 +31,12 @@ Sure!
 Nah
 translated by Your Name
 original in english
+
+pt
+Portuguese
+./pt.html
+Gostaria de mudar para o idioma português?
+Óbvio!
+Nah
+Traduzido por Emerson Rocha
+https://ncase.me/remember/
