@@ -38,5 +38,4 @@ Portuguese
 Gostaria de mudar para o idioma português?
 Óbvio!
 Nah
-Traduzido por Emerson Rocha
-https://ncase.me/remember/
+Traduzido por <a href="https://github.com/fititnt">Emerson Rocha</a>
