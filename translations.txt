@@ -37,6 +37,6 @@ Français
 ./fr.html
 Voulez-vous voir la version française ?
 Ouais !
-Nope
-traduit par azarz
+Nan
+traduit par <a href="https://github.com/azarz">azarz</a>
 original en anglais
