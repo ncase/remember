@@ -38,5 +38,5 @@ Français
 Voulez-vous voir la version française ?
 Ouais !
 Nan
-traduit par <a href="https://github.com/azarz">azarz</a>
+traduit par <a href="https://github.com/azarz">azarz</a> et relu par <a href="https://github.com/arnaudgregoire">arnaudgregoire</a>
 original en anglais
