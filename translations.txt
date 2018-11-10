@@ -40,3 +40,12 @@ Ouais !
 Nan
 traduit par <a href="https://github.com/azarz">azarz</a> et relu par <a href="https://github.com/arnaudgregoire">arnaudgregoire</a>
 original en anglais
+
+
+es
+Español
+./es.html
+¿Querrías cambiar a la versión en español?
+¡Vale!
+Nanai
+traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a>
