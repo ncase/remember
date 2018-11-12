@@ -41,6 +41,14 @@ Nan
 traduit par <a href="https://github.com/azarz">azarz</a> et relu par <a href="https://github.com/arnaudgregoire">arnaudgregoire</a>
 original en anglais
 
+ru
+Русский
+./ru.html
+Хочешь переключиться на Русский язык?
+Конечно!
+Не-а
+перевод <a href="https://toby3d.ru">toby3d</a>
+original in English
 
 es
 Español
