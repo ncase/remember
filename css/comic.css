@@ -1,9 +1,9 @@
 /* FONT FACE */
 @font-face {
-	font-family: "PatrickHand";
+	font-family: "MengNaYaPiJianTi-1";
 	font-style: normal;
 	font-weight: 400;
-	src: url(PatrickHand-Regular.ttf) format('truetype');
+	src: url(MengNaYaPiJianTi-1.ttf) format('truetype');
 }
 
 /* HTML & BODY */
@@ -15,8 +15,8 @@ html, body{
 body{
 	background: #eeeeee;
 	margin:0;
-	font-family: "PatrickHand", Helvetica, Arial;
-	font-size: 25px;
+	font-family: "MengNaYaPiJianTi-1", Helvetica, Arial;
+	font-size: 22px;
 	line-height: 1.2em;
 	overflow-x:hidden;
 }
@@ -172,11 +172,12 @@ a:hover{
 	transform: scale(0.6, 0.6);
 }
 .comic_text{
-	color: rgba(0,0,0,0.5);
+	color: rgba(255,255,255,0.5);
 	line-height: 1em;
 }
 .comic_text.smaller{
-	font-size: 20px;
+	color: rgb(48, 49, 51);
+	font-size: 18px;
 	line-height: 1em;
 }
 
