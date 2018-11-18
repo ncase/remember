@@ -84,7 +84,7 @@ a:hover{
 }
 .divider > #divider_container > #chapter_name{
 	font-size: 100px;
-	line-height: 0.75em;
+	line-height: 0.95em;
 	text-align: left;
 	margin-bottom: 10px;
 }
@@ -172,12 +172,18 @@ a:hover{
 	transform: scale(0.6, 0.6);
 }
 .comic_text{
-	color: rgba(255,255,255,0.5);
+	color: rgba(0,0,0,0.5);
 	line-height: 1em;
 }
 .comic_text.smaller{
 	color: rgb(48, 49, 51);
 	font-size: 18px;
+	line-height: 1em;
+}
+
+.comic_text.white{
+	color: rgba(255,255,255, 0.8);
+	font-size: 20px;
 	line-height: 1em;
 }
 
