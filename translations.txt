@@ -38,5 +38,5 @@ zh
 想要切换成简体中文吗？
 好的!
 算了
-由Shaoliang Nie翻译 Chih-Yu Chin校对
+由<a target="_blank" href="https://snie2012.github.io/">Shaoliang Nie</a>翻译 Chih-Yu Chin校对
 原文为英语
