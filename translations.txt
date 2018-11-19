@@ -33,10 +33,10 @@ translated by Your Name
 original in english
 
 zh
-中文
+简体中文
 ./zh.html
-Would you like to switch to Example Language?
-Sure!
-Nah
-translated by Shaoliang Nie
-original in english
+想要切换成简体中文吗？
+好的!
+算了
+由Shaoliang Nie翻译 Chih-Yu Chin校对
+原文为英语
