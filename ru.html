@@ -1,0 +1,2395 @@
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	 _______  ___  ____________    ___  _______  ____________________________  _  __
+	/ __/ _ \/ _ |/ ___/ __/ _ \  / _ \/ __/ _ \/ __/_  __/  _/_  __/  _/ __ \/ |/ /
+ _\ \/ ___/ __ / /__/ _// // / / , _/ _// ___/ _/  / / _/ /  / / _/ // /_/ /    /
+/___/_/  /_/ |_\___/___/____/ /_/|_/___/_/  /___/ /_/ /___/ /_/ /___/\____/_/|_/
+
+=== FAN-TRANSLATION GUIDE ===
+
+Hello fan-translators! From the bottom of my heart:
+thank you for doing this, and, you've no idea what you've gotten yourself into.
+There's about 3500 words to translate, including the flashcards & further reading.
+
+Before doing anything, please read all these steps:
+https://github.com/ncase/remember#how-to-translate
+(emphasis: do NOT edit the original index.html. make a copy of this page!)
+
+To make translation less painful, I've added little HTML comments throughout.
+Look for the ones that say "TRANSLATOR NOTE".
+
+And after translating this page, don't forget to go to translations.txt
+and "add" your translation there! (further instructions will be there)
+
+Good luck, and many thanks again!
+
+<3,
+~ Nicky Case
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!DOCTYPE html>
+<html lang="ru"> <!-- TRANSLATOR NOTE: Remember your 2-letter code? Replace "en" with that! -->
+<head>
+	<!-- Meta Stuff -->
+	<title>Как помнить что-нибудь навсегда</title>
+	<!-- TRANSLATOR NOTE: Translate the "content" attribute -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	<meta name="description" content="интерактивный комикс об искусстве и науке памяти"/>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Sharing Card Stuff -->
+	<meta itemprop="name" content="Как помнить что-нибудь навсегда"> <!-- TRANSLATE "content" -->
+	<meta itemprop="description" content="интерактивный комикс об искусстве и науке памяти"> <!-- TRANSLATE "content" -->
+	<meta itemprop="image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta name="twitter:title" content="Как помнить что-нибудь навсегда"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:description" content="интерактивный комикс об искусстве и науке памяти"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta property="og:title" content="Как помнить что-нибудь навсегда"> <!-- TRANSLATE "content" -->
+	<meta property="og:description" content="интерактивный комикс об искусстве и науке памяти"> <!-- TRANSLATE "content" -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ncase.me/remember/">
+	<meta property="og:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/comic.css"/>
+	<meta name="viewport" content="width=600">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neucha">
+	<style> body { font-family: 'Neucha', Helvetica, Arial; } </style>
+</head>
+<body>
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- CHAPTER 0: INTRODUCTION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+	<a name="0"></a>
+	<div class="divider divider_title">
+		<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+		<div id="divider_container">
+			<div id="chapter_name">
+				<div>
+					КАК ПОМНИТЬ ЧТО-НИБУДЬ НАВСЕГДА
+				</div>
+				<!-- TRANSLATOR NOTE: add a hint of silliness at the end, like "ish" or "sorta" -->
+			</div>
+			<div style="text-align:right;">
+				от ники кейс &middot; окт 2018
+				<br>
+				<span id="translation_credits"></span>
+				<!-- TRANSLATOR NOTE: when you update translations.txt, your name will appear here! -->
+			</div>
+		</div>
+	</div>
+
+	<div class="comic">
+		<div id="language_options"></div>
+		<!-- TRANSLATOR NOTE:
+		There may already be "official" translations for terms like "Spaced Repetition" or "Forgetting Curve"!
+		Go to their Wikipedia pages, scroll down to "Languages" in the left sidebar, and if your language is there,
+		click on that Wikipedia page, and use the "official" translated term there.
+
+		Spaced Repetition: https://en.wikipedia.org/wiki/Spaced_repetition
+		Forgetting Curve: https://en.wikipedia.org/wiki/Forgetting_curve -->
+
+		<!-- TRANSLATOR NOTE:
+		Try to make your translated text about the same length or shorter as the original text.
+		If that's not possible, and your text doesn't fit in its box, you can modify attributes
+		"x", "y", "w", "h" to change the box, or add your own custom CSS style to make the font fit.
+		(CSS properties like "font-size" are very helpful) -->
+
+		<panel w=400 h=650>
+			<pic src="pics/intro0.png" sx=0 sy=0></pic>
+			<words x=10 y=10 w=350 h=60>
+				В греческой мифологии, Мнемосина, богиня памяти...
+			</words>
+			<words x=30 y=330 w=310 h=60>
+				...была матерью Муз, богинь вдохновения.
+			</words>
+			<words x=70 y=445 w=90 style="color:#fff" no-bg class="comic_text">
+				музыка
+			</words>
+			<words x=119 y=494 w=90 style="color:#fff" no-bg class="comic_text">
+				театр
+			</words>
+			<words x=214 y=464 w=90 style="color:#fff" no-bg class="comic_text">
+				странный фанфик
+			</words>
+		</panel>
+
+		<panel w=600 h=60>
+			<words w=600 x=-15 no-bg>
+				Итак, как память и вдохновение работают в школах?
+			</words>
+		</panel>
+
+		<panel w=550 h=250>
+			<pic src="pics/intro0.png" sx=400 sy=0></pic>
+			<words x=-12 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   бла   </words>
+			<words x=50  y=85 w=40 no-bg class="comic_text" style="font-size:20px">   бла   </words>
+			<words x=114 y=84 w=40 no-bg class="comic_text" style="font-size:20px">   бла   </words>
+			<words x=172 y=91 w=40 no-bg class="comic_text" style="font-size:20px">   бла   </words>
+			<words x=295 y=80 w=40 no-bg class="comic_text" style="font-size:20px">   бла   </words>
+			<words x=363 y=83 w=40 no-bg class="comic_text" style="font-size:20px">   бла   </words>
+			<words x=444 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   бла   </words>
+			<words x=518 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   бла   </words>
+		</panel>
+
+		<panel w=500 h=250>
+			<pic src="pics/intro0.png" sx=400 sy=250></pic>
+			<words x=155 y=20 w=90 no-bg>
+				Ага.
+			</words>
+			<words x=196 y=70 w=270 fontsize=24 no-bg>
+				Обычные практики, как лекции, зубрежки и перечитывания не только <i>скучны</i>, наука показала, что <i>они сами по себе плохо работают</i>.*
+			</words>
+		</panel>
+
+		<panel w=500 h=30 style="margin-top:-5px">
+			<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+				* все ссылки и источники будут в конце этого комикса!
+			</words>
+		</panel>
+
+		<panel w="500" h="350">
+			<pic src="pics/intro0.png" sx="400" sy="500"></pic>
+			<words x="95" y="30" w="340" no-bg fontsize=21>
+				Что, если я скажу, что есть способ обучения, основанный на доказательствах <i>и</i> веселье?
+			</words>
+			<words x="164" y="150" w="300" no-bg fontsize=22>
+				Что, если я скажу, что есть карточная игра на память, в которую ты можешь играть по 20 минут в день чтобы хранить <i>всё, что ты захочешь</i> в долговременной памяти, <i>навсегда</i>?*
+			</words>
+		</panel>
+
+		<panel w=500 h=30 style="margin-top:-5px">
+			<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+				* пока ты не умрёшь
+			</words>
+		</panel>
+
+		<panel w=600 h=300 bg="#e0e0e0">
+			<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=spaced_rep"></sim>
+		</panel>
+
+		<panel w="500" h="450" fadeInOn="flip_spaced_rep">
+			<pic src="pics/intro0.png" sx="950" sy="0"></pic>
+			<words x="10" y="10" w="430" h="85">
+				И это <i>потрясающе</i>. Я начал пользоваться интервальными повторениями ранее в этом году чтобы выучить французский.
+			</words>
+			<words x="30" y="360" w="430" h="50" fontsize=24>
+				За два <i>месяца</i> я выучил больше слов, чем за два <i>года</i> старших классов французской школы.
+			</words>
+		</panel>
+
+		<panel w="500" h="400">
+			<pic src="pics/intro0.png" sx="950" sy="450"></pic>
+			<words x="10" y="10" w="445" h="45" fontsize=23>
+				С тех пор я использовал интервальные повторения чтобы запоминать всевозможные вещи...
+			</words>
+			<words x="81" y="113" w="100" style="text-align:left" no-bg class="comic_text">
+				аккорды укулеле
+			</words>
+			<words x="212" y="130" w="100" style="text-align:left" no-bg class="comic_text">
+				кодинг
+			</words>
+			<words x=380 y=120 w=100 style="text-align:left" no-bg class="comic_text">
+				дни рождения друзей
+			</words>
+			<words x=188 y=215 w=270 style="text-align:left; font-size: 20px;" no-bg class="comic_text">
+				что-нибудь интересное что я нахожу в книгах, беседах, статьях и т.д.!
+			</words>
+			<words x=60 y=300 w=400 h=50 fontsize=24>
+				...и эта скромная карточная игра на память стала основной частью моей <i>жизни</i>.
+			</words>
+		</panel>
+
+		<panel w=550 h=330>
+			<pic src="pics/intro0.png" sx=0 sy=850></pic>
+			<words x=10 y=10 w=500 h=20 fontsize=21>
+				Кратко, интервальные повторения = тестирование + время.
+			</words>
+			<words x=10 y=225 w=500 h=65 fontsize=23>
+				Ты тестируешь себя на фактах многократно, делая перерывы между повторениями. (Но разве это не займёт много времени? Ах, как мы увидим позже, есть трюк...)
+			</words>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/intro0.png" sx=0 sy=1200></pic>
+			<words x=10 y=20 w=290 no-bg fontsize=20>
+				Интервальные повторения являются бесплатными, доказательными и настолько простыми, что ты можешь реализовать их с помощью <i>обувной коробки</i>.
+			</words>
+			<words x=308 y=265 w=50 no-bg class="comic_text" style="text-align:left; font-size: 20px">
+				ники заткнись
+			</words>
+			<words x=90 y=130 w=270 no-bg fontsize=24>
+				Так, в чём подвох? Почему <i>все</i> уже не пользуются интервальными повторениями?
+			</words>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/intro0.png" sx=400 sy=1200></pic>
+			<words x=10 y=20 w=330 no-bg fontsize=23>
+				Что ж, подвох в том что вводить <i>любую</i> новую привычку тяжело – особенно такую странную привычку как интервальные повторения.
+			</words>
+			<words x=292 y=303 w=80 no-bg class="comic_text" style="text-align:left; font-size:20px">
+				учитель идёт
+			</words>
+			<words x=95 y=130 w=270 no-bg fontsize=23>
+				Вот почему я сделал этот плохо нарисованный интерактивный комикс.
+			</words>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/intro0.png" sx=800 sy=1200></pic>
+			<words x=10 y=33 w=300 no-bg fontsize=21>
+				В этом комиксе об интервальных повторениях,	я покажу тебе ПОЧЕМУ они работают, КАК они работают...
+			</words>
+			<words x=110 y=140 w=250 no-bg>
+				...и помогу тебе начать <i>СЕГОДНЯ</i>.
+			</words>
+		</panel>
+
+		<panel w=600 h=180>
+			<words w=600 x=-15 no-bg>
+				Кроме того, на протяжении всего комикса ты сможешь проверять себя на том что узнал самостоятельно, в промежутках между повторениями. <b>То есть: ты будешь пользоваться интервальными повторениями чтобы учиться интервальным повторениям.</b>
+				<br><br>
+				Вот так:
+			</words>
+		</panel>
+
+		<panel w=600 h=400 bg="#e0e0e0">
+			<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=intro_a,intro_b,intro_c"></sim>
+		</panel>
+
+		<panel w=550 h=450>
+			<pic src="pics/intro0.png" sx=950 sy=1600></pic>
+			<words x=10 y=20 w=480 h=70 fontsize=22>
+				Однако, плоха ли "зубрёжка"? Разве мы не можем отыскать что угодно сейчас? Не стоит ли нам учиться творчеству и критическому мышлению вместо этого?
+			</words>
+			<words x=30 y=325 w=480 h=90 fontsize=24>
+				Здесь <i>нет</i> "вместо". Когнитивная наука показывает <i>необходимость</i> запоминания для творчества и критического мышления. (Представь себе написание эссе, когда ты не знаешь слов!)
+			</words>
+			<words x=187 y=138 w=150 no-bg class="comic_text" style="font-size:40px">
+				ПАМЯТЬ
+			</words>
+			<words x=28 y=230 w=100 no-bg class="comic_text" fontsize=17>
+				искусство
+			</words>
+			<words x=408 y=224 w=100 no-bg class="comic_text" style="font-size:20px">
+				наука
+			</words>
+		</panel>
+
+		<panel w=550 h=300>
+			<pic src="pics/intro0.png" sx=0 sy=1600></pic>
+			<words x=10 y=25 w=310 no-bg fontsize=24>
+				Интервальные повторения не "учебный трюк". Это не "лайфхак".
+			</words>
+			<words x=30 y=115 w=320 no-bg fontsize=24>
+				Это способ вернуть контроль над своим <i>разумом</i>. Сделать долгосрочную память <i>выбором</i>. Развить пожизненную любовь к обучению...
+			</words>
+		</panel>
+
+		<panel w=400 h=550>
+			<pic src="pics/intro0.png" sx=550 sy=1600></pic>
+			<words x=20 y=20 w=330 h=55>
+				...к матери твоей собственной, внутренней Музы.
+			</words>
+			<words x=117 y=131 w=140 no-bg class="comic_text" style="font-size:20px; color:#fff">
+				Тони Старк почти задохнулся, когда рука в перчатке потянулась вниз к его позвоночнику. Устойчивое давление было гладким и почти обнадеживающим. Обама засмеялся. “Ты имеешь в виду–
+			</words>
+			<words x=240 y=480 w=120 h=30>
+				Приступим.
+			</words>
+		</panel>
+	</div>
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- CHAPTER 1: THE SCIENCE OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+	<a name="1"></a>
+	<div class="divider divider_big_height">
+		<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+		<div id="divider_container">
+			<div id="chapter_name">
+				<div>
+					НАУКА ИНТЕРВАЛЬНЫХ ПОВТОРЕНИЙ
+				</div>
+			</div>
+			<div id="chapter_links"></div>
+		</div>
+	</div>
+
+	<div class="comic">
+		<panel w=500 h=450>
+			<pic src="pics/sci0.png" sx=0 sy=0></pic>
+			<words x=10 y=10 w=400 h=45 fontsize=22>
+				В 1885-м году, Германн Эббингхаус (Hermann Ebbinghaus) совершил акт научного мазохизма.
+			</words>
+			<words x=30 y=320 w=430 h=90>
+				Немецкий психолог запомнил <i>тысячи</i> бесполезных глупостей, записал, сколько из них он забыл спустя время, и обнаружил...
+			</words>
+		</panel>
+
+		<panel w=400 h=460>
+			<pic src="pics/sci0.png" sx=500 sy=0></pic>
+			<words x=60 y=10 w=250>
+				<b>КРИВУЮ ЗАБЫВАНИЯ</b>
+			</words>
+			<words x=10 y=310 w=350 fontsize=22>
+				Он увидел, что ты забываешь большую часть того, что узнаёшь в первые 24 часа, а затем - если ты не практикуешь повторения - оставшиеся воспоминания распадаются экспоненциально.*
+			</words>
+		</panel>
+
+		<panel w=500 h=53 style="margin-top:-5px">
+			<words w=500 x=-15 y=-10 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999; line-height: 1.1em;">
+				* технически, кривая не <i>точно</i>
+				<br>
+				экспоненциальна, но, хэй, достаточно близко.
+			</words>
+		</panel>
+
+		<panel w=500 h=450>
+			<pic src="pics/sci0.png" sx=900 sy=0></pic>
+			<words x=10 y=10 w=450 h=115>
+				Философы обсуждали память на протяжении тысячелетий, но Эббингхаус первым сделал реальные <i>эксперименты</i>. (которые были воспроизведены)
+			</words>
+			<words x=193 y=175 w=70 no-bg fontsize=16 class="comic_text" style="color:rgba(0,0,0,0.35);">
+				умоляю...
+			</words>
+			<words x=278 y=200 w=70 no-bg fontsize=18 class="comic_text" style="color:rgba(0,0,0,0.35);">
+				убейте...
+			</words>
+			<words x=348 y=240 w=70 no-bg fontsize=20 class="comic_text" style="color:rgba(0,0,0,0.35);">
+				меня...
+			</words>
+			<words x=20 y=350 w=440 h=60>
+				По этой причине Германн Эббингхаус известен как пионер науки о памяти.
+			</words>
+		</panel>
+
+		<panel w=600 h=80>
+			<words w=600 x=-15 no-bg>
+				Это игровая симуляция кривой забывания. <b>Измени скорость распада памяти. Что произойдёт с кривой?</b>
+			</words>
+		</panel>
+
+		<panel w=600 h=370>
+			<sim x=0 y=0 w=600 h=370 src="sims/ebbinghaus/?mode=0"></sim>
+		</panel>
+
+		<panel w=600 h=90>
+			<words w=600 x=-15 no-bg>
+				Как ты можешь видеть, чем меньше распад, тем плотнее кривая – и тем дольше сохраняется воспоминание.
+			</words>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/sci0.png" sx=0 sy=500></pic>
+			<words x=10 y=10 w=300>
+				Скорость распада памяти человека зависит от человека и его памяти...
+			</words>
+			<words x=0 y=145 w=330 no-bg class="comic_text smaller">
+				привет! прости, как тебя зовут, ещё раз?
+			</words>
+			<words x=177 y=186 w=180 no-bg class="comic_text smaller">
+				хаха. сьюзан.
+			</words>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/sci0.png" sx=400 sy=500></pic>
+			<words x=10 y=10 w=330>
+				Но, в целом, “скорость распада” воспоминания замедляется каждый раз, когда ты <b>активно повторяешь</b> его. (по сравнению с пассивным повторением)
+			</words>
+			<words x=27 y=198 w=120 no-bg class="comic_text smaller">
+				сьюзан. сьюзан. сьюзан. сьюзан. сьюзан.
+			</words>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/sci0.png" sx=800 sy=500></pic>
+			<words x=10 y=10 w=300>
+				(хотя, когда ты прекращаешь практику, оно всё ещё распадается.)
+			</words>
+			<words x=41 y=121 w=150 no-bg class="comic_text smaller">
+				окей пока сара!
+			</words>
+			<words x=191 y=148 w=100 no-bg class="comic_text smaller">
+				сьюзан.
+			</words>
+			<words x=59 y=174 w=150 no-bg class="comic_text smaller">
+				пока сэнди!
+			</words>
+			<words x=193 y=203 w=100 no-bg class="comic_text smaller">
+				СЬЮЗАН.
+			</words>
+		</panel>
+
+		<panel w=600 h=120>
+			<words w=600 x=-15 no-bg fontsize=24>
+				Вот та же симуляция, с одним активным сеансом повторения.
+				<br>
+				(серая линия: какой была бы память <i>без</i> повторения)
+				<br>
+				<b>Измени время повторения, чтобы увидеть, как оно влияет на кривую:</b>
+			</words>
+		</panel>
+
+		<panel w=600 h=400>
+			<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=1"></sim>
+		</panel>
+
+		<panel w=600 h=90>
+			<words w=600 x=-15 no-bg fontsize=24>
+				Одиночное повтоение слегка улучшает память... но, в конечном счёте, из-за экспоненциального распада памяти одно повторение ничего не меняет.
+			</words>
+		</panel>
+
+		<panel w=450 h=400>
+			<pic src="pics/sci1.png" sx=0 sy=0></pic>
+			<words x=10 y=10 w=390>
+				Есть ли лучший способ запоминания? Есть! Трюк в том, что для того чтобы запомнить...
+			</words>
+			<words x=210 y=330 w=200 fontsize=23>
+				...<i>нужно почти забыть</i>.
+			</words>
+		</panel>
+
+		<panel w=500 h=300>
+			<pic src="pics/sci1.png" sx=450 sy=0></pic>
+			<words x=250 y=20 w=200>
+				Чтобы понять, подумай об этом как о тренировке мышц. Ты ничего не получишь с весом, который слишком лёгок...
+			</words>
+		</panel>
+
+		<panel w=500 h=300>
+			<pic src="pics/sci1.png" sx=450 sy=300></pic>
+			<words x=250 y=20 w=200>
+				...как и с тем что слишком тяжёл.
+			</words>
+		</panel>
+
+		<panel w=350 h=350>
+			<pic src="pics/sci1.png" sx=950 sy=0></pic>
+			<words x=10 y=10 w=300 fontsize=24>
+				То же самое и с обучением твоего мозга. Тебе нужна <b>желанная сложность</b>: золотая середина достаточной трудности.
+			</words>
+			<words x=55 y=187 w=100 no-bg class="comic_text smaller" style="text-align:left">
+				комфорт
+			</words>
+			<words x=55 y=282 w=100 no-bg class="comic_text smaller" style="text-align:left">
+				дискомфорт
+			</words>
+			<words x=176 y=186 w=120 no-bg class="comic_text smaller">
+				слишком легко
+			</words>
+			<words x=179 y=229 w=120 no-bg class="comic_text" style="color:#000">
+				нормально
+			</words>
+			<words x=176 y=280 w=120 no-bg class="comic_text smaller">
+				слишком тяжело
+			</words>
+		</panel>
+
+		<panel w=450 h=400>
+			<pic src="pics/sci1.png" sx=0 sy=400></pic>
+			<words x=10 y=10 w=360>
+				Поэтому: чтобы лучше научиться чему-то, тебе нужно вспомнить это...
+			</words>
+			<words x=60 y=330 w=350 fontsize=24>
+				...<i>также просто как и забыть об этом</i>.
+			</words>
+		</panel>
+
+		<panel w=600 h=120>
+			<words w=600 x=-15 no-bg fontsize=24>
+				Та же симуляция что и раньше, но сейчас она показывает <span style="background:#ffe866">золотую середину</span> – где ты забываешь <i>совсем немного</i>. <b>Помести повторение в <i>центр</i> золотой середины. Что произойдёт?</b>
+			</words>
+		</panel>
+
+		<panel w=600 h=400>
+			<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=2"></sim>
+		</panel>
+
+		<panel w=600 h=90>
+			<words w=600 x=-15 no-bg fontsize=24>
+				Видишь? Если твоё время повторения верное, то ты можешь немного замедлить забывание! Сейчас, как насчёт <i>многократных</i> повторений?
+			</words>
+		</panel>
+
+		<panel w=500 h=450>
+			<pic src="pics/sci2.png" sx=0 sy=0></pic>
+			<words x=10 y=10 w=430>
+				Скажем, ты <span class="strikeout">ленив</span> эффективен с точки зрения времени, поэтому ты выполняешь только 4 сеанса повторений.
+			</words>
+			<words x=30 y=350 w=430>
+				Вопрос: <i>Каков наилучший способ распределения твоих повторений?</i>
+			</words>
+			<words x=82 y=198 w=120 no-bg class="comic_text" style="transform: rotate(-16deg);">
+				сьюзан
+			</words>
+		</panel>
+
+		<panel w=500 h=350>
+			<pic src="pics/sci2.png" sx=500 sy=0></pic>
+			<words x=10 y=10 w=190 fontsize=24>
+				Должен ли ты иметь равные перерывы? Перерывы увеличивающейся длины? Перерывы уменьшающейся длины? Или сделать их непредсказуемыми, чтобы держать себя на цыпочках?
+			</words>
+			<words x=259 y=16 w=100 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+				= повтор
+			</words>
+			<words x=295 y=16 w=100 no-bg class="comic_text smaller" style="text-align:right; color:#000">
+				время
+			</words>
+			<words x=245 y=61 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+				равные перерывы:
+			</words>
+			<words x=245 y=126 w=200 no-bg fontsize=18 class="comic_text smaller" style="text-align:left; color:#000">
+				увеличивающиеся перерывы:
+			</words>
+			<words x=245 y=198 w=200 no-bg fontsize=19 class="comic_text smaller" style="text-align:left; color:#000">
+				уменьшающиеся перерывы:
+			</words>
+			<words x=245 y=259 w=200 no-bg fontsize=19 class="comic_text smaller" style="text-align:left; color:#000">
+				непредсказуемые перерывы:
+			</words>
+		</panel>
+
+		<panel w=400 h=75>
+			<words h=75 fontsize=23>
+				<b>Сделай своё лучшее предположение</b>, а когда будешь готов, <b>переверни карту &darr;</b>
+			</words>
+		</panel>
+
+		<panel w=600 h=300 bg="#e0e0e0">
+			<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=guessgap"></sim>
+		</panel>
+
+		<panel fadeInOn="flip_guessgap" w=600 h=120>
+			<words w=600 x=-15 y=0 no-bg fontsize=24>
+				Которое очень контр-интуитивное! Ты можешь доказать себе что это правда, играя с симуляцией внизу. <b>Расположи все повторения в <i>центре</i> <span style="background:#ffe866">золотой середины</span>. Какой перерыв ты получишь?</b>
+			</words>
+		</panel>
+
+		<panel w=600 h=540>
+			<sim x=0 y=0 w=600 h=540 src="sims/ebbinghaus/?mode=3"></sim>
+		</panel>
+
+		<panel w=600 h=120>
+			<words w=600 x=-15 no-bg fontsize=23>
+				(Чтобы доказать, что это не случайность, вот симуляция, где ты можешь изменить начальный распад памяти и золотую середину. Обрати внимание, что во всех, кроме крайних случаев, лучший график по-прежнему “увеличивающиеся перерывы”!)
+			</words>
+		</panel>
+
+		<panel w=600 h=610>
+			<sim x=0 y=0 w=600 h=610 src="sims/ebbinghaus/?mode=4"></sim>
+		</panel>
+
+		<panel w=350 h=500>
+			<pic src="pics/sci2.png" sx=0 sy=450></pic>
+			<words x=10 y=10 w=300 fontsize=23>
+				Почему <i>необходимо</i> увеличивать перерывы? Потому что: каждый раз когда ты повторяешь в золотой середине забывания, распад памяти замедялется...
+			</words>
+			<words x=20 y=160 w=50 no-bg class="comic_text smaller" style="text-align:left">
+				это
+			</words>
+			<words x=0 y=177 w=300 no-bg class="comic_text" style="font-size:100px; transform: rotate(-5deg);">
+				СЬЮЗАН!
+			</words>
+			<words x=210 y=257 w=120 no-bg class="comic_text smaller" style="text-align:right">
+				–что за
+				<!-- TRANSLATOR NOTE: don't complete the swearing in your translation. make it cut off at the edge of the panel. It's... funnier that way? -->
+			</words>
+			<words x=10 y=390 w=300 fontsize=24>
+				...что требует <i>больше</i> времени, чтобы попасть в золотую середину в следующий раз!
+			</words>
+		</panel>
+
+		<panel w=500 h=500>
+			<pic src="pics/sci2.png" sx=350 sy=450></pic>
+			<words x=10 y=10 w=400>
+				Но ты знаешь что круче? Это также означает, что если ты правильно повторяешь...
+			</words>
+			<words x=60 y=415 w=400 fontsize=21>
+				...то ты можешь легко держать <i>любое количество</i> вещей в долговременной памяти, <i>ВЕЧНО</i>.
+			</words>
+		</panel>
+
+		<panel w=250 h=250>
+			<pic src="pics/sci2.png" sx=850 sy=450></pic>
+		</panel>
+
+		<panel w=600 h=90>
+			<words w=600 x=-15 no-bg>
+				И, говоря о том, чтобы активно вспоминать чтобы учиться, давай немного вспомним то, что мы только что узнали:
+			</words>
+		</panel>
+
+		<panel w=600 h=400 bg="#e0e0e0">
+			<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,intro_b,sci_c"></sim>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/sci2.png" sx=0 sy=950></pic>
+			<words x=50 y=0 w=300 bg=none fontsize=24>
+				Ну, это хорошо, но на самом деле <i>найти</i> хорошее расписание интервальных повторений должно быть сложно, не так ли?
+			</words>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/sci2.png" sx=400 sy=950></pic>
+			<words x=45 y=15 w=300 bg=none fontsize=24>
+				<i>Au contraire!</i>
+				Это действительно так просто, что ты даже можешь создать свой собственный автоматический планировщик...
+			</words>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/sci2.png" sx=800 sy=950></pic>
+			<words x=30 y=15 w=200 bg=none>
+				...используя <i>обувную коробку</i>.
+			</words>
+		</panel>
+	</div>
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- CHAPTER 2: THE ART OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+	<a name="2"></a>
+	<div class="divider divider_big_height">
+		<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+		<div id="divider_container">
+			<div id="chapter_name">
+				<div>
+					ИСКУССТВО ИНТЕРВАЛЬНЫХ ПОВТОРЕНИЙ
+				</div>
+			</div>
+			<div id="chapter_links"></div>
+		</div>
+	</div>
+
+	<div class="comic">
+		<panel w=500 h=450>
+			<pic src="pics/leit0.png" sx=0 sy=0></pic>
+			<words x=10 y=10 w=430 h=85>
+				Тебе не <i>нужно</i> пользоваться обувной коробкой для интервальных повторений, но веселее когда она у тебя есть.
+			</words>
+			<words x=3 y=119 w=140 no-bg class="comic_text smaller" fontsize=22>
+				а это мой частный наставник
+			</words>
+			<words x=119 y=158 w=120 no-bg class="comic_text smaller" fontsize=22>
+				???
+			</words>
+			<words x=246 y=118 w=120 no-bg class="comic_text smaller" fontsize=22>
+				они помогут мне далеко зайти
+				<!-- TRANSLATOR NOTE: this is a pun that may not work in all languages.
+				If it doesn't translate to your language, try coming up with your own pun!
+				Or, replace this line with: "they help me go far" -->
+			</words>
+			<words x=367 y=116 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+				мы больше не друзья
+			</words>
+			<words x=30 y=325 w=430 h=85>
+				(Позже, мы рассмотрим некоторые <i>приложения</i> интервальных повторений, вроде Anki и Tinycards)
+			</words>
+		</panel>
+
+		<panel w=500 h=400>
+			<pic src="pics/leit0.png" sx=500 sy=0></pic>
+			<words x=10 y=10 w=430 h=70 fontsize=23>
+				Эта установка называется Коробка Лейтнера. Это похоже на карточную игру, которую ты играешь против себя!
+			</words>
+			<words x=30 y=295 w=430 h=70 fontsize=24>
+				Сначала раздели свою коробку на семь "Уровней". (Ты можешь иметь больше или меньше, если хочешь!)
+			</words>
+		</panel>
+
+		<panel w=500 h=370>
+			<pic src="pics/leit0.png" sx=0 sy=480></pic>
+			<words x=10 y=10 w=430 h=30>
+				Все новые карточки стартуют с Уровня 1.
+			</words>
+			<words x=30 y=265 w=430 h=70 fontsize=24>
+				(Если ты новичок в интервальных повторениях, я рекомендую начинать с 5 новых карт в день.)
+			</words>
+		</panel>
+
+		<panel w=500 h=400>
+			<pic src="pics/leit0.png" sx=500 sy=480></pic>
+			<words x=10 y=10 w=430 h=60>
+				Когда ты правильно проверяешь карту, она поднимается на <i>один</i> Уровень.
+			</words>
+			<words x=30 y=295 w=430 h=70 fontsize=24>
+				(Если ты на последнем Уровне -- поздравляю! Твоя карточка уходит. Она удаляется в рай для карточек.)
+			</words>
+		</panel>
+
+		<panel w=500 h=430>
+			<pic src="pics/leit0.png" sx=0 sy=900></pic>
+			<words x=10 y=10 w=430 h=45 fontsize=23>
+				Но если ты проверяешь карточку и ошибаешься... она возвращается <i>назад, на Уровень 1</i>.
+			</words>
+			<words x=30 y=300 w=430 h=95 fontsize=24>
+				(Если ты уже на Уровне 1, хорошие новости: ты можешь продолжать проверять себя на ней, пока не решишь её правильно и не переместишь её на Уровень 2)
+			</words>
+		</panel>
+
+		<panel w=500 h=400>
+			<pic src="pics/leit0.png" sx=0 sy=1370></pic>
+			<words x=10 y=10 w=430 h=115 fontsize=23>
+				Но <i>когда</i> мы должны проверять карты? Вот в чём трюк. В Коробке Лейтнера, мы проверяем карты Уровня 1 каждый день, Уровень 2 каждые два дня, Уровень 3 каждые <i>ЧЕТЫРЕ</i> дня, Уровень 4 каждые <i>ВОСЕМЬ</i> дней, и т.д....
+			</words>
+			<words x=30 y=310 w=430 h=45 fontsize=23>
+				Паттерн следующий: мы <i>удваиваем перерыв</i> (# дней между проверками) на каждом уровне!
+			</words>
+		</panel>
+
+		<panel w=600 h=60>
+			<words w=600 x=-15 no-bg fontsize=24>
+				Вот как выглядит циклический 64-дневный игровой календарь:
+			</words>
+		</panel>
+
+		<panel w=600 h=400 bg="#fff">
+			<sim x=0 y=0 w=600 h=400 src="sims/calendar/"></sim>
+		</panel>
+
+		<panel w=500 h=490>
+			<pic src="pics/leit0.png" sx=500 sy=870></pic>
+			<words x=10 y=10 w=430 h=70 fontsize=23>
+				(Примечание: причина, по которой мы проверяем Уровень 1 в конце, в том, что мы видим новые карты <i>и</i> карты что мы забыли на уровнях выше.)
+			</words>
+			<words x=30 y=330 w=430 h=120>
+				(В конце ежедневной игры интервальных повторений на Уровне 1 не должно остаться карт. Проверяй себя пока не достигнешь успеха и не переместишь их на Уровень 2!)
+			</words>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/leit0.png" sx=600 sy=1400></pic>
+			<words x=10 y=10 w=350 h=70 fontsize=23>
+				(Примечание #2: <i>приложения</i> интервальных повторений вроде Anki используют более сложный алгоритм...)
+			</words>
+			<words x=10 y=315 w=350 h=45 fontsize=22>
+				(...но, по своей сути, они работают на тех же принципах, что и Коробка Лейтнера)
+			</words>
+		</panel>
+
+		<panel w=400 h=450>
+			<pic src="pics/leit0.png" sx=0 sy=1800></pic>
+			<words x=10 y=10 w=350 h=90 fontsize=22>
+				(Примечание #3: О, с помощью нескольких индексных карт и липкой ленты, ты можешь сделать собственный складной, циклический календарь!)
+			</words>
+			<words x=10 y=350 w=350 h=60>
+				(в конце я разместил обучающее видео по сборке Коробки Лейтнера)
+			</words>
+		</panel>
+
+		<panel w=600 h=80>
+			<words w=600 x=-15 no-bg fontsize=21>
+				Теперь, время показать игру в действии! Вот <i>пошаговая</i> симуляция Коробки Лейтнера: <b>(мы рассмотрим <i>помесячную</i> симуляцию позже)</b>
+			</words>
+		</panel>
+
+		<panel w=600 h=470 bg="#fff">
+			<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=1"></sim>
+		</panel>
+
+		<panel w=600 h=110>
+			<words w=600 x=-15 no-bg fontsize=24>
+				Каждая ежедневная проверка занимает 20-30 минут. Вместо просмотра очередной серии по ТВ ты можешь поиграть в карточную игру и запомнить всё что ты захочешь <i>на всю жизнь</i>.
+			</words>
+		</panel>
+
+		<panel w=500 h=400>
+			<pic src="pics/leit1.png" sx=0 sy=0></pic>
+			<words x=10 y=10 w=430 h=60>
+				Однако, привычки сложны. Если ты начнёшь с большего, то не заставишь шар катиться...
+			</words>
+			<words x=20 y=285 w=450 h=60>
+				Но если ты начнёшь <i>с малого</i>, то сможешь поймать растущий импульс и катить свой снежок всё больше и больше.
+			</words>
+		</panel>
+
+		<panel w=500 h=690>
+			<pic src="pics/leit1.png" sx=0 sy=400></pic>
+			<words x=10 y=10 w=430 h=60>
+				Вот почему я рекомендую <i>начинать</i> с 5 новых карт в день.
+			</words>
+			<words x=30 y=300 w=430 h=90>
+				Когда тебе будет комфортно с этим, ты сможешь делать 10 карт/день. Затем 15. Потом 20, 25, 30.
+			</words>
+			<words x=10 y=605 w=430 h=60 fontsize=22>
+				И с 30 новыми картами в день ты сможешь учить <i>более 10,000</i> новых фактов/слов/вещей в <i>год</i>.
+			</words>
+			<words x=16 y=497 w=200 no-bg class="comic_text smaller" style="text-align:right">
+				на на на на на на на на
+			</words>
+			<words x=38 y=517 w=200 no-bg class="comic_text smaller" style="text-align:right">
+				katamari damacy
+				<!-- TRANSLATOR NOTE: leave this in its japanese. i don't know what it means, actually. it's a videogame song. -->
+			</words>
+		</panel>
+
+		<panel w=600 h=80>
+			<words w=600 x=-15 no-bg fontsize=21>
+				Что ж, вот помесячная симуляция. Используй это, чтобы заранее расчитать сколько <i>ты</i> можешь выучить с интервальными повторениями!
+			</words>
+		</panel>
+
+		<panel w=600 h=500 bg="#fff">
+			<sim x=0 y=0 w=600 h=500 src="sims/leitner/?mode=2"></sim>
+		</panel>
+
+		<panel w=600 h=110>
+			<words w=600 x=-15 no-bg fontsize=22>
+				Вот и всё. Вот как ты можешь сделать долгосрочную память <i>выбором</i>.
+			</words>
+			<words w=600 x=-15 y=35 no-bg>
+				Давай позволим этому осесть. Сделай перерыв и вспомни, что мы только что узнали:
+			</words>
+		</panel>
+
+		<panel w=600 h=400 bg="#e0e0e0">
+			<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_a,intro_a,leit_b,intro_c,leit_c"></sim>
+		</panel>
+
+		<panel w=600 h=80>
+			<words w=600 x=-15 no-bg fontsize=19>
+				Интервальные повторения почти выглядят слишком хорошо, чтобы быть правдой.
+				<br>
+				Так и есть... <i>ЕСЛИ</i> ты попадёшь в некоторые очень распространённые ловушки.
+			</words>
+		</panel>
+
+		<panel w=500 h=450>
+			<pic src="pics/leit1.png" sx=500 sy=0></pic>
+			<words x=10 y=10 w=420 h=70 fontsize=24>
+				Память - не книжная полка, где ты собираешь случайные гигантские томы, чтобы произвести впечатление на других.
+			</words>
+			<words x=-15 y=210 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+				куча
+			</words>
+			<words x=39 y=216 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(86deg)">
+				мусора
+			</words>
+			<words x=100 y=211 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(74deg)">
+				с которым
+			</words>
+			<words x=144 y=212 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+				никогда
+			</words>
+			<words x=199 y=214 w=150 no-bg class="comic_text" style="text-align:left; font-size:20px; transform:rotate(84deg)">
+				не столкнёшься
+			</words>
+			<words x=10 y=350 w=450 h=60 fontsize=21>
+				То есть: интервальные повторения не будут работать если твои карты чувствуются <i>беспорядочными</i>, <i>отстранёнными</i> или <i>бессмысленными</i>.
+			</words>
+		</panel>
+
+		<panel w=500 h=450>
+			<pic src="pics/leit1.png" sx=500 sy=450></pic>
+			<words x=10 y=10 w=430 h=95 fontsize=24>
+				Вместо этого, память похожа на головоломку: она заполнена маленькими, связанными частями. (Это также, как работают нейроны: много мелких, связных вещей)
+			</words>
+			<words x=30 y=380 w=430 h=25 fontsize=23>
+				Это не о <i>коллекционировании</i>, это о <i>соединении</i>.
+			</words>
+		</panel>
+
+		<panel w=500 h=400>
+			<pic src="pics/leit1.png" sx=500 sy=900></pic>
+			<words x=10 y=10 w=410 h=70 fontsize=24>
+				Таким образом, чтобы эффективно использовать интервальные повторения, ты должен сделать свои карты ...
+			</words>
+			<words x=-38 y=227 w=200 no-bg class="comic_text" style="color:#fff">
+				МАЛЕНЬКИМИ
+			</words>
+			<words x=94 y=257 w=200 no-bg class="comic_text" style="color:#fff">
+				СВЯЗНЫМИ
+			</words>
+			<words x=262 y=298 w=200 no-bg class="comic_text" style="color:#fff">
+				и ВЫРАЗИТЕЛЬНЫМИ
+			</words>
+		</panel>
+
+		<panel w=450 h=60>
+			<words w=450 x=-15 no-bg>
+				Давай посмотрим как.
+			</words>
+		</panel>
+
+		<panel w=600 h=150>
+			<pic src="pics/leit2.png" sx=0 sy=0></pic>
+			<words x=169 y=25 w=400 no-bg fontsize=80 style="color:#fff; text-align:left">
+				МАЛЕНЬКИЕ
+			</words>
+		</panel>
+
+		<panel w=450 h=50>
+			<words w=450 x=-15 no-bg>
+				Эта карта плоха:
+			</words>
+		</panel>
+
+		<panel w=600 h=300 bg="#e0e0e0">
+			<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=mitochondria_all"></sim>
+		</panel>
+
+		<panel w=450 h=380>
+			<pic src="pics/leit2.png" sx=0 sy=450></pic>
+			<words x=10 y=10 w=400 h=20 fontsize=21>
+				Она очень большая. Слишком много информации.
+			</words>
+			<words x=10 y=260 w=400 h=75 fontsize=24>
+				Сократим её в маленькую, связную деталь! Как правило, <i>каждая карта должна иметь одну и только одну идею</i>. Как например:
+			</words>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_1" class="small_card"></sim>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_2" class="small_card"></sim>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_3" class="small_card"></sim>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_4" class="small_card"></sim>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_5" class="small_card"></sim>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_6" class="small_card"></sim>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_7" class="small_card"></sim>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_8" class="small_card"></sim>
+		</panel>
+
+		<panel w=450 h=90>
+			<words w=450 x=-15 no-bg>
+				Факты связаны с фактами. Но есть и другие, более игровые пути для карт чтобы они были...
+			</words>
+		</panel>
+
+		<panel w=600 h=150>
+			<pic src="pics/leit2.png" sx=0 sy=150></pic>
+			<words x=169 y=30 w=400 no-bg fontsize=80 style="color:#fff; text-align:left">
+				СВЯЗНЫЕ
+			</words>
+		</panel>
+
+		<panel w=450 h=110>
+			<words w=450 x=-15 no-bg fontsize=23>
+				Эта карта... ладно. Здесь русское слово спереди, французское слово на обратной стороне.
+				<!-- TRANSLATOR NOTE:
+				If the language you're translating for is NOT French,
+				replace "English" with [your language] -->
+				Это стандарт для большинства карт обучения языкам:
+			</words>
+		</panel>
+
+		<panel w=600 h=300 bg="#e0e0e0">
+			<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat"></sim>
+		</panel>
+
+		<panel w=450 h=400>
+			<pic src="pics/leit2.png" sx=0 sy=800></pic>
+			<words x=10 y=10 w=400 h=60>
+				Но знаешь ли ты как сделать её более запоминающимся?
+			</words>
+			<words x=10 y=290 w=400 h=70 fontsize=24>
+				Если ты соединишь её с <i>рисунками, звуками, контекстом и/или собственными деталями</i>! Как например:
+			</words>
+		</panel>
+
+		<panel w=600 h=300 bg="#e0e0e0">
+			<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat2"></sim>
+		</panel>
+
+		<panel w=600 h=300>
+			<pic src="pics/leit2.png" sx=600 sy=0></pic>
+			<words x=10 y=10 w=210 fontsize=24>
+				На передней стороне нарисована кошка (картинка) с заполняющим пропуск французским смыслом (контекст: грамматика) о моей кошке из дества, Страйпс (Stripes). (личность)
+			</words>
+		</panel>
+
+		<panel w=600 h=300>
+			<pic src="pics/leit2.png" sx=600 sy=300></pic>
+			<words x=10 y=10 w=210>
+				На обратной стороне есть символ пола (картинка), его произношения (звук*) и предупреждение о версии в женском роде. (контекст: слэнг)
+			</words>
+			<words w=330 x=250 y=225 no-bg fontsize=18>
+				* Очевидно, бубажные карты не издают звуков. Но приложения вроде Anki/Tinycards могут!
+			</words>
+			<audio controls style="position: absolute; top: 105px; left: 280px; transform: scale(0.4) rotate(4deg);">
+				<source src="audio/chat.mp3" type="audio/mpeg"/>
+			</audio>
+		</panel>
+
+		<panel w=450 h=90>
+			<words w=450 x=-15 no-bg>
+				Но <i>самое</i> важное во всём этом - это связать своё обучение с чем-то, что...
+			</words>
+		</panel>
+
+		<panel w=600 h=150>
+			<pic src="pics/leit2.png" sx=0 sy=300></pic>
+			<words x=169 y=35 w=400 no-bg fontsize=64 style="color:#fff; text-align:left">
+				ВЫРАЗИТЕЛЬНО
+			</words>
+		</panel>
+
+		<panel w=500 h=350>
+			<pic src="pics/leit2.png" sx=450 sy=600></pic>
+			<words x=10 y=10 w=450 h=45 fontsize=22>
+				Вот как лично я учусь лучше всего: во-первых, я пытаюсь (подчёркивая <i>пытаюсь</i>) <b>делать</b> что-нибудь.
+			</words>
+			<words x=11 y=113 w=160 no-bg class="comic_text">
+				играть на укулеле
+			</words>
+			<words x=183 y=104 w=140 no-bg class="comic_text" fontsize=20>
+				читать французские комиксы
+			</words>
+			<words x=336 y=109 w=100 no-bg class="comic_text">
+				делать веб-игру
+			</words>
+		</panel>
+
+		<panel w=500 h=350>
+			<pic src="pics/leit2.png" sx=950 sy=600></pic>
+			<words x=10 y=10 w=450 h=60>
+				Неизбежно, я застрял. В этот момент я смотрю что мне нужно и <b>учу</b> что-нибудь.
+			</words>
+			<words x=6 y=102 w=130 no-bg class="comic_text">
+				как сыграть F#?
+			</words>
+			<words x=133 y=104 w=180 no-bg class="comic_text">
+				что значит "attraper"?
+			</words>
+			<words x=301 y=109 w=190 no-bg class="comic_text">
+				почему javascript такой кусок г–
+				<!-- TRANSLATOR NOTE: again, don't complete the swear. have it cut out -->
+			</words>
+		</panel>
+
+		<panel w=600 h=300 bg="#e0e0e0">
+			<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=learndo&forever_card=yes"></sim>
+		</panel>
+
+		<panel w=450 h=30>
+			<words w=450 x=-15 y=-15 no-bg>
+				И так далее.
+			</words>
+		</panel>
+
+		<panel w=450 h=400>
+			<pic src="pics/leit2.png" sx=450 sy=950></pic>
+			<words x=10 y=10 w=400 h=60>
+				Это, я считаю, лучший способ сохранить мотивацию во время обучения:
+			</words>
+			<words x=10 y=310 w=400 h=50 fontsize=24>
+				Удостовериться в том, что твоё обучение <i>работает с тем, что тебе нужно</i>.
+			</words>
+		</panel>
+
+		<panel w=600 h=90>
+			<words w=600 x=-15 no-bg>
+				Говоря об обучении, давай попробуем вспомнить то, что мы узнали: (это будет второй последний раз!)
+			</words>
+		</panel>
+
+		<panel w=600 h=400 bg="#e0e0e0">
+			<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_d,sci_c,sci_a,sci_b"></sim>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/leit3.png" sx=0 sy=450></pic>
+			<words x=10 y=20 w=350 no-bg fontsize=24>
+				Консенсус в сообществе интервальных повторений в том, что спустя время <b>ты должен сделать свои собственные карточки</b>.
+			</words>
+			<words x=33 y=135 w=230 no-bg fontsize=23>
+				Благодаря этому ты можешь соединить факты с тем, что <i>ты</i> знаешь, что <i>ты</i> любишь.
+			</words>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/leit3.png" sx=400 sy=450></pic>
+			<words x=10 y=15 w=300 no-bg fontsize=24>
+				Вот почему, в <i>последней</i> части этого интерактивного комикса, ты будешь делать свои <i>собственные</i> карты!
+			</words>
+			<words x=30 y=165 w=170 no-bg>
+				И эти карты будут о...
+			</words>
+		</panel>
+
+		<panel w=400 h=400>
+			<pic src="pics/leit3.png" sx=800 sy=450></pic>
+			<words x=0 y=10 w=230 fontsize=150 no-bg color="#ffffff">
+				ТЕБЕ
+			</words>
+		</panel>
+	</div>
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- CHAPTER 3: GET STARTED TODAY! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+	<a name="3"></a>
+	<div class="divider divider_small_height">
+		<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+		<div id="divider_container">
+			<div id="chapter_name">
+				<div>
+					НАЧИНАЕМ<br>СЕГОДНЯ!
+				</div>
+			</div>
+			<div id="chapter_links"></div>
+		</div>
+	</div>
+
+	<div class="comic">
+		<panel w=500 h=350>
+			<pic src="pics/end0.png" sx=0 sy=0></pic>
+			<words x=10 y=10 w=450 h=85>
+				Чтобы помочь тебе начать интервальные повторения <i>сегодня</i>, тебе нужно ответить на четыре вопроса:
+			</words>
+			<!-- TRANSLATOR NOTE: Remember, if your translated word is too big, you can modify the CSS! (especially font-size) -->
+			<words x=8 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+				ЧТО?
+			</words>
+			<words x=121 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+				ЗАЧЕМ?
+			</words>
+			<words x=226 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+				КАК?
+			</words>
+			<words x=337 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+				КОГДА?
+			</words>
+		</panel>
+
+		<panel w="600" h="80">
+			<words w="600" x="-15" no-bg="">
+				Ты ответишь на эти вопросы сделав карты! Что ж, здесь <i>передняя сторона</i> нашей первой карты, вот первый вопрос:
+			</words>
+		</panel>
+
+		<panel w=500 h=250 bg="#e0e0e0">
+			<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_what&front_only=yes" style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+			<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+		</panel>
+
+		<panel w=500 h=450>
+			<pic src="pics/end0.png" sx=500 sy=0></pic>
+			<words x=10 y=10 w=430 h=65 fontsize=24>
+				Например, ты можешь использовать интервальные повторения чтобы помочь себе выучить...
+			</words>
+			<words x=120 y=104 w=100 style="text-align:left" no-bg class="comic_text">
+				новый язык
+			</words>
+			<words x=320 y=107 w=100 style="text-align:left" no-bg class="comic_text">
+				новый инструмент
+			</words>
+			<words x=115 y=205 w=100 fontsize=20 style="text-align:left" no-bg class="comic_text">
+				компьютерное программирование
+			</words>
+			<words x=340 y=195 w=150 style="text-align:left" no-bg class="comic_text">
+				детали жизни друзей
+			</words>
+			<words x=129 y=283 w=200 style="text-align:left" no-bg class="comic_text">
+				что-либо интересное для себя, что угодно!
+			</words>
+			<words x=390 y=285 w=100 fontsize=20 style="text-align:left" no-bg class="comic_text">
+				имена всех покемонов
+			</words>
+			<words x=80 y=390 w=380 h=20 fontsize=20>
+				Сейчас, напиши <i>свой</i> ответ на обратной стороне:
+			</words>
+		</panel>
+
+		<panel w=600 h=350 bg="#e0e0e0">
+			<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_what"></sim>
+		</panel>
+
+		<panel fadeInOn="answer_edit_you_what" w="600" h="40" style="margin-bottom: -10px;">
+			<words w=600 x=-15 y=-10 no-bg="" fontsize=20>
+				(примечание: ты можешь проскроллить сюда и изменить свой ответ позже)
+			</words>
+		</panel>
+
+		<panel w="600" h="80">
+			<words w="600" x="-15" no-bg="" fontsize=21>
+				Однако помни, для работы интервальных повторений тебе нужно связать это с чем-то, что тебе <i>нужно</i>... Поэтому наш следующий вопрос:
+			</words>
+		</panel>
+
+		<panel w=500 h=250 bg="#e0e0e0">
+			<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_why&front_only=yes" style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+			<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+		</panel>
+
+		<panel w=500 h=430>
+			<pic src="pics/end0.png" sx=1000 sy=0></pic>
+			<words x=10 y=10 w=430 h=70 fontsize=24>
+				Это может быть слишком философски, потому вот некоторые конкретные примеры <i>почему</i> для <i>чего</i>:
+			</words>
+			<words x=130 y=115 w=350 fontsize=23 style="text-align:left" no-bg class="comic_text">
+				<b>ЧТО:</b> новый язык
+				<br>
+				<b>ЗАЧЕМ:</b> разговаривать с друзьями, семьёй, любимыми на их родном языке
+			</words>
+			<words x=130 y=210 w=350 fontsize=20 style="text-align:left" no-bg class="comic_text">
+				<b>ЧТО:</b> компьютерное программирование
+				<br>
+				<b>ЗАЧЕМ:</b> делать деньги на которые я смогу есть
+			</words>
+			<words x=130 y=290 w=350 fontsize=22 style="text-align:left" no-bg class="comic_text">
+				<b>ЧТО:</b> что-нибудь интересное
+				<br>
+				<b>ЗАЧЕМ:</b> любопытство, для самого себя!
+			</words>
+			<words x=210 y=365 w=250 h=20 fontsize=22>
+				Что ж... какова <i>твоя</i> причина?
+			</words>
+		</panel>
+
+		<panel w=600 h=350 bg="#e0e0e0">
+			<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_why"></sim>
+		</panel>
+
+		<panel w="600" h="80">
+			<words w="600" x="-15" no-bg="" fontsize=21>
+				Теперь у тебя есть что и почему... но нам всё равно нужно выбрать, <i>как</i>! То есть, какой инструмент/приложение ты хочешь использовать? Вопрос нашей следующей карточки:
+			</words>
+		</panel>
+
+		<panel w=500 h=250 bg="#e0e0e0">
+			<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_how&front_only=yes"
+			style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+			<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+		</panel>
+
+		<panel w=500 h=690>
+			<pic src="pics/end0.png" sx=0 sy=450></pic>
+			<words x=10 y=10 w=450 h=95 fontsize=24>
+				Ныне я пользуюсь <a target="_blank" href="https://en.wikipedia.org/wiki/Leitner_system">Коробкой Лейтнера</a>, но мои друзья используют <a target="_blank" href="https://apps.ankiweb.net/">Anki</a>, и какое-то время я пользовался <a target="_blank" href="https://tinycards.duolingo.com/">TinyCards</a>. (ссылки откроются в новых вкладках) Вот их сравнение:
+			</words>
+			<words x=160 y=140 w=300 fontsize=21 style="text-align:left" no-bg>
+				<b>Коробка Лейтнера</b>
+				<br>
+				За: искусно и самодельно, проста в использовании
+				<br>
+				Против: не настолько портативна как приложения
+			</words>
+			<words x=160 y=275 w=300 fontsize=21 style="text-align:left" no-bg>
+				<b>Anki (приложение)</b>
+				<br>
+				За: огромное сообщество, open-source, много мощных особенностей
+				<br>
+				Против: по своему уродливый
+			</words>
+			<words x=160 y=405 w=300 fontsize=19 style="text-align:left" no-bg>
+				<b>TinyCards (приложение)</b>
+				<br>
+				За: приятный дизайн, прост в использовании
+				<br>
+				Против: до 150 карт в колоде, не даёт <i>тебе</i> выбора после успешного повторения
+			</words>
+			<words x=10 y=530 w=450 h=45 fontsize=22>
+				(Хочешь что-нибудь ещё? Вот немного других инструментов: <a target="_blank" href="https://www.supermemo.com/">SuperMemo</a>, <a target="_blank" href="https://www.nimblenotes.com/">NimbleNotes</a>, <a target="_blank" href="https://mnemosyne-proj.org/">Mnemosyne</a>)
+			</words>
+			<words x=110 y=600 w=360 h=40 no-bg fontsize=20>
+				* <i>анти</i>-отказ: я <i>не</i> являюсь представителем ничего из этого. я просто нахожу их прикольными и полезными!
+			</words>
+		</panel>
+
+		<panel w=600 h=50>
+			<words w=600 x=-15 no-bg>
+				Итак, что это будет?
+			</words>
+		</panel>
+
+		<panel w=600 h=350 bg="#e0e0e0">
+			<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_how"></sim>
+		</panel>
+
+		<panel w=500 h=450>
+			<pic src="pics/end0.png" sx=500 sy=450></pic>
+			<words x=10 y=10 w=430 h=95 fontsize=24>
+				Осталась всего одна карта! Итак: делать интервальные повторения на самом деле довольно просто... однако, сделать их <i>ежедневной привычкой</i> сложно.
+			</words>
+			<words x=60 y=370 w=400 h=30 no-bg fontsize=23>
+				Почему? Потому что заставить мяч катиться по <i>любой</i> новой привычке трудно.
+			</words>
+		</panel>
+
+		<panel w=500 h=550>
+			<pic src="pics/end0.png" sx=1000 sy=450></pic>
+			<words x=10 y=10 w=430 h=95 fontsize=24>
+				Трудно, но просто. Наука о привычках показывает, что если ты делаешь то же самое, учитывая ту же самую реплику, снова и снова...
+			</words>
+			<words x=0 y=153 w=170 no-bg class="comic_text smaller">
+				счастливого дня!
+			</words>
+			<words x=72 y=188 w=80 no-bg class="comic_text smaller">
+				спасибо, тебе тоже!
+			</words>
+			<words x=235 y=140 w=170 no-bg class="comic_text smaller">
+				счастливых праздников!
+			</words>
+			<words x=309 y=185 w=80 no-bg class="comic_text smaller">
+				спасибо, тебе тоже!
+			</words>
+			<words x=2 y=300 w=170 no-bg class="comic_text smaller">
+				вот ваша сдача!
+			</words>
+			<words x=74 y=335 w=80 no-bg class="comic_text smaller">
+				спасибо, тебе тоже!
+			</words>
+			<words x=20 y=445 w=440 h=65 fontsize=23>
+				...это станет привычкой, хорошо это или плохо. Так что для привычки интервальных повторений нашим вопросом будет:
+			</words>
+		</panel>
+
+		<panel w=500 h=250 bg="#e0e0e0">
+			<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_when&front_only=yes" style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+			<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+		</panel>
+
+		<panel w=500 h=435>
+			<pic src="pics/end0.png" sx=0 sy=1150></pic>
+			<words x=10 y=10 w=400 h=60>
+				Для примера, ты мог бы сыграть в игру интервальных повторений...
+			</words>
+			<words x=4 y=233 w=130 no-bg class="comic_text">
+				после пробуждения
+			</words>
+			<words x=167 y=233 w=130 no-bg class="comic_text">
+				в поездке
+			</words>
+			<words x=335 y=233 w=130 no-bg class="comic_text">
+				перед сном
+			</words>
+			<words x=30 y=320 w=430 h=70 fontsize=24>
+				Неважно <i>когда</i> ты это делаешь, пока делаешь это ежедневно и последовательно (более или менее - иногда ты можешь пропустить день).
+			</words>
+		</panel>
+
+		<panel w=400 h=500>
+			<pic src="pics/end0.png" sx=500 sy=1150></pic>
+			<words x=10 y=10 w=350 h=95 fontsize=24>
+				(Совет: когда я пытаюсь создать новую привычку, я рисую круг в календаре для каждого дня, когда я успешно её практикую)
+			</words>
+			<words x=10 y=370 w=350 h=85 fontsize=21>
+				(Это игра, в которую я играю с собой! Цель состоит в том, чтобы попытаться не сломать своё комбо и построить самую длинную цепочку, насколько я могу.)
+			</words>
+		</panel>
+
+		<panel w=600 h=50>
+			<words w=600 x=-15 no-bg>
+				Итак, настала пора заполнить последнюю карту:
+			</words>
+		</panel>
+
+		<panel w=600 h=350 bg="#e0e0e0">
+			<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_when"></sim>
+		</panel>
+
+		<panel w=400 h=80>
+			<words w=400 x=-15 no-bg>
+				И voilà, здесь все четыре твоих карты, все о тебе!
+			</words>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_what&refresh=yes" class="small_card"></sim>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_why&refresh=yes" class="small_card"></sim>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_how&refresh=yes" class="small_card"></sim>
+		</panel>
+
+		<panel w=264 h=180 bg="#e0e0e0">
+			<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_when&refresh=yes" class="small_card"></sim>
+		</panel>
+
+		<br><br>
+
+		<panel w=500 h=250>
+			<pic src="pics/end1.png" sx=0 sy=0></pic>
+			<words x=175 y=15 w=250 no-bg fontsize=22>
+				Но, как я говорил, я хочу помочь тебе взять под контроль свою память <i>сегодня</i>.
+			</words>
+			<words x=230 y=135 w=250 no-bg fontsize=24>
+				Не "со временем", не "завтра", <i>СЕГОДНЯ</i>.
+			</words>
+		</panel>
+
+		<panel w=500 h=250>
+			<pic src="pics/end1.png" sx=0 sy=250></pic>
+			<words x=145 y=25 w=120 no-bg fontsize=22>
+				потому, чтобы помочь...
+			</words>
+			<words x=270 y=95 w=170 no-bg fontsize=23>
+				давай скачаем немного <b style="font-size:30px">ПРИЯТНЫХ ВЕЩИЦ</b>
+			</words>
+		</panel>
+
+		<panel w=600 h=90>
+			<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=25>
+				<img src="pics/gift.png" style="height:1em"/>
+				<b>ПЕРВОЕ:</b>
+				<span id="gift_wallpaper"></span>
+				чтобы напоминать тебе играть в интервальные повторения ежедневно!
+			</words>
+		</panel>
+
+		<div>
+			<a target="_blank" id="wallpaper_link">
+				<img id="wallpaper_image"/><br>
+				(кликни для скачивания &darr;)
+			</a>
+		</div>
+
+		<panel w=600 h=90 style="height: auto; position: relative; left: -15px;">
+			<words x=-15 y=0 w=570 no-bg style="text-align:left; position:static" fontsize=30>
+				<img src="pics/gift.png" style="height:1em"/>
+				<b>ВТОРОЕ:</b>
+				<span id="gift_app"></span>
+			</words>
+		</panel>
+
+		<panel class="not_on_mobile" w=600 h=90>
+			<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=29>
+				<img src="pics/gift.png" style="height:1em"/>
+				И последнее, <b>ТРЕТЬЕ:</b> архив всех карт с которыми ты практиковался в этом интерактивном комиксе!
+			</words>
+		</panel>
+
+		<panel class="not_on_mobile" w=400 h=100>
+			<sim x=0 y=0 w=400 h=100 src="sims/downloads/all.html"></sim>
+		</panel>
+
+		<panel class="not_on_mobile" w=600 h=120>
+			<words x=-15 y=0 w=600 no-bg fontsize=24 style="text-align:left">
+				(На первое время это могут быть твои первые карты интервальных повторений, чтобы помочь тебе начать! И, в качестве бонуса, ты сможешь вспомнить всё, что узнал здесь сегодня, всегда.)
+			</words>
+		</panel>
+
+		<panel w=500 h=350>
+			<pic src="pics/end1.png" sx=500 sy=0></pic>
+			<words x=110 y=35 w=250 no-bg fontsize=23>
+				Что напоминает мне...
+			</words>
+			<words x=200 y=105 w=220 no-bg fontsize=24>
+				последнее прощание, как в старые-добрые времена, последняя лебединая песня!
+			</words>
+			<words x=210 y=245 w=250 no-bg fontsize=24>
+				...давай проверим наши карты, <i>все</i> их:
+			</words>
+		</panel>
+
+		<panel w=600 h=400 bg="#e0e0e0">
+			<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=intro_a,sci_a,leit_a,you_what,intro_b,sci_b,leit_b,you_why,sci_c,leit_c,you_how,leit_d,you_when,intro_c"></sim>
+		</panel>
+
+		<panel w=240 h=300>
+			<pic src="pics/end1.png" sx=0 sy=500></pic>
+			<words x=0 y=12 w=210 no-bg>
+				Хнык... Прощаться всегда тяжело...
+			</words>
+		</panel>
+
+		<panel w=240 h=300>
+			<pic src="pics/end1.png" sx=240 sy=500></pic>
+			<words x=-20 y=-10 no-bg fontsize=120 color="rgba(0,0,0,0.5)" style="transform:rotate(10deg)">
+				ХОНК
+			</words>
+		</panel>
+
+		<panel w=500 h=250>
+			<pic src="pics/end1.png" sx=480 sy=500></pic>
+			<words x=160 y=25 w=200 no-bg fontsize=24>
+				Я буду скучать по времени, когда мы были вместе...
+			</words>
+			<words x=200 y=125 w=250 no-bg fontsize=22>
+				...но, я надеюсь, мы будем жить в памяти друг друга!
+			</words>
+		</panel>
+
+		<panel w=500 h=350>
+			<pic src="pics/end1.png" sx=0 sy=800></pic>
+			<words x=10 y=10 w=430 h=75 fontsize=24>
+				Если ты студент, я надеюсь что интервальные повторения помогут тебе стать более уверенным и взять обучение в свои руки.
+			</words>
+		</panel>
+
+		<panel w=500 h=350>
+			<pic src="pics/end1.png" sx=500 sy=800></pic>
+			<words x=10 y=10 w=430 h=85 fontsize=21>
+				Если ты преподаватель, пожалуйста, ох, <i>пожалуйста</i> расскажи своим студентам об интервальных повторениях (и других доказательных студенческих привычках) как можно раньше.
+			</words>
+		</panel>
+
+		<panel w=500 h=350>
+			<pic src="pics/end1.png" sx=1000 sy=800></pic>
+			<words x=10 y=10 w=430 h=95 fontsize=24>
+				Но, неважно, будь ты в школе или нет, я надеюсь, что интервальные повторения помогут тебе развить свою память, свой ум, свою Музу...
+			</words>
+			<words x=168 y=147 w=250 no-bg class="comic_text smaller" style="color:#fff">
+				"нет!" - закричала митохондрия, когда она скользнула по теплому влажному горлу. "я не–
+			</words>
+		</panel>
+
+		<panel w=500 h=550>
+			<pic src="pics/end1.png" sx=1000 sy=0></pic>
+			<words x=30 y=30 w=250 no-bg>
+				...и познать одну из величайших любовных переживаний:
+			</words>
+			<words x=120 y=455 w=300 style="text-align:right" no-bg>
+				пожизненную любовь к обучению.
+			</words>
+		</panel>
+
+		<panel w=600 h=300 bg="#e0e0e0">
+			<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=the_end"></sim>
+		</panel>
+
+		<panel fadeInOn="flip_the_end" w=600 h=80>
+			<words w=600 x=-15 y=0 no-bg fontsize=20>
+				(Хочешь учиться/играть больше? Дополнительное чтение и авторство внизу!)
+				<br>
+				&darr; &darr; &darr; &darr; &darr;
+			</words>
+		</panel>
+	</div>
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- CREDITS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+	<a name="bye"></a>
+	<div id="credits">
+		<div>
+			<div style="font-size:30px; margin-bottom:0; overflow: hidden;">
+				<img src="pics/nicky_credits.png" width="100" height="100" fontsize=24 style="display: block; float: left;" />
+				<div style="display: block; position: relative; left: 14px; width: 390px; height: 130px; float: left; font-size: 23px;">
+					Написание, рисование и программирование
+					<br>
+					<a target="_blank" href="https://ncase.me" style="font-size:2em; display:inline-block; line-height:1em">
+						Ники Кейс
+					</a>
+					<br>
+					<span id="translation_credits_2"></span>
+					<!-- TRANSLATOR NOTE: again, when you fill in translations.txt, your name will appear here! -->
+				</div>
+			</div>
+
+			<p style="margin-top:0">
+
+				Также, этот комикс распространяется по лицензии
+
+				<span style="display:block; margin-top:5px;">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="-0.5 0.5 64 64" enable-background="new -0.5 0.5 64 64" xml:space="preserve">
+						<g>
+							<circle fill="#000000" cx="31.325" cy="32.873" r="30.096"/>
+							<path fill="#FFFFFF" id="text2809_1_" d="M31.5,14.08c-10.565,0-13.222,9.969-13.222,18.42c0,8.452,2.656,18.42,13.222,18.42   c10.564,0,13.221-9.968,13.221-18.42C44.721,24.049,42.064,14.08,31.5,14.08z M31.5,21.026c0.429,0,0.82,0.066,1.188,0.157   c0.761,0.656,1.133,1.561,0.403,2.823l-7.036,12.93c-0.216-1.636-0.247-3.24-0.247-4.437C25.808,28.777,26.066,21.026,31.5,21.026z    M36.766,26.987c0.373,1.984,0.426,4.056,0.426,5.513c0,3.723-0.258,11.475-5.69,11.475c-0.428,0-0.822-0.045-1.188-0.136   c-0.07-0.021-0.134-0.043-0.202-0.067c-0.112-0.032-0.23-0.068-0.336-0.11c-1.21-0.515-1.972-1.446-0.874-3.093L36.766,26.987z"/>
+							<path fill="#FFFFFF" id="path2815_1_" d="M31.433,0.5c-8.877,0-16.359,3.09-22.454,9.3c-3.087,3.087-5.443,6.607-7.082,10.532   C0.297,24.219-0.5,28.271-0.5,32.5c0,4.268,0.797,8.32,2.397,12.168c1.6,3.85,3.921,7.312,6.969,10.396   c3.085,3.049,6.549,5.399,10.398,7.037c3.886,1.602,7.939,2.398,12.169,2.398c4.229,0,8.34-0.826,12.303-2.465   c3.962-1.639,7.496-3.994,10.621-7.081c3.011-2.933,5.289-6.297,6.812-10.106C62.73,41,63.5,36.883,63.5,32.5   c0-4.343-0.77-8.454-2.33-12.303c-1.562-3.885-3.848-7.32-6.857-10.33C48.025,3.619,40.385,0.5,31.433,0.5z M31.567,6.259   c7.238,0,13.412,2.566,18.554,7.709c2.477,2.477,4.375,5.31,5.67,8.471c1.296,3.162,1.949,6.518,1.949,10.061   c0,7.354-2.516,13.454-7.506,18.33c-2.592,2.516-5.502,4.447-8.74,5.781c-3.2,1.334-6.498,1.994-9.927,1.994   c-3.468,0-6.788-0.653-9.949-1.948c-3.163-1.334-6.001-3.238-8.516-5.716c-2.515-2.514-4.455-5.353-5.826-8.516   c-1.333-3.199-2.017-6.498-2.017-9.927c0-3.467,0.684-6.787,2.017-9.949c1.371-3.2,3.312-6.074,5.826-8.628   C18.092,8.818,24.252,6.259,31.567,6.259z"/>
+						</g>
+					</svg>
+					<span style="font-size: 60px; position: relative; top: -12px; left: 8px;">PUBLIC DOMAIN</span>
+				</span>
+
+				что значит, что ты можешь свободно использовать эту вещь в образовательных, персональных или даже коммерческих целях. У тебя уже есть моё разрешение!<br>
+				<a target="_blank" href="https://github.com/ncase/remember">(Скачать код)</a>
+				<a target="_blank" href="https://github.com/ncase/remember#how-to-translate">(Перевести этот комикс)</a>
+
+			</p>
+
+			<p>
+				Тем не менее, я могу делать это только благодаря своим 1,000+ сторонников Patreon. Они позволили мне продолжать делать то, что я люблю. Спасибо! 💖<br>
+				<a target="_blank" href="https://www.patreon.com/ncase">
+					(Тоже хочешь поддержать? Кликай сюда!)
+				</a>
+			</p>
+
+			<hr>
+
+			<p style="font-size:50px;margin-bottom:10px">
+				Дополнительное чтение
+			</p>
+
+			<p>
+				<!-- Похоже на какую-то ошибку, либо это очень хитрая игра слов -->
+				<!-- Something something shoulders of giants. -->
+				Здесь чтиво что сделало интервальные повторения частью моей ежедневной жизни:
+			</p>
+
+			<ul>
+				<li>
+					🤓
+					<a target="_blank" href="http://augmentingcognition.com/ltm.html">Augmenting Long-Term Memory</a>	от Майкла Нильсена (Michael Nielsen) показал, что интервальные повторения - это не просто инструмент для запоминания, это инструмент для создания глубокого понимания. Этим может быть даже образ <i>жизни</i>.
+				</li>
+				<li>
+					💬
+					<a target="_blank" href="https://fluent-forever.com/the-book/">Fluent Forever</a> от Габриэля Винера (Gabriel Wyner) убедил меня наконец (повторно) начать изучать французский язык и создать Коробку Лейтнера. (мой 64-дневный календарь был адаптирован по этой книге)
+				</li>
+				<li>
+					🃏
+					<a target="_blank" href="https://www.supermemo.com/en/articles/20rules">20 Rules for Cards</a> от Петра Возняка (Piotr Wozniak) научил меня выжимать максимум из интервальных повторений. (Примечание: автор также изобрел алгоритм, используемый в Anki!)
+				</li>
+			</ul>
+
+			И моё любимое чтиво о науке обучения:
+
+			<ul>
+				<li>
+					👩‍🎓
+					<a target="_blank" href="https://www.amazon.com/Why-Dont-Students-Like-School/dp/047059196X/">Why Don't Students Like School?</a> от Дэниеля Уиллингема (Daniel Willingham) доказал мне, что "лёгкое запоминание" действительно <i>необходимо</i> для творчества и критического мышления.
+				</li>
+				<li>
+					✏️
+					<a target="_blank" href="http://tlcp.depaultla.org/wp-content/uploads/sites/2/2015/05/Dunlosky-et-al-2013-What-Works-What-Doesnt.pdf">What Works, What Doesn't [PDF]</a> от Джона Дунлоски (John Dunlosky) и других обобщает <i>более 200 исследований</i> различных методов обучения. В общем: общие методы, такие как перечитывание и выделение, не работают, менее распространенные методы, такие как интервалы и самотестирование, наоборот.
+					<a target="_blank" href="http://journals.sagepub.com/doi/abs/10.1177/1529100612453266">
+						(Ссылка на оригинальный документ)
+					</a>
+				</li>
+			</ul>
+
+			<p>
+				И если ты хочешь больше учиться по-другому, <a target="_blank" href="https://explorabl.es/">попробуй Explorable Explanations!</a> 🕹️
+			</p>
+
+			<hr>
+
+			<p style="font-size:50px;margin-bottom:10px">
+				Больше благодарностей
+			</p>
+
+			<p>
+				👀 Спасибо всем моим тестировщикам за то, что этот проект теперь не так плох:
+				<span style="font-size: 19px; line-height: 0px; color: #999;">
+					Aatish Bhatia, Adam Filinovich, Aimee Jarboe, Alex Jaffe, Amit Patel, Andy Matuschak, B Cavello, Chris Walker, Frank Lantz, Gal Green, Glen Chiacchieri, Hamish Todd, Henry Reich, Jacque Goupil, James Lytle, Jez Swanson, Josh Comeau, Kayle Sawyer, Levi Robertson, Marcelo Gallardo, Martyna Wasiluk, Michael Nielsen, Mikayla Hutchinson, Mike Gifford, Monica Srivastava, Owen Landgren, Paul Butler, Paul Simeon, Philipp Wacker, Pontus Granström, Rowan, Sebastian Morr, SpacieCat, Tanya Short, Tim и Alexandra Swast, Tom Hermans, Toph Tucker, Will Harris-Braun, Zeno Rogue
+				</span>
+			</p>
+
+			<p>
+				📹 Спасибо Крису Уолкеру (Chris Walker) за создание <a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">видео сборки Коробки Лейтнера</a>! (P.S:	<a target="_blank" href="http://polytrope.com/">Крис тоже делает интерактивные штуки</a>!)
+			</p>
+
+			<p>
+				🐞 Спасибо, Омар Ризван (Omar Rizwan), что помог мне разобраться в бесконечной яме багов мобильной Safari
+			</p>
+
+			<p>
+				🔊 Этот проект был сделан с использованием Creative Commons ресурсов из Wikimedia Commons и FreeSounds.	<a target="_blank" href="https://github.com/ncase/remember#full-asset-credits">(Посмотреть полный список)</a>
+			</p>
+
+			<p>
+				💖 И, ещё раз, огромное спасибо всем моим сторонникам на Patreon кто сделал это возможным:
+			</p>
+
+			<iframe gotosrc="supporters/"></iframe>
+
+			<p>
+				🙏 И, наконец, спасибо <i>тебе</i> за то что ты сейчас здесь! Ты можешь <a target="_blank" href="https://ncase.me/">поиграть в другие мои штуки</a>, <a target="_blank" href="https://twitter.com/ncasenmare">подписаться на мой Twitter</a>, или <a target="_blank" href="https://www.patreon.com/ncase">поддержать меня на Patreon</a>. Я искренне надеюсь что этот комикс может хоть сколь-нибудь помочь тебе.
+			</p>
+
+			<p>
+				Счастливого обучения!<br>
+				~ Ники Кейс
+			</p>
+
+			<!-- Share buttons, text generated from labels -->
+			<div id="share_buttons"></div>
+		</div>
+	</div>
+
+	<!-- TRANSLATOR NOTE:
+	HA HA YOU THOUGHT YOU WERE DONE?!
+	NOPE
+	WE'VE STILL GOT THE INTERFACE LABELS & FLASHCARDS TO TRANSLATE -->
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- LABELS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+	<div id="labels">
+		<!-- Chapter Links -->
+		<span id="label_chapter_links">
+			<a href="#0">Введение</a>
+			&middot;
+			<a href="#1">Наука</a>
+			&middot;
+			<a href="#2">Искусство</a>
+			&middot;
+			<a href="#3">Начинаем!</a>
+			&middot;
+			<a href="#bye">Авторство</a>
+		</span>
+
+		<!-- Multi Card Labels -->
+		<span id="multicard_q">
+			попробуй вспомнить &uarr; затем переверни ↻
+		</span>
+		<span id="multicard_cards_left">
+			(осталось карт: [N])
+		</span>
+		<span id="multicard_a">
+			ты помнишь это?
+		</span>
+		<span id="multicard_no">
+			не-а, ещё раз
+		</span>
+		<span id="multicard_yes">
+			ага, дальше!
+		</span>
+		<span id="multicard_done">
+			пока всё! продолжай скролить
+			<br>
+			&darr;
+		</span>
+		<span id="multicard_done_2">
+			это всё, ребята!
+			<br>
+			&darr;
+		</span>
+
+		<!-- Ebbinghaus Simulation -->
+		<span id="ebbinghaus_y_axis">
+			сила памяти &rarr;
+		</span>
+		<span id="ebbinghaus_x_axis">
+			время &rarr;
+		</span>
+		<span id="ebbinghaus_decay">
+			распад:
+		</span>
+		<span id="ebbinghaus_forgetting">
+			золотая середина:
+		</span>
+		<span id="ebbinghaus_recall">
+			тайминг повторения:
+		</span>
+		<span id="ebbinghaus_recalls">
+			тайминг повторений:
+		</span>
+		<span id="ebbinghaus_auto">
+			автоматически!
+		</span>
+
+		<!-- Leitner Calendar -->
+		<!-- TRANSLATOR NOTE: The exact three characters [N] is how the code knows where to put the number. When you translate, make sure the [N] is there if it was there in the original. -->
+		<span id="calendar_day">
+			На [N] день...
+		</span>
+		<span id="calendar_review">
+			проверка Уровней [N] (<i>в этом порядке</i>)
+		</span>
+		<span id="calendar_loop">
+			(и затем цикл возвращается на День 1!)
+		</span>
+
+		<!-- Leitner Box simulation -->
+		<span id="leitner_day">
+			День [N]
+		</span>
+		<span id="leitner_step_to_review">
+			на проверке: Уровень
+		</span>
+		<span id="leitner_step_reviewing">
+			проверка Уровня [N]
+		</span>
+		<span id="leitner_step_new">
+			добавлено [N] новых карт
+		</span>
+		<span id="leitner_step_stats">
+			всего: [N] карт!
+		</span>
+		<span id="leitner_step_stats_2">
+			([N] ушло)
+		</span>
+		<span id="leitner_button_next_step">
+			след. шаг
+		</span>
+		<span id="leitner_button_next_day">
+			след. день
+		</span>
+		<span id="leitner_button_next_week">
+			след. нед.
+		</span>
+		<span id="leitner_button_next_month">
+			след. мес.
+		</span>
+		<span id="leitner_slider_new">
+			[N] новых карт в день
+		</span>
+		<span id="leitner_slider_wrong">
+			[N]% карт c <i>ошибками</i>
+		</span>
+		<span id="leitner_reset">
+			СБРОС
+		</span>
+
+		<!-- Typing Cards -->
+		<span id="type_question">
+			В:
+			<!-- TRANSLATOR NOTE: "Q" short for Question. Dunno if other languages have similar one-letter abbreviations. If not, just type the full translated word for "Question" -->
+		</span>
+		<span id="type_placeholder">
+			запиши свой ответ
+		</span>
+		<span id="type_suggestions">
+			или выбери из предложенных:
+		</span>
+
+		<!-- Suggestions -->
+		<span id="you_what_suggestions">
+			<li>Что-то интересное!</li>
+			<li>Язык</li>
+			<li>Музыка</li>
+			<li>Кодинг</li>
+			<li>Персональное</li>
+			<li>(другое)</li>
+		</span>
+		<span id="you_why_suggestions">
+			<li>Для любимых людей</li>
+			<li>Для себя</li>
+			<li>Из любопытства</li>
+			<li>(другое)</li>
+		</span>
+		<span id="you_how_suggestions">
+			<li>Коробка Лейтнера</li>
+			<li>Anki</li>
+			<li>TinyCards</li>
+			<li>(другое)</li>
+		</span>
+		<span id="you_when_suggestions">
+			<li>Утром</li>
+			<li>В дороге</li>
+			<li>Вечером</li>
+			<li>(другое)</li>
+		</span>
+
+		<!-- Gifts -->
+		<span id="gift_wallpaper_what">
+			ЧТО:
+		</span>
+		<span id="gift_wallpaper_why">
+			ЗАЧЕМ:
+		</span>
+		<span id="gift_wallpaper_do_1">
+			DO
+		</span>
+		<span id="gift_wallpaper_do_2">
+			ME!
+		</span>
+		<span id="gift_wallpaper_filename">
+			обои
+		</span>
+		<span id="gift_wallpaper_desktop">
+			обои для твоего компьютера,
+		</span>
+		<span id="gift_wallpaper_phone">
+			обои экрана блокировки для твоего смартфона,
+		</span>
+		<span id="gift_app_leitner">
+			видео, от моего дорогого друга Криса Уолкера (Chris Walker), о сборке твоей собственной Коробки Лейтнера!
+			<br/><br/>
+			<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uvF1XuseZFE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="display:block; margin:0 auto"></iframe>
+			<br/>
+			(И это похожее обучение, в формате IKEA :)
+			<br/><br/>
+			<a target="_blank" href="./pdf/leitner.pdf" style="display: block; text-align: center;">
+				<img src="./pdf/thumbnail.png" width="450"/><br/>кликни для скачивания PDF
+			</a>
+		</span>
+		<span id="gift_app_anki">
+			ссылка на
+			<a target="_blank" href="https://apps.ankiweb.net/">скачивание Anki</a>!
+			А также видеообучение по тому как этим пользоваться:
+			<br><br>
+			<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sQkdB3cJwn0?start=180&rel=0"
+			frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+			style="display:block; margin:0 auto"></iframe>
+		</span>
+		<span id="gift_app_tiny">
+			ссылка на
+			<a target="_blank" href="https://tinycards.duolingo.com/">TinyCards!</a>
+			(я рекомендую посмотреть их
+			<a target="_blank" href="https://tinycards.duolingo.com/users/TinyGeo">
+			географические колоды</a>)
+		</span>
+		<span id="gift_app_other">
+			ссылки на обучение крафта Коробки Лейтнера
+			<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+			[video]</a>
+			<a target="_blank" href="./pdf/leitner.pdf">
+			[pdf]</a>,
+			<a target="_blank" href="https://apps.ankiweb.net/">
+			приложение Anki</a>,
+			и
+			<a target="_blank" href="https://tinycards.duolingo.com/">
+			TinyCards</a>!
+		</span>
+
+		<!-- Downloading Cards -->
+		<span id="download_all">
+			СКАЧАТЬ КАРТЫ
+		</span>
+		<span id="download_all_downloading">
+			СКАЧИВАЕМ...
+		</span>
+		<span id="download_all_done">
+			ГОТОВО! Проверь загрузки!
+		</span>
+
+		<!-- Social Sharing -->
+		<span id="share_title">
+			Как помнить что-нибудь навсегда
+		</span>
+		<span id="share_desc">
+			интерактивный комикс об искусстве и науке памяти
+		</span>
+
+		<!-- TRANSLATOR NOTE: One more section to go! -->
+
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<!-- FLASHCARDS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		<!-- TRANSLATOR NOTE: The CSS for the flashcards is really touchy, so DO NOT MODIFY THE CSS. That means, try as much as possible to make your text shorter or the same length as the original text. Good luck! -->
+
+		<!-- - - - - - - - - - - - -->
+		<!-- INTRO - - - - - - - - -->
+		<!-- - - - - - - - - - - - -->
+
+		<span id="flashcard_spaced_rep_front">
+			<div class="fcard_center" style="height:2.5em">
+				и имя этой игре...
+			</div>
+		</span>
+		<span id="flashcard_spaced_rep_back">
+			<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=0></div>
+			<div class="fcard_center" style="color:white; font-size:42px; height:1.6em;">
+				ИНТЕРВАЛЬНЫЕ ПОВТОРЕНИЯ
+			</div>
+		</span>
+		<span id="flashcard_intro_a_front">
+			<div id="fc_words" class="fcard_center" style="font-size: 32px; height:2.5em;">
+				Интервальные повторения = <span class="underline">____</span> + <span class="underline">____</span>
+			</div>
+		</span>
+		<span id="flashcard_intro_a_back">
+			<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=240></div>
+			<div id="fc_words" class="fcard_center" style="height:2.5em; font-size: 30px;">
+				тестирование + время
+			</div>
+		</span>
+		<span id="flashcard_intro_b_front">
+			<div id="fc_words" class="fcard_center" style="height:4.5em; font-size: 30px;">
+				3 общих, но неэффективных метода обучения/преподавания это...
+			</div>
+		</span>
+		<span id="flashcard_intro_b_back">
+			<div id="fc_words" class="fcard_center" style="height:2.2em">
+				...лекции, зубрёжки и перечитывание
+			</div>
+		</span>
+		<span id="flashcard_intro_c_front">
+			<div id="fc_words" class="fcard_center" style="height:4.4em">
+				В греческой мифологии, богиня <span class="underline">____</span> была матерью богинь <span class="underline">________</span>
+			</div>
+		</span>
+		<span id="flashcard_intro_c_back">
+			<div class="fcard_bg" src="pics/fcards_intro.png" sx=400 sy=0></div>
+			<div id="fc_words" style="position: absolute; width:250px; top:50px; left:140px; line-height:1.1em;">
+				Память – мать Вдохновения
+			</div>
+		</span>
+
+		<!-- - - - - - - - - - - - -->
+		<!-- CHAPTER 1: The Science -->
+		<!-- - - - - - - - - - - - -->
+
+		<span id="flashcard_guessgap_front">
+			<div class="fcard_center" style="height:2.5em; font-size: 24px;">
+				лучший способ распределить свои повторения...
+			</div>
+		</span>
+		<span id="flashcard_guessgap_back">
+			<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=0></div>
+			<div class="fcard_center" style="font-size: 20px; height:2.5em">
+				...<i>увеличивающимися</i> перерывами!
+			</div>
+		</span>
+		<span id="flashcard_sci_a_front">
+			<div id="fc_words" class="fcard_center" style="height:3.5em; font-size: 30px;">
+				Пионером экспериментальной науки о памяти был...
+			</div>
+		</span>
+		<span id="flashcard_sci_a_back">
+			<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=0></div>
+			<div id="fc_words" style="position: absolute; width: 250px; top: 40px; left:150px; line-height: 1.1em; font-size: 34px;">
+				Германн Эббингхаус (Hermann Ebbinghaus)
+			</div>
+		</span>
+		<span id="flashcard_sci_b_front">
+			<div id="fc_words" class="fcard_center" style="height:3.4em">
+				Кривая забывания (<i>без</i> повторений) выглядит как...
+			</div>
+		</span>
+		<span id="flashcard_sci_b_back">
+			<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=240></div>
+			<div id="fc_words" style="position: absolute; width: 280px; top: 70px; left: 100px; font-size:20px; line-height: 1.1em;">
+				(примечание: быстро вначале, затем медленно - "экспоненциальный распад")
+			</div>
+		</span>
+		<span id="flashcard_sci_c_front">
+			<div id="fc_words" class="fcard_center" style="height:3.4em; font-size: 25px">
+				Кривая забывания (<i>с</i> хорошо распределёнными повторениями) выглядит как...
+			</div>
+		</span>
+		<span id="flashcard_sci_c_back">
+			<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=240></div>
+			<div id="fc_words" style="position: absolute; width: 360px; top: 120px; left: 20px; font-size:20px; line-height: 1.1em;">
+				(примечание: перерывы между повторениями <i>увеличиваются</i> в длине)
+			</div>
+		</span>
+
+
+		<!-- - - - - - - - - - - - -->
+		<!-- Chapter 2: The Art - - -->
+		<!-- - - - - - - - - - - - -->
+
+		<span id="flashcard_leit_a_front">
+			<div id="fc_words" class="fcard_center" style="height:4.5em; font-size: 30px;">
+				В Коробке Лейтнера, мы <span class="underline">______</span>
+				перерыв (# дней между проверками) на каждом Уровне
+			</div>
+		</span>
+		<span id="flashcard_leit_a_back">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=720 style="left:-5px"></div>
+			<div id="fc_words" class="fcard_center" style="height:110px; font-size: 38px;">
+				удваиваем перерыв
+			</div>
+		</span>
+		<span id="flashcard_leit_b_front">
+			<div id="fc_words" class="fcard_center" style="height:4.5em">
+				Игра Коробки Лейтнера:
+				<br>
+				когда карта <i>верна</i>, ты двигаешь её <span class="underline">______</span>.
+			</div>
+		</span>
+		<span id="flashcard_leit_b_back">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=480></div>
+			<div id="fc_words" class="fcard_center" style="height:170px">
+				на уровень выше
+			</div>
+		</span>
+		<span id="flashcard_leit_c_front">
+			<div id="fc_words" class="fcard_center" style="height:4.5em; font-size: 30px;">
+				Игра Коробки Лейтнера:
+				<br>
+				когда ты <i>ошибаешься</i> с картой, ты двигаешь её <span class="underline">______</span>.
+			</div>
+		</span>
+		<span id="flashcard_leit_c_back">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=480></div>
+			<div id="fc_words" class="fcard_center" style="height:180px">
+				назад на Уровень 1!
+			</div>
+		</span>
+		<span id="flashcard_leit_d_front">
+			<div id="fc_words" class="fcard_center" style="font-size: 26px; height:170px;">
+				Согласно какому-то случайному игровому комиксу в Интернете, мои карточки интервальных повторений должны быть <span class="underline">______</span>, <span class="underline">______</span>, и <span class="underline">______</span>.
+			</div>
+		</span>
+		<span id="flashcard_leit_d_back">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=720></div>
+			<div id="fc_words" class="fcard_center" style="color:#fff; height:200px; height: 180px; font-size: 18px;">
+				маленькими, связными и выразительными
+			</div>
+		</span>
+
+		<span id="flashcard_mitochondria_all_front">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+			<div class="fcard_center" style="height:160px;">
+				Что это?
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_all_back">
+			<div class="fcard_center" style="top: 5px; height:220px; font-size:16px;">
+				Эта органеллы называются "митохондриями". Митохондрия - это электростанция клетки. Они встречаются почти у всех эукариотических (ядросодержащих) организмов. Наиболее распространенной гипотезой происхождения митохондрий является теория эндосимбиотиков: около 1,5 миллиарда лет назад, прокариотическая (нуклеотидная) клетка была "съедена" другой клеткой, та как-то выжила, и с тех пор продолжает жить внутри них.
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_1_front">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+			<div class="fcard_center" style="height:160px;">
+				Что это?
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_1_back">
+			<div class="fcard_center" style="height:1.5em;">
+				Митохондрия
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_2_front">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960></div>
+			<div class="fcard_center" style="height:180px">
+				Митохондрия это <span class="underline">_______</span> клетки
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_2_back">
+			<div class="fcard_center" style="height:150px">
+				электростанция
+				<span class="bonus_note" style="font-size: 25px;">
+					// бонусное примечание: тем не менее, мы все были бы мертвы без них.
+				</span>
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_3_front">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:45px"></div>
+			<div class="fcard_center" style="height:180px; font-size: 30px;">
+				Митохондрия обнаруживается практически во всех <span class="underline">____</span> организмах.
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_3_back">
+			<div class="fcard_center" style="height:1.5em">
+				эукариотических
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_4_front">
+			<div class="fcard_center" style="height:2.5em">
+				Эукариоты - это клетки, которые...
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_4_back">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1200></div>
+			<div class="fcard_center" style="width: 200px; left: 170px; top: 35px; font-size: 27px;">
+				содержат ядро
+				<span class="bonus_note">
+					// бонусное примечание: "eu"=хорошо, "karyon"=ядро
+				</span>
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_5_front">
+			<div class="fcard_center" style="height:2.5em">
+				Прокариоты - это клетки, которые...
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_5_back">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=1200></div>
+			<div class="fcard_center" style="width: 200px; left: 170px; top: 20px; font-size: 30px;">
+				НЕ содержат ядро
+				<span class="bonus_note">
+					// бонусное примечание: "pro"=перед, "karyon"=ядро
+				</span>
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_6_front">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:10px"></div>
+			<div class="fcard_center" style="height:200px; font-size:25px;">
+				Наиболее распространенная гипотеза о происхождении митохондрий - это...
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_6_back">
+			<div class="fcard_center" style="height:120px; font-size: 24px;">
+				Эндосимбиотическая теория
+				<span class="bonus_note" style="font-size: 26px;">
+					// бонусное примечание: "endo"=внутри, "sym"=вместе, "bio"=жизнь
+				</span>
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_7_front">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+			<div class="fcard_center" style="font-size: 30px; height: 220px;">
+				Согласно теории эндосимбиотиков, митохондрии возникли около <span class="underline">____</span> лет назад
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_7_back">
+			<div class="fcard_center" style="height:1.5em">
+				~1.5 миллиарда лет назад
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_8_front">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+			<div class="fcard_center" style="font-size: 33px; height: 220px;">
+				Согласно теории эндосимбиотиков, митохондрии впервые появились, когда...
+			</div>
+		</span>
+		<span id="flashcard_mitochondria_8_back">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1440></div>
+			<div class="fcard_center" style="height:230px">
+				когда прокариот была поглощена другой клеткой
+			</div>
+		</span>
+
+
+		<span id="flashcard_cat_front">
+			<div class="fcard_center" style="height:100px">
+				<div style="font-size:120px; height:75px;">
+					кот
+					<!-- TRANSLATOR NOTE: If your language is NOT French, then change this to "cat" in YOUR language -->
+				</div>
+				<div>
+					(русский)
+					<!-- TRANSLATOR NOTE: If your language is NOT French, then change this to YOUR language -->
+				</div>
+			</div>
+		</span>
+		<span id="flashcard_cat_back">
+			<div class="fcard_center" style="height:100px">
+				<!-- TRANSLATOR NOTE: DO NOT TRANSLATE. Leave as French!  -->
+				<div style="font-size:120px; height:75px;">
+					chat
+				</div>
+				<div>
+					(french)
+				</div>
+			</div>
+		</span>
+		<span id="flashcard_cat2_front">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=0></div>
+			<div class="fcard_center"></div>
+		</span>
+		<span id="flashcard_cat2_back">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=0></div>
+			<div class="fcard_center">
+				<audio controls id="HACK_audio" style="position: absolute; top: 115px; left: 30px; transform: scale(0.5);">
+					<source gotosrc="../../audio/chat.mp3" type="audio/mpeg"/>
+				</audio>
+			</div>
+		</span>
+
+		<span id="flashcard_learndo_front">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=240></div>
+			<div class="fcard_center" style="height:195px; font-size:22px;">
+				затем возвращаемся к делу... ↻
+			</div>
+		</span>
+		<span id="flashcard_learndo_back">
+			<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=240></div>
+			<div class="fcard_center" style="height:195px; font-size:25px;">
+				потом возвращаемся к обучению... ↻
+			</div>
+		</span>
+
+		<!-- - - - - - - - - - - - -->
+		<!-- Chapter 3: Get Started -->
+		<!-- - - - - - - - - - - - -->
+
+		<span id="flashcard_you_what_front">
+			<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=0></div>
+			<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 70px; left: 180px; font-size: 30px;">
+				ЧТО ты хочешь выучить?
+			</div>
+		</span>
+		<span id="flashcard_you_what_back">
+			<div id="fc_words" class="fcard_center" editable="you_what" style="height:1.2em">
+				Что-то интересное!
+			</div>
+		</span>
+		<span id="flashcard_you_why_front">
+			<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=0></div>
+			<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 75px; left: 180px; font-size: 30px;">
+				ПОЧЕМУ ты хочешь учиться?
+			</div>
+		</span>
+		<span id="flashcard_you_why_back">
+			<div id="fc_words" class="fcard_center" editable="you_why" style="height:1.2em">
+				Для любопытства
+			</div>
+		</span>
+		<span id="flashcard_you_how_front">
+			<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=240></div>
+			<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:75px; left: 180px; font-size: 30px;">
+				КАК ты хочешь повторять?
+			</div>
+		</span>
+		<span id="flashcard_you_how_back">
+			<div id="fc_words" class="fcard_center" editable="you_how" style="height:1.2em">
+				Коробкой Лейтнера
+			</div>
+		</span>
+		<span id="flashcard_you_when_front">
+			<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=240></div>
+			<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:70px; left: 180px; font-size: 30px;">
+				КОГДА ты хочешь повторять?
+			</div>
+		</span>
+		<span id="flashcard_you_when_back">
+			<div id="fc_words" class="fcard_center" editable="you_when" style="height:1.2em">
+				В дороге
+			</div>
+		</span>
+
+		<span id="flashcard_the_end_front">
+			<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=480></div>
+		</span>
+		<span id="flashcard_the_end_back">
+			<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=480></div>
+			<div id="fc_words" class="fcard_center" style="top:30px; font-size:50px;">
+				КОНЕЦ
+			</div>
+		</span>
+	</div>
+
+	<!-- TRANSLATOR NOTE:
+	Congrats! NOW you've translated everything!
+
+	Again, from the deepest part of my heart, I want to sincerely thank you
+	for helping spread this page to more people, in more languages.
+
+	Oh wait, just one more thing: go to translations.txt,
+	and add your translation there so this project "knows" your page exists.
+
+	And once that's done, send a Pull Request, and your translation will go live!
+
+	THANK YOU! <3
+	~ Nicky Case -->
+
+	<script src="js/howler.core.min.js"></script>
+	<script src="js/minpubsub.src.js"></script>
+	<script src="js/comic.js"></script>
+</body>
+</html>
