@@ -47,7 +47,7 @@ And if no one else is, PLEASE CREATE A NEW ISSUE in this repo
 so that others know you're working on it!]**
 
 **Translations done so far:**    
-[Русский](https://ncase.me/remember/ru.html)
+[Français](https://ncase.me/remember/fr.html), [Español](https://ncase.me/remember/es.html), [Русский](https://ncase.me/remember/ru.html)
 
 To translate this project, you'll need a basic familiarity with HTML and GitHub.
 
