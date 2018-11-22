@@ -40,3 +40,29 @@ zh
 算了
 由<a target="_blank" href="https://snie2012.github.io/">Shaoliang Nie</a>翻译 Chih-Yu Chin校对
 原文为英语
+
+fr
+Français
+./fr.html
+Voulez-vous voir la version française ?
+Ouais !
+Nan
+traduit par <a href="https://github.com/azarz">azarz</a> et relu par <a href="https://github.com/arnaudgregoire">arnaudgregoire</a>
+original en anglais
+
+ru
+Русский
+./ru.html
+Хочешь переключиться на Русский язык?
+Конечно!
+Не-а
+перевод <a href="https://toby3d.ru">toby3d</a>
+original in English
+
+es
+Español
+./es.html
+¿Querrías cambiar a la versión en español?
+¡Vale!
+Nanai
+traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a>
