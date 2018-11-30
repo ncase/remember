@@ -1,0 +1,2680 @@
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   _______  ___  ____________    ___  _______  ____________________________  _  __
+  / __/ _ \/ _ |/ ___/ __/ _ \  / _ \/ __/ _ \/ __/_  __/  _/_  __/  _/ __ \/ |/ /
+ _\ \/ ___/ __ / /__/ _// // / / , _/ _// ___/ _/  / / _/ /  / / _/ // /_/ /    / 
+/___/_/  /_/ |_\___/___/____/ /_/|_/___/_/  /___/ /_/ /___/ /_/ /___/\____/_/|_/  
+                                                                                  
+=== FAN-TRANSLATION GUIDE ===
+
+Hello fan-translators! From the bottom of my heart：
+thank you for doing this, and, you've no idea what you've gotten yourself into.
+There's about 3500 words to translate, including the flashcards & further reading.
+
+Before doing anything, please read all these steps：
+http://github.com/ncase/remember#how-to-translate
+(emphasis： do NOT edit the original index.html. make a copy of this page!)
+
+To make translation less painful, I've added little HTML comments throughout.
+Look for the ones that say "TRANSLATOR NOTE".
+
+And after translating this page, don't forget to go to translations.txt
+and "add" your translation there! (further instructions will be there)
+
+Good luck, and many thanks again!
+
+<3,
+~ Nicky Case
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!DOCTYPE html>
+<html lang="zh-Hans"> <!-- TRANSLATOR NOTE： Remember your 2-letter code? Replace "en" with that! -->
+<head>
+
+	<!-- Meta Stuff -->
+	<title>How To Remember Anything Forever-ish</title>
+	<!-- TRANSLATOR NOTE： Translate the "content" attribute -->
+	<meta name="description" content="an interactive comic on the art & science of memory"/> 
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="favicon.png">
+	
+	<!-- Sharing Card Stuff -->
+	<meta itemprop="name" content="如何永远般地记住任何东西"> <!-- TRANSLATE "content" -->
+	<meta itemprop="description" content="一本关于记忆的艺术&科学的互动式连环画"> <!-- TRANSLATE "content" -->
+	<meta itemprop="image" content="http://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta name="twitter：title" content="如何永远般地记住任何东西"> <!-- TRANSLATE "content" -->
+	<meta name="twitter：description" content="一本关于记忆的艺术&科学的互动式连环画"> <!-- TRANSLATE "content" -->
+	<meta name="twitter：card" content="summary_large_image">
+	<meta name="twitter：site" content="@ncasenmare">
+	<meta name="twitter：creator" content="@ncasenmare">
+	<meta name="twitter：image" content="http://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta property="og：title" content="如何永远般地记住任何东西"> <!-- TRANSLATE "content" -->
+	<meta property="og：description" content="一本关于记忆的艺术&科学的互动式连环画"> <!-- TRANSLATE "content" -->
+	<meta property="og：type" content="website">
+	<meta property="og：url" content="http://ncase.me/remember/">
+	<meta property="og：image" content="http://ncase.me/remember/sharing/thumbnail.png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/comic-zh-Hans.css"/>
+	<meta name="viewport" content="width=600">
+
+</head>
+
+<body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 0： INTRODUCTION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+<a name="0"></a>
+<div class="divider divider_title">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			如何永远般地记住任何东西
+			</div>
+			<!-- TRANSLATOR NOTE： add a hint of silliness at the end, like "ish" or "sorta" -->
+		</div>
+		<div style="text-align:right;">
+			by nicky case &middot; oct 2018
+			<br>
+			<span id="translation_credits"></span> 
+			<!-- TRANSLATOR NOTE： when you update translations.txt, your name will appear here! -->
+		</div>
+	</div>
+</div>
+
+<div class="comic">
+
+<div id="language_options"></div>
+
+<!--
+
+TRANSLATOR NOTE：
+
+There may already be "official" translations for terms like "Spaced Repetition" or "Forgetting Curve"!
+Go to their Wikipedia pages, scroll down to "Languages" in the left sidebar, and if your language is there,
+click on that Wikipedia page, and use the "official" translated term there.
+
+Spaced Repetition： http://en.wikipedia.org/wiki/Spaced_repetition
+Forgetting Curve： http://en.wikipedia.org/wiki/Forgetting_curve
+
+-->
+
+<!--
+
+TRANSLATOR NOTE：
+
+Try to make your translated text about the same length or shorter as the original text.
+If that's not possible, and your text doesn't fit in its box, you can modify attributes
+"x", "y", "w", "h" to change the box, or add your own custom CSS style to make the font fit.
+(CSS properties like "font-size" are very helpful)
+
+-->
+
+<panel w=400 h=650>
+<pic src="pics/intro0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=350 h=50>
+	在希腊神话中，记忆女神摩涅莫辛涅...
+</words>
+<words x=30 y=330 w=310 h=30>
+	...是灵感女神缪斯的母亲。
+</words>
+<words x=70 y=445 w=90 style="color:#fff" no-bg class="comic_text white";>
+	音乐
+</words>
+<words x=119 y=494 w=90 style="color:#fff" no-bg class="comic_text white";>
+	戏剧
+</words>
+<words x=214 y=464 w=90 style="color:#fff" no-bg class="comic_text white";>
+	奇怪的同人小说
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	那么，记忆和灵感在学校的表现如何呢？
+</words>
+</panel>
+
+<panel w=550 h=250>
+<pic src="pics/intro0.png" sx=400 sy=0></pic>
+
+<words x=-12 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=50  y=85 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=114 y=84 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=172 y=91 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=295 y=80 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=363 y=83 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=444 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=518 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/intro0.png" sx=400 sy=250></pic>
+<words x=155 y=20 w=90 no-bg>
+	是啊.
+</words>
+<words x=196 y=65 w=270 no-bg>
+	一些常见的做法例如课堂式讲课，
+	填鸭式用功，以及重复阅读，
+	不仅<i>无聊</i> ，科学研究表明 
+	<i>其实它们效果并不好</i> 。*
+</words>
+</panel>
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* 所有引用和链接都在连环画的最后面！
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/intro0.png" sx=400 sy=500></pic>
+<words x=95 y=30 w=340 no-bg>
+	但要是我说有一种学习方法，
+	它有实证基础<i>而且</i> 好玩会怎么样呢？
+</words>
+<words x=164 y=141 w=300 no-bg>
+	又譬如说有一个记忆卡片游戏，你每天只要玩二十分钟，
+	就可以把<i>任何你想记的</i> 长期记住，甚至<i>永远记住？</i> 
+</words>
+</panel>
+
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* 直到你挂掉。
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=spaced_rep"></sim>
+</panel>
+
+<panel w=500 h=450 fadeInOn="flip_spaced_rep">
+<pic src="pics/intro0.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=430 h=50>
+	而且这个游戏<i>超酷的</i> 。我从今年刚刚开始用间隔重复法来学习法语。
+</words>
+<words x=30 y=350 w=430 h=50>
+	两个<i>月</i> 内，我学会了比高中法语课两<i>年</i> 更多的词汇。
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/intro0.png" sx=950 sy=450></pic>
+<words x=10 y=10 w=400 h=50>
+	从此以后，我都在用间隔重复法去记忆各种不同的东西...
+</words>
+<words x=70 y=113 w=80 style="text-align:left" no-bg class="comic_text">
+	乌克丽丽和弦
+</words>
+<words x=210 y=114 w=80 style="text-align:left" no-bg class="comic_text">
+	计算机代码
+</words>
+<words x=380 y=137 w=100 style="text-align:left" no-bg class="comic_text">
+	朋友生日
+</words>
+<words x=188 y=204 w=270 style="text-align:left" no-bg class="comic_text">
+	任何我在书本，讲话，文章以及其他途径里发掘到的有趣的东西！
+</words>
+<words x=60 y=300 w=400 h=50>
+	...这个记忆卡片游戏变成了我<i>人生</i> 的一个核心部分。
+</words>
+</panel>
+
+<panel w=550 h=350>
+<pic src="pics/intro0.png" sx=0 sy=850></pic>
+<words x=10 y=10 w=500 h=30>
+	简单来说，间隔重复 = 测试 + 时间。
+</words>
+<words x=10 y=220 w=500 h=80>
+	你重复测试自己关于一件事的记忆，用时间隔开复习的次数。(但重测不就无止尽了吗？嗯，稍安勿躁，等会有个小诀窍...)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=0 sy=1200></pic>
+<words x=10 y=20 w=290 no-bg>
+	间隔重复既免费又有实证基础，而且很简单，你都可以用一个<i>鞋盒</i> 去实现。
+</words>
+<words x=308 y=265 w=50 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	nicky闭嘴
+</words>
+<words x=90 y=130 w=270 no-bg>
+	所以这有什么隐情？为什么不是<i>每个人</i> 在用间隔重复记忆法？
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=400 sy=1200></pic>
+<words x=10 y=20 w=330 no-bg>
+	好吧 所谓的隐情就是养成<i>任何</i> 新习惯很难
+	- 尤其是像间隔重复这么奇怪的习惯。
+</words>
+<words x=292 y=303 w=80 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	老师过来了
+</words>
+<words x=100 y=134 w=270 no-bg>
+	这就是我为何做这个画的很烂的互动连环画。
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=800 sy=1200></pic>
+<words x=10 y=20 w=300 no-bg>
+	在间隔重复记忆法的连
+	环画中，我会让你看到它
+	<b>为何</b>有效，<b>怎样</b>起作用...
+</words>
+<words x=110 y=140 w=250 no-bg>
+	...以及帮助你从<i>今天</i> 开始上手。
+</words>
+</panel>
+
+<panel w=600 h=180>
+<words w=600 x=-15 no-bg>
+
+	而且整篇连环画中，你可以在分布开来的间隔中，测试自己学到的东西。<b>那就是：你将用间隔重复来学习间隔重复。</b>
+	<br><br>
+	像这样：
+
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=intro_a,intro_b,intro_c"></sim>
+</panel>
+
+<panel w=550 h=450>
+<pic src="pics/intro0.png" sx=950 sy=1600></pic>
+<words x=10 y=10 w=480 h=80>
+	然而，“死记硬背”不是挺好吗？如今我们不能就谷歌一下吗？我们不是应该反而去学习创造力 &amp; 批判性思维吗？
+</words>
+<words x=30 y=320 w=480 h=80>
+	这里<i>没有</i> “反而”。
+	认知科学表明
+	你<i>需要</i> 记忆来支撑创造力 &amp; 批判性思维。
+	(假设要写一篇文章，但你却一字不识！)
+</words>
+<words x=187 y=138 w=150 no-bg class="comic_text" style="font-size:40px">
+	<b>记忆</b>
+</words>
+<words x=22 y=222 w=100 no-bg class="comic_text" style="font-size:20px">
+	艺术
+</words>
+<words x=408 y=224 w=100 no-bg class="comic_text" style="font-size:20px">
+	科学
+</words>
+</panel>
+
+<panel w=550 h=300>
+<pic src="pics/intro0.png" sx=0 sy=1600></pic>
+<words x=10 y=20 w=310 no-bg>
+	间隔重复不是“学习窍门”。
+	也不是“生活伎俩”。
+</words>
+<words x=30 y=113 w=320 no-bg>
+	它是一种方式，让你掌控<i>心智</i>，让记忆长存成为一种<i>可能</i>。滋养出你对学习的终身爱恋...
+</words>
+</panel>
+
+<panel w=400 h=550>
+<pic src="pics/intro0.png" sx=550 sy=1600></pic>
+<words x=20 y=20 w=330 h=30>
+	...去哺育你的，内在的缪斯。
+</words>
+<words x=117 y=131 w=140 no-bg class="comic_text white">
+	托尼斯塔克微微喘气，此时戴着手套的手搭上他的脊背，力道平稳且舒心。奥巴马笑着道“你的意思是，这-
+</words>
+<words x=200 y=470 w=160 h=30>
+	那我们开始吧。
+</words>
+</panel>
+
+</div>
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 1： THE SCIENCE OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="1"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			<b>间隔重复的科学</b>
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=400 h=50>
+	1885年，赫尔曼·艾宾豪斯进行了一项科学的自虐行为。
+</words>
+<words x=30 y=320 w=430 h=80>
+	这个德国心理学家首先背下了<i>几千个</i> 毫无意义的单词，然后记录了自己遗忘程度随时间的变化，接着他发现了...
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/sci0.png" sx=500 sy=0></pic>
+<words x=60 y=10 w=250>
+	<b>遗忘曲线</b>
+</words>
+<words x=10 y=310 w=350>
+	他发现你会在最初的24小时内忘记大部分你学到的东西，然后 – 如果你不去回想的话 – 你剩下的记忆会指数级地衰减。*
+</words>
+</panel>
+
+<panel w=500 h=64 style="margin-top:-5px">
+<words w=500 x=-15 y=-10 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999; line-height: 1.1em;">
+	* 严格来说这条曲线并不<i>完全</i> 
+	<br>
+	呈指数型, 但是, 呃, 很接近了。
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=900 sy=0></pic>
+<words x=10 y=10 w=450 h=80>
+	哲学家们对记忆的辩论已经有几千年了，但是艾宾豪斯是第一个人去做了真正的<i>实验。</i>(实验有被复制)
+</words>
+<words x=193 y=169 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35);">
+	请...
+</words>
+<words x=278 y=195 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35)">
+	杀了...
+</words>
+<words x=348 y=234 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35)">
+	我...
+</words>
+<words x=20 y=350 w=440 h=50>
+	正因如此，赫尔曼·艾宾浩斯被称为记忆科学的先驱。
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	这是一个可供玩耍的关于遗忘曲线的模拟。
+	<b>改变记忆衰退的速率。曲线会怎么变化呢？</b>
+</words>
+</panel>
+
+<panel w=600 h=370>
+<sim x=0 y=0 w=600 h=370 src="sims/ebbinghaus/?mode=0"></sim>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	你可以看到，记忆衰退得越慢，曲线就越平缓 ——也就是说，记忆能越持久。
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=0 sy=500></pic>
+<words x=10 y=10 w=300>
+	一个人记忆衰减的快慢取决于这个人本身和TA的记忆...
+</words>
+<words x=0 y=145 w=330 no-bg class="comic_text smaller">
+	嗨！抱歉，你叫什么来着？
+</words>
+<words x=177 y=186 w=180 no-bg class="comic_text smaller">
+	呵呵。我叫susan。
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=400 sy=500></pic>
+<words x=10 y=10 w=330>
+	但是一般来说，每次你去<b>主动回想</b>，记忆的“衰减速率”就会减慢。
+	(而不是你被动地去重复阅读)
+</words>
+<words x=27 y=198 w=120 no-bg class="comic_text smaller">
+	susan. susan. susan. susan. susan.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=800 sy=500></pic>
+<words x=10 y=10 w=300>
+	(虽然说回忆练习一停下，你的记忆还是会衰减。)
+</words>
+<words x=41 y=121 w=150 no-bg class="comic_text smaller">
+	好的，sarah 拜！
+</words>
+<words x=191 y=148 w=100 no-bg class="comic_text smaller">
+	susan.
+</words>
+<words x=59 y=174 w=150 no-bg class="comic_text smaller">
+	拜 sandy!
+</words>
+<words x=193 y=203 w=100 no-bg class="comic_text smaller">
+	SUSAN.
+</words>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	又是之前的那个模拟，这里加了单次主动回想期
+	<br>
+	(灰线为<i>没有</i> 回想时的记忆遗忘曲线)
+	<br>
+	<b>调节回忆的时间点试试，看它怎么影响这条曲线：</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	单次回想期对记忆有一点促进...但是长期来说，因为记忆的指数型衰减，区区一次回想带不来什么大变化。
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=390>
+	有更好的学习方法吗？有的！记忆的秘诀就是... 
+</words>
+<words x=180 y=330 w=250>
+	...<i>到几乎忘记的时候。</i> 
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=0></pic>
+<words x=250 y=20 w=200>
+	为了更好的理解，想想训练你肌肉的时候。如果训练太容易你的肌肉不会增长...
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=300></pic>
+<words x=250 y=20 w=200>
+	...太难也不行。
+</words>
+</panel>
+
+<panel w=350 h=350>
+<pic src="pics/sci1.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=300>
+	此理同样适用于你的大脑。你需要的是<b>理想的难度</b>：难得恰到好处。
+</words>
+<words x=55 y=187 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	舒适
+</words>
+<words x=55 y=282 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	难受
+</words>
+<words x=176 y=186 w=120 no-bg class="comic_text smaller">
+	太容易
+</words>
+<words x=179 y=229 w=120 no-bg class="comic_text" style="color:#000">
+	刚刚好
+</words>
+<words x=176 y=280 w=120 no-bg class="comic_text smaller">
+	太难
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=360>
+	所以：学习什么东西最好的办法，就是选定时机去回想这件事...
+</words>
+<words x=60 y=330 w=350>
+	...<i>在你就要忘记的时候。</i> 
+</words>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	还是之前的模拟，但是它现在显示了
+	<span style="background:#ffe866">最佳时机带</span> ——那就是你正好忘了<i>一点点</i> 的时候。<b>把回想时机移到最佳时机带的<i>中间</i> 。怎么样？</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	看到了吗？如果你的回想时间点选的刚好，
+	你可以让衰减速率变慢一点！
+	那么要是回想<i>多次</i>呢 ？
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci2.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430>
+	让我们假设你
+	<span class="strikeout">很懒</span>
+	效率高，所以你只需要回忆4次。
+	</words>
+	<words x=5 y=350 w=460>
+	问题：
+	<i>回想时机的最佳分布方式是什么？</i> 
+</words>
+<words x=82 y=198 w=120 no-bg class="comic_text" style="transform: rotate(-16deg);">
+	susan
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/sci2.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=190>
+	你应该均匀分布间隔吗？渐渐加长？渐渐减短？或让它不可预测，好让你时刻警惕？
+</words>
+<words x=259 y=16 w=100 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	= 回想
+</words>
+<words x=308 y=16 w=100 no-bg class="comic_text smaller" style="text-align:right; color:#000">
+	时间
+</words>
+<words x=245 y=61 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	均匀式间隔：
+</words>
+<words x=245 y=126 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	增长式间隔：
+</words>
+<words x=245 y=198 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	变短式间隔：
+</words>
+<words x=245 y=259 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	随机式间隔：
+</words>
+</panel>
+
+<panel w=400 h=80>
+<words h=80>
+	<b>先选好你心目中的答案</b>，当你准备好的时候，<b>把卡片翻过来 &darr;</b>
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=guessgap"></sim>
+</panel>
+
+<panel fadeInOn="flip_guessgap" w=600 h=120>
+<words w=600 x=-15 y=0 no-bg>
+	这很不符合直觉有没有！你可以玩下面的模拟，来向自己证明这是对的。
+	<b>请将所有回想时机全都放到<span style="background:#ffe866">最佳时机带</span>的<i>中间</i> 。
+	你得到了什么样的间隔分布？</b>
+</words>
+</panel>
+
+<panel w=600 h=520>
+<sim x=0 y=0 w=600 h=520 src="sims/ebbinghaus/?mode=3"></sim>
+</panel>
+
+<panel w=600 h=140>
+<words w=600 x=-15 no-bg>
+	(为了证明这不是一个巧合，这里提供一个模拟 你可以调节起始的衰减速率 &amp; 最佳时机带。留意一下，除了极端情况，几乎所有情况里，最好的安排仍然是“增长式间隔”！)
+</words>
+</panel>
+
+<panel w=600 h=570>
+<sim x=0 y=0 w=600 h=570 src="sims/ebbinghaus/?mode=4"></sim>
+</panel>
+
+<panel w=350 h=500>
+<pic src="pics/sci2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=300>
+	为什么间隔<i>必须</i> 变大？
+	因为：每次你在最佳时机带做一次回想，
+	记忆的衰减率就会放缓...
+</words>
+<words x=25 y=170 w=90 no-bg class="comic_text smaller" style="text-align:left">
+	你的名字是
+</words>
+<words x=16 y=177 w=300 no-bg class="comic_text" style="font-size:80px; transform: rotate(-5deg);">
+	SUSAN!
+</words>
+<words x=208 y=257 w=120 no-bg class="comic_text smaller" style="text-align:right">
+	–什么鬼
+	<!-- TRANSLATOR NOTE： don't complete the swearing in your translation.
+	make it cut off at the edge of the panel. It's... funnier that way? -->
+</words>
+<words x=10 y=400 w=300>
+	...就是说到下次最佳时机带需要<i>更长</i> 的时间！
+</words>
+</panel>
+
+<panel w=500 h=500>
+<pic src="pics/sci2.png" sx=350 sy=450></pic>
+<words x=10 y=10 w=400>
+	但你知道更爽的是什么吗？要是你选准了回想时机...
+</words>
+<words x=60 y=400 w=400>
+	...你就可以轻易地吧<i>任何数量</i> 的事情装进你的长期记忆,<i>永永远远。</i> 
+</words>
+</panel>
+
+<panel w=250 h=250>
+<pic src="pics/sci2.png" sx=850 sy=450></pic>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	既然说到要通过主动回想去学习，就让我们来主动回想下我们刚刚学到的东西：
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,intro_b,sci_c"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=0 sy=950></pic>
+<words x=50 y=20 w=300 bg=none>
+	嗯不错哦，但是真的要<i>找到</i>一个好的间隔重复的时间安排一定很难。是不是？
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=400 sy=950></pic>
+<words x=50 y=30 w=300 bg=none>
+	<i>Au contraire!</i> 
+	其实很简单，你甚至可以创作一个属于自己的自动调度器...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=800 sy=950></pic>
+<words x=30 y=30 w=230 bg=none>
+	...用一个<i>鞋盒</i> 就行。
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 2： THE ART OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="2"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			间隔重复的艺术
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/leit0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430 h=50>
+	你不是<i>必须</i> 要用一个鞋盒去实现间隔重复，但是这样做更有趣。
+</words>
+<words x=3 y=119 w=100 no-bg class="comic_text smaller" style="font-size:22px">
+	这个就是我的私教
+</words>
+<words x=119 y=158 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	???
+</words>
+<words x=246 y=118 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	它们助我渐行渐远
+	<!--
+	TRANSLATOR NOTE：
+	this is a pun that may not work in all languages.
+	If it doesn't translate to your language, try coming up with your own pun!
+	Or, replace this line with： "they help me go far"
+	-->
+</words>
+<words x=360 y=136 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	我们应该是做不了朋友了
+</words>
+
+<words x=30 y=350 w=430 h=50>
+	(之后，我们会了解一些间隔重复的<i>应用程序</i> ,
+	比如 Anki &amp; Tinycards)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=430 h=50>
+	这个装备叫做Leitner盒。它就像一个你跟你自已玩的纸牌游戏！
+</words>
+<words x=30 y=300 w=430 h=50>
+	首先，把盒子分成七个“等级”。(你可以根据自己喜好分成更少或更多!)
+</words>
+</panel>
+
+<panel w=500 h=370>
+<pic src="pics/leit0.png" sx=0 sy=480></pic>
+<words x=10 y=10 w=430 h=30>
+	所有新的记忆卡片都从等级1开始。
+</words>
+<words x=30 y=270 w=430 h=50>
+	(如果你是间隔重复的新手，我建议每天从5张新卡片着手。)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=480></pic>
+<words x=10 y=10 w=430 h=50>
+	当你复习了一张卡片，而且答对了，这张卡片就往上升<i>一个</i> 等级。
+</words>
+<words x=10 y=300 w=450 h=50>
+	(如果你到了最后一个等级，恭喜！你的卡片退休了。它走了，去了卡片天堂。)
+</words>
+</panel>
+
+<panel w=500 h=430>
+<pic src="pics/leit0.png" sx=0 sy=900></pic>
+<words x=10 y=10 w=430 h=50>
+	但是如果你复习了一张卡片，而且答错了...这张卡片必须<i>一路降回等级1。</i> 
+</words>
+<words x=30 y=300 w=430 h=80>
+	(如果它是已经在等级1的卡片，好消息：你可以一直测试自己直到你答对，然后把它移到等级2)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=0 sy=1370></pic>
+<words x=8 y=10 w=455 h=120>
+	但是我们该<i>什么时候</i> 复习卡片呢？
+	复习的诀窍就是：在Leitner盒里，等级1的卡片每天都复习，等级2两天一次，等级3每<i>四</i>天一次，等级4每<i>八</i> 天一次，依此类推...
+</words>
+<words x=30 y=300 w=430 h=50>
+	这里面的规律就是：我们把每一个等级的<i>间隔翻倍</i> (复习之间的天数)！
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	64天的循环游戏日历看起来是这个样子：
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#fff">
+<sim x=0 y=0 w=600 h=400 src="sims/calendar/"></sim>
+</panel>
+
+<panel w=500 h=490>
+<pic src="pics/leit0.png" sx=500 sy=870></pic>
+<words x=10 y=10 w=450 h=50>
+	(备注：你在最后要复习等级1是因为
+	有新卡片的注入<i>以及</i> 因你遗忘而降级的高级卡片。)
+</words>
+<words x=30 y=370 w=430 h=80>
+	(每日间隔重复游戏的最后
+	不要留下等级1的卡片。
+	测试你自己直到你能全部答对，
+	然后把他们升级到等级2！)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit0.png" sx=600 sy=1400></pic>
+<words x=10 y=10 w=350 h=50>
+	(备注 #2： 像Anki这样的间隔重复的<i>应用程序</i> 使用的算法更加精密)
+</words>
+<words x=10 y=300 w=350 h=50>
+	(...但是它们的核心工作原理和Leitner盒一样)
+</words>
+</panel>
+
+<panel w=400 h=450>
+<pic src="pics/leit0.png" sx=0 sy=1800></pic>
+<words x=10 y=10 w=350 h=80>
+	(备注 #3： 对了, 只要有一些标记卡片 &amp; 胶带,
+	你就可以制作自己的可折叠式循环日历！)
+</words>
+<words x=10 y=350 w=350 h=50>
+	(在最后，我会给一个手工制作Leitner盒的视频教程链接)
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	现在将要实时展现这个游戏！这是Leitner盒的一个<i>逐步</i> 模拟：<b>(之后还会有个<i>逐月</i> 模拟)</b>
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	每日复习一回会花20-30分钟。
+	与其看电视，你不如玩一下卡片游戏 –
+	然后<i>终身</i> 记住任何你想记住的。
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=0 sy=0></pic> 
+<words x=10 y=10 w=430 h=50>
+	然而，养成记忆卡片游戏的习惯很难。如果一开始的目标太大，你会很难起步...
+</words>
+<words x=20 y=300 w=450 h=50>
+	但是如果你从<i>小处</i> 着手，你就会获得动力，
+	并且把雪球越滚越大。
+</words>
+</panel>
+
+<panel w=500 h=690>
+<pic src="pics/leit1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=430 h=30>
+	这就是为什么我推荐每天从5张新卡片<i>开始</i>。
+</words>
+<words x=60 y=300 w=350 h=80>
+	一旦你觉得这样没有什么压力，你就可以开始每天10张卡片。
+	然后15。然后20, 25, 30。
+</words>
+<words x=10 y=590 w=430 h=50>
+	到每天30张新卡片的时候，你每<i>年</i> 可以学习到<i>10,000+</i> 个新事实/词语/等等。
+</words>
+<words x=10 y=480 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	♪na na na na na na na na na
+</words>
+<words x=38 y=517 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	♪katamari damacy~
+	<!-- TRANSLATOR NOTE： leave this in its japanese.
+	i don't know what it means, actually. it's a videogame song. -->
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	接下来是一个逐月模拟。用这个来预计出<i>你</i> 能用间隔重复学习到多少东西吧！
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	就是这样。这就是你如何能让记忆长存成为一种<i>可能</i> 。
+</words>	
+<words w=600 x=-15 y=50 no-bg>
+	把刚刚所学的沉淀一下。休息一会儿，然后来回想一下：
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_a,intro_a,leit_b,intro_c,leit_c"></sim>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	间隔重复似乎妙不可言。
+	<br>
+	它确实是如此...<i>但</i>人们常常因此陷入了一些认知陷阱…
+</words>	
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=420 h=50>
+	记忆不是书架，收集海量的随机信息
+	不是用来哗众取宠的。
+</words>
+<words x=-15 y=210 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+	一堆
+</words>
+<words x=39 y=216 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(86deg)">
+	你永远
+</words>
+<words x=94 y=211 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(74deg)">
+	不会去
+</words>
+<words x=140 y=212 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+	读的
+</words>
+<words x=199 y=224 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(84deg)">
+	废话
+</words>
+<words x=10 y=350 w=450 h=50>
+	这也就是说：如果你的卡片<i>臃肿</i> ，<i>毫无关联</i> 
+	或者<i>毫无意味</i> ，间隔重复是不起作用的
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=80>
+	记忆反而像一个拼图游戏：充满了小而连接起来的部分。
+	(神经元的机制也是如此：很多小而相连的东西)
+</words>
+<words x=30 y=380 w=430 h=30>
+	重要的不是<i>收集</i> ，而是<i>连接</i> 。
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=500 sy=900></pic>
+<words x=10 y=10 w=410 h=50>
+	所以，为了充分利用间隔重复，
+	你必须把你的卡片做得...
+</words>
+<words x=-38 y=227 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	小
+</words>
+<words x=94 y=257 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	相互联系
+</words>
+<words x=262 y=298 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	&amp; 富有意味
+</words>
+</panel>
+
+<panel w=450 h=50>
+<words w=450 x=-15 no-bg>
+	让我们看看怎么去做。
+</words>	
+</panel>
+
+<panel w=300 h=150>
+<pic src="pics/leit2.png" sx=0 sy=0></pic>
+<words x=129 y=50 w=400 no-bg style="color: rgb(255, 255, 255); font-size: 80px; text-align: left;">
+	<!--css need to be fixed -->
+	小
+</words>
+
+</panel>
+
+<panel w=450 h=50>
+<words w=450 x=-15 no-bg>
+	这张卡片做的超烂：
+</words>	
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=mitochondria_all"></sim>
+</panel>
+
+<panel w=450 h=380>
+<pic src="pics/leit2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=400 h=30>
+	它太大了。信息太多。
+</words>
+<words x=10 y=250 w=400 h=80>
+	让我们把它分解成更小的，相连的拼图碎片！
+	作为一大要则，<i>一张记忆卡片应该有 &amp; 仅有一个概念。</i> 
+	像这样：
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_1" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_2" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_3" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_4" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_5" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_6" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_7" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_8" class="small_card"></sim>
+</panel>
+
+<panel w=450 h=80>
+<words w=420 x=-15 no-bg>
+	事实连接事实。
+	但是存在其他的，更好玩的方式让卡片...
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=150></pic>
+<words x=169 y=44 w=400 no-bg style="color: rgb(255, 255, 255); font-size: 80px; text-align: left;">
+	相互联系
+</words>
+</panel>
+
+<panel w=450 h=110>
+<words w=450 x=-15 no-bg>
+	这张卡片... 还行。
+	它正面是中文，背面是法语。
+	<!--
+	TRANSLATOR NOTE：
+	If the language you're translating for is NOT French,
+	replace "English" with [your language]
+	-->
+	大部分语言学习卡片都是这种标准形式：
+</words>	
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat"></sim>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=400 h=50>
+	但是你知道什么让你对它的记忆更牢固吗？
+</words>
+<words x=10 y=300 w=400 h=50>
+	如果你把它和
+	<i>图片，声音，语境，和/或个人细节</i> 
+	连接起来！
+	像这样：
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat2"></sim>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=0></pic>
+<words x=10 y=10 w=210>
+	现在卡片正面有了一张猫的手绘(图片)
+	配一个法语句子的完形填空(语境：语法)
+	手绘的是我童年养的猫，Stripes. (个人化)
+</words>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=300></pic>
+<words x=10 y=10 w=210>
+	卡片背面则有: 这个名词阴阳性的符号(图片)，
+	它的发音(声音*)，
+	以及这个名词阴性版本的警告提示。(语境：俚语)
+</words>
+<words w=380 x=195 y=225 no-bg fontsize=20>
+	* 显然，纸质卡片不能播放声音。
+	但是像Anki/Tinycards这样的应用程序是可以的！
+</words>
+<audio controls style="position: absolute; top: 105px; left: 280px; transform: scale(0.4) rotate(4deg);">
+	<source src="audio/chat.mp3" type="audio/mpeg">
+</audio>
+</panel>
+
+<panel w=450 h=80>
+<words w=450 x=-15 no-bg>
+	但是所有联系中<i>最</i> 重要的，
+	是把你要学习的联系到...
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=300></pic>
+<words x=169 y=44 w=400 no-bg style="color: rgb(255, 255, 255); font-size: 50px; text-align: left;">
+	富有意义的事物
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=450 sy=600></pic>
+<words x=10 y=10 w=450 h=50>
+	从个人讲，我这样学习最有效：
+	首先，我尝试(强调<i>尝试</i> ) 去<b>做</b>些什么。
+</words>
+<words x=11 y=113 w=160 no-bg class="comic_text">
+	弹乌克丽丽
+</words>
+<words x=173 y=104 w=140 no-bg class="comic_text">
+	读法语漫画
+</words>
+<words x=336 y=109 w=130 no-bg class="comic_text">
+	做网页游戏
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=950 sy=600></pic>
+<words x=5 y=10 w=460 h=50>
+	不可避免地，我会卡住。
+	这个时候，我会去查我需要什么，
+	并且去<b>学习</b>一些东西。
+</words>
+<words x=6 y=102 w=98 no-bg class="comic_text">
+	和弦F#怎么弹？
+</words>
+<words x=133 y=104 w=160 no-bg class="comic_text">
+	"attraper"什么意思？
+</words>
+<words x=301 y=109 w=180 no-bg class="comic_text">
+	为什么javascript跟shi-样
+	<!-- TRANSLATOR NOTE： again, don't complete the swear. have it cut out -->
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=learndo&forever_card=yes"></sim>
+</panel>
+
+<panel w=450 h=30>
+<words w=450 x=-15 y=-15 no-bg>
+	如此以往。
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=450 sy=950></pic>
+<words x=10 y=10 w=400 h=50>
+	我相信，这样的方式是保持学习动力的最好方式：
+</words>
+<words x=10 y=300 w=400 h=50>
+	通过确保你的学习是为了<i>做你在乎的事情</i> 而服务。
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	说到学习，让我们练习和回想我们学到的：
+	(这是倒数第二次！)
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_d,sci_c,sci_a,sci_b"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=0 sy=450></pic>
+<words x=7 y=20 w=360 no-bg>
+	间隔重复践行者们的共识是，
+	过了一段时间后，<b>你应该自己制作卡片。</b>
+</words>
+<words x=21 y=150 w=260 no-bg>
+	这样，你能把知识联系到<i>你的</i> 所知，<i>你的</i> 所爱。
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=400 sy=450></pic>
+<words x=10 y=15 w=300 no-bg>
+	这就是为什么，在这个互动式连环画的<i>最后</i> 部分，
+	你将制作你<i>自己的</i> 卡片！
+</words>
+<words x=30 y=165 w=170 no-bg>
+	而且这些卡片将是关于...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=800 sy=450></pic>
+<words x=0 y=10 w=230 fontsize=150px no-bg color="#ffffff">
+	你
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 3： GET STARTED TODAY! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="3"></a>
+<div class="divider divider_small_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			从今天开始！
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=350>
+<pic src="pics/end0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=450 h=50>
+	为了帮助你从<i>今天</i> 开始使用间隔重复，
+	你需要回答四个问题：
+</words>
+<!--
+TRANSLATOR NOTE：
+Remember, if your translated word is too big, you can modify the CSS! (especially font-size)
+-->
+<words x=-2 y=237 w=160 no-bg style="color: rgb(255, 255, 255); font-size:27px;">
+	学什么？
+</words>
+<words x=111 y=237 w=160 no-bg style="color: rgb(255, 255, 255); font-size:27px">
+	为什么？
+</words>
+<words x=216 y=237 w=160 no-bg style="color: rgb(255, 255, 255); font-size:27px">
+	怎么学？
+</words>
+<words x=327 y=237 w=160 no-bg style="color: rgb(255, 255, 255); font-size:27px">
+	何时学？
+</words>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	你将通过制作记忆卡片来回答这些问题！
+	那么，这里就是我们第一张卡片的<i>正面</i> ，我们的第一个问题：
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_what&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=430 h=50>
+	比如，你可以用间隔重复帮助你学习...
+</words>
+<words x=120 y=104 w=80 style="text-align:left" no-bg class="comic_text">
+	一门新语言
+</words>
+<words x=320 y=107 w=80 style="text-align:left" no-bg class="comic_text">
+	一种新乐器
+</words>
+<words x=115 y=195 w=80 style="text-align:left" no-bg class="comic_text">
+	计算机编程
+</words>
+<words x=340 y=195 w=120 style="text-align:left" no-bg class="comic_text">
+	朋友们的生活细节
+</words>
+<words x=129 y=283 w=160 style="text-align:left" no-bg class="comic_text">
+	在任何地方发现的感兴趣的任何东西！
+</words>
+<words x=379 y=290 w=100 style="text-align:left" no-bg class="comic_text">
+	所有pokemon
+</words>
+<words x=80 y=380 w=380 h=30>
+	现在，你把<i>你的</i> 答案写在背面：
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_what"></sim>
+</panel>
+
+<panel fadeInOn="answer_edit_you_what" w="600" h="40" style="margin-bottom: -10px;">
+<words w="600" x="-15" y="-10" no-bg="">
+	(备注： 你可以之后翻回这里 &amp; 再改答案)
+</words>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	然而，记得间隔重复是怎么工作的吗。
+	你需要把它联系到你<i>在乎</i> 的事情。
+	所以我们的下个问题是：
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_why&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=1000 sy=0></pic>
+<words x=10 y=10 w=430 h=50>
+	这可能过于哲学，所以这里有一些
+	关于<i>学什么</i> 背后的<i>为什么</i> 的具体例子：
+</words>
+<words x=130 y=105 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>学什么：</b>一门新语言
+	<br>
+	<b>为什么：</b>和朋友，家人，爱人用他们的母语沟通
+</words>
+<words x=130 y=210 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>学什么：</b>计算机编程
+	<br>
+	<b>为什么：</b>赚钱吃饭
+</words>
+<words x=130 y=290 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>学什么：</b>任何有趣的东西
+	<br>
+	<b>为什么：</b>好奇心本身！
+</words>
+<words font-size:15px; x=90 y=380 w=360 h=30; ">
+	所以<i>你的</i>“为何学什么”是什么呢?
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_why"></sim>
+</panel>
+
+<panel w="600" h="110">
+<words w="580" x="-15" no-bg="">
+	你现在有了学什么和为什么...但是我们还需要选一个<i>怎么学！</i> 
+	就是在问，你想用什么工具/软件呢？
+	我们的下一张卡片会问：
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_how&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=700>
+<pic src="pics/end0.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=450 h=110>
+	我现在在用
+	<a target="_blank" href="http://en.wikipedia.org/wiki/Leitner_system">Leitner盒</a>,
+	但是我的小伙伴们用
+	<a target="_blank" href="http://apps.ankiweb.net/">Anki</a>，
+	而且有一阵我用过
+	<a target="_blank" href="http://tinycards.duolingo.com/">TinyCards</a>
+	(链接会从新标签页打开)。
+	这是他们之间的比较：
+</words>
+<words x=160 y=140 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>Leitner盒</b>
+	<br>
+	优点：艺术和手工范，容易使用
+	<br>
+	缺点：不如软件轻便
+</words>
+<words x=160 y=275 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>Anki (软件)</b>
+	<br>
+	优点：用户社群很大，开源，有很多强大的功能
+	<br>
+	缺点：有点儿丑
+</words>
+<words x=160 y=405 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>TinyCards (软件)</b>
+	<br>
+	优点：设计优美，易于使用
+	<br>
+	缺点：每组最多只能放150张卡，不能让<i>你自己</i> 决定是不是答对了
+</words>
+<words x=10 y=530 w=450 h=50>
+	(想试试其他工具？
+	这里提供一些选择：
+	<a target="_blank" href="http://www.supermemo.com/">SuperMemo</a>,
+	<a target="_blank" href="http://www.nimblenotes.com/">NimbleNotes</a>,
+	<a target="_blank" href="http://mnemosyne-proj.org/">Mnemosyne</a>)
+</words>
+<words x=110 y=620 w=360 h=40 no-bg fontsize=20>
+	* 免责声明： 我和这些工具并<i>无</i> 任何关联。
+	我只是觉得它们很酷炫 &amp; 有帮助！
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	所以，要选什么呢？
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_how"></sim>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=50>
+	最后一张卡片！实行间隔重复其实很简单...
+	然而把它<i>当作一个日常习惯</i> 很难。
+</words>
+<words x=60 y=355 w=400 h=30 no-bg>
+	为什么？因为开始<i>任何</i> 一个新习惯都很难。
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end0.png" sx=1000 sy=450></pic>
+<words x=10 y=10 w=430 h=80>
+	难，但是很直接。
+	习惯的科学表明，如果你在相同的提示信号下，做一件相同的事情，
+	一次又一次...
+</words>
+<words x=0 y=153 w=170 no-bg class="comic_text smaller">
+	祝你今天愉快！
+</words>
+<words x=72 y=188 w=80 no-bg class="comic_text smaller">
+	谢谢，你也是！
+</words>
+<words x=221 y=150 w=170 no-bg class="comic_text smaller">
+	假期愉快！
+</words>
+<words x=309 y=185 w=80 no-bg class="comic_text smaller">
+	谢谢，你也是！
+</words>
+<words x=2 y=300 w=170 no-bg class="comic_text smaller">
+	这是找你的零钱！
+</words>
+<words x=74 y=335 w=80 no-bg class="comic_text smaller">
+	谢谢，你也是！
+</words>
+<words x=20 y=435 w=440 h=50>
+	...它将变成一个习惯，无论或好或坏。
+	所以对于间隔重复这个习惯，我们的问题是：
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_when&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=0 sy=1150></pic>
+<words x=10 y=10 w=440 h=30>
+	比如，你可以在以下时刻玩间隔重复的游戏...
+</words>
+<words x=4 y=233 w=130 no-bg class="comic_text">
+	醒后
+</words>
+<words x=167 y=233 w=130 no-bg class="comic_text">
+	上下班
+</words>
+<words x=335 y=233 w=130 no-bg class="comic_text">
+	睡前
+</words>
+<words x=10 y=320 w=455 h=50>
+	你<i>什么时候</i> 去做并不重要，只要你每天都做
+	并一贯保持下去(或多或少 - 你可以偶尔歇一天)。
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/end0.png" sx=500 sy=1150></pic>
+<words x=10 y=10 w=350 h=80>
+	(小贴士：任何我想创建一个习惯的时候，
+	我都给日历上每个成功实施的日子圈个圈)
+</words>
+<words x=10 y=370 w=350 h=80>
+	(这是我跟自己玩的游戏！目标是让自己尽量不打破记录链，
+	并搭建一条可能的最长链条。)
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	现在，让我们填写好最后这张记忆卡片：
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_when"></sim>
+</panel>
+
+<panel w=400 h=80>
+<words w=400 x=-15 no-bg>
+	Et voilà, 这是全都关于你的所有四张记忆卡片！
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_what&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_why&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_how&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_when&refresh=yes" class="small_card"></sim>
+</panel>
+
+<br><br>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=0></pic>
+<words x=180 y=10 w=260 no-bg>
+	但就如我所说的，</br>我想<i>今天</i> 就助你</br>掌控你的记忆。
+</words>
+<words x=230 y=130 w=250 no-bg>
+	不是最终，也不是</br>明天，是<i>今天</i>。
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=250></pic>
+<words x=150 y=30 w=120 no-bg>
+	为了帮你...
+</words>
+<words x=270 y=95 w=170 no-bg>
+	来下载一些</br>
+	<b style="font-size:30px">
+	酷炫的好东西吧
+	</b>
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>第一：</b>
+	<span id="gift_wallpaper"></span>
+	为了提醒你每天都去间隔重复！
+</words>
+</panel>
+
+<div>
+<a target="_blank" id="wallpaper_link">
+<img id="wallpaper_image"/><br>
+	(点击以下载 &darr;)
+</a>
+</div>
+
+<panel w=600 h=80 style="height: auto; position: relative; left: -15px;">
+<words x=-15 y=0 w=570 no-bg style="text-align:left; position:static" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>第二：</b>
+	<span id="gift_app"></span>
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=80>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	到最后，
+	<b>第三：</b>
+	一个包含了这个互动式连环画里面所有你在练习的记忆卡片的.zip文件！
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=400 h=100>
+<sim x=0 y=0 w=400 h=100 src="sims/downloads/all.html"></sim>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=120>
+<words x=-15 y=0 w=600 no-bg style="text-align:left">
+	(这些可以作为你间隔重复起始几天的用量，旨在助你起航！
+	作为额外的好处，你还可以永久性地记住今天在这里学到的一切。)
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=0></pic>
+<words x=110 y=30 w=250 no-bg>
+	这提醒了我...
+</words>
+<words x=200 y=105 w=220 no-bg>
+	一声最后的道别，
+	为了往日时光，
+	这首最后的天鹅曲！
+</words>
+<words x=210 y=230 w=250 no-bg>
+	...让我们来复习卡片吧，<i>所有</i> 卡片：
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=intro_a,sci_a,leit_a,you_what,intro_b,sci_b,leit_b,you_why,sci_c,leit_c,you_how,leit_d,you_when,intro_c"></sim>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=0 sy=500></pic>
+<words x=0 y=12 w=210 no-bg>
+	鼻酸...
+	离别总是叫人为难...
+</words>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=240 sy=500></pic>
+<words x=-20 y=-10 no-bg fontsize=120 color="rgba(0,0,0,0.5)" style="transform:rotate(10deg)">
+	呜
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=480 sy=500></pic>
+<words x=160 y=30 w=200 no-bg>
+	我会想念我们在一起的时光...
+</words>
+<words x=200 y=120 w=250 no-bg>
+	...但是我希望我们活在彼此的记忆里！
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=430 h=50>
+	如果你是学生，我希望间隔重复
+	助你更自信，并将学习掌握在自己手中。
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=800></pic>
+<words x=10 y=10 w=430 h=80>
+	如果你是老师，
+	拜托哦</br><i>拜托</i> 把间隔重复告诉早日你的学生们
+	(&amp; 其他有据可循的学习习惯)。
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=1000 sy=800></pic>
+<words x=10 y=10 w=450 h=50>
+	但是不管你在不在学校里，
+	我希望间隔重复帮助你发展你的记忆，你的心智，
+	你的缪斯...
+</words>
+<words x=168 y=147 w=250 no-bg class="comic_text white">
+	“不！”线粒体尖叫到，此时她正滑入细胞温暖湿润的喉咙。“我不-”
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end1.png" sx=1000 sy=0></pic>
+<words x=30 y=30 w=250 no-bg>
+	...并且了解到生活中一种伟大的爱：
+</words>
+<words x=120 y=455 w=300 style="text-align:right" no-bg>
+	一种对学习的终身爱恋。
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=the_end"></sim>
+</panel>
+
+<panel fadeInOn="flip_the_end" w=600 h=200>
+<words w=600 x=-15 y=0 no-bg>
+	(P.S：我真的很想知道<i>你会</i> 使用间隔重复！
+	用这个标签来标注你的盒子/Anki的图片推文：
+	<a target="_blank" href="http://twitter.com/search?q=%23SpacedRepetition">
+	#SpacedRepetition</a> –
+	我会把这些例子整理成一个页面让每个人来看！)
+	<br><br>
+	(想知道更多吗？往下翻到延伸阅读 &amp; 来源出处)
+	<br>
+	&darr; &darr; &darr; &darr; &darr;
+	</b>
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CREDITS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="bye"></a>
+<div id="credits">
+
+<div>
+
+<div style="font-size:30px; margin-bottom:0; overflow: hidden;">
+<img src="pics/nicky_credits.png" width="100" height="100" style="display: block; float: left;" />
+<div style="display: block; position: relative; left: 14px; width: 390px; height: 130px; float: left; font-size: 22px">
+	文字，图画和代码都由
+	<br>
+	<a target="_blank" href="http://www.patreon.com/ncase" style="font-size:2em; display:inline-block; line-height:1em">
+	Nicky Case 创作
+	</a>
+	<br>
+	<span id="translation_credits_2"></span>
+	<!-- TRANSLATOR NOTE： again, when you fill in translations.txt, your name will appear here! -->
+</div>
+</div>
+
+<p style="margin-top:0">
+	
+	而且这个互动式连环画属于
+
+	<span style="display:block; margin-top:5px;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns：xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="-0.5 0.5 64 64" enable-background="new -0.5 0.5 64 64" xml：space="preserve">
+		<g>
+			<circle fill="#000000" cx="31.325" cy="32.873" r="30.096"/>
+			<path fill="#FFFFFF" id="text2809_1_" d="M31.5,14.08c-10.565,0-13.222,9.969-13.222,18.42c0,8.452,2.656,18.42,13.222,18.42   c10.564,0,13.221-9.968,13.221-18.42C44.721,24.049,42.064,14.08,31.5,14.08z M31.5,21.026c0.429,0,0.82,0.066,1.188,0.157   c0.761,0.656,1.133,1.561,0.403,2.823l-7.036,12.93c-0.216-1.636-0.247-3.24-0.247-4.437C25.808,28.777,26.066,21.026,31.5,21.026z    M36.766,26.987c0.373,1.984,0.426,4.056,0.426,5.513c0,3.723-0.258,11.475-5.69,11.475c-0.428,0-0.822-0.045-1.188-0.136   c-0.07-0.021-0.134-0.043-0.202-0.067c-0.112-0.032-0.23-0.068-0.336-0.11c-1.21-0.515-1.972-1.446-0.874-3.093L36.766,26.987z"/>
+			<path fill="#FFFFFF" id="path2815_1_" d="M31.433,0.5c-8.877,0-16.359,3.09-22.454,9.3c-3.087,3.087-5.443,6.607-7.082,10.532   C0.297,24.219-0.5,28.271-0.5,32.5c0,4.268,0.797,8.32,2.397,12.168c1.6,3.85,3.921,7.312,6.969,10.396   c3.085,3.049,6.549,5.399,10.398,7.037c3.886,1.602,7.939,2.398,12.169,2.398c4.229,0,8.34-0.826,12.303-2.465   c3.962-1.639,7.496-3.994,10.621-7.081c3.011-2.933,5.289-6.297,6.812-10.106C62.73,41,63.5,36.883,63.5,32.5   c0-4.343-0.77-8.454-2.33-12.303c-1.562-3.885-3.848-7.32-6.857-10.33C48.025,3.619,40.385,0.5,31.433,0.5z M31.567,6.259   c7.238,0,13.412,2.566,18.554,7.709c2.477,2.477,4.375,5.31,5.67,8.471c1.296,3.162,1.949,6.518,1.949,10.061   c0,7.354-2.516,13.454-7.506,18.33c-2.592,2.516-5.502,4.447-8.74,5.781c-3.2,1.334-6.498,1.994-9.927,1.994   c-3.468,0-6.788-0.653-9.949-1.948c-3.163-1.334-6.001-3.238-8.516-5.716c-2.515-2.514-4.455-5.353-5.826-8.516   c-1.333-3.199-2.017-6.498-2.017-9.927c0-3.467,0.684-6.787,2.017-9.949c1.371-3.2,3.312-6.074,5.826-8.628   C18.092,8.818,24.252,6.259,31.567,6.259z"/>
+		</g>
+		</svg>
+		<span style="font-size: 60px; position: relative; top: -12px; left: 8px;">
+		公有领域
+		</span>
+	</span>
+
+	也就是说你可以免费把它用于教育，个人，甚至商业目的。
+	而且你已经有了我的许可！
+	<a target="_blank" href="http://github.com/ncase/remember">
+	(下载代码)</a>
+	<a target="_blank" href="http://github.com/ncase/remember#how-to-translate">
+	(翻译这个连环画)</a>
+
+</p>
+
+<p>
+	但是，多亏我的1000+的Patreon支持者我才能做成这个。
+	他们让我继续做我爱做的。谢谢你们！💖
+	<a target="_blank" href="http://www.patreon.com/ncase">
+	(你也想要加码？点我！)
+	</a>
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	延伸阅读
+</p>
+
+<p>
+	有句话叫什么什么巨人的肩膀。
+	这些阅读让间隔重复成为了我生活的一部分：
+</p>
+
+<ul>
+	<li>
+		🤓
+		<a target="_blank" href="http://augmentingcognition.com/ltm.html">
+		增强长期记忆(Augmenting Long-Term Memory)</a>
+		by Michael Nielsen
+		向我展示了间隔重复不仅是一个记忆的工具，
+		也是深度理解的工具。它甚至可以是一种<i>生活</i> 方式。
+	</li>
+	<li>
+		💬
+		<a target="_blank" href="http://fluent-forever.com/the-book/">
+		《永远流利(Fluent Forever)》</a>
+		by Gabriel Wyner
+		最终说服我(重新)开始学习法语，
+		并且搭建一个Leitner盒。(我的64天日历是从这本书里改装来的)
+		译注：暂无中译本，台译本书名为《跟各國人都可以聊得來：語言大師教你如何掌握三大關鍵快速精通各國語言，學了就不忘！》
+	</li>
+	<li>
+		🃏
+		<a target="_blank" href="http://www.supermemo.com/en/articles/20rules">
+		卡片的20条法则(20 Rules for Cards)</a>
+		by Piotr Wozniak 叫我把间隔重复发挥到极致。
+		(备注：这个作者也发明了Anki使用的算法！)
+	</li>
+</ul>
+	
+	还有我最喜欢的有关学习的科学的读物：
+
+<ul>
+	<li>
+		👩‍🎓
+		<a target="_blank" href="http://www.amazon.com/Why-Dont-Students-Like-School/dp/047059196X/">
+		《为什么学生不喜欢上学(Why Don't Students Like School)》?</a>
+		by Daniel Willingham
+		向我证明了“纯背诵”是创造力 &amp; 和批判思考
+		的<i>必要</i>条件。
+		
+	</li>
+	<li>
+		✏️
+		<a target="_blank" href="http://tlcp.depaultla.org/wp-content/uploads/sites/2/2015/05/Dunlosky-et-al-2013-What-Works-What-Doesnt.pdf">
+		什么有效？什么无效？(What Works, What Doesn't) [PDF]
+		</a>
+		by Dunlosky et al
+		总结了<i>200+个</i> 各种各样的学习方法研究。
+		总而言之：常见的方法比如重复阅读 &amp; 荧光笔高亮并不好使，
+		不那么常见的方法像间隔 &amp; 自我测试是好使的。
+		<a target="_blank" href="http://journals.sagepub.com/doi/abs/10.1177/1529100612453266">
+		(原始论文的链接)
+		</a>
+	</li>
+</ul>
+
+<p>
+	如果你想要边玩边学习更多的东西，
+	<a target="_blank" href="http://explorabl.es/">
+	记得去看可探索解释(Explorable Explanations)!</a> 🕹️
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	更多感谢
+</p>
+
+<p>
+	👀 谢谢我所有的测试玩家，是你们让这个项目不糟糕：
+	<span style="font-size: 19px; line-height: 0px; color: #999;">
+	Aatish Bhatia, Adam Filinovich, Aimee Jarboe, Alex Jaffe, Amit Patel, Andy Matuschak, B Cavello, Chris Walker, Frank Lantz, Gal Green, Glen Chiacchieri, Hamish Todd, Henry Reich, Jacque Goupil, James Lytle,
+	Jez Swanson, Josh Comeau, Kayle Sawyer, Levi Robertson, Marcelo Gallardo, Martyna Wasiluk, Michael Nielsen, Mikayla Hutchinson, Mike Gifford, Monica Srivastava, Owen Landgren,
+	Paul Butler, Paul Simeon, Philipp Wacker, Pontus Granström, Rowan, Sebastian Morr, SpacieCat, Tanya Short, Tim &amp; Alexandra Swast, Tom Hermans, Toph Tucker, Will Harris-Braun, Zeno Rogue
+	</span>
+</p>
+
+<p>
+	📹 谢谢Chris Walker制作
+	<a target="_blank" href="http://www.youtube.com/watch?v=uvF1XuseZFE">
+	Leitner盒手工制作视频！</a>
+	(P.S：
+	<a target="_blank" href="http://polytrope.com/">
+	Chris也创作互动的东西！</a>)
+</p>
+
+<p>
+	🐞 谢谢Omar Rizwan帮助我搞清Safari移动端无尽的bug
+</p>
+
+<p>
+	🔊 这个项目使用了来自Wikimedia Commons and FreeSounds
+	的Creative Commons的资源。
+	<a target="_blank" href="http://github.com/ncase/remember#full-asset-credits">
+	(查看完整来源)</a>
+</p>
+
+<p>
+	💖 再一次的，十分感谢我所有的Patreon支持者使之成为可能：
+</p>
+
+<iframe gotosrc="supporters/"></iframe>
+
+<p>
+	🙏 最后，谢谢像<i>你</i> 这样耐着性子看完所有来源和出处的人！
+	你可以
+	<a target="_blank" href="http://ncase.me/">
+	玩更多我做的东西</a>，
+	<a target="_blank" href="http://twitter.com/ncasenmare">
+	在推特上关注我</a>，
+	或者
+	<a target="_blank" href="http://www.patreon.com/ncase">
+	在Patreon上支持我</a>。
+	我真心希望这个连环画可以对你有所帮助，无论是帮助有多小。
+</p>
+
+<p>
+	学习快乐！<br>
+	~ Nicky Case
+</p>
+
+<!-- Share buttons, text generated from labels -->
+<div id="share_buttons"></div>
+
+</div>
+
+</div>
+
+
+<!--
+
+TRANSLATOR NOTE：
+
+HA HA YOU THOUGHT YOU WERE DONE?!
+
+NOPE
+
+WE'VE STILL GOT THE INTERFACE LABELS & FLASHCARDS TO TRANSLATE
+
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- LABELS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="labels">
+
+<!-- Chapter Links -->
+<span id="label_chapter_links">
+	<a href="#0">简介</a>
+	&middot;
+	<a href="#1">科学</a>
+	&middot;
+	<a href="#2">艺术</a>
+	&middot;
+	<a href="#3">开始吧！</a>
+	&middot;
+	<a href="#bye">来源出处</a>
+</span>
+
+<!-- Multi Card Labels -->
+<span id="multicard_q">
+	尝试回想 &uarr;
+	然后翻开卡片 ↻ 
+</span>
+<span id="multicard_cards_left">
+	(左边的卡片：[N])
+</span>
+<span id="multicard_a">
+	你还记得这个吗？
+</span>
+<span id="multicard_no">
+	不，再来一次
+</span>
+<span id="multicard_yes">
+	记得，继续！
+</span>
+<span id="multicard_done">
+	目前都搞定了！继续往下滑
+	<br>
+	&darr;
+</span>
+<span id="multicard_done_2">
+	小伙伴们，这就是全部了！
+	<br>
+	&darr;
+</span>
+
+<!-- Ebbinghaus Simulation -->
+<span id="ebbinghaus_y_axis">
+	记忆的强度 &rarr;
+</span>
+<span id="ebbinghaus_x_axis">
+	时间 &rarr;
+</span>
+<span id="ebbinghaus_decay">
+	衰减率：
+</span>
+<span id="ebbinghaus_forgetting">
+	最佳时机：
+</span>
+<span id="ebbinghaus_recall">
+	回想的时间点：
+</span>
+<span id="ebbinghaus_recalls">
+	多个回想的时间点：
+</span>
+<span id="ebbinghaus_auto">
+	自动优化！
+</span>
+
+<!-- Leitner Calendar -->
+<!--
+TRANSLATOR NOTE：
+The exact three characters [N] is how the code knows where to put the number.
+When you translate, make sure the [N] is there if it was there in the original.
+-->
+<span id="calendar_day">
+	在第[N]天...
+</span>
+<span id="calendar_review">
+	复习等级[N](<i>按照这个顺序</i> )
+</span>
+<span id="calendar_loop">
+	(然后循环回到第一天！)
+</span>
+
+<!-- Leitner Box simulation -->
+<span id="leitner_day">
+	第[N]天
+</span>
+<span id="leitner_step_to_review">
+	复习：等级
+</span>
+<span id="leitner_step_reviewing">
+	复习等级[N]
+</span>
+<span id="leitner_step_new">
+	添加[N]张新卡片
+</span>
+<span id="leitner_step_stats">
+	总共：[N]张卡片！
+</span>
+<span id="leitner_step_stats_2">
+	([N]张退休)
+</span>
+<span id="leitner_button_next_step">
+	下一步
+</span>
+<span id="leitner_button_next_day">
+	明天
+</span>
+<span id="leitner_button_next_week">
+	下周
+</span>
+<span id="leitner_button_next_month">
+	下个月
+</span>
+<span id="leitner_slider_new">
+	每天[N]张新卡片
+</span>
+<span id="leitner_slider_wrong">
+	[N]%的卡片在复习时<i>记错了</i> 
+</span>
+<span id="leitner_reset">
+	重置
+</span>
+
+<!-- Typing Cards -->
+<span id="type_question">
+	问：
+	<!--
+	TRANSLATOR NOTE： "Q" short for Question.
+	Dunno if other languages have similar one-letter abbreviations.
+	If not, just type the full translated word for "Question"
+	-->
+</span>
+<span id="type_placeholder">
+	把你的答案写在这里
+</span>
+<span id="type_suggestions">
+	或者选择以下的某个建议：
+</span>
+
+<!-- Suggestions -->
+<span id="you_what_suggestions">
+	<li>任何有趣的东西！</li>
+	<li>一门语言</li>
+	<li>音乐</li>
+	<li>敲代码</li>
+	<li>个人的</li>
+	<li>(其他东西)</li>
+</span>
+<span id="you_why_suggestions">
+	<li>为了我喜爱的人们</li>
+	<li>为了我自己</li>
+	<li>为了满足好奇心</li>
+	<li>(其他原因)</li>
+</span>
+<span id="you_how_suggestions">
+	<li>Leitner盒</li>
+	<li>Anki</li>
+	<li>TinyCards</li>
+	<li>(其他工具)</li>
+</span>
+<span id="you_when_suggestions">
+	<li>早上</li>
+	<li>上下班</li>
+	<li>晚上</li>
+	<li>(其他时候)</li>
+</span>
+
+<!-- Gifts -->
+<span id="gift_wallpaper_what">
+	学什么：
+</span>
+<span id="gift_wallpaper_why">
+	为什么：
+</span>
+<span id="gift_wallpaper_do_1">
+	开
+</span>
+<span id="gift_wallpaper_do_2">
+	工！
+</span>
+<span id="gift_wallpaper_filename">
+	墙纸
+</span>
+<span id="gift_wallpaper_desktop">
+	一张为你桌面准备的墙纸，
+</span>
+<span id="gift_wallpaper_phone">
+	一张为你手机准备的锁屏壁纸，
+</span>
+<span id="gift_app_leitner">
+	我亲爱的朋友Chris Walker做的，一段关于如何手工制作属于你自己的Leitner盒的视频！
+	<br><br>
+	<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/uvF1XuseZFE?rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+	<br>
+	(这里是一个相似的教程，仿宜家风格的：)
+	<br><br>
+	<a target="_blank" href="./pdf/leitner.pdf" style="display: block; text-align: center;">
+	<img src="./pdf/thumbnail.png" width="450"/><br>点击下载PDF</a>
+</span>
+<span id="gift_app_anki">
+	链接
+	<a target="_blank" href="http://apps.ankiweb.net/">下载Anki!</a>
+	这是一个怎么使用它的视频教程：
+	<br><br>
+	<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/sQkdB3cJwn0?start=180&rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+</span>
+<span id="gift_app_tiny">
+	链接到
+	<a target="_blank" href="http://tinycards.duolingo.com/">
+	TinyCards!</a>
+	(我建议去瞅瞅他们的
+	<a target="_blank" href="http://tinycards.duolingo.com/users/TinyGeo">
+	地理卡片集</a>)
+</span>
+<span id="gift_app_other">
+	手工制作Leitner盒的教程链接
+	<a target="_blank" href="http://www.youtube.com/watch?v=uvF1XuseZFE">
+	[视频]</a>
+	<a target="_blank" href="./pdf/leitner.pdf">
+	[pdf]</a>,
+	<a target="_blank" href="http://apps.ankiweb.net/">
+	Anki App</a>,
+	以及
+	<a target="_blank" href="http://tinycards.duolingo.com/">
+	TinyCards</a>！
+</span>
+
+<!-- Downloading Cards -->
+<span id="download_all">
+	下载所有卡片
+</span>
+<span id="download_all_downloading">
+	下载中...
+</span>
+<span id="download_all_done">
+	下完了！查看你的下载文件夹。
+</span>
+
+<!-- Social Sharing -->
+<span id="share_title">
+	如何永远般地记住任何事情
+</span>
+<span id="share_desc">
+	一本关于记忆的艺术 & 科学的互动式连环画
+</span>
+
+
+
+
+<!--
+
+TRANSLATOR NOTE：
+
+One more section to go!
+
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- FLASHCARDS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!--
+TRANSLATOR NOTE：
+The CSS for the flashcards is really touchy, so DO NOT MODIFY THE CSS.
+That means, try as much as possible to make your text shorter or the same length as the original text.
+Good luck!
+-->
+
+<!-- - - - - - - - - - - - -->
+<!-- INTRO - - - - - - - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_spaced_rep_front">
+	<div class="fcard_center" style="height:2.5em">
+	而这个游戏的名字便是...
+	</div>
+</span>
+<span id="flashcard_spaced_rep_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="color:white; font-size:74px; height:1.6em; line-height:0.8em;">
+	间隔重复
+	</div>
+</span>
+<span id="flashcard_intro_a_front">
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	间隔重复 = <span class="underline">____</span> + <span class="underline">____</span>
+	</div>
+</span>
+<span id="flashcard_intro_a_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=240></div>
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	测试 + 时间
+	</div>
+</span>
+<span id="flashcard_intro_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	3个常见但无效的学习/教学惯例是...
+	</div>
+</span>
+<span id="flashcard_intro_b_back">
+	<div id="fc_words" class="fcard_center" style="height:2.2em">
+	...课堂式讲课，填鸭式用功，和重复阅读
+	</div>
+</span>
+<span id="flashcard_intro_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.4em">
+	在希腊神话中，
+	女神<span class="underline">____</span>
+	是女神<span class="underline">________</span>
+	的母亲
+	</div>
+</span>
+<span id="flashcard_intro_c_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width:250px; top:50px; left:140px; line-height:1.1em;">
+	记忆是灵感的母亲
+	</div>
+</span>
+
+<!-- - - - - - - - - - - - -->
+<!-- CHAPTER 1： The Science -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_guessgap_front">
+	<div class="fcard_center" style="height:2.5em">
+	回想时机的最佳分布方式是...
+	</div>
+</span>
+<span id="flashcard_guessgap_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="height:2.5em">
+	...用<i>递增</i> 间隔！
+	</div>
+</span>
+<span id="flashcard_sci_a_front">
+	<div id="fc_words" class="fcard_center" style="height:3.5em">
+	记忆的实验科学的先驱者是...
+	</div>
+</span>
+<span id="flashcard_sci_a_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width: 250px; top: 60px; left:150px; line-height: 1.1em;">
+	赫尔曼·艾宾浩斯
+	</div>
+</span>
+<span id="flashcard_sci_b_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	(<i>无</i> 任何回想的)遗忘曲线长什么样...
+	</div>
+</span>
+<span id="flashcard_sci_b_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 280px; top: 70px; left: 100px; font-size:20px; line-height: 1.1em;">
+	(备注：它一开始衰减很快，然后变慢 - “指数型衰减”)
+	</div>
+</span>
+<span id="flashcard_sci_c_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	(<i>有</i> 排好回想时机的)遗忘曲线长什么样...
+	</div>
+</span>
+<span id="flashcard_sci_c_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 360px; top: 120px; left: 20px; font-size:20px; line-height: 1.1em;">
+	(备注：回想时机的间隔<i>递增</i> )
+	</div>
+</span>
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 2： The Art - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_leit_a_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	在Leitner盒里, 我们<span class="underline">______</span>
+	每个等级之间的间隔(回想时机间隔的天数)
+	</div>
+</span>
+<span id="flashcard_leit_a_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=720 style="left:-5px"></div>
+	<div id="fc_words" class="fcard_center" style="height:110px">
+	间隔翻倍
+	</div>
+</span>
+<span id="flashcard_leit_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	Leitner盒的游戏：
+	<br>
+	当你答<i>对</i> 了一张卡片，你就把它移动<span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_b_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:170px">
+	到上面一个等级
+	</div>
+</span>
+<span id="flashcard_leit_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	Leitner盒的游戏：
+	<br>
+	当你答<i>错</i> 了一张卡片，你就把它移动<span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_c_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:180px">
+	回等级1！
+	</div>
+</span>
+<span id="flashcard_leit_d_front">
+	<div id="fc_words" class="fcard_center" style="font-size:30px; height:170px;">
+	根据网络上的一些随便看到的连环画游戏，
+	我的间隔重复记忆卡片应该
+	<span class="underline">______</span> ,
+	<span class="underline">______</span> , 而且 
+	<span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_d_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=720></div>
+	<div id="fc_words" class="fcard_center" style="color:#fff; height:200px; height: 180px; font-size: 30px;">
+	小，相互联系 &amp; 富有意味
+	</div>
+</span>
+
+
+<span id="flashcard_mitochondria_all_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		这是什么？
+	</div>
+</span>
+<span id="flashcard_mitochondria_all_back">
+	<div class="fcard_center" style="height:220px; font-size:24px;">
+		这个细胞器叫做“线粒体”。
+		线粒体是细胞的发动机。
+		它们存在于所有的真核(有核)生物中。
+		最被广泛接受的线粒体起源学说是内共生学说：
+		大约～1.5亿年前，一个被另外一个细胞“吃”了的原核(无核)细胞，
+		不知怎么就活下来了，然后一直活在它们体内。
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		这是什么？
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_back">
+	<div class="fcard_center" style="height:1.5em;">
+		线粒体
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960></div>
+	<div class="fcard_center" style="height:180px">
+		线粒体是细胞的<span class="underline">_______</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_back">
+	<div class="fcard_center" style="height:150px">
+		马达
+		<span class="bonus_note">
+		// 额外备注：说真的，没有它们我们就挂了。
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:45px"></div>
+	<div class="fcard_center" style="height:180px;">
+		线粒体在所有<span class="underline">____</span>有机体内存在。
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_back">
+	<div class="fcard_center" style="height:1.5em">
+		真核
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_front">
+	<div class="fcard_center" style="height:2.5em">
+		真核细胞是...
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		有核的
+		<span class="bonus_note">
+		// 额外备注："eu"=好， "karyon"=核
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_front">
+	<div class="fcard_center" style="height:2.5em">
+		原核细胞是...
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		无核的
+		<span class="bonus_note">
+		// 额外备注："pro"=之前, "karyon"=核
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:10px"></div>
+	<div class="fcard_center" style="height:200px; font-size:35px">
+		最被广泛接受的线粒体起源学说是...
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_back">
+	<div class="fcard_center" style="height:120px">
+		内共生学说
+		<span class="bonus_note">
+		// 额外备注："endo"=里面, "sym"=一起, "bio"=活
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 35px; height: 220px;">
+		根据内共生学说，线粒体起源于
+		<span class="underline">____</span>年前
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_back">
+	<div class="fcard_center" style="height:1.5em">
+		～1.5亿年前
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 37px; height: 220px;">
+		根据内共生学说，线粒体的首次出现是在什么时候？
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1440></div>
+	<div class="fcard_center" style="height:230px">
+		当一个原核细胞被另一个细胞吃了
+	</div>
+</span>
+
+
+<span id="flashcard_cat_front">
+	<div class="fcard_center" style="height:100px">
+		<div style="font-size:120px; height:75px;">
+			猫
+			<!--
+			TRANSLATOR NOTE：
+			If your language is NOT French, then change this to "cat" in YOUR language
+			-->
+		</div>
+		<div>
+			(中文)
+			<!--
+			TRANSLATOR NOTE：
+			If your language is NOT French, then change this to YOUR language
+			-->
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat_back">
+	<div class="fcard_center" style="height:100px">
+		<!--
+		TRANSLATOR NOTE： DO NOT TRANSLATE. Leave as French! 
+		-->
+		<div style="font-size:120px; height:75px;">
+			chat
+		</div>
+		<div>
+			(french)
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=0></div>
+	<div class="fcard_center"></div>
+</span>
+<span id="flashcard_cat2_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=0></div>
+	<div class="fcard_center">
+		<audio controls id="HACK_audio" style="position: absolute; top: 115px; left: 30px; transform: scale(0.5);">
+			<source gotosrc="../../audio/chat.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+</span>
+
+<span id="flashcard_learndo_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		然后回去做... ↻
+	</div>
+</span>
+<span id="flashcard_learndo_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		然后回去学习... ↻
+	</div>
+</span>
+
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 3： Get Started -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_you_what_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		你想要学习什么？
+	</div>
+</span>
+<span id="flashcard_you_what_back">
+	<div id="fc_words" class="fcard_center" editable="you_what" style="height:1.2em">
+		任何有趣的东西！
+	</div>
+</span>
+<span id="flashcard_you_why_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		你为什么要学？
+	</div>
+</span>
+<span id="flashcard_you_why_back">
+	<div id="fc_words" class="fcard_center" editable="you_why" style="height:1.2em">
+		因为好奇
+	</div>
+</span>
+<span id="flashcard_you_how_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
+		你想用哪种方式去实践间隔重复？
+	</div>
+</span>
+<span id="flashcard_you_how_back">
+	<div id="fc_words" class="fcard_center" editable="you_how" style="height:1.2em">
+		Leitner盒
+	</div>
+</span>
+<span id="flashcard_you_when_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
+		你什么时候想练习间隔重复？
+	</div>
+</span>
+<span id="flashcard_you_when_back">
+	<div id="fc_words" class="fcard_center" editable="you_when" style="height:1.2em">
+		晚上
+	</div>
+</span>
+
+<span id="flashcard_the_end_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=480></div>
+</span>
+<span id="flashcard_the_end_back">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="top:30px; font-size:50px;">
+		全剧终
+	</div>
+</span>
+
+
+</div>
+
+<!--
+
+TRANSLATOR NOTE：
+
+Congrats! NOW you've translated everything!
+
+Again, from the deepest part of my heart, I want to sincerely thank you
+for helping spread this page to more people, in more languages.
+
+Oh wait, just one more thing： go to translations.txt,
+and add your translation there so this project "knows" your page exists.
+
+And once that's done, send a Pull Request, and your translation will go live!
+
+THANK YOU! <3
+~ Nicky Case
+
+-->
+
+</body>
+
+</html>
+
+<script src="js/howler.core.min.js"></script>
+<script src="js/minpubsub.src.js"></script>
+<script src="js/comic.js"></script>
