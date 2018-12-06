@@ -55,6 +55,7 @@ ru
 ./ru.html
 Хочешь переключиться на Русский язык?
 Конечно!
+нет
 перевод <a href="https://toby3d.ru">toby3d</a>
 original in English
 
