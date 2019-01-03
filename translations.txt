@@ -66,3 +66,11 @@ Español
 ¡Vale!
 Nanai
 traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a>
+
+ca
+Catala
+./ca.html
+Voldries canviar a la versió en catalan?
+Val!
+No
+traduït per <a href="https://github.com/saimonmoore">saimonmoore</a>
