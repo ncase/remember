@@ -66,3 +66,12 @@ Español
 ¡Vale!
 Nanai
 traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a>
+
+it
+Italiano
+./it.html
+Vuoi passare alla versione in Italiano?
+Ovvio!
+Nah
+translated by Antonio Emanuele Taggio
+originale in inglese
