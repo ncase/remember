@@ -64,8 +64,8 @@ Español
 ./es.html
 ¿Querrías cambiar a la versión en español?
 ¡Vale!
-Nanai
-traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a>
+Nel
+traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a> y <a href="https://github.com/HenrikhWolf">Henrikh Wolf</a>
 
 ca
 Catala
