@@ -65,7 +65,7 @@ Español
 ¿Querrías cambiar a la versión en español?
 ¡Vale!
 Nanai
-traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a>
+traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a> y <a href="https://github.com/HenrikhWolf">Enrique Mendoza</a>
 
 ca
 Catala
