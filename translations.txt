@@ -66,6 +66,7 @@ Español
 ¡Vale!
 Nanai
 traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a> y <a href="https://github.com/HenrikhWolf">Enrique Mendoza</a>
+original in English
 
 ca
 Catala
@@ -74,3 +75,4 @@ Voldries canviar a la versió en catalan?
 Val!
 No
 traduït per <a href="https://github.com/saimonmoore">saimonmoore</a>
+original in English
