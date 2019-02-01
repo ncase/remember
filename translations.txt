@@ -65,7 +65,8 @@ Español
 ¿Querrías cambiar a la versión en español?
 ¡Vale!
 Nanai
-traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a>
+traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a> y <a href="https://github.com/HenrikhWolf">Enrique Mendoza</a>
+original in English
 
 it
 Italiano
@@ -75,3 +76,12 @@ Ovvio!
 Nah
 translated by Antonio Emanuele Taggio
 originale in inglese
+
+ca
+Catala
+./ca.html
+Voldries canviar a la versió en catalan?
+Val!
+No
+traduït per <a href="https://github.com/saimonmoore">saimonmoore</a>
+original in English
