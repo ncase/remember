@@ -34,7 +34,7 @@ Good luck, and many thanks again!
 	<!-- Meta Stuff -->
 	<title>Como Se Lembrar De Qualquer Coisa Para (Quase) Sempre</title>
 	<!-- TRANSLATOR NOTE: Translate the "content" attribute -->
-	<meta name="description" content="uma história em quadrinhos interativa sobre a arte e a ciência da memória"/> 
+	<meta name="description" content="uma história em quadrinhos interativa sobre a arte & ciência da memória"/> 
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<meta content="utf-8" http-equiv="encoding">
 	<meta charset="utf-8">
@@ -42,18 +42,18 @@ Good luck, and many thanks again!
 	
 	<!-- Sharing Card Stuff -->
 	<meta itemprop="name" content="Como Se Lembrar De Qualquer Coisa Para (Quase) Sempre"> <!-- TRANSLATE "content" -->
-	<meta itemprop="description" content="uma história em quadrinhos interativa sobre a arte e a ciência da memória"> <!-- TRANSLATE "content" -->
+	<meta itemprop="description" content="uma história em quadrinhos interativa sobre a arte & ciência da memória"> <!-- TRANSLATE "content" -->
 	<meta itemprop="image" content="https://ncase.me/remember/sharing/thumbnail.png">
 
 	<meta name="twitter:title" content="Como Se Lembrar De Qualquer Coisa Para (Quase) Sempre"> <!-- TRANSLATE "content" -->
-	<meta name="twitter:description" content="uma história em quadrinhos interativa sobre a arte e a ciência da memória"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:description" content="uma história em quadrinhos interativa sobre a arte & ciência da memória"> <!-- TRANSLATE "content" -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@ncasenmare">
 	<meta name="twitter:creator" content="@ncasenmare">
 	<meta name="twitter:image" content="https://ncase.me/remember/sharing/thumbnail.png">
 
 	<meta property="og:title" content="Como Se Lembrar De Qualquer Coisa Para (Quase) Sempre"> <!-- TRANSLATE "content" -->
-	<meta property="og:description" content="uma história em quadrinhos interativa sobre a arte e a ciência da memória"> <!-- TRANSLATE "content" -->
+	<meta property="og:description" content="uma história em quadrinhos interativa sobre a arte & ciência da memória"> <!-- TRANSLATE "content" -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://ncase.me/remember/">
 	<meta property="og:image" content="https://ncase.me/remember/sharing/thumbnail.png">
@@ -64,15 +64,16 @@ Good luck, and many thanks again!
 
 	<!-- Styles specific for the version translated to Portuguese -->
 	<style>
-		/* Note:20px (English default: 25px) for now is a hotfix that maybe
-		   2~3px lower than ideal, but could improve legibility of the preview
-		   page until a better default is defined.
-		*/
-		body {
-			font-size: 20px;
+		.comic
+		{
+			hyphens: auto;
 		}
-	</style>
 
+		.text_smaller07 { font-size: 0.7em; }
+		.text_smaller,
+		.text_smaller08 { font-size: 0.8em; }
+		.text_smaller09 { font-size: 0.9em; }
+	</style>
 </head>
 
 <body>
@@ -88,13 +89,16 @@ Good luck, and many thanks again!
 	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
 	<div id="divider_container">
 		<div id="chapter_name">
-			<div style="font-size: 0.75em">
-			COMO SE LEMBRAR DE QUALQUER COISA PARA (QUASE) SEMPRE
+			<div>
+				COMO SE LEMBRAR DE QUALQUER COISA PARA (QUASE) SEMPRE
 			</div>
 			<!-- TRANSLATOR NOTE: add a hint of silliness at the end, like "ish" or "sorta" -->
 		</div>
-		<div style="text-align:right;">
-			por nicky case &middot; outubro de 2018
+		<div style="text-align:right; position:relative;">
+			<div style="position:absolute;">
+				tempo de leitura: 20 minutos
+			</div>
+			por nicky case &middot; oct 2018
 			<br>
 			<span id="translation_credits"></span> 
 			<!-- TRANSLATOR NOTE: when you update translations.txt, your name will appear here! -->
@@ -195,10 +199,10 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=500 h=350>
 <pic src="pics/intro0.png" sx=400 sy=500></pic>
-<words x=95 y=30 w=340 no-bg>
-	Mas e se eu disser que há uma maneira de aprender que é baseada em evidências <i>e</i> divertida?
+<words x=95 y=30 w=340 no-bg style="font-size: 0.7em;">
+	Mas e se eu disse-se que há uma maneira de aprendizagem que é baseada em evidências <i>e</i> divertida?
 </words>
-<words x=164 y=141 w=300 no-bg>
+<words x=164 y=141 w=300 no-bg style="font-size: 0.9em;">
 	E se eu dissesse que há um jogo de cartão de memória que você pode jogar, por 20 minutos por dia,
 	para armazenar <i>qualquer coisa que escolher</i> na memória de longo prazo, para <i>sempre?*</i>
 </words>
@@ -219,12 +223,11 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <pic src="pics/intro0.png" sx=950 sy=0></pic>
 <words x=10 y=10 w=430 h=60>
 	E é <i>incrível</i>.
-	Comecei a usar a Repetição Espaçada no início deste ano para aprender francês.
-
+	Comecei a usar a Repetição Espaçada no início deste ano para aprender Francês.
 </words>
 <words x=30 y=350 w=430 h=60>
 	Em dois <i>meses</i> eu aprendi mais palavras do que em dois <i>anos</i>
-	de aulas de francês no ensino médio.
+	e aulas de Francês no ensino médio.
 </words>
 </panel>
 
@@ -233,68 +236,68 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <words x=10 y=10 w=400 h=60>
 	Desde então, passei a usar a Repetição Espaçada para lembrar de todo tipo de coisa...
 </words>
-<words x=81 y=113 w=100 style="text-align:left" no-bg class="comic_text">
+<words x=81 y=113 w=100 style="text-align:left" no-bg class="comic_text text_smaller">
 	acordes de ukulele
 </words>
-<words x=212 y=114 w=100 style="text-align:left" no-bg class="comic_text">
-	código de programação
+<words x=212 y=114 w=100 style="text-align:left" no-bg class="comic_text text_smaller">
+	códigos de programação
 </words>
-<words x=380 y=137 w=100 style="text-align:left" no-bg class="comic_text">
+<words x=380 y=137 w=100 style="text-align:left" no-bg class="comic_text text_smaller">
 	aniversário de amigos
 </words>
-<words x=188 y=204 w=270 style="text-align:left" no-bg class="comic_text">
+<words x=188 y=204 w=270 style="text-align:left" no-bg class="comic_text text_smaller">
 	qualquer coisa interessante que eu encontre em livros, palestras, artigos, etc!
 </words>
-<words x=60 y=300 w=400 h=60>
+<words x=60 y=300 w=400 h=60 class="text_smaller08">
 	...e este joguinho de cartas de memória tornou-se uma parte essencial da minha <i>vida</i>.
 </words>
 </panel>
 
 <panel w=550 h=350>
 <pic src="pics/intro0.png" sx=0 sy=850></pic>
-<words x=10 y=10 w=500 h=30>
+<words x=10 y=10 w=500 h=30 class="text_smaller09">
 	Resumidamente, Repetição Espaçada = ensaio + tempo
 </words>
-<words x=10 y=220 w=500 h=90>
+<words x=10 y=220 w=500 h=90 class="text_smaller08">
 	Você se testa em um fato repetidamente, espaçando suas repetições ao longo do tempo.
-	(Mas isso não vai demorar para sempre? Ah, como veremos mais tarde, há um truque...)
+	(Mas então isso não vai demorar para sempre? Ah, como veremos logo, há um truque...)
 </words>
 </panel>
 
 <panel w=400 h=400>
 <pic src="pics/intro0.png" sx=0 sy=1200></pic>
-<words x=10 y=20 w=290 no-bg>
+<words x=10 y=20 w=290 no-bg class="text_smaller08">
 	Repetição Espaçada é gratuita, baseada em evidências, e tão simples que você pode fazê-lo com uma <i>caixa de sapatos</i>.
 </words>
 <words x=308 y=265 w=50 no-bg class="comic_text" style="text-align:left; font-size:20px">
-	nicky cala boca
+	nicky cala a boca
 </words>
-<words x=90 y=130 w=270 no-bg>
-	Então, qual é o truque? Por que nem <i>todo mundo</i> já está fazendo Repetição Espaçada?
+<words x=90 y=130 w=270 no-bg class="text_smaller08">
+	Então, qual é o truque? Por que não está <i>todo mundo</i> já fazendo Repetição Espaçada?
 </words>
 </panel>
 
 <panel w=400 h=400>
 <pic src="pics/intro0.png" sx=400 sy=1200></pic>
-<words x=10 y=20 w=330 no-bg>
+<words x=10 y=20 w=330 no-bg class="text_smaller08">
 	Bem, a pegadinha é que criar <i>qualquer</i> novo hábito é difícil
 	- especialmente um hábito estranho como Repetição Espaçada.
 </words>
 <words x=292 y=303 w=80 no-bg class="comic_text" style="text-align:left; font-size:20px">
-	professor está vindo
+	professor tá vindo
 </words>
-<words x=100 y=134 w=270 no-bg>
+<words x=100 y=134 w=270 no-bg class="text_smaller08">
 	É por isso que fiz esse quadrinho interativo mal desenhado.
 </words>
 </panel>
 
 <panel w=400 h=400>
 <pic src="pics/intro0.png" sx=800 sy=1200></pic>
-<words x=10 y=20 w=300 no-bg>
+<words x=20 y=20 w=280 no-bg class="text_smaller09">
 	Nestes quadrinhos em Repetição Espaçada,
 	vou mostrar POR QUE funciona, COMO funciona...
 </words>
-<words x=110 y=140 w=250 no-bg>
+<words x=110 y=140 w=250 no-bg class="text_smaller09">
 	... e ajudar você a começar com isso <i>HOJE</i>.
 </words>
 </panel>
@@ -305,7 +308,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 	Além disso, ao longo deste quadrinho,
 	você pode testar o que aprendeu
 	em intervalos espaçados.
-	<b>Ou seja: você usará Repetição Espaçada para aprender Repetição Espaçada.</b>
+	<b>Ou seja: você usará Repetição Espaçada para aprender sobre Repetição Espaçada.</b>
 
 	<br><br>
 	Igual a:
@@ -324,7 +327,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 	Não podemos pesquisar tudo hoje em dia?
 	Não deveríamos aprender criatividade &amp; pensamento crítico?
 </words>
-<words x=30 y=320 w=480 h=90>
+<words x=30 y=320 w=480 h=90 class="text_smaller08">
 	Não <i>há</i> um "em vez disso".
 	A ciência cognitiva mostra
 	que você <i>precisa</i> de memorização para criatividade &amp; pensamento crítico.
@@ -343,31 +346,29 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=550 h=300>
 <pic src="pics/intro0.png" sx=0 sy=1600></pic>
-<words x=10 y=20 w=310 no-bg>
+<words x=10 y=20 w=310 no-bg class="text_smaller07">
 	Repetição Espaçada não é um "truque de estudo".
 	Não é um "truque de produtividade".
 </words>
-<words x=30 y=113 w=320 no-bg>
+<words x=32 y=113 w=315 no-bg class="text_smaller08">
 	É uma maneira de retomar o controle de sua <i>mente</i>.
 	Para tornar a memória de longo prazo uma <i>escolha</i>.
-	Para desenvolver um amor ao longo da vida de aprendizagem...
+	Para desenvolver um amor duradouro com a aprendizagem...
 </words>
 </panel>
 
-
-<!--
-	TRANSLATOR NOTE: I'm not really sure how to translate this meme reference to portuguese (fititnt, 2018-10-28 06:04UTC)
--->
-
 <panel w=400 h=550>
 <pic src="pics/intro0.png" sx=550 sy=1600></pic>
-<words x=20 y=20 w=330 h=30>
+<words x=20 y=20 w=330 h=30 class="text_smaller08">
+	<!--
+		TRANSLATOR NOTE: I'm not really sure how to translate this meme reference to portuguese (fititnt, 2018-10-28 06:04UTC)
+	-->
 	...para cuidar da sua própria Musa interior.
 </words>
 <words x=117 y=131 w=140 no-bg class="comic_text" style="font-size:20px; color:#fff">
-	Tony Stark nearly gasped as a gloved hand trailed down his spine.
-	The steady pressure was smooth and almost reassuring.
-	Obama chuckled. “You mean, the–
+	Tony Stark quase ficou ofegante quando uma mão enluvada percorreu sua espinha.
+	A pressão constante era suave e quase reconfortante.
+	Obama riu. “Você quer dizer, o–
 </words>
 <words x=240 y=480 w=120 h=30>
 	Vamos começar.
@@ -455,7 +456,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=600 h=80>
 <words w=600 x=-15 no-bg>
-	Aqui está uma simulação jogável da Curva do Esquecimento.
+	Aqui está uma simulação interativa da Curva do Esquecimento.
 	<b>Altere a taxa de decaimento da memória. O que acontece com o curva?</b>
 </words>
 </panel>
@@ -466,8 +467,8 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=600 h=90>
 <words w=600 x=-15 no-bg>
-	Como você pode ver, quanto menos a declínio, mais plana a curva -
-	ou seja, quanto mais a memória durar.
+	Como você pode ver, quanto menor o declínio, mais plana a curva -
+	ou seja, mais sua memória ira durar.
 </words>
 </panel>
 
@@ -498,7 +499,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=400 h=400>
 <pic src="pics/sci0.png" sx=800 sy=500></pic>
 <words x=10 y=10 w=300>
-	(embora, quando você para de praticar, ele ainda decai.)
+	(embora, quando você para de praticar, ela ainda decai.)
 </words>
 <words x=41 y=121 w=150 no-bg class="comic_text smaller">
 	ok, tchau sarah!
@@ -518,7 +519,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <words w=600 x=-15 no-bg>
 	Aqui está a simulação novamente, com uma única sessão de rememoração ativa.
 	<br>
-	(linha cinza: que memória teria sido <i>sem</i> a rememoração)
+	(linha cinza: como a memória seria <i>sem</i> a rememoração)
 	<br>
 	<b>Altere o tempo de rechamada para ver como isso afeta a curva:</b>
 </words>
@@ -539,10 +540,10 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <pic src="pics/sci1.png" sx=0 sy=0></pic>
 <words x=10 y=10 w=390>
 	Existe uma maneira melhor de aprender?
-	Há sim! O truque para lembrar...
+	Há sim! O truque para memorização...
 </words>
 <words x=210 y=330 w=200>
-	...<i>é quase esquecer.</i>
+	...<i>é praticamente esquecer.</i>
 </words>
 </panel>
 
@@ -557,7 +558,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=500 h=300>
 <pic src="pics/sci1.png" sx=450 sy=300></pic>
 <words x=250 y=20 w=200>
-	...nem um que é muito difícil.
+	...nem com um que é muito difícil.
 </words>
 </panel>
 
@@ -565,7 +566,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <pic src="pics/sci1.png" sx=950 sy=0></pic>
 <words x=10 y=10 w=300>
 	O mesmo é verdade para treinar o seu cérebro.
-	Você precisa de uma <b>dificuldade desejável</b>: o ponto ideal de apenas difícil suficiente.
+	Você precisa de uma <b>dificuldade desejável</b>: o ponto ideal de "o difícil o suficiente".
 </words>
 <words x=55 y=187 w=100 no-bg class="comic_text smaller" style="text-align:left">
 	confortável
@@ -597,8 +598,9 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=600 h=120>
 <words w=600 x=-15 no-bg>
 	Mesma simulação de antes, mas agora mostra o
-	<span style="background:#ffe866">ponto ideal</span>
-	- onde você esqueceu <i>apenas um pouco</i>. <b>Coloque o rememorar no <i>meio</i> do ponto ideal. O que acontece?</b>
+	<span style="background:#ffe866">ponto ideal</span> -
+	onde você esqueceu <i>apenas um pouco</i>.
+	<b>Coloque o rememorar no <i>meio</i> do ponto ideal. O que acontece?</b>
 </words>
 </panel>
 
@@ -608,8 +610,8 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=600 h=90>
 <words w=600 x=-15 no-bg>
-	Vejo? Se você acertar a rememoração no ponto ideal,
-	você pode retardar um pouco a decadência!
+	Viu? Se você acertar a rememoração no ponto ideal,
+	você pode retardar a decadência um pouquinho!
 	Agora, o que acontece com <i>várias</i> rememorações?
 </words>
 </panel>
@@ -636,7 +638,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 	Você deve ter intervalos espaçados uniformes?
 	Lacunas crescentes?
 	Lacunas decrescentes?
-	Ou torná-lo imprevisível, para mantê-la uma pessoa atenta?
+	Ou torná-lo imprevisível, para mantê-lo uma pessoa atenta?
 </words>
 <words x=259 y=16 w=100 no-bg class="comic_text smaller" style="text-align:left; color:#000">
 	= rememoração
@@ -672,7 +674,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel fadeInOn="flip_guessgap" w=600 h=140>
 <words w=600 x=-15 y=0 no-bg>
 	O que é muito contra-intuitivo!
-	Você pode provar para si que isso é verdade, jogando com a simulação abaixo.
+	Você pode provar para si mesmo que isso é verdade, brincando com a simulação abaixo.
 	<b>
 	Mova as rememorações para o <i>meio</i> do <span style="background:#ffe866">ponto ideal</span>.
 	Qual espaçamento você terá?
@@ -689,7 +691,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 	(Pra provar que isso não é por acaso,
 	aqui está um simulador em que você pode mudar
 	o decaimento de memória inicial &amp; ponto ideal.
-	Note como, em todos casos não extremos,
+	Note como, em todos, exceto nos casos extremos,
 	o melhor cronograma ainda é "lacunas incrementais"!)
 </words>
 </panel>
@@ -706,7 +708,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 	a taxa de esquecimento fica mais devagar...
 </words>
 <words x=25 y=187 w=50 no-bg class="comic_text smaller" style="text-align:left">
-	it's
+	é
 </words>
 <words x=16 y=177 w=300 no-bg class="comic_text" style="font-size:100px; transform: rotate(-5deg);">
 	SUSAN!
@@ -725,7 +727,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=500 h=500>
 <pic src="pics/sci2.png" sx=350 sy=450></pic>
 <words x=10 y=10 w=400>
-	Mas você sabe o que é mais encantador?
+	Mas você sabe o que é mais legal?
 	Isso também significa que se você cronometra suas rememorações corretamente...
 </words>
 <words x=60 y=400 w=400>
@@ -813,7 +815,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <pic src="pics/leit0.png" sx=0 sy=0></pic>
 <words x=10 y=10 w=430 h=60>
 	Você não <i>precisa</i> usar uma caixa de sapatos para a Repetição Espaçada,
-	mas é mais engraçado se você fizer isso.
+	mas é mais legal se você fizer isso.
 </words>
 <words x=3 y=119 w=140 no-bg class="comic_text smaller" style="font-size:22px">
 	e este é meu professor particular
@@ -825,8 +827,11 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 	<!--
 		TRANSLATOR NOTE, PT: I'm not sure what to use here. Define later (fititnt, 2018-11-14 02:46UTC)
 	-->
+	<!--
+		TRANSLATOR NOTE, PT: I translated to "they help me go far" (ramon-mendes)
+	-->
 
-	they're TRAINERS
+	eles me ajudam ir mais longe
 	<!--
 	TRANSLATOR NOTE:
 	this is a pun that may not work in all languages.
@@ -839,7 +844,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 </words>
 
 <words x=30 y=350 w=430 h=60>
-	(Mais tarde, vamos ver alguns <i>aplicativos</i> que usam técnica da Repetição Espaçada,
+	(Mais tarde, vamos ver alguns <i>aplicativos</i> que usam a  técnica da Repetição Espaçada,
 	como Anki &amp; Tinycards)
 </words>
 </panel>
@@ -871,18 +876,18 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 	Todos os novos flashcards começam no Nível 1.
 </words>
 <words x=30 y=270 w=430 h=60>
-	(Se você é está iniciando na Repetição Espaçada, recomendo começar com 5 novas cartas por dia.)
+	(Se você está iniciando na Repetição Espaçada, recomendo começar com 5 novas cartas por dia.)
 </words>
 </panel>
 
 <panel w=500 h=400>
 <pic src="pics/leit0.png" sx=500 sy=480></pic>
 <words x=10 y=10 w=430 h=60>
-	Quando você rememorar um cartão e acerta, ele sobe <i>um</i> Nível.
+	Quando você rememorar um flashcard e acertá-lo, ele sobe <i>um</i> Nível.
 </words>
 <words x=30 y=300 w=430 h=60>
 	(Se você está no Nível final, parabéns!
-	Seu cartão se aposenta. Lá vai ele, para o céu do cartões.)
+	Seu cartão se aposenta. Lá vai ele, para o céu dos cartões.)
 </words>
 </panel>
 
@@ -902,20 +907,21 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=500 h=400>
 <pic src="pics/leit0.png" sx=0 sy=1370></pic>
 <words x=10 y=10 w=430 h=120>
-	But <i>when</i> do we review cards?
-	That's the trick.
-	In the Leitner Box, we review Level 1 cards every day,
-	Level 2 every two days, Level 3 every <i>FOUR</i> days,
-	Level 4 every <i>EIGHT</i> days, etc...
+	Mas <i>quando</i> nós revisamos os flashcards?
+	Este é o segredo.
+	Na Leitner Box, nós revisamos o Nível 1 todo dia,
+	Nível 2 a cada dois dias, Nível 3 a cada <i>QUATRO</i> dias,
+	Nível 4 a cada <i>OITO</i> dias, etc...
 </words>
 <words x=30 y=300 w=430 h=60>
-	The pattern is: we <i>double the gap</i> (# of days between reviews) for each Level!
+	O padrão é: nós <i>dobramos a intervalo</i> (# de dias entre revisões) para cada Nível!
 </words>
 </panel>
 
 <panel w=600 h=60>
 <words w=600 x=-15 no-bg>
-	Here's what the looping 64-day game calendar looks like:
+	<!-- Translation from: Here's what the looping 64-day game calendar looks like: -->
+	Aqui está como o um looping de 64 dias do jogo irá parecer:
 </words>
 </panel>
 
@@ -926,43 +932,43 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=500 h=490>
 <pic src="pics/leit0.png" sx=500 sy=870></pic>
 <words x=10 y=10 w=430 h=90>
-	(Note: the reason we review Level 1 at the end
-	is so you'll see your new cards <i>and</i> the cards you forgot from higher Levels.)
+	(Nota: o motivo pelo qual revisamos o nível 1 no final
+	é que com isso você verá novas cartões <i>e</i> os cartões que você esqueceu de níveis superiores.
 </words>
 <words x=30 y=330 w=430 h=120>
-	(At the end of a daily game of Repetição Espaçada,
-	leave no cards in Level 1.
-	Test yourself until you can get them all right,
-	and move them up to Level 2!)
+	(No fim de um jogo diário de Repetição Espaçada,
+	não deixe nenhum carta no Nível 1.
+	Teste-se até que você consiga acertar todas,
+	a então mova-as para o Nível 2!)
 </words>
 </panel>
 
 <panel w=400 h=400>
 <pic src="pics/leit0.png" sx=600 sy=1400></pic>
 <words x=10 y=10 w=350 h=90>
-	(Note #2: Repetição Espaçada <i>apps</i> like Anki use a more sophisticated algorithm...)
+	(Nota #2: <i>apps</i> de Repetição Espaçada como Anki usam um algorítmo mais sofisticado...)
 </words>
 <words x=10 y=300 w=350 h=60>
-	(...but at its core, they work on the same principles as the Leitner Box)
+	(...mas no seu cerne, eles funcionam com o mesmo princípio na Leitner Box)
 </words>
 </panel>
 
 <panel w=400 h=450>
 <pic src="pics/leit0.png" sx=0 sy=1800></pic>
 <words x=10 y=10 w=350 h=90>
-	(Note #3: Oh, and with a few index cards &amp; tape,
-	you can make your own foldable, looping calendar!)
+	(Nota #3: Ah, e com alguns cartões e fita para colar,
+	você pode fazer seu próprio calendário dobrável)
 </words>
 <words x=10 y=350 w=350 h=60>
-	(at the end, I'll link to a video tutorial for crafting a Leitner Box)
+	(no fim deste vídeo, eu irei deixar um link para um vídeo de como montar sua Leitner Box)
 </words>
 </panel>
 
 <panel w=600 h=80>
 <words w=600 x=-15 no-bg>
-	Now, to show the game in action!
-	Here's a <i>step-by-step</i> simulation of the Leitner Box:
-	<b>(we'll see a <i>month-by-month</i> sim later)</b>
+	Agora, para mostrar o jogo em ação!
+	Aqui está uma simulação <i>passo-a-passo</i> da Leitner Box:
+	<b>(nós iremos ver uma <i>simulação</i> mês-a-mês mais tarde)</b>
 </words>
 </panel>
 
@@ -972,34 +978,34 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=600 h=110>
 <words w=600 x=-15 no-bg>
-	Each daily review takes 20-30 minutes.
-	Instead of watching a TV episode, you could play a card game –
-	and remember anything you want <i>for life</i>.
+	Cada revisão diárioa demora 20-30 minutos.
+	Ao invês de assistir um episódio na TV, você pode jogar este jogo - 
+	a lembrar de qualquer coisa <i>por uma vida</i>.
 </words>
 </panel>
 
 <panel w=500 h=400>
 <pic src="pics/leit1.png" sx=0 sy=0></pic> 
 <words x=10 y=10 w=430 h=60>
-	However, habits are hard. If you start big, you won't get the ball rolling...
+	No entanto, hábitos são difíceis. Se você começa grande demais, você não irá conseguir fazer a bola rolar...
 </words>
 <words x=20 y=300 w=450 h=60>
-	But if you start <i>small</i>, you can gain momentum,
-	and roll your snowball bigger and bigger.
+	Mas se você começar <i>pequeno</i>, você pode ganhar <i>impulso</i>
+	e rolar sua bola de neve que irá ficar maior e maior.
 </words>
 </panel>
 
 <panel w=500 h=690>
 <pic src="pics/leit1.png" sx=0 sy=400></pic>
 <words x=10 y=10 w=430 h=60>
-	That's why I recommend <i>starting</i> with 5 new cards a day.
+	Por isso eu recomendo <i>iniciar</i> com 5 novas cartas por dia.
 </words>
 <words x=30 y=300 w=430 h=60>
-	Once you're comfortable with that, you can do 10 new cards/day.
-	Then 15. Then 20, 25, 30.
+	Uma vez que você está confortável com isso, você pode tentar 10 novar cartas por dia.
+	Depois 15. Então 20, 25, 30.
 </words>
 <words x=10 y=590 w=430 h=60>
-	And at 30 new cards a day, you can learn <i>10,000+</i> new facts/words/etc a <i>year.</i>
+	E com 30 cartas novas por dia, você pode aprender <i>10,000+</i> novos fatos/palavras/etc por <i>ano.</i>
 </words>
 <words x=16 y=497 w=200 no-bg class="comic_text smaller" style="text-align:right">
 	na na na na na na na na na
@@ -1013,8 +1019,8 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=600 h=80>
 <words w=600 x=-15 no-bg>
-	Now, here's the month-by-month simulation.
-	Use this to calculate in advance how much <i>you</i> can learn with Repetição Espaçada!
+	Agora, aqui está a simulação mês-a-mês.
+	Use isto para calcular antecipadamente quanto <i>você</i> pode aprender com Repetição Espaçada!
 </words>
 </panel>
 
@@ -1024,10 +1030,10 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=600 h=110>
 <words w=600 x=-15 no-bg>
-	That's it. That's how you can make long-term memory a <i>choice</i>.
+	Ê isto. Ê assim que você pode fazer ter uma memória de longo termo uma <i>escolha</i>.
 </words>	
 <words w=600 x=-15 y=50 no-bg>
-	Let's let that sink in. Take a break, and recall what we just learnt:
+	Vamos deixar isto afundar. Respire, e lembre-se do que nós acabamos de aprender:
 </words>
 </panel>
 
@@ -1037,83 +1043,83 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=600 h=80>
 <words w=600 x=-15 no-bg>
-	Repetição Espaçada almost seems too good to be true.
+	Repetição Espaçada quase parece fácil demais para ser verdade.
 	<br>
-	And it is... <i>IF</i> you fall for some very common pitfalls.
+	E realmente é... <i>SE</i> você evitar algumas armadilhas muito comuns.
 </words>	
 </panel>
 
 <panel w=500 h=450>
 <pic src="pics/leit1.png" sx=500 sy=0></pic>
 <words x=10 y=10 w=420 h=60>
-	Memory isn't a bookshelf
-	where you collect random giant tomes to impress others.
+	Sua memória não é uma estante de livros
+	onde você coleciona volumes gigantes aleatórios para impressionar os outros.
 </words>
 <words x=-15 y=210 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
-	a bunch of
+	um monte de
 </words>
 <words x=39 y=216 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(86deg)">
-	crap you'll
+	porcaria
 </words>
 <words x=100 y=211 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(74deg)">
-	never get
+	que nunca
 </words>
 <words x=144 y=212 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
-	around to
+	irá
 </words>
 <words x=199 y=214 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(84deg)">
-	reading
+	ler
 </words>
 <words x=10 y=350 w=450 h=60>
-	That's to say: Repetição Espaçada will fail if your cards feel
-	<i>bloated</i>, <i>disconnected</i> or <i>meaningless</i>.
+	A Repetição Espaçada falhará se suas cartas forem:
+	<i>pesadas</i>, <i>disconectadas</i> ou <i>sem sentido</i>.
 </words>
 </panel>
 
 <panel w=500 h=450>
 <pic src="pics/leit1.png" sx=500 sy=450></pic>
 <words x=10 y=10 w=430 h=90>
-	Instead, memory is like a jigsaw puzzle: full of small, connected pieces.
-	(This is also how neurons work: lots of small, connected things)
+	Em vez disso, a memória é como um quebra-cabeça: cheia de pedaços pequenos que se conectam.
+	(Também é assim que os neurônios funcionam: muitas coisas pequenas e conectadas)
 </words>
 <words x=30 y=380 w=430 h=30>
-	It's not about <i>collection</i>, it's about <i>connection</i>.
+	Então não é sobre <i>colecionar</i>, mas sim sobre <i>conectar</i>.
 </words>
 </panel>
 
 <panel w=500 h=400>
 <pic src="pics/leit1.png" sx=500 sy=900></pic>
 <words x=10 y=10 w=410 h=60>
-	Thus, to get the most out of Repetição Espaçada,
-	you must make your cards...
+	Assim, para tirar o máximo proveito da Repetição Espaçada,
+	você deve fazer seus cartões ...
 </words>
 <words x=-38 y=227 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
-	SMALL
+	PEQUENOS
 </words>
 <words x=94 y=257 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
-	CONNECTED
+	CONECTADOS
 </words>
 <words x=262 y=298 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
-	&amp; MEANINGFUL
+	&amp; SIGNIFICANTES
 </words>
 </panel>
 
 <panel w=450 h=60>
 <words w=450 x=-15 no-bg>
-	Let's see how.
+	Vamos ver como.
 </words>	
 </panel>
 
 <panel w=600 h=150>
 <pic src="pics/leit2.png" sx=0 sy=0></pic>
 <words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
-	SMALL
+	PEQUENOS
 </words>
 </panel>
 
 <panel w=450 h=50>
 <words w=450 x=-15 no-bg>
-	This card sucks:
+	Este cartão é uma merda:
 </words>	
 </panel>
 
@@ -1124,12 +1130,12 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=450 h=380>
 <pic src="pics/leit2.png" sx=0 sy=450></pic>
 <words x=10 y=10 w=400 h=30>
-	It's too big. Too much information.
+	É muito grande. Muita informação.
 </words>
 <words x=10 y=250 w=400 h=90>
-	Let's cut it up into smaller, connected pieces!
-	As a rule of thumb, <i>each flashcard should have one &amp; only one idea.</i>
-	Like so:
+	Vamos cortá-lo em pedaços menores e conectados!
+	Como regra geral, <i>cada flashcard deve ter uma &amp; apenas uma ideia.</i>
+	Como exemplo:
 </words>
 </panel>
 
@@ -1167,29 +1173,29 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=450 h=90>
 <words w=450 x=-15 no-bg>
-	Facts connect to facts.
-	But there's other, more playful ways for cards to be...
+	Fatos se conectam a fatos.
+	Mas há outras maneiras mais divertidas de as cartas serem ...
 </words>	
 </panel>
 
 <panel w=600 h=150>
 <pic src="pics/leit2.png" sx=0 sy=150></pic>
 <words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
-	CONNECTED
+	CONECTADAS
 </words>
 </panel>
 
 <panel w=450 h=110>
 <words w=450 x=-15 no-bg>
-	This card is... alright.
-	It's an English word on the front, French word on the back.
+	Este cartão ... está legal.
+	É uma palavra em ingês na frente, uma palavra em francês atrá.
 	<!--
 	TRANSLATOR NOTE:
 	If the language you're translating for is NOT French,
 	replace "English" with [your language]
 	-->
-	It's the standard for most language-learning flashcards:
-</words>	
+	É o padrão para a maioria dos flashcards de aprendizado de idiomas:
+</words>
 </panel>
 
 <panel w=600 h=300 bg="#e0e0e0">
@@ -1199,12 +1205,12 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=450 h=400>
 <pic src="pics/leit2.png" sx=0 sy=800></pic>
 <words x=10 y=10 w=400 h=60>
-	But you know what would make it stick in memory better?
+	Mas você sabe o que o faria isso fixar melhor na memória?
 </words>
 <words x=10 y=300 w=400 h=60>
-	If you connected it to
-	<i>pictures, sounds, context, and/or personal details!</i>
-	Like so:
+	Se você conecta-se isso a
+	<i>imagens, sons, contexto e / ou detalhes pessoais!</i>
+	Igual a:
 </words>
 </panel>
 
@@ -1215,22 +1221,22 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=600 h=300>
 <pic src="pics/leit2.png" sx=600 sy=0></pic>
 <words x=10 y=10 w=210>
-	The front now has a drawing of a cat (picture)
-	with a fill-in-the-blank French sentence (context: grammar)
-	about my childhood cat, Stripes. (personal)
+	A frente agora tem um desenho de um gato (foto)
+	com uma frase francesa em branco (contexto: gramática)
+	sobre o meu gato de infância, Stripes. (pessoal)
 </words>
 </panel>
 
 <panel w=600 h=300>
 <pic src="pics/leit2.png" sx=600 sy=300></pic>
 <words x=10 y=10 w=210>
-	The back now has a symbol of the noun's gender (picture),
-	its pronunciation (sound*),
-	and a warning about the female version of the noun. (context: slang)
+	A parte de trás agora tem um símbolo do gênero do substantivo (foto),
+	sua pronúncia (som *),
+	e um aviso sobre a versão feminina do substantivo. (contexto: gíria)
 </words>
 <words w=330 x=250 y=225 no-bg fontsize=20>
-	* Obviously, paper cards can't play sounds.
-	But apps like Anki/Tinycards can!
+	* Obviamente, os cartões de papel não podem reproduzir sons.
+	Mas aplicativos como o Anki / Tinycards podem!
 </words>
 <audio controls style="position: absolute; top: 105px; left: 280px; transform: scale(0.4) rotate(4deg);">
 	<source src="audio/chat.mp3" type="audio/mpeg">
@@ -1239,50 +1245,50 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=450 h=90>
 <words w=450 x=-15 no-bg>
-	But the <i>most</i> important connection of all,
-	is to connect your learning to something that is...
+	Mas a conexão <i>mais</i> importante de todas,
+	é conectar sua aprendizagem a algo que é ...
 </words>	
 </panel>
 
 <panel w=600 h=150>
 <pic src="pics/leit2.png" sx=0 sy=300></pic>
 <words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
-	MEANINGFUL
+	SIGNIFICATIVO
 </words>
 </panel>
 
 <panel w=500 h=350>
 <pic src="pics/leit2.png" sx=450 sy=600></pic>
 <words x=10 y=10 w=450 h=60>
-	Personally, here's how I've learnt best:
-	First, I try (emphasis on <i>try</i>) to <b>do</b> something.
+	Pessoalmente, aqui está como aprendi melhor:
+	Primeiro, eu tento (ênfase em <i>tento</i>) <b>fazer</b> alguma coisa.
 </words>
 <words x=11 y=113 w=160 no-bg class="comic_text">
-	play the ukulele
+	tocar ukulele
 </words>
 <words x=183 y=104 w=140 no-bg class="comic_text">
-	read french comics
+	ler quadrinhos franceses
 </words>
 <words x=336 y=109 w=100 no-bg class="comic_text">
-	make a web game
+	fazer um jogo na web
 </words>
 </panel>
 
 <panel w=500 h=350>
 <pic src="pics/leit2.png" sx=950 sy=600></pic>
 <words x=10 y=10 w=450 h=60>
-	Inevitably, I'll get stuck.
-	In that moment, I'll look up what I need,
-	and <b>learn</b> something.
+	Inevitavelmente, vou ficar preso.
+	Naquele momento, vou procurar o que preciso,
+	e <b>apreender</b> alguma coisa.
 </words>
 <words x=6 y=102 w=130 no-bg class="comic_text">
-	how do you play F#?
+	como você toca F#?
 </words>
 <words x=133 y=104 w=180 no-bg class="comic_text">
-	what's "attraper" mean?
+	o que "attraper" significa?
 </words>
 <words x=301 y=109 w=190 no-bg class="comic_text">
-	why is javascript such a piece of sh–
+	por que é javascript um pedaço de m-
 	<!-- TRANSLATOR NOTE: again, don't complete the swear. have it cut out -->
 </words>
 </panel>
@@ -1293,24 +1299,24 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 
 <panel w=450 h=30>
 <words w=450 x=-15 y=-15 no-bg>
-	And so on.
+	E assim por diante.
 </words>
 </panel>
 
 <panel w=450 h=400>
 <pic src="pics/leit2.png" sx=450 sy=950></pic>
 <words x=10 y=10 w=400 h=60>
-	That, I believe, is the best way to keep yourself motivated while learning:
+	Essa, eu acredito, é a melhor maneira de se manter motivado enquanto aprende:
 </words>
 <words x=10 y=300 w=400 h=60>
-	By making sure your learning is in service of <i>doing something you care about.</i>
+	Certificando-se de que seu aprendizado <i>está a serviço de fazer algo que lhe interessa.</i>
 </words>
 </panel>
 
 <panel w=600 h=90>
 <words w=600 x=-15 no-bg>
-	Speaking of learning, let's practice recalling what we've learnt:
-	(this will be the second-last time!)
+	Falando de aprendizado, vamos praticar recordando o que aprendemos:
+	(esta será a segunda vez!)
 </words>
 </panel>
 
@@ -1321,29 +1327,29 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=400 h=400>
 <pic src="pics/leit3.png" sx=0 sy=450></pic>
 <words x=10 y=20 w=350 no-bg>
-	The consensus in the Repetição Espaçada community is,
-	after a while, <b>you should make your own cards.</b>
+	O consenso na comunidade da Repetição Espaçada é,
+	depois de um tempo, <b>você deve fazer seus próprios cartões.</b>
 </words>
 <words x=33 y=140 w=230 no-bg>
-	This way, you can connect facts to what <i>you</i> know, what <i>you</i> love.
+	Desta forma, você pode conectar fatos ao que <i>você</i> sabe, o que <i>você</i> ama.
 </words>
 </panel>
 
 <panel w=400 h=400>
 <pic src="pics/leit3.png" sx=400 sy=450></pic>
 <words x=10 y=15 w=300 no-bg>
-	That's why, in the <i>final</i> part of this interactive comic,
-	you're going to make your <i>own</i> cards!
+	É por isso que, na parte <i>final</i> deste comic interativo,
+	você vai fazer suas <i>próprias</i> cartas!
 </words>
 <words x=30 y=165 w=170 no-bg>
-	And those cards will be about...
+	E esses cartões serão sobre ...
 </words>
 </panel>
 
 <panel w=400 h=400>
 <pic src="pics/leit3.png" sx=800 sy=450></pic>
 <words x=0 y=10 w=230 fontsize=150 no-bg color="#ffffff">
-	YOU
+	VOCÊ
 </words>
 </panel>
 
@@ -1365,7 +1371,7 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 	<div id="divider_container">
 		<div id="chapter_name">
 			<div>
-			GET STARTED TODAY!
+				COMECE HOJE!
 			</div>
 		</div>
 		<div id="chapter_links"></div>
@@ -1377,31 +1383,31 @@ If that's not possible, and your text doesn't fit in its box, you can modify att
 <panel w=500 h=350>
 <pic src="pics/end0.png" sx=0 sy=0></pic>
 <words x=10 y=10 w=450 h=60>
-	To help you get started with Repetição Espaçada <i>today</i>,
-	you need to answer four questions:
+	Para ajudar você a começar a trabalhar com o Repetição Espaçada <i>hoje</i>,
+	você precisa responder quatro perguntas:
 </words>
 <!--
 TRANSLATOR NOTE:
 Remember, if your translated word is too big, you can modify the CSS! (especially font-size)
 -->
 <words x=8 y=237 w=120 no-bg style="color:#fff; font-size:40px">
-	WHAT?
+	O QUE?
 </words>
 <words x=121 y=237 w=120 no-bg style="color:#fff; font-size:40px">
-	WHY?
+	PORQUE?
 </words>
 <words x=226 y=237 w=120 no-bg style="color:#fff; font-size:40px">
-	HOW?
+	COMO?
 </words>
 <words x=337 y=237 w=120 no-bg style="color:#fff; font-size:40px">
-	WHEN?
+	QUANDO?
 </words>
 </panel>
 
 <panel w="600" h="80">
 <words w="600" x="-15" no-bg="">
-	You'll answer these questions by making flashcards!
-	So, here's the <i>front</i> of our first flashcard, our first question:
+	Você vai responder a essas perguntas fazendo flashcards!
+	Então, aqui está a <i>frente</i> do nosso primeiro flashcard, nossa primeira pergunta:
 </words>
 </panel>
 
@@ -1414,28 +1420,28 @@ Remember, if your translated word is too big, you can modify the CSS! (especiall
 <panel w=500 h=450>
 <pic src="pics/end0.png" sx=500 sy=0></pic>
 <words x=10 y=10 w=430 h=60>
-	For example, you could use Repetição Espaçada to help you learn...
+	Por exemplo, você poderia usar Repetição Espaçada para ajudá-lo a aprender ...
 </words>
 <words x=120 y=104 w=100 style="text-align:left" no-bg class="comic_text">
-	a new language
+	uma nova linguagem
 </words>
 <words x=320 y=107 w=100 style="text-align:left" no-bg class="comic_text">
-	a new instrument
+	um novo instrumento
 </words>
 <words x=115 y=195 w=100 style="text-align:left" no-bg class="comic_text">
-	computer programming
+	programação de computadores
 </words>
 <words x=340 y=195 w=150 style="text-align:left" no-bg class="comic_text">
-	details of friends' lives
+	detalhes da vida de seus amigos
 </words>
 <words x=129 y=283 w=200 style="text-align:left" no-bg class="comic_text">
-	anything interesting you find, anywhere!
+	qualquer coisa interessante que você encontrar, em qualquer lugar!
 </words>
 <words x=389 y=290 w=100 style="text-align:left" no-bg class="comic_text">
-	all the pokémon
+	todos os pokémon
 </words>
 <words x=80 y=380 w=380 h=30>
-	Now, you write <i>your</i> answer on the back:
+	Agora, escreva <i>sua</i> resposta na parte de trás:
 </words>
 </panel>
 
@@ -1445,15 +1451,15 @@ Remember, if your translated word is too big, you can modify the CSS! (especiall
 
 <panel fadeInOn="answer_edit_you_what" w="600" h="40" style="margin-bottom: -10px;">
 <words w="600" x="-15" y="-10" no-bg="">
-	(note: you can scroll back here &amp; change your answer later)
+	(nota: você pode rolar para trás aqui &amp; alterar sua resposta mais tarde)
 </words>
 </panel>
 
 <panel w="600" h="80">
 <words w="600" x="-15" no-bg="">
-	However, recall that for Repetição Espaçada to work,
-	you need to connect it to something you <i>care</i> about.
-	So our next question is:
+	No entanto, lembre-se que para A Repetição Espaçada funcionar,
+	você precisa conectá-la a algo que você <i> se importa </ i>.
+	Então, nossa próxima pergunta é:
 </words>
 </panel>
 
@@ -1466,26 +1472,26 @@ Remember, if your translated word is too big, you can modify the CSS! (especiall
 <panel w=500 h=450>
 <pic src="pics/end0.png" sx=1000 sy=0></pic>
 <words x=10 y=10 w=430 h=60>
-	That may be too philosophical, so here's some
-	concrete examples of a <i>why</i> behind a <i>what:</i>
+	Isso pode ser muito filosófico, então aqui vai
+	exemplos concretos de um <i>porquê</i> por trás de um <i> o que:</i>
 </words>
 <words x=130 y=105 w=350 style="text-align:left" no-bg class="comic_text">
-	<b>WHAT:</b> a new language
+	<b>O QUE:</b> um novo idioma
 	<br>
-	<b>WHY:</b> to speak to friends, family, lovers in their native tongue
+	<b>PORQUE:</b> falar com amigos, familiares, uma namorada em sua língua nativa
 </words>
 <words x=130 y=210 w=350 style="text-align:left" no-bg class="comic_text">
-	<b>WHAT:</b> computer programming
+	<b>WHAT:</b> programação de computadores
 	<br>
-	<b>WHY:</b> to make money so you can eat
+	<b>WHY:</b> ganhar dinheiro para você comer
 </words>
 <words x=130 y=290 w=350 style="text-align:left" no-bg class="comic_text">
-	<b>WHAT:</b> anything interesting
+	<b>WHAT:</b> qualquer coisa interessante
 	<br>
-	<b>WHY:</b> curiosity, for its own sake!
+	<b>WHY:</b> curiosidade, por si só!
 </words>
 <words x=210 y=380 w=250 h=30>
-	So... what's <i>your</i> why?
+	Então, qual é o <i>seu</i> porquê?
 </words>
 </panel>
 
@@ -1495,9 +1501,9 @@ Remember, if your translated word is too big, you can modify the CSS! (especiall
 
 <panel w="600" h="80">
 <words w="600" x="-15" no-bg="">
-	You now have your what and why... but we still need to pick a <i>how!</i>
-	That is, what tool/app do you want to use?
-	Our next card asks:
+	Agora você tem o que e por quê... mas ainda precisamos escolher um <i>como!</i>
+	Ou seja, que ferramenta / aplicativo você deseja usar?
+	Nossa próxima carta definirá:
 </words>
 </panel>
 
@@ -1510,7 +1516,7 @@ Remember, if your translated word is too big, you can modify the CSS! (especiall
 <panel w=500 h=700>
 <pic src="pics/end0.png" sx=0 sy=450></pic>
 <words x=10 y=10 w=450 h=90>
-	I currently use
+	Atualmente eu uso
 	<a target="_blank" href="https://en.wikipedia.org/wiki/Leitner_system">The Leitner Box</a>,
 	but my friends use
 	<a target="_blank" href="https://apps.ankiweb.net/">Anki</a>,
