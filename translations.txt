@@ -3,18 +3,18 @@
 // (make sure there's two newlines between yours and the other sections)
 // and translate that. Here's what the lines in each section means
 //
-// 1: your language 2-letter code: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-// 2: your language's name, in its native language
-// 3: the URL of your page. in most cases it'll be ./[2-letter code].html,
+// 1： your language 2-letter code： https：//en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+// 2： your language's name, in its native language
+// 3： the URL of your page. in most cases it'll be ./[2-letter code].html,
 //    but if for whatever reason your translation exists on a different domain altogether,
 //    (say, you need to make significant changes to the code for your translation to work)
 //    you can also link to an absolute URL elsewhere
-// 4: the prompt to ask to switch to your language
+// 4： the prompt to ask to switch to your language
 //    (shows if the user's browser's language is set to yours and they're not already there)
-// 5: a *casual* yes
-// 6: a *casual* no
-// 7: where you can credit yourself!
-// 8: the link to the original English version
+// 5： a *casual* yes
+// 6： a *casual* no
+// 7： where you can credit yourself!
+// 8： the link to the original English version
 
 en
 English
@@ -31,6 +31,51 @@ Sure!
 Nah
 translated by Your Name
 original in english
+
+zh
+简体中文
+./zh.html
+想要切换成简体中文吗？
+好的!
+算了
+由<a target="_blank" href="https://snie2012.github.io/">Shaoliang Nie</a>翻译 Chih-Yu Chin校对
+原文为英语
+
+fr
+Français
+./fr.html
+Voulez-vous voir la version française ?
+Ouais !
+Nan
+traduit par <a href="https://github.com/azarz">azarz</a> et relu par <a href="https://github.com/arnaudgregoire">arnaudgregoire</a>
+original en anglais
+
+ru
+Русский
+./ru.html
+Хочешь переключиться на Русский язык?
+Конечно!
+нет
+перевод <a href="https://toby3d.ru">toby3d</a>
+original in English
+
+es
+Español
+./es.html
+¿Querrías cambiar a la versión en español?
+¡Vale!
+Nanai
+traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a> y <a href="https://github.com/HenrikhWolf">Enrique Mendoza</a>
+original in English
+
+ca
+Catala
+./ca.html
+Voldries canviar a la versió en catalan?
+Val!
+No
+traduït per <a href="https://github.com/saimonmoore">saimonmoore</a>
+original in English
 
 pt
 Portuguese
