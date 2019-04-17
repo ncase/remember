@@ -84,3 +84,4 @@ Gostaria de mudar para o idioma português?
 Óbvio!
 Nah
 Traduzido por <a href="https://github.com/ramon-mendes/">Ramon Mendes</a>
+original in English

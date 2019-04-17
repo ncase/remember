@@ -1,0 +1,2729 @@
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   _______  ___  ____________    ___  _______  ____________________________  _  __
+  / __/ _ \/ _ |/ ___/ __/ _ \  / _ \/ __/ _ \/ __/_  __/  _/_  __/  _/ __ \/ |/ /
+ _\ \/ ___/ __ / /__/ _// // / / , _/ _// ___/ _/  / / _/ /  / / _/ // /_/ /    / 
+/___/_/  /_/ |_\___/___/____/ /_/|_/___/_/  /___/ /_/ /___/ /_/ /___/\____/_/|_/  
+                                                                                  
+=== FAN-TRANSLATION GUIDE ===
+
+Hello fan-translators! From the bottom of my heart:
+thank you for doing this, and, you've no idea what you've gotten yourself into.
+There's about 3500 words to translate, including the flashcards & further reading.
+
+Before doing anything, please read all these steps:
+https://github.com/ncase/remember#how-to-translate
+(emphasis: do NOT edit the original index.html. make a copy of this page!)
+
+To make translation less painful, I've added little HTML comments throughout.
+Look for the ones that say "TRANSLATOR NOTE".
+
+And after translating this page, don't forget to go to translations.txt
+and "add" your translation there! (further instructions will be there)
+
+Good luck, and many thanks again!
+
+<3,
+~ Nicky Case
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!DOCTYPE html>
+<html lang="ca"> <!-- TRANSLATOR NOTE: Remember your 2-letter code? Replace "en" with that! -->
+<head>
+
+	<!-- Meta Stuff -->
+	<title>Com Recordar Tot Gairebé Per Sempre</title>
+	<!-- TRANSLATOR NOTE: Translate the "content" attribute -->
+	<meta name="description" content="Un còmic interactiu sobre l'art i la ciència de la memòria"/>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="favicon.png">
+	
+	<!-- Sharing Card Stuff -->
+	<meta itemprop="name" content="Com Recordar Tot Gairebé Per Sempre"> <!-- TRANSLATE "content" -->
+	<meta itemprop="description" content="Un còmic interactiu sobre l'art i la ciència de la memòria"> <!-- TRANSLATE "content" -->
+	<meta itemprop="image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta name="twitter:title" content="Com Recordar Tot Gairebé Per Sempre"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:description" content="Un còmic interactiu sobre l'art i la ciència de la memòria"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta property="og:title" content="Com Recordar Tot Gairebé Per Sempre"> <!-- TRANSLATE "content" -->
+	<meta property="og:description" content="Un còmic interactiu sobre l'art i la ciència de la memòria"> <!-- TRANSLATE "content" -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ncase.me/remember/">
+	<meta property="og:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/comic.css"/>
+	<meta name="viewport" content="width=600">
+
+</head>
+
+<body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 0: INTRODUCTION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+<a name="0"></a>
+<div class="divider divider_title">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div style="font-size: 75px">
+			COM RECORDAR QUALSEVOL COSA PER QUASI-SEMPRE
+			</div>
+			<!-- TRANSLATOR NOTE: add a hint of silliness at the end, like "ish" or "sorta" -->
+		</div>
+		<div style="text-align:right;">
+			per nicky case &middot; octubre 2018
+			<br>
+			<span id="translation_credits"></span> 
+			<!-- TRANSLATOR NOTE: when you update translations.txt, your name will appear here! -->
+		</div>
+	</div>
+</div>
+
+<div class="comic">
+
+<div id="language_options"></div>
+
+<!--
+
+TRANSLATOR NOTE:
+
+There may already be "official" translations for terms like "Spaced Repetition" or "Forgetting Curve"!
+Go to their Wikipedia pages, scroll down to "Languages" in the left sidebar, and if your language is there,
+click on that Wikipedia page, and use the "official" translated term there.
+
+Spaced Repetition: https://en.wikipedia.org/wiki/Spaced_repetition  Repetició Espaiada
+
+Forgetting Curve: https://en.wikipedia.org/wiki/Forgetting_curve    Corba de l'Oblit
+
+
+-->
+
+<!--
+
+TRANSLATOR NOTE:
+
+Try to make your translated text about the same length or shorter as the original text.
+If that's not possible, and your text doesn't fit in its box, you can modify attributes
+"x", "y", "w", "h" to change the box, or add your own custom CSS style to make the font fit.
+(CSS properties like "font-size" are very helpful)
+
+-->
+
+<panel w=400 h=650>
+<pic src="pics/intro0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=350 h=60>
+	En la mitologia grega, Mnemosyne, la deessa de la Memòria...
+</words>
+<words x=30 y=330 w=310 h=60>
+	...era la mare de les Muses, les deesses de la inspiració.
+</words>
+<words x=70 y=445 w=90 style="color:#fff" no-bg class="comic_text">
+	música
+</words>
+<words x=119 y=494 w=90 style="color:#fff" no-bg class="comic_text">
+	teatre
+</words>
+<words x=214 y=464 w=90 style="color:#fff" no-bg class="comic_text">
+	fanfic raro
+</words>
+</panel>
+
+<panel w=600 h=60>
+<words w=600 x=-15 no-bg>
+	Així doncs, com els va a la Memòria i la Inspiració en els col·legis?
+</words>
+</panel>
+
+<panel w=550 h=250>
+<pic src="pics/intro0.png" sx=400 sy=0></pic>
+
+<words x=-12 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=50  y=85 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=114 y=84 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=172 y=91 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=295 y=80 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=363 y=83 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=444 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=518 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/intro0.png" sx=400 sy=250></pic>
+<words x=155 y=20 w=90 no-bg>
+	Això.
+</words>
+<words x=196 y=65 w=270 no-bg>
+    No només que tècniques comunes com les classes, covar i rellegir són <i>avorrides</i>,
+    la ciència ha mostrat que <i>ni tan sols funcionen bé</i>.*
+</words>
+</panel>
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* totes les fonts i enllaços estaran al final del còmic!
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/intro0.png" sx=400 sy=500></pic>
+<words x=95 y=30 w=340 no-bg>
+	I si et dic que hi ha una forma
+	que funciona bé <i>i</i> és divertida?
+</words>
+<words x=164 y=141 w=300 no-bg>
+	I si et dic que hi ha un joc de memòria que, jugant uns 20 minutos al dia,
+	et permet guardar <i>el que triïs</i> a la teva ment <i>per sempre?*</i>
+</words>
+</panel>
+
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* fins que moris
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=spaced_rep"></sim>
+</panel>
+
+<panel w=500 h=450 fadeInOn="flip_spaced_rep">
+<pic src="pics/intro0.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	I és <i>increïble</i>.
+	Vaig començar a usar Repàs Espaiat a l'inici de l'any per a aprendre francès.
+</words>
+<words x=30 y=350 w=430 h=60>
+	En dos <i>mesos</i>, vaig aprendre més paraules que en dos <i>anys</i>
+	a classes de francès a l'institut.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/intro0.png" sx=950 sy=450></pic>
+<words x=10 y=10 w=400 h=60>
+	Des de llavors, he usat Repàs Espaiat per a recordar tot tipus de coses...
+</words>
+<words x=81 y=113 w=100 style="text-align:left" no-bg class="comic_text">
+	notes de ukelele
+</words>
+<words x=212 y=114 w=100 style="text-align:left" no-bg class="comic_text">
+	codi d'ordinador
+</words>
+<words x=380 y=137 w=100 style="text-align:left" no-bg class="comic_text">
+	aniversari d'amics
+</words>
+<words x=188 y=204 w=270 style="text-align:left" no-bg class="comic_text">
+	qualsevol dada curiosa que trobi en llibres o articles!
+</words>
+<words x=60 y=300 w=400 h=60>
+	...i aquest joguet de memòria es va fer una part clau de la meva <i>vida</i>.
+</words>
+</panel>
+
+<panel w=550 h=350>
+<pic src="pics/intro0.png" sx=0 sy=850></pic>
+<words x=10 y=10 w=500 h=30>
+	En resum, Repàs Espaiat = proves + temps.
+</words>
+<words x=10 y=220 w=500 h=90>
+	Fas proves amb una dada repetint moltes vegades, però separant les teves repeticions en el temps.
+	(Però no durarà massa? Veurem més tard que hi ha un truc...)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=0 sy=1200></pic>
+<words x=10 y=20 w=290 no-bg style="font-size:20px">
+	Repàs Espaiat és gratis, basat en evidència, i tan senzill que ho pots fer amb una <i>caixa de sabates</i>.
+</words>
+<words x=308 y=265 w=50 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	nicky calla
+</words>
+<words x=90 y=130 w=270 no-bg style="font-size:22px">
+	Llavors, quin és la trampa? Per què no està <i>tothom</i> fent-ho servir?
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=400 sy=1200></pic>
+<words x=10 y=20 w=330 no-bg style="font-size:22px">
+	Doncs, la cosa es que crear <i>qualsevol</i> hàbit nou és difícil,
+	especialment un estrany com el Repàs Espaiat.
+
+</words>
+<words x=292 y=303 w=80 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	arriba el profe
+</words>
+<words x=100 y=134 w=270 no-bg>
+	Per això vaig fer aquest comic interactiu mal dibuixat.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=800 sy=1200></pic>
+<words x=10 y=20 w=300 no-bg style="font-size:22px">
+	En aquest comic del Repàs<br>Espaiat,
+	et mostraré PER QUÈ funciona, COM funciona...
+</words>
+<words x=110 y=140 w=250 no-bg>
+	...i t'ajudaré perquè que comencis <i>AVUI.</i>
+</words>
+</panel>
+
+<panel w=600 h=180>
+<words w=600 x=-15 no-bg>
+    També, al llarg del còmic,
+    pots provar el que has après,
+
+    en intervals separats.
+    <b>És a dir: usaràs Repàs Espaiat per a aprendre sobre el Repàs Espaiat.</b>
+
+
+    <br><br>
+    Així:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=intro_a,intro_b,intro_c"></sim>
+</panel>
+
+<panel w=550 h=450>
+<pic src="pics/intro0.png" sx=950 sy=1600></pic>
+<words x=10 y=10 w=480 h=90>
+	Però, no és dolent "aprendre de memòria"?
+	No ho podem cercar tot, avui dia?
+	No seria millor aprendre com ser creatius i tenir pensament crític?
+</words>
+<words x=10 y=320 w=500 h=90 style="font-size:22px">
+	No <i>hi ha</i> "millor".
+  
+	La ciència cognitiva mostra
+	que <i>necessites</i> memorització per a la creativitat i el pensament crític.
+	(Imagina escriure una redacció sense conèixer les paraules!)
+</words>
+<words x=187 y=138 w=150 no-bg class="comic_text" style="font-size:40px">
+	MEMÒRIA
+</words>
+<words x=22 y=222 w=100 no-bg class="comic_text" style="font-size:20px">
+	art
+</words>
+<words x=408 y=224 w=100 no-bg class="comic_text" style="font-size:20px">
+	ciència
+</words>
+</panel>
+
+<panel w=550 h=300>
+<pic src="pics/intro0.png" sx=0 sy=1600></pic>
+<words x=10 y=20 w=310 no-bg>
+	El Repàs Espaiat no és un "truc per a estudiar".
+</words>
+<words x=30 y=113 w=320 no-bg style="font-size: 24px" style="font-size: 24px">
+    És una forma de recuperar el control de la teva <i>ment.</i>
+    De fer la memòria a llarg termini una <i>opció</i>.
+    De crear una passió per aprendre de per vida...
+</words>
+</panel>
+
+<panel w=400 h=550>
+<pic src="pics/intro0.png" sx=550 sy=1600></pic>
+<words x=20 y=20 w=330 h=30 style="font-size: 21px">
+	...de fomentar la teva pròpia Musa interior.
+</words>
+<words x=117 y=131 w=140 no-bg class="comic_text" style="font-size:20px; color:#fff">
+	Tony Stark gairebé esbufega quan una mà amb guant va baixar per la seva esquena.
+	La pressió era suau i quasi reconfortant.
+
+	Obama va riure. “Dius, el-
+
+</words>
+<words x=240 y=480 w=120 h=30>
+	Comencem.
+</words>
+</panel>
+
+</div>
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 1: THE SCIENCE OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="1"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			LA CIÈNCIA del
+			REPÀS ESPAIAT
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=400 h=60>
+	En 1885, Hermann Ebbinghaus va fer una acció de masoquisme científic.
+</words>
+<words x=30 y=320 w=430 h=90>
+	El psicòleg alemany va memoritzar <i>milers</i> de paraules sense sentit,
+	va anotar quantes s'havia oblidat amb el temps, i va descobrir...
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/sci0.png" sx=500 sy=0></pic>
+<words x=60 y=10 w=250>
+	<b>LA CORBA DE L'OBLIT</b>
+</words>
+<words x=10 y=310 w=350>
+	Va observar que oblides la majoria del que aprens en les primeres 24 hores,
+	i, si no fas repassos, les teves memòries restants es perden exponencialment.*
+</words>
+</panel>
+
+<panel w=500 h=53 style="margin-top:-5px">
+<words w=500 x=-15 y=-10 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999; line-height: 1.1em;">
+	* tècnicament la corba no és <i>exactament</i>
+	<br>
+	exponencial, però és igual, s'assembla.
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=900 sy=0></pic>
+<words x=10 y=10 w=450 h=90>
+	Els filòsofs han debatut sobre la memòria durant mil·lennis,
+	però Ebbinghaus va ser el primer a fer <i>experiments.</i>
+	(que han estat repetits)
+</words>
+<words x=193 y=169 w=70 no-bg class="comic_text" style="font-size: 19px; color:rgba(0,0,0,0.35)">
+	si us plau...
+</words>
+<words x=278 y=195 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35)">
+	máta-
+</words>
+<words x=348 y=234 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35)">
+	em...
+</words>
+<words x=20 y=350 w=440 h=60 style="font-size: 24px">
+	Per aquest motiu, Hermann Ebbinghaus és conegut com
+	el pioner de la ciència de la memòria.
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Aquí tens una simulació de la Corba de l'Oblit.
+	<b>Canvia la velocitat de l'oblit. Què li passa a la corba?</b>
+</words>
+</panel>
+
+<panel w=600 h=370>
+<sim x=0 y=0 w=600 h=370 src="sims/ebbinghaus/?mode=0"></sim>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Com pots veure, quanta menys velocitat, més plana és la corba,
+	és a dir, més dura la memòria.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=0 sy=500></pic>
+<words x=10 y=10 w=300>
+	La velocitat d'oblit d'una persona depèn de la persona i la seva memòria...
+</words>
+<words x=0 y=145 w=330 no-bg class="comic_text smaller">
+	hola! com deies que et deies?
+</words>
+<words x=177 y=186 w=180 no-bg class="comic_text smaller">
+	jaja. sóc susan.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=400 sy=500></pic>
+<words x=10 y=10 w=360 style="font-size:25px;padding:5px 10px 5px 10px">
+	Però en general, la "velocitat d'oblit" baixa cada vegada que ho <b>recordes activament</b>.
+	(comparat amb rellegir passivament)
+</words>
+<words x=27 y=198 w=120 no-bg class="comic_text smaller">
+	susan. susan. susan. susan. susan.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=800 sy=500></pic>
+<words x=10 y=10 w=300>
+	(però, quan deixes de practicar, continua oblidant-se)
+</words>
+<words x=41 y=121 w=150 no-bg class="comic_text smaller">
+	doncs, adéu, sarah!
+</words>
+<words x=191 y=148 w=100 no-bg class="comic_text smaller">
+	susan.
+</words>
+<words x=59 y=174 w=150 no-bg class="comic_text smaller">
+	adéu, sandy!
+</words>
+<words x=193 y=203 w=100 no-bg class="comic_text smaller">
+	SUSAN.
+</words>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	Una altra vegada la simulació, però amb una sessió de repàs.
+	<br>
+	(línia gris: el que seria la memòria <i>sense</i> aquest repàs)
+	<br>
+	<b>Canvia el temps del repàs, a veure què li ocorre a la corba:</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Un repàs només refresca la memòria per un temps, però a la llarga,
+	per aquest oblit exponencial, un repàs només no canvia res.
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=390>
+	Hi ha una forma millor d'aprendre?<br>
+	Si que hi ha! El truc de recordar...
+</words>
+<words x=210 y=330 w=200>
+	...<i>és quasi oblidar.</i>
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=0></pic>
+<words x=250 y=20 w=200>
+	Per a entendre-ho, pensa a entrenar els teus músculs.
+	No et serveix de res un pes massa lleuger...
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=300></pic>
+<words x=250 y=20 w=200>
+	...ni un massa pesat.
+</words>
+</panel>
+
+<panel w=350 h=350>
+<pic src="pics/sci1.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=300>
+	El mateix s'aplica a entrenar el cervell.
+	Necessites <b>dificultat òptima</b>: el punt òptim de dificultat.
+</words>
+<words x=55 y=187 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	còmode
+</words>
+<words x=55 y=282 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	incòmode
+</words>
+<words x=176 y=186 w=120 no-bg class="comic_text smaller">
+	massa fàcil
+</words>
+<words x=179 y=229 w=140 no-bg class="comic_text" style="color:#000">
+	punt òptim
+</words>
+<words x=176 y=280 w=120 no-bg class="comic_text smaller">
+	massa difícil
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=360>
+    Per tant: el millor per a aprendre alguna cosa, és recordar-ho...
+</words>
+<words x=60 y=330 w=350>
+	...<i>quan estàs a punt d'oblidar-ho.</i>
+</words>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	La mateixa simulació d'abans ara mostra el
+	<span style="background:#ffe866">punt òptim</span>,
+	quan has oblidat <i>només una miqueta.</i>
+	<b>Posa el repàs en <i>el mitjà</i> del punt òptim. Què ocorre?</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Ho veus? Si fas un repàs en el moment perfecte,
+	pots alentir una mica l'oblit!
+	Però i amb <i>molts</i> repassos?
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci2.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430>
+	Posem que ets una persona
+	<span class="strikeout">vaga</span>
+	eficient, així que només fas 4 repassos.
+	</words>
+	<words x=30 y=350 w=430>
+	Pregunta:
+	<i>quina és la millor forma de repartir els repassos?</i>
+</words>
+<words x=82 y=198 w=120 no-bg class="comic_text" style="transform: rotate(-16deg);">
+	susan
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/sci2.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=190>
+	Repartir-los en el temps en trossos iguals?<br>
+	Anar augmentant-los en trossos cada vegada més grans?
+	o en trossos més petits?
+	O fer-ho impredictible, per a mantenir l'atenció?
+</words>
+<words x=259 y=16 w=100 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	= repàs
+</words>
+<words x=295 y=16 w=100 no-bg class="comic_text smaller" style="text-align:right; color:#000">
+	temps
+</words>
+<words x=245 y=61 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	trossos iguals:
+</words>
+<words x=245 y=126 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	creixents:
+</words>
+<words x=245 y=198 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	decreixents:
+</words>
+<words x=245 y=259 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	a l'atzar:
+</words>
+</panel>
+
+<panel w=400 h=90>
+<words h=90 style="font-size: 23px">
+	<b>Intenta endevinar-ho</b>,
+	i quan tinguis la resposta, <b>dóna-li la volta a la targeta &darr;</b>
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=guessgap"></sim>
+</panel>
+
+<panel fadeInOn="flip_guessgap" w=600 h=120>
+<words w=600 x=-15 y=0 no-bg>
+	La qual cosa sembla molt contradictori!
+	Pots demostrar-te que és cert jugant amb la simulació mes abaix.
+	<b>
+	Porta tots els repassos al <i>mitjà</i> del <span style="background:#ffe866">punt òptim</span>.
+	Quins trossos de temps surten?
+	</b>
+</words>
+</panel>
+
+<panel w=600 h=520>
+<sim x=0 y=0 w=600 h=520 src="sims/ebbinghaus/?mode=3"></sim>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	(Per a provar que no és coincidència,
+	en aquest altre pots canviar
+	la velocitat d'oblit i el punt òptim.
+
+	Observa com en tots els casos normals,
+	la millor opció són els "trossos de temps creixents"!)
+</words>
+</panel>
+
+<panel w=600 h=570>
+<sim x=0 y=0 w=600 h=570 src="sims/ebbinghaus/?mode=4"></sim>
+</panel>
+
+<panel w=350 h=500>
+<pic src="pics/sci2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=300>
+	<i>Per què</i> els trossos creixen?
+	Perquè cada vegada que repasses en el punt òptim de l'oblit,
+	la velocitat d'oblit baixa...
+</words>
+<words x=25 y=187 w=50 no-bg class="comic_text smaller" style="text-align:left">
+	ets
+</words>
+<words x=16 y=177 w=300 no-bg class="comic_text" style="font-size:100px; transform: rotate(-5deg);">
+	¡SUSAN!
+</words>
+<words x=218 y=257 w=120 no-bg class="comic_text smaller" style="text-align:right">
+	–que co
+	<!-- TRANSLATOR NOTE: don't complete the swearing in your translation.
+	make it cut off at the edge of the panel. It's... funnier that way? -->
+</words>
+<words x=10 y=400 w=300>
+	...pel que trigaràs <i>més</i>
+	a arribar al punt òptim la pròxima vegada!
+</words>
+</panel>
+
+<panel w=500 h=500>
+<pic src="pics/sci2.png" sx=350 sy=450></pic>
+<words x=10 y=10 w=400>
+	I saps el millor de tot?
+	Que si fas els teus repassos en el moment just...
+</words>
+<words x=60 y=400 w=400>
+	...pots guardar <i>qualsevol quantitat</i> de coses en la teva memòria,
+	<i>PER SEMPRE.</i>
+</words>
+</panel>
+
+<panel w=250 h=250>
+<pic src="pics/sci2.png" sx=850 sy=450></pic>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Parlant de fer repassos per a aprendre,
+	anem a fer memòria sobre el que hem après:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,intro_b,sci_c"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=0 sy=950></pic>
+<words x=50 y=20 w=300 bg=none>
+	Pinta bé,
+	però <i>trobar</i> un horari de Repassos Espaiats ha de ser díficil, oi?
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=400 sy=950></pic>
+<words x=50 y=30 w=300 bg=none>
+	<i>tot el contrari</i>
+	És tan senzill, que et pots fer un planificador automàtic...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=800 sy=950></pic>
+<words x=30 y=15 w=200 bg=none>
+	...amb una <i>capsa de sabates.</i>
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 2: THE ART OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="2"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			L'ART del
+			REPÀS ESPAIAT
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/leit0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	No és <i>necessari</i> usar una capsa de sabates,
+	però és més divertit si la fas servir.
+</words>
+<words x=3 y=119 w=140 no-bg class="comic_text smaller" style="font-size:22px">
+	 i amb això practico
+</words>
+<words x=119 y=158 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	???
+</words>
+<words x=246 y=118 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	són ENTRENADORS
+	<!--
+	TRANSLATOR NOTE:
+	this is a pun that may not work in all languages.
+	If it doesn't translate to your language, try coming up with your own pun!
+	Or, replace this line with: "they help me go far"
+	-->
+</words>
+<words x=367 y=116 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	ja no som amics
+</words>
+
+<words x=30 y=350 w=430 h=60>
+	(Després veurem diverses <i>apps</i> de Repàs Espaiat,
+	com Anki i Tinycards)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Això es diu la Capsa de Leitner.
+	És com un joc de cartes que jugues contra tu!
+</words>
+<words x=30 y=300 w=430 h=60>
+	Primer divideixes la teva capsa en set "Nivells".
+	(Pots tenir més o menys nivells si vols)
+</words>
+</panel>
+
+<panel w=500 h=370>
+<pic src="pics/leit0.png" sx=0 sy=480></pic>
+<words x=10 y=10 w=430 h=30>
+	Totes les targetes noves comencen al Nivell 1.
+</words>
+<words x=30 y=270 w=430 h=60>
+	(Si estàs començant amb el Repàs Espaiat, recomano 5 targetes noves al dia.)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=480></pic>
+<words x=10 y=10 w=430 h=60>
+	Quan repasses una targeta i l'encertes, <br>
+	puja <i>un</i> Nivell.
+</words>
+<words x=30 y=300 w=430 h=60>
+	(Si arriba a l'últim Nivell, felicitats!
+	La teva targeta es retira al cel de les targetes.)
+</words>
+</panel>
+
+<panel w=500 h=430>
+<pic src="pics/leit0.png" sx=0 sy=900></pic>
+<words x=10 y=10 w=430 h=60>
+	Però si la repasses i la contestes malament... s'ha de
+	<i>tornar al Nivel 1.</i>
+</words>
+<words x=30 y=300 w=430 h=90>
+	(Si ja està en el Nivell 1, bones notícies:
+	pots continuar fent-te proves fins que l'encertis,
+	i pujarla al Nivel 2)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=0 sy=1370></pic>
+<words x=10 y=10 w=430 h=120 style="font-size:22px">
+	Però quan repassem targetes?
+	Aquest és el truc.
+
+	En la Capsa Leitner, repassem les de Nivell 1 cada dia,
+	les de Nivell 2 cada dos, les de Nivell 3 cada <i>QUATRE</i> dies,
+	les de Nivell 5 cada <i>VUIT</i> dies, i així...
+</words>
+<words x=30 y=300 w=430 h=60 style="font-size: 23px">
+	El patró consisteix en <i>duplicar els trossos</i> (nombre de dies entre repassos) per a cada Nivell!
+</words>
+</panel>
+
+<panel w=600 h=60>
+<words w=600 x=-15 no-bg>
+	Així és com es veuria el calendari durant 64 dies:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#fff">
+<sim x=0 y=0 w=600 h=400 src="sims/calendar/"></sim>
+</panel>
+
+<panel w=500 h=490>
+<pic src="pics/leit0.png" sx=500 sy=870></pic>
+<words x=10 y=10 w=430 h=90>
+	(Nota: el motiu de repassar el Nivell 1 al final
+	és perquè així veuràs les teves targetes noves <i>i</i> les que vas oblidar de Nivells superiors.)
+</words>
+<words x=30 y=330 w=430 h=120>
+	(Al final d'una sessió diària de Repàs Espaiat,
+	no deixis targetes en el Nivell 1.
+	Prova fins que les puguis encertar totes,
+	i mou-les al Nivell 2!)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit0.png" sx=600 sy=1400></pic>
+<words x=10 y=10 w=350 h=90>
+	(Nota 2: Hi ha <i>apps</i> de Repàs Espaiat com Anki que utilitzen un algoritme més sofisticat...)
+</words>
+<words x=10 y=300 w=350 h=60 style="font-size: 23px">
+	(...però en el fons, treballen amb els mateixos principis que la Capsa Leitner)
+</words>
+</panel>
+
+<panel w=400 h=450>
+<pic src="pics/leit0.png" sx=0 sy=1800></pic>
+<words x=10 y=10 w=350 h=90>
+	(Nota 3: Ah, i amb unes quantes targetes i cinta,
+	pots fer el teu propi calendari plegable!)
+</words>
+<words x=10 y=350 w=350 h=60>
+	(al final posaré un tutorial en vídeo per a fer una Capsa Leitner)
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Ara veurem el joc en acció!
+	Aquí hi ha una simulació <i>pas a pas</i> de la Capsa Leitner:
+	<b>(més tard veurem una <i>per mesos</i>)</b>
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	Cada repàs diari dura uns 20-30 minuts.
+	En comptes de veure un episodi d'una sèrie, pots jugar amb les targetes;
+	i recordar tot el que vulguis <i>per a tota la vida</i>.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=0 sy=0></pic> 
+<words x=10 y=10 w=430 h=60>
+	Però els hàbits són díficiles. Si comences amb molt, no avançaràs res...
+</words>
+<words x=20 y=300 w=450 h=60>
+	Però si comences amb <i>poc</i>, pots agafar impuls,
+	i fer la bola de neu més i més gran.
+</words>
+</panel>
+
+<panel w=500 h=690>
+<pic src="pics/leit1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=430 h=60>
+	Per això recomano <i>començar</i> amb 5 targetes noves cada dia.
+</words>
+<words x=30 y=300 w=430 h=60>
+	Quan estiguis a gust amb això, pots canviar a 10 noves al dia.
+	I després 15, 20, 25, 30.
+</words>
+<words x=10 y=590 w=430 h=60>
+	I amb 30 noves targetes al dia, podeu aprendre <i>10.000+</ i> nous fets/paraules/etc a <i>l'any.</i>
+</words>
+<words x=16 y=497 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	na na na na na na na na na
+</words>
+<words x=38 y=517 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	katamari damacy
+	<!-- TRANSLATOR NOTE: leave this in its japanese.
+	i don't know what it means, actually. it's a videogame song. -->
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Aquí està la simulació mes a mes.
+	Utilitza-la per a calcular per endavant, <i>quantes coses</i> pots aprendre amb el Repàs Espaiat!
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	Ja està. Així és com pots <i>triar</i> fer memòries a llarg termini.
+</words>	
+<words w=600 x=-15 y=50 no-bg>
+	Assimilem-ho. Descansa, i anem a repassar el que hem après:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_a,intro_a,leit_b,intro_c,leit_c"></sim>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	El Repàs Espaiat gairebé sembla massa bo per a ser cert.
+	<br>
+	I ho és... <i>SI</i> caus en unes trampes molt comunes.
+</words>	
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=0></pic>
+<words x=10 y=5 w=420 h=90>
+	La memòria no és una prestatgeria
+	on guardes toms gegants a l'atzar per a impressionar als altres.
+</words>
+<words x=-15 y=210 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+	un munt
+</words>
+<words x=39 y=216 w=150 no-bg class="comic_text" style="text-align:left; font-size:22px; transform:rotate(86deg)">
+	d'escombraries
+</words>
+<words x=100 y=211 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(74deg)">
+	que mai
+</words>
+<words x=144 y=212 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+	arribaràs
+</words>
+<words x=199 y=214 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(84deg)">
+	a llegir
+</words>
+<words x=10 y=350 w=450 h=60>
+	És a dir: el Repàs fallarà si les teves targetes es veuen
+	<i>pesades</i>, <i>desconnectades</i> o <i>sense sentit</i>.
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=90 style="font-size: 23px">
+	En realitat la memòria és com un trencaclosques: ple de peces petites i connectades.
+	(Així funcionen també les neurones)
+</words>
+<words x=30 y=380 w=430 h=30>
+	No es tracta de <i>recollir</i>, sinó de <i>conectar</i>.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=500 sy=900></pic>
+<words x=10 y=10 w=410 h=60>
+	Així que, per a aprofitar al màxim el Repàs Espaiat,
+	fes les teves targetes...
+</words>
+<words x=-38 y=227 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	PETITES
+</words>
+<words x=94 y=257 w=200 no-bg class="comic_text" style="color:#fff; font-size:73px">
+	CONNECTADES
+</words>
+<words x=262 y=298 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	i AMB SENTIT
+</words>
+</panel>
+
+<panel w=450 h=60>
+<words w=450 x=-15 no-bg>
+	Anem a veure com...
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=0></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+	PETITES
+</words>
+</panel>
+
+<panel w=450 h=50>
+<words w=450 x=-15 no-bg>
+	Aquesta és una targeta dolenta:
+</words>	
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=mitochondria_all"></sim>
+</panel>
+
+<panel w=450 h=380>
+<pic src="pics/leit2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=400 h=30>
+	Massa gran. Massa informació.
+</words>
+<words x=10 y=250 w=400 h=90>
+	La tallarem en peces més petites!
+	Com a regla d'or, <i>cada targeta hauria de tenir una sola idea.</i>
+	Així:
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_1" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_2" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_3" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_4" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_5" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_6" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_7" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_8" class="small_card"></sim>
+</panel>
+
+<panel w=450 h=90>
+<words w=450 x=-15 no-bg>
+	Dades connectades a dades.
+	Però hi ha altres formes que les targetes estiguin...
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=150></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:73px; text-align:left">
+	CONNECTADES
+</words>
+</panel>
+
+<panel w=450 h=110>
+<words w=450 x=-15 no-bg>
+	Aquesta targeta... està bé.
+	Una paraula en català per davant, i en francès per darrere.
+	<!--
+	TRANSLATOR NOTE:
+	If the language you're translating for is NOT French,
+	replace "English" with [your language]
+	-->
+	És el normal per a la majoria de targetes de llenguatges:
+</words>	
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat"></sim>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=400 h=60>
+	Però saps què faria que es quedés més en la memòria?
+</words>
+<words x=10 y=300 w=400 h=60>
+	Si la connectes a
+	<i>fotos, sons, context, o detalls personals!</i>
+	Així:
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat2"></sim>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=0></pic>
+<words x=10 y=10 w=210>
+	La cara ara té un dibuix d'un gat (foto)
+	amb una frase en francès amb un buit (context: gramàtica)
+	sobre el meu gat de la infància, Stripes. (personal)
+</words>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=300></pic>
+<words x=10 y=10 w=210>
+	El dors ara té un símbol del gènere del nom (foto),
+	la seva pronunciació (so*),
+	i un avís de la versió femenina del nom. (context: argot)
+</words>
+<words w=330 x=250 y=225 no-bg fontsize=20>
+	* Òbviament les targetes de paper no tenen sons.
+	Però apps com Anki/Tinycards sí!
+</words>
+<audio controls style="position: absolute; top: 105px; left: 280px; transform: scale(0.4) rotate(4deg);">
+	<source src="audio/chat.mp3" type="audio/mpeg">
+</audio>
+</panel>
+
+<panel w=450 h=90>
+<words w=450 x=-15 no-bg>
+	Però la connexió <i>més</i> important de totes
+	és connectar el teu aprenentatge a alguna cosa...
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=300></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:70px; text-align:left">
+	AMB SENTIT
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=450 sy=600></pic>
+<words x=10 y=10 w=450 h=60 style="font-size: 23px">
+	Personalment, així es com millor he après:
+	Primer, intent (èmfasi en <i>intent</i>) <b>fer</b> alguna cosa.
+</words>
+<words x=11 y=113 w=160 no-bg class="comic_text">
+	tocar el ukelele
+</words>
+<words x=183 y=104 w=140 no-bg class="comic_text">
+	llegir còmics francesos
+</words>
+<words x=336 y=109 w=100 no-bg class="comic_text">
+	crear un joc web
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=950 sy=600></pic>
+<words x=10 y=10 w=450 h=60>
+	Inevitablement, m'embussaré.
+	En aquest moment, buscaré el que necessiti,
+	i <b>aprendré</b> alguna cosa.
+</words>
+<words x=6 y=102 w=130 no-bg class="comic_text">
+	com es toca Fa#?
+</words>
+<words x=133 y=104 w=180 no-bg class="comic_text">
+	què significa "attraper"?
+</words>
+<words x=301 y=109 w=190 no-bg class="comic_text" style="font-size: 23px">
+	per què javascript és un tros de mer–
+	<!-- TRANSLATOR NOTE: again, don't complete the swear. have it cut out -->
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=learndo&forever_card=yes"></sim>
+</panel>
+
+<panel w=450 h=30>
+<words w=450 x=-15 y=-15 no-bg>
+	I així.
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=450 sy=950></pic>
+<words x=10 y=10 w=400 h=60>
+	Aquesta, crec, és la millor forma de mantenir-se motivat mentre s'aprèn:
+</words>
+<words x=10 y=300 w=400 h=60>
+	Assegurant-te que el teu aprenentatge ajuda a <i>realitzar alguna cosa que t'importa.</i>
+</words>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Parlant d'aprendre, intentarem recordar el que hem après:
+	(aquesta és l'antepenúltima vegada!)
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_d,sci_c,sci_a,sci_b"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=0 sy=450></pic>
+<words x=10 y=20 w=350 no-bg>
+	En la comunitat del R.E., el consens és que,
+	després d'un temps, <b>hauries de fer les teves pròpies targetes.</b>
+</words>
+<words x=33 y=140 w=230 no-bg>
+	Així, connectes dades al que <i>tu</i> coneixes, al que <i>a tu</i> t'agrada.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=400 sy=450></pic>
+<words x=10 y=15 w=300 no-bg>
+	Per això, en <i>l'última</i> part d'aquest còmic interactiu,
+	faràs les teves <i>pròpies</i> targetes!
+</words>
+<words x=30 y=165 w=170 no-bg style="font-size: 23px">
+	I aquestes targetes seran sobre...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=800 sy=450></pic>
+<words x=0 y=10 w=230 fontsize=150 no-bg color="#ffffff">
+	TU
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 3: GET STARTED TODAY! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="3"></a>
+<div class="divider divider_small_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			COMENÇA AVUI!
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=350>
+<pic src="pics/end0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=480 h=70 style="padding:13px 0px">
+	Per a ajudar-te a començar <i>avui</i> amb el Repàs Espaiat,
+	hauràs de respondre quatre preguntes:
+</words>
+<!--
+TRANSLATOR NOTE:
+Remember, if your translated word is too big, you can modify the CSS! (especially font-size)
+-->
+<words x=8 y=227 w=120 no-bg style="color:#fff; font-size:30px">
+	QUÈ?
+</words>
+<words x=100 y=252 w=150 no-bg style="color:#fff; font-size:30px">
+	PER QUÈ?
+</words>
+<words x=226 y=227 w=120 no-bg style="color:#fff; font-size:30px">
+	COM?
+</words>
+<words x=337 y=252 w=120 no-bg style="color:#fff; font-size:30px">
+	QUAN?
+</words>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	Respondràs a aquestes preguntes fent targetes!
+	Aquí està la <i>cara</i> de la primera, la nostra primera pregunta:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_what&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Per exemple, pots usar Repàs Espaiat per a ajudar-te a aprendre...
+</words>
+<words x=120 y=104 w=100 style="text-align:left" no-bg class="comic_text">
+	un nou idioma
+</words>
+<words x=320 y=107 w=100 style="text-align:left" no-bg class="comic_text">
+	un nou instrument
+</words>
+<words x=115 y=195 w=100 style="text-align:left" no-bg class="comic_text">
+	programació
+</words>
+<words x=340 y=185 w=150 style="text-align:left" no-bg class="comic_text">
+	detalls de les vides dels teus amics
+</words>
+<words x=129 y=283 w=200 style="text-align:left" no-bg class="comic_text">
+	qualsevol cosa interessant!
+</words>
+<words x=389 y=290 w=100 style="text-align:left" no-bg class="comic_text">
+	tots els pokémon
+</words>
+<words x=80 y=380 w=380 h=30>
+	Ara, escriu <i>la teva</i> resposta en el dors:
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_what"></sim>
+</panel>
+
+<panel fadeInOn="answer_edit_you_what" w="600" h="40" style="margin-bottom: -10px;">
+<words w="600" x="-15" y="-10" no-bg="">
+	(nota: després pots tornar aquí i canviar la teva resposta)
+</words>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="" style="font-size: 23px">
+	Però recorda't que perquè funcioni el Repàs,
+	necessites connectar-ho a alguna cosa que a tu t'importa <i></i>.
+
+	La següent pregunta és:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_why&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=1000 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Pot ser que sigui molt filosòfic, així que aquí tens
+	exemples amb el <i>què</i> i el <i>per què</i>:
+</words>
+<words x=130 y=105 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>QUÈ:</b> un nou idioma
+	<br>
+	<b>PER QUÈ:</b> per a parlar a amics, família, parella, en el seu idioma natal
+</words>
+<words x=130 y=210 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>QUÈ:</b> programació
+	<br>
+	<b>PER QUÈ:</b> per a guanyar diners
+</words>
+<words x=130 y=290 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>QUÈ:</b> qualsevol cosa interessant
+	<br>
+	<b>PER QUÈ:</b> per curiositat!
+</words>
+<words x=210 y=380 w=250 h=30>
+	Quin és <i>el teu</i> "per què"?
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_why"></sim>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	Ja tens el teu <strong>quin</strong> i el teu <strong>per què</strong>... però necessitem triar un <strong>com</strong>!
+	Quina eina o app vols usar?
+	La següent targeta diu:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_how&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=700>
+<pic src="pics/end0.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=450 h=90>
+	Jo ara utilitzo
+	<a target="_blank" href="https://en.wikipedia.org/wiki/Leitner_system">La Capsa Leitner</a>,
+	però els meus amics utilitzen
+	<a target="_blank" href="https://apps.ankiweb.net/">Anki</a>,
+	i durant un temps vaig utilitzar
+	<a target="_blank" href="https://tinycards.duolingo.com/">TinyCards</a>.
+	Així és com es comparen:
+</words>
+<words x=160 y=140 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>Capsa Leitner</b>
+	<br>
+	El bo: manualitat, fàcil d'usar
+	<br>
+	El dolent: no tan portàtil com una app
+</words>
+<words x=160 y=275 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>Anki (app)</b>
+	<br>
+	El bo: comunitat enorme, codi obert, moltes funcions potents
+	<br>
+	El dolent: una mica lletja
+</words>
+<words x=160 y=405 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>TinyCards (app)</b>
+	<br>
+	El bo: disseny preciós, fàcil d'usar
+	<br>
+	El dolent: màxim de 150 targetes per baralla, no <i>et</i> deixa decidir si vas encertar
+</words>
+<words x=10 y=530 w=450 h=60>
+	(Prefereixes una altra cosa?
+	Altres eines:
+	<a target="_blank" href="https://www.supermemo.com/">SuperMemo</a>,
+	<a target="_blank" href="https://www.nimblenotes.com/">NimbleNotes</a>,
+	<a target="_blank" href="https://mnemosyne-proj.org/">Mnemosyne</a>)
+</words>
+<words x=110 y=620 w=360 h=40 no-bg fontsize=20>
+	* <i>anti</i>-avís: <i>no</i> estic afiliat amb cap d'aquestes.
+	només crec que són bones i útils!
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	Així que, quin serà?
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_how"></sim>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=90>
+	Només queda una targeta!
+	En veritat, fer R.E. és bastant fàcil...
+	però fer-ho <i>com un hàbit diari</i> és difícil.
+</words>
+<words x=60 y=355 w=400 h=30 no-bg>
+	Per què? Perquè agafar impuls en <i>qualsevol</i> hàbit nou és difícil.
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end0.png" sx=1000 sy=450></pic>
+<words x=10 y=10 w=430 h=90>
+	Difícil, però simple.
+	La ciència dels hàbits mostra que si fas el mateix, donada el mateix senyal,
+	constantment...
+</words>
+<words x=0 y=153 w=170 no-bg class="comic_text smaller">
+	passa un bon dia!
+</words>
+<words x=72 y=188 w=80 no-bg class="comic_text smaller">
+	gràcies, igualment!
+</words>
+<words x=221 y=150 w=170 no-bg class="comic_text smaller">
+	bones festes!
+</words>
+<words x=309 y=185 w=80 no-bg class="comic_text smaller">
+	gràcies, igualment!
+</words>
+<words x=2 y=300 w=170 no-bg class="comic_text smaller">
+	aquí tens el canvi!
+</words>
+<words x=74 y=335 w=80 no-bg class="comic_text smaller">
+	gràcies, igualment!
+</words>
+<words x=20 y=450 w=440 h=60>
+	...es farà un hàbit, per a bé o per a mal.
+	Per a l'hàbit de E.R., la nostra pregunta és:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_when&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=0 sy=1150></pic>
+<words x=10 y=10 w=400 h=60>
+	Per exemple, podries jugar el joc de Repàs Espaiat...
+</words>
+<words x=4 y=233 w=130 no-bg class="comic_text">
+	quan et despertes
+</words>
+<words x=167 y=233 w=130 no-bg class="comic_text">
+	al tren o bus
+</words>
+<words x=335 y=233 w=130 no-bg class="comic_text">
+	abans de dormir
+</words>
+<words x=30 y=320 w=430 h=90>
+	No importa molt <i>quan</i> ho facis, mentre ho facis
+	diàriament (més o menys, pots saltar-te un dia de tant en tant).
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/end0.png" sx=500 sy=1150></pic>
+<words x=10 y=10 w=350 h=90>
+	(Consell: quan vull crear un hàbit nou,
+	dibuixo un cercle en un calendari per cada dia que el faci)
+</words>
+<words x=10 y=370 w=350 h=90>
+	(És un joc que faig amb mi mateix! L'objectiu és no trencar
+	la ratxa, i fer la cadena més llarga que pugui.)
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	Ara, ompliu aquesta última targeta:
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_when"></sim>
+</panel>
+
+<panel w=400 h=80>
+<words w=400 x=-15 no-bg>
+	I aquí estan els teus quatre noves targetes, totes elles sobre tu!
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_what&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_why&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_how&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_when&refresh=yes" class="small_card"></sim>
+</panel>
+
+<br><br>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=0></pic>
+<words x=180 y=10 w=250 no-bg style="font-size: 23px">
+	Però com vaig dir, vull<br> que prenguis control de la teva memòria <i>avui</i>.
+</words>
+<words x=230 y=130 w=250 no-bg style="font-size: 23px">
+	No "algun dia", no "demà", <i>AVUI</i>.
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=250></pic>
+<words x=150 y=10 w=120 no-bg>
+	per a ajudar-te...
+</words>
+<words x=270 y=95 w=170 no-bg>
+	baixarem unes
+	<b style="font-size:30px">
+	COSETES BONIQUES
+	</b>
+</words>
+</panel>
+
+<panel w=600 h=90>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>PRIMER:</b>
+	<span id="gift_wallpaper"></span>
+	per a recordar-te jugar a Repàs Espaiat diàriament!
+</words>
+</panel>
+
+<div>
+<a target="_blank" id="wallpaper_link">
+<img id="wallpaper_image"/><br>
+	(fes clic per a descarregar &darr;)
+</a>
+</div>
+
+<panel w=600 h=90 style="height: auto; position: relative; left: -15px;">
+<words x=-15 y=0 w=570 no-bg style="text-align:left; position:static" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>SEGON:</b>
+	<span id="gift_app"></span>
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=90>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	I finalment,
+	<b>TERCER:</b>
+	un .*zip de totes les targetes amb les quals has practicat en aquest còmic!
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=400 h=100>
+<sim x=0 y=0 w=400 h=100 src="sims/downloads/all.html"></sim>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=120>
+<words x=-15 y=0 w=600 no-bg style="text-align:left">
+	(Aquestes poden ser les targetes dels primers dies de Repàs Espaiat,
+	per a ajudar-te a començar! Com a extra, aconseguiràs recordar tot el que
+	vas aprendre avui, gairebé per sempre.)
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=0></pic>
+<words x=110 y=30 w=250 no-bg>
+	El que em recorda...
+</words>
+<words x=200 y=105 w=220 no-bg>
+	un últim adéu,
+	pels vells temps,
+	el cant del cigne!
+</words>
+<words x=210 y=230 w=250 no-bg>
+	...repassem les targetes, <i>totes</i> elles:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=intro_a,sci_a,leit_a,you_what,intro_b,sci_b,leit_b,you_why,sci_c,leit_c,you_how,leit_d,you_when,intro_c"></sim>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=0 sy=500></pic>
+<words x=0 y=12 w=210 no-bg>
+	*Sniff...
+	Sempre em costa dir adéu...
+</words>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=240 sy=500></pic>
+<words x=-20 y=-10 no-bg fontsize=120 color="rgba(0,0,0,0.5)" style="transform:rotate(10deg)">
+	PRRF
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=480 sy=500></pic>
+<words x=160 y=30 w=200 no-bg style="font-size: 23px">
+	Trobaré a faltar aquesta estona junts...
+</words>
+<words x=200 y=120 w=250 no-bg>
+	...però espero que ens continuem recordant!
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=430 h=90>
+	Si ets estudiant, espero que el Repàs Espaiat
+	t'ajudi a prendre les regnes del teu aprenentatge.
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=800></pic>
+<words x=10 y=10 w=430 h=90>
+	Si ets docent,
+	si us plau, <i>si us plau</i>, explica-li als teus estudiants sobre el Repàs Espaiat
+	(i altres hàbits d'estudi útils) aviat.
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=1000 sy=800></pic>
+<words x=10 y=10 w=430 h=90>
+	Però siguis estudiant o no, espero que
+	el Repàs Espaiat t'ajudi a desenvolupar la teva memòria, la teva ment, la teva Musa...
+</words>
+<words x=168 y=147 w=250 no-bg class="comic_text smaller" style="color:#fff">
+	"no!" va cridar el mitocondri, segons baixava per la gola càlida i humida de la cèl·lula. "jo no-
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end1.png" sx=1000 sy=0></pic>
+<words x=30 y=30 w=250 no-bg>
+	...i aprendre un dels grans amors de la vida:
+</words>
+<words x=120 y=455 w=300 style="text-align:right" no-bg>
+	un amor durador per aprendre.
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=the_end"></sim>
+</panel>
+
+<panel fadeInOn="flip_the_end" w=600 h=80>
+<words w=600 x=-15 y=0 no-bg>
+	(Vols aprendre més? Crèdits i més informació a baix!)
+	<br>
+	&darr; &darr; &darr; &darr; &darr;
+	</b>
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CREDITS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="bye"></a>
+<div id="credits">
+
+<div>
+
+<div style="font-size:30px; margin-bottom:0; overflow: hidden;">
+<img src="pics/nicky_credits.png" width="100" height="100" style="display: block; float: left;" />
+<div style="display: block; position: relative; left: 14px; width: 390px; height: 130px; float: left;">
+	Escrit, dibuixat i programat per
+	<br>
+	<a target="_blank" href="https://ncase.me" style="font-size:2em; display:inline-block; line-height:1em">
+	Nicky Case
+	</a>
+	<br>
+	<span id="translation_credits_2"></span>
+	<!-- TRANSLATOR NOTE: again, when you fill in translations.txt, your name will appear here! -->
+</div>
+</div>
+
+<p style="margin-top:0">
+	
+	A més, aquest còmic interactiu és
+
+	<span style="display:block; margin-top:5px;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="-0.5 0.5 64 64" enable-background="new -0.5 0.5 64 64" xml:space="preserve">
+		<g>
+			<circle fill="#000000" cx="31.325" cy="32.873" r="30.096"/>
+			<path fill="#FFFFFF" id="text2809_1_" d="M31.5,14.08c-10.565,0-13.222,9.969-13.222,18.42c0,8.452,2.656,18.42,13.222,18.42   c10.564,0,13.221-9.968,13.221-18.42C44.721,24.049,42.064,14.08,31.5,14.08z M31.5,21.026c0.429,0,0.82,0.066,1.188,0.157   c0.761,0.656,1.133,1.561,0.403,2.823l-7.036,12.93c-0.216-1.636-0.247-3.24-0.247-4.437C25.808,28.777,26.066,21.026,31.5,21.026z    M36.766,26.987c0.373,1.984,0.426,4.056,0.426,5.513c0,3.723-0.258,11.475-5.69,11.475c-0.428,0-0.822-0.045-1.188-0.136   c-0.07-0.021-0.134-0.043-0.202-0.067c-0.112-0.032-0.23-0.068-0.336-0.11c-1.21-0.515-1.972-1.446-0.874-3.093L36.766,26.987z"/>
+			<path fill="#FFFFFF" id="path2815_1_" d="M31.433,0.5c-8.877,0-16.359,3.09-22.454,9.3c-3.087,3.087-5.443,6.607-7.082,10.532   C0.297,24.219-0.5,28.271-0.5,32.5c0,4.268,0.797,8.32,2.397,12.168c1.6,3.85,3.921,7.312,6.969,10.396   c3.085,3.049,6.549,5.399,10.398,7.037c3.886,1.602,7.939,2.398,12.169,2.398c4.229,0,8.34-0.826,12.303-2.465   c3.962-1.639,7.496-3.994,10.621-7.081c3.011-2.933,5.289-6.297,6.812-10.106C62.73,41,63.5,36.883,63.5,32.5   c0-4.343-0.77-8.454-2.33-12.303c-1.562-3.885-3.848-7.32-6.857-10.33C48.025,3.619,40.385,0.5,31.433,0.5z M31.567,6.259   c7.238,0,13.412,2.566,18.554,7.709c2.477,2.477,4.375,5.31,5.67,8.471c1.296,3.162,1.949,6.518,1.949,10.061   c0,7.354-2.516,13.454-7.506,18.33c-2.592,2.516-5.502,4.447-8.74,5.781c-3.2,1.334-6.498,1.994-9.927,1.994   c-3.468,0-6.788-0.653-9.949-1.948c-3.163-1.334-6.001-3.238-8.516-5.716c-2.515-2.514-4.455-5.353-5.826-8.516   c-1.333-3.199-2.017-6.498-2.017-9.927c0-3.467,0.684-6.787,2.017-9.949c1.371-3.2,3.312-6.074,5.826-8.628   C18.092,8.818,24.252,6.259,31.567,6.259z"/>
+		</g>
+		</svg>
+		<span style="font-size: 60px; position: relative; top: -12px; left: 8px;">
+		DOMINI PÚBLIC
+		</span>
+	</span>
+
+	pel que pots utilitzar-ho amb propòsits educatius, personals, o fins i tot comercials.
+	Ja tens el meu permís!
+	<a target="_blank" href="https://github.com/ncase/remember">
+	(Descarregar el codi)</a>
+	<a target="_blank" href="https://github.com/ncase/remember#how-to-translate">
+	(Tradueix aquest còmic)</a>
+
+</p>
+
+<p>
+	No obstant això, només puc fer això gràcies als meus més de 100 patrons.
+	Em deixen continuar fent el que estimo. Gràcies! 💖
+	<a target="_blank" href="https://www.patreon.com/ncase">
+	(Vols unir-te? Fes *clic aquí!)
+	</a>
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	Lectures Addicionals
+</p>
+
+<p>
+	*Nosequé a lloms de gegants...
+	Aquí tens les lectures que van fer de Repàs Espaiat una part de la meva vida:
+</p>
+
+<ul>
+	<li>
+		🤓
+		<a target="_blank" href="http://augmentingcognition.com/ltm.html">
+		Augmenting Long-Term Memory</a>
+		de Michael Nielsen
+		em va mostrar que el Repàs Espaiat no és només una eina de memorització,
+		ho és per a crear enteniment profund. Podria ser fins i tot una forma <i>de viure</i>.
+	</li>
+	<li>
+		💬
+		<a target="_blank" href="https://fluent-forever.com/the-book/">
+		Fluent Forever</a>
+		de Gabriel Wyner
+		em va convèncer per fi a començar (de nou) a aprendre francès,
+		i crear la Capsa Leitner. (*vaig adaptar el meu calendari de 64 dies d'aquest llibre)
+	</li>
+	<li>
+		🃏
+		<a target="_blank" href="https://www.supermemo.com/en/articles/20rules">
+		20 Rules for Cards</a>
+		de Piotr Wozniak em va ensenyar com treure el màxim partit al Repàs Espaiat.
+		(Nota: l'autor també va inventar l'algoritme que utilitza Anki!)
+	</li>
+</ul>
+
+	I les meves lectures favorites sobre la ciència de l'aprenentatge:
+
+<ul>
+	<li>
+		👩‍🎓
+		<a target="_blank" href="https://www.amazon.com/Why-Dont-Students-Like-School/dp/047059196X/">
+		Why Don't Students Like School?</a>
+		de Daniel Willingham
+		em va demostrar que la "memorització a seques" és realment <i>necessària</i>
+		per a la creativitat i el pensament crític.
+	</li>
+	<li>
+		✏️
+		<a target="_blank" href="http://tlcp.depaultla.org/wp-content/uploads/sites/2/2015/05/Dunlosky-et-al-2013-What-Works-What-Doesnt.pdf">
+		What Works, What Doesn't [PDF]
+		</a>
+		de Dunlosky et al
+		fa un resum de <i>més de 200 estudis</i> sobre diversos mètodes d'aprenentatge.
+		En resum: tècniques comunes com rellegir o subratllar no funcionen,
+		tècniques menys comunes com espaiar i acte-avaluar-se sí.
+		<a target="_blank" href="http://journals.sagepub.com/doi/abs/10.1177/1529100612453266">
+		(Enllaç al text original)
+		</a>
+	</li>
+</ul>
+
+<p>
+	I si vols aprendre més coses jugant,
+	<a target="_blank" href="https://explorabl.es/">
+	dóna-hi un cop d'ull a Explorable Explanations!</a> 🕹️
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	Més agraïments
+</p>
+
+<p>
+	👀 Gràcies a tots els meus jugadors de prova per fer que aquest projecte no sigui dolent:
+	<span style="font-size: 19px; line-height: 0px; color: #999;">
+	Aatish Bhatia, Adam Filinovich, Aimee Jarboe, Alex Jaffe, Amit Patel, Andy Matuschak, B Cavello, Chris Walker, Frank Lantz, Gal Green, Glen Chiacchieri, Hamish Todd, Henry Reich, Jacque Goupil, James Lytle,
+	Jez Swanson, Josh Comeau, Kayle Sawyer, Levi Robertson, Marcelo Gallardo, Martyna Wasiluk, Michael Nielsen, Mikayla Hutchinson, Mike Gifford, Monica Srivastava, Owen Landgren,
+	Paul Butler, Paul Simeon, Philipp Wacker, Pontus Granström, Rowan, Sebastian Morr, SpacieCat, Tanya Short, Tim &amp; Alexandra Swast, Tom Hermans, Toph Tucker, Will Harris-Braun, Zeno Rogue
+	</span>
+</p>
+
+<p>
+	📹 Gràcies a Chris Walker per fer el
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+	vídeo de creació de la Capsa Leitner!</a>
+	(Per cert:
+	<a target="_blank" href="http://polytrope.com/">
+	Chris fa coses interactives</a>
+	també!)
+</p>
+
+<p>
+	🐞 Gràcies a Omar Rizwan per ajudar-me a arreglar al pou sense fons d'errors en Safari Mobile
+</p>
+
+<p>
+	🔊 Aquest projecte s'ha fet amb recursos de *Creative *Commons
+	de Wikimedia Commons i FreeSounds.
+	<a target="_blank" href="https://github.com/ncase/remember#full-asset-credits">
+	(Veure tots els crèdits)</a>
+</p>
+
+<p>
+	💖 I insisteixo, gràcies als seguidors de *Patreon per fer això possible:
+</p>
+
+<iframe gotosrc="supporters/"></iframe>
+
+<p>
+	🙏 I finalment, gràcies a <i>tu</i> per ser el tipus de persona que llegeix els crèdits!
+	Pots
+	<a target="_blank" href="https://ncase.me/">
+	jugar a més coses meves</a>,
+	<a target="_blank" href="https://twitter.com/ncasenmare">
+	seguir-me en Twitter</a>,
+	o
+	<a target="_blank" href="https://www.patreon.com/ncase">
+	donar-me suport a Patreon</a>.
+	Espero sincerament que aquest còmic t'hagi pogut ajudar, de qualsevol manera.
+</p>
+
+<p>
+	Feliç aprenentatge!<br>
+	~ Nicky Case
+</p>
+
+<!-- Share buttons, text generated from labels -->
+<div id="share_buttons"></div>
+
+</div>
+
+</div>
+
+
+<!--
+
+TRANSLATOR NOTE:
+
+HA HA YOU THOUGHT YOU WERE DONE?!
+
+NOPE
+
+WE'VE STILL GOT THE INTERFACE LABELS & FLASHCARDS TO TRANSLATE
+
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- LABELS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="labels">
+
+<!-- Chapter Links -->
+<span id="label_chapter_links">
+	<a href="#0">Introducció</a>
+	&middot;
+	<a href="#1">La Ciència</a>
+	&middot;
+	<a href="#2">L'Art</a>
+	&middot;
+	<a href="#3">Comença!</a>
+	&middot;
+	<a href="#bye">Crèdits</a>
+</span>
+
+<!-- Multi Card Labels -->
+<span id="multicard_q">
+	intenta recordar-ho &uarr;
+	i dóna-li la volta ↻
+</span>
+<span id="multicard_cards_left">
+	(queden [N] cartes)
+</span>
+<span id="multicard_a">
+	t'ho recordaves?
+</span>
+<span id="multicard_no">
+	no, una altra cop
+</span>
+<span id="multicard_yes">
+	sí, seguim!
+</span>
+<span id="multicard_done">
+	tot llest! continua llegint
+	<br>
+	&darr;
+</span>
+<span id="multicard_done_2">
+	això és tot, amics!
+	<br>
+	&darr;
+</span>
+
+<!-- Ebbinghaus Simulation -->
+<span id="ebbinghaus_y_axis">
+	força de la memòria &rarr;
+</span>
+<span id="ebbinghaus_x_axis">
+	temps &rarr;
+</span>
+<span id="ebbinghaus_decay">
+	velocitat:
+</span>
+<span id="ebbinghaus_forgetting">
+	<span style="font-size:20px">punt òptim:</span>
+</span>
+<span id="ebbinghaus_recall">
+	quan es fa el repàs:
+</span>
+<span id="ebbinghaus_recalls">
+	quan es fan els repassos:
+</span>
+<span id="ebbinghaus_auto">
+	auto-optimitzar!
+</span>
+
+<!-- Leitner Calendar -->
+<!--
+TRANSLATOR NOTE:
+The exact three characters [N] is how the code knows where to put the number.
+When you translate, make sure the [N] is there if it was there in the original.
+-->
+<span id="calendar_day">
+	En el dia número [N]...
+</span>
+<span id="calendar_review">
+	repassar Nivells [N] (<i>en aquest ordre</i>)
+</span>
+<span id="calendar_loop">
+	(i després tornem al dia 1!)
+</span>
+
+<!-- Leitner Box simulation -->
+<span id="leitner_day">
+	Dia [N]
+</span>
+<span id="leitner_step_to_review">
+	repassar: Nivell
+</span>
+<span id="leitner_step_reviewing">
+	repassar Nivell [N]
+</span>
+<span id="leitner_step_new">
+	afegir [N] targetes noves
+</span>
+<span id="leitner_step_stats">
+	total: ¡[N] targetes!
+</span>
+<span id="leitner_step_stats_2">
+	([N] retirades)
+</span>
+<span id="leitner_button_next_step">
+	següent pas
+</span>
+<span id="leitner_button_next_day">
+	seg. dia
+</span>
+<span id="leitner_button_next_week">
+	seg. setmana
+</span>
+<span id="leitner_button_next_month">
+	seg. mes
+</span>
+<span id="leitner_slider_new">
+	[N] targetes noves al dia
+</span>
+<span id="leitner_slider_wrong">
+	<i>fallar</i> el [N]% de targetes
+</span>
+<span id="leitner_reset">
+	REINICIAR
+</span>
+
+<!-- Typing Cards -->
+<span id="type_question">
+	Pregunta:
+	<!--
+	TRANSLATOR NOTE: "Q" short for Question.
+	Dunno if other languages have similar one-letter abbreviations.
+	If not, just type the full translated word for "Question"
+	-->
+</span>
+<span id="type_placeholder">
+	aquí la teva resposta
+</span>
+<span id="type_suggestions">
+	o tria un d'aquests:
+</span>
+
+<!-- Suggestions -->
+<span id="you_what_suggestions">
+	<li>Una cosa interessant!</li>
+	<li>Un llenguatge</li>
+	<li>Música</li>
+	<li>Programació</li>
+	<li>(un altre)</li>
+</span>
+<span id="you_why_suggestions">
+	<li>Pels qui vull</li>
+	<li>Pel meu benefici</li>
+	<li>Per la meva curiositat</li>
+	<li>(un altre)</li>
+</span>
+<span id="you_how_suggestions">
+	<li>Capsa Leitner</li>
+	<li>Anki</li>
+	<li>TinyCards</li>
+	<li>(un altre)</li>
+</span>
+<span id="you_when_suggestions">
+	<li>Al matí</li>
+	<li>Al tren/bus/metro</li>
+	<li>A la nit</li>
+	<li>(un altre)</li>
+</span>
+
+<!-- Gifts -->
+<span id="gift_wallpaper_what">
+	QUÈ:
+</span>
+<span id="gift_wallpaper_why">
+	PER QUÈ:
+</span>
+<span id="gift_wallpaper_do_1">
+	FES-
+</span>
+<span id="gift_wallpaper_do_2">
+	ME!
+</span>
+<span id="gift_wallpaper_filename">
+	fons de pantalla
+</span>
+<span id="gift_wallpaper_desktop">
+	un fons de pantalla,
+</span>
+<span id="gift_wallpaper_phone">
+	un fons per al mòbil,
+</span>
+<span id="gift_app_leitner">
+	un vídeo (en anglès) del meu amic Chris Walker, de com fer la teva pròpia Capsa Leitner!
+	<br><br>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uvF1XuseZFE?rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+	<br>
+	(I aquí hi ha un tutorial semblant, a l'estil IKEA:)
+	<br><br>
+	<a target="_blank" href="./pdf/leitner.pdf" style="display: block; text-align: center;">
+	<img src="./pdf/thumbnail.png" width="450"/><br>clic per descarregar el PDF</a>
+</span>
+<span id="gift_app_anki">
+	un enllaç per a
+	<a target="_blank" href="https://apps.ankiweb.net/">descarregar Anki!</a>
+	I aquí hi ha un tutorial de com usar-lo:
+	<br><br>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sQkdB3cJwn0?start=180&rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+</span>
+<span id="gift_app_tiny">
+	un enllaç a
+	<a target="_blank" href="https://tinycards.duolingo.com/">
+	TinyCards!</a>
+	(recomano mirar els seus
+	<a target="_blank" href="https://tinycards.duolingo.com/users/TinyGeo">
+	baralles geogràfiques</a>)
+</span>
+<span id="gift_app_other">
+	enllaços a tutorials per a crear una Capsa Leitner
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+	[vídeo]</a>
+	<a target="_blank" href="./pdf/leitner.pdf">
+	[pdf]</a>,
+	<a target="_blank" href="https://apps.ankiweb.net/">
+	la app Anki</a>,
+	i
+	<a target="_blank" href="https://tinycards.duolingo.com/">
+	TinyCards</a>!
+</span>
+
+<!-- Downloading Cards -->
+<span id="download_all">
+	DESCARREGAR TARGETES
+</span>
+<span id="download_all_downloading">
+	DESCARREGANT...
+</span>
+<span id="download_all_done">
+	FET! Mira la teva carpeta de Descàrregues.
+</span>
+
+<!-- Social Sharing -->
+<span id="share_title">
+	Com Recordar Tot Gairebé Per Sempre
+</span>
+<span id="share_desc">
+	un còmic interactiu sobre art i ciència de la memòria
+</span>
+
+
+
+
+<!--
+
+TRANSLATOR NOTE:
+
+One more section to go!
+
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- FLASHCARDS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!--
+TRANSLATOR NOTE:
+The CSS for the flashcards is really touchy, so DO NOT MODIFY THE CSS.
+That means, try as much as possible to make your text shorter or the same length as the original text.
+Good luck!
+-->
+
+<!-- - - - - - - - - - - - -->
+<!-- INTRO - - - - - - - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_spaced_rep_front">
+	<div class="fcard_center" style="height:2.5em">
+	i el nom d'aquest joc és...
+	</div>
+</span>
+<span id="flashcard_spaced_rep_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="color:white; font-size:74px; height:1.6em; line-height:0.8em;">
+	REPÀS ESPAIAT
+	</div>
+</span>
+<span id="flashcard_intro_a_front">
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	Repàs Espaiat = <span class="underline">____</span> + <span class="underline">____</span>
+	</div>
+</span>
+<span id="flashcard_intro_a_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=240></div>
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	proves + temps
+	</div>
+</span>
+<span id="flashcard_intro_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	3 tècniques d'aprenentatge comuns però inefectives són...
+	</div>
+</span>
+<span id="flashcard_intro_b_back">
+	<div id="fc_words" class="fcard_center" style="height:2.2em">
+	...classes, covar i rellegir
+	</div>
+</span>
+<span id="flashcard_intro_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.4em">
+	En la mitologia grega,
+    la deessa de <span class="underline">____</span>
+    era la mare de les deesses de
+    <span class="underline">________</span>
+	</div>
+</span>
+<span id="flashcard_intro_c_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width:250px; top:50px; left:140px; line-height:1.1em;">
+	Memòria és la mare d'Inspiració
+	</div>
+</span>
+
+<!-- - - - - - - - - - - - -->
+<!-- CHAPTER 1: The Science -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_guessgap_front">
+	<div class="fcard_center" style="height:2.5em">
+	la millor forma de repartir els repassos és...
+	</div>
+</span>
+<span id="flashcard_guessgap_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="height:2.5em">
+	¡amb trossos <i>creixents</i>!
+	</div>
+</span>
+<span id="flashcard_sci_a_front">
+	<div id="fc_words" class="fcard_center" style="height:3.5em">
+	El pioner en ciència experimental de la memòria és...
+	</div>
+</span>
+<span id="flashcard_sci_a_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width: 250px; top: 60px; left:150px; line-height: 1.1em;">
+	Hermann Ebbinghaus
+	</div>
+</span>
+<span id="flashcard_sci_b_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	La Corba de l'Oblit (<i>sense</i> repassos) té una forma...
+	</div>
+</span>
+<span id="flashcard_sci_b_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 280px; top: 70px; left: 100px; font-size:20px; line-height: 1.1em;">
+	(nota: baixa ràpid i després lent, "reducció exponencial")
+	</div>
+</span>
+<span id="flashcard_sci_c_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	La Corba de l'Oblit (<i>amb</i> repassos ben separats) té una forma...
+	</div>
+</span>
+<span id="flashcard_sci_c_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 360px; top: 120px; left: 20px; font-size:20px; line-height: 1.1em;">
+	(nota: els trossos entre repassos <i>creixen</i> en longitud)
+	</div>
+</span>
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 2: The Art - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_leit_a_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	En la Capsa Leitner, <span class="underline">______</span>
+	el tros (nº de dies entre repassos) per cada Nivell
+	</div>
+</span>
+<span id="flashcard_leit_a_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=720 style="left:-5px"></div>
+	<div id="fc_words" class="fcard_center" style="height:110px">
+	dupliquem el tros
+	</div>
+</span>
+<span id="flashcard_leit_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	La Capsa Leitner:
+	<br>
+	quan <i>encertes</i> una targeta, la mous <span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_b_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:170px">
+	al següent Nivell
+	</div>
+</span>
+<span id="flashcard_leit_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	La Capsa Leitner:
+	<br>
+	quan <i>falles</i> una targeta, la tornas<span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_c_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:180px">
+	al Nivell 1!
+	</div>
+</span>
+<span id="flashcard_leit_d_front">
+	<div id="fc_words" class="fcard_center" style="font-size:30px; height:170px;">
+	Segons un comic interactiu en internet,
+	les meves targetes de Repàs Espaiat han de ser
+	<span class="underline">______</span> ,
+	<span class="underline">______</span> , i
+	<span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_d_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=720></div>
+	<div id="fc_words" class="fcard_center" style="color:#fff; height:200px; height: 180px; font-size: 25px;">
+	petites, connectades i amb sentit
+	</div>
+</span>
+
+
+<span id="flashcard_mitochondria_all_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		Què és això?
+	</div>
+</span>
+<span id="flashcard_mitochondria_all_back">
+	<div class="fcard_center" style="height:220px; font-size:20px;">
+		Aquest orgànul es diu "mitocondri".
+		El mitocondri és el motor de la cèl·lula.
+		Es troben en gairebé tots els organismes eucariotes (amb nucli).
+		La hipòtesi més acceptada sobre l'origen del mitocondri és la Teoria Endosimbiòtica:
+		fa uns 1500 milions d'anys, una cèl·lula procariota (sense nucli) va sobreviure al fet que se la "mengés"
+		una altra cèl·lula, i ha continuat vivint dins d'ella des de llavors.
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		Què és això?
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_back">
+	<div class="fcard_center" style="height:1.5em;">
+		Mitocondri
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960></div>
+	<div class="fcard_center" style="height:180px">
+		El mitocondri és <span class="underline">el _______</span> de la cèl·lula
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_back">
+	<div class="fcard_center" style="height:150px">
+		motor
+		<span class="bonus_note">
+		// nota extra: de debò, estaríem morts sense elles.
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:45px"></div>
+	<div class="fcard_center" style="height:180px;">
+		El mitocondri es troba en gairebé tots els organismes <span class="underline">____</span> .
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_back">
+	<div class="fcard_center" style="height:1.5em">
+		eucariotes
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_front">
+	<div class="fcard_center" style="height:2.5em">
+		Les eucariotes són cèl·lules que...
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		tenen un nucli
+		<span class="bonus_note">
+		// nota extra: "eu"=veritable, "karyon"=nucli
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_front">
+	<div class="fcard_center" style="height:2.5em">
+		Les procariotes són cèl·lules que...
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		NO tenen nucli
+		<span class="bonus_note">
+		// nota extra: "pro"=abans de, "karyon"=nucli
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:10px"></div>
+	<div class="fcard_center" style="height:200px; font-size:35px">
+		La hipòtesi més acceptada sobre l'origen del mitocondri és...
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_back">
+	<div class="fcard_center" style="height:120px">
+		la Teoria Endosimbiòtica
+		<span class="bonus_note">
+		// nota extra: "endo"=dins, "sim"=junts, "bio"=viure
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 35px; height: 220px;">
+		Segons la Teoria Endosimbiòtica, el mitocondri va aparèixer fa
+		<span class="underline">____</span> años
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_back">
+	<div class="fcard_center" style="height:1.5em">
+		fa uns 1500 milions d'anys
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 37px; height: 220px;">
+		Segons la Teoria Endosimbiòtica, el mitocondri va aparèixer quan...
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1440></div>
+	<div class="fcard_center" style="height:230px">
+		quan una altra cèl·lula va menjar una procariota
+	</div>
+</span>
+
+
+<span id="flashcard_cat_front">
+	<div class="fcard_center" style="height:100px">
+		<div style="font-size:120px; height:102px;">
+			gat
+			<!--
+			TRANSLATOR NOTE:
+			If your language is NOT French, then change this to "cat" in YOUR language
+			-->
+		</div>
+		<div>
+			(català)
+			<!--
+			TRANSLATOR NOTE:
+			If your language is NOT French, then change this to YOUR language
+			-->
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat_back">
+	<div class="fcard_center" style="height:100px">
+		<!--
+		TRANSLATOR NOTE: DO NOT TRANSLATE. Leave as French! 
+		-->
+		<div style="font-size:120px; height:75px;">
+			chat
+		</div>
+		<div>
+			(francès)
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=0></div>
+	<div class="fcard_center"></div>
+</span>
+<span id="flashcard_cat2_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=0></div>
+	<div class="fcard_center">
+		<audio controls id="HACK_audio" style="position: absolute; top: 115px; left: 30px; transform: scale(0.5);">
+			<source gotosrc="../../audio/chat.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+</span>
+
+<span id="flashcard_learndo_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		i torno a fer coses... ↻
+	</div>
+</span>
+<span id="flashcard_learndo_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		i torno a aprendre... ↻
+	</div>
+</span>
+
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 3: Get Started -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_you_what_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		QUÈ vols aprendre?
+	</div>
+</span>
+<span id="flashcard_you_what_back">
+	<div id="fc_words" class="fcard_center" editable="you_what" style="height:1.2em">
+		Qualsevol cosa interessant!
+	</div>
+</span>
+<span id="flashcard_you_why_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		PER QUÈ vols aprendre?
+	</div>
+</span>
+<span id="flashcard_you_why_back">
+	<div id="fc_words" class="fcard_center" editable="you_why" style="height:1.2em">
+		Per curiositat
+	</div>
+</span>
+<span id="flashcard_you_how_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;font-size:35px">
+		COM vols fer R.E.?
+	</div>
+</span>
+<span id="flashcard_you_how_back">
+	<div id="fc_words" class="fcard_center" editable="you_how" style="height:1.2em">
+		Capsa Leitner
+	</div>
+</span>
+<span id="flashcard_you_when_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;font-size:35px">
+		QUAN vols fer R.E.?
+	</div>
+</span>
+<span id="flashcard_you_when_back">
+	<div id="fc_words" class="fcard_center" editable="you_when" style="height:1.2em">
+		A les nits
+	</div>
+</span>
+
+<span id="flashcard_the_end_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=480></div>
+</span>
+<span id="flashcard_the_end_back">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="top:30px; font-size:50px;">
+		FI
+	</div>
+</span>
+
+
+</div>
+
+<!--
+
+TRANSLATOR NOTE:
+
+Congrats! NOW you've translated everything!
+
+Again, from the deepest part of my heart, I want to sincerely thank you
+for helping spread this page to more people, in more languages.
+
+Oh wait, just one more thing: go to translations.txt,
+and add your translation there so this project "knows" your page exists.
+
+And once that's done, send a Pull Request, and your translation will go live!
+
+THANK YOU! <3
+~ Nicky Case
+
+-->
+
+</body>
+
+</html>
+
+<script src="js/howler.core.min.js"></script>
+<script src="js/minpubsub.src.js"></script>
+<script src="js/comic.js"></script>
