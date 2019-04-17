@@ -69,7 +69,7 @@ traducido por <a href="https://github.com/SantiagoGnzlz">SantiagoGnzlz</a> y <a 
 original in English
 
 ca
-Catala
+Català
 ./ca.html
 Voldries canviar a la versió en catalan?
 Val!
@@ -78,7 +78,7 @@ traduït per <a href="https://github.com/saimonmoore">saimonmoore</a>
 original in English
 
 pt
-Portuguese
+Português
 ./pt.html
 Gostaria de mudar para o idioma português?
 Óbvio!
