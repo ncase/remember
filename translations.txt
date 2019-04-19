@@ -78,10 +78,19 @@ translated by Antonio Emanuele Taggio
 originale in inglese
 
 ca
-Catala
+Català
 ./ca.html
 Voldries canviar a la versió en catalan?
 Val!
 No
 traduït per <a href="https://github.com/saimonmoore">saimonmoore</a>
+original in English
+
+pt
+Português
+./pt.html
+Gostaria de mudar para o idioma português?
+Óbvio!
+Nah
+Traduzido por <a href="https://github.com/ramon-mendes/">Ramon Mendes</a>
 original in English
