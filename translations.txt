@@ -74,8 +74,8 @@ Italiano
 Vuoi passare alla versione in Italiano?
 Ovvio!
 Nah
-translated by Antonio Emanuele Taggio
-originale in inglese
+tradotto da <a target="_blank" href="https://github.com/antalele">Lele</a>
+originale in <a target="_blank" href="https://ncase.me/remember/">Inglese</a>
 
 ca
 Català
