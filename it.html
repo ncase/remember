@@ -1,0 +1,2698 @@
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   _______  ___  ____________    ___  _______  ____________________________  _  __
+  / __/ _ \/ _ |/ ___/ __/ _ \  / _ \/ __/ _ \/ __/_  __/  _/_  __/  _/ __ \/ |/ /
+ _\ \/ ___/ __ / /__/ _// // / / , _/ _// ___/ _/  / / _/ /  / / _/ // /_/ /    / 
+/___/_/  /_/ |_\___/___/____/ /_/|_/___/_/  /___/ /_/ /___/ /_/ /___/\____/_/|_/  
+                                                                                  
+=== FAN-TRANSLATION GUIDE ===
+Hello fan-translators! From the bottom of my heart:
+thank you for doing this, and, you've no idea what you've gotten yourself into.
+There's about 3500 words to translate, including the flashcards & further reading.
+Before doing anything, please read all these steps:
+https://github.com/ncase/remember#how-to-translate
+(emphasis: do NOT edit the original index.html. make a copy of this page!)
+To make translation less painful, I've added little HTML comments throughout.
+Look for the ones that say "TRANSLATOR NOTE".
+And after translating this page, don't forget to go to translations.txt
+and "add" your translation there! (further instructions will be there)
+Good luck, and many thanks again!
+<3,
+~ Nicky Case
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!DOCTYPE html>
+<html lang="it"> <!-- TRANSLATOR NOTE: Remember your 2-letter code? Replace "en" with that! -->
+<head>
+
+	<!-- Meta Stuff -->
+	<title>Come Ricordare Tutto Per Sempre (o quasi)</title>
+	<!-- TRANSLATOR NOTE: Translate the "content" attribute -->
+	<meta name="description" content="un fumetto interattivo sull'arte e la scienza della memoria"/> 
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="favicon.png">
+	
+	<!-- Sharing Card Stuff -->
+	<meta itemprop="name" content="Come Ricordare Tutto Per Sempre (o quasi)"> <!-- TRANSLATE "content" -->
+	<meta itemprop="description" content="un fumetto interattivo sull'arte e la scienza della memoria"> <!-- TRANSLATE "content" -->
+	<meta itemprop="image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta name="twitter:title" content="Come Ricordare Tutto Per Sempre (o quasi)"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:description" content="un fumetto interattivo sull'arte e la scienza della memoria"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta property="og:title" content="Come Ricordare Tutto Per Sempre (o quasi)"> <!-- TRANSLATE "content" -->
+	<meta property="og:description" content="un fumetto interattivo sull'arte e la scienza della memoria"> <!-- TRANSLATE "content" -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ncase.me/remember/">
+	<meta property="og:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/comic.css"/>
+	<meta name="viewport" content="width=600">
+
+</head>
+
+<body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 0: INTRODUCTION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+<a name="0"></a>
+<div class="divider divider_title">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			COME RICORDARE TUTTO PER SEMPRE (O QUASI)
+			</div>
+			<!-- TRANSLATOR NOTE: add a hint of silliness at the end, like "ish" or "sorta" -->
+		</div>
+		<div style="text-align:right; position:relative;">
+			<div style="position:absolute;">
+				tempo di lettura/gioco: 20 minuti
+			</div>
+			di nicky case &middot; ottobre 2018
+			<br>
+			<span id="translation_credits"></span> 
+			<!-- TRANSLATOR NOTE: when you update translations.txt, your name will appear here! -->
+		</div>
+	</div>
+</div>
+
+<div class="comic">
+
+<div id="language_options"></div>
+
+<!--
+TRANSLATOR NOTE:
+There may already be "official" translations for terms like "Spaced Repetition" or "Forgetting Curve"!
+Go to their Wikipedia pages, scroll down to "Languages" in the left sidebar, and if your language is there,
+click on that Wikipedia page, and use the "official" translated term there.
+Spaced Repetition: https://en.wikipedia.org/wiki/Spaced_repetition
+Forgetting Curve: https://en.wikipedia.org/wiki/Forgetting_curve
+-->
+
+<!--
+TRANSLATOR NOTE:
+Try to make your translated text about the same length or shorter as the original text.
+If that's not possible, and your text doesn't fit in its box, you can modify attributes
+"x", "y", "w", "h" to change the box, or add your own custom CSS style to make the font fit.
+(CSS properties like "font-size" are very helpful)
+-->
+
+<panel w=400 h=650>
+<pic src="pics/intro0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=350 h=60>
+	Nella mitologia Greca, Mnemosine, la dea della memoria...
+</words>
+<words x=30 y=330 w=310 h=60>
+	... era la madre delle Muse, dee delle arti.
+</words>
+<words x=70 y=445 w=90 style="color:#fff" no-bg class="comic_text">
+	musica
+</words>
+<words x=119 y=494 w=90 style="color:#fff" no-bg class="comic_text">
+	teatro
+</words>
+<words x=214 y=464 w=90 style="color:#fff" no-bg class="comic_text">
+	racconti "strani"
+</words>
+</panel>
+
+<panel w=600 h=60>
+<words w=600 x=-15 no-bg>
+	Quindi, come si realizzano Memoria e Arte a scuola?
+</words>
+</panel>
+
+<panel w=550 h=250>
+<pic src="pics/intro0.png" sx=400 sy=0></pic>
+
+<words x=-12 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=50  y=85 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=114 y=84 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=172 y=91 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=295 y=80 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=363 y=83 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=444 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=518 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/intro0.png" sx=400 sy=250></pic>
+<words x=155 y=20 w=90 no-bg>
+	Si.
+</words>
+<words x=196 y=65 w=270 no-bg>
+	Non solo fare lezione, sgobbare, e ri-leggere sono cose <i>noiose</i>,
+	la scienza ha dimostrato che <i>non funzionano neanche bene</i>.*
+</words>
+</panel>
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* tutte le fonti e i link sono alla fine del fumetto!
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/intro0.png" sx=400 sy=500></pic>
+<words x=95 y=30 w=340 no-bg>
+	E se ci fosse un modo per imparare
+	più efficiente <i>e</i> divertente?
+</words>
+<words x=164 y=141 w=300 no-bg>
+	E se ti dicessi che puoi giocare a carte, per 20 minuti al giorno,
+	per imparare <i>tutto quello che vuoi</i> a lungo termine, <i>per sempre?*</i>
+</words>
+</panel>
+
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* fino a quando non muori
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=spaced_rep"></sim>
+</panel>
+
+<panel w=500 h=450 fadeInOn="flip_spaced_rep">
+<pic src="pics/intro0.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Ed è una <i>figata</i>.
+	Io ho iniziato con le Ripetizioni Dilazionate in primavera imparando il Francese.
+</words>
+<words x=30 y=350 w=430 h=60>
+	In due <i>mesi</i>, ho imparato più parole che in due <i>anni</i>
+	di lezioni di Francese alle superiori.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/intro0.png" sx=950 sy=450></pic>
+<words x=10 y=10 w=400 h=60>
+	Da allora, ho usato le Ripetizioni Spaziate per ricordare ogni tipo di cosa...
+</words>
+<words x=81 y=120 w=100 style="font-size:20px; text-align:left" no-bg class="comic_text">
+	accordi dell'ukulele
+</words>
+<words x=208 y=116 w=100 style="font-size:20px; text-align:left" no-bg class="comic_text">
+	linguaggi per programmare
+</words>
+<words x=380 y=137 w=100 style="font-size:20px; text-align:left" no-bg class="comic_text">
+	i compleanni degli amici
+</words>
+<words x=188 y=204 w=270 style="text-align:left" no-bg class="comic_text">
+	ogni cosa interessante che trovo in libri, discorsi, articoli, ecc!
+</words>
+<words x=60 y=300 w=400 h=60>
+	...e questo giochino di carte è diventato una parte centrale della mia <i>vita</i>.
+</words>
+</panel>
+
+<panel w=550 h=350>
+<pic src="pics/intro0.png" sx=0 sy=850></pic>
+<words x=10 y=10 w=500 h=30>
+	In breve, Ripetizioni Dilazionate = verifica + tempo.
+</words>
+<words x=10 y=220 w=500 h=90>
+	Ti metti alla prova ripetutamente su un fatto, distribuendo le ripetizioni nel temp.
+	(Ma non lo faremo per sempre? Ah, come vedremo dopo, c'è un trucco...)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=0 sy=1200></pic>
+<words x=10 y=20 w=290 no-bg>
+	Questo gioco è gratis, scientificamente-provato, e puoi farlo con la <i>scatola per scarpe</i>.
+</words>
+<words x=308 y=265 w=50 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	niky fa' silenzio
+</words>
+<words x=90 y=130 w=270 no-bg>
+	Allora, qual è il problema? Perchè non usano già <i>tutti</i> le Ripetizioni Dilazionate?
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=400 sy=1200></pic>
+<words x=10 y=20 w=330 no-bg>
+	Beh, il problema è che creare <i>ogni</i> nuova abitudine è difficile
+	– specialmente quelle strane.
+</words>
+<words x=292 y=303 w=80 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	arriva l'insegnante
+</words>
+<words x=100 y=134 w=270 no-bg>
+	Ecco perchè ho fatto questo fumetto disegnato male.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=800 sy=1200></pic>
+<words x=10 y=20 w=300 no-bg >
+	Qui ti parlerò delle Ripetizioni Dilazionate,
+	PERCHE' funzionano e COME funzionano...
+</words>
+<words x=110 y=140 w=250 no-bg>
+	...e ti aiuterò ad iniziare a usarle <i>OGGI.</i>
+</words>
+</panel>
+
+<panel w=600 h=180>
+<words w=600 x=-15 no-bg>
+
+	In più, durante questo fumetto,
+	ti metterai alla prova su ciò che hai imparato,
+	ad intervalli dilazionati.
+	<b>Ecco: userai le Ripetizioni Dilazionate per imparare le Ripetizioni Dilazionate.</b>
+
+	<br><br>
+	In questo modo:
+
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=intro_a,intro_b,intro_c"></sim>
+</panel>
+
+<panel w=550 h=450>
+<pic src="pics/intro0.png" sx=950 sy=1600></pic>
+<words x=10 y=10 w=480 h=110>
+	Scusa ma, "imparare meccanicamente" non dovrebbe essere sbagliato?
+	Non possiamo cercare tutto su internet di questi giorni?
+	Non dovremmo imparare la creatività &amp; il pensiero critico invece?
+</words>
+<words x=10 y=320 w=500 h=90>
+	Non <i>c'è</i> nessun "invece". 
+	La scienza mostra che
+	<i>hai bisogno</i> di memorizzare per avere creatività &amp; pensiero critico.
+	(Puoi scrivere un tema senza parole?)
+</words>
+<words x=187 y=138 w=150 no-bg class="comic_text" style="font-size:40px">
+	MEMORIA
+</words>
+<words x=22 y=222 w=100 no-bg class="comic_text" style="font-size:20px">
+	arte
+</words>
+<words x=408 y=224 w=100 no-bg class="comic_text" style="font-size:20px">
+	scienza
+</words>
+</panel>
+
+<panel w=550 h=300>
+<pic src="pics/intro0.png" sx=0 sy=1600></pic>
+<words x=10 y=20 w=310 no-bg>
+	Le Ripetizioni Dilazionate non sono un "trucchetto per studiare".
+</words>
+<words x=30 y=113 w=320 no-bg>
+	Sono un modo per controllare la tua <i>mente</i>.
+	Per fare della memoria a lungo-termine una <i>scelta</i>.
+	Per amare l'apprendimento...
+</words>
+</panel>
+
+<panel w=400 h=550>
+<pic src="pics/intro0.png" sx=550 sy=1600></pic>
+<words x=20 y=20 w=330 h=30>
+	...per gestire la tua, Musa interiore.
+</words>
+<words x=117 y=131 w=140 no-bg class="comic_text" style="font-size:20px; color:#fff">
+	Tony Stark ansimava mentre una mano guantata srisciava giù per la sua spina dorsale.
+	La pressione fissa era dolce e quasi rassicurante.
+	Obama rise. “Intendi, il–
+</words>
+<words x=240 y=480 w=120 h=30>
+	Iniziamo.
+</words>
+</panel>
+
+</div>
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 1: THE SCIENCE OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="1"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			LA SCIENZA delle
+			RIPETIZIONI DILAZIONATE
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=400 h=60>
+	Nel 1885, Hermann Ebbingaus eseguì un atto di scientifico masochismo.
+</words>
+<words x=30 y=320 w=430 h=90>
+	Lo psicologo Tedesco memorizzò <i>migliaia</i> di parole senza senso,
+	registrò quante ne dimenticava nel tempo, e scoprì...
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/sci0.png" sx=500 sy=0></pic>
+<words x=60 y=10 w=250>
+	<b>LA CURVA DELL'OBLIO</b>
+</words>
+<words x=10 y=310 w=350>
+	Scoprì che dimentichiamo la maggior parte delle cose che abbiamo imparato nelle prime 24 ore,
+	poi - se non le richiami - quello che rimane lo dimentichi esponenzialmente.*
+</words>
+</panel>
+
+<panel w=500 h=53 style="margin-top:-5px">
+<words w=500 x=-15 y=-10 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999; line-height: 1.1em;">
+	* tecnicamente la curva non è <i>esattamente</i>
+	<br>
+	esponenziale, ma, ecco, abbastanza vicina.
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=900 sy=0></pic>
+<words x=10 y=10 w=450 h=90>
+	I filosofi hanno discusso sulla memoria per millenni,
+	ma Ebbinghaus è stato il primo a fare dei veri <i>esperimenti.</i>
+	(che sono stati replicati)
+</words>
+<words x=193 y=169 w=70 no-bg class="comic_text" style="font-size:24px; color:rgba(0,0,0,0.35)">
+	t prg...
+</words>
+<words x=278 y=195 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35)">
+	vojo...
+</words>
+<words x=348 y=234 w=70 no-bg class="comic_text" style="font-size:23px; color:rgba(0,0,0,0.35)">
+	morì...
+</words>
+<words x=20 y=350 w=440 h=60>
+	Per questo, Hermann Ebbinghaus è conosciuto come
+	il pioniere della scienza della memoria.
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Qui c'è la versione giocabile della Curva dell'Oblio.
+	<b>Cambia la velocità di perdita della memoria. Che succede alla curva?</b>
+</words>
+</panel>
+
+<panel w=600 h=370>
+<sim x=0 y=0 w=600 h=370 src="sims/ebbinghaus/?mode=0"></sim>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Come potete vedere, meno dimentichi, più è piatta la curva -
+	ciò significa che il ricordo dura di più.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=0 sy=500></pic>
+<words x=10 y=10 w=300>
+	Quanto rapidamente dimentichi dipende dalla persona e dalla memoria...
+</words>
+<words x=0 y=145 w=330 no-bg class="comic_text smaller">
+	ciao! scusa, mi ripeti il tuo nome?
+</words>
+<words x=177 y=186 w=180 no-bg class="comic_text smaller">
+	haha. è susan.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=400 sy=500></pic>
+<words x=10 y=10 w=330>
+	Ma in generale, la “velocità con cui dimentichi” rallenta ogni volta che <b>richiami attivamente</b>.
+	(piuttosto che ri-leggere passivamente)
+</words>
+<words x=27 y=198 w=120 no-bg class="comic_text smaller">
+	susan. susan. susan. susan. susan.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=800 sy=500></pic>
+<words x=10 y=10 w=300>
+	(sebbene, quando smetti di ripetere, continui a dimenticare.)
+</words>
+<words x=41 y=121 w=150 no-bg class="comic_text smaller">
+	okay addio sarah!
+</words>
+<words x=191 y=148 w=100 no-bg class="comic_text smaller">
+	susan.
+</words>
+<words x=59 y=174 w=150 no-bg class="comic_text smaller">
+	certo, sandy!
+</words>
+<words x=193 y=203 w=100 no-bg class="comic_text smaller">
+	SUSAN.
+</words>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	Qui puoi simulare di nuovo, con un solo richiamo attivo.
+	<br>
+	(linea grigia: quanto ricorderesti <i>senza</i> il richiamo)
+	<br>
+	<b>Cambia il tempo di richiamo per vederne gli effetti:</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Un solo richiamo migliora il ricordo per un po'... ma a lungo andare,
+	se dimentichi esponenzialmente, un richiamo non aiuta.
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=390>
+	C'è un modo migliore per imparare?
+	Certo che c'è! Il trucco per ricordare... 
+</words>
+<words x=210 y=330 w=200>
+	...<i>è quasi dimenticare.</i>
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=0></pic>
+<words x=250 y=20 w=200>
+	Per capirci, pensa a quando alleni i tuoi muscoli.
+	Non migliorerai mai se usi un peso troppo leggero...
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=300></pic>
+<words x=250 y=20 w=200>
+	...ma neanche con uno troppo pesante.
+</words>
+</panel>
+
+<panel w=350 h=350>
+<pic src="pics/sci1.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=300>
+	Vale lo stesso quando alleni il cervello.
+	Hai bisogno della <b>difficoltà desiderabile</b>: il dolce punto del difficile-abbastanza.
+</words>
+<words x=55 y=187 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	comodo
+</words>
+<words x=55 y=282 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	scomodo
+</words>
+<words x=176 y=186 w=120 no-bg class="comic_text smaller">
+	troppo facile
+</words>
+<words x=179 y=217 w=120 no-bg class="comic_text" style="color:#000">
+	al punto giusto
+</words>
+<words x=176 y=280 w=120 no-bg class="comic_text smaller">
+	troppo difficile
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=360>
+	Perciò: per imparare meglio qualcosa, devi richiamarlo...
+</words>
+<words x=30 y=330 w=380>
+	...<i>proprio quando stai per dimenticartelo.</i>
+</words>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	La stessa simulazione di prima, ma ora puoi vedere il
+	<span style="background:#ffe866">punto giusto</span> –
+	dove hai dimenticato <i>giusto un po'.</i>
+	<b>Metti il richiamo al <i>centro</i> del punto giusto. Che succede?</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Vedi? Se fai un richiamo nel momento giusto,
+	dimentichi un po' meno velocemente!
+	Ora, che ne pensi di fare richiami <i>multipli</i>?
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci2.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430>
+	Diciamo che
+	<span class="strikeout">sei pigro</span>
+	hai poco tempo, quindi fai solo 4 sessioni di richiamo.
+	</words>
+	<words x=30 y=350 w=430>
+	Domanda:
+	<i>qual è il modo migliore di suddividere i richiami?</i>
+</words>
+<words x=82 y=198 w=120 no-bg class="comic_text" style="transform: rotate(-16deg);">
+	susan
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/sci2.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=190>
+	Dovresti avere intervalli regolari?
+	Intervalli di lunghezza crescente?
+	Di lunghezza decrescente?
+	O renderli imprevedibili, per tenerti sull'attenti?
+</words>
+<words x=259 y=16 w=100 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	= richiamo
+</words>
+<words x=295 y=16 w=100 no-bg class="comic_text smaller" style="text-align:right; color:#000">
+	tempo
+</words>
+<words x=245 y=61 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	intervalli regolari:
+</words>
+<words x=245 y=126 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	intervalli crescenti:
+</words>
+<words x=245 y=198 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	intervalli decrescenti:
+</words>
+<words x=245 y=259 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	intervalli casuali:
+</words>
+</panel>
+
+<panel w=400 h=90>
+<words h=90>
+	<b>Pensaci su</b>,
+	poi quando sarai pronto, <b>gira la carta &darr;</b>
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=guessgap"></sim>
+</panel>
+
+<panel fadeInOn="flip_guessgap" w=600 h=120>
+<words w=600 x=-15 y=0 no-bg>
+	Il che è molto contro-intuitivo!
+	Puoi verificarlo da solo, giocando con la simulazione qui sotto.
+	<b>
+	Metti tutti i richiami al <i>centro</i> del <span style="background:#ffe866">punto giusto</span>.
+	Che spaziatura viene fuori?
+	</b>
+</words>
+</panel>
+
+<panel w=600 h=520>
+<sim x=0 y=0 w=600 h=520 src="sims/ebbinghaus/?mode=3"></sim>
+</panel>
+
+<panel w=700 h=120>
+<words w=700 x=-15 no-bg>
+	(Per dimostrare che non è stato un colpo di fortuna,
+	in questa simulazione puoi cambiare
+	la velocità in cui dimentichi inizialmente &amp; il punto giusto.
+	Nota come
+	il piano migliore è ancora “intervalli crescenti”!)
+</words>
+</panel>
+
+<panel w=600 h=570>
+<sim x=0 y=0 w=600 h=570 src="sims/ebbinghaus/?mode=4"></sim>
+</panel>
+
+<panel w=350 h=500>
+<pic src="pics/sci2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=300>
+	Perché <i>devono</i> crescere gli intervalli?
+	Perché: ogni volta che richiami al punto giusto,
+	dimentichi più lentamente...
+</words>
+<words x=25 y=187 w=50 no-bg class="comic_text smaller" style="text-align:left">
+	è
+</words>
+<words x=16 y=177 w=300 no-bg class="comic_text" style="font-size:100px; transform: rotate(-5deg);">
+	SUSAN!
+</words>
+<words x=218 y=257 w=120 no-bg class="comic_text smaller" style="text-align:right">
+	–che ca
+	<!-- TRANSLATOR NOTE: don't complete the swearing in your translation.
+	make it cut off at the edge of the panel. It's... funnier that way? -->
+</words>
+<words x=10 y=400 w=300>
+	...quindi ci vorrà <i>più tempo</i>
+	per toccare di nuovo il punto giusto!
+</words>
+</panel>
+
+<panel w=500 h=500>
+<pic src="pics/sci2.png" sx=350 sy=450></pic>
+<words x=10 y=10 w=400>
+	E sai qual è la parte migliore?
+	Ciò significa anche che se richiami al momento giusto...
+</words>
+<words x=60 y=400 w=400>
+	...puoi facilmente tenere <i>qualsiasi cosa</i> nella tua memoria a lungo termine,
+	<i>PER SEMPRE.</i>
+</words>
+</panel>
+
+<panel w=250 h=250>
+<pic src="pics/sci2.png" sx=850 sy=450></pic>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	E parlando di richiamo attivo per imparare,
+	facciamo dei richiami attivi su ciò che abbiamo appena imparato:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,intro_b,sci_c"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=0 sy=950></pic>
+<words x=50 y=20 w=300 bg=none>
+	Tutto bello,
+	ma <i>trovare</i> un buon piano per le Ripetizioni Spaziate dev'essere difficile, giusto?
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=400 sy=950></pic>
+<words x=50 y=30 w=300 bg=none>
+	<i>Au contraire!</i>
+	è così semplice, che puoi creare il tuo pianificatore automatico...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=800 sy=950></pic>
+<words x=30 y=15 w=200 bg=none>
+	...usando una <i>scatola per scarpe.</i>
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 2: THE ART OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="2"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			L'ARTE delle
+			RIPETIZIONI DILAZONATE
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/leit0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430 h=90>
+	Non <i>devi</i> per forza usare una scatola per scarpe per le Ripetizioni Dilazionate,
+	ma è più divertente se lo fai.
+</words>
+<words x=3 y=119 w=140 no-bg class="comic_text smaller" style="font-size:22px">
+	e questo è il mio tutor personale
+</words>
+<words x=119 y=158 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	???
+</words>
+<words x=246 y=118 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	sono da ALLENA-MENTE
+	<!--
+	TRANSLATOR NOTE:
+	this is a pun that may not work in all languages.
+	If it doesn't translate to your language, try coming up with your own pun!
+	Or, replace this line with: "they help me go far"
+	-->
+</words>
+<words x=367 y=116 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	non siamo più amici
+</words>
+
+<words x=30 y=350 w=430 h=60>
+	(Più tardi, vedremo delle <i>app</i> per le Ripetizioni Dilazionate,
+	come Anki &amp; Tinycards)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=450 h=60>
+	Questo sistema è chiamato La Scatola Di Leitner.
+	è come giocare a carte contro te stesso!
+</words>
+<words x=30 y=300 w=430 h=60>
+	Prima, dividi la tua scatola in sette "Livelli".
+	(Puoi scegliere di averne di più o di meno!)
+</words>
+</panel>
+
+<panel w=500 h=370>
+<pic src="pics/leit0.png" sx=0 sy=480></pic>
+<words x=10 y=10 w=430 h=30>
+	Tutte le nuove carte iniziano dal livello 1.
+</words>
+<words x=20 y=270 w=440 h=60>
+	(Se sei nuovo alle Ripetizioni Dilazionate, consiglio di iniziare con 5 nuove carte al giorno.)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=480></pic>
+<words x=10 y=10 w=430 h=60>
+	Quando controlli una carta, e l'azzecchi, avanza di <i>un</i> Livello.
+</words>
+<words x=20 y=300 w=440 h=60>
+	(Se sei all'ultimo Livello, congratulazioni!
+	Puoi togliere la carta. Andrà nel paradiso delle carte.)
+</words>
+</panel>
+
+<panel w=500 h=430>
+<pic src="pics/leit0.png" sx=0 sy=900></pic>
+<words x=10 y=10 w=430 h=60>
+	Ma se controlli una carta, e sbagli... tornerà
+	<i>indietro al Livello 1.</i>
+</words>
+<words x=30 y=300 w=430 h=90>
+	(Se è già al Livello 1, c'è una buona notizia:
+	puoi continuare a provarla fino a quando non l'azzecchi,
+	per poi spostarla al Livello 2)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=0 sy=1370></pic>
+<words x=10 y=10 w=430 h=120>
+	Ma <i>quando</i> rivedremo le carte?
+	Qui c'è il trucco.
+	Con Leitner, rivediamo le carte del Livello 1 ogni giorno,
+	Livello 2 ogni due giorni, Livello 3 ogni <i>QUATTRO</i>,
+	Livello 4 ogni <i>OTTO</i>, ecc...
+</words>
+<words x=30 y=300 w=430 h=60>
+	Il metodo è: <i>raddoppiamo l'intervallo</i> (n° di giorni tra ripetizioni) per ogni Livello!
+</words>
+</panel>
+
+<panel w=600 h=60>
+<words w=600 x=-15 no-bg>
+	Ecco come risulta il calendario del gioco ogni 64 giorni:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#fff">
+<sim x=0 y=0 w=600 h=400 src="sims/calendar/"></sim>
+</panel>
+
+<panel w=500 h=490>
+<pic src="pics/leit0.png" sx=500 sy=870></pic>
+<words x=10 y=10 w=430 h=90>
+	(Nota: la ragione per cui rivediamo il Livello 1 alla fine
+	è che così rivedrai le carte nuove <i>e</i> le carte che avevi dimenticato dai livelli più alti.)
+</words>
+<words x=30 y=330 w=430 h=120>
+	(Alla fine della partita giornaliera a Ripetizioni Dilazionate,
+	non lasciare carte al Livello 1.
+	Mettiti alla prova fino a quando non le azzecchi tutte,
+	e spostale al Livello 2!)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit0.png" sx=600 sy=1400></pic>
+<words x=10 y=10 w=350 h=90>
+	(Nota #2: le <i>app</i> per le Ripetizioni Dilazionate come Anki usano un algoritmo più sofisticato...)
+</words>
+<words x=10 y=300 w=350 h=60>
+	(...ma alla fine, si basano sugli stessi principi della Scatola di Leitner)
+</words>
+</panel>
+
+<panel w=400 h=450>
+<pic src="pics/leit0.png" sx=0 sy=1800></pic>
+<words x=10 y=10 w=350 h=90>
+	(Nota #3: Oh, e con poche carte iniziali &amp; del nastro,
+	puoi fare il tuo personale, calendario pieghevole!)
+</words>
+<words x=10 y=350 w=350 h=60>
+	(alla fine, trovi un link ad un tutorial per costruire una Scatola di Leitner)
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Ora, vediamo il gioco in azione!
+	C'è una simulazione <i>passo-passo</i> della Scatola:
+	<b>(poi vedremo una simulazione <i>mese-per-mese</i>)</b>
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	Ogni controllo giornaliero impiega 20-30 minuti.
+	Invece di guardare la TV, puoi giocare a carte –
+	e ricordare qualsiasi cosa <i>per sempre</i>.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=0 sy=0></pic> 
+<words x=10 y=10 w=430 h=60>
+	Comunque, creare abitudini è difficile. Se inizi in grande, non riuscirai neanche a partire...
+</words>
+<words x=20 y=285 w=450 h=60>
+	Ma se inizi in <i>piccolo</i>, prendi velocità,
+	e la tua palla di neve di conoscenza rotolando diventerà sempre più grande.
+</words>
+</panel>
+
+<panel w=500 h=690>
+<pic src="pics/leit1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=430 h=60>
+	Ecco perchè consiglio di <i>iniziare</i> con 5 nuove carte al giorno.
+</words>
+<words x=30 y=300 w=430 h=60>
+	Una volta che prendi confidenza, puoi passare a 10 nuove carte/giorno.
+	Poi 15. Poi 20, 25, 30.
+</words>
+<words x=10 y=590 w=430 h=60>
+	E a 30 nuove carte al giorno, puoi immparare <i>10,000+</i> nuovi fatti/parole/ecc all' <i>anno.</i>
+</words>
+<words x=16 y=497 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	na na na na na na na na na
+</words>
+<words x=38 y=517 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	katamari damacy
+	<!-- TRANSLATOR NOTE: leave this in its japanese.
+	i don't know what it means, actually. it's a videogame song. -->
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Ora, ecco la simulazione mese-per-mese.
+	Usala per calcolare in anticipo quanto <i>tu</i> puoi imparare con le Ripetizioni Dilazionate!
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	Tutto qui. La memoria a lungo termine è una tua <i>scelta</i>.
+</words>	
+<words w=600 x=-15 y=30 no-bg>
+	Prenditi un po' di tempo per assimilare. Richiama ciò che hai appena imparato:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_a,intro_a,leit_b,intro_c,leit_c"></sim>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Le Ripetizioni Dilazionate sembrano troppo belle per essere vere.
+	<br>
+	Ma funzionano... <i>SE</i> non cadi in alcuni tranelli.
+</words>	
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=420 h=60>
+	La memoria non è uno scaffale
+	su cui collezioni libri giganti a caso per impressionare gli altri.
+</words>
+<words x=-15 y=210 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+	un mucchio
+</words>
+<words x=39 y=216 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(86deg)">
+	di robaccia
+</words>
+<words x=100 y=211 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(74deg)">
+	su cui non
+</words>
+<words x=144 y=212 w=150 no-bg class="comic_text" style="text-align:left; font-size:26px; transform:rotate(90deg)">
+	metterai mai
+</words>
+<words x=199 y=214 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(84deg)">
+	gli occhi
+</words>
+<words x=10 y=350 w=450 h=60>
+	Questo per dire: tutto questo non funzionerà se fai carte
+	<i>strapiene</i>, <i>sconnesse</i> o <i>insensate</i>.
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=90>
+	Invece, la memoria è come un puzzle: pieno di piccoli, pezzi connessi.
+	(Così funzionano anche i neuroni: tanti piccoli, collegamenti fra cose)
+</words>
+<words x=30 y=380 w=430 h=30>
+	Non si parla di <i>collezioni</i>, ma di <i>connessioni</i>.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=500 sy=900></pic>
+<words x=10 y=10 w=410 h=60>
+	Così, per sfruttare al meglio le Ripetzioni Dilazionate,
+	devi fare carte...
+</words>
+<words x=-38 y=227 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	PICCOLE
+</words>
+<words x=94 y=257 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	CONNESSE
+</words>
+<words x=262 y=298 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	&amp; SIGNIFICATIVE
+</words>
+</panel>
+
+<panel w=450 h=60>
+<words w=450 x=-15 no-bg>
+	Vediamo come.
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=0></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+	PICCOLE
+</words>
+</panel>
+
+<panel w=450 h=50>
+<words w=450 x=-15 no-bg>
+	Questa carta fa schifo:
+</words>	
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=mitochondria_all"></sim>
+</panel>
+
+<panel w=450 h=380>
+<pic src="pics/leit2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=400 h=30>
+	è troppo grande. Troppe informazioni.
+</words>
+<words x=10 y=250 w=400 h=90>
+	Tagliamola in pezzi più piccoli e connessi!
+	Regola numero uno, <i>ogni carta dovrebbe contenere una &amp; una sola idea.</i>
+	Così:
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_1" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_2" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_3" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_4" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_5" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_6" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_7" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_8" class="small_card"></sim>
+</panel>
+
+<panel w=450 h=90>
+<words w=450 x=-15 no-bg>
+	Connettere i fatti ad altri fatti.
+	Ma c'è dell'altro, un modo più divertente per fare le carte...
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=150></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+	CONNESSE
+</words>
+</panel>
+
+<panel w=450 h=110>
+<words w=450 x=-15 no-bg>
+	Questa carta è... apposto.
+	C'è una parola Italiana sul fronte, una Francese sul retro.
+	<!--
+	TRANSLATOR NOTE:
+	If the language you're translating for is NOT French,
+	replace "English" with [your language]
+	-->
+	La maggior parte delle carte per imparare le lingue è così:
+</words>	
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat"></sim>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=400 h=60>
+	Ma sai cosa la farebbe incollare meglio nel tuo cervello?
+</words>
+<words x=10 y=300 w=400 h=60>
+	Connetterla a
+	<i>immagini, suoni, contesto, e/o dettagli personali</i>
+	Così:
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat2"></sim>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=0></pic>
+<words x=10 y=10 w=210>
+	Sul fronte ora c'è il disegno di un gatto (immagine)
+	con una frase in Francese da completare (contesto: grammatica)
+	e si parla del gatto che avevo da piccolo, Stripes. (personale)
+</words>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=300></pic>
+<words x=10 y=10 w=210>
+	Sul retro c'è un simbolo per il genere del nome (immagine),
+	la sua pronuncia (suono*),
+	ed un avviso sulla versione femminile della parola. (contesto: gergo)
+</words>
+<words w=330 x=250 y=215 no-bg fontsize=20>
+	* Ovviamente, le carte di carta non riproducono suoni.
+	Ma le app come Anki/Tinycards possono!
+</words>
+<audio controls style="position: absolute; top: 105px; left: 280px; transform: scale(0.4) rotate(4deg);">
+	<source src="audio/chat.mp3" type="audio/mpeg">
+</audio>
+</panel>
+
+<panel w=450 h=90>
+<words w=450 x=-15 no-bg>
+	Ma la <i>più</i> importante connessione di tutte,
+	è collegare il tuo apprendimento a qualcosa di...
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=300></pic>
+<words x=148 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+	SIGNIFICATIVO
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=450 sy=600></pic>
+<words x=10 y=10 w=450 h=60>
+	Personalmente, così è come ho imparato meglio:
+	Prima, provo (enfasi su <i>provo</i>) a <b>fare</b> qualcosa.
+</words>
+<words x=11 y=113 w=160 no-bg class="comic_text">
+	suonare l'ukulele
+</words>
+<words x=183 y=104 w=140 no-bg class="comic_text">
+	leggere in francese
+</words>
+<words x=336 y=109 w=100 no-bg class="comic_text">
+	creare un webgame
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=950 sy=600></pic>
+<words x=10 y=10 w=450 h=60>
+	Inevitabilmente, prima o poi mi blocco.
+	In quel momento, cerco la soluzione,
+	e <b>imparo</b> qualcosa.
+</words>
+<words x=6 y=102 w=130 no-bg class="comic_text">
+	com'era il Fa#?
+</words>
+<words x=133 y=104 w=180 no-bg class="comic_text">
+	che significa "attraper"?
+</words>
+<words x=301 y=109 w=190 no-bg class="comic_text">
+	perchè javascript è una tale me-
+	<!-- TRANSLATOR NOTE: again, don't complete the swear. have it cut out -->
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=learndo&forever_card=yes"></sim>
+</panel>
+
+<panel w=450 h=30>
+<words w=450 x=-15 y=-15 no-bg>
+	E così via.
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=450 sy=950></pic>
+<words x=10 y=10 w=400 h=60>
+	Questo, credo, sia il modo migliore per tenerti motivato quando impari:
+</words>
+<words x=10 y=300 w=400 h=60>
+	Assicurarti che il tuo apprendimento serva a <i>fare qualcosa di cui ti importa.</i>
+</words>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Parlando di apprendimento, facciamo pratica richiamando ciò che abbiamo imparato:
+	(giuro che è la penultima volta!)
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_d,sci_c,sci_a,sci_b"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=0 sy=450></pic>
+<words x=10 y=20 w=350 no-bg>
+	La comunità delle Ripetizioni Dilazionate concorda che,
+	dopo un po', <b>dovresti creare le tue carte.</b>
+</words>
+<words x=33 y=140 w=230 no-bg>
+	In questo modo, puoi collegare i fatti a ciò che <i>tu</i> sai, ciò che <i>tu</i> ami.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=400 sy=450></pic>
+<words x=10 y=15 w=300 no-bg>
+	Ecco perché, nella parte <i>finale</i> di questo fumetto interattivo,
+	farai le tue carte <i>personali</i> !
+</words>
+<words x=30 y=165 w=170 no-bg>
+	E quelle carte riguarderanno...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=800 sy=450></pic>
+<words x=0 y=10 w=230 fontsize=150 no-bg color="#ffffff">
+	TE
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 3: GET STARTED TODAY! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="3"></a>
+<div class="divider divider_small_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			INIZIAMO SUBITO!
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=350>
+<pic src="pics/end0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=450 h=60>
+	Per aiutarti a iniziare <i>subito</i> con le Ripetizioni Dilazionate,
+	devi rispondere a quattro domande:
+</words>
+<!--
+TRANSLATOR NOTE:
+Remember, if your translated word is too big, you can modify the CSS! (especially font-size)
+-->
+<words x=8 y=237 w=120 no-bg style="color:#fff; font-size:33px">
+	COSA?
+</words>
+<words x=121 y=237 w=120 no-bg style="color:#fff; font-size:33px">
+	PERCHE'?
+</words>
+<words x=226 y=237 w=120 no-bg style="color:#fff; font-size:33px">
+	COME?
+</words>
+<words x=337 y=237 w=120 no-bg style="color:#fff; font-size:33px">
+	QUANDO?
+</words>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	Risponderai a queste domande facendo le tue carte!
+	Così, qui hai il <i>fronte</i> della tua prima carta, la prima domanda è:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_what&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Per esempio, puoi usare le Ripetizioni Dilazionate per aiutarti ad imparare...
+</words>
+<words x=120 y=104 w=100 style="text-align:left" no-bg class="comic_text">
+	una nuova lingua
+</words>
+<words x=320 y=107 w=100 style="text-align:left" no-bg class="comic_text">
+	un nuovo strumento
+</words>
+<words x=115 y=195 w=100 style="text-align:left" no-bg class="comic_text">
+	programmare al pc
+</words>
+<words x=340 y=195 w=150 style="text-align:left" no-bg class="comic_text">
+	dettagli delle vite degli amici
+</words>
+<words x=129 y=283 w=200 style="text-align:left" no-bg class="comic_text">
+	qualsiasi cosa trovi interessante, ovunque!
+</words>
+<words x=389 y=290 w=100 style="text-align:left" no-bg class="comic_text">
+	tutti i pokémon
+</words>
+<words x=80 y=380 w=380 h=30>
+	Ora, scrivi la <i>tua</i> risposta sul retro:
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_what"></sim>
+</panel>
+
+<panel fadeInOn="answer_edit_you_what" w="600" h="40" style="margin-bottom: -10px;">
+<words w="600" x="-15" y="-10" no-bg="">
+	(nota: puoi tornare qui &amp; cambiare la tua risposta dopo)
+</words>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	Comunque, ricorda che affinché le carte funzionino,
+	devi collegarle a qualcosa di cui ti <i>importa</i>.
+	Quindi la prossima domanda è:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_why&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=1000 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Se ti sembra troppo filosofico, ecco alcuni
+	esempi concreti di un <i>perché</i> dietro a un <i>cosa:</i>
+</words>
+<words x=130 y=105 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>COSA:</b> una nuova lingua
+	<br>
+	<b>PERCHE':</b> per parlare con amici, famiglia, amati nella loro lingua madre
+</words>
+<words x=130 y=210 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>COSA:</b> programmazione informatica
+	<br>
+	<b>PERCHE':</b> per fare soldi per mangiare
+</words>
+<words x=130 y=290 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>COSA:</b> qualsiasi cosa di interessante
+	<br>
+	<b>PERCHE':</b> curiosità, interesse personale!
+</words>
+<words x=200 y=380 w=260 h=30>
+	Allora... qual è il <i>tuo</i> perché?
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_why"></sim>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	Ora che hai il tuo cosa e il tuo perché... devi scegliere un <i>come!</i>
+	Cioè, quale strumento/app userai?
+	La prossima carta chiede:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_how&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=700>
+<pic src="pics/end0.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=450 h=90>
+	Io attualmente uso
+	<a target="_blank" href="https://en.wikipedia.org/wiki/Leitner_system">La Scatola di Leitner</a>,
+	ma i miei amici usano
+	<a target="_blank" href="https://apps.ankiweb.net/">Anki</a>,
+	e per un po' ho usato
+	<a target="_blank" href="https://tinycards.duolingo.com/">TinyCards</a>.
+	(i link aprono una nuova scheda)
+	Compariamoli:
+</words>
+<words x=160 y=140 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>Scatola di Leitner</b>
+	<br>
+	Pro: fai-da-te, facile da usare
+	<br>
+	Contro: non portatile come un'app
+</words>
+<words x=160 y=275 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>Anki (app)</b>
+	<br>
+	Pro: enorme comunità, gratis, molte funzioni potenti
+	<br>
+	Contro: un po' bruttino
+</words>
+<words x=160 y=405 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>TinyCards (app)</b>
+	<br>
+	Pro: bel design, facile da usare
+	<br>
+	Contro: massimo 150 carte per mazzo, non decidi <i>tu</i> se hai azzeccato una carta
+</words>
+<words x=10 y=530 w=450 h=60>
+	(Vuoi qualcos'altro?
+	Ecco alcuni altri strumenti:
+	<a target="_blank" href="https://www.supermemo.com/">SuperMemo</a>,
+	<a target="_blank" href="https://www.nimblenotes.com/">NimbleNotes</a>,
+	<a target="_blank" href="https://mnemosyne-proj.org/">Mnemosyne</a>)
+</words>
+<words x=110 y=620 w=360 h=40 no-bg fontsize=20>
+	* <i>anti</i>-pubblicità: <i>non</i> sono associato con nessuna di queste app.
+	le trovo solo fighe &amp; utili!
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	Quindi, quale sceglierai?
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_how"></sim>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=90>
+	Resta solo una carta!
+	Adesso: fare Ripetizioni Dilazionate è facile...
+	ma, creare un'<i>abitudine giornliera</i> è difficile.
+</words>
+<words x=60 y=355 w=400 h=30 no-bg>
+	Perché? beh, prendere il passo con <i>ogni</i> nuova abitudine è difficile.
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end0.png" sx=1000 sy=450></pic>
+<words x=10 y=10 w=430 h=90>
+	Difficile, ma lineare.
+	La scienza delle abitudini mostra che se fai la stessa cosa, dato lo stesso impulso,
+	ancora e ancora...
+</words>
+<words x=0 y=153 w=170 no-bg class="comic_text smaller">
+	buona giornata!
+</words>
+<words x=72 y=188 w=80 no-bg class="comic_text smaller">
+	grazie, anche a te!
+</words>
+<words x=221 y=150 w=170 no-bg class="comic_text smaller">
+	buone vacanze!
+</words>
+<words x=309 y=185 w=80 no-bg class="comic_text smaller">
+	grazie, anche a te!
+</words>
+<words x=2 y=300 w=170 no-bg class="comic_text smaller">
+	che gran cambiamento!
+</words>
+<words x=74 y=335 w=80 no-bg class="comic_text smaller">
+	grazie, anche a te!
+</words>
+<words x=20 y=430 w=440 h=80>
+	...diventerà un'abitudine, nel bene o nel male.
+	Ma per abituarci alle Ripetizioni Dilazionate, la nostra domanda è:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_when&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=0 sy=1150></pic>
+<words x=10 y=10 w=400 h=60>
+	Per esempio, puoi giocare al gioco delle Ripetizioni Dilazionate...
+</words>
+<words x=4 y=233 w=130 no-bg class="comic_text">
+	quando ti svegli
+</words>
+<words x=167 y=233 w=130 no-bg class="comic_text">
+	sui mezzi pubblici
+</words>
+<words x=335 y=233 w=130 no-bg class="comic_text">
+	prima di dormire
+</words>
+<words x=30 y=320 w=430 h=90>
+	
+	Non importa <i>quando</i> lo fai, basta che lo fai
+	ogni giorno con costanza (più o meno - puoi saltare un giorno ogni tanto).
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/end0.png" sx=500 sy=1150></pic>
+<words x=10 y=10 w=350 h=90>
+	(Consiglio: quando cerco di creare una nuova abitudine,
+	faccio un cerchio su un calendario quando ci riesco)
+</words>
+<words x=10 y=370 w=350 h=90>
+	(E' un gioco che faccio con me stesso! L'obbiettivo è di provare
+	a farne il più possibile di fila.)
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	E ora, riempiamo l'ultima carta:
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_when"></sim>
+</panel>
+
+<panel w=400 h=80>
+<words w=400 x=-15 no-bg>
+	Et voilà, ecco tutte e quattro le tue carte, tutte su di te!
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_what&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_why&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_how&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_when&refresh=yes" class="small_card"></sim>
+</panel>
+
+<br><br>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=0></pic>
+<words x=180 y=10 w=240 no-bg>
+	Ma come dicevo, ti voglio aiutare a controllare la tua memoria <i>oggi</i>.
+</words>
+<words x=250 y=130 w=200 no-bg>
+	Non "eventualmente", o "domani", <i>OGGI</i>.
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=250></pic>
+<words x=120 y=30 w=180 no-bg>
+	così per aiutarti...
+</words>
+<words x=270 y=95 w=170 no-bg>
+	puoi scaricare questi
+	<b style="font-size:30px">
+	REGALINI CARINI
+	</b>
+</words>
+</panel>
+
+<panel w=600 h=90>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>PRIMO:</b>
+	<span id="gift_wallpaper"></span>
+	per ricordarti di giocare ogni giorno con le Ripetizioni Dilazionate!
+</words>
+</panel>
+
+<div>
+<a target="_blank" id="wallpaper_link">
+<img id="wallpaper_image"/><br>
+	(clicca per scaricare &darr;)
+</a>
+</div>
+
+<panel w=600 h=90 style="height: auto; position: relative; left: -15px;">
+<words x=-15 y=0 w=570 no-bg style="text-align:left; position:static" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>SECONDO:</b>
+	<span id="gift_app"></span>
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=90>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	E finalmente,
+	<b>TERZO:</b>
+	uno .zip con tutte le carte con cui ti sei esercitato in questo fumetto interattivo!
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=400 h=100>
+<sim x=0 y=0 w=400 h=100 src="sims/downloads/all.html"></sim>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=120>
+<words x=-15 y=0 w=600 no-bg style="text-align:left">
+	(Queste possono essere le carte per i tuoi primi giorni con le Ripetizioni Dilazionate,
+	per aiutarti ad iniziare! E in più, ricorderai tutto 
+	ciò che hai imparato oggi qui, per sempre (o quasi).)
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=0></pic>
+<words x=110 y=30 w=250 no-bg>
+	Il che mi ricorda...
+</words>
+<words x=200 y=105 w=220 no-bg>
+	un ultimo saluto,
+	per ricordare i vecchi tempi,
+	l'ultimo canto del cigno!
+</words>
+<words x=230 y=230 w=210 no-bg>
+	...controlliamo le nostre carte, <i>tutte</i> :
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=intro_a,sci_a,leit_a,you_what,intro_b,sci_b,leit_b,you_why,sci_c,leit_c,you_how,leit_d,you_when,intro_c"></sim>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=0 sy=500></pic>
+<words x=0 y=12 w=210 no-bg>
+	Sniff...
+	E' sempre così difficile dirsi addio...
+</words>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=240 sy=500></pic>
+<words x=-20 y=-10 no-bg fontsize=120 color="rgba(0,0,0,0.5)" style="transform:rotate(10deg)">
+	HONK
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=480 sy=500></pic>
+<words x=160 y=30 w=200 no-bg>
+	Mi mancherà il tempo passato insieme...
+</words>
+<words x=203 y=120 w=250 no-bg style="font-size:24px">
+	...ma spero di vivere per sempre nella tua memoria!
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=430 h=90>
+	Se sei uno studente, spero che le Ripetizioni Dilazionate
+	ti aiutino ad essere più fiducioso, e a controllare il tuo apprendimento.
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=800></pic>
+<words x=10 y=10 w=450 h=90>
+	Se sei un insegnante,
+	per favore oh <i>per favore</i> di' ai tuoi allievi delle Ripetizioni Dilazionate
+	(&amp; altri metodi di studio basati su evidenze scientifiche).
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=1000 sy=800></pic>
+<words x=10 y=10 w=430 h=90>
+	Ma che tu sia a scuola o no,
+	spero che le Ripetizioni Dilazionate ti aiutino a sviluppare la tua memoria, la tua mente,
+	la tua Musa...
+</words>
+<words x=168 y=147 w=250 no-bg class="comic_text smaller" style="color:#fff">
+	"no!" urlò il mitocondrio, mentre il verme della cellula scendeva, nella sua umida gola. "non–
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end1.png" sx=1000 sy=0></pic>
+<words x=30 y=30 w=250 no-bg>
+	...e a conoscere uno dei più grandi amori della vita:
+</words>
+<words x=120 y=455 w=300 style="text-align:right" no-bg>
+	l'eterno amore per l'apprendimento.
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=the_end"></sim>
+</panel>
+
+<panel fadeInOn="flip_the_end" w=600 h=80>
+<words w=600 x=-15 y=0 no-bg>
+	(Vuoi imparare/giocare ancora? Altre letture &amp; crediti qui sotto!)
+	<br>
+	&darr; &darr; &darr; &darr; &darr;
+	</b>
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CREDITS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="bye"></a>
+<div id="credits">
+
+<div>
+
+<div style="font-size:30px; margin-bottom:0; overflow: hidden;">
+<img src="pics/nicky_credits.png" width="100" height="100" style="display: block; float: left;" />
+<div style="display: block; position: relative; left: 14px; width: 390px; height: 130px; float: left;">
+	Scritto, disegnato, e programmato da
+	<br>
+	<a target="_blank" href="https://ncase.me" style="font-size:2em; display:inline-block; line-height:1em">
+	Nicky Case
+	</a>
+	<br>
+	<span id="translation_credits_2"></span>
+	<!-- TRANSLATOR NOTE: again, when you fill in translations.txt, your name will appear here! -->
+</div>
+</div>
+
+<p style="margin-top:0">
+	
+	Inoltre, questo fumetto interattivo è di
+
+	<span style="display:block; margin-top:5px;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="-0.5 0.5 64 64" enable-background="new -0.5 0.5 64 64" xml:space="preserve">
+		<g>
+			<circle fill="#000000" cx="31.325" cy="32.873" r="30.096"/>
+			<path fill="#FFFFFF" id="text2809_1_" d="M31.5,14.08c-10.565,0-13.222,9.969-13.222,18.42c0,8.452,2.656,18.42,13.222,18.42   c10.564,0,13.221-9.968,13.221-18.42C44.721,24.049,42.064,14.08,31.5,14.08z M31.5,21.026c0.429,0,0.82,0.066,1.188,0.157   c0.761,0.656,1.133,1.561,0.403,2.823l-7.036,12.93c-0.216-1.636-0.247-3.24-0.247-4.437C25.808,28.777,26.066,21.026,31.5,21.026z    M36.766,26.987c0.373,1.984,0.426,4.056,0.426,5.513c0,3.723-0.258,11.475-5.69,11.475c-0.428,0-0.822-0.045-1.188-0.136   c-0.07-0.021-0.134-0.043-0.202-0.067c-0.112-0.032-0.23-0.068-0.336-0.11c-1.21-0.515-1.972-1.446-0.874-3.093L36.766,26.987z"/>
+			<path fill="#FFFFFF" id="path2815_1_" d="M31.433,0.5c-8.877,0-16.359,3.09-22.454,9.3c-3.087,3.087-5.443,6.607-7.082,10.532   C0.297,24.219-0.5,28.271-0.5,32.5c0,4.268,0.797,8.32,2.397,12.168c1.6,3.85,3.921,7.312,6.969,10.396   c3.085,3.049,6.549,5.399,10.398,7.037c3.886,1.602,7.939,2.398,12.169,2.398c4.229,0,8.34-0.826,12.303-2.465   c3.962-1.639,7.496-3.994,10.621-7.081c3.011-2.933,5.289-6.297,6.812-10.106C62.73,41,63.5,36.883,63.5,32.5   c0-4.343-0.77-8.454-2.33-12.303c-1.562-3.885-3.848-7.32-6.857-10.33C48.025,3.619,40.385,0.5,31.433,0.5z M31.567,6.259   c7.238,0,13.412,2.566,18.554,7.709c2.477,2.477,4.375,5.31,5.67,8.471c1.296,3.162,1.949,6.518,1.949,10.061   c0,7.354-2.516,13.454-7.506,18.33c-2.592,2.516-5.502,4.447-8.74,5.781c-3.2,1.334-6.498,1.994-9.927,1.994   c-3.468,0-6.788-0.653-9.949-1.948c-3.163-1.334-6.001-3.238-8.516-5.716c-2.515-2.514-4.455-5.353-5.826-8.516   c-1.333-3.199-2.017-6.498-2.017-9.927c0-3.467,0.684-6.787,2.017-9.949c1.371-3.2,3.312-6.074,5.826-8.628   C18.092,8.818,24.252,6.259,31.567,6.259z"/>
+		</g>
+		</svg>
+		<span style="font-size: 60px; position: relative; top: -12px; left: 8px;">
+		DOMINIO PUBBLICO
+		</span>
+	</span>
+
+	il che significa che puoi usarlo liberamente per scopi educativi, personali, ma anche commerciali.
+	Hai già il mio permesso!
+	<a target="_blank" href="https://github.com/ncase/remember">
+	(Scarica il codice)</a>
+	<a target="_blank" href="https://github.com/ncase/remember#how-to-translate">
+	(Traduci questo fumetto)</a>
+
+</p>
+
+<p>
+	Comunque, devo tutto questo ai miei più di 1,000 sostenitori su Patreon.
+	Mi permettono di continuare a fare ciò che amo. Grazie mille! 💖
+	<a target="_blank" href="https://www.patreon.com/ncase">
+	(Vuoi contribuire anche tu? Clicca qui!)
+	</a>
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	Altre Letture
+</p>
+
+<p>
+	Qualcosa che c'entra con le spalle dei giganti.
+	Qui ci sono le letture che hanno reso le Ripetizioni Dilazionate parte della mia vita di tutti i giorni:
+</p>
+
+<ul>
+	<li>
+		🤓
+		<a target="_blank" href="http://augmentingcognition.com/ltm.html">
+		Augmenting Long-Term Memory</a>
+		di Michael Nielsen
+		mi ha mostrato che le Ripetizioni Dilazionate non sono solo uno strumento per memorizzare,
+		è uno strumento per costruire una profonda comprensione. Può anche essere uno stile di <i>vita</i>.
+	</li>
+	<li>
+		💬
+		<a target="_blank" href="https://fluent-forever.com/the-book/">
+		Fluent Forever</a>
+		di Gabriel Wyner
+		mi ha convinto finalmente a (ri)cominciare ad imparare il Francese,
+		e a creare la Scatola di Leitner. (il mio calendario di 64 giorni prende ispirazione da questo libro)
+	</li>
+	<li>
+		🃏
+		<a target="_blank" href="https://www.supermemo.com/en/articles/20rules">
+		20 Rules for Cards</a>
+		di Piotr Wozniak mi ha detto come sfruttare al meglio le Ripetizioni Dilazionate.
+		(Nota: l'autore ha anche inventato l'algoritmo che usa Anki!)
+	</li>
+</ul>
+
+	E le mie letture preferite sulla scienza dell'apprendimento:
+<ul>
+	<li>
+		👩‍🎓
+		<a target="_blank" href="https://www.amazon.com/Why-Dont-Students-Like-School/dp/047059196X/">
+		Why Don't Students Like School?</a>
+		di Daniel Willingham
+		mi ha dimostrato che la "mera memorizzazione" è <i>necessaria</i>
+		per la creatività &amp; il pensiero critico.
+	</li>
+	<li>
+		✏️
+		<a target="_blank" href="http://tlcp.depaultla.org/wp-content/uploads/sites/2/2015/05/Dunlosky-et-al-2013-What-Works-What-Doesnt.pdf">
+		What Works, What Doesn't [PDF]
+		</a>
+		di Dunlosky et al
+		riassume <i>più di 200 studi</i> sui vari metodi di apprendimento.
+		In poche parole: le tecniche comuni come ri-leggere &amp; evidenziare non funzionano,
+		tecniche meno comuni come aspettare &amp; mettersi alla prova funzionano.
+		<a target="_blank" href="http://journals.sagepub.com/doi/abs/10.1177/1529100612453266">
+		(Link all'articolo originale)
+		</a>
+	</li>
+</ul>
+
+<p>
+	E se vuoi altra roba per imparare-giocando,
+	<a target="_blank" href="https://explorabl.es/">
+	passa per Explorable Explanations!</a> 🕹️
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	Altri Ringraziamenti
+</p>
+
+<p>
+	👀 Grazie a tutte le mie cavie per aver fatto sì che questo progetto non facesse schifo:
+	<span style="font-size: 19px; line-height: 0px; color: #999;">
+	Aatish Bhatia, Adam Filinovich, Aimee Jarboe, Alex Jaffe, Amit Patel, Andy Matuschak, B Cavello, Chris Walker, Frank Lantz, Gal Green, Glen Chiacchieri, Hamish Todd, Henry Reich, Jacque Goupil, James Lytle,
+	Jez Swanson, Josh Comeau, Kayle Sawyer, Levi Robertson, Marcelo Gallardo, Martyna Wasiluk, Michael Nielsen, Mikayla Hutchinson, Mike Gifford, Monica Srivastava, Owen Landgren,
+	Paul Butler, Paul Simeon, Philipp Wacker, Pontus Granström, Rowan, Sebastian Morr, SpacieCat, Tanya Short, Tim &amp; Alexandra Swast, Tom Hermans, Toph Tucker, Will Harris-Braun, Zeno Rogue
+	</span>
+</p>
+
+<p>
+	📹 Grazie a Chris Walker per aver fatto il
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+	video per costruire la Scatola di Leitner!</a>
+	(P.S: anche
+	<a target="_blank" href="http://polytrope.com/">
+	Chris fa roba interattiva</a>!)
+</p>
+
+<p>
+	🐞 Grazie a Omar Rizwan per avermi aiutato a venire fuori dall'ostacolo isormontabile che è Safari per i telefoni
+</p>
+
+<p>
+	🔊 Questo progetto è stato prodotto con risorse Creative Commons
+	da Wikimedia Commons e FreeSounds.
+	<a target="_blank" href="https://github.com/ncase/remember#full-asset-credits">
+	(guarda tutti i crediti)</a>
+</p>
+
+<p>
+	💖 E ancora, un enorme grazie a tutti i miei sostenitori Patreon che hanno reso tutto questo possibile:
+</p>
+
+<iframe gotosrc="supporters/"></iframe>
+
+<p>
+	🙏 E finalmente, grazie a <i>te</i> per essere quel tipo di persona che si siede e legge i crediti!
+	Tu puoi
+	<a target="_blank" href="https://ncase.me/">
+	giocare altri dei miei siti</a>,
+	<a target="_blank" href="https://twitter.com/ncasenmare">
+	seguirmi su Twitter</a>,
+	o
+	<a target="_blank" href="https://www.patreon.com/ncase">
+	sostenermi su Patreon</a>.
+	Mi auguro sinceramente che questo fumetto possa aiutarti, anche nel modo più piccolo.
+</p>
+
+<p>
+	Buon apprendimento!<br>
+	~ Nicky Case
+</p>
+
+<!-- Share buttons, text generated from labels -->
+<div id="share_buttons"></div>
+
+</div>
+
+</div>
+
+
+<!--
+TRANSLATOR NOTE:
+HA HA YOU THOUGHT YOU WERE DONE?!
+NOPE
+WE'VE STILL GOT THE INTERFACE LABELS & FLASHCARDS TO TRANSLATE
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- LABELS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="labels">
+
+<!-- Chapter Links -->
+<span id="label_chapter_links">
+	<a href="#0">Introduzione</a>
+	&middot;
+	<a href="#1">La Scienza</a>
+	&middot;
+	<a href="#2">L'Arte</a>
+	&middot;
+	<a href="#3">Iniziamo!</a>
+	&middot;
+	<a href="#bye">Crediti</a>
+</span>
+
+<!-- Multi Card Labels -->
+<span id="multicard_q">
+	prova a richiamare &uarr;
+	poi gira ↻ 
+</span>
+<span id="multicard_cards_left">
+	(carte rimanenti: [N])
+</span>
+<span id="multicard_a">
+	te lo ricordi questo?
+</span>
+<span id="multicard_no">
+	nah, prova ancora
+</span>
+<span id="multicard_yes">
+	yee, prosegui!
+</span>
+<span id="multicard_done">
+	per ora hai finito! vai giù
+	<br>
+	&darr;
+</span>
+<span id="multicard_done_2">
+	questo è tutto, gente!
+	<br>
+	&darr;
+</span>
+
+<!-- Ebbinghaus Simulation -->
+<span id="ebbinghaus_y_axis">
+	intensità del ricordo &rarr;
+</span>
+<span id="ebbinghaus_x_axis">
+	tempo &rarr;
+</span>
+<span id="ebbinghaus_decay">
+	perdita:
+</span>
+<span id="ebbinghaus_forgetting">
+	punto giusto:
+</span>
+<span id="ebbinghaus_recall">
+	momento del richiamo:
+</span>
+<span id="ebbinghaus_recalls">
+	momento del richiamo:
+</span>
+<span id="ebbinghaus_auto">
+	auto-ottimizza!
+</span>
+
+<!-- Leitner Calendar -->
+<!--
+TRANSLATOR NOTE:
+The exact three characters [N] is how the code knows where to put the number.
+When you translate, make sure the [N] is there if it was there in the original.
+-->
+<span id="calendar_day">
+	Nel Giorno [N]...
+</span>
+<span id="calendar_review">
+	ripeti i Livelli [N] (<i>in quest'ordine</i>)
+</span>
+<span id="calendar_loop">
+	(e poi si ricomincia dal Giorno 1!)
+</span>
+
+<!-- Leitner Box simulation -->
+<span id="leitner_day">
+	Giorno [N]
+</span>
+<span id="leitner_step_to_review">
+	da rivedere: Livelli
+</span>
+<span id="leitner_step_reviewing">
+	rivedi il Livello [N]
+</span>
+<span id="leitner_step_new">
+	aggiungi [N] nuove carte
+</span>
+<span id="leitner_step_stats">
+	totale: [N] carte!
+</span>
+<span id="leitner_step_stats_2">
+	([N] ritirate)
+</span>
+<span id="leitner_button_next_step">
+	passo successivo
+</span>
+<span id="leitner_button_next_day">
+	giorno dopo
+</span>
+<span id="leitner_button_next_week">
+	settimana dopo
+</span>
+<span id="leitner_button_next_month">
+	mese dopo
+</span>
+<span id="leitner_slider_new">
+	[N] nuove carte al giorno
+</span>
+<span id="leitner_slider_wrong">
+	ricordi il [N]% delle carte <i>male</i>
+</span>
+<span id="leitner_reset">
+	RIPETI
+</span>
+
+<!-- Typing Cards -->
+<span id="type_question">
+	Domanda:
+	<!--
+	TRANSLATOR NOTE: "Q" short for Question.
+	Dunno if other languages have similar one-letter abbreviations.
+	If not, just type the full translated word for "Question"
+	-->
+</span>
+<span id="type_placeholder">
+	scrivi qui la tua risposta
+</span>
+<span id="type_suggestions">
+	o scegli uno di questi suggerimenti:
+</span>
+
+<!-- Suggestions -->
+<span id="you_what_suggestions">
+	<li>Cose interessanti!</li>
+	<li>Lingue</li>
+	<li>Musica</li>
+	<li>Programmare</li>
+	<li>Personale</li>
+	<li>(altro)</li>
+</span>
+<span id="you_why_suggestions">
+	<li>Per chi amo</li>
+	<li>Per interesse personale</li>
+	<li>Per curiosità</li>
+	<li>(altro)</li>
+</span>
+<span id="you_how_suggestions">
+	<li>Scatola di Leitner</li>
+	<li>Anki</li>
+	<li>TinyCards</li>
+	<li>(altro)</li>
+</span>
+<span id="you_when_suggestions">
+	<li>Al mattino</li>
+	<li>In viaggio</li>
+	<li>La sera</li>
+	<li>(altro)</li>
+</span>
+
+<!-- Gifts -->
+<span id="gift_wallpaper_what">
+	COSA:
+</span>
+<span id="gift_wallpaper_why">
+	PERCHE':
+</span>
+<span id="gift_wallpaper_do_1">
+	USACI
+</span>
+<span id="gift_wallpaper_do_2">
+	ORA!
+</span>
+<span id="gift_wallpaper_filename">
+	sfondo
+</span>
+<span id="gift_wallpaper_desktop">
+	uno sfondo,
+</span>
+<span id="gift_wallpaper_phone">
+	un salvaschermo per il tuo telefono,
+</span>
+<span id="gift_app_leitner">
+	un video, del mio caro amico Chris Walker, su come creare la tua Scatola di Leitner!
+	<br><br>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uvF1XuseZFE?rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+	<br>
+	(E qui c'è un tutorial simile, come quelli dell'IKEA:)
+	<br><br>
+	<a target="_blank" href="./pdf/leitner.pdf" style="display: block; text-align: center;">
+	<img src="./pdf/thumbnail.png" width="450"/><br>clicca per scaricare il PDF</a>
+</span>
+<span id="gift_app_anki">
+	un link per 
+	<a target="_blank" href="https://apps.ankiweb.net/">scaricare Anki!</a>
+	E qui c'è un video tutorial su come usarlo:
+	<br><br>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sQkdB3cJwn0?start=180&rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+</span>
+<span id="gift_app_tiny">
+	il link per
+	<a target="_blank" href="https://tinycards.duolingo.com/">
+	TinyCards!</a>
+	(ti consiglio di provare i loro
+	<a target="_blank" href="https://tinycards.duolingo.com/users/TinyGeo">
+	mazzi per la geografia</a>)
+</span>
+<span id="gift_app_other">
+	i link ai tutorial per costruire la Scatola di Leitner
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+	[video]</a>
+	<a target="_blank" href="./pdf/leitner.pdf">
+	[pdf]</a>,
+	<a target="_blank" href="https://apps.ankiweb.net/">
+	l'app Anki</a>,
+	e
+	<a target="_blank" href="https://tinycards.duolingo.com/">
+	TinyCards</a>!
+</span>
+
+<!-- Downloading Cards -->
+<span id="download_all">
+	SCARICALE TUTTE
+</span>
+<span id="download_all_downloading">
+	SCARICANDO...
+</span>
+<span id="download_all_done">
+	FATTO! Controlla la cartella Downloads.
+</span>
+
+<!-- Social Sharing -->
+<span id="share_title">
+	Come Ricordare Tutto Per Sempre (o quasi)
+</span>
+<span id="share_desc">
+	un fumetto interattivo sull'arte & la scienza della memoria
+</span>
+
+
+
+
+<!--
+TRANSLATOR NOTE:
+One more section to go!
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- FLASHCARDS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!--
+TRANSLATOR NOTE:
+The CSS for the flashcards is really touchy, so DO NOT MODIFY THE CSS.
+That means, try as much as possible to make your text shorter or the same length as the original text.
+Good luck!
+-->
+
+<!-- - - - - - - - - - - - -->
+<!-- INTRO - - - - - - - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_spaced_rep_front">
+	<div class="fcard_center" style="height:2.5em">
+	e il nome del gioco è...
+	</div>
+</span>
+<span id="flashcard_spaced_rep_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="color:white; font-size:74px; height:1.6em; line-height:0.8em;">
+	RIPETIZIONI DILAZIONATE
+	</div>
+</span>
+<span id="flashcard_intro_a_front">
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	Ripetizioni Dilazionate = <span class="underline">____</span> + <span class="underline">____</span>
+	</div>
+</span>
+<span id="flashcard_intro_a_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=240></div>
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	verifica + tempo
+	</div>
+</span>
+<span id="flashcard_intro_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	3 modi per imparare/insegnare comuni ma inefficaci sono...
+	</div>
+</span>
+<span id="flashcard_intro_b_back">
+	<div id="fc_words" class="fcard_center" style="height:2.2em">
+	... fare lezione, sgobbare, e ri-leggere
+	</div>
+</span>
+<span id="flashcard_intro_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.4em">
+	Nella Mitologia,
+	la dea della <span class="underline">_____</span>
+	era la madre delle dee delle
+	<span class="underline">_____</span>
+	</div>
+</span>
+<span id="flashcard_intro_c_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width:250px; top:50px; left:140px; line-height:1.1em;">
+	Memoria era madre delle Arti
+	</div>
+</span>
+
+<!-- - - - - - - - - - - - -->
+<!-- CHAPTER 1: The Science -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_guessgap_front">
+	<div class="fcard_center" style="height:2.5em">
+	il miglior modo per dividere i richiami è...
+	</div>
+</span>
+<span id="flashcard_guessgap_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="height:2.5em">
+	...con salti <i>crescenti</i>!
+	</div>
+</span>
+<span id="flashcard_sci_a_front">
+	<div id="fc_words" class="fcard_center" style="height:3.5em">
+	Il pioniere della scienza empirica della memoria era...
+	</div>
+</span>
+<span id="flashcard_sci_a_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width: 250px; top: 60px; left:150px; line-height: 1.1em;">
+	Hermann Ebbinghaus
+	</div>
+</span>
+<span id="flashcard_sci_b_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	La curva dell'Oblio (<i>senza</i> alcun richiamo) appare...
+	</div>
+</span>
+<span id="flashcard_sci_b_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 280px; top: 70px; left: 100px; font-size:20px; line-height: 1.1em;">
+	(nota: scende veloce, poi piano - "decade esponenzialmente")
+	</div>
+</span>
+<span id="flashcard_sci_c_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	La Curva dell'Oblio (<i>con</i> richiami ben spaziati) appare...
+	</div>
+</span>
+<span id="flashcard_sci_c_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 360px; top: 120px; left: 20px; font-size:20px; line-height: 1.1em;">
+	(nota: il tempo tra due richiami <i>aumenta</i>)
+	</div>
+</span>
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 2: The Art - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_leit_a_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	Nella Scatola di Leitner, <span class="underline">___</span>
+	il salto (giorni tra i ripassi) ad ogni Livello
+	</div>
+</span>
+<span id="flashcard_leit_a_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=720 style="left:-5px"></div>
+	<div id="fc_words" class="fcard_center" style="height:110px">
+	raddoppiamo
+	</div>
+</span>
+<span id="flashcard_leit_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	Scatola di Leitner:
+	<br>
+	quando <i>indovini</i> una carta, ti sposti <span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_b_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:170px">
+	in avanti
+	</div>
+</span>
+<span id="flashcard_leit_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	Scatola di Leitner:
+	<br>
+	quando <i>sbagli</i> una carta, ti sposti <span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_c_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:180px">
+	al Livello 1!
+	</div>
+</span>
+<span id="flashcard_leit_d_front">
+	<div id="fc_words" class="fcard_center" style="font-size:30px; height:170px;">
+	Secondo un fumetto-gioco a caso su internet,
+	per le Ripetiz. Dilaz. dovrei avere carte
+	<span class="underline">______</span> ,
+	<span class="underline">______</span> , e 
+	<span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_d_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=720></div>
+	<div id="fc_words" class="fcard_center" style="color:#fff; height:200px; height: 180px; font-size: 30px;">
+	piccole, connesse &amp; significative
+	</div>
+</span>
+
+
+<span id="flashcard_mitochondria_all_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		Cosa vedi?
+	</div>
+</span>
+<span id="flashcard_mitochondria_all_back">
+	<div class="fcard_center" style="height:220px; font-size:20px;">
+		Questo organulo è detto "mitocondrio".
+		Esso produce energia per la cellula.
+		Si trovano in quasi tutti gli organismi eucarioti (con nucleo).
+		L'ipotesi più accettata sull'origine del mitocondrio è la Teoria Endosimbiotica:
+		circa ~1.5 miliardi di anni fa, un procariote (senza nucleo) è stato mangiato da un'altra cellula,
+		in qualche modo è sopravvissuto, e vive al suo interno da allora.
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		Cosa vedi?
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_back">
+	<div class="fcard_center" style="height:1.5em;">
+		Mitocondrio
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960></div>
+	<div class="fcard_center" style="height:180px">
+		Esso produce <span class="underline">_______</span> per la cellula
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_back">
+	<div class="fcard_center" style="height:150px">
+		energia
+		<span class="bonus_note">
+		// nota bonus: dico sul serio, saremmo tutti morti senza loro.
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:45px"></div>
+	<div class="fcard_center" style="height:180px;">
+		Si trovano in quasi tutti gli organismi <span class="underline">_______</span> .
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_back">
+	<div class="fcard_center" style="height:1.5em">
+		eucarioti
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_front">
+	<div class="fcard_center" style="height:2.5em">
+		Negli eucarioti...
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		c'è il nucleo
+		<span class="bonus_note">
+		// nota bonus: "eu"=buon, "karyon"=nucleo
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_front">
+	<div class="fcard_center" style="height:2.5em">
+		Nei procarioti...
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		NON c'è il nucleo
+		<span class="bonus_note">
+		// nota bonus: "pro"=prima, "karyon"=nucleo
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:10px"></div>
+	<div class="fcard_center" style="height:200px; font-size:35px">
+		L'ipotesi più accettata sull'origine del mitocondrio è la Teoria...
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_back">
+	<div class="fcard_center" style="height:120px">
+		Endosimbiotica
+		<span class="bonus_note">
+		// nota bonus: "endo"=interno, "sym"=insieme, "bio"=vita
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 35px; height: 220px;">
+		Secondo la Teoria Endosimbiotica, i mitocondri apparsero
+		<span class="underline">___</span> di anni fa
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_back">
+	<div class="fcard_center" style="height:1.5em">
+		~1.5 miliardi
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 37px; height: 220px;">
+		Secondo la Teoria Endosimbiotica, si deve la loro comparsa ad...
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1440></div>
+	<div class="fcard_center" style="height:230px">
+		una cellula che mangiò un procariote
+	</div>
+</span>
+
+
+<span id="flashcard_cat_front">
+	<div class="fcard_center" style="height:100px">
+		<div style="font-size:120px; height:75px;">
+			gatto
+			<!--
+			TRANSLATOR NOTE:
+			If your language is NOT French, then change this to "cat" in YOUR language
+			-->
+		</div>
+		<div>
+			(italiano)
+			<!--
+			TRANSLATOR NOTE:
+			If your language is NOT French, then change this to YOUR language
+			-->
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat_back">
+	<div class="fcard_center" style="height:100px">
+		<!--
+		TRANSLATOR NOTE: DO NOT TRANSLATE. Leave as French! 
+		-->
+		<div style="font-size:120px; height:75px;">
+			chat
+		</div>
+		<div>
+			(french)
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=0></div>
+	<div class="fcard_center"></div>
+</span>
+<span id="flashcard_cat2_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=0></div>
+	<div class="fcard_center">
+		<audio controls id="HACK_audio" style="position: absolute; top: 115px; left: 30px; transform: scale(0.5);">
+			<source gotosrc="../../audio/chat.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+</span>
+
+<span id="flashcard_learndo_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		poi torno a fare... ↻
+	</div>
+</span>
+<span id="flashcard_learndo_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		poi torno a imparare... ↻
+		
+	</div>
+</span>
+
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 3: Get Started -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_you_what_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		COSA vuoi imparare?
+	</div>
+</span>
+<span id="flashcard_you_what_back">
+	<div id="fc_words" class="fcard_center" editable="you_what" style="height:1.2em">
+		Qualcosa di interessante!
+	</div>
+</span>
+<span id="flashcard_you_why_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		PERCHE' vuoi imparare?
+	</div>
+</span>
+<span id="flashcard_you_why_back">
+	<div id="fc_words" class="fcard_center" editable="you_why" style="height:1.2em">
+		Per curiosità
+	</div>
+</span>
+<span id="flashcard_you_how_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
+		COME farai le Ripetizioni Dilazionate?
+	</div>
+</span>
+<span id="flashcard_you_how_back">
+	<div id="fc_words" class="fcard_center" editable="you_how" style="height:1.2em">
+		Scatola di Leitner
+	</div>
+</span>
+<span id="flashcard_you_when_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
+		QUANDO farai le Ripetizioni?
+	</div>
+</span>
+<span id="flashcard_you_when_back">
+	<div id="fc_words" class="fcard_center" editable="you_when" style="height:1.2em">
+		Di sera
+	</div>
+</span>
+
+<span id="flashcard_the_end_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=480></div>
+</span>
+<span id="flashcard_the_end_back">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="top:30px; font-size:50px;">
+		FINE
+	</div>
+</span>
+
+
+</div>
+
+<!--
+TRANSLATOR NOTE:
+Congrats! NOW you've translated everything!
+Again, from the deepest part of my heart, I want to sincerely thank you
+for helping spread this page to more people, in more languages.
+Oh wait, just one more thing: go to translations.txt,
+and add your translation there so this project "knows" your page exists.
+And once that's done, send a Pull Request, and your translation will go live!
+THANK YOU! <3
+~ Nicky Case
+-->
+
+</body>
+
+</html>
+
+<script src="js/howler.core.min.js"></script>
+<script src="js/minpubsub.src.js"></script>
+<script src="js/comic.js"></script>
