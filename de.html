@@ -1,0 +1,2701 @@
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   _______  ___  ____________    ___  _______  ____________________________  _  __
+  / __/ _ \/ _ |/ ___/ __/ _ \  / _ \/ __/ _ \/ __/_  __/  _/_  __/  _/ __ \/ |/ /
+ _\ \/ ___/ __ / /__/ _// // / / , _/ _// ___/ _/  / / _/ /  / / _/ // /_/ /    / 
+/___/_/  /_/ |_\___/___/____/ /_/|_/___/_/  /___/ /_/ /___/ /_/ /___/\____/_/|_/  
+                                                                                  
+=== FAN-TRANSLATION GUIDE ===
+
+Hello fan-translators! From the bottom of my heart:
+thank you for doing this, and, you've no idea what you've gotten yourself into.
+There's about 3500 words to translate, including the flashcards & further reading.
+
+Before doing anything, please read all these steps:
+https://github.com/ncase/remember#how-to-translate
+(emphasis: do NOT edit the original index.html. make a copy of this page!)
+
+To make translation less painful, I've added little HTML comments throughout.
+Look for the ones that say "TRANSLATOR NOTE".
+
+And after translating this page, don't forget to go to translations.txt
+and "add" your translation there! (further instructions will be there)
+
+Good luck, and many thanks again!
+
+<3,
+~ Nicky Case
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!DOCTYPE html>
+<html lang="de"> <!-- DONE: TRANSLATOR NOTE: Remember your 2-letter code? Replace "en" with that! -->
+<head>
+
+	<!-- Meta Stuff -->
+	<title>Der Weg zum perfekten Gedächtnis, oder so.</title>
+	<!-- DONE: TRANSLATOR NOTE: Translate the "content" attribute -->
+	<meta name="description" content="ein interaktiver Comic über die Gedächtnisforschung"/> 
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="favicon.png">
+	
+	<!-- Sharing Card Stuff -->
+	<meta itemprop="name" content="Der Weg zum perfekten Gedächtnis, oder so."> <!-- DONE: TRANSLATE "content" -->
+	<meta itemprop="description" content="ein interaktiver Comic über die Gedächtnisforschung"> <!-- DONE: TRANSLATE "content" -->
+	<meta itemprop="image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta name="twitter:title" content="Der Weg zum perfekten Gedächtnis, oder so."> <!-- DONE: TRANSLATE "content" -->
+	<meta name="twitter:description" content="ein interaktiver Comic über die Gedächtnisforschung"> <!-- DONE: TRANSLATE "content" -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta property="og:title" content="Der Weg zum perfekten Gedächtnis, oder so."> <!-- DONE: TRANSLATE "content" -->
+	<meta property="og:description" content="ein interaktiver Comic über die Gedächtnisforschung"> <!-- DONE: TRANSLATE "content" -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ncase.me/remember/">
+	<meta property="og:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/comic.css"/>
+	<meta name="viewport" content="width=600">
+  <style>
+    .divider:first-of-type > #divider_container {
+      margin-top: 25px;
+    }
+    .divider > #divider_container > #chapter_name {
+      line-height: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 0: INTRODUCTION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+<a name="0"></a>
+<div class="divider divider_title">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			DER WEG ZUM PERFEKTEN GEDÄCHTNIS, ODER SO.
+			</div>
+			<!-- DONE: TRANSLATOR NOTE: add a hint of silliness at the end, like "ish" or "sorta" -->
+		</div>
+		<div style="text-align:right;">
+			von nicky case &middot; okt 2018
+			<br>
+			<span id="translation_credits"></span> 
+			<!-- TRANSLATOR NOTE: when you update translations.txt, your name will appear here! -->
+		</div>
+	</div>
+</div>
+
+<div class="comic">
+
+<div id="language_options"></div>
+
+<!--
+
+TRANSLATOR NOTE:
+
+There may already be "official" translations for terms like "Spaced Repetition" or "Forgetting Curve"!
+Go to their Wikipedia pages, scroll down to "Languages" in the left sidebar, and if your language is there,
+click on that Wikipedia page, and use the "official" translated term there.
+
+Spaced Repetition: https://en.wikipedia.org/wiki/Spaced_repetition
+
+Forgetting Curve: https://en.wikipedia.org/wiki/Forgetting_curve
+                  https://de.wikipedia.org/wiki/Vergessenskurve
+
+-->
+
+<!--
+
+TRANSLATOR NOTE:
+
+Try to make your translated text about the same length or shorter as the original text.
+If that's not possible, and your text doesn't fit in its box, you can modify attributes
+"x", "y", "w", "h" to change the box, or add your own custom CSS style to make the font fit.
+(CSS properties like "font-size" are very helpful)
+
+-->
+
+<panel w=400 h=650>
+<pic src="pics/intro0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=350 h=60>
+	Die Göttin der Erinnerung, Mnemosyne war laut griechischer Mythologie... 
+</words>
+<words x=30 y=330 w=310 h=60>
+	... die Mutter aller Musen, Göttinnen der Inspiration.
+</words>
+<words x=70 y=445 w=90 style="color:#fff" no-bg class="comic_text">
+	Musik
+</words>
+<words x=119 y=494 w=90 style="color:#fff" no-bg class="comic_text">
+	Theater
+</words>
+<words x=214 y=464 w=90 style="color:#fff" no-bg class="comic_text">
+	bizarre Fanfiction
+</words>
+</panel>
+
+<panel w=600 h=60>
+<words w=600 x=-15 no-bg>
+	Wie sehen also Lernen und Inspiration in der Schule aus?
+</words>
+</panel>
+
+<panel w=550 h=250>
+<pic src="pics/intro0.png" sx=400 sy=0></pic>
+
+<words x=-12 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=50  y=85 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=114 y=84 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=172 y=91 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=295 y=80 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=363 y=83 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=444 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=518 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/intro0.png" sx=400 sy=250></pic>
+<words x=155 y=20 w=90 no-bg>
+	Naja.
+</words>
+<words x=196 y=65 w=270 no-bg>
+  Gängige Lernmethoden wie Vorträge, pauken und nochmals lesen sind <i>langweilig</i> und <i>sogar ineffektiv*</i>.
+</words>
+</panel>
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+  * alle Einzelnachweise und Links am Ende des Comics!
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/intro0.png" sx=400 sy=500></pic>
+<words x=95 y=30 w=340 no-bg>
+  Dabei gibt es auch einen Weg, der wirksam ist <i>und</i> Spaß macht:
+</words>
+<words x=164 y=141 w=300 no-bg>
+
+  Ein Kartenspiel, mit dem du in 20 Minuten pro Tag <i>Wissen deiner Wahl</i> im Langzeitgedächnis festbrennst – für immer*.
+
+</words>
+</panel>
+
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* bis zum Tod
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=spaced_rep"></sim>
+</panel>
+
+<panel w=500 h=450 fadeInOn="flip_spaced_rep">
+<pic src="pics/intro0.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Und es ist <i>genial</i>.
+	Durch Intervall-Lernen hab ich dieses Jahr Französisch gelernt.
+</words>
+<words x=30 y=330 w=430 h=80>
+	In zwei <i>Monaten</i> habe ich mehr Wörter gelernt, als in zwei <i>Jahren</i> Französischunterricht in der Sekundarschule.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/intro0.png" sx=950 sy=450></pic>
+<words x=10 y=10 w=400 h=60>
+  Seitdem hab' ich dank Intervall-Lernen alles Mögliche gelernt...
+</words>
+<words x=81 y=113 w=100 style="text-align:left" no-bg class="comic_text">
+	Akkorde auf der Ukulele
+</words>
+<words x=212 y=114 w=100 style="text-align:left" no-bg class="comic_text">
+	Computer Code
+</words>
+<words x=370 y=137 w=100 style="text-align:left" no-bg class="comic_text">
+Geburtstage meiner Freunde
+</words>
+<words x=188 y=204 w=270 style="text-align:left" no-bg class="comic_text">
+	Trivia aus Büchern, Vorträgen, Artikel, etc.
+</words>
+<words x=60 y=300 w=400 h=60>
+  ...und dieses kleine Kartenspiel wurde fester Bestandteil meines <i>Lebens</i>.
+</words>
+</panel>
+
+<panel w=550 h=350>
+<pic src="pics/intro0.png" sx=0 sy=850></pic>
+<words x=10 y=10 w=500 h=30>
+  Kurz gesagt: Intervall-Lernen = Abfragen + Zeit
+</words>
+<words x=10 y=220 w=500 h=90>
+  Du fragst dein Wissen immer wieder ab, in größer werdenden Zeitabständen.
+  (Aber dauert das nicht ewig? Wie wir später sehen werden, gibt es einen Trick...)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=0 sy=1200></pic>
+<words x=10 y=5 w=290 no-bg>
+Intervall-Lernen ist gratis, evidenzbasiert und so einfach, dass es mit einem <i>Schuhkarton</i> funktioniert.
+</words>
+<words x=308 y=265 w=50 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	Nicky, Klappe halten.
+</words>
+<words x=90 y=130 w=270 no-bg>
+  Wo ist also der Haken? Warum benutzen nicht schon <i>alle</i> Intervall-Lernen?
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=400 sy=1200></pic>
+<words x=10 y=20 w=330 no-bg>
+  Nun, der Haken ist, dass <i>jede</i> neue Übung anstrengend ist – besonders so seltsame wie Intervall-Lernen.
+</words>
+<words x=292 y=303 w=80 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	Der Lehrer kommt.
+</words>
+<words x=90 y=114 w=270 no-bg>
+  Deshalb hab ich diesen lausigen, interaktiven Comic gezeichnet.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=800 sy=1200></pic>
+<words x=10 y=20 w=300 no-bg>
+	In diesem Comic zu Intervall-Lernen zeig ich dir
+	WARUM und WIE es funktioniert...
+</words>
+<words x=110 y=140 w=250 no-bg>
+	...und helfe dir, <i>HEUTE</i> damit anzufangen.
+</words>
+</panel>
+
+<panel w=600 h=180>
+<words w=600 x=-15 no-bg>
+
+	Außerdem kannst du während dieses Comics, in größer werdenden Abständen, testen, was du gelernt hast.
+	<b>Das heißt, du lernst Intervall-Lernen mit Hilfe von Intervall-Lernen.</b>
+
+	<br><br>
+	Und zwar so:
+
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=intro_a,intro_b,intro_c"></sim>
+</panel>
+
+<panel w=550 h=450>
+<pic src="pics/intro0.png" sx=950 sy=1600></pic>
+<words x=10 y=10 w=480 h=105>
+  Aber ist "mechanisches Einprägen" zielführend?
+	Können wir heutzutage nicht alles nachschlagen?
+	Sollten wir nicht stattdessen Kreativität &amp; kritisches Denken üben?
+</words>
+<words x=30 y=300 w=480 h=110>
+	Es <i>gibt</i> kein "stattdessen".
+	Kognitionsforschung zeigt: Du <i>brauchst</i> Einprägungsvermögen für Kreativität &amp; kritisches Denken.
+	(Ohne Wörter kannst du keinen Essay schreiben!)
+</words>
+<words x=187 y=138 w=150 no-bg class="comic_text" style="font-size:32px">
+	GEDÄCHTNIS
+</words>
+<words x=22 y=222 w=100 no-bg class="comic_text" style="font-size:20px">
+	Kunst
+</words>
+<words x=408 y=224 w=100 no-bg class="comic_text" style="font-size:15px">
+	Wissen-<br/>
+	schaft
+</words>
+</panel>
+
+<panel w=550 h=300>
+<pic src="pics/intro0.png" sx=0 sy=1600></pic>
+<words x=10 y=20 w=310 no-bg>
+	Intervall-Lernen ist kein "Lerntrick" oder "Lifehack".
+</words>
+<words x=30 y=113 w=320 no-bg>
+  Es erlaubt dir, deinen <i>Kopf</i> wieder zu steuern.
+  Um Langzeitgedächtnis zu <i>ermöglichen</i>.
+  Für eine lebenslange Liebe zum Lernen...
+</words>
+</panel>
+
+<panel w=400 h=550>
+<pic src="pics/intro0.png" sx=550 sy=1600></pic>
+<words x=20 y=10 w=330 h=50>
+	...und um deine eigene, <br/> 
+	innere Muse zu nähren.
+</words>
+<words x=117 y=131 w=140 no-bg class="comic_text" style="font-size:20px; color:#fff">
+  Es war dieselbe Hand, derselbe Sinn, dasselbe Gefühl, die sich zu mir, die sich an mir herangebildet hatten. Ich fühlte nun erst den Verlust, den sie–
+</words>
+<words x=240 y=480 w=120 h=30>
+	Auf geht's!
+</words>
+</panel>
+
+</div>
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 1: THE SCIENCE OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="1"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			DIE WISSENSCHAFT hinter<br/>INTERVALL-LERNEN
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=400 h=60>
+	Hermann Ebbinghaus vollzog 1885 einen Akt des wissenschaftlichen Masochismus.
+</words>
+<words x=30 y=320 w=430 h=90>
+	Der deutsche Psychologe lernte <i>tausende</i> unsinnige Wörter,
+	protokollierte wie viel er über die Zeit hinweg vergaß und entdeckte... 
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/sci0.png" sx=500 sy=0></pic>
+<words x=60 y=10 w=250>
+	<b>DIE VERGESSENSKURVE</b>
+</words>
+<words x=10 y=310 w=350>
+	Er entdeckte, dass wir das meiste Gelernte innerhalb von 24 Stunden vergessen. Erinnerungen, die nicht durch Lernen wieder hervorgerufen werden, verfallen exponentiell schnell.*
+</words>
+</panel>
+
+<panel w=500 h=53 style="margin-top:-5px">
+<words w=500 x=-15 y=-10 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999; line-height: 1.1em;">
+	* die Kurve ist nicht <i>wirklich</i>
+	<br>
+	exponentiell, aber was soll's. Nahe dran.
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=900 sy=0></pic>
+<words x=10 y=10 w=450 h=90>
+  Philosophen debattierten seit Jahrtausenden über das Gedächtnis,
+  aber Ebbinghaus hat als erster echte &amp; bestätigte <i>Experimente</i> durchgeführt.
+</words>
+<words x=193 y=169 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35)">
+	oh...
+</words>
+<words x=278 y=195 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35)">
+	mein...
+</words>
+<words x=348 y=234 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35)">
+	Gott...
+</words>
+<words x=20 y=350 w=440 h=60>
+	Aus diesem Grund gilt Hermann Ebbinghaus als Pionier der Gedächtnisforschung.
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Hier ist eine spielbare Simulation der Vergessenskurve.
+	<b>Verändere die Verfallsrate. Was passiert mit der Kurve?</b>
+</words>
+</panel>
+
+<panel w=600 h=370>
+<sim x=0 y=0 w=600 h=370 src="sims/ebbinghaus/?mode=0"></sim>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Wie du sehen kannst wird die Kurve flacher, je kleiner der Verfall ist. Das heißt, die Erinnerung bleibt umso länger.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=0 sy=500></pic>
+<words x=10 y=10 w=300>
+  Wie schnell die Erinnerung einer Person verblasst, hängt sowohl von der Person, als auch von der Erinnerung ab...
+</words>
+<words x=0 y=145 w=330 no-bg class="comic_text smaller">
+	Hallo! Sorry, wie heißt du noch mal?
+</words>
+<words x=177 y=186 w=180 no-bg class="comic_text smaller">
+	Haha. Susi.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=400 sy=500></pic>
+<words x=10 y=10 w=330>
+  Aber generell sinkt die Verfallsrate einer Erinnerung mit jedem <b>aktiven Abfragen</b>.
+	(Anders als beim passiven, erneuten Lesen.)
+</words>
+<words x=27 y=198 w=120 no-bg class="comic_text smaller">
+	Susi. Susi. Susi. Susi. Susi.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=800 sy=500></pic>
+<words x=10 y=10 w=300>
+  (auch wenn die Erinnerung immer noch schwindet, wenn du nicht mehr trainierst.)
+</words>
+<words x=41 y=121 w=150 no-bg class="comic_text smaller">
+	Okay, tschüss Sarah!
+</words>
+<words x=191 y=148 w=100 no-bg class="comic_text smaller">
+	Susi.
+</words>
+<words x=59 y=174 w=150 no-bg class="comic_text smaller">
+	Tschüss Sandra!
+</words>
+<words x=193 y=203 w=100 no-bg class="comic_text smaller">
+	SUSI.
+</words>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	Hier wieder die gleiche Simulation mit <i>einer</i> aktiven Abfrage.
+	<br>
+	(graue Linie: Erinnerungsvermögen <i>ohne</i> Abfrage)
+	<br>
+	<b>Verändere das Abfrage-Timing und beobachte die Kurve:</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+  Eine einzelne Abfrage lädt die Erinnerung ein bisschen auf...<br/> aber langfristig ändert sich aufgrund des exponentiellen Erinnerungs-Verfalls nichts.
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=390>
+	Gibt es einen besseren Weg, zu lernen?<br/>
+	Ja! Der Trick besteht darin...
+</words>
+<words x=210 y=330 w=200>
+	...<i>fast zu vergessen.</i>
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=0></pic>
+<words x=250 y=20 w=200>
+  Warum das? Stell dir vor, du machst Muskeltraining.
+  Es nützt nichts, wenn die Gewichte zu leicht sind...
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=300></pic>
+<words x=250 y=20 w=200>
+	...oder viel zu schwer.
+</words>
+</panel>
+
+<panel w=350 h=350>
+<pic src="pics/sci1.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=300>
+	Genau dasselbe gilt auch für Gehirntraining.
+	Du brauchst das <b>richtige Maß an Herausforderung</b>.
+</words>
+<words x=55 y=187 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	bequem
+</words>
+<words x=55 y=282 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	schmerzhaft
+</words>
+<words x=176 y=186 w=120 no-bg class="comic_text smaller">
+	zu einfach
+</words>
+<words x=179 y=229 w=120 no-bg class="comic_text" style="color:#000">
+	genau richtig
+</words>
+<words x=176 y=280 w=120 no-bg class="comic_text smaller">
+	zu schwierig
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=360>
+  Deshalb: Du lernst etwas am effizientesten...
+</words>
+<words x=60 y=330 w=350>
+	...<i>kurz bevor du es vergisst.</i>
+</words>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+  Die gleiche Simulation wie zuvor, aber nun mit dem
+	<span style="background:#ffe866">Optimum</span> –
+	wo du die Erinnerung <i>erst ein bisschen</i> vergessen hast.
+	<b>Verschiebe die Abfrage ins <i>Zentrum</i> des Optimums. Was passiert?</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	Siehst du? Wenn du die Abfrage genau richtig platzierst,
+	kannst du die Verfallsrate etwas bremsen!
+	Nun, was passiert wohl bei <i>mehreren</i> Abfragen?
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci2.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430>
+	Nehmen wir an du bist
+	<span class="strikeout">faul</span>
+	effizient, so dass du nur 4 Abfrage-Sessions machst.
+	</words>
+	<words x=30 y=350 w=430>
+	Frage:
+	<i>Wie verteilst du deine Abfragen zeitlich am besten?</i>
+</words>
+<words x=82 y=198 w=120 no-bg class="comic_text" style="transform: rotate(-16deg);">
+	Susi
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/sci2.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=190>
+  Solltest du die Abstände gleichmässig verteilen?
+  Wachsen lassen?
+  Schrumpfen lassen?
+  Oder zufällig wählen, um dich auf Trab zu halten?
+</words>
+<words x=259 y=16 w=100 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	= Abfrage
+</words>
+<words x=295 y=16 w=100 no-bg class="comic_text smaller" style="text-align:right; color:#000">
+	Zeit
+</words>
+<words x=245 y=61 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	gleichmässig verteilt:
+</words>
+<words x=245 y=126 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	wachsende Abstände:
+</words>
+<words x=245 y=198 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	schrumpfende Abstände:
+</words>
+<words x=245 y=259 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	zufällige Abstände:
+</words>
+</panel>
+
+<panel w=400 h=90>
+<words h=90>
+	<b>Rate die richtige Antwort</b>,
+	und <b>drehe</b> dann <b>die Karte &darr;</b>
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=guessgap"></sim>
+</panel>
+
+<panel fadeInOn="flip_guessgap" w=600 h=140>
+<words w=600 x=-15 y=0 no-bg>
+	Was sehr unintuitiv ist!
+	Du kannst dir selber beweisen, dass das stimmt – spiele dazu die Simulation unten.
+	<b>
+	Bringe alle Abfragen ins <i>Zentrum</i> des <span style="background:#ffe866">Optimums</span>.<br/>
+	Wie sind die Abstände nun verteilt?
+	</b>
+</words>
+</panel>
+
+<panel w=600 h=520>
+<sim x=0 y=0 w=600 h=520 src="sims/ebbinghaus/?mode=3"></sim>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	(Das ist kein Zufall: Hier eine Simulation in welcher du Startpunkt &amp; Verfall steuern kannst.	Beachte dass der optimale Plan in jedem Fall wachsende Abstände aufweist.)
+</words>
+</panel>
+
+<panel w=600 h=570>
+<sim x=0 y=0 w=600 h=570 src="sims/ebbinghaus/?mode=4"></sim>
+</panel>
+
+<panel w=350 h=510> <!-- Höhe Graphik passt nicht -->
+<pic src="pics/sci2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=300>
+	Wieso <i>müssen</i> die Abstände wachsen?
+	Grund: nach jeder Abfrage am Optimum sinkt die Verfallsrate, womit du langsamer vergisst...
+</words>
+<words x=25 y=187 w=50 no-bg class="comic_text smaller" style="text-align:left">
+	Du bist
+</words>
+<words x=16 y=177 w=300 no-bg class="comic_text" style="font-size:100px; transform: rotate(-5deg);">
+	SUSI!
+</words>
+<words x=215 y=257 w=120 no-bg class="comic_text smaller" style="text-align:right">
+	Was zum Teu
+	<!-- DONE: TRANSLATOR NOTE: don't complete the swearing in your translation.
+	make it cut off at the edge of the panel. It's... funnier that way? -->
+</words>
+<words x=10 y=400 w=300>
+	...womit es bis zum nächsten Optimum <i>länger</i> dauert!
+</words>
+</panel>
+
+<panel w=500 h=500>
+<pic src="pics/sci2.png" sx=350 sy=450></pic>
+<words x=10 y=10 w=400>
+	Aber weißt du was das Beste daran ist?
+	Mit dem richtigen Abfrage-Timing...
+</words>
+<words x=20 y=400 w=440>
+  ...kannst du dir <i>beliebig viele</i> Sachen im Langzeitgedächtnis merken, und das <i>FÜR IMMER</i>.
+</words>
+</panel>
+
+<panel w=250 h=250>
+<pic src="pics/sci2.png" sx=850 sy=450></pic>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+  Wo wir gerade über aktives Abfragen zwecks Lernen reden: 
+  Lass uns aktiv Abfragen, was wir gerade gelernt haben:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,intro_b,sci_c"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=0 sy=950></pic>
+<words x=50 y=20 w=300 bg=none>
+	Schön und gut,
+	aber wie <i>finde</i> ich einen guten Zeitplan für Intervall-Lernen?
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=400 sy=950></pic>
+<words x=50 y=30 w=300 bg=none>
+	<i>Ganz einfach!</i>
+	Du kannst sogar deinen eigenen automatischen Zeitplan erstellen...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=800 sy=950></pic>
+<words x=30 y=10 w=200 bg=none>
+	...mit einem <i>Schuhkarton.</i>
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 2: THE ART OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="2"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			INTERVALL-LERNEN:<br/>DIE KUNST
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/leit0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Für Intervall-Lernen <i>musst</i> du keinen Schuhkarton benutzen,
+	aber es ist lustiger.
+</words>
+<words x=3 y=119 w=140 no-bg class="comic_text smaller" style="font-size:22px">
+	und das ist mein Privatlehrer
+</words>
+<words x=119 y=158 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	???
+</words>
+<words x=246 y=118 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	TODO
+	<!--
+	TRANSLATOR NOTE:
+	this is a pun that may not work in all languages.
+	If it doesn't translate to your language, replace this line with:
+	"TODO"
+	-->
+</words>
+<words x=367 y=116 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	Freundschaft beendet.
+</words>
+
+<words x=30 y=350 w=430 h=60>
+	(Wir werden später noch <i>Apps</i> zu Intervall-Lernen sehen,
+	z.B. Anki &amp; Tinycards)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Den Aufbau des Kartons nennt man Kartei: Ein Kartenspiel, das du gegen dich selbst spielst!
+</words>
+<words x=30 y=300 w=430 h=60>
+	Unterteile deinen Karton in 7 "Levels".<br/>
+	(Es dürfen auch mehr oder weniger sein!)
+</words>
+</panel>
+
+<panel w=500 h=370>
+<pic src="pics/leit0.png" sx=0 sy=480></pic>
+<words x=10 y=10 w=430 h=30>
+	Neue Karten starten im 1. Level.
+</words>
+<words x=30 y=270 w=430 h=60>
+	(Für Einsteiger empfehle ich mit 5 neuen Karten pro Tag anzufangen.)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=480></pic>
+<words x=10 y=10 w=430 h=60>
+	Für jede richtige Antwort klettert die jeweilige Karte <i>ein</i> Level hoch. 
+</words>
+<words x=30 y=300 w=430 h=60>
+	(Richtige Antwort im letzten Level? Glückwunsch! Sie fliegt in den Karten-Himmel.)
+</words>
+</panel>
+
+<panel w=500 h=430>
+<pic src="pics/leit0.png" sx=0 sy=900></pic>
+<words x=10 y=10 w=430 h=60>
+	Für jede falsche Antwort fällt die jeweilige Karte <i>zurück ins 1. Level.</i>
+</words>
+<words x=30 y=300 w=430 h=90>
+	(Karte schon in Level 1? Schwein gehabt:
+	Frage dich so lange ab, bis du die richtige Antwort hast und die Karte ins 2. Level steigt.)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=0 sy=1370></pic>
+<words x=10 y=10 w=430 h=120>
+	Aber <b>wann</b> fragen wir die Karten ab?
+	Das ist die Kunst.
+	Die Karten in Level 1 jeden Tag,
+	die in Level 2 alle zwei Tage, die in Level 3 alle <i>VIER</i> Tage,
+	die in Level 4 alle <i>ACHT</i> Tage, etc...
+</words>
+<words x=30 y=300 w=430 h=60>
+	Die Regel lautet: wir <i>verdoppeln den Abstand</i><br/>(# Tage zwischen Abfragen) für jedes Level!
+</words>
+</panel>
+
+<panel w=600 h=60>
+<words w=600 x=-15 no-bg>
+	Und so sieht der endlos kreisende 64-Tage Spielkalender aus:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#fff">
+<sim x=0 y=0 w=600 h=400 src="sims/calendar/"></sim>
+</panel>
+
+<panel w=500 h=490>
+<pic src="pics/leit0.png" sx=500 sy=870></pic>
+<words x=10 y=10 w=430 h=90>
+	(Hinweis: Level 1 kommt am Ende, damit du neue <i>und</i> falsche Karten aus höheren Levels siehst.)
+</words>
+<words x=30 y=330 w=430 h=120>
+	(Am Ende des täglichen Spiels hast du keine Karten mehr in Level 1. Prüfe dich so lange, bis du alle richtig und damit in Level 2 hast!)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit0.png" sx=600 sy=1400></pic>
+<words x=10 y=10 w=350 h=90>
+	(Hinweis #2: Intervall-Lernen <i>Apps</i> wie Anki benutzen einen raffinierteren Algorithmus...)
+</words>
+<words x=10 y=300 w=350 h=60>
+	(...aber sie folgen demselben Prinzip wie die Lernkartei)
+</words>
+</panel>
+
+<panel w=400 h=450>
+<pic src="pics/leit0.png" sx=0 sy=1800></pic>
+<words x=10 y=10 w=350 h=90>
+	(Hinweis #3: Oh, und mit ein paar Karteikarten &amp; Klebeband kannst du deinen eigenen Kalender basteln!)
+</words>
+<words x=10 y=350 w=350 h=60>
+	(Am Ende findest du einen Link zu einem passenden Video-Tutorial.)
+</words>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	Nun, lasst uns das Spiel in Aktion sehen!
+	Hier eine <i>Schritt-für-Schritt</i>-Simulation der Lernkartei:
+	<b>(eine <i>Monat-für-Monat</i>-Simulation folgt später)</b>
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	Jedes tägliche Spiel dauert 20-30 Minuten. Anstatt in der Zeit eine Serie im TV zu schauen,
+	kannst du dich ein <i>Leben lang</i> an alles Mögliche erinnern!
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=0 sy=0></pic> 
+<words x=10 y=10 w=430 h=60>
+  Aber Gewohnheiten sind träge. Startest du zu groß, gerät der Ball nie ins Rollen...
+</words>
+<words x=20 y=280 w=450 h=80>
+	Startest du jedoch <i>klein</i>, kannst du Schwung aufnehmen,
+	und dein Schneeball wächst dabei schneller und schneller.
+</words>
+</panel>
+
+<panel w=500 h=690>
+<pic src="pics/leit1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=430 h=60>
+	Deshalb empfehle ich mit 5 neuen Karten pro Tag <i>zu starten</i>.
+</words>
+<words x=30 y=300 w=430 h=60>
+  Hast du den Rhythmus raus, kannst du 10 neue Karten pro Tag nehmen.
+  Dann 15, 20, 25, 30.
+</words>
+<words x=10 y=590 w=430 h=60>
+	Und so werden aus 30 neuen Karten pro Tag <i>10,000+</i> neue Fakten/Wörter/etc. <i>pro Jahr</i>.
+</words>
+<words x=16 y=497 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	na na na na na na na na na
+</words>
+<words x=38 y=517 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	katamari damacy
+	<!-- TRANSLATOR NOTE: leave this in its japanese.
+	i don't know what it means, actually. it's a videogame song. -->
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Hier nun eine Monat-für-Monat-Simulation.
+	Berechne mit ihr, wie viel <i>du</i> mit Intervall-Lernen lernen kannst!
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=130>
+<words w=600 x=-15 no-bg>
+  Genau so sieht der <i>Weg</i> zum perfekten Langzeitgedächtnis aus.
+</words>	
+<words w=600 x=-15 y=50 no-bg>
+	Lass das auf dich einwirken. Mach eine Pause und prüfe dann, was wir eben gelernt haben:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_a,intro_a,leit_b,intro_c,leit_c"></sim>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Intervall-Lernen scheint fast zu gut, um wahr zu sein.
+	<br>
+	Und das ist es... <i>WENN</i> du dabei nicht in ein paar häufige Fallen tappst.
+</words>	
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=420 h=60>
+	Das Gedächtnis ist kein Regal,
+	in dem du dicke Wälzer sammelst, um andere zu beeindrucken.
+</words>
+<words x=-15 y=210 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+	Sammlung
+</words>
+<words x=39 y=216 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(86deg)">
+	von Zeug
+</words>
+<words x=100 y=211 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(74deg)">
+	das du nie
+</words>
+<words x=144 y=212 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+	lesen wirst
+</words>
+<words x=199 y=214 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(84deg)">
+	Band 5/10
+</words>
+<words x=10 y=330 w=450 h=80>
+	Anders ausgedrückt: Intervall-Lernen scheitert, wenn deine Karten
+	<i>überfüllt</i>, <i>zusammenhanglos</i> oder <i>bedeutungslos</i> sind.
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=90>
+  Das Gedächtnis ist viel eher ein Puzzle aus kleinen, verknüpften Teilchen.
+	(Genau wie Neuronen: Viele kleine verknüpfte Zellen.)
+</words>
+<words x=30 y=360 w=410 h=50>
+	Das Ziel ist nicht zu <i>sammeln</i><br/>, sondern zu <i>verknüpfen</i>.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=500 sy=900></pic>
+<words x=10 y=10 w=410 h=60>
+	Intervall-Lernen ist am effektivsten,
+	wenn deine Karten folgendes sind:
+</words>
+<words x=-38 y=227 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	KLEIN
+</words>
+<words x=94 y=257 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	VERKNÜPFT
+</words>
+<words x=238 y=298 w=240 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	&amp; BEDEUTEND
+</words>
+</panel>
+
+<panel w=450 h=60>
+<words w=450 x=-15 no-bg>
+	Wie schaffst du das?
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=0></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+	KLEIN
+</words>
+</panel>
+
+<panel w=450 h=50>
+<words w=450 x=-15 no-bg>
+	Das ist eine schlechte Karte:
+</words>	
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=mitochondria_all"></sim>
+</panel>
+
+<panel w=450 h=380>
+<pic src="pics/leit2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=400 h=30>
+	Sie ist zu groß und hat zu viel Information.
+</words>
+<words x=10 y=250 w=400 h=90>
+	Scheiden wir sie in kleinere, verknüpfte Teile.
+	Die Faustregel: <i>Jede Lernkarte soll genau eine Idee enthalten,</i>
+	z.B. so:
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_1" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_2" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_3" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_4" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_5" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_6" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_7" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_8" class="small_card"></sim>
+</panel>
+
+<panel w=450 h=90>
+<words w=450 x=-15 no-bg>
+	Fakten sind mit Fakten verknüpft.
+	Aber es gibt andere Wege, um Karten zu verknüpfen...
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=150></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+  VERKNÜPFT
+</words>
+</panel>
+
+<panel w=450 h=110>
+<words w=450 x=-15 no-bg>
+	Diese Karte ist... ganz okay.
+	Vorne ein deutsches Wort, auf der Rückseite das Französische.
+	<!--
+	TRANSLATOR NOTE:
+	If the language you're translating for is NOT French,
+	replace "English" with [your language]
+	-->
+	So sehen die meisten Lernkarten für Sprachen aus:
+</words>	
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat"></sim>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=400 h=60>
+  Aber weißt du, wie das Wissen besser hängen bleibt?
+</words>
+<words x=10 y=300 w=400 h=60>
+  Indem du es mit <i>Bildern, Geräuschen und persönlichen Details</i> verknüpfst!
+	Z.B. so:
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat2"></sim>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=0></pic>
+<words x=10 y=10 w=210>
+  Vorne siehst du eine gezeichnete Katze (Bild)
+  mit einem franz. Lückentext (Kontext: Grammatik)
+  über die Hauskatze aus meiner Kindheit, Stripes (persönlich).
+</words>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=300></pic>
+<words x=10 y=10 w=210>
+  Die Rückseite hat ein Symbol für das Geschlecht (Bild),
+  seine Aussprache (Ton*),
+  und eine Warnung zur weiblichen Version (Kontext: Slang)
+</words>
+<words w=330 x=250 y=225 no-bg fontsize=20>
+	* Natürlich kann Papier keinen Ton abspielen.
+	Aber Apps wie Anki/Tinycards schon!
+</words>
+<audio controls style="position: absolute; top: 105px; left: 280px; transform: scale(0.4) rotate(4deg);">
+	<source src="audio/chat.mp3" type="audio/mpeg">
+</audio>
+</panel>
+
+<panel w=450 h=90>
+<words w=450 x=-15 no-bg>
+  Aber die <i>wichtigste</i> Verknüpfung von allen ist, das Gelernte mit einer Bedeutung zu verknüpfen.
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=300></pic>
+<words x=169 y=44 w=500 no-bg style="color:#fff; font-size:80px; text-align:left">
+	BEDEUTEND
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=450 sy=600></pic>
+<words x=10 y=10 w=450 h=60>
+  Ich persönlich lerne so am besten:
+  Zuerst <b>versuche</b> ich etwas zu <b>tun</b>.
+</words>
+<words x=11 y=113 w=160 no-bg class="comic_text">
+	Ukulele spielen
+</words>
+<words x=183 y=104 w=140 no-bg class="comic_text">
+	Comics in franz. lesen
+</words>
+<words x=336 y=109 w=100 no-bg class="comic_text">
+ Web-Game schreiben
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=950 sy=600></pic>
+<words x=10 y=10 w=450 h=60>
+	Natürlich stecke ich irgendwann fest.
+	Dann lese ich nach was ich brauche und <b>lerne</b> etwas.
+</words>
+<words x=6 y=102 w=130 no-bg class="comic_text">
+	Wie spielt man F#?
+</words>
+<words x=133 y=104 w=180 no-bg class="comic_text">
+	Was bedeutet "attraper"?
+</words>
+<words x=301 y=109 w=190 no-bg class="comic_text">
+  Warum ist Javascript so ein &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sch–
+	<!-- TRANSLATOR NOTE: again, don't complete the swear. have it cut out -->
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=learndo&forever_card=yes"></sim>
+</panel>
+
+<panel w=450 h=30>
+<words w=450 x=-15 y=-15 no-bg>
+	Und immer so weiter.
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=450 sy=950></pic>
+<words x=10 y=10 w=400 h=60>
+	Ich glaube, das ist der beste Weg, um beim Lernen motiviert zu bleiben:
+</words>
+<words x=10 y=300 w=400 h=60>
+  Indem du sicherstellst, dass das Lernen einem Ziel dient, <i>das dir etwas bedeutet.</i>
+</words>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+  Wo wir gerade beim Thema Lernen sind: Prüfen wir doch, was wir gelernt haben:
+  (Das zweitletzte Mal!)
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_d,sci_c,sci_a,sci_b"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=350 no-bg>
+  Der Konsens in der Intervall-Lernen-Community sagt folgendes: <b>Du solltest nach einiger Zeit deine eigenen Karten erstellen</b>
+</words>
+<words x=30 y=130 w=240 no-bg>
+
+	So kannst du die Fakten mit etwas verknüpfen, was <i>du</i> weißt und <i>du</i> magst.
+
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=400 sy=450></pic>
+<words x=10 y=15 w=300 no-bg>
+  Deshalb wirst du im <i>letzten</i> Teil dieses interaktiven Comics deine <i>eigenen</i> Karten schreiben!
+</words>
+<words x=30 y=150 w=170 no-bg>
+  Und in diesen Karten geht es um...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=800 sy=450></pic>
+<words x=0 y=10 w=230 fontsize=120 no-bg color="#ffffff">
+	DICH!
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 3: GET STARTED TODAY! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="3"></a>
+<div class="divider divider_small_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			FANG HEUTE AN!
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=350>
+<pic src="pics/end0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=450 h=60>
+	Um dir zu helfen, <i>heute</i> mit Intervall-Lernen anzufangen,
+	musst du vier Fragen beantworten:
+</words>
+<!--
+TRANSLATOR NOTE:
+Remember, if your translated word is too big, you can modify the CSS! (especially font-size)
+-->
+<words x=8 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	Was?
+</words>
+<words x=121 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	Warum?
+</words>
+<words x=226 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	Wie?
+</words>
+<words x=337 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	Wann?
+</words>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	Du wirst diese Fragen beantworten, indem du Lernkarten machst!
+	Auf der <i>Vorderseite</i> unserer ersten Karte steht unsere erste Frage:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_what&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+<!--"Was willst du lernen" finde ich hier nicht-->
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Intervall-Lernen könnte dir zum Beispiel helfen, folgendes zu lernen...
+</words>
+<words x=120 y=104 w=100 style="text-align:left" no-bg class="comic_text">
+	eine neue Sprache
+</words>
+<words x=320 y=107 w=100 style="text-align:left" no-bg class="comic_text">
+	ein neues Instrument
+</words>
+<words x=115 y=195 w=150 style="text-align:left" no-bg class="comic_text">
+	eine Programmiersprache
+</words>
+<words x=340 y=195 w=150 style="text-align:left" no-bg class="comic_text">
+	Details über das Leben deiner Freunde
+</words>
+<words x=129 y=283 w=200 style="text-align:left" no-bg class="comic_text">
+	Irgendetwas, was du interessant findest!
+</words>
+<words x=389 y=290 w=100 style="text-align:left" no-bg class="comic_text">
+	alle Pokémon
+</words>
+<words x=80 y=380 w=380 h=40>
+	Schreibe <i>deine</i> Antwort jetzt auf die Rückseite:
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_what"></sim>
+</panel>
+
+
+<panel fadeInOn="answer_edit_you_what" w="600" h="60" style="margin-bottom: -10px;">
+<words w="600" x="-15" y="-10" h="50" no-bg="">
+	(Anmerkung: du kannst hier hin zurückscrollen und deine Antwort später ändern)
+</words>
+</panel>
+
+<panel w="600" h="120">
+<words w="600" x="-15" no-bg="">
+	Aber denk daran: Damit Intervall-Lernen funktioniert,
+	musst du es mit etwas verbinden, das dir <i>wichtig</i> ist.
+	Deshalb ist unsere nächste Frage:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_why&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=1000 sy=0></pic>
+<words x=10 y=10 w=430 h=80>
+	Das könnte dir jetzt zu philosophisch sein, deshalb hier ein
+	paar Beispiele für ein <i>Warum</i> hinter einem <i>Was</i>:
+
+</words>
+<words x=130 y=105 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>WAS:</b> Eine neue Sprache
+	<br>
+	<b>WARUM:</b> Um mit Freunden, Familie und Geliebten in ihrer Muttersprache zu reden
+</words>
+<words x=130 y=210 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>WAS:</b> eine Programmiersprache
+	<br>
+	<b>WARUM:</b> Um Geld zu verdienen, damit du dir Essen leisten kannst
+</words>
+<words x=130 y=290 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>WAS:</b> Was auch immer dich interessiert
+	<br>
+	<b>WARUM:</b> Neugier, aus intrinischem Willen!
+</words>
+<words x=210 y=380 w=250 h=30>
+	Also... was ist <i>dein</i> Warum?
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_why"></sim>
+</panel>
+
+<panel w="600" h="120">
+<words w="600" x="-15" no-bg="">
+	Du hast jetzt dein Was und Warum... aber wir müssen noch ein <i>Wie</i> wählen!
+	Welche Option/App möchtest du nutzen?
+	Unsere nächste Karte fragt:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_how&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=700>
+<pic src="pics/end0.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=450 h=90>
+	Ich benutze gerade 
+	<a target="_blank" href="https://de.wikipedia.org/wiki/Lernkartei">Die Lernkartei</a>,
+	aber meine Freunde nutzen
+	<a target="_blank" href="https://apps.ankiweb.net/">Anki</a>
+	und eine Zeit lang habe ich
+	<a target="_blank" href="https://tinycards.duolingo.com/">TinyCards</a> benutzt.
+	(Links öffnen in neuen Tabs)
+	Hier ist ein Vergleich zwischen ihnen:
+</words>
+<words x=160 y=140 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>Lernkartei</b>
+	<br>
+	Pros: kreatives Basteln, einfach zu nutzen
+	<br>
+	Cons: nicht so portabel wie eine App
+</words>
+<words x=160 y=275 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>Anki (App)</b>
+	<br>
+	Pros: große Community, Open Source, viele nützliche Funktionen
+	<br>
+	Cons: nicht gerade hübsch
+</words>
+<words x=160 y=405 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>TinyCards (App)</b>
+	<br>
+	Pros: schönes Design, einfach zu nutzen
+	<br>
+	Cons: maximal 150 Karten pro Deck, lässt dich nicht <i>selbst</i> entscheiden, ob du eine Karte richtig gelernt hast
+</words>
+<words x=10 y=560 w=450 h=60>
+	(Du möchtest was anderes?
+	Hier ein paar andere Tools:	
+	<a target="_blank" href="https://www.supermemo.com/">SuperMemo</a>,
+	<a target="_blank" href="https://www.nimblenotes.com/">NimbleNotes</a>,
+	<a target="_blank" href="https://mnemosyne-proj.org/">Mnemosyne</a>)
+</words>
+<words x=110 y=620 w=360 h=40 no-bg fontsize=20>
+	* <i>Anti</i>-Haftungsausschluss: Ich bin mit <i>keinem</i> dieser Unternehmen geschäftlich verbunden.
+	Ich finde sie nur cool &amp; hilfreich!	
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	Also, was soll's sein?
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_how"></sim>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=120>
+	Nur noch eine Karte übrig!
+	Intervall-Lernen zu verwenden ist eigentlich ganz einfach...
+	aber daraus eine <i>tägliche Gewohnheit</i> zu machen, ist schwierig.
+</words>
+<words x=60 y=355 w=400 h=30 no-bg>
+	Warum? Weil der Anfang bei <i>jeder</i> neuen Gewohnheit schwierig ist.
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end0.png" sx=1000 sy=450></pic>
+<words x=10 y=10 w=430 h=120>
+	Schwierig, aber nicht kompliziert.
+
+	Die Forschung zu Gewohnheiten zeigt, dass wenn du das Gleiche, mit dem gleichen Reiz, 
+	immer und immer wieder machst...
+</words>
+<words x=0 y=153 w=170 no-bg class="comic_text smaller">
+	Schönen Tag noch!
+</words>
+<words x=72 y=188 w=80 no-bg class="comic_text smaller">
+	Danke, Ihnen auch!
+</words>
+<words x=221 y=150 w=170 no-bg class="comic_text smaller">
+	Schöne Feiertage!
+</words>
+<words x=309 y=185 w=80 no-bg class="comic_text smaller">
+	Danke, Ihnen auch!
+</words>
+<words x=2 y=300 w=170 no-bg class="comic_text smaller">
+	Hier ist Ihr Wechselgeld!
+</words>
+<words x=74 y=335 w=80 no-bg class="comic_text smaller">
+	Danke, Ihnen auch!
+</words>
+<words x=20 y=450 w=440 h=90>
+	...wird es, wohl oder übel, zur Gewohnheit. 
+	Für eine Intervall-Lernen-Gewohnheit ist also unsere Frage:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_when&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=0 sy=1150></pic>
+<words x=10 y=10 w=400 h=60>
+	Zum Beispiel, könntest du das Intervall-Lernen-Spiel spielen...
+</words>
+<words x=4 y=233 w=130 no-bg class="comic_text">
+	nachdem du aufgewacht bist
+</words>
+<words x=167 y=233 w=130 no-bg class="comic_text">
+	während du pendelst
+</words>
+<words x=335 y=233 w=130 no-bg class="comic_text">
+	bevor du schläfst
+</words>
+<words x=30 y=320 w=430 h=120>
+	Es ist gar nicht wirklich wichtig <i>wann</i> du es machst, solange du es 
+	täglich und regelmäßig machst (mehr oder weniger, ab und zu kannst du einen Tag auslassen).
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/end0.png" sx=500 sy=1150></pic>
+<words x=10 y=10 w=350 h=120>
+	(Tipp: Immer wenn ich mir etwas Neues angewöhnen will,
+	male ich einen Kreis für jeden Tag in den Kalender, an dem ich erfolgreich war)
+</words>
+<words x=10 y=370 w=350 h=120>
+
+	(Das ist ein Spiel, das ich mit mir selbst spiele! Das Ziel ist,
+
+	meinen Lauf nicht zu unterbrechen und eine möglichst lange Kette zu bauen.)
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	Lass uns jetzt die letzte Lernkarte ausfüllen:
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_when"></sim>
+</panel>
+
+<panel w=400 h=80>
+<words w=400 x=-15 no-bg>
+	Et voilà, hier sind alle deine Lernkarten, ganz für dich!
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_what&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_why&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_how&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_when&refresh=yes" class="small_card"></sim>
+</panel>
+
+<br><br>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=0></pic>
+<words x=180 y=10 w=250 no-bg>
+	Ich will ich dir <i>heute</i> dabei helfen dein Gedächtnis in den Griff zu bekommen.
+</words>
+<words x=230 y=130 w=250 no-bg>
+	Nicht "irgendwann", nicht "morgen", <i>HEUTE</i>.
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=250></pic>
+<words x=150 y=30 w=120 no-bg>
+	um dir zu helfen...
+</words>
+<words x=270 y=95 w=170 no-bg>
+	... lade ein paar 
+	<b style="font-size:30px">
+	TOLLE SACHEN! 
+	</b>
+</words>
+</panel>
+
+<panel w=600 h=90>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>ERSTENS:</b>
+	<span id="gift_wallpaper"></span>
+	um dich daran zu erinnern, täglich das Intervall-Lernen-Spiel zu spielen!
+</words>
+</panel>
+
+<div>
+<a target="_blank" id="wallpaper_link">
+<img id="wallpaper_image"/><br>
+	(klicke für den Download &darr;)
+</a>
+</div>
+
+<panel w=600 h=90 style="height: auto; position: relative; left: -15px;">
+<words x=-15 y=0 w=570 no-bg style="text-align:left; position:static" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>ZWEITENS:</b>
+	<span id="gift_app"></span>
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=120>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	Und schließlich,
+	<b>DRITTENS:</b>
+	Ein .zip mit allen Lernkarten, die du in diesem interaktiven Comic geübt hast!
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=400 h=100>
+<sim x=0 y=0 w=400 h=100 src="sims/downloads/all.html"></sim>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=150>
+<words x=-15 y=0 w=600 no-bg style="text-align:left">
+	Diese Lernkarten kannst du für deine ersten paar Intervall-Lernen-Tage nutzen, 
+	um dir den Anfang zu erleichtern! Und als Bonus wirst du dich immer an alles 
+	erinnern, was du hier heute gelernt hast.)
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=0></pic>
+<words x=110 y=30 w=250 no-bg>
+	Das erinnert mich...
+</words>
+<words x=200 y=105 w=220 no-bg>
+	ein letztes Aufwiedersehen,
+	der alten Zeiten willen!
+</words>
+<words x=210 y=230 w=250 no-bg>
+	...lass uns unsere Lernkarten nochmal <i>alle</i>: ansehen:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=intro_a,sci_a,leit_a,you_what,intro_b,sci_b,leit_b,you_why,sci_c,leit_c,you_how,leit_d,you_when,intro_c"></sim>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=0 sy=500></pic>
+<words x=0 y=12 w=210 no-bg>
+	Schnief...
+	Abschiede sind immer schwer...
+</words>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=240 sy=500></pic>
+<words x=-20 y=-10 no-bg fontsize=120 color="rgba(0,0,0,0.5)" style="transform:rotate(10deg)">
+	TRÖT
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=480 sy=500></pic>
+<words x=160 y=30 w=200 no-bg>
+	Ich werde die Zeit vermissen...
+</words>
+<words x=200 y=120 w=250 no-bg>
+	...aber unsere Erinnerungen leben weiter! 
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=430 h=90>
+	Falls du ein*e Schüler*in bist, hoffe ich, dass Intervall-Lernen
+	dir hilft selbstsicherer zu sein und Lernen in deine eigenen Hände zu nehmen.
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=800></pic>
+<words x=10 y=10 w=430 h=120>
+	Falls du eine Lehrkraft bist,
+	bitte, <i>bitte</i> erzähl deinen Schüler*Innen möglichst früh von Intervall-Lernen (& anderen evidenzbasierten Lernstrategien).
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=1000 sy=800></pic>
+<words x=10 y=10 w=430 h=120>
+	Aber egal, ob du noch in der Schule bist oder nicht,
+	hoffe ich, dass Intervall-Lernen dir hilft dein Gedächtnis, deinen Verstand und deine Muse zu entwickeln...
+</words>
+<words x=168 y=147 w=250 no-bg class="comic_text smaller" style="color:#fff">
+	"Nein!" schrie die Mitochondrie, als sie den warmen, nassen Schlund der Zelle hinab rutschte. "Ich will nicht."
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end1.png" sx=1000 sy=0></pic>
+<words x=30 y=30 w=250 no-bg>
+	...und erlerne eine der großen Lieben des Lebens:
+</words>
+<words x=120 y=455 w=300 style="text-align:right" no-bg>
+	Eine lebenslange Liebe für's Lernen.
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=the_end"></sim>
+</panel>
+
+<panel fadeInOn="flip_the_end" w=600 h=210>
+<words w=600 x=-15 y=0 no-bg>
+	(P.S: Ich will wirklich wissen wie <i>du</i> Intervall-Lernen nutzen wirst!)
+	Tweete ein Foto von deiner Box/deinem Anki mit dem Hashtag
+	<a target="_blank" href="https://twitter.com/search?q=%23SpacedRepetition">
+	#SpacedRepetition</
+		a> –
+	Ich werde eine Beispielseite für alle zum ansehen erstellen!)
+	<br><br>
+	(Mehr? Scrolle runter für weiterführende Literatur &amp; die Mitwirkenden!)
+	<br>
+	&darr; &darr; &darr; &darr; &darr;
+	</b>
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CREDITS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="bye"></a>
+<div id="credits">
+
+<div>
+
+<div style="font-size:30px; margin-bottom:0; overflow: hidden;">
+<img src="pics/nicky_credits.png" width="100" height="100" style="display: block; float: left;" />
+<div style="display: block; position: relative; left: 14px; width: 390px; height: 270px; float: left;">
+	Geschrieben, illustriert und programmiert von
+	<br>
+	<a target="_blank" href="https://www.patreon.com/ncase" style="font-size:2em; display:inline-block; line-height:1em">
+	Nicky Case
+	</a>
+	<br>
+	<span id="translation_credits_2"></span>
+	<a href="http://neues-gymnasium-ruesselsheim.de/">Neues Gymnasium Rüsselsheim</a> (Adrian, Henry, Nicolás, Noah, Tim, Torben,<a href="https://twitter.com/herr_hundt">@herr_hundt</a>)
+	<!-- TRANSLATOR NOTE: again, when you fill in translations.txt, your name will appear here! -->
+</div>
+</div>
+
+<p style="margin-top:0">
+	
+	Außerdem ist dieser interaktive Comic
+
+	<span style="display:block; margin-top:5px;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="-0.5 0.5 64 64" enable-background="new -0.5 0.5 64 64" xml:space="preserve">
+		<g>
+			<circle fill="#000000" cx="31.325" cy="32.873" r="30.096"/>
+			<path fill="#FFFFFF" id="text2809_1_" d="M31.5,14.08c-10.565,0-13.222,9.969-13.222,18.42c0,8.452,2.656,18.42,13.222,18.42   c10.564,0,13.221-9.968,13.221-18.42C44.721,24.049,42.064,14.08,31.5,14.08z M31.5,21.026c0.429,0,0.82,0.066,1.188,0.157   c0.761,0.656,1.133,1.561,0.403,2.823l-7.036,12.93c-0.216-1.636-0.247-3.24-0.247-4.437C25.808,28.777,26.066,21.026,31.5,21.026z    M36.766,26.987c0.373,1.984,0.426,4.056,0.426,5.513c0,3.723-0.258,11.475-5.69,11.475c-0.428,0-0.822-0.045-1.188-0.136   c-0.07-0.021-0.134-0.043-0.202-0.067c-0.112-0.032-0.23-0.068-0.336-0.11c-1.21-0.515-1.972-1.446-0.874-3.093L36.766,26.987z"/>
+			<path fill="#FFFFFF" id="path2815_1_" d="M31.433,0.5c-8.877,0-16.359,3.09-22.454,9.3c-3.087,3.087-5.443,6.607-7.082,10.532   C0.297,24.219-0.5,28.271-0.5,32.5c0,4.268,0.797,8.32,2.397,12.168c1.6,3.85,3.921,7.312,6.969,10.396   c3.085,3.049,6.549,5.399,10.398,7.037c3.886,1.602,7.939,2.398,12.169,2.398c4.229,0,8.34-0.826,12.303-2.465   c3.962-1.639,7.496-3.994,10.621-7.081c3.011-2.933,5.289-6.297,6.812-10.106C62.73,41,63.5,36.883,63.5,32.5   c0-4.343-0.77-8.454-2.33-12.303c-1.562-3.885-3.848-7.32-6.857-10.33C48.025,3.619,40.385,0.5,31.433,0.5z M31.567,6.259   c7.238,0,13.412,2.566,18.554,7.709c2.477,2.477,4.375,5.31,5.67,8.471c1.296,3.162,1.949,6.518,1.949,10.061   c0,7.354-2.516,13.454-7.506,18.33c-2.592,2.516-5.502,4.447-8.74,5.781c-3.2,1.334-6.498,1.994-9.927,1.994   c-3.468,0-6.788-0.653-9.949-1.948c-3.163-1.334-6.001-3.238-8.516-5.716c-2.515-2.514-4.455-5.353-5.826-8.516   c-1.333-3.199-2.017-6.498-2.017-9.927c0-3.467,0.684-6.787,2.017-9.949c1.371-3.2,3.312-6.074,5.826-8.628   C18.092,8.818,24.252,6.259,31.567,6.259z"/>
+		</g>
+		</svg>
+		<span style="font-size: 60px; position: relative; top: -12px; left: 8px;">
+		PUBLIC DOMAIN
+		</span>
+	</span>
+
+	Das heißt, du kannst Intervall-Lernen frei für persönliche, kommerzielle oder Bildungszwecke verwenden.
+	Du hast schon meine Erlaubnis!
+	<a target="_blank" href="https://github.com/ncase/remember">
+	(Downloade den Code)</a>
+	<a target="_blank" href="https://github.com/ncase/remember#how-to-translate">
+	(Übersetze diesen Comic)</a>
+
+</p>
+
+<p>
+	Wie auch immer, ich kann das nur dank meiner 1.000 Patreon-Unterstützer*Innen tun. 
+	Ihr unterstützt mich, sodass ich Dinge weiter tun kann, die ich liebe. Vielen Dank! 💖
+	<a target="_blank" href="https://www.patreon.com/ncase">
+	(Willst du auch mitmachen? Klicke hier!)
+	</a>
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	Weitere Informationen
+</p>
+
+<p>
+	Danke, an meine großen Unterstützer*Innen.
+	Hier sind die Lesungen, die Intervall-Lernen zu einem Teil meines alltäglichen Lebens gemacht haben:
+</p>
+
+<ul>
+	<li>
+		🤓
+		<a target="_blank" href="http://augmentingcognition.com/ltm.html">
+		Augmenting Long-Term Memory</a>
+		by Michael Nielsen
+		hat mir gezeigt, dass Intervall-Lernen nicht nur ein Werkzeug zum Auswendiglernen ist,
+		sondern ein Werkzeug, um ein tieferes Verständnis aufzubauen. Es könnte sogar eine
+		Lebenseinstellung sein.
+	</li>
+	<li>
+		💬
+		<a target="_blank" href="https://fluent-forever.com/the-book/">
+		Fluent Forever</a>
+		von Gabriel Wyner
+		überzeugte mich endlich (wieder) Französisch zu lernen und eine Lernkartei zu erstellen
+		(Mein 64-Tage-Kalender wurde von diesem Buch übernommen).
+	</li>
+	<li>
+		🃏
+		<a target="_blank" href="https://www.supermemo.com/en/articles/20rules">
+		20 Rules for Cards</a>
+		von Piotr Wozniak hat mir beigebracht, wie ich das Beste aus Intervall-Lernen herausholen kann.
+		(Hinweis: Der Autor hat auch den von Anki verwendeten Algorithmus erfunden!)
+	</li>
+</ul>
+
+	Und meine Lieblingslesungen über die Wissenschaft des Lernens:
+
+<ul>
+	<li>
+		👩‍🎓
+		<a target="_blank" href="https://www.amazon.com/Why-Dont-Students-Like-School/dp/047059196X/">
+		Why Don't Students Like School?</a>
+		von Daniel Willingham
+		hat mir bewiesen, dass "bloßes Auswendiglernen" tatsächlich notwendig ist für Kreativität
+		&amp; kritisches Denken.
+	</li>
+	<li>
+		✏️
+		<a target="_blank" href="http://tlcp.depaultla.org/wp-content/uploads/sites/2/2015/05/Dunlosky-et-al-2013-What-Works-What-Doesnt.pdf">
+		What Works, What Doesn't [PDF]
+		</a>
+		von Dunlosky et al
+		fasst mehr als 200 Studien zu verschiedenen Lernmethoden zusammen.
+		In der Summe: Gängige Techniken, wie erneutes Lesen &amp; Hervorheben funktionieren nicht so gut,
+		wie es weniger verbreitete Techniken, wie Abstand &amp; Selbsttest tun.
+		<a target="_blank" href="http://journals.sagepub.com/doi/abs/10.1177/1529100612453266">
+		(Verweis zur ursprünglichen Studie)
+		</a>
+	</li>
+</ul>
+
+<p>
+	Und wenn du lernen möchtest, indem du mehr spielst,
+	<a target="_blank" href="https://explorabl.es/">
+	schau dir Explorable Explanations an!</a> 🕹️
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	Weitere Danksagungen
+</p>
+
+<p>
+	👀 Vielen Dank an alle meine Tester, die dafür gesorgt haben, dass dieses Projekt nicht scheiße wird:
+	<span style="font-size: 19px; line-height: 0px; color: #999;">
+	Aatish Bhatia, Adam Filinovich, Aimee Jarboe, Alex Jaffe, Amit Patel, Andy Matuschak, B Cavello, Chris Walker, Frank Lantz, Gal Green, Glen Chiacchieri, Hamish Todd, Henry Reich, Jacque Goupil, James Lytle,
+	Jez Swanson, Josh Comeau, Kayle Sawyer, Levi Robertson, Marcelo Gallardo, Martyna Wasiluk, Michael Nielsen, Mikayla Hutchinson, Mike Gifford, Monica Srivastava, Owen Landgren,
+	Paul Butler, Paul Simeon, Philipp Wacker, Pontus Granström, Rowan, Sebastian Morr, SpacieCat, Tanya Short, Tim &amp; Alexandra Swast, Tom Hermans, Toph Tucker, Will Harris-Braun, Zeno Rogue
+	</span>
+</p>
+
+<p>
+	📹 Danke Chris Walker fürs Erstellen des
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+	Lernkartei Bau-Videos!</a>
+	(P.S:
+	<a target="_blank" href="http://polytrope.com/">
+	Chris macht auch interaktives Zeug!</a>)
+</p>
+
+<p>
+	🐞 Danke Omar Rizwan fürs Herausfinden von endlos vielen Safari-Bugs.
+</p>
+
+<p>
+	🔊 Dieses Projekt wurde mit Creative Commons Beiträgen
+	von Wikimedia Commons und FreeSounds erstellt.
+	<a target="_blank" href="https://github.com/ncase/remember#full-asset-credits">
+	(Zeige die gesamten Credits an)</a>
+</p>
+
+<p>
+	💖 Und noch mal ein großes Danke an all meine Unterstützer auf Patreon, die das hier möglich gemacht haben:
+</p>
+
+<iframe gotosrc="supporters/"></iframe>
+
+<p>
+	🙏 Und zuletzt, danke ich <i>dir</i> dafür, dass du dir all die Dankaussagungen und Credits durchgelesen hast!
+	Du kannst
+	<a target="_blank" href="https://ncase.me/">
+	mehr meiner Projekte ausprobieren</a>,
+	<a target="_blank" href="https://twitter.com/ncasenmare">
+	mir auf Twitter folgen</a>,
+	oder
+	<a target="_blank" href="https://www.patreon.com/ncase">
+	mich auf Patreon unterstützen</a>.
+	Ich hoffe, dieser Comic hat dir geholfen.
+</p>
+
+<p>
+	Viel Spaß beim Lernen!<br>
+	~ Nicky Case
+</p>
+
+</div>
+
+</div>
+
+
+<!--
+
+TRANSLATOR NOTE:
+
+HA HA YOU THOUGHT YOU WERE DONE?!
+
+NOPE
+
+WE'VE STILL GOT THE INTERFACE LABELS & FLASHCARDS TO TRANSLATE
+
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- LABELS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="labels">
+
+<!-- Chapter Links -->
+<span id="label_chapter_links">
+	<a href="#0">Einleitung</a>
+	&middot;
+	<a href="#1">Das Handwerk</a>
+	&middot;
+	<a href="#2">Die Kunst</a>
+	&middot;
+	<a href="#3">Los geht's!</a>
+	&middot;
+	<a href="#bye">Abspann</a>
+</span>
+
+<!-- Multi Card Labels -->
+<span id="multicard_q">
+	Erinnern &uarr;
+	dann drehen ↻ 
+</span>
+<span id="multicard_cards_left">
+	(Karten verbleibend: [N])
+</span>
+<span id="multicard_a">
+	Hast du's richtig beantwortet?
+</span>
+<span id="multicard_no">
+	Nee, nochmal.
+</span>
+<span id="multicard_yes">
+	Jep, weiter!
+</span>
+<span id="multicard_done">
+	Fertig! Scrolle weiter.
+	<br>
+	&darr;
+</span>
+<span id="multicard_done_2">
+	Das war's!
+	<br>
+	&darr;
+</span>
+
+<!-- Ebbinghaus Simulation -->
+<span id="ebbinghaus_y_axis">
+	Gedächtnisstärke &rarr;
+</span>
+<span id="ebbinghaus_x_axis">
+	Zeit &rarr;
+</span>
+<span id="ebbinghaus_decay">
+	Verfall:
+</span>
+<span id="ebbinghaus_forgetting">
+	Opt.:
+</span>
+<span id="ebbinghaus_recall">
+	Abfrage-Timing:
+</span>
+<span id="ebbinghaus_recalls">
+	Abfrage-Timings:
+</span>
+<span id="ebbinghaus_auto">
+	Auto-optimieren!
+</span>
+
+<!-- Leitner Calendar -->
+<!--
+TRANSLATOR NOTE:
+The exact three characters [N] is how the code knows where to put the number.
+When you translate, make sure the [N] is there if it was there in the original.
+-->
+<span id="calendar_day">
+	Am Tag [N]...
+</span>
+<span id="calendar_review">
+	Levels [N] abfragen (<i>in dieser Reihenfolge</i>)
+</span>
+<span id="calendar_loop">
+	(und dann zurück zu Tag 1!)
+</span>
+
+<!-- Leitner Box simulation -->
+<span id="leitner_day">
+	Tag [N]
+</span>
+<span id="leitner_step_to_review">
+	zu prüfen: Level
+</span>
+<span id="leitner_step_reviewing">
+	prüfe Level [N]
+</span>
+<span id="leitner_step_new">
+	füge [N] neue Karten hinzu
+</span>
+<span id="leitner_step_stats">
+	Total: [N] Karten!
+</span>
+<span id="leitner_step_stats_2">
+	([N] außer Dienst)
+</span>
+<span id="leitner_button_next_step">
+	+1 Schritt
+</span>
+<span id="leitner_button_next_day">
+	+1 Tag
+</span>
+<span id="leitner_button_next_week">
+	+1 Woche
+</span>
+<span id="leitner_button_next_month">
+	+1 Monat
+</span>
+<span id="leitner_slider_new">
+	[N] neue Karten pro Tag
+</span>
+<span id="leitner_slider_wrong">
+	[N]% der Karten <i>vergessen</i>
+</span>
+<span id="leitner_reset">
+	RESET
+</span>
+
+<!-- Typing Cards -->
+<span id="type_question">
+	Q:
+	<!--
+	TRANSLATOR NOTE: "Q" short for Question.
+	Dunno if other languages have similar one-letter abbreviations.
+	If not, just type the full translated word for "Question"
+	-->
+</span>
+<span id="type_placeholder">
+	tippe deine Antwort ein
+</span>
+<span id="type_suggestions">
+	oder wähle einen Vorschlag:
+</span>
+
+<!-- Suggestions -->
+<span id="you_what_suggestions">
+	<li>Etwas Interessantes!</li>
+	<li>Eine Sprache</li>
+	<li>Musik</li>
+	<li>Programmieren</li>
+	<li>Etwas Persönliches</li>
+	<li>(Sonstiges)</li>
+</span>
+<span id="you_why_suggestions">
+	<li>Für meine Liebsten</li>
+	<li>Für mich selbst</li>
+	<li>Um meine Neugierde zu stillen</li>
+	<li>(Sonstiges)</li>
+</span>
+<span id="you_how_suggestions">
+	<li>Lernkartei</li>
+	<li>Anki</li>
+	<li>TinyCards</li>
+	<li>(Sonstiges)</li>
+</span>
+<span id="you_when_suggestions">
+	<li>Am Morgen</li>
+	<li>Unterwegs</li>
+	<li>Am Abend</li>
+	<li>(Sonstiges)</li>
+</span>
+
+<!-- Gifts -->
+<span id="gift_wallpaper_what">
+	WAS:
+</span>
+<span id="gift_wallpaper_why">
+	WARUM:
+</span>
+<span id="gift_wallpaper_do_1">
+	LERNE
+</span>
+<span id="gift_wallpaper_do_2">
+	MICH!
+</span>
+<span id="gift_wallpaper_filename">
+	Hintergrund
+</span>
+<span id="gift_wallpaper_desktop">
+	Ein Hintergrund für deinen Dekstop,
+</span>
+<span id="gift_wallpaper_phone">
+	Einen Sperrbildschirm für dein Handy,
+</span>
+<span id="gift_app_leitner">
+	Ein Video meines Freundes Chris Walker, um dir zu ziegen, wie deu deine eigene Lernkartei machen kannst!
+	<br><br>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uvF1XuseZFE?rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+	<br>
+	(Hier noch ein Tutorial:)
+	<br><br>
+	<a target="_blank" href="./pdf/leitner.pdf" style="display: block; text-align: center;">
+	<img src="./pdf/thumbnail.png" width="450"/><br>click to download PDF</a>
+</span>
+<span id="gift_app_anki">
+	Ein Link zu
+	<a target="_blank" href="https://apps.ankiweb.net/">download Anki!</a>
+	Und hier ein Tutorial, wie es zu benutzen ist:
+	<br><br>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sQkdB3cJwn0?start=180&rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+</span>
+<span id="gift_app_tiny">
+	Ein Link zu
+	<a target="_blank" href="https://tinycards.duolingo.com/">
+	TinyCards!</a>
+	(Ich empfehle ihre
+	<a target="_blank" href="https://tinycards.duolingo.com/users/TinyGeo">
+	Geographie-Sets!</a>)
+</span>
+<span id="gift_app_other">
+	Links zu Lernkartei-Tutorials:
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+	[video]</a>
+	<a target="_blank" href="./pdf/leitner.pdf">
+	[pdf]</a>,
+	<a target="_blank" href="https://apps.ankiweb.net/">
+	die Anki App</a>,
+	und
+	<a target="_blank" href="https://tinycards.duolingo.com/">
+	TinyCards</a>!
+</span>
+
+<!-- Downloading Cards -->
+<span id="download_all">
+	DOWNLOADE ALLE KARTEN
+</span>
+<span id="download_all_downloading">
+	DOWNLOADING...
+</span>
+<span id="download_all_done">
+	FERTIG! Schaue in deinem Download-Ordner nach.
+</span>
+
+
+
+
+
+<!--
+
+TRANSLATOR NOTE:
+
+One more section to go!
+
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- FLASHCARDS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!--
+TRANSLATOR NOTE:
+The CSS for the flashcards is really touchy, so DO NOT MODIFY THE CSS.
+That means, try as much as possible to make your text shorter or the same length as the original text.
+Good luck!
+-->
+
+<!-- - - - - - - - - - - - -->
+<!-- INTRO - - - - - - - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_spaced_rep_front">
+	<div class="fcard_center" style="height:2.5em">
+	und das Spiel heißt...
+	</div>
+</span>
+<span id="flashcard_spaced_rep_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="color:white; font-size:74px; height:1.6em; line-height:0.8em;">
+	INTERVALL-LERNEN
+	</div>
+</span>
+<span id="flashcard_intro_a_front">
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	Intervall-Lernen = <span class="underline">____</span> + <span class="underline">____</span>
+	</div>
+</span>
+<span id="flashcard_intro_a_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=240></div>
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	Abfragen + Zeit
+	</div>
+</span>
+<span id="flashcard_intro_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	3 gängige, aber ineffektive Lern/Lehrmethoden sind...
+	</div>
+</span>
+<span id="flashcard_intro_b_back">
+	<div id="fc_words" class="fcard_center" style="height:2.2em">
+	...Vorträge, pauken, und nochmals lesen.
+	</div>
+</span>
+<span id="flashcard_intro_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.4em">
+	Laut griechischer Mythologie war
+	die Göttin <span class="underline">____</span>
+	die Mutter der Göttinnen der
+	<span class="underline">________</span>
+	</div>
+</span>
+<span id="flashcard_intro_c_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width:250px; top:50px; left:140px; line-height:1.1em;">
+	Erinnerung ist die Mutter der Inspiration
+	</div>
+</span>
+
+<!-- - - - - - - - - - - - -->
+<!-- CHAPTER 1: The Science -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_guessgap_front">
+	<div class="fcard_center" style="height:2.5em">
+	Die optimale Verteilung für Abfragen ist...
+	</div>
+</span>
+<span id="flashcard_guessgap_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="height:2.5em">
+	...mit <i>größer</i> werdenden Abständen!
+	</div>
+</span>
+<span id="flashcard_sci_a_front">
+	<div id="fc_words" class="fcard_center" style="height:3.5em">
+	Der Pionier experimenteller Gedächtnisforschung hieß...
+	</div>
+</span>
+<span id="flashcard_sci_a_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width: 250px; top: 60px; left:150px; line-height: 1.1em;">
+	Hermann Ebbinghaus
+	</div>
+</span>
+<span id="flashcard_sci_b_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	Die Vergessenskurve (<i>ohne</i> Abfragen) sieht wie aus?
+	</div>
+</span>
+<span id="flashcard_sci_b_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 280px; top: 70px; right: 20px; font-size:20px; line-height: 1.1em;">
+	(Merke: Erst schneller Verfall, dann langsamer - "exponentieller Verfall")
+	</div>
+</span>
+<span id="flashcard_sci_c_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	Die Vergessenskurve (<i>mit</i> Abfragen) sieht wie aus?
+	</div>
+</span>
+<span id="flashcard_sci_c_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 360px; top: 120px; left: 20px; font-size:20px; line-height: 1.1em;">
+	(Merke: <i>wachsende</i> Abstände zwischen den Abfragen)
+	</div>
+</span>
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 2: The Art - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_leit_a_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	Der Zeitabstand zwischen Abfragen wird in der Lernkartei mit jedem Level <span class="underline">______</span>.
+	</div>
+</span>
+<span id="flashcard_leit_a_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=720 style="left:-5px"></div>
+	<div id="fc_words" class="fcard_center" style="height:110px">
+	verdoppelt
+	</div>
+</span>
+<span id="flashcard_leit_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	In der Lernkartei:
+	<br>
+	wenn du eine Karte <i>richtig</i> beantwortest, landet sie <span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_b_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:170px">
+	ein Level höher
+	</div>
+</span>
+<span id="flashcard_leit_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	In der Lernkartei:
+	<br>
+	wenn du eine Karte <i>falsch</i> beantwortest, landet sie <span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_c_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:180px">
+	zurück im Level 1!
+	</div>
+</span>
+<span id="flashcard_leit_d_front">
+	<div id="fc_words" class="fcard_center" style="font-size:30px; height:170px;">
+	Laut einem zufälligen Comic-Spiel aus dem Internet,
+	sollten meine Intervall-Lernen Lernkarten
+	<span class="underline">______</span> ,
+	<span class="underline">______</span> , und 
+	<span class="underline">______</span> sein.
+	</div>
+</span>
+<span id="flashcard_leit_d_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=720></div>
+	<div id="fc_words" class="fcard_center" style="color:#fff; height:200px; height: 180px; font-size: 30px;">
+	klein, verknüpft &amp; bedeutend
+	</div>
+</span>
+
+
+<span id="flashcard_mitochondria_all_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		Was ist das?
+	</div>
+</span>
+<span id="flashcard_mitochondria_all_back">
+	<div class="fcard_center" style="height:220px; font-size:20px;">
+				Dieses Organell heisst "Mitochondrion" und ist der Energiereaktor einer Zelle.
+		Es gibt sie in fast allen Eukaryoten (Organismen mit Nukleus).
+		Die meistverbreitete Hypothese zum Ursprung der Mitochondrien ist die Symbiogenese: 
+		vor etwa ~1.5 Mrd. Jahren wurde eine prokaryotische Zelle (ohne Nukleus) von einer anderen Zelle "gefressen", hat irgendwie überlebt und sich seitdem repliziert.
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		Was ist das?
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_back">
+	<div class="fcard_center" style="height:1.5em;">
+		Mitochondrion
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960></div>
+	<div class="fcard_center" style="height:180px">
+		Das Mitochondrion ist der <span class="underline">_______</span> einer Zelle.
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_back">
+	<div class="fcard_center" style="height:150px">
+		Energiereaktor
+		<span class="bonus_note">
+		// Bonus: im Ernst, ohne sie wären wir alle tot.
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:45px"></div>
+	<div class="fcard_center" style="height:180px;">
+		Mitochondrien gibt es in fast allen <span class="underline">____</span>-Organismen.
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_back">
+	<div class="fcard_center" style="height:1.5em">
+		Eukaryoten
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_front">
+	<div class="fcard_center" style="height:2.5em">
+		Eukaryoten sind Zellen, die...
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		einen Nukleus haben
+		<span class="bonus_note">
+		// Bonus: "eu"=gut, "karyon"=Kern
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_front">
+	<div class="fcard_center" style="height:2.5em">
+		Prokaryoten sind Zellen, die...
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		KEINEN Kern haben.
+		<span class="bonus_note">
+		// Bonus: "pro" = vor, "karyon" = Kern
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:10px"></div>
+	<div class="fcard_center" style="height:200px; font-size:35px">
+		Die meistverbreitete Hypothese zum Ursprung der Mitochondrien ist die...
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_back">
+	<div class="fcard_center" style="height:120px">
+		Symbiogenese
+		<span class="bonus_note">
+		// Bonus: "endo" = innen, "sym" = zusammen, "bio" = Leben
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 35px; height: 220px;">
+		Gemäß Symbiogenese gibt es Mitochondrien seit etwa
+		<span class="underline">____</span> Jahren
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_back">
+	<div class="fcard_center" style="height:1.5em">
+		~1.5 Mrd. Jahren
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 37px; height: 220px;">
+		Gemäß Symbiogenese entstanden die ersten Mitochondrien als...
+	</div>
+	<!--Im Quell-Code steht immer Endosymbiotic Theory, aber im Deutschen wird diese nicht als Theorie gekennzeichnet. Ich habe Biologie abgewaehlt also habe ich keine Ahnung ob das richtig ist yeet.-->
+</span>
+<span id="flashcard_mitochondria_8_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1440></div>
+	<div class="fcard_center" style="height:230px">
+		Prokaryote, welche von einer anderen Zelle gefressen wurde.
+	</div>
+</span>
+
+
+<span id="flashcard_cat_front">
+	<div class="fcard_center" style="height:100px">
+		<div style="font-size:120px; height:75px;">
+			Katze
+			<!--
+			TRANSLATOR NOTE:
+			If your language is NOT French, then change this to "cat" in YOUR language
+			-->
+		</div>
+		<div>
+			(Deutsch)
+			<!--
+			TRANSLATOR NOTE:
+			If your language is NOT French, then change this to YOUR language
+			-->
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat_back">
+	<div class="fcard_center" style="height:100px">
+		<!--
+		TRANSLATOR NOTE: DO NOT TRANSLATE. Leave as French! 
+		-->
+		<div style="font-size:120px; height:75px;">
+			chat
+		</div>
+		<div>
+			(Französisch)
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=0></div>
+	<div class="fcard_center"></div>
+</span>
+<span id="flashcard_cat2_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=0></div>
+	<div class="fcard_center">
+		<audio controls id="HACK_audio" style="position: absolute; top: 115px; left: 30px; transform: scale(0.5);">
+			<source gotosrc="../../audio/chat.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+</span>
+
+<span id="flashcard_learndo_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		dann zurück zum... ↻
+	</div>
+</span>
+<span id="flashcard_learndo_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		dann zurück zum Lernen... ↻
+	</div>
+</span>
+
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 3: Get Started -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_you_what_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		WAS möchtest du lernen?
+	</div>
+</span>
+<span id="flashcard_you_what_back">
+	<div id="fc_words" class="fcard_center" editable="you_what" style="height:1.2em">
+		Irgendwas Interessantes!/div>
+		<!--Die anderen Beispiele fehlen und ich hab zu viel HTML vergessen um das zu reparieren-->
+</span>
+<span id="flashcard_you_why_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		WARUM möchtest du lernen?
+	</div>
+</span>
+<span id="flashcard_you_why_back">
+	<div id="fc_words" class="fcard_center" editable="you_why" style="height:1.2em">
+		Aus reiner Neugierde
+		<!--Hier fehlen wieder die Beispiele-->
+	</div>
+</span>
+
+<span id="flashcard_you_how_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
+		WIE möchtest du Intervall-Lernen nutzen?
+	</div>
+</span>
+<span id="flashcard_you_how_back">
+	<div id="fc_words" class="fcard_center" editable="you_how" style="height:1.2em">
+		Als Lernkartei
+	</div>
+</span>
+<span id="flashcard_you_when_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 210px; margin: 0; top:31px; left: 180px;">
+		WANN möchtest du Intervall-Lernen benutzen?
+	</div>
+</span>
+<span id="flashcard_you_when_back">
+	<div id="fc_words" class="fcard_center" editable="you_when" style="height:1.2em">
+		Am Abend
+	</div>
+</span>
+
+<span id="flashcard_the_end_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=480></div>
+</span>
+<span id="flashcard_the_end_back">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="top:30px; font-size:50px;">
+		DAS ENDE
+	</div>
+</span>
+
+
+</div>
+
+<!--
+
+TRANSLATOR NOTE:
+
+Congrats! NOW you've translated everything!
+
+Again, from the deepest part of my heart, I want to sincerely thank you
+for helping spread this page to more people, in more languages.
+
+Oh wait, just one more thing: go to translations.txt,
+and add your translation there so this project "knows" your page exists.
+
+And once that's done, send a Pull Request, and your translation will go live!
+
+THANK YOU! <3
+~ Nicky Case
+
+-->
+
+</body>
+
+</html>
+
+<script src="js/howler.core.min.js"></script>
+<script src="js/minpubsub.src.js"></script>
+<script src="js/comic.js"></script>
