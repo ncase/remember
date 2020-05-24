@@ -94,3 +94,12 @@ Gostaria de mudar para o idioma português?
 Nah
 Traduzido por <a href="https://github.com/ramon-mendes/">Ramon Mendes</a>
 original in English
+
+de
+Deutsch
+./de.html
+Lieber in deutsch lesen?
+Klar!
+Nee
+translated by simon stelling & Informatik-LK 2021 
+englisches Original
