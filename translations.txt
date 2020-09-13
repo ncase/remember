@@ -94,3 +94,12 @@ Gostaria de mudar para o idioma português?
 Nah
 Traduzido por <a href="https://github.com/ramon-mendes/">Ramon Mendes</a>
 original in English
+
+ar
+العربية
+./ar.html
+هل تودّ القراءة باللغة العربية؟
+نعم
+لا
+ترجمة: <a href="https://github.com/ABDR999">عبدالرحمن التميمي</a>
+النسخة الأصلية باللغة الإنجليزية
