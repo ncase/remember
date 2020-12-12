@@ -95,6 +95,15 @@ Nah
 Traduzido por <a href="https://github.com/ramon-mendes/">Ramon Mendes</a>
 original in English
 
+de
+Deutsch
+./de.html
+Möchten Sie zu Deutsch wechseln?
+Ja!
+Nein
+Übersetzt von <a href="https://github.com/herrhundt">herrhundt</a>
+original in English
+
 ar
 العربية
 ./ar.html
