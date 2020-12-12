@@ -103,3 +103,12 @@ Ja!
 Nein
 Übersetzt von <a href="https://github.com/herrhundt">herrhundt</a>
 original in English
+
+ar
+العربية
+./ar.html
+هل تودّ القراءة باللغة العربية؟
+نعم
+لا
+ترجمة: <a href="https://github.com/ABDR999">عبدالرحمن التميمي</a>
+النسخة الأصلية باللغة الإنجليزية
