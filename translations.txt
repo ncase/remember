@@ -104,6 +104,15 @@ Nein
 Übersetzt von <a href="https://github.com/herrhundt">herrhundt</a>
 original in English
 
+ex
+Türkçe
+./tr.html
+Türkçe'sini okumak ister misin?
+Tabii!
+Yok
+çeviri Oğul Can Yurdakul
+aslı İngilizce
+
 ar
 العربية
 ./ar.html
