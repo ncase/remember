@@ -1,0 +1,2734 @@
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   _______  ___  ____________    ___  _______  ____________________________  _  __
+  / __/ _ \/ _ |/ ___/ __/ _ \  / _ \/ __/ _ \/ __/_  __/  _/_  __/  _/ __ \/ |/ /
+ _\ \/ ___/ __ / /__/ _// // / / , _/ _// ___/ _/  / / _/ /  / / _/ // /_/ /    / 
+/___/_/  /_/ |_\___/___/____/ /_/|_/___/_/  /___/ /_/ /___/ /_/ /___/\____/_/|_/  
+                                                                                  
+=== FAN-TRANSLATION GUIDE ===
+
+Hello fan-translators! From the bottom of my heart:
+thank you for doing this, and, you've no idea what you've gotten yourself into.
+There's about 3500 words to translate, including the flashcards & further reading.
+
+Before doing anything, please read all these steps:
+https://github.com/ncase/remember#how-to-translate
+(emphasis: do NOT edit the original index.html. make a copy of this page!)
+
+To make translation less painful, I've added little HTML comments throughout.
+Look for the ones that say "TRANSLATOR NOTE".
+
+And after translating this page, don't forget to go to translations.txt
+and "add" your translation there! (further instructions will be there)
+
+Good luck, and many thanks again!
+
+<3,
+~ Nicky Case
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!DOCTYPE html>
+<html lang="cs"> <!-- TRANSLATOR NOTE: Remember your 2-letter code? Replace "en" with that! -->
+<head>
+	
+
+	<!-- Meta Stuff -->
+	<title>Jak si zapamatovat úplně cokoliv a skoro navždycky</title>
+	<!-- TRANSLATOR NOTE: Translate the "content" attribute -->
+	<meta name="description" content="Interaktivní komiks o tom, jak při studiu využít vědecký výzkum o paměti"/> 
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="favicon.png">
+	
+	<!-- Sharing Card Stuff -->
+	<meta itemprop="name" content="Jak si zapamatovat úplně cokoliv a skoro navždycky"> <!-- TRANSLATE "content" -->
+	<meta itemprop="description" content="Interaktivní komiks o tom, jak při studiu využít vědecký výzkum o paměti"> <!-- TRANSLATE "content" -->
+	<meta itemprop="image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta name="twitter:title" content="Jak si zapamatovat úplně cokoliv a skoro navždycky"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:description" content="Interaktivní komiks o tom, jak při studiu využít vědecký výzkum o paměti"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta property="og:title" content="Jak si zapamatovat úplně cokoliv a skoro navždycky"> <!-- TRANSLATE "content" -->
+	<meta property="og:description" content="Interaktivní komiks o tom, jak při studiu využít vědecký výzkum o paměti"> <!-- TRANSLATE "content" -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ncase.me/remember/">
+	<meta property="og:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/comic.css"/>
+	<meta name="viewport" content="width=600">
+
+</head>
+
+<body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 0: INTRODUCTION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+<a name="0"></a>
+<div class="divider divider_title">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div style="font-size: 75px">
+			JAK SI ZAPAMATOVAT ÚPLNĚ COKOLIV A SKORO NAVŽDYCKY
+		    </div>
+			<!-- TRANSLATOR NOTE: add a hint of silliness at the end, like "ish" or "sorta" -->
+		</div>
+		<div style="text-align:right; position:relative;">
+			<div style="position:absolute;">
+			doba čtení/hraní: 20 minut
+			</div>
+			autor/ka: nicky case &middot; říjen 2018
+			<br>
+			<span id="translation_credits"></span> 
+			<!-- TRANSLATOR NOTE: when you update translations.txt, your name will appear here! -->
+		</div>
+	</div>
+</div>
+
+<div class="comic">
+
+<div id="language_options"></div>
+
+<!--
+
+TRANSLATOR NOTE:
+
+There may already be "official" translations for terms like "Spaced Repetition" or "Forgetting Curve"!
+Go to their Wikipedia pages, scroll down to "Languages" in the left sidebar, and if your language is there,
+click on that Wikipedia page, and use the "official" translated term there.
+
+Spaced Repetition: https://en.wikipedia.org/wiki/Spaced_repetition
+Forgetting Curve: https://en.wikipedia.org/wiki/Forgetting_curve
+
+-->
+
+<!--
+
+TRANSLATOR NOTE:
+
+Try to make your translated text about the same length or shorter as the original text.
+If that's not possible, and your text doesn't fit in its box, you can modify attributes
+"x", "y", "w", "h" to change the box, or add your own custom CSS style to make the font fit.
+(CSS properties like "font-size" are very helpful)
+
+-->
+
+<panel w=400 h=650>
+<pic src="pics/intro0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=350 h=60>
+	V řecké mytologii byla bohyně paměti Mnémosyné...
+</words>
+<words x=30 y=330 w=310 h=30>
+	...matkou múz, bohyň inspirace.
+</words>
+<words x=70 y=445 w=90 style="color:#fff" no-bg class="comic_text">
+	hudba
+</words>
+<words x=119 y=494 w=90 style="color:#fff" no-bg class="comic_text">
+	divadlo
+</words>
+<words x=214 y=464 w=90 style="color:#fff" no-bg class="comic_text">
+	ujetá fanfiction
+</words>
+</panel>
+
+<panel w=600 h=60>
+<words w=600 x=-15 no-bg>
+	Tak jak se daří paměti a inspiraci ve škole?
+</words>
+</panel>
+
+<panel w=550 h=250>
+<pic src="pics/intro0.png" sx=400 sy=0></pic>
+
+<words x=-12 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=50  y=85 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=114 y=84 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=172 y=91 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=295 y=80 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=363 y=83 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=444 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+<words x=518 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   bla   </words>
+
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/intro0.png" sx=400 sy=250></pic>
+<words x=155 y=20 w=90 no-bg>
+	No.
+</words>
+<words x=186 y=70 w=290 no-bg  style="font-size:22px">
+	Nejenže jsou běžné metody jako chození na přednášky, biflování a čtení studijních materiálů dokola <i>nudné</i>,
+	věda prokázala, že <i>ani moc dobře nefungují</i>.*
+</words>
+</panel>
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* všechny zdroje a odkazy budou na konci tohoto komiksu!
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/intro0.png" sx=400 sy=500></pic>
+<words x=95 y=27 w=340 no-bg style="font-size:18px"> 
+	Co když se ale jde učit způsobem,
+	jehož účinnost je fakticky podložená, a který je <i>zároveň</i> zábavný?
+</words>
+<words x=175 y=135 w=280 no-bg style="font-size:23px">
+	Co když existuje paměťová karetní hra, pomocí které si můžete za 20 minut hraní denně
+	uložit <i>cokoliv co chcete</i> do dlouhodobé paměti a to <i>navždy?*</i>
+</words>
+</panel>
+
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* dokud neumřete
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=spaced_rep"></sim>
+</panel>
+
+<panel w=500 h=450 fadeInOn="flip_spaced_rep">
+<pic src="pics/intro0.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=430 h=60 style="font-size:23px">
+	Je to <i>super</i>.
+	Začátkem tohoto roku jsem se začal učit francouzsky metodou intervalového opakování.  
+</words>
+<words x=30 y=350 w=430 h=60 style="font-size:23px">
+	Za dva <i>měsíce</i> jsem se naučil víc slov než za dva <i>roky</i> francouzštiny na střední škole.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/intro0.png" sx=950 sy=450></pic>
+<words x=10 y=10 w=400 h=60>
+	Od té doby používám intervalové opakování, abych se naučil všechno možné...
+</words>
+<words x=71 y=100 w=100 style="text-align:left" no-bg class="comic_text">
+	akordy na ukulele
+</words>
+<words x=205 y=95 w=100 style="text-align:left" no-bg class="comic_text">
+	programování
+</words>
+<words x=380 y=137 w=100 style="text-align:left" no-bg class="comic_text">
+	narozeniny přátel
+</words>
+<words x=188 y=204 w=270 style="text-align:left" no-bg class="comic_text">
+	cokoli zajímavého, co najdu v knížkách, přednáškách, článcích atd.!
+</words>
+<words x=60 y=300 w=400 h=60>
+	...a tato paměťová karetní hra se stala nedílnou součástí mého života.
+</words>
+</panel>
+
+<panel w=550 h=350>
+<pic src="pics/intro0.png" sx=0 sy=850></pic>
+<words x=10 y=10 w=500 h=30>
+	Ve zkratce, intervalové opakování = testování + čas.
+</words>
+<words x=10 y=200 w=500 h=110>
+    Opakovaně se zkoušíte se z nějaké otázky, jen ne najednou, ale rozložíte si opakování v čase.
+	(Ale nezabere to spoustu času? Jak vám později ukážu, existutuje takový trik...)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=0 sy=1200></pic>
+<words x=10 y=20 w=290 no-bg style="font-size:20px">
+	Intervalové opakování je zdarma, je vědecky podožené a tak jednoduché, že vám na něj stačí jen <i>krabice od bot</i>.
+</words>
+<words x=308 y=265 w=50 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	nicky zmlkni
+</words>
+<words x=90 y=130 w=270 no-bg style="font-size:21px">
+	Tak v čem je háček? Proč už teda <i>všichni</i> nepoužívají intervalové opakování?
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=400 sy=1200></pic>
+<words x=10 y=20 w=330 no-bg style="font-size:18px">
+	No, háček je v tom, že začít s <i>jakýmkoliv</i> novým návykem je těžké
+	- a to obzvášť pokud je to takový nezvyklý návyk jako intervalové opakování.
+</words>
+<words x=292 y=303 w=80 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	učitel už jde
+</words>
+<words x=92 y=120 w=270 no-bg style="font-size:18px">
+	A to je důvod, proč jsem udělal tenhle amatérsky nakreslený interaktivní komiks.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=800 sy=1200></pic>
+<words x=10 y=20 w=300 no-bg style="font-size:20px">
+	V tomhle komiksu o intervalovém opakování
+	vám ukážu PROČ to funguje a JAK to funguje...
+</words>
+<words x=110 y=140 w=250 no-bg>
+	...a pomůžu vám s tím začít <i>DNES.</i>
+</words>
+</panel>
+
+<panel w=600 h=180>
+<words w=600 x=-15 no-bg>
+	V tomto komiksu si budete chvilku číst a chvilku si opakovat to,
+	co jste se tady zatím naučili.
+
+    <b>Takže se budete učit o intervalovém opakování pomocí intervalového opakování..</b>
+
+	<br>
+	Takhle:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=intro_a,intro_b,intro_c"></sim>
+</panel>
+
+<panel w=550 h=450>
+<pic src="pics/intro0.png" sx=950 sy=1600></pic>
+<words x=30 y=5 w=450 h=110 style="font-size:22px">
+	Ale stejně, není memorování k ničemu?
+	Nemůžeme si v současné době všechno vyhledat na internetu?
+	Neměli bychom se místo toho učit, jak být kreativní nebo jak kriticky myslet? 
+</words>
+<words x=30 y=310 w=450 h=110 style="font-size:22px">
+	"Místo toho" nedává smysl.
+	Kognitivní vědy dokazují,
+	že se <i>musíte</i> naučit některé věci zpaměti, abyste mohli být kreativní nebo kriticky myslet. 
+	(Představte si třeba, že byste psali slohovou práci a neznali žádná slova!)
+</words>
+<words x=187 y=138 w=150 no-bg class="comic_text" style="font-size:40px">
+	PAMĚŤ
+</words>
+<words x=22 y=222 w=100 no-bg class="comic_text" style="font-size:20px">
+	umění
+</words>
+<words x=408 y=224 w=100 no-bg class="comic_text" style="font-size:20px">
+	věda
+</words>
+</panel>
+
+<panel w=550 h=300>
+<pic src="pics/intro0.png" sx=0 sy=1600></pic>
+<words x=7 y=23 w=310 no-bg style="font-size:17px">
+    Intervalové opakování není žádný "trik na zlepšení paměti".
+	Není to "life hack" ani "zlepšovák".
+</words>
+<words x=30 y=113 w=320 no-bg style="font-size:22px">
+	Je to způsob, jak můžete získat zpět kontrolu nad svou <i>myslí</i>. 
+	Jak si zvolit to, co si uložíte do dlouhodobé paměti.
+	Jak si vytvořit celoživotní lásku k učení.
+</words>
+</panel>
+
+<panel w=400 h=550>
+<pic src="pics/intro0.png" sx=550 sy=1600></pic>
+<words x=20 y=20 w=330 h=30 style="font-size:21px">
+	... jak rozvíjet svou vnitřní múzu.
+</words>
+<words x=117 y=131 w=140 no-bg class="comic_text" style="font-size:20px; color:#fff">
+	Tony Stark se skoro neubránil vzdechu, když mu ruka v rukavici přejela dolů po zádech.
+	Její plynulý tlak byl jemný a skoro uklidňující.
+	Obama se zachichotal. "Myslíš, ten-
+</words>
+<words x=240 y=460 w=120 h=50>
+	Tak pojďme na to.
+</words>
+</panel>
+
+</div>
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 1: THE SCIENCE OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="1"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div style="font-size:65px">
+			VĚDECKÉ POZNATKY O
+			INTERVALOVÉM OPAKOVÁNÍ
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=400 h=60>
+	V roce 1885 Hermann Ebbinghaus provedl dost masochistický experiment.
+</words>
+<words x=30 y=320 w=430 h=90>
+	Tento německý psycholog si zapamatoval <i>tisíce</i> vymyšlených slov
+	a zaznamenal si, kolik toho s ubíhajícím časem zapomněl, a objevil...
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/sci0.png" sx=500 sy=0></pic>
+<words x=60 y=10 w=250>
+	<b>KŘIVKU ZAPOMÍNÁNÍ</b>
+</words>
+<words x=10 y=310 w=350>
+	Zjistil, že zapomenete většinu toho, co jste se naučili za prvních 24 hodin. 
+	A potom, pokud si informaci aktivně nevybavíte, zbývající vědomosti mizí exponeciální rychlostí. 
+</words>
+</panel>
+
+<panel w=500 h=53 style="margin-top:-5px">
+<words w=500 x=-15 y=-10 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999; line-height: 1.1em;">
+	*technicky vzato tato křivka není <i>přesně</i>
+	<br>
+	exponenciální, ale, um, skoro.
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=900 sy=0></pic>
+<words x=10 y=10 w=450 h=90 style="font-size:22px">
+	Filozofové přemýšleli a diskutovali o paměti po tisíce let,
+	ale Ebbinghaus byl první, kdo provedl opravdové <i>experimenty.</i> 
+    (které byly zreplikovány)
+</words>
+<words x=193 y=171 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35); font-size:20px">
+	prosím
+</words>
+<words x=278 y=195 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35); font-size:20px">
+	zab...
+</words>
+<words x=348 y=234 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35); font-size:20px">
+	mě...
+</words>
+<words x=20 y=350 w=440 h=60>
+	A proto je Hermann Ebbinghaus známý jako
+	průkopník vědeckého zkoumání paměti.
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Tady je simulace křivky zapomínání, se kterou si můžete pohrát.
+	<b>Změňte rychlost zapomínání. Co to udělá s křivkou?</b>
+</words>
+</panel>
+
+<panel w=600 h=370>
+<sim x=0 y=0 w=600 h=370 src="sims/ebbinghaus/?mode=0"></sim>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Jak vidíte, čím nižší je rychlost zapomínání, tím plošší je křivka -
+	tzn. tím déle vzpomínka vydrží. 
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=0 sy=500></pic>
+<words x=10 y=10 w=300>
+	Jak rychle vzpomínka mizí zálěží na člověku a na vzpomínce...
+</words>
+<words x=0 y=145 w=330 no-bg class="comic_text smaller">
+	ahoj! promiň, ale jakže se jmenuješ?
+</words>
+<words x=177 y=186 w=180 no-bg class="comic_text smaller">
+	haha. Katka.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=400 sy=500></pic>
+<words x=10 y=10 w=330>
+	Ale obecně se "rychlost zapomínání" zpomalí pokaždé, když si danou informaci <b>aktivně vybavíte</b>.
+	(Na rozdíl od toho, když si ji pouze znovu pasivně přečtete)
+</words>
+<words x=27 y=198 w=120 no-bg class="comic_text smaller">
+	katka. katka. katka. katka. katka.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=800 sy=500></pic>
+<words x=10 y=10 w=300>
+	(ale když si vědomosti přestanete procvičovat, tak dále mizí)
+</words>
+<words x=41 y=121 w=150 no-bg class="comic_text smaller">
+	tak čau kristýno!
+</words>
+<words x=191 y=148 w=100 no-bg class="comic_text smaller">
+	katko.
+</words>
+<words x=59 y=174 w=150 no-bg class="comic_text smaller">
+	měj se karolíno!
+</words>
+<words x=193 y=203 w=100 no-bg class="comic_text smaller">
+	KATKO.
+</words>
+</panel>
+
+<panel w=600 h=200>
+<words w=600 x=-15 no-bg>
+	Tady je znovu simulace, tentokrát ale ukazuje, jak by to vypadalo, kdybyste si vzpomínku jednou aktivně vybavili.
+	<br>
+	(šedá čára: stav vzpomínky, kdybyste se <i>nepokusili</i> si ji aktivně vybavit)
+	<br>
+	<b>Změňte načasování toho, kdy si informaci aktivně vybavíte a prohlédněte si, co to udělá s křivkou.:</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	Pokud si vpomínku aktivně vybavíte jen jednou, tak ji to sice trochu posílí...
+	ale kvůli exponenciální rychlosti zapomínání to z dlouhodobého hlediska nic nezmění. 
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=390>
+	Takže existuje lepší způsob učení?
+	Ano! A trik jak si informaci lépe zapamatovat...
+</words>
+<words x=210 y=310 w=160>
+	 ...<i>je skoro ji zapomenout.</i>
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=0></pic>
+<words x=250 y=20 w=200>
+	Pro snazší pochopení si můžete představit, jak funguje posilování svalů.
+	Pokud budete cvičit se závažím, které je moc lehké, neposílíte.
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=300></pic>
+<words x=250 y=20 w=200>
+	... nebo když bude naopak příliš těžké.
+</words>
+</panel>
+
+<panel w=350 h=350>
+<pic src="pics/sci1.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=300>
+	To stejné platí pro mozek.
+	Potřebujete <b>vhodou obtížnost</b>: optimální bod, kdy je to těžké tak akorát.
+</words>
+<words x=55 y=187 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	pohodlí
+</words>
+<words x=55 y=282 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	nepohodlí
+</words>
+<words x=176 y=186 w=120 no-bg class="comic_text smaller">
+	moc lehké
+</words>
+<words x=179 y=229 w=120 no-bg class="comic_text" style="color:#000">
+	tak akorát
+</words>
+<words x=176 y=280 w=120 no-bg class="comic_text smaller">
+	moc těžké
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=360>
+	Proto platí: nejlepší způsob, jak si něco zapamatovat, je vybavit si to...
+</words>
+<words x=60 y=330 w=350>
+	...<i>těsně před tím, než to zapomenete.</i>
+</words>
+</panel>
+
+<panel w=600 h=150>
+<words w=600 x=-15 no-bg>
+	Stejná simulace jako předtím, ale teď ukazuje
+	<span style="background:#ffe866">optimální bod</span>,
+	kdy jste informaci <i>trochu pozapomněli</i>.
+	<b>Načasujte si moment, kdy si aktivně vybavíte informaci do středu optimálího bodu. Co se stane?</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	Vidíte? Když si správně načasujete moment, kdy si aktivně vybavíte informaci,
+    můžete o kousek zpomalit zapomínání.
+	A co když si takhle vybavíte informaci <i>několikrát</i>? 
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci2.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430>
+	Řekněme, že jste
+	<span class="strikeout">líní</span>
+	zaneprázdnění, takže děláte jen 4 opakování.
+	</words>
+	<words x=30 y=350 w=430>
+	Otázka:
+	<i>Jak si nejlépe načasovat jednotlivá opakování?</i>
+</words>
+<words x=82 y=198 w=120 no-bg class="comic_text" style="transform: rotate(-16deg);">
+	katka
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/sci2.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=190>
+	Měly by být intervaly stejně dlouhé?
+	Nebo se prodlužovat?
+	Nebo se naopak zkracovat?
+	A nebo by měly být nepředvítalné, aby vás udržely ve střehu?
+</words>
+<words x=259 y=16 w=100 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	= vybavení si informace
+</words>
+<words x=295 y=16 w=100 no-bg class="comic_text smaller" style="text-align:right; color:#000">
+	čas
+</words>
+<words x=245 y=61 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	stejně dlouhé intervaly:
+</words>
+<words x=245 y=126 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	prodlužující se intervaly:
+</words>
+<words x=245 y=198 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	zkracující se intervaly:
+</words>
+<words x=245 y=259 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	náhodné intervaly:
+</words>
+</panel>
+
+<panel w=400 h=90>
+<words h=90>
+	<b>Pokuste se to co nejlépe odhadnout</b>
+    a až budete mít odpoveď, <b>otočte kartu &darr;</b>
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=guessgap"></sim>
+</panel>
+
+<panel fadeInOn="flip_guessgap" w=600 h=150>
+<words w=600 x=-15 y=0 no-bg>
+	Což není ani trochu intuitivní!
+	Můžete si vyzkoušet další simulaci a sami se přesvědčit, že je to pravda.
+	<b>
+	Přesuňte všechna opakování do <i>středu </i> <span style="background:#ffe866">optimálního bodu</span>.
+	Jaké intervaly vám vyjdou?
+	</b>
+</words>
+</panel>
+
+<panel w=600 h=520>
+<sim x=0 y=0 w=600 h=520 src="sims/ebbinghaus/?mode=3"></sim>
+</panel>
+
+<panel w=600 h=150>
+<words w=600 x=-15 no-bg>
+	(Abyste se přesvědčili, že to není pouze náhoda,
+	tady je simulace, kde můžete změnit
+	počáteční rychlost zapomínání a optimální bod. 
+	Všimněte si, že ve všech případech kromě těch extrémních
+	je pořád nejlepší načasování to s "prodlužujícími se intervaly")
+</words>
+</panel>
+
+<panel w=600 h=570>
+<sim x=0 y=0 w=600 h=570 src="sims/ebbinghaus/?mode=4"></sim>
+</panel>
+
+<panel w=350 h=500>
+<pic src="pics/sci2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=300 style="font-size:23px">
+	Proč se <i>musí</i> intervaly prodlužovat?
+	Protože: pokaždé, když si v optimálním bodě aktivně vybavíte informaci,
+	rychlost zapomínání se zpomalí...
+</words>
+<words x=25 y=187 w=50 no-bg class="comic_text smaller" style="text-align:left">
+	to je
+</words>
+<words x=16 y=177 w=300 no-bg class="comic_text" style="font-size:100px; transform: rotate(-5deg);">
+	KATKA!
+</words>
+<words x=218 y=257 w=120 no-bg class="comic_text smaller" style="text-align:right">
+	–no do pr--
+	<!-- TRANSLATOR NOTE: don't complete the swearing in your translation.
+	make it cut off at the edge of the panel. It's... funnier that way? -->
+</words>
+<words x=10 y=390 w=300 style="font-size:23px">
+	...což znamená, že to příště bude trvat <i>déle</i>,
+	než se dostanete do optimálního bodu!
+</words>
+</panel>
+
+<panel w=500 h=500>
+<pic src="pics/sci2.png" sx=350 sy=450></pic>
+<words x=10 y=10 w=400>
+	A víte, co je ještě lepší?
+	Že když si opakování naplánujete tak akorát..
+</words>
+<words x=60 y=380 w=400>
+	...můžete si jednoduše uchovat <i>jakékoliv množství</i> informací ve své dlouhodobé paměti
+	<i>NAVŽDY.</i>
+</words>
+</panel>
+
+<panel w=250 h=250>
+<pic src="pics/sci2.png" sx=850 sy=450></pic>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	A když už tu mluvím o tom, jak je důležité aktivně si vybavit informaci, abyste se ji naučili, 
+	tak si pojďte zopakovat, co jste se naučili:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,intro_b,sci_c"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=0 sy=950></pic>
+<words x=50 y=20 w=300 bg=none>
+	To je sice hezké,
+	ale <i>najít</i> dobrý rozvrh na intervalové opakování musí být těžké, ne?
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=400 sy=950></pic>
+<words x=50 y=17 w=300 bg=none>
+	<i>Naopak!</i>
+	Ve skutečnosti je to tak jednoduché, že si dokonce můžete vyrobit svůj vlastní automatický plánovač...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=800 sy=950></pic>
+<words x=30 y=30 w=200 bg=none>
+	...z <i>krabice od bot.</i>
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 2: THE ART OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="2"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			JAK NA 
+			INTERVALOVÉ OPAKOVÁNÍ
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/leit0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Na intervalové opakování <i>nemusíte</i> použít krabici od bot,
+	ale je to tak větší zábava.
+</words>
+<words x=3 y=119 w=140 no-bg class="comic_text smaller" style="font-size:22px">
+	tohle je můj soukromý učitel
+</words>
+<words x=119 y=158 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	???
+</words>
+<words x=246 y=118 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	jsou to CVIČKY 
+	<!--
+	TRANSLATOR NOTE:
+	this is a pun that may not work in all languages.
+	If it doesn't translate to your language, try coming up with your own pun!
+	Or, replace this line with: "they help me go far"
+	-->
+</words>
+<words x=360 y=116 w=120 no-bg class="comic_text smaller" style="font-size:20px">
+	naše přátelství skončilo
+</words>
+
+<words x=30 y=350 w=430 h=60>
+	(Později se vám ukážu i aplikace na intervalové opakování
+	jako Anki a Tinycards)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=430 h=60 style="font-size:23px">
+	Tento systém se nazývá Leitnerova krabička. 
+	Je to jako karetní hra, kterou hrajete sami proti sobě!
+</words>
+<words x=30 y=300 w=430 h=60 style="font-size:23px">
+	Nejdřív si svou krabičku rozdělte na sedm "úrovní".
+	(Můžete jich mít méně i více. Je to na vás!)
+</words>
+</panel>
+
+<panel w=500 h=370>
+<pic src="pics/leit0.png" sx=0 sy=480></pic>
+<words x=10 y=10 w=430 h=30>
+	Všechny nové kartičky začínají na úrovni 1.
+</words>
+<words x=30 y=270 w=430 h=60 style="font-size:23px">
+	(Pokud s intervalovým opakováním teprve začínáte, doporučuji začít s 5 novými kartičkami denně)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=480></pic>
+<words x=10 y=10 w=430 h=60>
+	Když odpovíte na kartičku správně, posuňte ji o <i>jednu</i> úroveň výš.
+</words>
+<words x=30 y=290 w=430 h=60 style="font-size:20px">
+	(Pokud jste se dostali na poslední úroveň, gratuluji!
+	Poté kartička odchází na odpočinek. Pryč do kartičkového nebe.)
+</words>
+</panel>
+
+<panel w=500 h=430>
+<pic src="pics/leit0.png" sx=0 sy=900></pic>
+<words x=10 y=10 w=430 h=60>
+	Když odpovíte na kartičku špatně... musí se vrátit
+	<i>úplně na začátek na úroveň 1.</i>
+</words>
+<words x=30 y=300 w=430 h=90 style="font-size:23px">
+	(Pokud právě je na úrovni 1, mám pro vás dobrou zprávu:
+	zkoušejte se z ní dokud neodpovíte správně, 
+	a pak ji posuňte na úroveň 2)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=0 sy=1370></pic>
+<words x=10 y=10 w=430 h=120 style="font-size:22px">
+	Ale kdy si kartičky máte zopakovat?
+	V tom je ten vtip.
+    S Leitnerovou krabičkou si opakujete kartičky na úrovni 1 každý den,
+    úroveň 2 každé DVA dny, úroveň 3 každé ČTYŘI dny,
+    úroveň 4 každých OSM dní, atd...
+    
+</words>
+<words x=30 y=300 w=430 h=60 style="font-size:23px">
+	Systém je následující: <i>zdvojnásobte</i> interval (počet dní mezi opakováními) s každou další úrovní!
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+Takhle vypadá herní kalendář, který se opakuje od začátku každých 64 dní:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#fff">
+<sim x=0 y=0 w=600 h=400 src="sims/calendar/"></sim>
+</panel>
+
+<panel w=500 h=490>
+<pic src="pics/leit0.png" sx=500 sy=870></pic>
+<words x=10 y=10 w=430 h=90 style="font-size:21px">
+	(Poznámka: úroveň 1 si opakujte až nakonec, protože tak uvidíte nové kartičky <i>a zároveň</i> kartičky, které jste 
+	zapomněli. (a které sem "spadly" z vyšších úrovní))
+</words>
+<words x=30 y=330 w=430 h=120 style="font-size:22px">
+	(Každý den, až dohrajete své intervalové opakování, by na úrovni 1 neměly zůstat žádné kartičky. 
+	Testujte se z nich, dokud na všechny neodpovíte správně. Pak je všechny posuňte na úroveň 2!)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit0.png" sx=600 sy=1400></pic>
+<words x=10 y=10 w=350 h=90>
+	(pozn. č. 2: <i>aplikace</i> na intervalové opakování jako např. Anki používají sofistikovanější algoritmus...)
+</words>
+<words x=10 y=300 w=350 h=60>
+	(...ale v principu fungují stejně jako Leitnerova krabička)
+</words>
+</panel>
+
+<panel w=400 h=450>
+<pic src="pics/leit0.png" sx=0 sy=1800></pic>
+<words x=10 y=10 w=340 h=105 style="font-size:20px">
+	(pozn. č. 3: jo a ještě si s pár kartičkami a lepicí páskou můžete vyrobit svůj vlastní
+	skládací kalendář, který se opakuje a který můžete používat donekonečna!)
+</words>
+<words x=10 y=350 w=350 h=60 style="font-size:22px">
+	(v závěru tohoto článku najdete odkaz na videonávod na výrobu Leitnerovy krabičky)
+</words>
+</panel>
+
+<panel w=600 h=108>
+<words w=600 x=-15 no-bg>
+	Pokusím se vám to předvést.
+	Tady je simulace Leitnerovy krabičky <i>krok za krokem</i>:
+	<b>(za chvíli si budete moct vyzkoušet i simulaci <i>měsíc po měsíci</i>)</b>
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	Každodenní opakování zabere 20-30 minut.
+	Místo abyste se podívali na jednu epizodu seriálu, si můžete zahrát karetní hru
+	a zapamatovat si cokoliv, co chcete, <i>na celý život</i>. 
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=0 sy=0></pic> 
+<words x=10 y=10 w=430 h=60 style="font-size:22px">
+	Vytvořit si nový návyk je ale těžké. Pokud si toho na začátku naložíte moc, brzy vám dojde síla...
+</words>
+<words x=20 y=300 w=450 h=60 style="font-size:21px">
+	Ale pokud začnete <i>zlehka</i>, dostanete se snáz do tempa, 
+	a vědomosti se pak na sebe budou nabalovat jedna po druhé.
+</words>
+</panel>
+
+<panel w=500 h=690>
+<pic src="pics/leit1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=430 h=60>
+	To je důvod, proč doporučuji <i>začít</i> s 5 novými kartičkami za den.
+</words>
+<words x=30 y=300 w=430 h=60 style="font-size:20px">
+	Jakmile vám 5 kartiček nedělá žádný problém, můžete začít s 10 novými kartičkami za den.
+	Potom 15. Pak 20, 25, 30.
+</words>
+<words x=10 y=590 w=430 h=60 style="font-size:20px">
+	Pokud byste každý den přidali 30 nových kartiček, můžete se naučit více než <i>10 000</i> nových slov/faktů/atd. za rok!
+	</words>
+<words x=16 y=497 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	na na na na na na na na na
+</words>
+<words x=38 y=517 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	katamari damacy
+	<!-- TRANSLATOR NOTE: leave this in its japanese.
+	i don't know what it means, actually. it's a videogame song. -->
+</words>
+</panel>
+
+<panel w=600 h=100>
+<words w=600 x=-15 no-bg>
+	Tak tady je slibovaná simulace mesíc po měsíci.
+	S její pomocí si dopředu spočítejte, kolik se toho s intervalovým opakováním můžete naučit.
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=130>
+<words w=600 x=-15 no-bg>
+	Tak to je všechno. Takhle se můžete vědomě <i>rozhodnout</i>, co si uložíte do dlouhodobé paměti.
+</words>
+<words w=600 x=-15 y=60 no-bg>
+	Nechme to chvíli vstřebat. Dejte si pauzu a zopakujte si, co jste se zatím naučili:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_a,intro_a,leit_b,intro_c,leit_c"></sim>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	Intervalové opakování zní až příliš dobře na to, aby to byla pravda.
+	<br>
+	A ono i je... <i>POKUD</i> se nevyhnete několika nástrahám.
+</words>	
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=420 h=60>
+	Paměť není polička,
+	kam si vyskládáte několik obřích svazků, abyste ohromili ostatní.
+</words>
+<words x=-15 y=210 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+	spousta
+</words>
+<words x=39 y=216 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(86deg)">
+	ptákovin
+</words>
+<words x=100 y=211 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(74deg)">
+	ke kterým
+</words>
+<words x=144 y=212 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+	se nikdy
+</words>
+<words x=199 y=214 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(84deg)">
+	nedostanete
+</words>
+<words x=10 y=330 w=450 h=80 style="font-size:20px">
+	Čímž chci říct: intervalové opakování nebude fungovat, pokud budete mít pocit, že vaše kartičky jsou
+	<i>přecpané</i>, <i>nesouvisející</i> nebo <i>nesmyslné</i>. 
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=90>
+	Paměť naopak funguje jako skládačka: je plná malých, propojených dílků.
+	(Tak fungují i neurony: spousta malých, propojených věcí)
+</words>
+<words x=30 y=380 w=430 h=30>
+	Není to o <i>sbírání</i>, ale o <i>propojování</i>.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=500 sy=900></pic>
+<words x=10 y=10 w=410 h=60 style="font-size:22px">
+	Takže abyste z Intervalového opakování vytěžili co nejvíce, 
+	musíte svoje kartičky dělat...
+</words>
+<words x=-38 y=227 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	MALÉ
+</words>
+<words x=94 y=257 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	PROPOJENÉ
+</words>
+<words x=262 y=298 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	SMYSLUPLNÉ
+</words>
+</panel>
+
+<panel w=450 h=60>
+<words w=450 x=-15 no-bg>
+	Pojďme se podívat, jak na to.
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=0></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+	MALÉ
+</words>
+</panel>
+
+<panel w=450 h=50>
+<words w=450 x=-15 no-bg>
+	Tahle kartička nestojí za nic:
+</words>	
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=mitochondria_all"></sim>
+</panel>
+
+<panel w=450 h=380>
+<pic src="pics/leit2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=400 h=30>
+	Je moc velká. Obsahuje moc informací.
+</words>
+<words x=10 y=250 w=400 h=90 style="font-size:22px">
+	Je dobré si ji rozdělit na více menších, propojených dílků.
+	Obecně by <i>každá kartička měla obsahovat pouze jednu myšlenku.</i>
+	Třeba takto:
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_1" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_2" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_3" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_4" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_5" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_6" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_7" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_8" class="small_card"></sim>
+</panel>
+
+<panel w=450 h=120>
+<words w=450 x=-15 no-bg>
+	Každá informace je propojená s nějakou jinou.
+	Ale existuje lepší, hravější způsob, jak zajistit, aby kartičky byly...	
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=150></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+	PROPOJENÉ
+</words>
+</panel>
+
+<panel w=450 h=140>
+<words w=450 x=-15 no-bg>
+	Tahle kartička je... celkem ok.
+	Z jedné strany je české slovo a z druhé strany je francouzský překlad.
+	<!--
+	TRANSLATOR NOTE:
+	If the language you're translating for is NOT French,
+	replace "English" with [your language]
+	-->
+	Tak vypadá většina kartiček na učení jazyků.
+</words>	
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat"></sim>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=400 h=60>
+	Ale jak byste ji mohli vylepšit, aby byla lépe zapamatovatelná?
+</words>
+<words x=10 y=300 w=400 h=60 style="font-size:21px">
+	Propojením s
+	<i>obrázky, zvuky, kontextem, a/nebo s nečím, co se přímo týká vašeho života<i>. 
+	Třeba takhle:
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat2"></sim>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=0></pic>
+<words x=10 y=10 w=210 style="font-size:22px">
+	Na přední straně je kočka (obrázek)
+	a francouzská věta s vynechanou částí (kontext:gramatika)
+	a je o mém kocourovi Bertíkovi, kterého jsem měl, když jsem byl malý. (osobní vazba)
+</words>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=300></pic>
+<words x=10 y=10 w=210 style="font-size:22px">
+	Nyní má zadní strana symbol pro rod podstatného jména (obrázek)
+	výslovnost (zvuk*)
+	a varování ohledně dalšího významu tohoto slova pokud je v ženském rodě. (kontext: slang)
+</words>
+<words w=330 x=250 y=225 no-bg fontsize=19>
+	* Samozřejmě že papírové kartičky neumožňují přehrávání zvuků.
+	Ale v aplikacích jako Anki nebo Tinycards to jde!
+</words>
+<audio controls style="position: absolute; top: 105px; left: 280px; transform: scale(0.4) rotate(4deg);">
+	<source src="audio/chat.mp3" type="audio/mpeg">
+</audio>
+</panel>
+
+<panel w=450 h=120>
+<words w=450 x=-15 no-bg>
+	Ale <i>nejdůležitější</i> propojení ze všech je samozřejmě
+	to, které propojojuje informace, které se učíte s něčím, co je...
+</words>	
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=300></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+    SMYSLUPLNÉ
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=450 sy=600></pic>
+<words x=10 y=10 w=450 h=60>
+	Já sám se nejlépe učím takhle:
+	Nejdřív se <i>snažím</i>(a ne vždycky to vyjde!) něco <b>dělat</b>.
+</words>
+<words x=10 y=113 w=160 no-bg class="comic_text">
+	hrát na ukulele
+</words>
+<words x=183 y=91 w=140 no-bg class="comic_text">
+    číst francouzský komiks
+</words>
+<words x=336 y=109 w=100 no-bg class="comic_text">
+	vytvořit online hru
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=950 sy=600></pic>
+<words x=10 y=10 w=450 h=60 style="font-size:22px">
+	Nevyhnuhnutelně se při tom někde zaseknu.
+	V té chvíli si vyhledám to, co zrovna potřebuju,
+	a něco se <b>naučím</b>.
+</words>
+<words x=6 y=102 w=130 no-bg class="comic_text">
+	jak se hraje F#?
+</words>
+<words x=133 y=104 w=180 no-bg class="comic_text">
+	co znamená "attraper"?
+</words>
+<words x=301 y=109 w=190 no-bg class="comic_text">
+	proč je javascript taková srač-
+	<!-- TRANSLATOR NOTE: again, don't complete the swear. have it cut out -->
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=learndo&forever_card=yes"></sim>
+</panel>
+
+<panel w=450 h=30>
+<words w=450 x=-15 y=-15 no-bg>
+	A tak dále.
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=450 sy=950></pic>
+<words x=10 y=10 w=400 h=60>
+	Věřím, že je to ten nejlepší způsob, jak během učení neztratit motivaci:
+</words>
+<words x=10 y=300 w=400 h=60>
+	Nezapomínat, že se učíte proto, abyste mohli <i>dělat něco, na čem vám záleží.</i>
+</words>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	Když už je řeč o učení, pojďte si procvičit to, co jste se zatím naučili.
+	(tohle je předposlední opakování)
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_d,sci_c,sci_a,sci_b"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=0 sy=450></pic>
+<words x=10 y=20 w=350 no-bg>
+	V komunitě kolem intervalového opakování panuje shoda,
+	že byste si po čase měli <b>začít dělat vlastní kartičky.</b>
+</words>
+<words x=33 y=140 w=230 no-bg>
+    Tak si můžete propojít fakta s tím, co VY máte rádi a s tím, co už víte.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=400 sy=450></pic>
+<words x=10 y=15 w=300 no-bg>
+	A proto si v <i>poslední</i> části tohoto interaktivního komiksu
+	vytvoříte <i>svoje vlastní</i> kartičky!
+</words>
+<words x=30 y=165 w=170 no-bg>
+	A tyto kartičky budou o...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=800 sy=450></pic>
+<words x=0 y=10 w=230 fontsize=150 no-bg color="#ffffff">
+	VÁS
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 3: GET STARTED TODAY! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="3"></a>
+<div class="divider divider_small_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			ZAČNĚTE UŽ DNESKA!
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=350>
+<pic src="pics/end0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=450 h=60 style="font-size:21px">
+	Bude pro vás jednodušší začít s intervalovým opakováním <i>už dneska</i>, 
+	když si odpovíte na tyto čtyři otázky:
+</words>
+<!--
+TRANSLATOR NOTE:
+Remember, if your translated word is too big, you can modify the CSS! (especially font-size)
+-->
+<words x=8 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	CO?
+</words>
+<words x=121 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	PROČ?
+</words>
+<words x=226 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	JAK?
+</words>
+<words x=337 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	KDY?
+</words>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	A odpovíte si na tyto otázky tak, že si uděláte kartičky!
+    Tady je <i>přední</i> strana vaší první kartičky a první otázka:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_what&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	Například byste mohli použít intervalové opakování, abyste se naučili...
+</words>
+<words x=120 y=104 w=100 style="text-align:left" no-bg class="comic_text">
+	nový jazyk 
+</words>
+<words x=320 y=107 w=100 style="text-align:left" no-bg class="comic_text">
+	hrát na hudební nástroj
+</words>
+<words x=115 y=195 w=100 style="text-align:left" no-bg class="comic_text">
+	programovat
+</words>
+<words x=331 y=195 w=150 style="text-align:left" no-bg class="comic_text">
+	detaily ze života vašich přátel
+</words>
+<words x=125 y=277 w=200 style="text-align:left" no-bg class="comic_text">
+	cokoliv zajímavého na co narazíte!
+</words>
+<words x=389 y=290 w=100 style="text-align:left" no-bg class="comic_text">
+	všechny pokémony
+</words>
+<words x=80 y=380 w=380 h=30 style="font-size:20px">
+	Teď si napište <i>svou</i> odpověď na zadní stranu:
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_what"></sim>
+</panel>
+
+<panel fadeInOn="answer_edit_you_what" w="600" h="40" style="margin-bottom: -10px;">
+<words w="600" x="-15" y="-10" no-bg="">
+	(pozn.: můžete se sem později vrátit a změnit svou odpověď)
+</words>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	Ale nezapomeňte, že aby intervalové opakování fungovalo,
+	musí být propojené s něčím, na čem vám <i>záleží</i>.
+	Takže další otázka je:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_why&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=1000 sy=0></pic>
+<words x=10 y=20 w=400 h=75 style="font-size:19px">
+	To může znít jako složitá filozofická otázka,
+    takže uvedu několik různých <i>důvodů</i>, které můžou stát za vaším rozhodnutím, <i>co</i> se učit.
+</words>
+<words x=130 y=120 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>CO:</b> nový jazyk
+	<br>
+	<b>PROČ:</b> abyste mohli mluvit se svými přáteli, rodinou, milenci či milenkami v jejich rodném jazyce.
+</words>
+<words x=130 y=232 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>CO:</b> programování
+	<br>
+	<b>PROČ:</b> abyste měli peníze na jídlo 
+</words>
+<words x=130 y=290 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>CO:</b> cokoliv zajímavého
+	<br>
+	<b>PROČ:</b> čistě ze zvědavosti
+</words>
+<words x=210 y=380 w=250 h=30>
+	Takže... jaký je <i>váš</i> důvod?
+	
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_why"></sim>
+</panel>
+
+<panel w="600" h="110">
+<words w="600" x="-15" no-bg="">
+	Teď když už máte co a proč... stále zbývá zvolit si <i>jak!</i>
+	Což znamená: jaký nástroj/aplikaci chcete použít?
+	Naše další kartička se ptá:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_how&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=700>
+<pic src="pics/end0.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=450 h=90 style="font-size:22px">
+	Já teď používám
+	<a target="_blank" href="https://en.wikipedia.org/wiki/Leitner_system">Leitnerovu krabičku</a>.
+	Ale mí kamarádi používají
+	<a target="_blank" href="https://apps.ankiweb.net/">Anki</a>.
+	A chvíli jsem používal
+	<a target="_blank" href="https://tinycards.duolingo.com/">TinyCards</a>.
+	(odkazy se otevřou v novém okně)
+	Tady je jejich srovnání:
+</words>
+<words x=160 y=140 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>Leitnerova krabička</b>
+	<br>
+	Pro: snadné použití, dobré pro lidi, kteří rádi něco vyrábí 
+	<br>
+	Proti: není tak přenosná jako aplikace
+</words>
+<words x=160 y=275 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>Anki (aplikace)</b>
+	<br>
+	Pro: velká komunita, open-source, spousta mocných nástrojů
+	<br>
+	Proti: trochu škaredá
+</words>
+<words x=160 y=405 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>TinyCards (aplikace)</b>
+	<br>
+	Pro: krásný design, jednoduché použití
+	<br>
+	Proti: maximálně 150 kartiček na balíček, nenechá <i>vás</i> rozhodnout, jestli jste měli kartičku správně 
+</words>
+<words x=10 y=530 w=450 h=60 style="font-size:22px">
+	(Chtěli byste ještě něco jiného?
+	Tady je pár dalších nástrojů:
+	<a target="_blank" href="https://www.supermemo.com/">SuperMemo</a>,
+	<a target="_blank" href="https://www.nimblenotes.com/">NimbleNotes</a>,
+	<a target="_blank" href="https://mnemosyne-proj.org/">Mnemosyne</a>)
+</words>
+<words x=110 y=620 w=360 h=40 no-bg fontsize=20>
+	*<i>nespolupracuji</i> s žádnými výše uvedenými stránkami/aplikacemi,
+	jen si myslím, že jsou vážně užitečné a cool!
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	Tak co si vyberete?
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_how"></sim>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=90 style="font-size:22px">
+	Už zbývá jen jedna kartička!
+	Intervalové opakování je vlastně celkem jednoduché...
+	nicméně <i>zvyknout si ho dělat každý den</i>, je těžké.
+</words>
+<words x=60 y=355 w=400 h=30 no-bg style="font-size:22px">
+	Proč? Protože začít s <i>jakýmkoliv</i> novým zvykem je těžké.
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end0.png" sx=1000 sy=450></pic>
+<words x=10 y=10 w=430 h=90>
+	Těžké, ale přímočaré.
+	Výzkumy zkoumající návyky ukazují, že pokud po stejném podnětu děláte stále tu stejnou věc,
+</words>
+<words x=0 y=153 w=170 no-bg class="comic_text smaller">
+	mějte se hezky!
+</words>
+<words x=72 y=188 w=80 no-bg class="comic_text smaller">
+	díky, vy taky!
+</words>
+<words x=221 y=150 w=170 no-bg class="comic_text smaller">
+	užijte si svátky!
+</words>
+<words x=309 y=185 w=80 no-bg class="comic_text smaller">
+	díky, vy taky!
+</words>
+<words x=2 y=300 w=170 no-bg class="comic_text smaller">
+    tady máte nazpátek!
+</words>
+<words x=74 y=335 w=80 no-bg class="comic_text smaller">
+	díky, vy taky!
+</words>
+<words x=30 y=430 w=430 h=70 style="font-size:19px">
+	...stane se to vaším zvykem, v dobrém i ve zlém.
+	Takže otázka, která vám pomůže vytvořit si návyk na pravidelné hraní intervalového opakování, zní: 
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_when&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=0 sy=1150></pic>
+<words x=10 y=10 w=400 h=60>
+	Například byste si mohli zahrát intervalové opakování...
+</words>
+<words x=4 y=233 w=130 no-bg class="comic_text">
+	potom co se vzbudíte
+</words>
+<words x=167 y=223 w=130 no-bg class="comic_text">
+	při dojíždění do práce/školy
+</words>
+<words x=335 y=233 w=130 no-bg class="comic_text">
+	než půjdete spát
+</words>
+<words x=30 y=320 w=430 h=90 style="font-size:21px">
+	Nezáleží ani tak na tom, <i>kdy</i> ho budete dělat, jako na tom, 
+	že to bude denně a bez vynechávání (více méně - můžete si jednou za čas dát den volno).
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/end0.png" sx=500 sy=1150></pic>
+<words x=10 y=10 w=350 h=90 style="font-size:21px">
+	(Tip: kdykoliv se snažím zavést si nějaký nový zvyk,
+	nakreslím si do kalendáře kolečko každý den, kdy se mi ho podaří splnit)
+</words>
+<words x=10 y=370 w=350 h=90 style="font-size:21px">
+	(Je to hra kterou hraju sám se sebou! Cílem je vydržet s procvičováním
+	co nejvíc dní po sobě a nepřerušit vzniklý "řetěz".)
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	Tak a teď si vyplňte svou poslední kartičku:
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_when"></sim>
+</panel>
+
+<panel w=400 h=80>
+<words w=400 x=-15 no-bg>
+	Et voilà, tady jsou všechny vaše čtyři kartičky, které jsou pouze o vás!
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_what&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_why&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_how&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_when&refresh=yes" class="small_card"></sim>
+</panel>
+
+<br><br>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=0></pic>
+<words x=180 y=10 w=250 no-bg style="font-size:19px">
+	Ale jak už jsem říkal, chci vám pomoct převzít kontrolu nad vaší pamětí <i>už dneska</i>.
+	
+</words>
+<words x=230 y=130 w=250 no-bg style="font-size:17px">
+	Ne "časem", ne "zítra", 
+	ale <i>DNES</i>.
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=250></pic>
+<words x=150 y=30 w=120 no-bg>
+	a k tomu...
+</words>
+<words x=270 y=95 w=170 no-bg>
+	si stáhněte tenhle
+	<b style="font-size:30px">
+	SUPER MATROŠ
+	</b>
+</words>
+</panel>
+
+<panel w=600 h=130>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>PRVNÍ:</b>
+	<span id="gift_wallpaper"></span>
+	aby se vám připomnělo, že máte hrát intervalové opakování denně!
+</words>
+</panel>
+
+<div>
+<a target="_blank" id="wallpaper_link">
+<img id="wallpaper_image"/><br>
+	(klikněte pro stažení &darr;)
+</a>
+</div>
+
+<panel w=600 h=90 style="height: auto; position: relative; left: -15px;">
+<words x=-15 y=0 w=570 no-bg style="text-align:left; position:static" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>DRUHÝ:</b>
+	<span id="gift_app"></span>
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=90>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	A nakonec
+	<b>TŘETÍ:</b>
+	.zip všech kartiček, které jste procvičovali v tomto interaktivním komiksu!
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=400 h=100>
+<sim x=0 y=0 w=400 h=100 src="sims/downloads/all.html"></sim>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=150>
+<words x=-15 y=0 w=600 no-bg style="text-align:left">
+	(Můžete je použít jako svou první várku kartiček na intervalové opakování.
+	Vystačí vám na několik dní a pomůžou vám začít. A navíc si tak zapamatujete všechno, 
+	co jste se tady dneska naučili (skoro navždycky)).
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=0></pic>
+<words x=110 y=30 w=250 no-bg>
+	Což mi připomíná...
+</words>
+<words x=200 y=105 w=220 no-bg>
+	poslední sbohem
+	na památku starých časů,
+	záverečná labutí píseň!
+ 
+</words>
+<words x=210 y=230 w=250 no-bg>
+	...pojďme si zopakovat <i>všechny</i> kartičky:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=intro_a,sci_a,leit_a,you_what,intro_b,sci_b,leit_b,you_why,sci_c,leit_c,you_how,leit_d,you_when,intro_c"></sim>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=0 sy=500></pic>
+<words x=0 y=12 w=210 no-bg>
+	ááách...
+	loučení je vždycky tak těžké...
+</words>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=240 sy=500></pic>
+<words x=-20 y=-10 no-bg fontsize=120 color="rgba(0,0,0,0.5)" style="transform:rotate(10deg)">
+	FRRK
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=480 sy=500></pic>
+<words x=160 y=20 w=200 no-bg style="font-size:21px">
+	Budou mi chybět naše společně strávené chvíle...
+</words>
+<words x=200 y=120 w=250 no-bg style="font-size:21px">
+	...ale doufám, že spolu budeme dál žít v našich vzpomínkách!
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=430 h=90 style="font-size:22px">
+	Pokud studujete, doufám že vám intervalové opakování pomůže
+	k tomu, abyste vzali své vzdělání do svých rukou a získali vyšší sebevědomí.
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=800></pic>
+<words x=10 y=10 w=430 h=90 style="font-size:21px">
+    Pokud jste učitel,
+    prosím, ach <i>prosím</i>, řekněte svým studentům o intervalovém opakování
+    (a dalších fakticky podložených studijních návycích) hned zpočátku.
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=1000 sy=800></pic>
+<words x=10 y=10 w=430 h=90>
+	Ale ať ještě chodíte do školy, nebo už pracujete,
+	doufám, že vám intervalové opakování pomůže rozvinout vaši paměť, vaši mysl,
+	vaši múzu...
+</words>
+<words x=168 y=147 w=250 no-bg class="comic_text smaller" style="color:#fff">
+	"ne!" zaječela mitochondrie, zatímco klouzala dolů teplým, mokrým krkem buňky. "já ne-"
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end1.png" sx=1000 sy=0></pic>
+<words x=30 y=30 w=250 no-bg>
+	...a objevit jednu z největších životních lásek:
+</words>
+<words x=120 y=455 w=300 style="text-align:right" no-bg>
+	celoživotní lásku k učení.
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=the_end"></sim>
+</panel>
+
+<panel fadeInOn="flip_the_end" w=600 h=80>
+<words w=600 x=-15 y=0 no-bg>
+	(Chcete se dozvědět/zahrát si víc? Další rozšiřující četbu k tématu a poděkování najdete níže!) 
+	<br>
+	&darr; &darr; &darr; &darr; &darr;
+	</b>
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CREDITS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="bye"></a>
+<div id="credits">
+
+<div>
+
+<div style="font-size:30px; margin-bottom:0; overflow: hidden;">
+<img src="pics/nicky_credits.png" width="100" height="100" style="display: block; float: left;" />
+<div style="display: block; position: relative; left: 14px; width: 390px; height: 200px; float: left;">
+	Napsal/a, nakreslil/a a naprogramoval/a
+	
+	<br>
+	<a target="_blank" href="https://ncase.me" style="font-size:2em; display:inline-block; line-height:1em">
+	Nicky Case
+	</a>
+	<br>
+	<span id="translation_credits_2"></span>
+	<!-- TRANSLATOR NOTE: again, when you fill in translations.txt, your name will appear here! -->
+</div>
+</div>
+
+<p style="margin-top:0">
+	Tento interaktivní komiks je k
+
+	<span style="display:block; margin-top:5px;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="-0.5 0.5 64 64" enable-background="new -0.5 0.5 64 64" xml:space="preserve">
+		<g>
+			<circle fill="#000000" cx="31.325" cy="32.873" r="30.096"/>
+			<path fill="#FFFFFF" id="text2809_1_" d="M31.5,14.08c-10.565,0-13.222,9.969-13.222,18.42c0,8.452,2.656,18.42,13.222,18.42   c10.564,0,13.221-9.968,13.221-18.42C44.721,24.049,42.064,14.08,31.5,14.08z M31.5,21.026c0.429,0,0.82,0.066,1.188,0.157   c0.761,0.656,1.133,1.561,0.403,2.823l-7.036,12.93c-0.216-1.636-0.247-3.24-0.247-4.437C25.808,28.777,26.066,21.026,31.5,21.026z    M36.766,26.987c0.373,1.984,0.426,4.056,0.426,5.513c0,3.723-0.258,11.475-5.69,11.475c-0.428,0-0.822-0.045-1.188-0.136   c-0.07-0.021-0.134-0.043-0.202-0.067c-0.112-0.032-0.23-0.068-0.336-0.11c-1.21-0.515-1.972-1.446-0.874-3.093L36.766,26.987z"/>
+			<path fill="#FFFFFF" id="path2815_1_" d="M31.433,0.5c-8.877,0-16.359,3.09-22.454,9.3c-3.087,3.087-5.443,6.607-7.082,10.532   C0.297,24.219-0.5,28.271-0.5,32.5c0,4.268,0.797,8.32,2.397,12.168c1.6,3.85,3.921,7.312,6.969,10.396   c3.085,3.049,6.549,5.399,10.398,7.037c3.886,1.602,7.939,2.398,12.169,2.398c4.229,0,8.34-0.826,12.303-2.465   c3.962-1.639,7.496-3.994,10.621-7.081c3.011-2.933,5.289-6.297,6.812-10.106C62.73,41,63.5,36.883,63.5,32.5   c0-4.343-0.77-8.454-2.33-12.303c-1.562-3.885-3.848-7.32-6.857-10.33C48.025,3.619,40.385,0.5,31.433,0.5z M31.567,6.259   c7.238,0,13.412,2.566,18.554,7.709c2.477,2.477,4.375,5.31,5.67,8.471c1.296,3.162,1.949,6.518,1.949,10.061   c0,7.354-2.516,13.454-7.506,18.33c-2.592,2.516-5.502,4.447-8.74,5.781c-3.2,1.334-6.498,1.994-9.927,1.994   c-3.468,0-6.788-0.653-9.949-1.948c-3.163-1.334-6.001-3.238-8.516-5.716c-2.515-2.514-4.455-5.353-5.826-8.516   c-1.333-3.199-2.017-6.498-2.017-9.927c0-3.467,0.684-6.787,2.017-9.949c1.371-3.2,3.312-6.074,5.826-8.628   C18.092,8.818,24.252,6.259,31.567,6.259z"/>
+		</g>
+		</svg>
+		<span style="font-size: 60px; position: relative; top: -12px; left: 8px;">
+		VOLNÉMU UŽITÍ
+		</span>
+	</span>
+    což znamená, že ho můžete použít pro vzdělávací, osobní nebo dokonce komerční účely.
+    Rovnou vám dávám své svolení!
+	<a target="_blank" href="https://github.com/ncase/remember">
+	(stáhněte si kód)</a>
+	<a target="_blank" href="https://github.com/ncase/remember#how-to-translate">
+	(přeložte tento komiks)</a>
+
+</p>
+
+<p>
+	Nicméně tento komiks mohl vzniknout jen díky více než tisícovce fanoušků, kteří mě finančně podporují na platformě Patreon. 
+	Díky nim můžu dělat to, co mám rád. Děkuji Vám! 💖
+
+	
+	<a target="_blank" href="https://www.patreon.com/ncase">
+	(Chcete taky přispět? Klikněte sem!)
+
+	</a>
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	Rozšiřující četba
+</p>
+
+<p>
+	Něco o stání na ramenou obrů.
+	Tady jsou materiály, které mě přesvědčily k tomu, aby se intervalové opakování stalo součástí mého každodenního života:  
+</p>
+
+<ul>
+	<li>
+		🤓
+		<a target="_blank" href="http://augmentingcognition.com/ltm.html">
+		Augmenting Long-Term Memory</a>
+		od Michaela Nielsena
+        mi ukázalo, že intervalové opakování není jen nástroj k memorování,
+        ale že je to nástroj sloužící k hlubokému porozumnění. Dokonce by mohlo být i <i>stylem života</i>.
+	
+	</li>
+	<li>
+		💬
+		<a target="_blank" href="https://fluent-forever.com/the-book/">
+		Navždy Plynule</a>
+		od Gabriela Wynera
+		mě přesvědčilo, abych se konečně (znovu) začal učit francouzsky
+		a udělal si Leitnerovu krabičku. (můj 64denní kalendář jsem udělal na základě této knihy )
+	</li>
+	<li>
+		🃏
+		<a target="_blank" href="https://www.supermemo.com/en/articles/20rules">
+		20 Rules for Cards</a>
+		od Piotra Wozniaka 
+		mě naučilo jak intervalové opakování využít na maximum.
+		(Pozn.: autor také vynalezl algoritmus používaný v Anki!)
+	</li>
+</ul>
+    Tady jsou mé oblíbené, vědecky podložené knihy/články o učení: 
+
+<ul>
+	<li>
+		👩‍🎓
+		<a target="_blank" href="https://www.amazon.com/Why-Dont-Students-Like-School/dp/047059196X/">
+		Why Don't Students Like School?</a>
+		od Daniela Willinghama
+		mě přesvědčilo, že "pouhé memorování" je ve skutečnosti <i>nezbytné</i>
+		pro kreativitu a kritické myšlení.
+	</li>
+	<li>
+		✏️
+		<a target="_blank" href="http://web.archive.org/web/20190711014620/http://tlcp.depaultla.org/wp-content/uploads/sites/2/2015/05/Dunlosky-et-al-2013-What-Works-What-Doesnt.pdf">
+		What Works, What Doesn't [PDF]
+		</a>
+		od Dunloského a spol
+		shrnuje <i>více než 200 studií</i> o rozmanitých studijních technikách.
+		Ve zkratce: běžné techniky jako čtení několikrát po sobě a zvýrazňování nefunguje,
+		méně obvyklé techniky jako učení rozložené v čase a sebetestování ano. 
+		<a target="_blank" href="http://journals.sagepub.com/doi/abs/10.1177/1529100612453266">
+		(odkaz na původní článek)
+		</a>
+	</li>
+</ul>
+
+<p>
+	A pokud chcete víc materiálů, pomocí kterých se můžete učit hrou, 
+	<a target="_blank" href="https://explorabl.es/">
+	podívejte se na Prozkoumatelná vysvětlení!</a> 🕹️
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	Další poděkování
+
+</p>
+
+<p>
+	👀 Díky všem, kteří testovali tento komiks a díky kterým tento projekt nedopadl příšerně.
+	<span style="font-size: 19px; line-height: 0px; color: #999;">
+	Aatish Bhatia, Adam Filinovich, Aimee Jarboe, Alex Jaffe, Amit Patel, Andy Matuschak, B Cavello, Chris Walker, Frank Lantz, Gal Green, Glen Chiacchieri, Hamish Todd, Henry Reich, Jacque Goupil, James Lytle,
+	Jez Swanson, Josh Comeau, Kayle Sawyer, Levi Robertson, Marcelo Gallardo, Martyna Wasiluk, Michael Nielsen, Mikayla Hutchinson, Mike Gifford, Monica Srivastava, Owen Landgren,
+	Paul Butler, Paul Simeon, Philipp Wacker, Pontus Granström, Rowan, Sebastian Morr, SpacieCat, Tanya Short, Tim &amp; Alexandra Swast, Tom Hermans, Toph Tucker, Will Harris-Braun, Zeno Rogue
+	</span>
+</p>
+
+<p>
+	📹 Díky patří i Chrisovi Walkerovi za to, 
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+	že udělal tutoriál na výrobu Leitnerovy krabičky!</a>
+	(P.S:
+	<a target="_blank" href="http://polytrope.com/">
+	Chris taky dělá různé interaktivní věci!</a>)
+</p>
+
+<p>
+	🐞 Díky patří Omarovi Rizwanovi za to, že mi pomohl se vypořádat s horami problémů v mobilní verzi Safari. 
+	 
+</p>
+
+<p> 🔊 Tento projekt byl vytvořen ze zdrojů Creative Commons 
+	z Wikipedii a FreeSounds.
+	 
+	<a target="_blank" href="https://github.com/ncase/remember#full-asset-credits">
+	(Celé poděkování)</a>
+</p>
+
+<p>
+	 💖 A znovu mnohokrát děkuji všem mým podporovatelům na Patreonu, díky kterým toto celé bylo možné.
+	 
+</p>
+
+<iframe gotosrc="supporters/"></iframe>
+
+<p>  🙏 A nakonec díky i vám, že jste ten typ člověka, který vydží i na poděkování.
+	Můžete si
+	<a target="_blank" href="https://ncase.me/">
+    zahrát moje další věci</a>,
+	<a target="_blank" href="https://twitter.com/ncasenmare">
+    sledovat mě na Twitteru</a>,
+	nebo
+	<a target="_blank" href="https://www.patreon.com/ncase">
+	mě podpořit na Patreonu.</a>.
+	Upřímně doufám, že vám tento komiks nějak, i když třeba jen malinko, pomohl.	
+
+</p>
+
+<p>
+	Veselé učení!<br>
+	~ Nicky Case
+</p>
+
+<!-- Share buttons, text generated from labels -->
+<div id="share_buttons"></div>
+
+</div>
+
+</div>
+
+
+<!--
+
+TRANSLATOR NOTE:
+
+HA HA YOU THOUGHT YOU WERE DONE?!
+
+NOPE
+
+WE'VE STILL GOT THE INTERFACE LABELS & FLASHCARDS TO TRANSLATE
+
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- LABELS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="labels">
+
+<!-- Chapter Links -->
+<span id="label_chapter_links">
+	<a href="#0">Úvod</a>
+	&middot;
+	<a href="#1">Výzkum</a>
+	&middot;
+	<a href="#2">Jak na to</a>
+	&middot;
+	<a href="#3">Začínáme!</a>
+	&middot;
+	<a href="#bye">Poděkování</a>
+</span>
+
+<!-- Multi Card Labels -->
+<span id="multicard_q">
+	snažte se vzpomenout &uarr;
+	a potom otočte ↻ 
+</span>
+<span id="multicard_cards_left">
+	(zbývající kartičky: [N])
+</span>
+<span id="multicard_a">
+	měli jste odpověď správně?
+</span>
+<span id="multicard_no">
+	ne, znovu
+</span>
+<span id="multicard_yes">
+	ano, další!
+</span>
+<span id="multicard_done">
+	pro teď je to všechno! můžete číst dál
+	<br>
+	&darr;
+</span>
+<span id="multicard_done_2">
+	to je všecko lidi!
+	<br>
+	&darr;
+</span>
+
+<!-- Ebbinghaus Simulation -->
+<span id="ebbinghaus_y_axis">
+	síla vzpomínky &rarr;
+</span>
+<span id="ebbinghaus_x_axis">
+	čas &rarr;
+</span>
+<span id="ebbinghaus_decay">
+	<span style="font-size:17px">zapomnětlivost:</span>
+</span>
+<span id="ebbinghaus_forgetting">
+	<span style="font-size:17px">optimální bod:</span>
+</span>
+<span id="ebbinghaus_recall">
+	načasování opakování:
+</span>
+<span id="ebbinghaus_recalls">
+	načasování opakování:
+</span>
+<span id="ebbinghaus_auto">
+	zoptimalizovat!
+</span>
+
+<!-- Leitner Calendar -->
+<!--
+TRANSLATOR NOTE:
+The exact three characters [N] is how the code knows where to put the number.
+When you translate, make sure the [N] is there if it was there in the original.
+-->
+<span id="calendar_day">
+	Den [N]...
+</span>
+<span id="calendar_review">
+	zopakujte si úrovně [N] (<i>v tomto pořadí</i>)
+</span>
+<span id="calendar_loop">
+	(a potom se vraťte zpátky na den 1!)
+</span>
+
+<!-- Leitner Box simulation -->
+<span id="leitner_day">
+	Den [N]
+</span>
+<span id="leitner_step_to_review">
+	k opakování: úroveň
+</span>
+<span id="leitner_step_reviewing">
+	zopakujte si úroveň [N]
+</span>
+<span id="leitner_step_new">
+	přidejte [N] nových kartiček
+</span>
+<span id="leitner_step_stats">
+	celkem: [N] kartiček!
+</span>
+<span id="leitner_step_stats_2">
+	([N] v kartičkovém nebi)
+</span>
+<span id="leitner_button_next_step">
+	další krok
+</span>
+<span id="leitner_button_next_day">
+	další den
+</span>
+<span id="leitner_button_next_week">
+	další týden
+</span>
+<span id="leitner_button_next_month">
+	další měsíc
+</span>
+<span id="leitner_slider_new">
+	[N] nových kartiček za den
+</span>
+<span id="leitner_slider_wrong">
+	<i>špatná</i> odpověď na [N]% kartiček 
+</span>
+<span id="leitner_reset">
+	RESTARTOVAT
+</span>
+
+<!-- Typing Cards -->
+<span id="type_question">
+	Otázka:
+	<!--
+	TRANSLATOR NOTE: "Q" short for Question.
+	Dunno if other languages have similar one-letter abbreviations.
+	If not, just type the full translated word for "Question"
+	-->
+</span>
+<span id="type_placeholder">
+	sem napište odpověď
+</span>
+<span id="type_suggestions">
+	nebo si vyberte jednu z možností:
+</span>
+
+<!-- Suggestions -->
+<span id="you_what_suggestions">
+	<li>Cokoliv zajímavého!</li>
+	<li>Jazyk</li>
+	<li>Hudba</li>
+	<li>Programování</li>
+	<li>Osobní</li>
+	<li>(jiné)</li>
+</span>
+<span id="you_why_suggestions">
+	<li>Pro lidi, které mám rád</li>
+	<li>Pro mě samotného</li>
+	<li>Ze zvědavosti</li>
+	<li>(jiné)</li>
+</span>
+<span id="you_how_suggestions">
+	<li>Leitnerova krabička</li>
+	<li>Anki</li>
+	<li>TinyCards</li>
+	<li>(jiné)</li>
+</span>
+<span id="you_when_suggestions">
+	<li>ráno</li>
+	<li>v dopravě</li>
+	<li>večer</li>
+	<li>(jiné)</li>
+</span>
+
+<!-- Gifts -->
+<span id="gift_wallpaper_what">
+	CO:
+</span>
+<span id="gift_wallpaper_why">
+	PROČ:
+</span>
+<span id="gift_wallpaper_do_1">
+	UDĚLEJ
+</span>
+<span id="gift_wallpaper_do_2">
+	NÁS!
+</span>
+<span id="gift_wallpaper_filename">
+	tapeta
+</span>
+<span id="gift_wallpaper_desktop">
+	tapeta na plochu vašeho počítače,
+</span>
+<span id="gift_wallpaper_phone">
+	tapeta na váš mobil,
+</span>
+<span id="gift_app_leitner">
+	video od mého dobrého kamaráda Chrise Walkera s návodem na výrobu vaší vlastní Leitnerovy krabičky!
+	<br><br>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uvF1XuseZFE?rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+	<br>
+	(A tady je podobný návod, tentokrát ve stylu IKEA návodu)
+	<br><br>
+	<a target="_blank" href="./pdf/leitner.pdf" style="display: block; text-align: center;">
+	<img src="./pdf/thumbnail.png" width="450"/><br>klikněte zde pro stažení PDF</a>
+</span>
+<span id="gift_app_anki">
+	odkaz na 
+	<a target="_blank" href="https://apps.ankiweb.net/">stažení Anki!</a>
+	A tady je návod k použití!
+	<br><br>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sQkdB3cJwn0?start=180&rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+</span>
+<span id="gift_app_tiny">
+	odkaz na
+	<a target="_blank" href="https://tinycards.duolingo.com/">
+	TinyCards!</a>
+	(doporučuju se podívat na jejich
+	<a target="_blank" href="https://tinycards.duolingo.com/users/TinyGeo">
+	balíčky o zěměpisu</a>)
+</span>
+<span id="gift_app_other">
+	odkazy na několik návodů na výrobu Leitnerovy krabičky
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+	[video]</a>
+	<a target="_blank" href="./pdf/leitner.pdf">
+	[pdf]</a>,
+	<a target="_blank" href="https://apps.ankiweb.net/">
+	aplikace Anki</a>,
+	a
+	<a target="_blank" href="https://tinycards.duolingo.com/">
+	TinyCards</a>!
+</span>
+
+<!-- Downloading Cards -->
+<span id="download_all">
+	STÁHNOUT KARTIČKY
+</span>
+<span id="download_all_downloading">
+	STAHOVÁNÍ...
+</span>
+<span id="download_all_done">
+	HOTOVO! Podívejte se do složky Stažené/Downloads.
+</span>
+
+<!-- Social Sharing -->
+<span id="share_title">
+	Jak si zapamatovat úplně cokoliv a skoro navždycky
+</span>
+<span id="share_desc">
+	Interaktivní komiks o tom, jak při studiu využít vědecký výzkum o paměti
+</span>
+
+
+
+
+<!--
+
+TRANSLATOR NOTE:
+
+One more section to go!
+
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- FLASHCARDS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!--
+TRANSLATOR NOTE:
+The CSS for the flashcards is really touchy, so DO NOT MODIFY THE CSS.
+That means, try as much as possible to make your text shorter or the same length as the original text.
+Good luck!
+-->
+
+<!-- - - - - - - - - - - - -->
+<!-- INTRO - - - - - - - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_spaced_rep_front">
+	<div class="fcard_center" style="height:2.5em">
+	a název této hry je...	
+	</div>
+</span>
+<span id="flashcard_spaced_rep_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="color:white; font-size:55px; height:1.6em; line-height:0.8em;">
+	INTERVALOVÉ OPAKOVÁNÍ
+	</div>
+</span>
+<span id="flashcard_intro_a_front">
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	intervalové opakování = <span class="underline">____</span> + <span class="underline">____</span>
+	</div>
+</span>
+<span id="flashcard_intro_a_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=240></div>
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	zkoušení + čas
+	</div>
+</span>
+<span id="flashcard_intro_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	3 běžné ale neefektivní metody výuky/studia jsou...	
+	</div>
+</span>
+<span id="flashcard_intro_b_back">
+	<div id="fc_words" class="fcard_center" style="height:2.2em">
+    ...přednášky, biflování se a čtení dokola
+	</div>
+</span>
+<span id="flashcard_intro_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.4em">
+	V řecké mytologii
+	bohyně <span class="underline">____</span>
+	je matkou bohyní
+	<span class="underline">________</span>
+	</div>
+</span>
+<span id="flashcard_intro_c_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width:250px; top:50px; left:140px; line-height:1.1em;">
+	Paměť je matkou inspirace.
+	</div>
+</span>
+
+<!-- - - - - - - - - - - - -->
+<!-- CHAPTER 1: The Science -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_guessgap_front">
+	<div class="fcard_center" style="height:2.5em">
+	nejlepší způsob jak si rozložit opakování je...
+	</div>
+</span>
+<span id="flashcard_guessgap_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="height:3.5em">
+	...se <i>zvětšujícími</i> se intervaly!	
+	</div>
+</span>
+<span id="flashcard_sci_a_front">
+	<div id="fc_words" class="fcard_center" style="height:3.5em">
+	Průkopník vědeckých pokusů s pamětí byl...
+	</div>
+</span>
+<span id="flashcard_sci_a_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width: 250px; top: 60px; left:150px; line-height: 1.1em;">
+	Hermann Ebbinghaus
+	</div>
+</span>
+<span id="flashcard_sci_b_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	Jak vypadá křivka zapomínání (<i>bez</i> žádného opakování)?
+	</div>
+</span>
+<span id="flashcard_sci_b_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 280px; top: 70px; left: 100px; font-size:20px; line-height: 1.1em;">
+	(pozn.: upadá rychle, pak pomale - "exponenciální rychlost zapomínání")
+	</div>
+</span>
+<span id="flashcard_sci_c_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	Jak vypadá křivka zapomínání (<i>s</i> dobře rozloženými opakováními)?
+	</div>
+</span>
+<span id="flashcard_sci_c_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 360px; top: 120px; left: 30px; font-size:20px; line-height: 1.1em;">
+	(Pozn.: intervaly mezi opakováními se <i>prodlužují</i>)
+	</div>
+</span>
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 2: The Art - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_leit_a_front">
+	<div id="fc_words" class="fcard_center" style="height:5.5em">
+	Při použití Leitnerovy krabičky <span class="underline">______</span>
+	interval (počet dní mezi opakováními) s každou další úrovní
+	</div>
+</span>
+<span id="flashcard_leit_a_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=720 style="left:-5px"></div>
+	<div id="fc_words" class="fcard_center" style="height:110px">
+	zdvojnásobíme interval
+	</div>
+</span>
+<span id="flashcard_leit_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	Leitnerova krabička:
+	<br>
+	když kartičku zodpovíte<i>správně</i>, posuňte ji<span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_b_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:170px">
+	o úroveň výš
+	</div>
+</span>
+<span id="flashcard_leit_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	Leitnerova krabička:
+	<br>
+	když zodpovíte kartičku <i>špatně</i>, posuňte ji <span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_c_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:180px">
+	zpátky na úroveň 1!
+	</div>
+</span>
+<span id="flashcard_leit_d_front">
+	<div id="fc_words" class="fcard_center" style="font-size:30px; height:170px;">
+	Podle nějakého náhodného komiksu na internetu by měly
+	moje kartičky na intervalové opakování být
+	<span class="underline">______</span> ,
+	<span class="underline">______</span> , a 
+	<span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_d_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=720></div>
+	<div id="fc_words" class="fcard_center" style="color:#fff; height:200px; height: 180px; font-size: 30px;">
+	malé, propojené a smysluplné
+	</div>
+</span>
+
+
+<span id="flashcard_mitochondria_all_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		Co je tohle?
+	</div>
+</span>
+<span id="flashcard_mitochondria_all_back">
+	<div class="fcard_center" style="height:220px; font-size:19px;">
+		Tato organela se nazývá mitochondrie.
+		Mitochondrie slouží jako "buněčná elektrárna".
+		Nacházejí se téměř ve všech eukaryotických organismech (tzn. organismech s buněčným jádrem).
+		Nejuznávanější hypotéza o původu mitochondrie je Endosymbiotická teorie:
+		před ~1.5 miliardou let prokaryotická buňka (tzn. buňka postrádající jádro) byla pohlcena jinou buňkou,
+		nějak to přežila a od té doby žije v buňkách doteď.
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		Co je tohle?
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_back">
+	<div class="fcard_center" style="height:1.5em;">
+		Mitochondrie
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960></div>
+	<div class="fcard_center" style="height:180px">
+		Mitochondrie je <span class="underline">_______</span> buňky
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_back">
+	<div class="fcard_center" style="height:150px">
+		elektrárna
+		<span class="bonus_note">
+		//bonus: ale vážně, bez nich bysme byli všichni mrtví
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:10px"></div>
+	<div class="fcard_center" style="height:220px;">
+		Mitochondrie se nachází téměř ve všech <span class="underline">____</span> organismech.
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_back">
+	<div class="fcard_center" style="height:1.5em">
+		eukaryotických
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_front">
+	<div class="fcard_center" style="height:2.5em">
+		Eukaryota jsou buňky, které... 
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		mají jádro
+		<span class="bonus_note">
+		// bonus: "eu"=dobrý, "karyon"=jádro
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_front">
+	<div class="fcard_center" style="height:2.5em">
+		Prokaryota jsou buňky, které...
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		NEMAJÍ jádro
+		<span class="bonus_note">
+		// bonus: "pro"=před, "karyon"=jádro
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:10px"></div>
+	<div class="fcard_center" style="height:200px; font-size:35px">
+		Nejuznávanější hypotéza o původu mitochondrie je... 
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_back">
+	<div class="fcard_center" style="height:120px">
+		Endosymbiotická teorie
+		<span class="bonus_note">
+		// bonus: "endo"=vnitřek, "sym"=dohromady, "bio"=život
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:10px"></div>
+	<div class="fcard_center" style="font-size: 35px; height: 220px;">
+		Podle endosymbiotické teorie, mitochondrie vznikla asi před
+		<span class="underline">____</span> let
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_back">
+	<div class="fcard_center" style="height:1.5em">
+		~1,5 miliardy let
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:10px"></div>
+	<div class="fcard_center" style="font-size: 37px; height: 220px;">
+		Podle Endosymbiotické teorie mitochondrie vznikla když...
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1440></div>
+	<div class="fcard_center" style="height:230px">
+		když prokaryota byla snědena jinou buňkou
+	</div>
+</span>
+
+
+
+<span id="flashcard_cat_front">
+	<div class="fcard_center" style="height:100px">
+		<div style="font-size:120px; height:75px;">
+			kočka
+			<!--
+			TRANSLATOR NOTE:
+			If your language is NOT French, then change this to "cat" in YOUR language
+			-->
+		</div>
+		<div>
+			(česky)
+			<!--
+			TRANSLATOR NOTE:
+			If your language is NOT French, then change this to YOUR language
+			-->
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat_back">
+	<div class="fcard_center" style="height:100px">
+		<!--
+		TRANSLATOR NOTE: DO NOT TRANSLATE. Leave as French! 
+		-->
+		<div style="font-size:120px; height:75px;">
+			chat
+		</div>
+		<div>
+			(francouzsky)
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=0></div>
+	<div class="fcard_center"></div>
+</span>
+<span id="flashcard_cat2_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=0></div>
+	<div class="fcard_center">
+		<audio controls id="HACK_audio" style="position: absolute; top: 115px; left: 30px; transform: scale(0.5);">
+			<source gotosrc="../../audio/chat.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+</span>
+
+<span id="flashcard_learndo_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:29px;">
+		a potom zpátky k aktivitě... ↻
+	</div>
+</span>
+<span id="flashcard_learndo_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		a potom zpátky k učení... ↻
+	</div>
+</span>
+
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 3: Get Started -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_you_what_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		CO se chcete naučit?
+	</div>
+</span>
+<span id="flashcard_you_what_back">
+	<div id="fc_words" class="fcard_center" editable="you_what" style="height:1.2em">
+		Cokoli zajímavého!
+	</div>
+</span>
+<span id="flashcard_you_why_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		PROČ se to chcete naučit?
+	</div>
+</span>
+<span id="flashcard_you_why_back">
+	<div id="fc_words" class="fcard_center" editable="you_why" style="height:1.2em">
+		čistě ze zvědavosti
+	</div>
+</span>
+<span id="flashcard_you_how_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
+        JAK chcete dělat intervalové opakování?
+	</div>
+</span>
+<span id="flashcard_you_how_back">
+	<div id="fc_words" class="fcard_center" editable="you_how" style="height:1.2em">
+		s pomocí Leitnerovy krabičky
+	</div>
+</span>
+<span id="flashcard_you_when_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
+		KDY chcete dělat intervalové opakování?
+	</div>
+</span>
+<span id="flashcard_you_when_back">
+	<div id="fc_words" class="fcard_center" editable="you_when" style="height:1.2em">
+		večer
+	</div>
+</span>
+
+<span id="flashcard_the_end_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=480></div>
+</span>
+<span id="flashcard_the_end_back">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="top:30px; font-size:50px;">
+		KONEC
+	</div>
+</span>
+
+
+</div>
+
+<!--
+
+TRANSLATOR NOTE:
+
+Congrats! NOW you've translated everything!
+
+Again, from the deepest part of my heart, I want to sincerely thank you
+for helping spread this page to more people, in more languages.
+
+Oh wait, just one more thing: go to translations.txt,
+and add your translation there so this project "knows" your page exists.
+
+And once that's done, send a Pull Request, and your translation will go live!
+
+THANK YOU! <3
+~ Nicky Case
+
+-->
+
+</body>
+
+</html>
+
+<script src="js/howler.core.min.js"></script>
+<script src="js/minpubsub.src.js"></script>
+<script src="js/comic.js"></script>

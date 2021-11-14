@@ -112,3 +112,21 @@ Tabii!
 Yok
 çeviri Oğul Can Yurdakul
 aslı İngilizce
+
+ar
+العربية
+./ar.html
+هل تودّ القراءة باللغة العربية؟
+نعم
+لا
+ترجمة: <a href="https://github.com/ABDR999">عبدالرحمن التميمي</a>
+النسخة الأصلية باللغة الإنجليزية
+
+cs
+Čeština
+./cs.html
+Chcete přepnout na češtinu?
+Jasně!
+Ne
+přeložila Karin Neumannová
+original in English
