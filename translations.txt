@@ -104,7 +104,7 @@ Nein
 Übersetzt von <a href="https://github.com/herrhundt">herrhundt</a>
 original in English
 
-ex
+tr
 Türkçe
 ./tr.html
 Türkçe'sini okumak ister misin?
