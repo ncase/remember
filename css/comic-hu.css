@@ -1,0 +1,8 @@
+.divider > #divider_container > #chapter_name {
+    font-size: 86px !important;
+    line-height: 0.9em !important;
+}
+
+body {
+    font-size: 21px;
+}

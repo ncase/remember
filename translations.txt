@@ -121,3 +121,12 @@ Jasně!
 Ne
 přeložila Karin Neumannová
 original in English
+
+hu
+Magyar
+./hu.html
+Lenne kedved magyarul olvasni?
+Naná!
+Dehogyis
+fordította <a href="https://github.com/czondi">czondi</a>
+original in English
