@@ -82,7 +82,7 @@ a:hover {
   margin: 0 auto;
 }
 .divider > #divider_container > #chapter_name {
-  font-size: 60px;
+  font-size: 60px !important;
   line-height: 1.25em;
   text-align: right;
   margin-bottom: 7px;
