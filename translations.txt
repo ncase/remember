@@ -139,3 +139,12 @@ Naná!
 Dehogyis
 fordította <a href="https://github.com/czondi">czondi</a>
 original in English
+
+fa
+فارسی
+./fa.html
+آیا می‌خواهید به زبان فارسی تغییر دهید؟
+حتما!
+نه
+ترجمه توسط <a href="https://github.com/amir2mi">امیرمحمد محمدی</a>
+نسخه اصلی به انگلیسی
