@@ -25,7 +25,7 @@ and was made possible thanks to [my Patreon supporters](https://www.patreon.com/
 * [Ding!](https://freesound.org/people/dersuperanton/sounds/433646/) by dersuperanton (CC BY)
 * [Typing](https://freesound.org/people/Eelke/sounds/158057/) by Eelke (CC BY)
 * [Beeps and Boops](https://freesound.org/people/Owdeo/sounds/116653/) by Owdeo (CC BY-NC)
-* [Applause](https://freesound.org/people/Sandermotions/sounds/277021/) by Sandermotions (CC Zero) 
+* [Applause](https://freesound.org/people/Sandermotions/sounds/277021/) by Sandermotions (CC Zero)
 
 **Open Source Libraries:**
 
@@ -44,13 +44,10 @@ BEFORE YOU MAKE A TRANSLATION, CHECK THE "ISSUES" TAB ABOVE,
 TO SEE IF SOMEONE ELSE IS ALREADY WORKING ON IT.
 If so, maybe you can collaborate!
 And if no one else is, PLEASE CREATE A NEW ISSUE in this repo
-so that others know you're working on it!]**
-
-**Translations done so far:**    
-[Español](https://ncase.me/remember/es.html)
-[Français](https://ncase.me/remember/fr.html)
-[Русский](https://ncase.me/remember/ru.html)
-[简体中文](https://ncase.me/remember/zh.html)
+so that others know you're working on it!
+(Also: check the main page, right sidebar, to see if your
+translation's already been done & published!)
+]**
 
 To translate this project, you'll need a basic familiarity with HTML and GitHub.
 
@@ -58,7 +55,7 @@ To translate this project, you'll need a basic familiarity with HTML and GitHub.
 
 **Step 2)** Look up the two-letter code of the language you're translating to [here](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
-**Step 3)** *COPY* `index.html`, and name the copy [your-two-letter-code].html. 
+**Step 3)** *COPY* `index.html`, and name the copy [your-two-letter-code].html.
 For example: `de.html`, `ar.html`, `zh.html`, etc...
 
 **Step 4)** Translate *THAT* page (it's about 3,500 words). Do NOT modify the original `index.html`!

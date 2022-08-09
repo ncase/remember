@@ -1,0 +1,2739 @@
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   _______  ___  ____________    ___  _______  ____________________________  _  __
+  / __/ _ \/ _ |/ ___/ __/ _ \  / _ \/ __/ _ \/ __/_  __/  _/_  __/  _/ __ \/ |/ /
+ _\ \/ ___/ __ / /__/ _// // / / , _/ _// ___/ _/  / / _/ /  / / _/ // /_/ /    /
+/___/_/  /_/ |_\___/___/____/ /_/|_/___/_/  /___/ /_/ /___/ /_/ /___/\____/_/|_/
+
+=== FAN-TRANSLATION GUIDE ===
+
+Hello fan-translators! From the bottom of my heart:
+thank you for doing this, and, you've no idea what you've gotten yourself into.
+There's about 3500 words to translate, including the flashcards & further reading.
+
+Before doing anything, please read all these steps:
+https://github.com/ncase/remember#how-to-translate
+(emphasis: do NOT edit the original index.html. make a copy of this page!)
+
+To make translation less painful, I've added little HTML comments throughout.
+Look for the ones that say "TRANSLATOR NOTE".
+
+And after translating this page, don't forget to go to translations.txt
+and "add" your translation there! (further instructions will be there)
+
+Good luck, and many thanks again!
+
+<3,
+~ Nicky Case
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!DOCTYPE html>
+<html lang="ka"> <!-- TRANSLATOR NOTE: Remember your 2-letter code? Replace "en" with that! -->
+<head>
+
+	<!-- Meta Stuff -->
+	<title>როგორ დავიმახსოვროთ ნებისმიერი რამ სამუდამოდ-სავით</title>
+	<!-- TRANSLATOR NOTE: Translate the "content" attribute -->
+	<meta name="description" content="ინტერაქციული კომიქსი მეხსიერების ხელოვნებისა და მეცნიერების შესახებ"/>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Sharing Card Stuff -->
+	<meta itemprop="name" content="როგორ დავიმახსოვროთ ნებისმიერი რამ სამუდამოდ-სავით"> <!-- TRANSLATE "content" -->
+	<meta itemprop="description" content="ინტერაქციული კომიქსი მეხსიერების ხელოვნებისა და მეცნიერების შესახებ"> <!-- TRANSLATE "content" -->
+	<meta itemprop="image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta name="twitter:title" content="როგორ დავიმახსოვროთ ნებისმიერი რამ სამუდამოდ-სავით"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:description" content="ინტერაქციული კომიქსი მეხსიერების ხელოვნებისა და მეცნიერების შესახებ"> <!-- TRANSLATE "content" -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<meta property="og:title" content="როგორ დავიმახსოვროთ ნებისმიერი რამ სამუდამოდ-სავით"> <!-- TRANSLATE "content" -->
+	<meta property="og:description" content="ინტერაქციული კომიქსი მეხსიერების ხელოვნებისა და მეცნიერების შესახებ"> <!-- TRANSLATE "content" -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ncase.me/remember/">
+	<meta property="og:image" content="https://ncase.me/remember/sharing/thumbnail.png">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/comic.css"/>
+	<meta name="viewport" content="width=600">
+
+    <style>
+        #chapter_name{
+            font-size: 80px !important;
+        }
+        body{
+            font-size: 16px !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 0: INTRODUCTION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="0"></a>
+<div class="divider divider_title">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			როგორ დავიმახსოვროთ ნებისმიერი რამ სამუდამოდ-სავით
+			</div>
+			<!-- TRANSLATOR NOTE: add a hint of silliness at the end, like "ish" or "sorta" -->
+		</div>
+		<div style="text-align:right; position:relative;">
+			<div style="position:absolute;">
+				თამაშის/კითხვის დრო: 20 წუთი
+			</div>
+			ავტორი: ნიკი კეისი &middot; ოქტ. 2018
+			<br>
+			<span id="translation_credits"></span>
+			<!-- TRANSLATOR NOTE: when you update translations.txt, your name will appear here! -->
+		</div>
+	</div>
+</div>
+
+<div class="comic">
+
+<div id="language_options"></div>
+
+<!--
+
+TRANSLATOR NOTE:
+
+There may already be "official" translations for terms like "Spaced Repetition",„ინტერვალებით გამეორება“ or "Forgetting Curve", „დავიწყების მრუდი“!
+Go to their Wikipedia pages, scroll down to "Languages" in the left sidebar, and if your language is there,
+click on that Wikipedia page, and use the "official" translated term there.
+
+Spaced Repetition: https://en.wikipedia.org/wiki/Spaced_repetition
+Forgetting Curve: https://en.wikipedia.org/wiki/Forgetting_curve
+
+-->
+
+<!--
+
+TRANSLATOR NOTE:
+
+Try to make your translated text about the same length or shorter as the original text.
+If that's not possible, and your text doesn't fit in its box, you can modify attributes
+"x", "y", "w", "h" to change the box, or add your own custom CSS style to make the font fit.
+(CSS properties like "font-size" are very helpful)
+
+-->
+
+<panel w=400 h=650>
+<pic src="pics/intro0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=350 h=60>
+	ბერძნულ მითოლოგიაში მნემოსინე, მეხსიერების ქალღმერთი...
+</words>
+<words x=30 y=330 w=310 h=60>
+	...იყო მუზების (შთაგონების ქალღმერთები) დედა.
+</words>
+<words x=70 y=445 w=90 style="color:#fff" no-bg class="comic_text">
+	მუსიკა
+</words>
+<words x=119 y=494 w=90 style="color:#fff" no-bg class="comic_text">
+	თეატრი
+</words>
+<words x=214 y=464 w=90 style="color:#fff" no-bg class="comic_text">
+	უცნაური ფანფიკი
+</words>
+</panel>
+
+<panel w=600 h=60>
+<words w=600 x=-15 no-bg>
+	მაშ, როგორაა მეხსიერება და შთაგონება სკოლებში?
+</words>
+</panel>
+
+<panel w=550 h=250>
+<pic src="pics/intro0.png" sx=400 sy=0></pic>
+
+<words x=-12 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   ბლა   </words>
+<words x=50  y=85 w=40 no-bg class="comic_text" style="font-size:20px">   ბლა   </words>
+<words x=114 y=84 w=40 no-bg class="comic_text" style="font-size:20px">   ბლა   </words>
+<words x=172 y=91 w=40 no-bg class="comic_text" style="font-size:20px">   ბლა   </words>
+<words x=295 y=80 w=40 no-bg class="comic_text" style="font-size:20px">   ბლა   </words>
+<words x=363 y=83 w=40 no-bg class="comic_text" style="font-size:20px">   ბლა   </words>
+<words x=444 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   ბლა   </words>
+<words x=518 y=81 w=40 no-bg class="comic_text" style="font-size:20px">   ბლა   </words>
+
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/intro0.png" sx=400 sy=250></pic>
+<words x=155 y=20 w=90 no-bg>
+	ჰო.
+</words>
+<words x=196 y=65 w=270 no-bg>
+	გავრცელებული პრაქტიკა, როგორიცაა ლექციები, დაზეპირება და გადაკითხვა არამარტო <i>მოსაწყენია</i>,
+	მეცნიერებამ აჩვენა, რომ <i>არც კი მუშაობს კარგად</i>.*
+</words>
+</panel>
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* ყველა წყარო და ბმული იქნება ამ კომიქსის ბოლოს!
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/intro0.png" sx=400 sy=500></pic>
+<words x=95 y=30 w=340 no-bg>
+	მაგრამ რა მოხდება, თუ ვიტყვი — არსებობს მტკიცებულებაზე
+	დაფუძნებული <i>და თან</i> სახალისო სწავლის მეთოდი?
+</words>
+<words x=164 y=141 w=300 no-bg>
+	რა მოხდება, თუ ვიტყვი — არსებობს მეხსიერების ბარათების თამაში, რომელიც დღეში 20 წუთი შეგიძლია ითამაშო და <i>ნებისმიერი</i> რამ შეინახო გრძელვადიან მეხსიერებაში, <i>სამუდამოდ?*</i>
+</words>
+</panel>
+
+
+<panel w=500 h=30 style="margin-top:-5px">
+<words w=500 x=-15 y=-15 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999;">
+	* ნუ სანამ არ მოკვდები
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=spaced_rep"></sim>
+</panel>
+
+<panel w=500 h=450 fadeInOn="flip_spaced_rep">
+<pic src="pics/intro0.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	და <i>ძალიან მაგარია</i>.
+	ინტერვალებით გამეორების გამოყენება დავიწყე ამ წლის დასაწყისში ფრანგულის შესასწავლად.
+</words>
+<words x=30 y=350 w=430 h=60>
+	ორ <i>თვეში</i> უფრო მეტი სიტყვა ვისწავლე, ვიდრე სკოლაში, ფრანგულის გაკვეთილების ორ <i>წელიწადში</i>.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/intro0.png" sx=950 sy=450></pic>
+<words x=10 y=10 w=400 h=60>
+	მას შემდეგ ინტერვალებით გამეორება გამოვიყენე სხვადასხვა რამის დასამახსოვრებლად...
+</words>
+<words x=81 y=113 w=100 style="text-align:left" no-bg class="comic_text">
+	უკულელეს აკორდები
+</words>
+<words x=212 y=114 w=100 style="text-align:left" no-bg class="comic_text">
+	კომპიუტერული კოდი
+</words>
+<words x=380 y=137 w=100 style="text-align:left" no-bg class="comic_text">
+	მეგობრების დაბ. დღეები
+</words>
+<words x=188 y=204 w=270 style="text-align:left" no-bg class="comic_text">
+	ნებისმიერი საინტერესო რამ რასაც ვპოულობ წიგნებში, გამოსვლებში, სტატიებში და ა.შ!
+</words>
+<words x=60 y=300 w=400 h=60>
+	...და ეს პაწია მეხსიერების ბარათების თამაში გახდა ჩემი <i>ცხოვრების</i> მნიშვნელოვანი ნაწილი.
+</words>
+</panel>
+
+<panel w=550 h=350>
+<pic src="pics/intro0.png" sx=0 sy=850></pic>
+<words x=10 y=10 w=500 h=30>
+	ორი სიტყვით, ინტერვალებით გამეორება = შემოწმება + დრო.
+</words>
+<words x=10 y=220 w=500 h=90>
+	საკუთარ თავს რამდენჯერმე ამოწმებ — გახსოვს თუ არა? ამ შემოწმებებს შორის პაუზებს აკეთებ.
+	(მაგრამ ამას დიდი ხანი არ დასჭირდება? აჰ, როგორც მოგვიანებით ვნახავთ, ერთი ხრიკი არის...)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=0 sy=1200></pic>
+<words x=10 y=20 w=290 no-bg>
+	ინტერვალებით გამეორება უფასოა, მტკიცებულებებზეა დაფუძნებული და ისეთი მარტივია, რომ <i>ფეხსაცმლის ყუთითაც</i> შეგიძლია გააკეთო.
+</words>
+<words x=308 y=265 w=50 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	ნიკი მოკეტე
+</words>
+<words x=90 y=130 w=270 no-bg>
+	მაშ, რაშია საქმე?  <i>ყველა</i> რატომ არ იყენებს უკვე ინტერვალებით გამეორებას?
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=400 sy=1200></pic>
+<words x=10 y=20 w=330 no-bg>
+	ნუ, საქმე იმაშია, რომ <i>ნებისმიერი</i> ახალი ჩვევის განვითარება რთულია
+	— განსაკუთრებით უცნაური ჩვევის, როგორიცაა ინტერვალებით გამეორება.
+</words>
+<words x=292 y=303 w=80 no-bg class="comic_text" style="text-align:left; font-size:20px">
+	მასწავლებელი მოდის
+</words>
+<words x=100 y=134 w=270 no-bg>
+	ამიტომ გავაკეთე ეს ცუდად დახატული ინტერაქციული კომიქსი.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/intro0.png" sx=800 sy=1200></pic>
+<words x=10 y=20 w=300 no-bg>
+	ინტერვალებით გამეორების ამ კომიქსში,
+	გაჩვენებ რატომ მუშაობს, როგორ მუშაობს ის...
+</words>
+<words x=110 y=140 w=250 no-bg>
+	...და დაგეხმარები <i>დღესვე</i> გამოიყენო ის.
+</words>
+</panel>
+
+<panel w=600 h=180>
+<words w=600 x=-15 no-bg>
+
+	ასევე, ამ კომიქსში, სხვადასხვა ინტერვალში,
+	შეგიძლია შეამოწმო საკუთარი თავი იმაზე, რაც ისწავლე.
+	<b>ანუ, ინტერვალებით გამეორებას გამოიყენებ, რათა ისწავლო ინტერვალებით გამეორება.</b>
+
+	<br><br>
+	ასე:
+
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=intro_a,intro_b,intro_c"></sim>
+</panel>
+
+<panel w=550 h=450>
+<pic src="pics/intro0.png" sx=950 sy=1600></pic>
+<words x=10 y=10 w=480 h=90>
+	და მაინც, ცუდი არაა „გამეორება დამახსოვრება“?
+	ნებისმიერი რამ ხომ შეგვიძლია მოვძებნოთ?
+	ამის ნაცვლად კრეატიულობა და კრიტიკული აზროვნება არ უნდა ვისწავლოთ?
+	</words>
+<words x=30 y=320 w=480 h=90>
+	„ნაცვლად“ <i>არ არსებობს</i>.
+	კოგნიტიური მეცნიერება გვეუბნება,
+	რომ შემოქმედებითობისა და კრიტიკული აზროვნებისთვის დამახსოვრება <i>საჭიროა</i>.
+	(წარმოიდგინე ესეის როგორ დაწერ, თუ სიტყვები არ იცი!)
+</words>
+<words x=187 y=138 w=150 no-bg class="comic_text" style="font-size:40px">
+	მეხსიერება
+</words>
+<words x=22 y=222 w=100 no-bg class="comic_text" style="font-size:20px">
+	ხელოვნება
+</words>
+<words x=408 y=224 w=100 no-bg class="comic_text" style="font-size:20px">
+	მეცნიერება
+</words>
+</panel>
+
+<panel w=550 h=300>
+<pic src="pics/intro0.png" sx=0 sy=1600></pic>
+<words x=10 y=20 w=310 no-bg>
+	ინტერვალებით გამეორება არ არის სწავლის,
+	თუ რაიმე სხვა ცხოვრებისეული ხრიკი.
+</words>
+<words x=30 y=113 w=320 no-bg>
+	ეს არის საშუალება დაიბრუნო კონტროლი საკუთარ <i>გონებაზე</i>.
+	რათა გრძელვადიანი მეხსიერება იყოს საკუთარი <i>არჩევანი</i>.
+	რათა სწავლისადმი სამუდამო სიყვარული განივითარო...
+</words>
+</panel>
+
+<panel w=400 h=550>
+<pic src="pics/intro0.png" sx=550 sy=1600></pic>
+<words x=20 y=20 w=330 h=30>
+	... რომ შენი შინაგანი მუზის დედა თავად იყო.
+</words>
+<words x=117 y=131 w=140 no-bg class="comic_text" style="font-size:20px; color:#fff">
+
+</words>
+<words x=240 y=480 w=120 h=30>
+	დავიწყოთ.
+</words>
+</panel>
+
+</div>
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 1: THE SCIENCE OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="1"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			ინტერვალებით გამეორების
+			მეცნიერება
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=400 h=60>
+	1885 წელს ჰერმან ებინგჰაუსმა შეასრულა მეცნიერული მაზოხიზმის აქტი.
+</words>
+<words x=30 y=320 w=430 h=90>
+	გერმანელმა ფსიქოლოგმა დაიმახსოვრა <i>ათასობით</i> უაზრო სიტყვა, დათვლა რამდენი დაავიწყდა დროთა განმავლობაში და აღმოაჩინა...
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/sci0.png" sx=500 sy=0></pic>
+<words x=60 y=10 w=250>
+	<b>დავიწყების მრუდი</b>
+</words>
+<words x=10 y=310 w=350>
+	მან აღმოაჩინა, რომ იქიდან რაც ისწავლე, პირველ 24 საათში, უმეტესობას ივიწყებ.
+	შემდეგ — თუ არ გაიხსენე რაც ისწავლე — დარჩენილი მოგონებები ექსპონენციურად მცირდება.*
+</words>
+</panel>
+
+<panel w=500 h=53 style="margin-top:-5px">
+<words w=500 x=-15 y=-10 no-bg style="width: 500px; font-size:0.8em; text-align: right; color:#999; line-height: 1.1em;">
+	* ტექნიკურად მრუდი არაა <i>ზუსტად</i>
+	<br>
+	ექსპონენციური, მაგრამ, ეჰ, საკმარისად ახლოსაა.
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci0.png" sx=900 sy=0></pic>
+<words x=10 y=10 w=450 h=90>
+	ფილოსოფოსები მეხსიერების შესახებ ათასწლეულების
+	განმავლობაში კამათობდნენ, მაგრამ ებინგჰაუსი იყო პირველი,
+	ვინც ჩაატარა რეალური <i>ექსპერიმენტები</i>.
+	(რომლებიც სხვებმაც გაიმეორეს)
+</words>
+<words x=193 y=169 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35)">
+	გთხვ...
+</words>
+<words x=278 y=195 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35)">
+	მომ...
+</words>
+<words x=348 y=234 w=70 no-bg class="comic_text" style="color:rgba(0,0,0,0.35)">
+	კალი...
+</words>
+<words x=20 y=350 w=440 h=60>
+	ამ მიზეზით, ჰერმან ებინგჰაუსი ცნობილია,
+	როგორც მეხსიერების მეცნიერების პიონერი.
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	აქ არის დავიწყების მრუდის ინტერაქციული სიმულაცია.
+	<b>შეცვალე მეხსიერების <i>დაშლის</i> სიჩქარე. რა ემართება მრუდს?</b>
+</words>
+</panel>
+
+<panel w=600 h=370>
+<sim x=0 y=0 w=600 h=370 src="sims/ebbinghaus/?mode=0"></sim>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	როგორც ხედავ, რაც უფრო ნაკლებია დაშლა, მით უფრო ბრტყელია მრუდი —
+	ანუ მით უფრო დიდხანს ნარჩუნდება მეხსიერება.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=0 sy=500></pic>
+<words x=10 y=10 w=300>
+	რამდენად სწრაფად იშლება ადამიანის მეხსიერება, დამოკიდებულია ადამიანზე და მეხსიერებაზე...
+</words>
+<words x=0 y=145 w=330 no-bg class="comic_text smaller">
+	გამარჯობა! ბოდიში, შემახსენე — რა გქვია?
+</words>
+<words x=177 y=186 w=180 no-bg class="comic_text smaller">
+	ჰაჰა. სიუზან.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=400 sy=500></pic>
+<words x=10 y=10 w=330>
+	მაგრამ ზოგადად, მეხსიერების „დაშლის ტემპი“ ნელდება ყოველ ჯერზე, როცა მას <b>აქტიურად იხსენებ</b>.
+	(პასიურად ხელახალი წაკითხვის ნაცვლად)
+</words>
+<words x=27 y=198 w=120 no-bg class="comic_text smaller">
+	სიუზან. სიუზან. სიუზან. სიუზან. სიუზან.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci0.png" sx=800 sy=500></pic>
+<words x=10 y=10 w=300>
+	(თუმცა, როცა ვარჯიშს წყვეტ, ის მაინც იშლება.)
+</words>
+<words x=41 y=121 w=150 no-bg class="comic_text smaller">
+	აბა, კარგად სარა!
+</words>
+<words x=191 y=148 w=100 no-bg class="comic_text smaller">
+	სიუზან.
+</words>
+<words x=59 y=174 w=150 no-bg class="comic_text smaller">
+	კარგად სენდი!
+</words>
+<words x=193 y=203 w=100 no-bg class="comic_text smaller">
+	სიუზან თქო!
+</words>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	ავიღოთ ისევ ის სიმულაცია და ერთი აქტიური გახსენების სესია დავუმატოთ.
+	<br>
+	(ნაცრისფერი ხაზი: რა მოუვიდოდა მეხსიერებას გახსენების <i>გარეშე</i>).
+	<br>
+	<b>შეცვალე გახსენების დრო და ნახე რა მოუვა მრუდს:</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	ერთი გახსენება ცოტა ხნით აძლიერებს მეხსიერებას... მაგრამ გრძელ ვადაში,
+	მეხსიერების ექსპონენციური დაშლის გამო, ერთი გახსენება არაფერს ცვლის.
+	</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=390>
+	თუ არის სწავლის უკეთესი გზა?
+	კი, არის! დამახსოვრების ხრიკი...
+</words>
+<words x=210 y=330 w=200>
+	...<i>არის თითქმის დავიწყებაში.</i>
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=0></pic>
+<words x=250 y=20 w=200>
+	ამის გააზრებისთვის, დაფიქრდი კუნთების ვარჯიშზე.
+	ვერაფერს მიაღწევ ვერც ძალიან მსუბუქი...
+</words>
+</panel>
+
+<panel w=500 h=300>
+<pic src="pics/sci1.png" sx=450 sy=300></pic>
+<words x=250 y=20 w=200>
+	...და ვერც ზედმეტად მძიმე წონით.
+</words>
+</panel>
+
+<panel w=350 h=350>
+<pic src="pics/sci1.png" sx=950 sy=0></pic>
+<words x=10 y=10 w=300>
+	იგივე ეხება ტვინის ვარჯიშს.
+	<b>ოპტიმალური სირთულე</b> გჭირდება: საკმარისი სირთულის ოქროს შუალედი.
+</words>
+<words x=55 y=187 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	კომფორტი
+</words>
+<words x=55 y=282 w=100 no-bg class="comic_text smaller" style="text-align:left">
+	დისკომფორტი
+</words>
+<words x=176 y=186 w=120 no-bg class="comic_text smaller">
+	ძალიან მარტივი
+</words>
+<words x=179 y=229 w=120 no-bg class="comic_text" style="color:#000">
+	ოპტიმალური
+</words>
+<words x=176 y=280 w=120 no-bg class="comic_text smaller">
+	ზედმეტად რთული
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/sci1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=360>
+	ამიტომ: იმისათვის, რომ უკეთ ისწავლო რაიმე, უნდა გაიხსენო ის...
+</words>
+<words x=60 y=330 w=350>
+	...<i>როცა თითქმის დავიწყებული გაქვს.</i>
+</words>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	იგივე სიმულაცია, რაც უკვე ვნახეთ, მაგრამ ახლა ის გვიჩვენებს
+	<span style="background:#ffe866">ოქროს შუალედს</span> —
+	სადაც <i>სუ ოდნავ</i> დაგავიწყდა.
+	<b>დასვი გახსენება ოქროს <i>შუალედში</i>. რა ხდება?</b>
+</words>
+</panel>
+
+<panel w=600 h=400>
+<sim x=0 y=0 w=600 h=400 src="sims/ebbinghaus/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	ხედავ? თუ საჭირო დროს გაიხსენებ,
+	შეგიძლია ცოტათი შეანელო მეხსიერების დაშლა!
+	ახლა, რა მოხდება <i>რამდენჯერმე</i> თუ გაიხსენებ?
+	</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/sci2.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430>
+	დავუშვათ
+	<span class="strikeout">ზარმაცი ხარ</span>
+	დროს გონივრულად იყენებ და მხოლოდ 4 ჯერ გაიხსენებ.
+	</words>
+	<words x=30 y=350 w=430>
+	კითხვა:
+	<i>რაა საუკეთესო გზა ამ გახსენებების დროში განაწილების?</i>
+</words>
+<words x=82 y=198 w=120 no-bg class="comic_text" style="transform: rotate(-16deg);">
+	სიუზან
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/sci2.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=190>
+	თანაბარი ხანგრძლივობის ინტერვალები ჯობს?
+	მზარდი?
+	კლებადი?
+	თუ შემთხვევითი, რომ არ მოდუნდე?
+</words>
+<words x=259 y=16 w=100 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	= გახსენება
+</words>
+<words x=295 y=16 w=100 no-bg class="comic_text smaller" style="text-align:right; color:#000">
+	დრო
+</words>
+<words x=245 y=61 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	თანაბარი ინტერვალები:
+</words>
+<words x=245 y=126 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	მზარდი ინტერვალები:
+</words>
+<words x=245 y=198 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	კლებადი ინტერვალები:
+</words>
+<words x=245 y=259 w=200 no-bg class="comic_text smaller" style="text-align:left; color:#000">
+	შემთხვევითი ინტერვალები:
+</words>
+</panel>
+
+<panel w=400 h=90>
+<words h=90>
+	<b>სცადე გამოიცნო </b>
+	და შემდეგ, როცა მზად იქნები, <b>გადააბრუნე ბარათი &darr;</b>
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=guessgap"></sim>
+</panel>
+
+<panel fadeInOn="flip_guessgap" w=600 h=120>
+<words w=600 x=-15 y=0 no-bg>
+	რაც ძალიან არა ინტუიციურია!
+	შეგიძლია დარწმუნდე, რომ ეს სიმართლეა, ქვემოთ მოცემული სიმულაციით.
+	<b>
+	დასვი ყველა გახსენება <span style="background:#ffe866">ოქროს შუალედის</span> <i>შუაში</i>.
+	რა ინტერვალს იღებ?
+	</b>
+</words>
+</panel>
+
+<panel w=600 h=520>
+<sim x=0 y=0 w=600 h=520 src="sims/ebbinghaus/?mode=3"></sim>
+</panel>
+
+<panel w=600 h=120>
+<words w=600 x=-15 no-bg>
+	(იმის დასამტკიცებლად, რომ ეს არაა შემთხვევითობა,
+	აგერ სიმულაცია, სადაც შეგიძლია შეცვალო
+	მეხსიერების დაშლის მრუდი და ოქროს შუალედის პოზიცია.
+	მიაქციე ყურადღება, რომ (უკიდურესი შემთხვევების გარდა),
+	საუკეთესო განრიგი მაინც არის „ინტერვალების გაზრდა“!)
+</words>
+</panel>
+
+<panel w=600 h=570>
+<sim x=0 y=0 w=600 h=570 src="sims/ebbinghaus/?mode=4"></sim>
+</panel>
+
+<panel w=350 h=500>
+<pic src="pics/sci2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=300>
+	რატომ <i>უნდა</i> გაიზარდოს ინტერვალები?
+	რადგან: ყოველ ჯერზე, როცა იხსენებ დავიწყების ოქროს შუალედში,
+	მეხსიერების დაშლის სიჩქარე ნელდება...
+</words>
+<words x=25 y=187 w=50 no-bg class="comic_text smaller" style="text-align:left">
+	შენი სახელია
+</words>
+<words x=16 y=177 w=300 no-bg class="comic_text" style="font-size:100px; transform: rotate(-5deg);">
+	სიუზან!
+</words>
+<words x=218 y=257 w=120 no-bg class="comic_text smaller" style="text-align:right">
+	–ვახ ჩე
+	<!-- TRANSLATOR NOTE: don't complete the swearing in your translation.
+	make it cut off at the edge of the panel. It's... funnier that way? -->
+</words>
+<words x=10 y=400 w=300>
+	...რაც ნიშნავს, რომ შემდეგ ჯერზე ოქროს
+	შუალედამდე მიღწევას <i>მეტი</i> დრო დასჭირდება!
+</words>
+</panel>
+
+<panel w=500 h=500>
+<pic src="pics/sci2.png" sx=350 sy=450></pic>
+<words x=10 y=10 w=400>
+	მაგრამ იცი რა არის უფრო მაგარი?
+	ეს ასევე ნიშნავს, რომ თუ საჭირო დროს გაიხსენებ,..
+</words>
+<words x=60 y=400 w=400>
+	...შეგიძლია მარტივად შეინახო <i>უამრავი</i> რამ შენს გრძელვადიან მეხსიერებაში,
+	<i>სამუდამოდ.</i>
+</words>
+</panel>
+
+<panel w=250 h=250>
+<pic src="pics/sci2.png" sx=850 sy=450></pic>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	და რახან ვსაუბრობთ სწავლისთვის საჭირო აქტიურ გახსენებაზე,
+	მოდით გავიხსენოთ რაც ახლა ვისწავლეთ:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=sci_a,sci_b,intro_b,sci_c"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=0 sy=950></pic>
+<words x=50 y=20 w=300 bg=none>
+	ეგ მშვენიერია,
+	მაგრამ რეალურად კარგი ინტერვალებით გამეორების გრაფიკის <i>მოფიქრება</i> რთული უნდა იყოს, არა?
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=400 sy=950></pic>
+<words x=50 y=30 w=300 bg=none>
+	<i>პირიქით!</i>
+	სინამდვილეში, ეს იმდენად მარტივია, რომ შეგიძლია შექმნა საკუთარი ავტომატური გრაფიკი...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/sci2.png" sx=800 sy=950></pic>
+<words x=30 y=30 w=200 bg=none>
+	...<i>ფეხსაცმლის ყუთის</i> გამოყენებით.
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 2: THE ART OF SPACED REPETITION - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="2"></a>
+<div class="divider divider_big_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			ინტერვალებით გამეორების
+			ხელოვნება
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=450>
+<pic src="pics/leit0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	არაა <i>აუცილებელი</i> ფეხსაცმლის ყუთის გამოყენება ინტერვალებით გამეორებისთვის,
+	მაგრამ ასე უფრო სასაცილო იქნება.
+</words>
+<words x=3 y=119 w=140 no-bg class="comic_text smaller" style="font-size:22px">
+	ეს ჩემი რეპეტიტორია
+</words>
+<words x=119 y=158 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	???
+</words>
+<words x=246 y=118 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	მამეორებინებს
+	<!--
+	TRANSLATOR NOTE:
+	this is a pun that may not work in all languages.
+	If it doesn't translate to your language, try coming up with your own pun!
+	Or, replace this line with: "they help me go far"
+	-->
+</words>
+<words x=367 y=116 w=120 no-bg class="comic_text smaller" style="font-size:22px">
+	აღარ გემეგობრები
+</words>
+
+<words x=30 y=350 w=430 h=60>
+	(მოგვიანებით, ინტერვალებით გამეორების რამდენიმე <i>აპლიკაციას</i> ვნახავთ,
+	როგორიცაა Anki და Tinycards)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	ამ სისტემას ჰქვია ლეიტნერის ყუთი.
+	ეს ჰგავს კარტის თამაშს, რომელსაც საკუთარი თავის წინააღმდეგ თამაშობ!
+</words>
+<words x=30 y=300 w=430 h=60>
+	პირველ რიგში, დაყავი ყუთი შვიდ „დონედ“.
+	(თუ გინდა, შეგიძლია მეტი ან ნაკლები დონე გქონდეს!)
+</words>
+</panel>
+
+<panel w=500 h=370>
+<pic src="pics/leit0.png" sx=0 sy=480></pic>
+<words x=10 y=10 w=430 h=30>
+	ყველა ახალი ბარათი 1-ლი დონიდან იწყებს.
+</words>
+<words x=30 y=270 w=430 h=60>
+	(ინტერვალებით გამეორება თუ აქამდე არ გიცდია, გირჩევ დაიწყო დღეში 5 ახალი ბარათით.)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=500 sy=480></pic>
+<words x=10 y=10 w=430 h=60>
+	როცა შეამოწმებ საკუთარ თავს და ნახავ რომ გახსოვს ბარათის შინაარსი, ის <i>ერთი</i> დონით მაღლა იწევს.
+</words>
+<words x=30 y=300 w=430 h=60>
+	(თუ ფინალურ დონეზე ხარ, გილოცავ!
+	ბარათი პენსიაზე გადის. აგერ, გაფრინდა ბარათების სამოთხეში.)
+</words>
+</panel>
+
+<panel w=500 h=430>
+<pic src="pics/leit0.png" sx=0 sy=900></pic>
+<words x=10 y=10 w=430 h=60>
+	მაგრამ თუ სცადე ბარათის შინაარსის გახსენება და ვერ... ის უნდა
+	<i>დაბრუნდეს სუ 1-ლ დონეზე.</i>
+</words>
+<words x=30 y=300 w=430 h=90>
+	(თუ ის უკვე 1-ლ დონეზეა, კარგია:
+	იმდენჯერ სცადე გაიხსენო, სანამ არ გამოგივა
+	და მერე გადაიტანე მე-2 დონეზე)
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit0.png" sx=0 sy=1370></pic>
+<words x=10 y=10 w=430 h=120>
+	მაგრამ <i>როდის</i> ვამოწმებთ ბარათებს?
+	მაგაშია საქმე.
+	ლეიტნერის ყუთით 1-ლი დონის ბარათებს ყოველდღე ვამოწმებთ,
+	მე-2 დონის — ყოველ მეორე დღეს, მე-3 დონის — ყოველ <i>მეოთხე</i> დღეს,
+	მე-4 დონის — ყოველ <i>მერვე</i> დღეს და ა.შ...
+	But <i>when</i> do we review cards?
+</words>
+<words x=30 y=300 w=430 h=60>
+	მოდელი ასეთია: <i>ვაორმაგებთ ინტერვალს</i> (დღეების # შემოწმებებს შორის) თითოეული დონისთვის!
+</words>
+</panel>
+
+<panel w=600 h=60>
+<words w=600 x=-15 no-bg>
+	აი, როგორ გამოიყურება 64-დღიანი ციკლური თამაშის კალენდარი:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#fff">
+<sim x=0 y=0 w=600 h=400 src="sims/calendar/"></sim>
+</panel>
+
+<panel w=500 h=490>
+<pic src="pics/leit0.png" sx=500 sy=870></pic>
+<words x=10 y=10 w=430 h=90>
+	(შენიშვნა: მიზეზი, რატომაც 1-ლ დონეს ბოლოს ვამოწმებთ,
+	არის ის, რომ ახალი <i>და</i> უფრო მაღალი დონის დავიწყებული ბარათებიც ნახოთ.)
+</words>
+<words x=30 y=330 w=430 h=120>
+	(ინტერვალებით გამეორების ყოველდღიური თამაშის დასასრულს,
+	არ უნდა გქონდეს ბარათები 1-ლ დონეზე.
+	შეამოწმე საკუთარი თავი მანამ, სანამ ყველა ბარათი არ დაგამახსოვრდება
+	და გადაიტანე ისინი მე-2 დონეზე!)
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit0.png" sx=600 sy=1400></pic>
+<words x=10 y=10 w=350 h=90>
+	(შენიშვნა #2: ინტერვალებით გამეორების <i>აპლიკაციები</i>, მაგ., როგორიცაა Anki, იყენებენ უფრო დახვეწილ ალგორითმს,...)
+</words>
+<words x=10 y=300 w=350 h=60>
+	(...თუმცა საფუძველში ისინი იმავე პრინციპებით მუშაობენ, როგორც ლეიტნერის ყუთი.)
+</words>
+</panel>
+
+<panel w=400 h=450>
+<pic src="pics/leit0.png" sx=0 sy=1800></pic>
+<words x=10 y=10 w=350 h=90>
+	(შენიშვნა #3: ჰო, და რამდენიმე ბარათით და წებოვანი ლენტით,
+	შეგიძლია შექმნა საკუთარი დასაკეცი, ციკლური კალენდარი!)
+</words>
+<words x=10 y=350 w=350 h=60>
+	(ბოლოში, ლეიტნერის ყუთის შექმნის ვიდეოინსტრუქციის ბმული მიწერია)
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	ახლა, ვნახოთ თამაში მოქმედებაში!
+	შეხედე, <i>ყოველდღე</i> რა შედეგზე გახვალ ლეიტნერის ყუთის გამოყენებით:
+	<b>(მოგვიანებით ვნახავთ <i>ყოველთვიურ</i> სიმულაციას)</b>
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=1"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	ყოველდღე სადღაც 20-30 წუთი დაგჭირდება ამისთვის.
+	სერიალის ერთი ეპიზოდის ყურების ნაცვლად, შეგიძლია კარტი ითამაშო —
+	და <i>სიცოცხლის ბოლომდე</i> დაიმახსოვრო, რაც კი გაგიხარდება.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	თუმცა, მიჩვევა რთულია. დიდი ბურთით თუ დაიწყებ, ვერ გაამოძრავებ...
+</words>
+<words x=20 y=300 w=450 h=60>
+	მაგრამ თუ <i>პატარით</i> დაიწყებ, შეძლებ ტემპის მიცემას
+	და შენი თოვლის გუნდა სულ უფრო და უფრო დიდი გაიზრდება.
+</words>
+</panel>
+
+<panel w=500 h=690>
+<pic src="pics/leit1.png" sx=0 sy=400></pic>
+<words x=10 y=10 w=430 h=60>
+	ამიტომ, გირჩევ <i>დაიწყო</i> დღეში 5 ახალი ბარათით.
+</words>
+<words x=30 y=300 w=430 h=60>
+	როცა თავს კომფორტულად იგრძნობ, მერე შეგიძლია დაამატო 10 ახალი ბარათი დღეში.
+	შემდეგ 15. შემდეგ 20, 25, 30.
+</words>
+<words x=10 y=590 w=430 h=60>
+	და დღეში 30 ახალი ბარათით შეგიძლია ისწავლო <i>10,000+</i> ახალი ფაქტი/სიტყვა/ა.შ. <i>წელიწადში.</i>
+</words>
+<words x=16 y=497 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	na na na na na na na na na
+</words>
+<words x=38 y=517 w=200 no-bg class="comic_text smaller" style="text-align:right">
+	katamari damacy
+	<!-- TRANSLATOR NOTE: leave this in its japanese.
+	i don't know what it means, actually. it's a videogame song. -->
+</words>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	აი, ყოველთვიური სიმულაცია.
+	გამოიყენე ეს, რათა წინასწარ გამოთვალო <i>შენ</i> რამდენის სწავლა შეძლებ ინტერვალებით გამეორებით!
+</words>
+</panel>
+
+<panel w=600 h=470 bg="#fff">
+<sim x=0 y=0 w=600 h=470 src="sims/leitner/?mode=2"></sim>
+</panel>
+
+<panel w=600 h=110>
+<words w=600 x=-15 no-bg>
+	სულ ეს არის. ასე შეგიძლია გრძელვადიანი მეხსიერება <i>საკუთარი არჩევანი</i> გახადო.
+</words>
+<words w=600 x=-15 y=50 no-bg>
+	კარგად გაიაზრე. შეისვენე და მერე გაიხსენე ის, რაც ახლახან ვისწავლეთ:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_a,intro_a,leit_b,intro_c,leit_c"></sim>
+</panel>
+
+<panel w=600 h=80>
+<words w=600 x=-15 no-bg>
+	ინტერვალით გამეორება თითქოს ზედმეტად კარგია იმისთვის, რომ ნაღდი იყოს.
+	<br>
+	და ეგრეც არის... <i>თუ</i> გავრცელებულ შეცდომებს დაუშვებ.
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=420 h=60>
+	მეხსიერება წიგნების თარო არაა,
+	სადაც აგროვებ შემთხვევით უზარმაზარ ტომებს სხვებზე შთაბეჭდილების მოხდენისთვის.
+</words>
+<words x=-15 y=210 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+	სისულელეების
+</words>
+<words x=39 y=216 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(86deg)">
+	გროვა, რომლის
+</words>
+<words x=100 y=211 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(74deg)">
+	წაკითხვისთვის
+</words>
+<words x=144 y=212 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(90deg)">
+	არასდროს
+</words>
+<words x=199 y=214 w=150 no-bg class="comic_text" style="text-align:left; font-size:27px; transform:rotate(84deg)">
+	მოიცლი
+</words>
+<words x=10 y=350 w=450 h=60>
+	სხვა სიტყვებით: ინტერვალებით გამეორება ვერ იმუშავებს, თუ შენი ბარათები
+	<i>ვრცელი</i>, <i>არადაკავშირებული</i>, ან <i>უაზრო</i> იქნება.
+</words>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/leit1.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=90>
+	პირიქით, მეხსიერება თავსატეხს ჰგავს: უამრავი პატარა, ერთმანეთთან დაკავშირებული ნაწილი.
+	(ნეირონებიც ასე მუშაობენ: ბევრი პატარა, ერთმანეთთან დაკავშირებული უჯრედი)
+</words>
+<words x=30 y=380 w=430 h=30>
+	საქმე <i>შეგროვებაში</i> კი არაა, <i>დაკავშირებაშია</i>.
+</words>
+</panel>
+
+<panel w=500 h=400>
+<pic src="pics/leit1.png" sx=500 sy=900></pic>
+<words x=10 y=10 w=410 h=60>
+	ამრიგად, ინტერვალებით გამეორებისგან მაქსიმალური სარგებლის მისაღებად,
+	შენი ბარათები უნდა იყოს...
+</words>
+<words x=-38 y=227 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	პატარა
+</words>
+<words x=94 y=257 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	დაკავშირებული
+</words>
+<words x=262 y=298 w=200 no-bg class="comic_text" style="color:#fff; font-size:30px">
+	და მნიშვნელოვანი
+</words>
+</panel>
+
+<panel w=450 h=60>
+<words w=450 x=-15 no-bg>
+	ვნახოთ როგორ.
+</words>
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=0></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+	პატარა
+</words>
+</panel>
+
+<panel w=450 h=50>
+<words w=450 x=-15 no-bg>
+	ეს ბარათი არ ვარგა:
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=mitochondria_all"></sim>
+</panel>
+
+<panel w=450 h=380>
+<pic src="pics/leit2.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=400 h=30>
+	ზედმეტად დიდია. ზედმეტად ბევრი ინფორმაციაა.
+</words>
+<words x=10 y=250 w=400 h=90>
+	მოდი დავჭრათ ის უფრო პატარა, ერთმანეთთან დაკავშირებულ ნაწილებად!
+	მთავარი პრინციპი — <i>ერთ ბარათზე უნდა იყოს ერთი და მხოლოდ ერთი იდეა.</i>
+	ამის მსგავსად:
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_1" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_2" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_3" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_4" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_5" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_6" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_7" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=mitochondria_8" class="small_card"></sim>
+</panel>
+
+<panel w=450 h=90>
+<words w=450 x=-15 no-bg>
+	ფაქტები უკავშირდება ფაქტებს.
+	მაგრამ არსებობს სხვა, უფრო მხიარული გზები ბარათების...
+</words>
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=150></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+	დასაკავშირებლად
+</words>
+</panel>
+
+<panel w=450 h=110>
+<words w=450 x=-15 no-bg>
+	ამ ბარათს... არა უშავს.
+	წინა მხარეს არის ქართული სიტყვა, უკანა მხარეს — ფრანგული.
+	<!--
+	TRANSLATOR NOTE:
+	If the language you're translating for is NOT French,
+	replace "English" with [your language]
+	-->
+	ენის სასწავლო ბარათების უმეტესობას ასეთი ფორმატი აქვს:
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat"></sim>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=400 h=60>
+	მაგრამ იცი, რა უფრო გამოგადგებოდა დამახსოვრებისთვის?
+</words>
+<words x=10 y=300 w=400 h=60>
+	თუ დააკავშირებ სიტყვას
+	<i>სურათებთან, ხმებთან, კონტექსტთან, ან/და პირად დეტალებთან! </i>
+	მაგალითად:
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=cat2"></sim>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=0></pic>
+<words x=10 y=10 w=210>
+	წინა მხარეს ახლა არის კატის ნახატი (სურათი),
+	ფრანგული წინადადება გამოტოვებული სიტყვით (კონტექსტი: გრამატიკა)
+	და ჩემი ბავშვობის კატის სახელი — Stripes. (პირადი)
+</words>
+</panel>
+
+<panel w=600 h=300>
+<pic src="pics/leit2.png" sx=600 sy=300></pic>
+<words x=10 y=10 w=210>
+	უკანა მხარეს — არსებითი სახელის სქესის სიმბოლო (სურათი),
+	მისი გამოთქმა (ხმა*)
+	და გაფრთხილება ამ სიტყვის მდედრობითი ვერსიის შესახებ. (კონტექსტი: ჟარგონი)
+</words>
+<words w=330 x=250 y=225 no-bg fontsize=20>
+	* ცხადია, ქაღალდის ბარათებს არ შეუძლიათ ხმის <i>ამოღება</i>.
+	მაგრამ აპლიკაციებს, როგორიცაა Anki/Tinycards, შეუძლიათ!
+</words>
+<audio controls style="position: absolute; top: 105px; left: 280px; transform: scale(0.4) rotate(4deg);">
+	<source src="audio/chat.mp3" type="audio/mpeg">
+</audio>
+</panel>
+
+<panel w=450 h=90>
+<words w=450 x=-15 no-bg>
+	მაგრამ <i>ყველაზე</i> მთავარი არის შენი სწავლა დააკავშირო იმას,
+	რაც შენთვისაა...
+</words>
+</panel>
+
+<panel w=600 h=150>
+<pic src="pics/leit2.png" sx=0 sy=300></pic>
+<words x=169 y=44 w=400 no-bg style="color:#fff; font-size:80px; text-align:left">
+	მნიშვნელოვანი
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=450 sy=600></pic>
+<words x=10 y=10 w=450 h=60>
+	პირადად, ყველაზე კარგად, აი, როგორ ვისწავლე:
+	პირველ რიგში, ვცდილობ (ხაზგასმა <i>მცდელობაზე</i>) რაღაც <b>გავაკეთო</b>.
+	Personally, here's how I've learnt best:
+</words>
+<words x=11 y=113 w=160 no-bg class="comic_text">
+	დავუკრა უკულელეზე
+</words>
+<words x=183 y=104 w=140 no-bg class="comic_text">
+	წავიკითხო ფრანგული კომიქსები
+</words>
+<words x=336 y=109 w=100 no-bg class="comic_text">
+	შევქმნა ონლაინ თამაში
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/leit2.png" sx=950 sy=600></pic>
+<words x=10 y=10 w=450 h=60>
+	უეჭველად, გავიჭედები.
+	ამ დროს, მოვძებნი რაც მჭირდება
+	და <b>ვისწავლი</b>.
+	Inevitably, I'll get stuck.
+	In that moment, I'll look up what I need,
+	and <b>learn</b> something.
+</words>
+<words x=6 y=102 w=130 no-bg class="comic_text">
+	F# როგორ დავუკრა?
+</words>
+<words x=133 y=104 w=180 no-bg class="comic_text">
+	რას ნიშნავს „attraper“?
+</words>
+<words x=301 y=109 w=190 no-bg class="comic_text">
+	რატომაა javascript-ი ასეთი ნაგ–
+	<!-- TRANSLATOR NOTE: again, don't complete the swear. have it cut out -->
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=learndo&forever_card=yes"></sim>
+</panel>
+
+<panel w=450 h=30>
+<words w=450 x=-15 y=-15 no-bg>
+	და ასე შემდეგ.
+</words>
+</panel>
+
+<panel w=450 h=400>
+<pic src="pics/leit2.png" sx=450 sy=950></pic>
+<words x=10 y=10 w=400 h=60>
+	მჯერა, რომ სწავლის დროს მოტივაციის შენარჩუნებისთვის საუკეთესო გზა ეს არის:
+</words>
+<words x=10 y=300 w=400 h=60>
+	სწავლა უნდა ემსახურებოდეს იმის <i>კეთებას, რაც მნიშვნელოვანია შენთვის.</i>
+</words>
+</panel>
+
+<panel w=600 h=90>
+<words w=600 x=-15 no-bg>
+	რახან სწავლა ვახსენეთ, მოდი გავიხსენოთ ის, რაც ვისწავლეთ:
+	(ეს იქნება მეორე-ბოლო ჯერ!)
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?cards=leit_d,sci_c,sci_a,sci_b"></sim>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=0 sy=450></pic>
+<words x=10 y=20 w=350 no-bg>
+	ინტერვალებით გამეორების თემში კონსენსუსი არის იმაზე,
+	რომ რაღაც დროის მერე, <b>თავად უნდა შექმნა საკუთარი ბარათები.</b>
+</words>
+<words x=33 y=140 w=230 no-bg>
+	ამგვარად, იმას რასაც <i>შენ</i> ისწავლი დააკავშირებ იმას რაც <i>შენ</i> გიყვარს.
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=400 sy=450></pic>
+<words x=10 y=15 w=300 no-bg>
+	სწორედ ამიტომ, ამ ინტერაქციული კომიქსის <i>ბოლოს</i>
+	<i>საკუთარ</i> ბარათებს შექმნი!
+</words>
+<words x=30 y=165 w=170 no-bg>
+	და ამ ბარათებზე იქნები...
+</words>
+</panel>
+
+<panel w=400 h=400>
+<pic src="pics/leit3.png" sx=800 sy=450></pic>
+<words x=0 y=10 w=230 fontsize=150 no-bg color="#ffffff">
+	შენ
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CHAPTER 3: GET STARTED TODAY! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="3"></a>
+<div class="divider divider_small_height">
+	<iframe class="splash" gotosrc="sims/splash/" scrolling="no"></iframe>
+	<div id="divider_container">
+		<div id="chapter_name">
+			<div>
+			დღესვე დაიწყე!
+			</div>
+		</div>
+		<div id="chapter_links"></div>
+	</div>
+</div>
+
+<div class="comic">
+
+<panel w=500 h=350>
+<pic src="pics/end0.png" sx=0 sy=0></pic>
+<words x=10 y=10 w=450 h=60>
+	იმისათვის, რომ დაგეხმარო <i>დღესვე</i> დაიწყო ინტერვალებით გამეორების გამოყენება,
+	ოთხ კითხვას უნდა უპასუხო:
+</words>
+<!--
+TRANSLATOR NOTE:
+Remember, if your translated word is too big, you can modify the CSS! (especially font-size)
+-->
+<words x=8 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	რა?
+</words>
+<words x=121 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	რატომ?
+</words>
+<words x=226 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	როგორ?
+</words>
+<words x=337 y=237 w=120 no-bg style="color:#fff; font-size:40px">
+	როდის?
+</words>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	ამ კითხვებს უპასუხებ ბარათების შექმნით!
+	აქ არის ჩვენი პირველი ბარათის <i>წინა</i> მხარე; პირველი შეკითხვა:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_what&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	მაგალითად, შეგიძლია დაიხმარო ინტერვალებით გამეორება, რათა ისწავლო...
+</words>
+<words x=120 y=104 w=100 style="text-align:left" no-bg class="comic_text">
+	ახალი ენა
+</words>
+<words x=320 y=107 w=100 style="text-align:left" no-bg class="comic_text">
+	ახალი ინსტრუმენტი
+</words>
+<words x=115 y=195 w=100 style="text-align:left" no-bg class="comic_text">
+	პროგრამირება
+</words>
+<words x=340 y=195 w=150 style="text-align:left" no-bg class="comic_text">
+	მეგობრების დაბ. დღეები
+</words>
+<words x=129 y=283 w=200 style="text-align:left" no-bg class="comic_text">
+	ნებისმიერი საინტერესო რამ!
+</words>
+<words x=389 y=290 w=100 style="text-align:left" no-bg class="comic_text">
+	პოკემონების სახელები
+</words>
+<words x=80 y=380 w=380 h=30>
+	ახლა, დაწერეთ <i>შენი</i> პასუხი უკანა მხარეს:
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_what"></sim>
+</panel>
+
+<panel fadeInOn="answer_edit_you_what" w="600" h="40" style="margin-bottom: -10px;">
+<words w="600" x="-15" y="-10" no-bg="">
+	(შენიშვნა: შეგიძლია დაბრუნდე აქ და პასუხი მოგვიანებით შეცვალო)
+</words>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	თუმცა, გაიხსენე — ინტერვალებით გამეორებამ რომ იმუშაოს,
+	უნდა დააკავშირო ის იმასთან, რაც შენთვის <i>მნიშვნელოვანია</i>.
+	ასე რომ, შემდეგი კითხვაა:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_why&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=1000 sy=0></pic>
+<words x=10 y=10 w=430 h=60>
+	ეს შეიძლება ზედმეტად ფილოსოფიურად ჟღერდეს,
+	ამიტომ, აგერ <i>რატომ</i>-ის რამდენიმე მაგალითი რომელიც,
+	<i>რა</i>-ს საფუძველში შეიძლება იყოს:
+</words>
+<words x=130 y=105 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>რა:</b> ახალი ენა
+	<br>
+	<b>რატომ:</b> ესაუბრო მეგობრებს, ოჯახს, საყვარელს მათ მშობლიურ ენაზე
+</words>
+<words x=130 y=210 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>რა:</b> პროგრამირება
+	<br>
+	<b>რატომ:</b> საჭმლის ფული, რომ გამოიმუშაო
+</words>
+<words x=130 y=290 w=350 style="text-align:left" no-bg class="comic_text">
+	<b>რა:</b> რამე საინტერესო
+	<br>
+	<b>რატომ:</b> ცნობისმოყვარე ხარ!
+</words>
+<words x=210 y=380 w=250 h=30>
+	ჰოდა... რა არის <i>შენი</i> რატომ?
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_why"></sim>
+</panel>
+
+<panel w="600" h="80">
+<words w="600" x="-15" no-bg="">
+	ესე იგი, <i>რა</i> და <i>რატომ</i> გაქვს... და ახლა უნდა შევარჩიოთ <i>როგორ</i>!
+	ანუ რა ინსტრუმენტის/აპლიკაციის გამოყენება გსურს?
+	შემდეგი ბარათი კითხულობს:
+	You now have your what and why... but we still need to pick a <i>how!</i>
+	That is, what tool/app do you want to use?
+	Our next card asks:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_how&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=700>
+<pic src="pics/end0.png" sx=0 sy=450></pic>
+<words x=10 y=10 w=450 h=90>
+	ამჟამად <a target="_blank" href="https://en.wikipedia.org/wiki/Leitner_system">ლეიტნერის ყუთს</a> ვიყენებ,
+	მაგრამ ჩემი მეგობრები იყენებენ <a target="_blank" href="https://apps.ankiweb.net/">Anki-ს</a>
+	და ადრე <a target="_blank" href="https://tinycards.duolingo.com/">TinyCards-ს</a> ვიყენებდი.
+	(ბმულები იხსნება ახალ ჩანართებში)
+	მოდი შევადაროთ ერთმანეთს:
+</words>
+<words x=160 y=140 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>ლეიტნერის ყუთი</b>
+	<br>
+	პლუსი: ხელნაკეთი, გამოყენება მარტივია
+	<br>
+	მინუსი: აპლიკაციასავით პორტატიული არაა
+</words>
+<words x=160 y=275 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>Anki (აპლიკაცია)</b>
+	<br>
+	პლუსი: უზარმაზარი თემი, ღია პროგრამა, უამრავი მძლავრი ფუნქცია
+	<br>
+	მინუსი: რაცხა უშნოა
+</words>
+<words x=160 y=405 w=300 fontsize=21 style="text-align:left" no-bg>
+	<b>TinyCards (აპლიკაცია)</b>
+	<br>
+	პლუსი: ლამაზი დიზაინი, გამოყენება მარტივია
+	<br>
+	მინუსი: მაქსიმუმ 150 ბარათი თითო დასტაში; არ გაძლევს უფლებას <i>თავად</i> გადაწყვიტო, სწორად გაიხსენე თუ არა ბარათი
+</words>
+<words x=10 y=530 w=450 h=60>
+	(სხვა რამე გინდა?
+	აქ არის რამდენიმე ინსტრუმენტი:
+	<a target="_blank" href="https://www.supermemo.com/">SuperMemo</a>,
+	<a target="_blank" href="https://www.nimblenotes.com/">NimbleNotes</a>,
+	<a target="_blank" href="https://mnemosyne-proj.org/">Mnemosyne</a>)
+</words>
+<words x=110 y=620 w=360 h=40 no-bg fontsize=20>
+	* <i>ანტი</i>-განცხადება: არცერთ მათგანთან <i>არ</i> ვარ დაკავშირებული.
+	უბრალოდ ვთვლი, რომ ისინი მაგარი და სასარგებლოა!
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	მაშ, რომელი იქნება?
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_how"></sim>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=500 sy=450></pic>
+<words x=10 y=10 w=430 h=90>
+	დარჩა მხოლოდ ერთი ბარათი!
+	ახლა: ინტერვალებით გამეორება რეალურად საკმაოდ მარტივია...
+	თუმცა, ამის ყოველდღე კეთება; <i>მიჩვევა</i> რთულია.
+</words>
+<words x=60 y=355 w=400 h=30 no-bg>
+	რატომ? იმიტომ, რომ <i>ნებისმიერი</i> ჩვევის აგორება არის რთული.
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end0.png" sx=1000 sy=450></pic>
+<words x=10 y=10 w=430 h=90>
+	რთული, მაგრამ პირდაპირი.
+	ჩვევების მეცნიერება გვეუბნება — თუ ერთსა და იმავეს გააკეთებ,
+	ერთი და იგივე სიგნალის შედეგად, ისევ და ისევ,
+</words>
+<words x=0 y=153 w=170 no-bg class="comic_text smaller">
+	კარგად იყავი!
+</words>
+<words x=72 y=188 w=80 no-bg class="comic_text smaller">
+	მადლობა, შენც!
+</words>
+<words x=221 y=150 w=170 no-bg class="comic_text smaller">
+	კარგად დაისვენე!
+</words>
+<words x=309 y=185 w=80 no-bg class="comic_text smaller">
+	მადლობა, შენც!
+</words>
+<words x=2 y=300 w=170 no-bg class="comic_text smaller">
+	აგერ შენი ხურდა!
+</words>
+<words x=74 y=335 w=80 no-bg class="comic_text smaller">
+	მადლობა, შენც!
+</words>
+<words x=20 y=450 w=440 h=60>
+	...ეს ქცევა ჩვევად გადაიქცევა, მიუხედავად იმისა კარგია, თუ ცუდი.
+	ასე რომ, ინტერვალებით გამეორების ჩვევისთვის, ჩვენი კითხვაა:
+</words>
+</panel>
+
+<panel w=500 h=250 bg="#e0e0e0">
+<sim x=29 y=-20 w=440 h=300 src="sims/singlecard/?card=you_when&front_only=yes"
+	 style="width: 440px; height: 300px; transform: scale(0.83,0.83) rotate(3deg);"></sim>
+<img src="pics/fcard_frontonly.png" style="width:100%; height:100%; position:absolute; top:0; left:0;"/>
+</panel>
+
+<panel w=500 h=450>
+<pic src="pics/end0.png" sx=0 sy=1150></pic>
+<words x=10 y=10 w=400 h=60>
+	მაგალითად, ინტერვალებით გამეორების თამაში შეგიძლია ითამაშო...
+</words>
+<words x=4 y=233 w=130 no-bg class="comic_text">
+	როცა გაიღვიძებ
+</words>
+<words x=167 y=233 w=130 no-bg class="comic_text">
+	მგზავრობისას
+</words>
+<words x=335 y=233 w=130 no-bg class="comic_text">
+	ძილის წინ
+</words>
+<words x=30 y=320 w=430 h=90>
+	არ აქვს მნიშვნელობა, <i>როდის</i> იზამ ამას — მთავარია გააკეთო. ყოველდღე
+	და თანმიმდევრულად (ნუ მეტ-ნაკლებად — ხანდახან შეგიძლია გამოტოვო დღე).
+</words>
+</panel>
+
+<panel w=400 h=500>
+<pic src="pics/end0.png" sx=500 sy=1150></pic>
+<words x=10 y=10 w=350 h=90>
+	(რჩევა: როდესაც ვცდილობ ახალი ჩვევის განვითარებას,
+	ყოველ დღე ვხატავ წრეს კალენდარზე, როცა ქცევას ვასრულებ)
+</words>
+<words x=10 y=370 w=350 h=90>
+	(თამაშია, რომელსაც საკუთარ თავს ვეთამაშები! მიზანია, შევეცადო,
+	არ ჩავაგდო დღე და შევქმნა ყველაზე გრძელი ჯაჭვი, რაც კი შემიძლია.)
+</words>
+</panel>
+
+<panel w=600 h=50>
+<words w=600 x=-15 no-bg>
+	ახლა, მოდი ეს ბოლო ბარათი შევავსოთ:
+</words>
+</panel>
+
+<panel w=600 h=350 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=350 src="sims/type/?card=you_when"></sim>
+</panel>
+
+<panel w=400 h=80>
+<words w=400 x=-15 no-bg>
+	Et voilà, აქ არის შენი ოთხივე ბარათი, ყველა შენს შესახებაა!
+</words>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_what&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_why&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_how&refresh=yes" class="small_card"></sim>
+</panel>
+
+<panel w=264 h=180 bg="#e0e0e0">
+<sim x=-88 y=-60 w=440 h=300 src="sims/singlecard/?card=you_when&refresh=yes" class="small_card"></sim>
+</panel>
+
+<br><br>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=0></pic>
+<words x=180 y=10 w=250 no-bg>
+	მაგრამ, როგორც ვთქვი, მინდა დაგეხმარო საკუთარი მეხსიერება <i>დღესვე</i> გააკონტროლო.
+</words>
+<words x=230 y=130 w=250 no-bg>
+	არა „ოდესმე“, არა „ხვალ“, <i>დღეს</i>.
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=0 sy=250></pic>
+<words x=150 y=30 w=120 no-bg>
+	დახმარებისთვის...
+</words>
+<words x=270 y=95 w=170 no-bg>
+	გადმოწერე რამდენიმე
+	<b style="font-size:30px">
+	მაგარი კარგობა
+	</b>
+</words>
+</panel>
+
+<panel w=600 h=90>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>პირველი:</b>
+	<span id="gift_wallpaper"></span>
+	რომ ყოველდღე შეგახსენოს ინტერვალებით გამეორება ითამაშო!
+</words>
+</panel>
+
+<div>
+<a target="_blank" id="wallpaper_link">
+<img id="wallpaper_image"/><br>
+	(დააჭირე, რომ გადმოწერო &darr;)
+</a>
+</div>
+
+<panel w=600 h=90 style="height: auto; position: relative; left: -15px;">
+<words x=-15 y=0 w=570 no-bg style="text-align:left; position:static" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	<b>მეორე:</b>
+	<span id="gift_app"></span>
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=90>
+<words x=-15 y=0 w=600 no-bg style="text-align:left" fontsize=30>
+	<img src="pics/gift.png" style="height:1em"/>
+	და ბოლოს,
+	<b>მესამე:</b>
+	.zip ფაილი ყველა ბარათით, რომელიც ივარჯიშე ამ ინტერაქციულ კომიქსში!
+</words>
+</panel>
+
+<panel class="not_on_mobile" w=400 h=100>
+<sim x=0 y=0 w=400 h=100 src="sims/downloads/all.html"></sim>
+</panel>
+
+<panel class="not_on_mobile" w=600 h=120>
+<words x=-15 y=0 w=600 no-bg style="text-align:left">
+	(ეს შეიძლება იყოს შენი პირველი რამდენიმე დღის ინტერვალებით გამეორების
+	ბარათები; დაგეხმარება დაწყებაში! დამატებით, დაიმახსოვრებ ყველაფერს,
+	რაც დღეს აქ ისწავლე, სამუდამოდ-სავით.)
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=0></pic>
+<words x=110 y=30 w=250 no-bg>
+	ამან მომაგონა...
+</words>
+<words x=200 y=105 w=220 no-bg>
+	ბოლო დამშვიდობება,
+	ძველი დროის გულისთვის,
+	ბოლო გედის სიმღერა!
+</words>
+<words x=210 y=230 w=250 no-bg>
+	...მოდი გადავხედოთ ბარათები, <i>ყველა</i> მათგანი:
+</words>
+</panel>
+
+<panel w=600 h=400 bg="#e0e0e0">
+<sim x=0 y=0 w=600 h=400 src="sims/multicard/?final=yes&cards=intro_a,sci_a,leit_a,you_what,intro_b,sci_b,leit_b,you_why,sci_c,leit_c,you_how,leit_d,you_when,intro_c"></sim>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=0 sy=500></pic>
+<words x=0 y=12 w=210 no-bg>
+	სრუტუნი...
+	ყოველთვის ძალიან რთულია დამშვიდობება...
+</words>
+</panel>
+
+<panel w=240 h=300>
+<pic src="pics/end1.png" sx=240 sy=500></pic>
+<words x=-20 y=-10 no-bg fontsize=120 color="rgba(0,0,0,0.5)" style="transform:rotate(10deg)">
+	HONK
+</words>
+</panel>
+
+<panel w=500 h=250>
+<pic src="pics/end1.png" sx=480 sy=500></pic>
+<words x=160 y=30 w=200 no-bg>
+	მომენატრება ერთად გატარებული დრო,..
+</words>
+<words x=200 y=120 w=250 no-bg>
+	...მაგრამ ვიმედოვნებ, რომ ერთმანეთის მოგონებებში დავრჩებით!
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=0 sy=800></pic>
+<words x=10 y=10 w=430 h=90>
+	თუ მოსწავლე ხარ, იმედი მაქვს, ინტერვალებით გამეორება
+	დაგეხმარება იყო უფრო თავდაჯერებული და სწავლა საკუთარ ხელში აიღო.
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=500 sy=800></pic>
+<words x=10 y=10 w=430 h=90>
+	თუ მასწავლებელი ხარ,
+	გთხოვ, <i>ძალიან</i> გთხოვ მოუყევი შენს მოსწავლეებს ინტერვალებით გამეორების
+	(და სწავლის სხვა მტკიცებულებებზე დაფუძნებული ჩვევების) შესახებ.
+</words>
+</panel>
+
+<panel w=500 h=350>
+<pic src="pics/end1.png" sx=1000 sy=800></pic>
+<words x=10 y=10 w=430 h=90>
+	მაგრამ სკოლაში ხარ თუ დაამთავრე,
+	იმედი მაქვს, ინტერვალებით გამეორება დაგეხმარება განივითარო საკუთარი მეხსიერება,
+	გონება, მუზა...
+	But whether you're in or out of school,
+	I hope Spaced Repetition helps you develop your memory, your mind,
+	your Muse...
+</words>
+<words x=168 y=147 w=250 no-bg class="comic_text smaller" style="color:#fff">
+	„არა!“ ყვიროდა მიტოქონდრია, როცა უჯრედის თბილ, სველ ყელში ჩამოცურდა. „მე არ-
+</words>
+</panel>
+
+<panel w=500 h=550>
+<pic src="pics/end1.png" sx=1000 sy=0></pic>
+<words x=30 y=30 w=250 no-bg>
+	...და ისწავლო ცხოვრების ერთ-ერთი უდიდესი სიყვარული:
+</words>
+<words x=120 y=455 w=300 style="text-align:right" no-bg>
+	მთელი ცხოვრება გიყვარდეს სწავლა.
+</words>
+</panel>
+
+<panel w=600 h=300 bg="#e0e0e0">
+<sim x=80 y=0 w=440 h=300 src="sims/singlecard/?card=the_end"></sim>
+</panel>
+
+<panel fadeInOn="flip_the_end" w=600 h=80>
+<words w=600 x=-15 y=0 no-bg>
+	(გინდა ისწავლო/ითამაშო მეტი? დამატებითი საკითხავი და წყაროები ქვემოთაა!)
+	<br>
+	&darr; &darr; &darr; &darr; &darr;
+	</b>
+</words>
+</panel>
+
+</div>
+
+
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- CREDITS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<a name="bye"></a>
+<div id="credits">
+
+<div>
+
+<div style="font-size:30px; margin-bottom:0; overflow: hidden;">
+<img src="pics/nicky_credits.png" width="100" height="100" style="display: block; float: left;" />
+<div style="display: block; position: relative; left: 14px; width: 390px; height: 130px; float: left;">
+	დაწერილი, დახატული და დაპროგრამებული
+	<br>
+	<a target="_blank" href="https://ncase.me" style="font-size:2em; display:inline-block; line-height:1em">
+	ნიკი კეისის მიერ
+	</a>
+	<br>
+	<span id="translation_credits_2"></span>
+	<!-- TRANSLATOR NOTE: again, when you fill in translations.txt, your name will appear here! -->
+</div>
+</div>
+
+<p style="margin-top:0">
+
+	ასევე, ეს ინტერაქციული კომიქსი არის
+
+	<span style="display:block; margin-top:5px;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="64px" height="64px" viewBox="-0.5 0.5 64 64" enable-background="new -0.5 0.5 64 64" xml:space="preserve">
+		<g>
+			<circle fill="#000000" cx="31.325" cy="32.873" r="30.096"/>
+			<path fill="#FFFFFF" id="text2809_1_" d="M31.5,14.08c-10.565,0-13.222,9.969-13.222,18.42c0,8.452,2.656,18.42,13.222,18.42   c10.564,0,13.221-9.968,13.221-18.42C44.721,24.049,42.064,14.08,31.5,14.08z M31.5,21.026c0.429,0,0.82,0.066,1.188,0.157   c0.761,0.656,1.133,1.561,0.403,2.823l-7.036,12.93c-0.216-1.636-0.247-3.24-0.247-4.437C25.808,28.777,26.066,21.026,31.5,21.026z    M36.766,26.987c0.373,1.984,0.426,4.056,0.426,5.513c0,3.723-0.258,11.475-5.69,11.475c-0.428,0-0.822-0.045-1.188-0.136   c-0.07-0.021-0.134-0.043-0.202-0.067c-0.112-0.032-0.23-0.068-0.336-0.11c-1.21-0.515-1.972-1.446-0.874-3.093L36.766,26.987z"/>
+			<path fill="#FFFFFF" id="path2815_1_" d="M31.433,0.5c-8.877,0-16.359,3.09-22.454,9.3c-3.087,3.087-5.443,6.607-7.082,10.532   C0.297,24.219-0.5,28.271-0.5,32.5c0,4.268,0.797,8.32,2.397,12.168c1.6,3.85,3.921,7.312,6.969,10.396   c3.085,3.049,6.549,5.399,10.398,7.037c3.886,1.602,7.939,2.398,12.169,2.398c4.229,0,8.34-0.826,12.303-2.465   c3.962-1.639,7.496-3.994,10.621-7.081c3.011-2.933,5.289-6.297,6.812-10.106C62.73,41,63.5,36.883,63.5,32.5   c0-4.343-0.77-8.454-2.33-12.303c-1.562-3.885-3.848-7.32-6.857-10.33C48.025,3.619,40.385,0.5,31.433,0.5z M31.567,6.259   c7.238,0,13.412,2.566,18.554,7.709c2.477,2.477,4.375,5.31,5.67,8.471c1.296,3.162,1.949,6.518,1.949,10.061   c0,7.354-2.516,13.454-7.506,18.33c-2.592,2.516-5.502,4.447-8.74,5.781c-3.2,1.334-6.498,1.994-9.927,1.994   c-3.468,0-6.788-0.653-9.949-1.948c-3.163-1.334-6.001-3.238-8.516-5.716c-2.515-2.514-4.455-5.353-5.826-8.516   c-1.333-3.199-2.017-6.498-2.017-9.927c0-3.467,0.684-6.787,2.017-9.949c1.371-3.2,3.312-6.074,5.826-8.628   C18.092,8.818,24.252,6.259,31.567,6.259z"/>
+		</g>
+		</svg>
+		<span style="font-size: 60px; position: relative; top: -12px; left: 8px;">
+		საყოველთაო კუთვნილება
+		</span>
+	</span>
+
+	რაც ნიშნავს, რომ შეგიძლია თავისუფლად გამოიყენო ეს ნამუშევარი საგანმანათლებლო, პირადი, ან თუნდაც კომერციული მიზნებისთვის.
+	უკვე გაქვს ჩემი ნებართვა!
+	<a target="_blank" href="https://github.com/ncase/remember">
+	(კოდის გადმოწერა)</a>
+	<a target="_blank" href="https://github.com/ncase/remember#how-to-translate">
+	(კომიქსის თარგმნა)</a>
+
+</p>
+
+<p>
+	თუმცა, მე ეს შემიძლია მხოლოდ ჩემი 1000+ Patreon მხარდამჭერის წყალობით.
+	ისინი მაძლევენ საშუალებას გავაგრძელო იმის კეთება, რაც მიყვარს. გმადლობთ! 💖
+	<a target="_blank" href="https://www.patreon.com/ncase">
+	(შენც გსურს დახმარება? აქ დააწკაპუნე!)
+	</a>
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	დამატებითი საკითხავი
+</p>
+
+<p>
+	რაღაც რაღაც გიგანტების მხრებზე.
+	აქ არის საკითხავი, რომელმაც ინტერვალებით გამეორება ჩემი ყოველდღიური ცხოვრების ნაწილად აქცია:
+</p>
+
+<ul>
+	<li>
+		🤓
+		<a target="_blank" href="http://augmentingcognition.com/ltm.html">
+		მაიკლ ნილსენის გრძელვადიანი მეხსიერების გაძლიერებამ</a>
+
+		 მაჩვენა, რომ
+		ინტერვალებით გამეორება არაა მხოლოდ დამახსოვრების ინსტრუმენტი,
+		ესაა ინსტრუმენტი სიღრმისეული გააზრებისთვის. ეს შეიძლება იყოს <i>ცხოვრების</i> წესიც კი.
+	</li>
+	<li>
+		💬
+		<a target="_blank" href="https://fluent-forever.com/the-book/">
+		გაბრიელ ვაინერის სამუდამოდ ენაწყლიანმა</a>
+		 დამარწმუნა, რომ
+		საბოლოოდ (ხელახლა) დამეწყო ფრანგულის სწავლა
+		და შემექმნა ლეიტნერის ყუთი. (ჩემი 64-დღიანი კალენდარი ადაპტირებულია ამ წიგნიდან)
+	</li>
+	<li>
+		🃏
+		<a target="_blank" href="https://www.supermemo.com/en/articles/20rules">
+		პიოტრ ვოზნიაკის ბარათების 20 წესმა</a>
+		 მასწავლა, როგორ მიმეღო მაქსიმუმი ინტერვალებით გამეორებისგან.
+		(შენიშვნა: ავტორმა ასევე გამოიგონა ალგორითმი, რომელსაც Anki იყენებს!)
+	</li>
+</ul>
+
+	და ჩემი ყველაზე საყვარელი საკითხავი სწავლის მეცნიერებაზე:
+
+<ul>
+	<li>
+		👩‍🎓
+		<a target="_blank" href="https://www.amazon.com/Why-Dont-Students-Like-School/dp/047059196X/">
+		დანიელ უილინგჰემის რატომ არ მოსწონთ მოსწავლეებს სკოლა?</a>
+		დამარწმუნა, რომ
+		„უბრალოდ დამახსოვრება“ რეალურად <i>აუცილებელია</i>
+		შემოქმედებითობისა და კრიტიკული აზროვნებისთვის.
+	</li>
+	<li>
+		✏️
+		<a target="_blank" href="http://web.archive.org/web/20190711014620/http://tlcp.depaultla.org/wp-content/uploads/sites/2/2015/05/Dunlosky-et-al-2013-What-Works-What-Doesnt.pdf">
+		დანლოსკისა და სხვების რა მუშაობს, რა არა [PDF]
+		</a>
+		აჯამებს <i>200+ კვლევას</i> სასწავლო მეთოდებზე.
+		მოკლედ: გავრცელებული ტექნიკები, როგორიცაა გადაკითხვა
+		და ხაზგასმა, არ მუშაობს; ნაკლებად გავრცელებული ტექნიკები,
+		როგორიცაა ინტერვალით გამოყოფა და თვითშემოწმება მუშაობს.
+		<a target="_blank" href="http://journals.sagepub.com/doi/abs/10.1177/1529100612453266">
+		(კვლევის ბმული)
+		</a>
+	</li>
+</ul>
+
+<p>
+	და თუ გინდა მეტი ისწავლო-თამაშით,
+	<a target="_blank" href="https://explorabl.es/">
+	იხილე Explorable Explanations!</a> 🕹️
+</p>
+
+<hr>
+
+<p style="font-size:50px;margin-bottom:10px">
+	მეტი მადლობა
+</p>
+
+<p>
+	👀 მადლობა ჩემს ყველა თამაშის შემმოწმებელს, რომ ეს პროექტი უვარგისი არაა:
+	<span style="font-size: 19px; line-height: 0px; color: #999;">
+	Aatish Bhatia, Adam Filinovich, Aimee Jarboe, Alex Jaffe, Amit Patel, Andy Matuschak, B Cavello, Chris Walker, Frank Lantz, Gal Green, Glen Chiacchieri, Hamish Todd, Henry Reich, Jacque Goupil, James Lytle,
+	Jez Swanson, Josh Comeau, Kayle Sawyer, Levi Robertson, Marcelo Gallardo, Martyna Wasiluk, Michael Nielsen, Mikayla Hutchinson, Mike Gifford, Monica Srivastava, Owen Landgren,
+	Paul Butler, Paul Simeon, Philipp Wacker, Pontus Granström, Rowan, Sebastian Morr, SpacieCat, Tanya Short, Tim &amp; Alexandra Swast, Tom Hermans, Toph Tucker, Will Harris-Braun, Zeno Rogue
+	</span>
+</p>
+
+<p>
+	📹 მადლობა კრის უოკერ
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+	ლეიტნერის ყუთის ვიდეოინსტრუქციის გადაღებისთვის!</a>
+	(P.S:
+	<a target="_blank" href="http://polytrope.com/">
+	კრისიც ქმნის ინტერაქციულ რაღაცებს!</a>)
+</p>
+
+<p>
+	🐞 მადლობა ომარ რიზვან, რომ დამეხმარე მობილური Safari-ის ხარვეზების უძირო ორმოს გარკვევაში
+</p>
+
+<p>
+	🔊 ეს პროექტი შეიქმნა Wikimedia Commons-ისა და
+	FreeSounds-ის Creative Commons მასალებით.
+	<a target="_blank" href="https://github.com/ncase/remember#full-asset-credits">
+	(წყაროს სრული სია)</a>
+</p>
+
+<p>
+	💖 კიდევ ერთხელ, დიდი მადლობა ჩემს Patreon-ის ყველა მხარდამჭერს, რომლებმაც ეს პროექტი შესაძლებელი გახადეს:
+</p>
+
+<iframe gotosrc="supporters/"></iframe>
+
+<p>
+	🙏 და ბოლოს, მადლობა <i>შენ</i>, რომ ხარ ისეთი ადამიანი, რომელიც ბიბლიოგრაფიას კითხულობს!
+	შეგიძლია
+	<a target="_blank" href="https://ncase.me/">
+	ჩემი სხვა თამაშები ითამაშო</a>,
+	<a target="_blank" href="https://twitter.com/ncasenmare">
+	გამომყვე Twitter-ზე</a>,
+	ან
+	<a target="_blank" href="https://www.patreon.com/ncase">
+	მხარი დამიჭირო Patreon-ზე</a>.
+	გულწრფელად ვიმედოვნებ, რომ ეს კომიქსი, თუნდაც მცირედით, დაგეხმარა.
+</p>
+
+<p>
+	ბედნიერი სწავლა!<br>
+	~ ნიკი კეისი
+</p>
+
+<!-- Share buttons, text generated from labels -->
+<div id="share_buttons"></div>
+
+</div>
+
+</div>
+
+
+<!--
+
+TRANSLATOR NOTE:
+
+HA HA YOU THOUGHT YOU WERE DONE?!
+
+NOPE
+
+WE'VE STILL GOT THE INTERFACE LABELS & FLASHCARDS TO TRANSLATE
+
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- LABELS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="labels">
+
+<!-- Chapter Links -->
+<span id="label_chapter_links">
+	<a href="#0">შესავალი</a>
+	&middot;
+	<a href="#1">მეცნიერება</a>
+	&middot;
+	<a href="#2">ხელოვნება</a>
+	&middot;
+	<a href="#3">დაწყება!</a>
+	&middot;
+	<a href="#bye">წყარო</a>
+</span>
+
+<!-- Multi Card Labels -->
+<span id="multicard_q">
+	სცადე გაიხსენო &uarr;
+	მერე მოაბრუნე ↻
+</span>
+<span id="multicard_cards_left">
+	(დარჩა [N] ბარათი)
+</span>
+<span id="multicard_a">
+	გახსოვდა?
+</span>
+<span id="multicard_no">
+	არა, თავიდან
+</span>
+<span id="multicard_yes">
+	კი, წინ!
+</span>
+<span id="multicard_done">
+	ჯერ-ჯერობით სულ ეს არის! გააგრძელე სკროლვა
+	<br>
+	&darr;
+</span>
+<span id="multicard_done_2">
+	სულ ეს არის, მეგობრებო!
+	<br>
+	&darr;
+</span>
+
+<!-- Ebbinghaus Simulation -->
+<span id="ebbinghaus_y_axis">
+	მეხსიერების სიმყარე &rarr;
+</span>
+<span id="ebbinghaus_x_axis">
+	დრო &rarr;
+</span>
+<span id="ebbinghaus_decay">
+	დაშლა:
+</span>
+<span id="ebbinghaus_forgetting">
+	ოქროს შუალედი:
+</span>
+<span id="ebbinghaus_recall">
+	გახსენების დრო:
+</span>
+<span id="ebbinghaus_recalls">
+	გახსენების დრო:
+</span>
+<span id="ebbinghaus_auto">
+	ავტო-ოპტიმიზაცია!
+</span>
+
+<!-- Leitner Calendar -->
+<!--
+TRANSLATOR NOTE:
+The exact three characters [N] is how the code knows where to put the number.
+When you translate, make sure the [N] is there if it was there in the original.
+-->
+<span id="calendar_day">
+	დღე [N]...
+</span>
+<span id="calendar_review">
+	შეამოწმე დონეები [N] (<i>ამ თანმიმდევრობით</i>)
+</span>
+<span id="calendar_loop">
+	(და შემდეგ დაუბრუნდი 1-ლ დღეს!)
+</span>
+
+<!-- Leitner Box simulation -->
+<span id="leitner_day">
+	დღე [N]
+</span>
+<span id="leitner_step_to_review">
+	შესამოწმებელი: დონე
+</span>
+<span id="leitner_step_reviewing">
+	შეამოწმე დონე [N]
+</span>
+<span id="leitner_step_new">
+	დაამატე [N] ახალი ბარათი
+</span>
+<span id="leitner_step_stats">
+	ჯამი: [N] ბარათი!
+</span>
+<span id="leitner_step_stats_2">
+	(პენსიაზე გავიდა [N])
+</span>
+<span id="leitner_button_next_step">
+	შემდეგი ნაბიჯი
+</span>
+<span id="leitner_button_next_day">
+	შემდეგი დღე
+</span>
+<span id="leitner_button_next_week">
+	შემდეგი კვირა
+</span>
+<span id="leitner_button_next_month">
+	შემდეგი თვე
+</span>
+<span id="leitner_slider_new">
+	დღეში [N] ახალი ბარათი
+</span>
+<span id="leitner_slider_wrong">
+	ბარათების [N]% <i>შეცდომით</i> გაიხსენე
+</span>
+<span id="leitner_reset">
+	ხელახლა
+</span>
+
+<!-- Typing Cards -->
+<span id="type_question">
+	კითხვა:
+	<!--
+	TRANSLATOR NOTE: "Q" short for Question.
+	Dunno if other languages have similar one-letter abbreviations.
+	If not, just type the full translated word for "Question"
+	-->
+</span>
+<span id="type_placeholder">
+	პასუხი აქ დაწერე
+</span>
+<span id="type_suggestions">
+	ან აირჩიე ამ რჩევებიდან:
+</span>
+
+<!-- Suggestions -->
+<span id="you_what_suggestions">
+	<li>რამე საინტერესო!</li>
+	<li>ენა</li>
+	<li>მუსიკა</li>
+	<li>კოდირება</li>
+	<li>პირადი</li>
+	<li>(სხვა)</li>
+</span>
+<span id="you_why_suggestions">
+	<li>ახლობლებისთვის</li>
+	<li>საკუთარი თავისთვის</li>
+	<li>ცნობისმოყვარე ვარ</li>
+	<li>(სხვა)</li>
+</span>
+<span id="you_how_suggestions">
+	<li>ლეიტნერის ყუთი</li>
+	<li>Anki</li>
+	<li>TinyCards</li>
+	<li>(სხვა)</li>
+</span>
+<span id="you_when_suggestions">
+	<li>დილით</li>
+	<li>მგზავრობისას</li>
+	<li>საღამოს</li>
+	<li>(სხვა)</li>
+</span>
+
+<!-- Gifts -->
+<span id="gift_wallpaper_what">
+	რა:
+</span>
+<span id="gift_wallpaper_why">
+	რატომ:
+</span>
+<span id="gift_wallpaper_do_1">
+	მის-
+</span>
+<span id="gift_wallpaper_do_2">
+	წავლე!
+</span>
+<span id="gift_wallpaper_filename">
+	„შპალერი“
+</span>
+<span id="gift_wallpaper_desktop">
+	„შპალერი“ შენი დესკტოპისთვის,
+</span>
+<span id="gift_wallpaper_phone">
+	„შპალერი“ შენი მობილურისთვის,
+</span>
+<span id="gift_app_leitner">
+	ვიდეო, შექმნილი ჩემი ძვირფასი მეგობრის, კრის უოკერის მიერ, თუ როგორ შექმნა საკუთარი ლეიტნერის ყუთი!
+	<br><br>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uvF1XuseZFE?rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+	<br>
+	(და აქ არის მსგავსი ინსტრუქცია, IKEA-ს სტილში:)
+	<br><br>
+	<a target="_blank" href="./pdf/leitner.pdf" style="display: block; text-align: center;">
+	<img src="./pdf/thumbnail.png" width="450"/><br>დააჭირე,რომ გადმოწერო PDF-ი</a>
+</span>
+<span id="gift_app_anki">
+	ბმული
+	<a target="_blank" href="https://apps.ankiweb.net/">Anki-ს გადმოწერისთვის!</a>
+	და აქ არის ვიდეო გაკვეთილი, თუ როგორ გამოიყენო ის:
+	<br><br>
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sQkdB3cJwn0?start=180&rel=0"
+		    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+		    style="display:block; margin:0 auto"></iframe>
+</span>
+<span id="gift_app_tiny">
+	<a target="_blank" href="https://tinycards.duolingo.com/">
+	TinyCards-ის </a> ბმული!
+	(გირჩევ მათი
+	<a target="_blank" href="https://tinycards.duolingo.com/users/TinyGeo">
+	გეოგრაფიის ბარათები</a> შეამოწმო.)
+</span>
+<span id="gift_app_other">
+	ლეიტნერის ყუთის შექმნის ინსტრუქციების ბმულები
+	<a target="_blank" href="https://www.youtube.com/watch?v=uvF1XuseZFE">
+	[ვიდეო]</a>
+	<a target="_blank" href="./pdf/leitner.pdf">
+	[pdf]</a>,
+	<a target="_blank" href="https://apps.ankiweb.net/">
+	Anki-ს აპლიკაცია</a>,
+	და
+	<a target="_blank" href="https://tinycards.duolingo.com/">
+	TinyCards</a>!
+</span>
+
+<!-- Downloading Cards -->
+<span id="download_all">
+	გადმოწერე ყველა ბარათი
+</span>
+<span id="download_all_downloading">
+	გადმოწერა...
+</span>
+<span id="download_all_done">
+	მზადაა! საქაღალდე შეამოწმე.
+</span>
+
+<!-- Social Sharing -->
+<span id="share_title">
+	როგორ დავიმახსოვროთ ნებისმიერი რამ სამუდამოდ-სავით
+</span>
+<span id="share_desc">
+	ინტერაქციული კომიქსი მეხსიერების ხელოვნებისა და მეცნიერების შესახებ
+</span>
+
+
+
+
+<!--
+
+TRANSLATOR NOTE:
+
+One more section to go!
+
+-->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- FLASHCARDS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!--
+TRANSLATOR NOTE:
+The CSS for the flashcards is really touchy, so DO NOT MODIFY THE CSS.
+That means, try as much as possible to make your text shorter or the same length as the original text.
+Good luck!
+-->
+
+<!-- - - - - - - - - - - - -->
+<!-- INTRO - - - - - - - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_spaced_rep_front">
+	<div class="fcard_center" style="height:2.5em">
+	და ამ თამაშს ჰქვია...
+	</div>
+</span>
+<span id="flashcard_spaced_rep_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="color:white; font-size:74px; height:1.6em; line-height:0.8em;">
+	ინტერვალებით გამეორება
+	</div>
+</span>
+<span id="flashcard_intro_a_front">
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	ინტერვალებით გამეორება = <span class="underline">____</span> + <span class="underline">____</span>
+	</div>
+</span>
+<span id="flashcard_intro_a_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=0 sy=240></div>
+	<div id="fc_words" class="fcard_center" style="height:2.5em">
+	შემოწმება + დრო
+	</div>
+</span>
+<span id="flashcard_intro_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	სწავლის/სწავლების 3 გავრცელებული, მაგრამ არაეფექტური პრაქტიკაა...
+	</div>
+</span>
+<span id="flashcard_intro_b_back">
+	<div id="fc_words" class="fcard_center" style="height:2.2em">
+	... ლექციები, დაზეპირება და გადაკითხვა
+	</div>
+</span>
+<span id="flashcard_intro_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.4em">
+	ბერძნულ მითოლოგიაში
+	<span class="underline">____</span> ქალღმერთი
+	იყო <span class="underline">________</span> ქალღმერთების დედა
+	</div>
+</span>
+<span id="flashcard_intro_c_back">
+	<div class="fcard_bg" src="pics/fcards_intro.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width:250px; top:50px; left:140px; line-height:1.1em;">
+	მეხსიერება შთაგონების დედაა
+	</div>
+</span>
+
+<!-- - - - - - - - - - - - -->
+<!-- CHAPTER 1: The Science -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_guessgap_front">
+	<div class="fcard_center" style="height:2.5em">
+	გახსენებების განაწილების საუკეთესო გზა არის...
+	</div>
+</span>
+<span id="flashcard_guessgap_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=0></div>
+	<div class="fcard_center" style="height:2.5em">
+	...<i>მზარდი</i> ინტერვალებით!
+	</div>
+</span>
+<span id="flashcard_sci_a_front">
+	<div id="fc_words" class="fcard_center" style="height:3.5em">
+	მეხსიერების ექსპერიმენტული მეცნიერების პიონერი იყო...
+	</div>
+</span>
+<span id="flashcard_sci_a_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=0></div>
+	<div id="fc_words" style="position: absolute; width: 250px; top: 60px; left:150px; line-height: 1.1em;">
+	ჰერმან ებინგჰაუსი
+	</div>
+</span>
+<span id="flashcard_sci_b_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	დავიწყების მრუდი (ყოველგვარი გახსენების <i>გარეშე</i>) გამოიყურება...
+	</div>
+</span>
+<span id="flashcard_sci_b_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=0 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 280px; top: 70px; left: 100px; font-size:20px; line-height: 1.1em;">
+	(შენიშვნა: ის ჯერ სწრაფად და შემდეგ ნელა იშლება — „ექსპონენტური დაშლა“)
+	</div>
+</span>
+<span id="flashcard_sci_c_front">
+	<div id="fc_words" class="fcard_center" style="height:3.4em">
+	დავიწყების მრუდი (<i>კარგად</i> განაწილებული გახსენებით) გამოიყურება...
+	</div>
+</span>
+<span id="flashcard_sci_c_back">
+	<div class="fcard_bg" src="pics/fcards0.png" sx=400 sy=240></div>
+	<div id="fc_words" style="position: absolute; width: 360px; top: 120px; left: 20px; font-size:20px; line-height: 1.1em;">
+	(შენიშვნა: გახსენებს შორის მანძილი <i>იზრდება</i>)
+	</div>
+</span>
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 2: The Art - - -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_leit_a_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	ლეიტნერის ყუთის გამოყენებით, <span class="underline">______</span> ინტერვალს (დღეების # შემოწმებებს შორის) თითოეული დონისთვის
+	</div>
+</span>
+<span id="flashcard_leit_a_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=720 style="left:-5px"></div>
+	<div id="fc_words" class="fcard_center" style="height:110px">
+	ვაორმაგებთ ინტერვალს
+	</div>
+</span>
+<span id="flashcard_leit_b_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	ლეიტნერის ყუთის თამაში:
+	<br>
+	როცა ბარათი <i>სწორად</i> გახსოვს, ის <span class="underline">______</span> გადაგაქვს.
+	</div>
+</span>
+<span id="flashcard_leit_b_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:170px">
+	ერთი დონით ზევით
+	</div>
+</span>
+<span id="flashcard_leit_c_front">
+	<div id="fc_words" class="fcard_center" style="height:4.5em">
+	ლეიტნერის ყუთის თამაში:
+	<br>
+	როცა ბარათი <i>არასწორად</i> გახსოვს, ის <span class="underline">______</span> გადაგაქვს.
+	</div>
+</span>
+<span id="flashcard_leit_c_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="height:180px">
+	1-ლ დონეზე
+	</div>
+</span>
+<span id="flashcard_leit_d_front">
+	<div id="fc_words" class="fcard_center" style="font-size:30px; height:170px;">
+	ინტერნეტში ნანახი რაღაც შემთხვევითი კომიქს-თამაშის მიხედვით,
+	ჩემი ინტერვალებით გამეორების ბარათები უნდა იყოს
+	<span class="underline">______</span> ,
+	<span class="underline">______</span>  და
+	<span class="underline">______</span> .
+	</div>
+</span>
+<span id="flashcard_leit_d_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=720></div>
+	<div id="fc_words" class="fcard_center" style="color:#fff; height:200px; height: 180px; font-size: 30px;">
+	პატარა, დაკავშირებული და მნიშვნელოვანი
+	</div>
+</span>
+
+
+<span id="flashcard_mitochondria_all_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		ეს რა არის?
+	</div>
+</span>
+<span id="flashcard_mitochondria_all_back">
+	<div class="fcard_center" style="height:220px; font-size:20px;">
+		ამ ორგანელას ჰქვია „მიტოქონდრია“.
+		მიტოქონდრია უჯრედის გენერატორია.
+		ისინი გვხვდება თითქმის ყველა ევკარიოტულ (ბირთვის მქონე) ორგანიზმში.
+		მიტოქონდრიის წარმოშობის ყველაზე ფართოდ აღიარებული ჰიპოთეზაა ენდოსიმბიოზური თეორია:
+		დაახლოებით 1,5 მილიარდი წლის წინ, პროკარიოტული (ბირთვის არ მქონე) უჯრედი, რომელიც სხვა უჯრედმა „შეჭამა“,
+		როგორღაც გადარჩა და, მას შემდეგ, გააგრძელა მის შიგნით ცხოვრებას.
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=960></div>
+	<div class="fcard_center" style="height:160px;">
+		ეს რა არის?
+	</div>
+</span>
+<span id="flashcard_mitochondria_1_back">
+	<div class="fcard_center" style="height:1.5em;">
+		მიტოქონდრია
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960></div>
+	<div class="fcard_center" style="height:180px">
+		მიტოქონდრია არის უჯრედის <span class="underline">_______</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_2_back">
+	<div class="fcard_center" style="height:150px">
+		გენერატორია
+		<span class="bonus_note">
+		// ცნობისთვის: მართლა, მათ გარეშე ყველა დავიხოცებოდით.
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:45px"></div>
+	<div class="fcard_center" style="height:180px;">
+		მიტოქონდრია გვხვდება თითქმის ყველა <span class="underline">____</span> ორგანიზმში.
+	</div>
+</span>
+<span id="flashcard_mitochondria_3_back">
+	<div class="fcard_center" style="height:1.5em">
+		ევკარიოტულ
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_front">
+	<div class="fcard_center" style="height:2.5em">
+		ევკარიოტული არის უჯრედი, რომელსაც...
+	</div>
+</span>
+<span id="flashcard_mitochondria_4_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		აქვს ბირთვი
+		<span class="bonus_note">
+		// ცნობისთვის: "eu"=კარგი, "karyon"=მარცვალი
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_front">
+	<div class="fcard_center" style="height:2.5em">
+		პროკარიოტები არიან უჯრედები, რომლებსაც...
+	</div>
+</span>
+<span id="flashcard_mitochondria_5_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=1200></div>
+	<div class="fcard_center" style="width: 200px; left: 170px; top: 20px;">
+		არ აქვთ ბირთვი
+		<span class="bonus_note">
+		// ცნობისთვის: "pro"=მდე, "karyon"=მარცვალი
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:10px"></div>
+	<div class="fcard_center" style="height:200px; font-size:35px">
+		მიტოქონდრიის წარმოშობის ყველაზე ფართოდ აღიარებული ჰიპოთეზაა...
+	</div>
+</span>
+<span id="flashcard_mitochondria_6_back">
+	<div class="fcard_center" style="height:120px">
+		ენდოსიმბიოზური თეორია
+		<span class="bonus_note">
+		// ცნობისთვის: "endo"=შიგა, "sym"=ერთად, "bio"=ცხოვრება
+		</span>
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 35px; height: 220px;">
+		ენდოსიმბიოზური თეორიის თანახმად, მიტოქონდრია წარმოიშვა დაახლოებით
+		According to Endosymbiotic Theory, mitochondria arose around
+		<span class="underline">____</span> წლის წინ
+	</div>
+</span>
+<span id="flashcard_mitochondria_7_back">
+	<div class="fcard_center" style="height:1.5em">
+		~1,5 მილიარდი წლის წინ
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=960 style="top:40px"></div>
+	<div class="fcard_center" style="font-size: 37px; height: 220px;">
+		ენდოსიმბიოზური თეორიის თანახმად, მიტოქონდრია პირველად წარმოიქმნა, როდესაც...
+	</div>
+</span>
+<span id="flashcard_mitochondria_8_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=1440></div>
+	<div class="fcard_center" style="height:230px">
+		როდესაც პროკარიოტი სხვა უჯრედმა შეჭამა
+	</div>
+</span>
+
+
+<span id="flashcard_cat_front">
+	<div class="fcard_center" style="height:100px">
+		<div style="font-size:120px; height:75px;">
+			კატა
+			<!--
+			TRANSLATOR NOTE:
+			If your language is NOT French, then change this to "cat" in YOUR language
+			-->
+		</div>
+		<div>
+			(ქართული)
+			<!--
+			TRANSLATOR NOTE:
+			If your language is NOT French, then change this to YOUR language
+			-->
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat_back">
+	<div class="fcard_center" style="height:100px">
+		<!--
+		TRANSLATOR NOTE: DO NOT TRANSLATE. Leave as French!
+		-->
+		<div style="font-size:120px; height:75px;">
+			chat
+		</div>
+		<div>
+			(ფრანგული)
+		</div>
+	</div>
+</span>
+<span id="flashcard_cat2_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=0></div>
+	<div class="fcard_center"></div>
+</span>
+<span id="flashcard_cat2_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=0></div>
+	<div class="fcard_center">
+		<audio controls id="HACK_audio" style="position: absolute; top: 115px; left: 30px; transform: scale(0.5);">
+			<source gotosrc="../../audio/chat.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+</span>
+
+<span id="flashcard_learndo_front">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=0 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		შემდეგ ისევ ვაკეთებ... ↻
+	</div>
+</span>
+<span id="flashcard_learndo_back">
+	<div class="fcard_bg" src="pics/fcards_ch2.png" sx=400 sy=240></div>
+	<div class="fcard_center" style="height:195px; font-size:33px;">
+		შემდეგ ისევ ვსწავლობ... ↻
+	</div>
+</span>
+
+
+
+<!-- - - - - - - - - - - - -->
+<!-- Chapter 3: Get Started -->
+<!-- - - - - - - - - - - - -->
+
+<span id="flashcard_you_what_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		რა გინდა ისწავლო?
+	</div>
+</span>
+<span id="flashcard_you_what_back">
+	<div id="fc_words" class="fcard_center" editable="you_what" style="height:1.2em">
+		რაიმე საინტერესო!
+	</div>
+</span>
+<span id="flashcard_you_why_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=0></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top: 50px; left: 180px;">
+		რატომ გინდა ისწავლო?
+	</div>
+</span>
+<span id="flashcard_you_why_back">
+	<div id="fc_words" class="fcard_center" editable="you_why" style="height:1.2em">
+		ცნობისმოყვარე ვარ
+	</div>
+</span>
+<span id="flashcard_you_how_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
+		ინტერვალებით გამეორებას როგორ გამოიყენებ?
+	</div>
+</span>
+<span id="flashcard_you_how_back">
+	<div id="fc_words" class="fcard_center" editable="you_how" style="height:1.2em">
+		ლეიტნერის ყუთი
+	</div>
+</span>
+<span id="flashcard_you_when_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=240></div>
+	<div id="fc_words" style="line-height: 1.1em; position: absolute; width: 190px; margin: 0; top:31px; left: 180px;">
+		როდის იზამ ინტერვალებით გამეორებას?
+	</div>
+</span>
+<span id="flashcard_you_when_back">
+	<div id="fc_words" class="fcard_center" editable="you_when" style="height:1.2em">
+		საღამოს
+	</div>
+</span>
+
+<span id="flashcard_the_end_front">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=0 sy=480></div>
+</span>
+<span id="flashcard_the_end_back">
+	<div class="fcard_bg" src="pics/fcards_ch3.png" sx=400 sy=480></div>
+	<div id="fc_words" class="fcard_center" style="top:30px; font-size:50px;">
+		დასასრული
+	</div>
+</span>
+
+
+</div>
+
+<!--
+
+TRANSLATOR NOTE:
+
+Congrats! NOW you've translated everything!
+
+Again, from the deepest part of my heart, I want to sincerely thank you
+for helping spread this page to more people, in more languages.
+
+Oh wait, just one more thing: go to translations.txt,
+and add your translation there so this project "knows" your page exists.
+
+And once that's done, send a Pull Request, and your translation will go live!
+
+THANK YOU! <3
+~ Nicky Case
+
+-->
+
+</body>
+
+</html>
+
+<script src="js/howler.core.min.js"></script>
+<script src="js/minpubsub.src.js"></script>
+<script src="js/comic.js"></script>

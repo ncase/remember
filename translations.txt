@@ -148,3 +148,12 @@ fa
 نه
 ترجمه توسط <a href="https://github.com/amir2mi">امیرمحمد محمدی</a>
 نسخه اصلی به زبان انگلیسی
+
+ka
+ქართული
+./ka.html
+გინდა გადართო ქართულ ენაზე?
+კი!
+არა
+მთარგმნელი <a href="https://www.facebook.com/razmikecg">რაზმიკ ბადალიანი</a>
+original in English
